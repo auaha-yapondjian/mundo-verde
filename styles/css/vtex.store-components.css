@@ -65,6 +65,12 @@
   margin-bottom: 20px;
 }
 
+
+.imageElement--season-promotion--image{
+  width: 10%;
+}
+
+
 .skuSelectorContainer {
   margin: 1rem 0;
 }
@@ -89,5 +95,20 @@
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
+  }
+
+  .imageElement--season-promotion--card{
+    width: 100%;
+    display: block;
+  }
+
+  .imageElement--season-promotion--card:hover{
+    transform: scale(1.05);
+    transition: all .3s ease;
+  }
+
+  .imageElementLink--season-promotion--card{
+    display: block;
+    overflow: hidden;
   }
 }

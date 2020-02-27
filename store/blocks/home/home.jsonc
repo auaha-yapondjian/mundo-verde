@@ -2,9 +2,9 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
+      "flex-layout.row#season-promotion",
+      "shelf#home",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
@@ -28,19 +28,14 @@
       "product-summary-buy-button"
     ]
   },
-
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": "auto",
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_desk.jpg",
+          "mobileImage": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_mobile.jpg"
         }
       ]
     }
@@ -53,8 +48,10 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true
     }
   },
 
@@ -114,4 +111,6 @@
       "blockClass": "link"
     }
   }
+
+  
 }

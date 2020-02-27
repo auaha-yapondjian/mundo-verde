@@ -1,0 +1,47 @@
+{
+    "flex-layout.row#season-promotion": {
+        "children":[
+            "flex-layout.col#season-promotion--cards"
+        ],
+        "props": {
+            "blockClass": "season-promotion--cards"
+        }
+    },
+    "flex-layout.col#season-promotion--cards": {
+        "children": [
+            "image#card-link-1", 
+            "image#card-link-2",
+            "image#card-link-3",
+            "image#card-link-4"
+        ],
+        "props": {
+            "blockClass": "season-promotion--content-card",
+            "rowGap": "6"
+        }
+    },
+    "image#card-link-1": {
+        "props": {
+            "src": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_mini_banners_1.jpg",
+            "blockClass": "season-promotion--card"
+        }
+    },
+    "image#card-link-2": {
+        "props": {
+            "src": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_mini_banners_2.jpg",
+            "blockClass": "season-promotion--card"
+        }
+    },
+    "image#card-link-3": {
+        "props": {
+            "src": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_mini_banners_3.jpg",
+            "blockClass": "season-promotion--card"
+        }
+    },
+    "image#card-link-4": {
+        "props": {
+            "src": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_mini_banners_4.jpg",
+            "blockClass": "season-promotion--card"
+        }
+    }
+
+}

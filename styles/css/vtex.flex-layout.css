@@ -40,9 +40,11 @@
   color: #727273;
   font-size: 14px;
 }
+
 .flexRow--deals {
-  background-color: #a7afbd;
-  padding: 14px 0px;
+  padding: 20px 15px;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .flexRow--deals .stretchChildrenWidth {
@@ -76,4 +78,28 @@
 
 .flexCol--switcherMobileCol {
   width: 20%;
+}
+
+
+/* Season Promotion Content */
+.flexRow--season-promotion--cards{
+  background-color: #f2f2f2;
+}
+
+.flexRowContent--season-promotion--cards{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.flexColChild--season-promotion--content-card{
+  text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+  .flexCol--season-promotion--content-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 25px;
+  }
 }
