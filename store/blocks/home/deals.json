@@ -1,13 +1,38 @@
 {
   "flex-layout.row#deals": {
     "children": [
-      "flex-layout.col#deals1",
-      "flex-layout.col#deals2",
-      "flex-layout.col#deals3",
-      "flex-layout.col#deals4"
+      "rich-text#estilos-alimentacao",
+      "slider-layout#deals"
     ],
     "props": {
       "blockClass": "deals"
+    }
+  },
+  "rich-text#estilos-alimentacao": {
+    "props": {
+      "text": "Estilos de \n alimentação",
+      "textAlignment": "left",
+      "blockClass": ["deals", "deals--title"],
+      "width": "15%"
+    }
+  },
+  "slider-layout#deals": {
+    "children": [
+      "flex-layout.col#deals1", 
+      "flex-layout.col#deals2", 
+      "flex-layout.col#deals3", 
+      "flex-layout.col#deals4",
+      "flex-layout.col#deals5",
+      "flex-layout.col#deals6"
+    ],
+    "props": {
+      "showPaginationDots": "never",
+      "showNavigationArrows": "mobileOnly",
+      "itemsPerPage": {
+        "desktop": 6,
+        "phone": 3
+      },
+      "blockClass": "categories-slider"
     }
   },
 
@@ -19,13 +44,12 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "src": "/arquivos/low_carb.png"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "[Low Carb](https://www.mundoverde.com.br/dietas-especiais/low-carb/)",
       "blockClass": "deals"
     }
   },
@@ -37,13 +61,12 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "src": "/arquivos/organic.png"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "[Orgânico](https://www.mundoverde.com.br/organico/)",
       "blockClass": "deals"
     }
   },
@@ -55,13 +78,12 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "src": "/arquivos/vegan.png"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "[Vegan](https://www.mundoverde.com.br/veganos/)",
       "blockClass": "deals"
     }
   },
@@ -73,13 +95,46 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "src": "/arquivos/paleo.png"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "[Paleo](https://www.mundoverde.com.br/paleo/)",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals5": {
+    "children": [
+      "image#deal5",
+      "rich-text#deal5"
+    ]
+  },
+  "image#deal5": {
+    "props": {
+      "src": "/arquivos/gluten_free.png"
+    }
+  },
+  "rich-text#deal5": {
+    "props": {
+      "text": "[Sem Glúten](https://www.mundoverde.com.br/sem-gluten/)",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals6": {
+    "children": [
+      "image#deal6",
+      "rich-text#deal6"
+    ]
+  },
+  "image#deal6": {
+    "props": {
+      "src": "/arquivos/without_lactose.png"
+    }
+  },
+  "rich-text#deal6": {
+    "props": {
+      "text": "[Sem Lactose](https://www.mundoverde.com.br/sem-lactose/)",
       "blockClass": "deals"
     }
   }
