@@ -80,7 +80,6 @@
       "product-separator",
       "product-identifier.product",
       "sku-selector",
-      "product-quantity",
       "product-assembly-options",
       "flex-layout.row#buy-button",
       "availability-subscriber",
