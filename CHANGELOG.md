@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.26.2] - 2020-03-06
+
+## [3.26.1] - 2020-03-06
+
 ## [3.26.0] - 2020-02-18
 ### Changed
 - Refactor the `header` with native IO blocks.

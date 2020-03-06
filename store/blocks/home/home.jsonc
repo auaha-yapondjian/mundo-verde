@@ -4,29 +4,33 @@
       "list-context.image-list#demo",
       "flex-layout.row#deals",
       "flex-layout.row#season-promotion",
-      "shelf#home",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "rich-text#promotion-news--title",
+      "flex-layout.row#promotion-news--top",
+      "flex-layout.row#promotion-news--bottom",
+      "shelf#home"
+      // "rich-text#shelf-title",
+      // "flex-layout.row#shelf",
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      // "newsletter"
     ]
   },
 
   "shelf#home": {
-    "blocks": ["product-summary.shelf"]
-  },
-
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-name",
-      "product-summary-description",
-      "product-summary-image",
-      "product-summary-price",
-      "product-summary-sku-selector",
-      "product-summary-buy-button"
-    ]
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Melhores produtos Vitafor",
+        "gap": "ph5"
+      }
+    }
   },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
