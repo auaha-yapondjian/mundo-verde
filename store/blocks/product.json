@@ -80,7 +80,7 @@
       "product-separator",
       "product-identifier.product",
       "sku-selector",
-      "product-quantity",
+      "vtex.product-list:product-quantity",
       "product-assembly-options",
       "flex-layout.row#buy-button",
       "availability-subscriber",
