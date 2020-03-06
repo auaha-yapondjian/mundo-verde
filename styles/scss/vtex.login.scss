@@ -1,0 +1,29 @@
+.container {
+    :global(.vtex-button) {
+        outline: none;
+
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
+
+.profileIcon {
+    width: 38px;
+    height: 28px;
+}
+
+.label {
+    max-width: 80px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 0;
+}
+
+.profile,
+.label {
+    text-transform: initial;
+
+}
