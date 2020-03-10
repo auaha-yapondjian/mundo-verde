@@ -4,16 +4,17 @@
       "list-context.image-list#demo",
       "flex-layout.row#deals",
       "flex-layout.row#season-promotion",
+      "shelf#home",
       "rich-text#promotion-news--title",
       "flex-layout.row#promotion-news--top",
       "flex-layout.row#promotion-news--bottom",
-      "shelf#home"
+      "flex-layout.row#divisor",
+      "newsletter"
       // "rich-text#shelf-title",
       // "flex-layout.row#shelf",
       // "info-card#home",
       // "rich-text#question",
       // "rich-text#link",
-      // "newsletter"
     ]
   },
 
@@ -114,7 +115,18 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
+  },
+  "flex-layout.row#divisor": {
+    "props": {
+      "blockClass": "page-divisor"
+    }
+  },
+  "newsletter": {
+    "props": {
+        "blockClass": "footer-newsletter",
+        "label": "Cadastre-se e receba ofertas exclusivas, dicas e receitas para uma vida mais saudável e equilibrada :)",
+        "placeholder": "digite seu e-mail",
+        "submit": "eu quero"
+    }
   }
-
-  
 }

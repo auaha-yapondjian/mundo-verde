@@ -192,3 +192,105 @@
 .vtex-minicart-2-x-cartIcon{
   display: none;
 }
+
+// NewsLetter
+.newsletter {
+  background-color: #008651;
+  max-width: 100%;
+
+  .container {
+    max-width: 1250px;
+    padding: 15px;
+  }
+
+  .label {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .form{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 15px 40px;
+
+    .inputGroup--footer-newsletter{
+      flex-direction: column;
+    }
+
+    .buttonContainer {
+      margin-top: 20px;
+
+      :global(.vtex-button) {
+        width: 100%;
+      }
+    }
+
+    :global(.vtex-button) {
+      background-color: #fff;
+      color: #008651;
+      border-color: #fff;
+      font-family: gotham,sans-serif;
+      border-radius: .5rem;
+      font-size: 15px;
+      text-transform: initial;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    :global(.vtex-input-prefix__group){
+      border: 1px solid #fff;
+    }
+
+    :global(.vtex-styleguide-9-x-input){
+      text-align: center;
+    }
+  }
+ 
+}
+
+@media screen and (min-width: 640px) {
+
+  .newsletter {
+    .form{
+        .inputGroup--footer-newsletter{
+          flex-direction: row;
+        }
+
+        .buttonContainer {
+          margin-top: 0px;
+    
+          :global(.vtex-button) {
+            width: auto;
+          }
+        }
+
+        :global(.vtex-input){
+          padding-left: 110px;
+          position: relative;
+        }
+
+        :global(.vtex-input)::before{
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 88px;
+          height: 90px;
+          background-image: url(/arquivos/newsletter.png);
+          background-repeat: no-repeat;
+        }
+
+        :global(.vtex-button) {
+          padding: 0 100px;
+        }
+  
+        .label {
+          font-size: 18px;
+          text-transform: initial;
+          display: block;
+          padding-left: 100px;
+        }
+    }
+  }
+}
