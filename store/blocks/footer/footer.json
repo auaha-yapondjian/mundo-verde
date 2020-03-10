@@ -4,113 +4,118 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-info-geral-desktop",
+      "flex-layout.row#footer-institucional-desktop"
     ]
   },
-  "flex-layout.row#footer-1-desktop": {
+  "footer-layout.mobile": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
+      "flex-layout.row#footer-info-geral-mobile",
+      "flex-layout.row#footer-institucional-mobile"
+    ]
+  },
+  "flex-layout.row#footer-institucional-desktop": {
+    "children": [
+      "flex-layout.col#footer--contact",
+      "flex-layout.col#footer--payments",
       "social-networks"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
+      "blockClass": "footer-one--desktop",
+      "paddingTop": 3,
       "paddingBottom": 3
     }
   },
-
+  "flex-layout.row#footer-info-geral-desktop": {
+    "children": [
+      "logo#desktop",
+      "vtex.menu@2.x:menu#footer-1",
+      "vtex.menu@2.x:menu#footer-2",
+      "vtex.menu@2.x:menu#footer-3",
+      "vtex.menu@2.x:menu#footer-4",
+      "vtex.menu@2.x:menu#footer-5"
+    ]
+  },
+  "flex-layout.row#footer-institucional-mobile": {
+    "children": [
+      "flex-layout.col#footer--contact",
+      "flex-layout.col#footer--payments",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "footer-one--mobile",
+      "paddingTop": 3,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.row#footer-info-geral-mobile": {
+    "children": [
+      "logo#desktop",
+      "vtex.menu@2.x:menu#footer-1",
+      "vtex.menu@2.x:menu#footer-2",
+      "vtex.menu@2.x:menu#footer-3",
+      "vtex.menu@2.x:menu#footer-4",
+      "vtex.menu@2.x:menu#footer-5"
+    ]
+  },
+  "flex-layout.col#footer--contact": {
+    "children": ["rich-text#footer-contact-title", "rich-text#footer-contact-text"],
+    "props": {
+      "blockClass": "footer-contact"
+    }
+  },
+  "flex-layout.col#footer--payments": {
+    "children": ["rich-text#footer-payment",  "accepted-payment-methods"],
+    "props": {
+      "blockClass": "footer-payments"
+    }
+  },
+  "rich-text#footer-contact-text": {
+    "props": {
+      "text": "11 2388 0474 contato@mundoverde.net.br",
+      "blockClass": "footer-contact-text"
+    }
+  },
+  "rich-text#footer-contact-title": {
+    "props": {
+      "text": "Atendimento",
+      "blockClass": "footer--title"
+    }
+  },
+  "rich-text#footer-payment": {
+    "props": {
+      "text": "Formas de Pagamento",
+      "blockClass": "footer--title"
+    }
+  },
   "social-networks": {
     "props": {
+      "title": "Redes Sociais",
       "socialNetworks": [
         {
           "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "url": "https://www.facebook.com/euamoomundo"
         },
         {
           "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
+          "url": "https://twitter.com/mundoverde"
         },
         {
           "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "url": "https://www.youtube.com/videomundoverde"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/mundoverde_brasil/"
         }
-      ]
-    }
-  },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
-    "props": {
-      "blockClass": "payment-methods"
+      ],
+      "blockClass": "footer-social-networks"
     }
   },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
-
-  "footer-layout.mobile": {
-    "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
-    ]
-  },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
-  },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "paymentMethods": ["mastercard", "visa", "diners club"]
     }
   }
+  
 }

@@ -389,5 +389,223 @@
         "text": "Cropped"
       }
     }
+  },
+  "vtex.menu@2.x:menu#footer-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#nutricionistas",
+      "menu-item#franquia",
+      "menu-item#lancheira-saudavel"
+    ]
+  },
+  "menu-item#nutricionistas": {
+    "props": {
+      "id": "menu-item-nutricionistas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/ola-nutri.html",
+        "noFollow": false,
+        "tagTitle": "Falar com Nutricionistas",
+        "text": "Falar com Nutricionistas"
+      }
+    }
+  },
+  "menu-item#franquia": {
+    "props": {
+      "id": "menu-item-franquia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/seja-um-franqueado.html",
+        "noFollow": false,
+        "tagTitle": "Franquia",
+        "text": "Franquia"
+      }
+    }
+  },
+  "menu-item#lancheira-saudavel": {
+    "props": {
+      "id": "menu-item-lancheira-saudavel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/lancheira-saudavel-disney/",
+        "noFollow": false,
+        "tagTitle": "Lancheira Saudável Disney",
+        "text": "Lancheira Saudável Disney"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#politica-privacidade",
+      "menu-item#termos-e-condicoes"
+    ]
+  },
+  "menu-item#politica-privacidade": {
+    "props": {
+      "id": "menu-item-politica-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/politica-de-privacidade/",
+        "noFollow": false,
+        "tagTitle": "Política e privacidade",
+        "text": "Política e privacidade"
+      }
+    }
+  },
+  "menu-item#termos-e-condicoes": {
+    "props": {
+      "id": "menu-item-termos-e-condicoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/termos-e-condicoes/",
+        "noFollow": false,
+        "tagTitle": "Termos e condições",
+        "text": "Termos e condições"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#imprensa",
+      "menu-item#faq"
+    ]
+  },
+  "menu-item#imprensa": {
+    "props": {
+      "id": "menu-item-imprensa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/assessoria-de-imprensa.html",
+        "noFollow": false,
+        "tagTitle": "Imprensa",
+        "text": "Imprensa"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/duvidas-frequentes/",
+        "noFollow": false,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-4": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#politica-de-frete",
+      "menu-item#missao-visao"
+    ]
+  },
+  "menu-item#politica-de-frete": {
+    "props": {
+      "id": "menu-item-politica-de-frete",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/politica-de-frete/",
+        "noFollow": false,
+        "tagTitle": "Política de Frete",
+        "text": "Política de Frete"
+      }
+    }
+  },
+  "menu-item#missao-visao": {
+    "props": {
+      "id": "menu-item-missao-visao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/missao-e-visao.html",
+        "noFollow": false,
+        "tagTitle": "Missão e Visão",
+        "text": "Missão e Visão"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-5": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#elixir",
+      "menu-item#mundo-verde-selecao"
+    ]
+  },
+  "menu-item#elixir": {
+    "props": {
+      "id": "menu-item-elixir",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/elixir.html",
+        "noFollow": false,
+        "tagTitle": "Elixir",
+        "text": "Elixir"
+      }
+    }
+  },
+  "menu-item#mundo-verde-selecao": {
+    "props": {
+      "id": "menu-item-mundo-verde-selecao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/mundo-verde-selecao.html",
+        "noFollow": false,
+        "tagTitle": "Mundo Verde Seleção",
+        "text": "Mundo Verde Seleção"
+      }
+    }
   }
+
 }
