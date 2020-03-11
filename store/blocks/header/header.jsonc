@@ -143,12 +143,7 @@
       "width": "100"
     }
   },
-  "minicart.v2": {
-    "props": {
-      "variation": "popup",
-      "openOnHover": true
-    }
-  },
+  
   "login": {
     "props": {
       "showIconProfile": true,
