@@ -1,7 +1,9 @@
 .footerLayout {
+  margin: 15px 0;
+
   :global(.vtex-store-components-3-x-container){
     max-width: 1250px;
-    padding: 15px;
+    padding: 0 15px;
 
     :global(.vtex-rich-text-0-x-paragraph--footer--title),
     .socialNetworksTitle{
@@ -36,9 +38,20 @@
       }
     }
 
+    :global(.vtex-menu-2-x-styledLink) {
+      font-size: 14px;
+      font-weight: normal;
+      color: #008651;
+    }
+
+    
+
+  }
+
+  :global(.vtex-store-components-3-x-logoLink){
+    text-align: center;
   }
 }
-
 
 :global(.vtex-flex-layout-0-x-flexRow--footer-one--mobile){
   :global(.vtex-flex-layout-0-x-flexCol){
@@ -54,7 +67,11 @@
   .socialNetworksTitle{
     text-align: center;
   }
+
+  
 }
+
+
 
 :global(.vtex-flex-layout-0-x-flexRow--footer-one--desktop){
 
