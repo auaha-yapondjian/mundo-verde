@@ -2,9 +2,8 @@
   "minicart.v2": {
     "children": ["minicart-base-content"],
     "props": {
-      "variation": "popup"
-      // ,
-      // "openOnHover": true
+      "variation": "popup",
+      "openOnHover": true
     }
   },
   "minicart-base-content": {
@@ -29,7 +28,9 @@
   "minicart-summary": {
     "blocks": ["checkout-summary.compact#minicart"]
   },
-
+  "minicart-summary#total-mobile": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
   "checkout-summary.compact#minicart": {
     "children": ["summary-totalizers#minicart"],
     "props": {
@@ -70,7 +71,10 @@
     }
   },
   "flex-layout.col#product-description": {
-    "children": ["vtex.product-list:product-name", "price"]
+    "children": ["vtex.product-list:product-name", "price"],
+    "props": {
+      "width": "grow"
+    }
   },
   "flex-layout.col#product-option": {
     "children": ["remove-button", "quantity-selector"],
