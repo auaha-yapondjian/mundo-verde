@@ -1,8 +1,7 @@
 {
     "store.custom#fale-com-nutricionistas" : {
         "blocks": [
-            "flex-layout.row#row-main",
-            "flex-layout.row#form-row"
+            "flex-layout.row#row-main"
         ]
     },
 
@@ -76,7 +75,7 @@
       },
       "flex-layout.row#form-row": {
         "children": [
-            "flex-layout.col#form-col"
+            
         ],
         "props": {
             
@@ -84,15 +83,12 @@
       },
       "flex-layout.col#form-col": {
         "children": [
-            "form-input-text#nome"
         ],
         "props": {
 
         }
-      },
-      "form-input-text#nome": {
-
       }
+
 
 
 

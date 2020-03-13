@@ -9,6 +9,12 @@
 
   "store.custom#franquia": {
     "path": "/franquia"
+  },
+  "store.custom#politica-de-privacidade": {
+    "path": "/politica-de-privacidade"
+  },
+  "store.custom#termos-e-condicoes": {
+    "path": "/termos-e-condicoes"
   }
 }
 

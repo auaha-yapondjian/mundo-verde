@@ -464,7 +464,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "https://www.mundoverde.com.br/politica-de-privacidade/",
+        "href": "/politica-de-privacidade",
         "noFollow": false,
         "tagTitle": "Política e privacidade",
         "text": "Política e privacidade"
@@ -479,7 +479,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "https://www.mundoverde.com.br/termos-e-condicoes/",
+        "href": "/termos-e-condicoes",
         "noFollow": false,
         "tagTitle": "Termos e condições",
         "text": "Termos e condições"
