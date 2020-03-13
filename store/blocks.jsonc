@@ -20,9 +20,8 @@
   },
 
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": ["login", "login-content#default"]
   },
-
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,

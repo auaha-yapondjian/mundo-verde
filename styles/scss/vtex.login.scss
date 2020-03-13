@@ -8,6 +8,12 @@
     }
 }
 
+.box {
+    right: initial !important;
+    left: 10px !important;
+    min-width: auto !important;
+}
+
 
 .profileIcon {
     width: 38px;
@@ -28,8 +34,83 @@
 
 }
 
+.arrowUp {
+    left: 10px;
+}
+
 .button{
+    padding-left: 0;
+    text-align: left;
+    position: relative;
+    width: 100%;
+
+    &:hover{
+        &.button::before{
+            background-position: 0 -24px;
+        }
+    }
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        width: 24px;
+        height: 24px;
+        background-image: url(/arquivos//customerIcons-sebfa9bea5f.png);
+    }
+
     :global(.vtex-button__label){
         text-transform: initial;
     }
+}
+
+.accountOptions{
+
+    :global(.mv4){
+        margin: 0;
+    }
+
+    :global(.t-action--small){
+        text-transform: initial;
+    }
+
+    :global(.vtex-button){
+        width: 100%;
+
+        &:hover{
+            &:global(.vtex-button)::before{
+                background-position: 0 -312px;
+            }
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url(/arquivos//customerIcons-sebfa9bea5f.png);
+            background-position: 0 -288px;
+        }
+
+        &:global(.hover-bg-action-secondary):focus, 
+        &:global(.hover-bg-action-secondary):hover {
+            background-color: initial;
+        } 
+
+    }
+
+    :global(.vtex-button__label){
+        justify-content: flex-start;
+        padding: 0;
+
+        
+    }
+}
+
+.contentForm {
+    min-width: 200px;
 }
