@@ -27,3 +27,9 @@
     text-transform: initial;
 
 }
+
+.button{
+    :global(.vtex-button__label){
+        text-transform: initial;
+    }
+}
