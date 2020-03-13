@@ -3,6 +3,7 @@
   padding: 0 0.5rem;
 }
 
+
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -145,3 +146,16 @@
   background-color: #f2f2f2;
   height: 80px;
 }
+//
+.flexRowContent--row-main{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.flexCol--text-col{
+  max-width: 325px;
+}
+.flexRow--row-main{
+  background-image: url(/arquivos/bg-nutri.jpg);
+}
+//
