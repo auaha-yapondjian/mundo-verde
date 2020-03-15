@@ -48,14 +48,16 @@
     "rich-text#titulo1": {
         "children": [],
         "props": {
-            "text": "Política de privacidade da mundo verde",
+            "text": "Termos e condições | mundo verde",
             "blockClass": "title-policy"
         }
     },
     "rich-text#content1": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade.\n \n A Mundo Verde leva muito a sério a proteção dos dados pessoais dos usuários do Site. Por esta razão, não haverá coleta, processamento, armazenamento ou utilização dos dados pessoais dos usuários de forma diversa ou para outros fins que não aqueles explicitados mais adiante nesta Política de Privacidade. A Mundo Verde toma todas as medidas técnicas e organizacionais necessárias para garantir a proteção dos dados pessoais dos usuários do Site"
+            "text":
+            "A presente Política de Trocas e Devoluções da Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - é aplicável a todas as compras feitas pelo consumidor final da Mundo Verde (o “Cliente”), assim definido nos termos do Art. 2º do Código de Defesa do Consumidor (“CDC”), através do site www.Mundo Verde.com.br (o 'Site'). \n \n  A presente Política de Trocas e Devoluções não se aplica a compras feitas por outras empresas com o objetivo de revender os produtos da Mundo Verde, dado que tais empresas não são qualificadas como consumidor final para fins do Art. 2º do CDC."
+
         }
     },
 
@@ -79,14 +81,16 @@
     "rich-text#titulo2": {
         "children": [],
         "props": {
-            "text": "O que são dados pessoais?",
+            "text": "Devolução por arrependimento",
             "blockClass": "title-policy"
         }
     },
     "rich-text#content2": {
         "children": [],
         "props": {
-            "text": "São considerados dados pessoais as informações pertencentes e que possam ser diretamente relacionadas à identificação pessoal do usuário, tais como seu nome e endereço. Por outro lado, as informações que não possam ser diretamente relacionadas à identificação do usuário não serão consideradas como dados pessoais."
+            "text": 
+            
+            "O Cliente poderá solicitar a devolução do produto adquirido no prazo de até 07 (sete) dias corridos contados do recebimento do respectivo produto e ser reembolsado de todos os valores pagos, nos termos do Art. 49 do CDC. \n \n Neste caso, o Cliente deverá entrar em contato com o Serviço de Atendimento ao Cliente da Mundo Verde (“SAC”), no telefone ou e-mail indicado abaixo e, seguindo as instruções que lhe forem passadas, devolver o produto à Mundo Verde em perfeito estado de conservação, lacrado e em sua embalagem original (incluindo todos seus acessórios, manuais etc.). \n \n Se o Cliente exercer seu direito de devolução por arrependimento em estrita conformidade com os termos previstos neste item 1, todos os valores por ele pagos serão ressarcidos pela Mundo Verde como descrito abaixo no item 4 (Forma de restituição dos valores pagos). \n \n Caso sejam constatados danos no produto decorrentes de sua má manipulação pelo Cliente, a Mundo Verde enviará o produto de volta ao Cliente e o correspondente reembolso dos valores pagos não será efetuado."
         }
     },
 
@@ -110,14 +114,14 @@
     "rich-text#titulo3": {
         "children": [],
         "props": {
-            "text": "O que a mundo verde fará com os seus dados pessoais?",
+            "text": "Troca de produto defeituoso",
             "blockClass": "title-policy"
         }
     },
     "rich-text#content3": {
         "children": [],
         "props": {
-            "text": "O usuário poderá visitar o Site e obter informações sem ter de divulgar seus dados pessoais. Quando o usuário apenas visita o Site, ele permanece anônimo e suas informações de login transmitidas através de seu navegador de Internet para abrir cada página, tais como a data da consulta, seu tempo de permanência on-line ou o nome de seu provedor de serviços de Internet, serão utilizadas pela Mundo Verde, na forma descrita nesta Política de Privacidade, sem identificar o usuário, a menos que ele tenha se conectado usando seu nome de usuário e senha. \n O usuário poderá voluntariamente fornecer seus dados pessoais quando, por exemplo, fizer um pedido de compra, inscrever-se para receber uma newsletter ou quando executar operações semelhantes. Essas informações pessoais poderão incluir: \n\n Nome completo \n\n Endereço \n\n E-mail \n\n Número de telefone \n\n Número de fax \n\n Data de nascimento \n\n Número de cartão de crédito \n\n As informações acima poderão ser utilizadas pela Mundo Verde para redigir o contrato de compra com os usuários, fornecer serviços desejados, atender às solicitações de seus clientes e/ou entrar em contato com o usuário por meio do Serviço de Atendimento ao Cliente para, por exemplo, responder às suas perguntas. \n\n Caso a Mundo Verde necessite terceirizar a prestação de alguns de seus serviços (para uma empresa de transporte ou um prestador de serviços financeiros, por exemplo), o terceiro contratado não receberá da Mundo Verde nada além das informações indispensáveis à prestação de seu respectivo serviço e deverá, de sua parte, velar pela proteção dos dados pessoais dos usuários. \n\n A Mundo Verde necessitará do endereço de e-mail dos usuários do Site para poder confirmar seus pedidos de compras ou para comunicar-se com eles (para, por exemplo, enviar a confirmação de seu pedido ou um boletim informativo). \n\n Por ocasião do primeiro registro do usuário no Site, seja para fazer um pedido de compra ou para solicitar quaisquer outros serviços, os dados pessoais relativos à abertura de sua conta no Site serão armazenados para que o usuário, no futuro, possa fazer pedidos de compra de forma mais rápida e confortável. \n\n Quando o usuário subscrever uma newsletter, a Mundo Verde pedirá que ele forneça alguns de seus dados pessoais, especialmente seu endereço de e-mail. Como assinante, o usuário receberá informações gerais sobre os produtos da Mundo Verde e sobre ofertas comerciais vantajosas. Em alguns casos, a Mundo Verde utilizará o endereço de e-mail do usuário para fins promocionais ou para realizar pesquisas de mercado. O usuário poderá, a qualquer momento, simplesmente cancelar a assinatura da newsletter, assim negando o consentimento para que seus dados sejam utilizados no futuro para marketing, publicidade e pesquisa. Para tanto, basta o usuário contatar a Mundo Verde no telefone ou e-mail indicados abaixo.   "
+            "text": "Caso o Cliente constate qualquer vício ou defeito de fabricação em um produto adquirido, deverá ele entrar em contato com o SAC, no telefone ou e-mail indicados abaixo, no prazo de até 30 (trinta) dias* contados do recebimento do respectivo produto (nos termos do Art. 26, II do CDC) e, seguindo as instruções que lhe forem passadas, devolver o produto à Mundo Verde em perfeito estado de conservação e em sua embalagem original (incluindo acessórios, manuais etc.). \n \n  Os produtos devolvidos serão analisados pela Mundo Verde e, caso seja confirmado o vício ou defeito de fabricação, a Mundo Verde fará a reparação, a troca do produto ou a troca das partes defeituosas do produto no prazo de até 30 (trinta) dias corridos contados da solicitação feita pelo cliente. A respectiva troca não será efetuada caso sejam constatados quaisquer indícios de má manipulação ou mau uso do produto. \n \n  Caso o problema não seja resolvido pela Mundo Verde no prazo mencionado acima, o Cliente poderá optar por: (i) trocar o produto por outro produto igual e novo; (ii) ser reembolsado de todos os valores pagos; ou (iii) solicitar o abatimento proporcional dos valores pagos. \n \n Se o Cliente optar pela troca do produto por outro produto igual e novo e este não estiver disponível no momento da solicitação, o Cliente poderá optar por: (i) ser reembolsado de todos os valores pagos ou (ii) trocar o produto por outro similar mediante restituição ou pagamento da diferença do valor, se for o caso. \n \n Caso não sejam constatados vícios ou defeitos de fabricação no produto ou caso sejam constatados que os defeitos no produto decorrem de má manipulação ou mau uso pelo Cliente, a Mundo Verde enviará o produto de volta ao Cliente sem o correspondente reembolso dos valores pagos."
             
         }
 
@@ -143,14 +147,15 @@
     "rich-text#titulo4": {
         "children": [],
         "props": {
-            "text": "Quais são os destinatários dos dados coletados?",
+            "text": "Responsabilidade pelo pagamento do frete",
             "blockClass": "title-policy"
         }
     },
     "rich-text#content4": {
         "children": [],
         "props": {
-            "text": "Os dados pessoais dos usuários serão utilizados pela Mundo Verde, suas empresas afiliadas, seus parceiros e revendedores, observadas as restrições descritas na presente Política de Privacidade.            "
+            "text": 
+            "**FRETE GRÁTIS**: O frete será pago pela Mundo Verde quando o atender as condições especificadas nessa página \n \n Em caso de desistência da compra feita dentro do prazo de 30 (trinta) dias corridos, o valor do frete de envio do produto do Cliente para a Mundo Verde será restituído* inteiramente pela Mundo Verde.Para isso, o Cliente deve entrar em contato com a Mundo Verde por telefone ou via e-mail. Nós enviaremos o protocolo dos Correios que deverá ser apresentado no ato da devolução do produto. \n \n Lembrando que para o envio é necessária uma embalagem. Portanto, recomendamos que a embalagem original do produto em questão seja guardada de modo que o Cliente não tenha que incorrer em um custo adicional no ato da devolução nos Correios. \n \n *Em compras realizadas com frete grátis, o valor do frete de devolução deverá ser pago pelo próprio cliente."
         }
     },
 
@@ -174,14 +179,14 @@
     "rich-text#titulo5": {
         "children": [],
         "props": {
-            "text": "O que são cookies e como são utilizados pela mundo verde?",
+            "text": "forma de restituição dos valores pagos",
             "blockClass": "title-policy"
         }
     },
     "rich-text#content5": {
         "children": [],
         "props": {
-            "text": "Cookies são pequenos arquivos de texto que são armazenados no computador do usuário cada vez que ele abrir uma página na internet. \n \n A Mundo Verde utiliza os chamados “cookies de sessão”, que são imediatamente apagados quando o usuário sair do seu navegador. Os cookies de sessão permitem, por exemplo, simplificar o acesso a informações relativas ao carrinho de compras dos usuários e ter uma visão em tempo real do número de itens em seu carrinho de compras e seu valor atualizado \n \n Além disso, a Mundo Verde também utiliza os chamados 'cookies persistentes', que permanecem presentes mesmo após o encerramento da sessão. Os cookies persistentes serão utilizados, em especial, para tornar o acesso às ofertas do Site mais simples, eficaz e segura. Com estes arquivos, informações específicas relacionadas aos interesses de cada usuário poderiam, por exemplo, ser exibidas nas páginas visitadas, tendo como finalidade unicamente a adaptação das ofertas da Mundo Verde aos desejos de cada usuário da melhor forma e tornar a experiência de navegação no Site o mais agradável possível. \n \n O usuário poderá autorizar ou recusar o uso de cookies configurando o seu navegador de forma adequada, devendo reportar-se, para tanto, às regras de utilização de seu navegador. \n \n  De um modo geral, se desejar, o usuário poderá recusar todos os cookies. No entanto, se assim proceder, a utilização do Site pelo usuário poderá ser limitada ou inviabilizada."
+            "text": "Pagamentos com Cartão de Crédito: a Mundo Verde notificará a administradora do cartão utilizado pelo cliente e o estorno ocorrerá em até 02 (duas) faturas subsequentes.Este procedimento é de responsabilidade da administradora do cartão utilizado. \n \n Pagamentos com Boleto Bancário ou Débito Online: o reembolso será feito na conta corrente indicada pelo Cliente no prazo de até 10 dias úteis contados do recebimento pela Mundo Verde do produto. É necessário que o CPF do titular seja o mesmo que consta no pedido (CPF do cliente). Não será concedido crédito a terceiros."
         }
 
     },
@@ -202,14 +207,16 @@
     "rich-text#titulo6": {
         "children": [],
         "props": {
-            "text": "O que são cookies e como são utilizados pela mundo verde?",
+            "text": "Formas de envio",
             "blockClass": "title-policy"
         }
     },
     "rich-text#content6": {
         "children": [],
         "props": {
-            "text": "De acordo com o Art. 43, §2º e § 3º da Lei de Proteção ao Consumidor, o usuário poderá a qualquer momento consultar bem como alterar seus dados pessoais armazenados nos registros da Mundo Verde.             "
+            "text": 
+            "Os pedidos realizados na Mundo Verde são enviados via Correios e/ou transportadoras para todas as regiões do Brasil. Contudo, NÃO REALIZAMOS ENVIOS PARA CAIXA POSTAL.            "
+            
         }
     }
 
