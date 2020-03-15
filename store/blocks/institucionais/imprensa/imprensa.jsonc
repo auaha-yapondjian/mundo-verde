@@ -1,0 +1,52 @@
+{
+    "store.custom#imprensa" : {
+        "blocks": [
+            "flex-layout.row#rowmain"
+        ]
+    },
+
+
+
+
+    "flex-layout.row#rowmain": {
+        "children": [
+            "flex-layout.col#colmain"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+
+    "flex-layout.col#colmain": {
+        "children": [
+            "rich-text#title",
+            "rich-text#assessoria",
+            "rich-text#descricao"
+        ],
+        "props": {
+
+        }
+    },
+    "rich-text#title": {
+        "children": [],
+        "props": {
+            "text": "##### Quem somos",
+            "blockClass": "titulo-imprensa"
+        }
+    },
+    "rich-text#assessoria": {
+        "children":[],
+        "props": {
+            "text": "Assessoria de imprensa",
+            "blockClass": "assessoria-btn"
+        }
+    },
+    "rich-text#descricao": {
+        "children": [],
+        "props": {
+            "text": "O Mundo Verde está à disposição de toda a imprensa para colaborar com informações e bons conteúdos sobre temas como alimentação saudável, negócios e franquias. \n \n Caso seja jornalista e queira a participação do Mundo Verde em sua pauta, envie sua solicitação para a Ink Comunicação. \n \n **Ink Comunicação - Fone: (11) 3817-2131**"
+        }
+    }
+
+
+}
