@@ -3,7 +3,7 @@
     "children": ["minicart-base-content"],
     "props": {
       "variation": "popup",
-      "openOnHover": true
+      "openOnHover": false
     }
   },
   "minicart-base-content": {
@@ -54,7 +54,8 @@
   },
   "rich-text#empty-state": {
     "props": {
-      "text": "Carrinho vazio!"
+      "text": "Carrinho vazio!",
+      "blockClass": "minicart-empty-card"
     }
   },
   "product-list-content-mobile": {
