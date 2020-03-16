@@ -54,8 +54,7 @@
   },
   "rich-text#empty-state": {
     "props": {
-      "text": "Carrinho vazio!",
-      "blockClass": "minicart-empty-card"
+      "text": "Carrinho vazio!"
     }
   },
   "product-list-content-mobile": {
