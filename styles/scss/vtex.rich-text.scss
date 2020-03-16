@@ -164,4 +164,40 @@
   color: #f5a057;
   font-size: 1.75em;
 }
+.headingLevel5--titulo-imprensa{
+  color: #99cd44;
+  font-family: 'comfortaabold';
+  margin: 15px 0;
+  background: #fff;
+  opacity: 0.7;
+  padding: 5px 0;
+}
+.container--assessoria-btn{
+  :first-child{
+    background: #27ae61;
+    border-radius: 15px;
+    padding: 0px 40px;
+    color: white;
+  }
+  background: none;
+  padding: 0;
+
+}
+.paragraph--assessoria-btn{
+  font-family: gotham,sans-serif;
+  font-size: 18px;
+  margin: 12px 0;
+
+}
+.paragraph--email{
+  margin-left: 5px;
+}
+.link--email{
+    color: #008651;
+    text-decoration: none;
+
+}
+.link--email:hover{
+  color: #3d766c;
+}
 //

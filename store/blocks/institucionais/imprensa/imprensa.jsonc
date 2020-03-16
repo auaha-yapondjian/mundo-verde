@@ -2,6 +2,7 @@
     "store.custom#imprensa" : {
         "blocks": [
             "flex-layout.row#rowmain"
+
         ]
     },
 
@@ -13,7 +14,7 @@
             "flex-layout.col#colmain"
         ],
         "props": {
-            "blockClass": "container"
+            "blockClass": ["container", "container-imprensa"]
         }
     },
 
@@ -21,7 +22,9 @@
         "children": [
             "rich-text#title",
             "rich-text#assessoria",
-            "rich-text#descricao"
+            "rich-text#descricao",
+            "flex-layout.row#container-email-1",
+            "flex-layout.row#container-email-2"
         ],
         "props": {
 
@@ -45,6 +48,61 @@
         "children": [],
         "props": {
             "text": "O Mundo Verde está à disposição de toda a imprensa para colaborar com informações e bons conteúdos sobre temas como alimentação saudável, negócios e franquias. \n \n Caso seja jornalista e queira a participação do Mundo Verde em sua pauta, envie sua solicitação para a Ink Comunicação. \n \n **Ink Comunicação - Fone: (11) 3817-2131**"
+        }
+    },
+    "flex-layout.row#container-email-1": {
+        "children": [
+            "rich-text#emailown1",
+            "rich-text#email1"
+
+        ],
+        "props":{
+            "blockClass": "container-email"
+        }
+    },
+    "flex-layout.row#container-email-2": {
+        "children": [
+            "rich-text#emailown2",
+            "rich-text#email2"
+
+        ],
+        "props":{
+            "blockClass": "container-email"
+        }
+    },
+    "rich-text#emailown1": {
+        "children":[],
+        "props": {
+            "text": "Michelle Alessio - ",
+            "blockClass": "emailOwn"
+        }
+
+    },
+    "rich-text#emailown2": {
+        "children":[],
+        "props": {
+            "text": "Camilla Medeiros - ",
+            "blockClass": "emailOwn"
+        }
+
+    },
+
+    "rich-text#email1": {
+        "children": [
+
+        ],
+        "props": {
+            "text": "michelle.alessio@inkcomunicacao.com.br",
+            "blockClass": "email"
+        }
+    },
+    "rich-text#email2": {
+        "children": [
+
+        ],
+        "props": {
+            "blockClass": "email",
+            "text": "camilla.medeiros@inkcomunicacao.com.br"
         }
     }
 

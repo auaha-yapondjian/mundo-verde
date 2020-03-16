@@ -157,10 +157,24 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.flexRow--container-imprensa{
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1000px;
+}
 .flexCol--text-col{
   max-width: 325px;
 }
 .flexRow--row-main{
   background-image: url(/arquivos/bg-nutri.jpg);
+}
+.flexRowContent--container-email{
+  :first-child{
+    width: auto !important;
+  }
+  :last-child{
+    width: auto !important;
+  }
+  width: 100%;
 }
 //
