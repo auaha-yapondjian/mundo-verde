@@ -21,6 +21,9 @@
   },
   "store.custom#missao-e-visao": {
     "path": "/missao-e-visao"
+  },
+  "store.custom#quem-somos": {
+    "path": "/quem-somos"
   }
 }
 

@@ -1,0 +1,113 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": [
+            "image#bg-mission",
+
+            "flex-layout.row#rowmain"
+        ]
+    },
+    "flex-layout.row#rowmain": {
+        "children": [
+            "flex-layout.col#colmain"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },  
+    "flex-layout.col#colmain": {
+        "children": [
+
+            "rich-text#historia-btn",
+            "flex-layout.col#historia-col",
+            "rich-text#sustentabilidade-btn",
+            "flex-layout.col#sustentabilidade-col",
+            "rich-text#numeros-btn",
+            "flex-layout.col#numeros-col"
+            
+        ]
+    },
+    "image#bg-mission": {
+        "children": [],
+        "props": {
+            "src": "/arquivos/mundo-verde-banner-plantas.jpg"
+        }
+    },
+
+
+    "rich-text#historia-btn": {
+        "props": {
+            "blockClass": "historia-btn",
+            "text": "História"
+        }
+    },
+    "rich-text#sustentabilidade-btn": {
+        "props": {
+            "blockClass": "historia-btn",
+            "text": "Sustentabilidade como propósito"
+        }
+    },
+    "rich-text#numeros-btn": {
+        "props": {
+            "blockClass": "historia-btn",
+            "text": "Mundo verde em números"
+        }
+    },
+
+
+
+
+    "flex-layout.col#historia-col": {
+        "children": [
+            "rich-text#historiatitle",
+            "rich-text#historia-content"
+
+        ]
+    },
+    "rich-text#historiatitle": {
+        "children": [],
+        "props": {
+            "text": "**A maior rede de lojas de produtos naturais, orgânicos e de bem-estar da América Latina,tem como propósito a vida saudável e a sustentabilidade.**"
+        }
+    },
+    "rich-text#historia-content": {
+        "props": {
+            "text":
+                "Com 30 anos, o Mundo Verde se consolidou como pioneiro e líder na proposta de desenvolver e incentivar o conceito de vida saudável, através da alimentação, tornando-se a maior franquia do segmento na América Latina, segundo a Associação Brasileira de Franchising (ABF). \n \n Hoje o Mundo Verde conta com mais de 400 lojas em todo o Brasil e um variado mix de produtos, que inclui desde alimentos (diet, light, integrais, orgânicos, funcionais sem glúten e sem lactose), complementos alimentares e suplementos para atletas. Atualmente as lojas recebem diariamente mais de 120 mil pessoas em busca de pelo menos um dos cerca de 10 mil itens oferecidos pelos mais de 1.200 fornecedores. \n \n segredo de sucesso do Mundo Verde não está simplesmente na grande diversidade de produtos, mas em oferecer um conceito completo em alimentação e vida saudável. Por isso os franqueados e equipes de lojas são treinados para dar informações nutricionais e deixar os consumidores à vontade, em um ambiente que estimula a qualidade de vida. Diversas lojas também oferecem palestras sobre alimentação e cuidados com a saúde e a qualidade de vida. \n \n principal diferencial da marca é aliar variedade, qualidade e informação a excelência no atendimento e do relacionamento com seus clientes. O resultado positivo vem se refletindo na presença em novos mercados e na conquista de diversos prêmios nacionais, com destaque para o Selo de Excelência em Franchising 2017, concedido pela Associação Brasileira de Franquias (ABF). \n \n Os clientes do Mundo Verde podem contar ainda com o Olá Nutri, um serviço gratuito para esclarecimentos de dúvidas, dicas e orientações por meio do telefone 0800-022 25 28 de segunda a sexta-feira, das 10 às 17 horas, ou no portal www.mundoverde.com.br/ola-nutri/. A página da empresa recebe mais de 250 mil acessos ao mês, que geram mais de um milhão de cliques. Clientes cadastrados no site recebem quinzenalmente uma newsletter eletrônica – mais de 120.000 pessoas cadastradas -, que traz informações sobre alimentação e hábitos para uma vida mais saudável. \n \n A empresa – que inovou ao trazer para o Brasil uma tendência que já era sucesso no exterior – continua apostando na inovação para se renovar a cada dia, ao longo desses 30 anos. Foi uma das primeiras redes de franquia a utilizar as redes sociais como estratégia de marketing. Hoje, está presente no Facebook, Instagram, YouTube e Twitter, além de ter criado o Blog Mundo Verde, com dicas de alimentação."            
+        }
+    },
+
+
+
+
+    "flex-layout.col#sustentabilidade-col": {
+        "children": [
+            "rich-text#sustentabilidade-content"
+
+        ]
+    },
+
+    "rich-text#sustentabilidade-content": {
+        "props": {
+            "text":
+            "A empresa agrega em sua essência valores e princípios como o comércio justo, o consumo consciente, a ética nos negócios e a responsabilidade social, cultural e ambiental. \n \n “Nosso conceito e filosofia formam uma união perfeita com os anseios dos clientes, que entram em nossas lojas essencialmente para compartilhar ideais. O Mundo Verde virou um estilo de vida, de coisas positivas, saudáveis e boas para o planeta. Para nós, antes de ser um grande negócio, é um modo de olhar a vida e o mundo”, destaca Isabel Maria Antunes Joffe, fundadora da rede."
+        }
+    },
+
+
+    "flex-layout.col#numeros-col": {
+        "children": [
+            "rich-text#numeros-content"
+
+        ]
+    },
+
+    "rich-text#numeros-content": {
+        "props": {
+            "text":
+            "Mais de 400 lojas no Brasil, com presença em 25 estados e no Distrito Federal; \n 51 novas lojas abertas em 2016; \n 75 novas lojas abertas em 2015 no Brasil; \n 62 novas lojas abertas em 2014 no Brasil; \n Lançamento do site em 2019 com atendimento para todo o Brasil; \n Mais de mil funcionários (média de sete em cada loja); \n Mais de 120 mil clientes por dia; \n Mais de 30 mil produtos cadastrados (média de 5 mil por loja); \n De 3 a 6 mil itens oferecidos em 19 segmentos em cada loja; \n Mais de 1.200 fornecedores cadastrados (75% micro e pequenas empresas)."
+        }
+    }
+
+
+
+}
