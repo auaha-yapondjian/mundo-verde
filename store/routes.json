@@ -18,6 +18,9 @@
   },
   "store.custom#imprensa": {
     "path": "/imprensa"
+  },
+  "store.custom#missao-e-visao": {
+    "path": "/missao-e-visao"
   }
 }
 

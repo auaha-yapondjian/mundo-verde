@@ -1,0 +1,147 @@
+{
+    "store.custom#missao-e-visao": {
+        "blocks": [
+            "image#bg-mission",
+
+            "flex-layout.row#rowmain"
+        ]
+    },
+    "flex-layout.row#rowmain": {
+        "children": [
+            "flex-layout.col#colmain"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },  
+    "flex-layout.col#colmain": {
+        "children": [
+            "rich-text#title",
+            "flex-layout.col#purposerow",
+            "rich-text#missao-e-valores-btn",
+            "flex-layout.col#missao-e-visao-col",
+            "rich-text#declaracao-valores-btn",
+            "flex-layout.col#declaracaocol"
+            
+        ]
+    },
+    "image#bg-mission": {
+        "children": [],
+        "props": {
+            "src": "/arquivos/mundo-verde-banner-plantas.jpg"
+        }
+    },
+    "rich-text#title": {
+        "children": [],
+        "props": {
+            "text": "##### Quem somos",
+            "blockClass": "titulo-imprensa"
+        }
+    },
+    "flex-layout.col#purposerow": {
+        "children": [
+            "rich-text#purpose",
+            "rich-text#purpose-content"
+        ]
+    },
+    "rich-text#purpose": {
+        "children": [],
+        "props": {
+            "text": "**Propósito do Mundo Verde**",
+            "blockClass": "title-purpose"
+        }
+    },
+    "rich-text#purpose-content": {
+        "props": {
+            "text": "Contribuir para melhorar a vida dos nossos clientes, franqueados, colaboradores, fornecedores, parceiros e todos aqueles que vivem neste Mundo, para que tenham uma vida saudável e com qualidade."
+        }
+    },
+    "rich-text#missao-e-valores-btn": {
+        "props": {
+            "blockClass": "missao-e-valores-btn",
+            "text": "Missão e Visão"
+        }
+    },
+
+
+
+
+
+
+    "flex-layout.col#missao-e-visao-col": {
+        "children": [
+            "rich-text#missaotitle",
+            "rich-text#missao-content",
+            "rich-text#visaotitle",
+            "rich-text#visao-content"
+        ]
+    },
+    "rich-text#missaotitle": {
+        "children": [],
+        "props": {
+            "text": "**Missão**",
+            "blockClass": "title-mission"
+        }
+    },
+    "rich-text#missao-content": {
+        "props": {
+            "text": "Incentivar a vida saudável e a busca do bem estar de todos, garantindo o desenvolvimento econômico sustentável de toda nossa cadeia e um menor impacto ambiental para o planeta."
+        }
+    },
+    "rich-text#visaotitle": {
+        "children": [],
+        "props": {
+            "text": "**Visão**",
+            "blockClass": "title-mission"
+        }
+    },
+    "rich-text#visao-content": {
+        "props": {
+            "text": " Ser a marca Mundial em produtos e serviços saudáveis."
+        }
+    },
+    "rich-text#declaracao-valores-btn": {
+        "props": {
+            "blockClass": "missao-e-valores-btn",
+            "text": "Declaração de valores"
+        }
+    },
+
+    "flex-layout.col#declaracaocol": {
+        "children": [
+            "rich-text#declaracao-content",
+            "rich-text#declaracaolist-title",
+            "rich-text#declaracaolist-content",
+            "rich-text#compromisso-title",
+            "rich-text#compromisso-content"
+        ]
+    },
+    "rich-text#declaracao-content": {
+        "props": {
+            "text": 
+            "Para alcançarmos nosso Propósito e Missão, afirmamos nossa Declaração de Valores, formada por crenças fundamentais de uma cultura que gera realizações responsáveis com o Mundo. \n \n Dessa forma personificamos quem somos e no que acreditamos. Eles refletem o firme caráter do Mundo Verde e de todos que fazem parte de nosso Mundo."
+        }
+    },
+    "rich-text#declaracaolist-title": {
+        "props": {
+            "text": "**São eles**"
+        }
+    },
+    "rich-text#declaracaolist-content": {
+        "props": {
+            "text": 
+            "Unir transparência e verdade nas ações. Nossas ações são norteadas pelos princípios da transparência e da verdade e todos os que vivem neste Mundo prezam por isso. \n \n Neste Mundo viver com responsabilidade é a alma do nosso negócio. Todos nós somos responsáveis pela saúde do planeta e é isso o que estimula cada um de nossos passos. É a partir da natureza que nós existimos. Não podemos deteriorar aquilo que nos alimenta, que nos faz ganhar dinheiro, aquilo que nos faz viver. \n \n Dedicar nosso Mundo ao Cliente. Construímos este Mundo em homenagem ao nosso Cliente, que vem em busca de bem-estar e vida saudável. \n \n Olhar o ser humano de forma integral. Nada no planeta vive por si só. Enxergamos o ser humano de forma integral, unindo corpo, mente, espírito e a natureza que nos cerca. \n \n Viver em celebração. Nossa vida é uma eterna celebração ao Mundo. \n \n Estimular a conscientização. Nosso Mundo é formado por consciência plena e dedicamos todos os nossos esforços para educar em direção ao consumo consciente e à reeducação alimentar, ao bem-estar e ao cuidado com a saúde. \n \n Respeitar as diferenças. Cada ser humano é único e devemos estimular as relações, promovendo a troca de experiências, o conhecimento e o reconhecimento das diferenças. \n \n Dedicar esforços para gerar resultados sustentáveis. Investimos no desenvolvimento harmônico do nosso Mundo, sustentando o crescimento responsável e a solidez do negócio. \n \n Empreender, criar, ousar. Somos empreendedores por natureza e ousados em nossas ações. Pessoas criativas vivem aqui. Pessoas que vivem com coragem e paixão fazem este Mundo existir."
+        }
+    },
+    "rich-text#compromisso-title": {
+        "props": {
+            "text": "**Compromisso Público**"
+        }
+    },
+    "rich-text#compromisso-content": {
+        "props": {
+            "text": 
+            "O Mundo Verde compromete-se publicamente a não permitir a utilização de ovos (processados e in natura) de galinhas confinadas em gaiolas em toda sua cadeia de suprimentos para os produtos de sua marca própria Mundo Verde Seleção e completará a transição até no máximo 2025."
+        }
+    }
+}
