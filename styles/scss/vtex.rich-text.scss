@@ -228,4 +228,36 @@
 
   }
 }
+.paragraph{
+  &--heavy-title{
+    @media screen and (max-width: 425px) {
+      font-size: 16px
+      
+    }
+  color: #72C44B;
+  font-weight: bold;
+  font-size: 1.75em;
+  margin: 0;
+  }
+  &--med-title{
+    @media screen and (max-width: 425px) {
+      font-size: 16px
+      
+    }
+    color: #72C44B;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin: 0;
+    }
+  &--light-title{
+    @media screen and (max-width: 425px) {
+      font-size: 16px
+      
+    }
+      color: #72C44B;
+      font-weight: bold;
+      font-size: 1.75em;
+      margin: 0;
+      }
+}
 //

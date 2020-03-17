@@ -1,9 +1,33 @@
 {
     "store.custom#politica-de-frete": {
         "blocks": [
-            "flex-layout.row#content-frete-all"
+            "responsive-layout.desktop#content-frete-desk",
+            "responsive-layout.tablet#content-frete-tablet",
+            "responsive-layout.mobile#content-frete-mobile"
+
         ]
     },
+    "responsive-layout.desktop#content-frete-desk": {
+        "children": [
+            "flex-layout.row#content-frete-all"
+
+        ]
+    },  
+    "responsive-layout.tablet#content-frete-tablet": {
+        "children": [
+            "flex-layout.row#content-frete-all"
+
+        ]
+    }, 
+   "responsive-layout.mobile#content-frete-mobile": {
+        "children": [
+            "flex-layout.row#content-frete-all-mobile"
+
+        ]
+    },
+
+
+
     "flex-layout.row#content-frete-all": {
        "children": [
         "flex-layout.col#content-frete"
@@ -16,6 +40,7 @@
         "children": [
             "rich-text#frete-title",
             "rich-text#frete-warn",
+            "flex-layout.row#weight",
             "flex-layout.row#sp-rj",
             "flex-layout.row#capital",
             "flex-layout.row#outras",
@@ -23,6 +48,19 @@
             "flex-layout.row#inte-cono",
             "flex-layout.row#cap-n",
             "flex-layout.row#inte-n"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "flex-layout.row#content-frete-all-mobile": {
+        "children": [
+            "flex-layout.col#content-frete-mobile"
+        ]
+    },
+    "flex-layout.col#content-frete-mobile": {
+        "children": [
+            "flex-layout.row#sp-rj-mob"
         ]
     },
     "rich-text#frete-title": {
@@ -37,6 +75,43 @@
             "blockClass": "frete-warn"
         }
     },
+
+"flex-layout.row#weight": {
+    "children": [
+        "rich-text#light",
+        "rich-text#med",
+        "rich-text#heavy"
+    ],
+    "props": {
+        "width": "grow",
+        "blockClass": "frete-weight"
+    }
+},
+"rich-text#light": {
+    "props": {
+        "text": "Leve",
+        "blockClass": "light-title"
+    }
+},
+"rich-text#med": {
+    "props": {
+        "text": "Moderado",
+        "blockClass": "med-title"
+    }
+},
+"rich-text#heavy": {
+    "props": {
+        "text": "Pesado",
+        "blockClass": "heavy-title"
+    }
+},
+
+
+
+
+
+
+
     "flex-layout.row#sp-rj": {
         "children": [
             "rich-text#sp-rj-title",
@@ -45,7 +120,7 @@
             "rich-text#sp-rj-heavy"
         ],
         "props": {
-            "blockClass": "row-all-frete"
+            "blockClass": ["row-all-frete", "row-bt"]
         }
     },
     "rich-text#sp-rj-title": {
@@ -304,9 +379,62 @@
             "text": "não há frete grátis ou light",
             "blockClass": "heavy"
         }
+    },
+
+
+
+
+
+
+
+
+
+
+    "flex-layout.row#sp-rj-mob": {
+        "children": [
+            "rich-text#sp-rj-title",
+            "flex-layout.row#mobile-sp-rj"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-sp-rj": {
+        "children": [
+            "rich-text#sp-rj-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#sp-rj-title-mob": {
+        "props": {
+            "text": "**SP e RJ(Capital)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#sp-rj-light-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#sp-rj-med-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#sp-rj-heavy-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
     }
 
 
-    
+
+
 
 }

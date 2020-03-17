@@ -182,8 +182,25 @@
   &:hover{
     background: #e0e0e0;
   }
-
-
   border-bottom: 1px solid #a09d9d;
+}
+.flexRow--row-bt{
+  border-top: 1px solid #a09d9d;
+}
+
+@media screen and (min-width: 768px){
+  .flexRow--frete-weight{
+    width: 75%;
+    margin-left: 25%;
+    display: flex !important;
+
+  }
+}
+.flexRow--frete-weight{
+  display: none;
+}
+.flexRowContent--mobile-df{
+  display: flex;
+  align-items: center;
 }
 //
