@@ -1,5 +1,96 @@
 {
     "store.custom#franquia" : {
+        "blocks": [
+            "image#bg-mission",
+            "flex-layout.row#container-franquia",
+            "image#bg-franquia-content",
+            "flex-layout.row#secondary-content-row"
+        ]
+    },
+    "image#bg-mission": {
+        "children": [],
+        "props": {
+            "src": "/arquivos/mundo-verde-banner-plantas.jpg"
+        }
+    },
+    "flex-layout.row#container-franquia": {
+        "children": [
+            "flex-layout.col#container-franquia-col"
 
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+    "flex-layout.col#container-franquia-col": {
+        "children": [
+            "rich-text#title-franquia",
+            "rich-text#franquia-btn"
+
+        ]
+
+    },
+    "rich-text#title-franquia": {
+        "children": [],
+        "props": {
+            "text": "##### FRANQUIA",
+            "blockClass": "titulo-imprensa"
+        }
+    },
+    "rich-text#franquia-btn": {
+        "props": {
+            "blockClass": "missao-e-valores-btn",
+            "text": "Seja um Franqueado Verde"
+        }
+    },
+    "image#bg-franquia-content": {
+        "props": {
+            "src": "/arquivos/seja-um-franqueado-mundoverde-banner.jpg",
+            "blockClass": "bg-franquia-content"
+        }
+    },
+    "flex-layout.row#secondary-content-row": {
+        "children": [
+            "flex-layout.col#secondary-content"
+        ],
+            "props": {  
+                "blockClass": "container"
+            }
+    },
+    "flex-layout.col#secondary-content": {
+        "children": [
+            "rich-text#stats",
+            "rich-text#stats2",
+            "rich-text#stats3",
+            "rich-text#stats4"
+
+
+        ]
+    },
+    "rich-text#stats": {
+        "props":{
+            
+            "text": "### Mais de 120.000 clientes por dia, mais de 30.000 produtos cadastrados. Invista em uma franquia Mundo Verde.",
+            "blockClass": "margin-0"
+        }
+
+    },
+    "rich-text#stats2": {
+        "props":{
+            "blockClass": "margin-0",
+            "text": "##### Preencha seu cadastro no fim desta página e faça parte do nosso mundo!"
+        }
+    },
+    "rich-text#stats3": {
+        "props":{
+            "blockClass": ["margin-0", "color-main"],
+            "text": "# Há mais de 30 anos levando saúde e sucesso para todo o Brasil."
+        }
+    },
+    "rich-text#stats4": {
+        "props":{
+            "blockClass": "margin-0",
+            "text": "Descubra a missão, visão e valores do Mundo Verde <a href='/missao-e-visao'>aqui.</a>"
+        }
     }
 }

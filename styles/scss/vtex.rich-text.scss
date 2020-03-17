@@ -182,7 +182,11 @@
   }
   background: none;
   padding: 0;
+  margin: 20px 0;
 
+}
+.heading--margin-0{
+  margin: 10px;
 }
 .paragraph--assessoria-btn{
   font-family: gotham,sans-serif;
@@ -269,6 +273,14 @@
   font-size: 22px;
   margin: 10px 0 0 0;
 }
+.heading--color-main{
+  color: #72C44B;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  font-size: 32px;
+
+}
+
 .paragraph--little-text{
   font-size: 10px;
   margin: 0;
