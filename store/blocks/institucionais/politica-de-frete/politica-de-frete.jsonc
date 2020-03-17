@@ -60,7 +60,15 @@
     },
     "flex-layout.col#content-frete-mobile": {
         "children": [
-            "flex-layout.row#sp-rj-mob"
+            "rich-text#frete-title",
+            "rich-text#frete-warn",
+            "flex-layout.row#sp-rj-mob",
+            "flex-layout.row#capital-mob",
+            "flex-layout.row#outras-mob",
+            "flex-layout.row#cap-cono-mob",
+            "flex-layout.row#inte-cono-mob",
+            "flex-layout.row#cap-n-mob",
+            "flex-layout.row#inte-n-mob"
         ]
     },
     "rich-text#frete-title": {
@@ -393,13 +401,15 @@
     "flex-layout.row#sp-rj-mob": {
         "children": [
             "rich-text#sp-rj-title",
-            "flex-layout.row#mobile-sp-rj"
+            "flex-layout.row#mobile-sp-rj-light",
+            "flex-layout.row#mobile-sp-rj-med",
+            "flex-layout.row#mobile-sp-rj-heavy"
         ],
         "props": {
             "blockClass": ["row-all-frete", "row-bt"]
         }
     },
-    "flex-layout.row#mobile-sp-rj": {
+    "flex-layout.row#mobile-sp-rj-light": {
         "children": [
             "rich-text#sp-rj-light-mob",
             "rich-text#light"
@@ -420,16 +430,457 @@
             "blockClass": "light"
         }
     },
+
+
+
+
+    "flex-layout.row#mobile-sp-rj-med": {
+        "children": [
+            "rich-text#sp-rj-light-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
     "rich-text#sp-rj-med-mob": {
         "props": {
             "text": "**GRÁTIS** acima de **R$150**",
             "blockClass": "med"
         }
     },
+    "flex-layout.row#mobile-sp-rj-heavy": {
+        "children": [
+            "rich-text#sp-rj-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
     "rich-text#sp-rj-heavy-mob": {
         "props": {
             "text": "**GRÁTIS** acima de **R$199**",
-            "blockClass": "heavy"
+            "blockClass": "med"
+        }
+    },
+
+
+
+    
+    "flex-layout.row#capital-mob": {
+        "children": [
+            "rich-text#capital-title",
+            "flex-layout.row#mobile-capital-light",
+            "flex-layout.row#mobile-capital-med",
+            "flex-layout.row#mobile-capital-heavy"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-capital-light": {
+        "children": [
+            "rich-text#capital-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#capital-title-mob": {
+        "props": {
+            "text": "**SP e RJ(Capital)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#capital-light-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+
+
+
+
+    "flex-layout.row#mobile-capital-med": {
+        "children": [
+            "rich-text#capital-med-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#capital-med-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$179**",
+            "blockClass": "med"
+        }
+    },
+    "flex-layout.row#mobile-capital-heavy": {
+        "children": [
+            "rich-text#capital-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#capital-heavy-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$249**",
+            "blockClass": "med"
+        }
+    },
+    
+    "flex-layout.row#outras-mob": {
+        "children": [
+            "rich-text#outras-title",
+            "flex-layout.row#mobile-outras-light",
+            "flex-layout.row#mobile-outras-med",
+            "flex-layout.row#mobile-outras-heavy"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-outras-light": {
+        "children": [
+            "rich-text#outras-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#outras-title-mob": {
+        "props": {
+            "text": "**SP e RJ(outras)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#outras-light-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "light"
+        }
+    },
+
+
+
+
+    "flex-layout.row#mobile-outras-med": {
+        "children": [
+            "rich-text#outras-med-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#outras-med-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$249**",
+            "blockClass": "med"
+        }
+    },
+    "flex-layout.row#mobile-outras-heavy": {
+        "children": [
+            "rich-text#outras-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#outras-heavy-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$349**",
+            "blockClass": "med"
+        }
+    },
+    
+    "flex-layout.row#cap-cono-mob": {
+        "children": [
+            "rich-text#cap-cono-title",
+            "flex-layout.row#mobile-cap-cono-light",
+            "flex-layout.row#mobile-cap-cono-med",
+            "flex-layout.row#mobile-cap-cono-heavy"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-cap-cono-light": {
+        "children": [
+            "rich-text#cap-cono-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#cap-cono-title-mob": {
+        "props": {
+            "text": "**SP e RJ(cap-cono)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#cap-cono-light-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$249**",
+            "blockClass": "light"
+        }
+    },
+
+
+
+
+    "flex-layout.row#mobile-cap-cono-med": {
+        "children": [
+            "rich-text#cap-cono-med-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#cap-cono-med-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$349**",
+            "blockClass": "med"
+        }
+    },
+    "flex-layout.row#mobile-cap-cono-heavy": {
+        "children": [
+            "rich-text#cap-cono-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#cap-cono-heavy-mob": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$399**",
+            "blockClass": "med"
+        }
+    },
+    
+    "flex-layout.row#inte-cono-mob": {
+        "children": [
+            "rich-text#inte-cono-title",
+            "flex-layout.row#mobile-inte-cono-light",
+            "flex-layout.row#mobile-inte-cono-med",
+            "flex-layout.row#mobile-inte-cono-heavy"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-inte-cono-light": {
+        "children": [
+            "rich-text#inte-cono-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#inte-cono-title-mob": {
+        "props": {
+            "text": "**SP e RJ(inte-cono)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#inte-cono-light-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$199**",
+            "blockClass": "light"
+        }
+    },
+
+
+
+
+    "flex-layout.row#mobile-inte-cono-med": {
+        "children": [
+            "rich-text#inte-cono-med-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#inte-cono-med-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$299**",
+            "blockClass": "med"
+        }
+    },
+    "flex-layout.row#mobile-inte-cono-heavy": {
+        "children": [
+            "rich-text#inte-cono-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#inte-cono-heavy-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$399**",
+            "blockClass": "med"
+        }
+    },
+
+    "flex-layout.row#cap-n-mob": {
+        "children": [
+            "rich-text#cap-n-title",
+            "flex-layout.row#mobile-cap-n-light",
+            "flex-layout.row#mobile-cap-n-med",
+            "flex-layout.row#mobile-cap-n-heavy"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-cap-n-light": {
+        "children": [
+            "rich-text#cap-n-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#cap-n-title-mob": {
+        "props": {
+            "text": "**SP e RJ(cap-n)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#cap-n-light-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$249**",
+            "blockClass": "light"
+        }
+    },
+
+
+
+
+    "flex-layout.row#mobile-cap-n-med": {
+        "children": [
+            "rich-text#cap-n-med-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#cap-n-med-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$399**",
+            "blockClass": "med"
+        }
+    },
+    "flex-layout.row#mobile-cap-n-heavy": {
+        "children": [
+            "rich-text#cap-n-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#cap-n-heavy-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$499**",
+            "blockClass": "med"
+        }
+    },
+    
+    "flex-layout.row#inte-n-mob": {
+        "children": [
+            "rich-text#inte-n-title",
+            "flex-layout.row#mobile-inte-n-light",
+            "flex-layout.row#mobile-inte-n-med",
+            "flex-layout.row#mobile-inte-n-heavy"
+        ],
+        "props": {
+            "blockClass": ["row-all-frete", "row-bt"]
+        }
+    },
+    "flex-layout.row#mobile-inte-n-light": {
+        "children": [
+            "rich-text#inte-n-light-mob",
+            "rich-text#light"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+    "rich-text#inte-n-title-mob": {
+        "props": {
+            "text": "**SP e RJ(inte-n)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#inte-n-light-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$399**",
+            "blockClass": "light"
+        }
+    },
+
+
+
+
+    "flex-layout.row#mobile-inte-n-med": {
+        "children": [
+            "rich-text#inte-n-med-mob",
+            "rich-text#med"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#inte-n-med-mob": {
+        "props": {
+            "text": "**FRETE LIGHT** acima de **R$449**",
+            "blockClass": "med"
+        }
+    },
+    "flex-layout.row#mobile-inte-n-heavy": {
+        "children": [
+            "rich-text#inte-n-heavy-mob",
+            "rich-text#heavy"
+        ],
+        "props": {
+            "blockClass": "mobile-df"
+        }
+    },
+
+    "rich-text#inte-n-heavy-mob": {
+        "props": {
+            "text": "não há frete grátis ou light",
+            "blockClass": "med"
         }
     }
 
