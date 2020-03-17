@@ -1,0 +1,312 @@
+{
+    "store.custom#politica-de-frete": {
+        "blocks": [
+            "flex-layout.row#content-frete-all"
+        ]
+    },
+    "flex-layout.row#content-frete-all": {
+       "children": [
+        "flex-layout.col#content-frete"
+       ],
+       "props": {
+           "blockClass": "container"
+       }
+    },
+    "flex-layout.col#content-frete": {
+        "children": [
+            "rich-text#frete-title",
+            "rich-text#frete-warn",
+            "flex-layout.row#sp-rj",
+            "flex-layout.row#capital",
+            "flex-layout.row#outras",
+            "flex-layout.row#cap-cono",
+            "flex-layout.row#inte-cono",
+            "flex-layout.row#cap-n",
+            "flex-layout.row#inte-n"
+        ]
+    },
+    "rich-text#frete-title": {
+        "props": {
+            "text": "# Política de frete grátis da Mundo verde",
+            "blockClass": "frete-title"
+        }
+    },
+    "rich-text#frete-warn": {
+        "props": {
+            "text": "Para consultar o valor e prazo do frete, escolha quais itens deseja comprar e clique em “Adicionar ao Carrinho”. Em seguida, informe seu CEP, o custo e o prazo serão calculados automaticamente. Para visualizar as opções de frete, clique em **“Comprar” (você ainda poderá modificar o seu pedido antes de finalizá-lo).**",
+            "blockClass": "frete-warn"
+        }
+    },
+    "flex-layout.row#sp-rj": {
+        "children": [
+            "rich-text#sp-rj-title",
+            "rich-text#sp-rj-light",
+            "rich-text#sp-rj-med",
+            "rich-text#sp-rj-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#sp-rj-title": {
+        "props": {
+            "text": "**SP e RJ(Capital)**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#sp-rj-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#sp-rj-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#sp-rj-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "flex-layout.row#capital": {
+        "children": [
+            "rich-text#capital-title",
+            "rich-text#capital-light",
+            "rich-text#capital-med",
+            "rich-text#capital-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#capital-title": {
+        "props": {
+            "text": "**Outras capitais Sul, Sudeste, interior SP e DF**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#capital-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#capital-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#capital-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    },
+
+
+    "flex-layout.row#outras": {
+        "children": [
+            "rich-text#outras-title",
+            "rich-text#outras-light",
+            "rich-text#outras-med",
+            "rich-text#outras-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#outras-title": {
+        "props": {
+            "text": "**Outras cidades interior Sul e Sudeste**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#outras-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#outras-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#outras-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    },
+
+    "flex-layout.row#cap-cono": {
+        "children": [
+            "rich-text#cap-cono-title",
+            "rich-text#cap-cono-light",
+            "rich-text#cap-cono-med",
+            "rich-text#cap-cono-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#cap-cono-title": {
+        "props": {
+            "text": "**Capitais Centro Oeste e Nordeste**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#cap-cono-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#cap-cono-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#cap-cono-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    },
+
+
+    "flex-layout.row#inte-cono": {
+        "children": [
+            "rich-text#inte-cono-title",
+            "rich-text#inte-cono-light",
+            "rich-text#inte-cono-med",
+            "rich-text#inte-cono-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#inte-cono-title": {
+        "props": {
+            "text": "**Interior Centro Oeste e Nordeste**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#inte-cono-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#inte-cono-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#inte-cono-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    },
+
+
+    "flex-layout.row#cap-n": {
+        "children": [
+            "rich-text#cap-n-title",
+            "rich-text#cap-n-light",
+            "rich-text#cap-n-med",
+            "rich-text#cap-n-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#cap-n-title": {
+        "props": {
+            "text": "**Capitais Norte**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#cap-n-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#cap-n-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#cap-n-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    },
+
+    "flex-layout.row#inte-n": {
+        "children": [
+            "rich-text#inte-n-title",
+            "rich-text#inte-n-light",
+            "rich-text#inte-n-med",
+            "rich-text#inte-n-heavy"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#inte-n-title": {
+        "props": {
+            "text": "**Interior Norte**",
+            "blockClass": "title-frete"
+        }
+    },
+    "rich-text#inte-n-light": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "light"
+        }
+    },
+    "rich-text#inte-n-med": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$150**",
+            "blockClass": "med"
+        }
+    },
+    "rich-text#inte-n-heavy": {
+        "props": {
+            "text": "**GRÁTIS** acima de **R$199**",
+            "blockClass": "heavy"
+        }
+    }
+
+
+    
+
+}

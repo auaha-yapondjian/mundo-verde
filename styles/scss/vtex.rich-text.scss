@@ -201,4 +201,31 @@
 .link--email:hover{
   color: #3d766c;
 }
+
+.heading--frete-title{
+  font-size: 21px;
+    color: #72C44B !important;
+    font-weight: bold;
+    font-family: gotham,sans-serif;
+}
+.paragraph--frete-warn{
+  font-size: 12px;
+}
+.paragraph{
+  &--title-frete{
+    font-size: 12px;
+  }
+  &--light{
+    font-size: 12px;
+
+  }
+  &--med{
+    font-size: 12px;
+  }    
+
+  &--heavy{
+    font-size: 12px;
+
+  }
+}
 //
