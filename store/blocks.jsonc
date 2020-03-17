@@ -7,7 +7,7 @@
  * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
  * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
  */
-{
+ {
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
@@ -76,6 +76,55 @@
       "textPosition": "CENTER",
       "text": "**PAGE NOT FOUND**",
       "font": "t-heading-1"
+    }
+  },
+  "search-result": {
+    "blocks": [
+      "filter-navigator.v2",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "total-products",
+      "order-by",
+      "search-title"
+    ],
+    "props": {
+      "mobileLayout": {
+        "mode1": "small"
+      },
+      "querySchema": {
+        "maxItemsPerPage": 24,
+        "orderByField": "OrderByPriceDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "isOneClickBuy": false,
+        "showBadge": true,
+        "displayBuyButton": "displayButtonHover",
+        "showCollections": false,
+        "labelListPrice": false,
+        "labelSellingPrice": false,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": false,
+        "showSavings": false,
+        "name": {
+          "showBrandName": false,
+          "showSku": false,
+          "showProductReference": false
+        }
+      },
+      "pagination": "show-more"
     }
   }
 }

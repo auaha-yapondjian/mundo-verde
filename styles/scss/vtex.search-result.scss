@@ -1,0 +1,66 @@
+.searchResultContainer{
+    padding: 0;
+    max-width: 100%;
+    background-color: #f2f2f2;
+
+    :global(.vtex-store-components-3-x-container) {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--banner-seo){
+        position: relative;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--banner-seo ){
+        :global(.vtex-rich-text-0-x-container--title-text-banner-seo){
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(77,77,74,.5);
+            color: #f1f2f2;
+
+            :global(.vtex-rich-text-0-x-heading--title-text-banner-seo){
+                max-width: 680px;
+                padding: 0 15px;
+                font-size: 30px;
+                line-height: 1.4;
+            }
+        }
+
+        :global(.vtex-store-components-3-x-imageElement--image-banner-seo){
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            height: 290px;
+        }
+    }
+
+    :global(.vtex-breadcrumb-1-x-container){
+        max-width: 1250px;
+        padding: 10px 15px;
+    }
+    
+}
+
+.galleryTitle--layout{
+    max-width: 1250px;
+    padding: 0 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowResult){
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.galleryItem{
+    padding: 10px;
+    padding-right: 0;
+}
+
+.gallery {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

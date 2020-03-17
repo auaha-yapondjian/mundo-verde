@@ -78,12 +78,22 @@
     "children": ["logo#desktop"]
   },
   "search-bar": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
     "props": {
+      "customSearchPageUrl": "/search?_query=${term}",
+      "openAutocompleteOnFocus": true,
       "placeholder": "O que você procura ?",
       "blockClass": "main-search-bar",
       "width": "grow",
       "maxWidth": "680px"
     }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary"
+    ]
   },
   "flex-layout.col#category-menu": {
     "props": {
