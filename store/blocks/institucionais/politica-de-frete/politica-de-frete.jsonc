@@ -112,13 +112,13 @@
     },
     "rich-text#capital-med": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**GRÁTIS** acima de **R$179**",
             "blockClass": "med"
         }
     },
     "rich-text#capital-heavy": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$199**",
+            "text": "**GRÁTIS** acima de **R$249**",
             "blockClass": "heavy"
         }
     },
@@ -143,19 +143,19 @@
     },
     "rich-text#outras-light": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**GRÁTIS** acima de **R$199**",
             "blockClass": "light"
         }
     },
     "rich-text#outras-med": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**GRÁTIS** acima de **R$249**",
             "blockClass": "med"
         }
     },
     "rich-text#outras-heavy": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$199**",
+            "text": "**GRÁTIS** acima de **R$349**",
             "blockClass": "heavy"
         }
     },
@@ -179,19 +179,19 @@
     },
     "rich-text#cap-cono-light": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**GRÁTIS** acima de **R$249**",
             "blockClass": "light"
         }
     },
     "rich-text#cap-cono-med": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**GRÁTIS** acima de **R$349**",
             "blockClass": "med"
         }
     },
     "rich-text#cap-cono-heavy": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$199**",
+            "text": "**FRETE LIGHT** acima de **R$399**",
             "blockClass": "heavy"
         }
     },
@@ -216,19 +216,19 @@
     },
     "rich-text#inte-cono-light": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**FRETE LIGHT** acima de **R$199**",
             "blockClass": "light"
         }
     },
     "rich-text#inte-cono-med": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**FRETE LIGHT** acima de **R$299**",
             "blockClass": "med"
         }
     },
     "rich-text#inte-cono-heavy": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$199**",
+            "text": "**FRETE LIGHT** acima de **R$399**",
             "blockClass": "heavy"
         }
     },
@@ -253,19 +253,19 @@
     },
     "rich-text#cap-n-light": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**FRETE LIGHT** acima de **R$249**",
             "blockClass": "light"
         }
     },
     "rich-text#cap-n-med": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**FRETE LIGHT** acima de **R$399**",
             "blockClass": "med"
         }
     },
     "rich-text#cap-n-heavy": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$199**",
+            "text": "**FRETE LIGHT** acima de **R$499**",
             "blockClass": "heavy"
         }
     },
@@ -289,19 +289,19 @@
     },
     "rich-text#inte-n-light": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**FRETE LIGHT** acima de **R$399**",
             "blockClass": "light"
         }
     },
     "rich-text#inte-n-med": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$150**",
+            "text": "**FRETE LIGHT** acima de **R$499**",
             "blockClass": "med"
         }
     },
     "rich-text#inte-n-heavy": {
         "props": {
-            "text": "**GRÁTIS** acima de **R$199**",
+            "text": "não há frete grátis ou light",
             "blockClass": "heavy"
         }
     }
