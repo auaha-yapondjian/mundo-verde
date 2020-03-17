@@ -47,7 +47,10 @@
             "flex-layout.row#cap-cono",
             "flex-layout.row#inte-cono",
             "flex-layout.row#cap-n",
-            "flex-layout.row#inte-n"
+            "flex-layout.row#inte-n",
+            "flex-layout.row#caution",
+            "flex-layout.col#caixa-postal",
+            "flex-layout.col#awareness"
         ],
         "props": {
             "preserveLayoutOnMobile": true
@@ -68,7 +71,10 @@
             "flex-layout.row#cap-cono-mob",
             "flex-layout.row#inte-cono-mob",
             "flex-layout.row#cap-n-mob",
-            "flex-layout.row#inte-n-mob"
+            "flex-layout.row#inte-n-mob",
+            "flex-layout.row#caution",
+            "flex-layout.col#caixa-postal",
+            "flex-layout.col#awareness"
         ]
     },
     "rich-text#frete-title": {
@@ -86,14 +92,20 @@
 
 "flex-layout.row#weight": {
     "children": [
-        "rich-text#light",
-        "rich-text#med",
-        "rich-text#heavy"
+        "flex-layout.col#light-full",
+        "flex-layout.col#med-full",
+        "flex-layout.col#heavy-full"
     ],
     "props": {
         "width": "grow",
         "blockClass": "frete-weight"
     }
+},
+"flex-layout.col#light-full": {
+    "children": [
+        "rich-text#light",
+        "rich-text#light-size"
+    ]  
 },
 "rich-text#light": {
     "props": {
@@ -101,16 +113,46 @@
         "blockClass": "light-title"
     }
 },
+"rich-text#light-size": {
+    "props": {
+        "text": "Até 1kg",
+        "blockClass": "little-text"
+    }
+},
+"flex-layout.col#med-full": {
+    "children": [
+        "rich-text#med",
+        "rich-text#med-size"
+    ]
+},
 "rich-text#med": {
     "props": {
         "text": "Moderado",
         "blockClass": "med-title"
     }
 },
+"rich-text#med-size": {
+    "props": {
+        "text": "De 1kg à 3kg",
+        "blockClass": "little-text"
+    }
+},
+"flex-layout.col#heavy-full": {
+    "children": [
+        "rich-text#heavy",
+        "rich-text#heavy-size"
+    ]
+},
 "rich-text#heavy": {
     "props": {
         "text": "Pesado",
         "blockClass": "heavy-title"
+    }
+},
+"rich-text#heavy-size": {
+    "props": {
+        "text": "De 3kg à 6kg",
+        "blockClass": "little-text"
     }
 },
 
@@ -388,7 +430,20 @@
             "blockClass": "heavy"
         }
     },
-
+    "flex-layout.row#caution": {
+        "children": [
+            "rich-text#caution-text"
+        ],
+        "props": {
+            "blockClass": "row-all-frete"
+        }
+    },
+    "rich-text#caution-text": {
+        "props": {
+            "text": "**FRETE LIGHT,** a Mundo Verde subsidia 50% do frete para regiões indicadas acima. *Compras acima de 6kg não possuem frete grátis",
+            "blockClass": "caution-text"
+        }
+    },
 
 
 
@@ -882,8 +937,42 @@
             "text": "não há frete grátis ou light",
             "blockClass": "med"
         }
+    },
+    "flex-layout.col#caixa-postal": {
+        "children": [
+            "rich-text#entrega-caixa",
+            "rich-text#entrega-caixa-content"
+        ]
+    },
+    "rich-text#entrega-caixa": {
+        "props": {
+            "text": "Entrega em caixa postal:",
+            "blockClass": "color-main"
+        }
+    },
+    "rich-text#entrega-caixa-content": {
+        "props": {
+            "text": "A Mundo Verde não efetua entrega em caixas postais. Itens sujeitos a devolução;"
+        }
+    },
+    "flex-layout.col#awareness": {
+        "children": [
+            "rich-text#awareness-title",
+            "rich-text#awareness-content"
+        ]
+    },
+    "rich-text#awareness-title": {
+        "props": {
+            "text": "Atenção!",
+            "blockClass": "color-main"
+        }
+    },
+    "rich-text#awareness-content": {
+        "props": {
+            "text": 
+            "O prazo de entrega começa a contar após a aprovação do pagamento. Assim que seu pagamento for aprovado você será notificado por e-mail; \n Todos os pedidos estão sujeitos à análise e aprovação de dados cadastrais, o que pode causar atrasos na confirmação do pagamento; \n O prazo de entrega informado inclui o prazo de processamento do pedido dentro do nosso armazém e o prazo para a realização da entrega pelo transportador. Pode haver atrasos."
+        }
     }
-
 
 
 
