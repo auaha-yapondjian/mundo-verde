@@ -203,4 +203,8 @@
   display: flex;
   align-items: center;
 }
+.flexColChild--img-center, .flexColChild--img-center:first-child{
+  display: flex;
+  justify-content: center;
+}
 //

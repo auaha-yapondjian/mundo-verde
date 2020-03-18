@@ -4,7 +4,8 @@
             "image#bg-mission",
             "flex-layout.row#container-franquia",
             "image#bg-franquia-content",
-            "flex-layout.row#secondary-content-row"
+            "flex-layout.row#secondary-content-row",
+            "flex-layout.row#main-content-franquia"
         ]
     },
     "image#bg-mission": {
@@ -62,7 +63,9 @@
             "rich-text#stats",
             "rich-text#stats2",
             "rich-text#stats3",
-            "rich-text#stats4"
+            "rich-text#stats4",
+            "iframe#video-franquia",
+            "rich-text#beneficios"
 
 
         ]
@@ -92,5 +95,279 @@
             "blockClass": "margin-0",
             "text": "Descubra a missão, visão e valores do Mundo Verde <a href='/missao-e-visao'>aqui.</a>"
         }
-    }
+    },
+    "iframe#video-franquia": {
+        "props": {
+            "src": "https://www.youtube.com/embed/3pujsPKL7RQ",
+            "width": "1250px",
+            "height": "370px"
+        }
+    },
+    "rich-text#beneficios": {
+        "props": {
+            "text": "### BENEFÍCIOS AO FRANQUEADO:"
+        }
+    },
+    "flex-layout.row#main-content-franquia": {
+        "children": [
+            "flex-layout.col#main-content-franquia-col"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+    "flex-layout.col#main-content-franquia-col": {
+        "children": [
+            "flex-layout.row#todos-beneficios"
+        ],
+        "props": {
+
+        }
+    },
+
+
+        "flex-layout.row#todos-beneficios": {
+            "children": [
+                "flex-layout.col#todos-beneficios-col"
+            ],
+            "props": {
+
+            }
+        },
+        "flex-layout.col#todos-beneficios-col": {
+            "children": [
+                "flex-layout.row#linha1-beneficios",
+                "flex-layout.row#linha2-beneficios",
+                "flex-layout.row#linha3-beneficios",
+                "flex-layout.row#linha4-beneficios"
+
+
+            ],
+            "props": {
+            }
+        },
+
+
+
+
+        "flex-layout.row#linha1-beneficios": {
+            "children": [
+                "flex-layout.col#item1-franquia",
+                "flex-layout.col#item2-franquia",
+                "flex-layout.col#item3-franquia"
+
+            ]
+        },
+        "flex-layout.col#item1-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#marca-premiada"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "image#generic-franquia": {
+            "props": {
+                "src": "/arquivos/ico_beneficio_franquias.jpg",
+                "maxWidth": "60px",
+                "maxHeight": "60px"
+            }
+        },
+        "rich-text#marca-premiada": {
+            "props": {
+                "text": "Marca reconhecida e premiada."
+            }
+        },
+
+
+
+        "flex-layout.col#item2-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#30-anos"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#30-anos": {
+            "props": {
+                "text": "Mais de 30 anos de atuação no segmento."
+            }
+        },
+
+        "flex-layout.col#item3-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#apoio"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#apoio": {
+            "props": {
+                "text": "Apoio na escolha do ponto, no projeto e na montagem da loja."
+            }
+        },
+
+
+        "flex-layout.row#linha2-beneficios": {
+            "children": [
+                "flex-layout.col#item4-franquia",
+                "flex-layout.col#item5-franquia",
+                "flex-layout.col#item6-franquia"
+
+            ]
+        },
+        "flex-layout.row#linha3-beneficios": {
+            "children": [
+                "flex-layout.col#item7-franquia",
+                "flex-layout.col#item8-franquia",
+                "flex-layout.col#item9-franquia"
+
+            ]
+        },
+        "flex-layout.row#linha4-beneficios": {
+            "children": [
+                "flex-layout.col#item10-franquia",
+                "flex-layout.col#item11-franquia",
+                "flex-layout.col#item12-franquia"
+
+            ]
+        },
+
+
+
+
+
+        "flex-layout.col#item4-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#treinamento"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#treinamento": {
+            "props": {
+                "text": "Treinamento – Universidade Mundo Verde e Olá Nutri"
+            }
+        },
+        "flex-layout.col#item5-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#equipe"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#equipe": {
+            "props": {
+                "text": "Equipe de supervisão e gestão"
+            }
+        },
+        "flex-layout.col#item6-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#centro"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#centro": {
+            "props": {
+                "text": "Centro de Negociações e Centro de Distribuição."
+            }
+        },
+        "flex-layout.col#item7-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#software"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#software": {
+            "props": {
+                "text": "Software de gestão e intranet."
+            }
+        },
+        "flex-layout.col#item8-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#suporte"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#suporte": {
+            "props": {
+                "text": "Suporte na gestão do negócio."
+            }
+        },
+        "flex-layout.col#item9-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#mkt"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#mkt": {
+            "props": {
+                "text": "Apoio de marketing e assessoria de imprensa."
+            }
+        },
+        "flex-layout.col#item10-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#gestao"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#gestao": {
+            "props": {
+                "text": "Gestão participativa – Conselho de Franqueados."
+            }
+        },
+        "flex-layout.col#item11-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#nutricao"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#nutricao": {
+            "props": {
+                "text": "Equipe de nutrição."
+            }
+        },
+        "flex-layout.col#item12-franquia": {
+            "children": [
+                "image#generic-franquia",
+                "rich-text#convencao"
+            ],
+            "props":{
+                "blockClass": "img-center"
+            }
+        },
+        "rich-text#convencao": {
+            "props": {
+                "text": "Convenção de Franqueados."
+            }
+        }
+
+
 }

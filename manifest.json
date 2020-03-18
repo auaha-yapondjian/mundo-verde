@@ -37,6 +37,7 @@
     "vtex.product-identifier": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
+    "vtex.iframe": "0.x",
     "vtex.product-customizer": "2.x",
     "vtex.stack-layout": "0.x",
     "vtex.product-specification-badges": "0.x",
