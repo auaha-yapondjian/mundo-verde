@@ -41,6 +41,21 @@
   padding-right: 5px;
 }
 
+
+.searchBarInnerContainer {
+
+  :global(.vtex-input__suffix){
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    padding: 0;
+    padding-right: 5px;
+  }
+
+}
+
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
@@ -299,3 +314,18 @@
 .confirmationText--footer-newsletter {
   color: #fff;
 }
+
+:global(.vtex-breadcrumb-1-x-homeLink){
+  color: #008651;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+:global(.vtex-button__label){
+  .c-on-base{
+    color: tomato !important;
+  }
+}
+

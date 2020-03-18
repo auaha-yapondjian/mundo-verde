@@ -56,7 +56,7 @@
       "semanticColors": {
         "background": {
           "base": "#ffffff",
-          "base--inverted": "#03044e",
+          "base--inverted": "#008651",
           "action-primary": "#008651",
           "action-secondary": "#eef3f7",
           "emphasis": "#008651",
@@ -109,7 +109,7 @@
           "action-primary": "#008651",
           "action-secondary": "#eef3f7",
           "link": "#008651",
-          "emphasis": "#f71963",
+          "emphasis": "#008651",
           "disabled": "#979899",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -129,7 +129,7 @@
         "hover-text": {
           "action-primary": "#008651",
           "action-secondary": "#dbe9fd",
-          "link": "#0c389f",
+          "link": "#008651",
           "emphasis": "#008651",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -139,7 +139,7 @@
           "warning--faded": "#fff6e0"
         },
         "active-text": {
-          "link": "#0c389f",
+          "link": "#008651",
           "emphasis": "#008651",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -151,7 +151,7 @@
         "border": {
           "action-primary": "#008651",
           "action-secondary": "#eef3f7",
-          "emphasis": "#f71963",
+          "emphasis": "#008651",
           "disabled": "#e3e4e6",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -325,7 +325,7 @@
           "action--small": {
             "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
-            "fontSize": "0.875rem",
+            "fontSize": "0.675rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
