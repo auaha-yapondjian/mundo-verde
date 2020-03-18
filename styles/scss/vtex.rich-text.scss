@@ -285,4 +285,27 @@
   font-size: 10px;
   margin: 0;
 }
+.container--franquia-content{
+  display: flex;
+  align-items: center;
+}
+.container--franquia-cor-1{
+  background: #27ae60;
+  color: #fff;
+  margin: 5px 0;
+}
+.container--franquia-cor-2{
+  color: #fff;
+  background: #a7d163;
+  margin: 10px 0;
+}
+.container--franquia-right{
+  @media screen and (min-width: 1024px){
+  margin-left: 15px;
+  }
+}
+.paragraph--franquia-right{
+  padding: 0 10px;
+  justify-content: flex-start !important;
+}
 //

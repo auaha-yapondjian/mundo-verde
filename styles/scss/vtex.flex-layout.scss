@@ -207,4 +207,20 @@
   display: flex;
   justify-content: center;
 }
+
+.flexRowContent--tabela-contain{
+  @media screen and (min-width: 1024px){
+  display: grid;
+  grid-template-columns: 15% 100%; 
+}
+
+}
+.flexRowContent--tabela-contain{
+  :first-child{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 //

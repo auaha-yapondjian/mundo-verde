@@ -118,7 +118,10 @@
     },
     "flex-layout.col#main-content-franquia-col": {
         "children": [
-            "flex-layout.row#todos-beneficios"
+            "flex-layout.row#todos-beneficios",
+            "rich-text#taxas",
+            "rich-text#taxas-content",
+            "flex-layout.col#tabela-container"
         ],
         "props": {
 
@@ -367,7 +370,116 @@
             "props": {
                 "text": "Convenção de Franqueados."
             }
+        },
+
+
+        "rich-text#taxas": {
+            "props": {
+                "text": "### TAXAS:"
         }
 
+    },
+    "rich-text#taxas-content": {
+        "props": {
+            "text": "É importante obter informações detalhadas quanto ao capital de giro e investimento mensal necessário até o ponto de equilíbrio entre receitas e despesas do negócio. Esse tempo de maturação varia de acordo com a localização do empreendimento e com as características particulares. É essencial que o candidato tenha reserva de capital suficiente para cobrir suas despesas pessoais nos primeiros meses do empreendimento."
+        }
+    },
+    "flex-layout.col#tabela-container": {
+        "children": [
+            "flex-layout.row#tabela-linha1",
+            "flex-layout.row#tabela-linha2",
+            "flex-layout.row#tabela-linha3",
+            "flex-layout.row#tabela-linha4"
 
+
+        ]
+    },
+    "flex-layout.row#tabela-linha1": {
+        "children": [
+            "rich-text#taxa-franquia",
+            "rich-text#taxa-franquia-content"
+        ],
+        "props": {
+            "blockClass": "tabela-contain"
+        }
+    },
+
+    "rich-text#taxa-franquia": {
+        "props": {
+            "text": "**TAXA DE \n FRANQUIA**",
+            "blockClass": "franquia-cor-1"
+        }
+    },
+    "rich-text#taxa-franquia-content": {
+        "props": {
+            "text": "Remunera o franqueador pela concessão do direito de uso da marca.",
+            "blockClass": ["franquia-content","franquia-cor-1", "franquia-right"]
+        }
+    },
+
+
+    "flex-layout.row#tabela-linha2": {
+        "children": [
+            "rich-text#royal-franquia",
+            "rich-text#royal-franquia-content"
+        ],
+        "props": {
+            "blockClass": "tabela-contain"
+        }
+    },
+    "rich-text#royal-franquia": {
+        "props": {
+            "text": "**TAXA DE \n ROYALTIES: \n (5%)**",
+            "blockClass": "franquia-cor-2"
+        }
+    },
+    "rich-text#royal-franquia-content": {
+        "props": {
+            "text": "Percentual fixo aplicado sobre o faturamento bruto mensal da loja franqueada.",
+            "blockClass": ["franquia-content", "franquia-cor-2", "franquia-right"]
+          }
+    },
+    "flex-layout.row#tabela-linha3": {
+        "children": [
+            "rich-text#fundo-franquia",
+            "rich-text#fundo-franquia-content"
+        ],
+        "props": {
+            "blockClass": "tabela-contain"
+        }
+    },
+    "rich-text#fundo-franquia": {
+        "props": {
+            "text": "**FUNDO DE \n MARKETING: \n (1,5%)**",
+            "blockClass": "franquia-cor-1"
+        }
+    },
+    "rich-text#fundo-franquia-content": {
+        "props": {
+            "text": "Percentual mensal aplicado sobre o faturamento bruto mensal da loja. Tem como finalidade constituir um fundo cooperado para ser aplicado na própria divulgação da marca.",
+            "blockClass": ["franquia-content", "franquia-cor-1", "franquia-right"]
+        }
+    },
+    "flex-layout.row#tabela-linha4": {
+        "children": [
+            "rich-text#investimento-franquia",
+            "rich-text#investimento-franquia-content"
+        ],
+        "props": {
+            "blockClass": "tabela-contain"
+        }
+    },
+    "rich-text#investimento-franquia": {
+        "props": {
+            "text": "**INVESTIMENTO \n DE RESERVAS:**",
+            "blockClass": "franquia-cor-2"
+        }
+    },
+    "rich-text#investimento-franquia-content": {
+        "props": {
+            "text": "Todo investimento é precedido de um rigoroso planejamento financeiro.",
+            "blockClass": ["franquia-content", "franquia-cor-2", "franquia-right"]
+        }
+    }
+    
 }
