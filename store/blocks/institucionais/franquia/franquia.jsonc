@@ -121,7 +121,8 @@
             "flex-layout.row#todos-beneficios",
             "rich-text#taxas",
             "rich-text#taxas-content",
-            "flex-layout.col#tabela-container"
+            "flex-layout.col#tabela-container",
+            "flex-layout.row#table-secondary-all"
         ],
         "props": {
 
@@ -479,6 +480,37 @@
         "props": {
             "text": "Todo investimento é precedido de um rigoroso planejamento financeiro.",
             "blockClass": ["franquia-content", "franquia-cor-2", "franquia-right"]
+        }
+    },
+
+    "flex-layout.row#table-secondary-all": {
+        "children": [
+            "flex-layout.col#left-table-main",
+            "flex-layout.col#right-table-main"
+        ]
+    },
+    "flex-layout.col#left-table-main": {
+        "children": [
+            "rich-text#custo-investimento-title",
+            "rich-text#custo-investimento-content"
+
+        ]
+    },
+    "flex-layout.col#right-table-main": {
+        "children": [
+            
+        ]
+    },
+
+
+    "rich-text#custo-investimento-title": {
+        "props": {
+            "text": "#### Quanto custa investir?"
+        }
+    },
+    "rich-text#custo-investimento-content": {
+        "props": {
+            "text": "Todo o investimento para a abertura de um ponto de venda deverá ser disponibilizado pelo franqueado de acordo com o cronograma de construção. A estimativa do investimento depende da localização do seu ponto de venda, da área a ser ocupada e do tipo de loja. O investimento mínimo depende do tamanho e necessidade de cada ponto."
         }
     }
     
