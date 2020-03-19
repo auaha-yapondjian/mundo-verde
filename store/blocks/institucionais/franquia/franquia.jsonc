@@ -486,20 +486,33 @@
     "flex-layout.row#table-secondary-all": {
         "children": [
             "flex-layout.col#left-table-main",
-            "flex-layout.col#right-table-main"
-        ]
+            "flex-layout.row#right-table-main"
+        ],
+        "props": {
+            "blockClass": "secondary-table-container"
+        }
     },
     "flex-layout.col#left-table-main": {
         "children": [
+            "rich-text#custo-investimento-title-main",
             "rich-text#custo-investimento-title",
-            "rich-text#custo-investimento-content"
+            "rich-text#custo-investimento-content",
+            "rich-text#inclusao-investimento"
 
+        ],
+        "props": {
+            "blockClass": "left-table-main"
+        }
+    },
+    "flex-layout.row#right-table-main": {
+        "children": [
+         "flex-layout.col#container-second-table"   
         ]
     },
-    "flex-layout.col#right-table-main": {
-        "children": [
-            
-        ]
+    "rich-text#custo-investimento-title-main": {
+        "props": {
+            "text": "### INVESTIMENTO"
+        }
     },
 
 
@@ -510,8 +523,222 @@
     },
     "rich-text#custo-investimento-content": {
         "props": {
-            "text": "Todo o investimento para a abertura de um ponto de venda deverá ser disponibilizado pelo franqueado de acordo com o cronograma de construção. A estimativa do investimento depende da localização do seu ponto de venda, da área a ser ocupada e do tipo de loja. O investimento mínimo depende do tamanho e necessidade de cada ponto."
+            "text": "Todo o investimento para a abertura de um ponto de venda deverá ser disponibilizado pelo franqueado de acordo com o cronograma de construção. A estimativa do investimento depende da localização do seu ponto de venda, da área a ser ocupada e do tipo de loja. O investimento mínimo depende do tamanho e necessidade de cada ponto.",
+            "blockClass": "custo-investimento-content"
+        }
+    },
+    "rich-text#inclusao-investimento": {
+        "props": {
+            "text": "O investimento inicial inclui: \n \n Taxa de franquia \n Montagem da loja \n Estoque inicial \n Equipamentos \n Treinamento",
+            "blockClass": "inclusao-investimento"
+        }
+    },
+    "flex-layout.col#container-second-table": {
+        "children": [
+            "flex-layout.row#line0-second-table",
+            "flex-layout.row#line1-second-table",
+            "flex-layout.row#line2-second-table",
+            "flex-layout.row#line3-second-table",
+            "flex-layout.row#line4-second-table",
+            "flex-layout.row#line5-second-table",
+            "flex-layout.row#line6-second-table",
+            "flex-layout.row#line7-second-table",
+            "flex-layout.row#line8-second-table"
+
+
+
+        ]
+    },
+
+    "flex-layout.row#line0-second-table": {
+        "children": [
+            "rich-text#title-line0-second-table",
+            "rich-text#content-line0-second-table"
+        ]
+    },
+
+    "rich-text#title-line0-second-table": {
+        "props": {
+            "text": "",
+            "blockClass": ["bg-table", "franquia-cor-1"]
+        }
+    },
+    "rich-text#content-line0-second-table": {
+        "props": {
+            "text": "LOJA",
+            "blockClass": ["bg-table", "franquia-cor-1", "content-table"]
+        }
+    },
+
+
+    "flex-layout.row#line1-second-table": {
+        "children": [
+            "rich-text#title-line1-second-table",
+            "rich-text#content-line1-second-table"
+        ]
+    },
+
+    "rich-text#title-line1-second-table": {
+        "props": {
+            "text": "METRAGEM A PARTIR DE",
+            "blockClass": ["bg-table", "franquia-cor-sec"]
+        }
+    },
+    "rich-text#content-line1-second-table": {
+        "props": {
+            "text": "50m²",
+            "blockClass": ["bg-table", "franquia-cor-sec", "content-table"]
+        }
+    },
+
+
+
+    "flex-layout.row#line2-second-table": {
+        "children": [
+            "rich-text#title-line2-second-table",
+            "rich-text#content-line2-second-table"
+        ]
+    },
+
+    "rich-text#title-line2-second-table": {
+        "props": {
+            "text": "PADRONIZAÇAO + ESTOQUE",
+            "blockClass": ["bg-table", "franquia-cor-1"]
+        }
+    },
+    "rich-text#content-line2-second-table": {
+        "props": {
+            "text": "R$ 200.000,00*",
+            "blockClass": ["bg-table", "franquia-cor-1","content-table"]
+        }
+    },
+
+
+    "flex-layout.row#line3-second-table": {
+        "children": [
+            "rich-text#title-line3-second-table",
+            "rich-text#content-line3-second-table"
+        ]
+    },
+
+    "rich-text#title-line3-second-table": {
+        "props": {
+            "text": "TAXA DE FRANQUIA:",
+            "blockClass": ["bg-table", "franquia-cor-sec"]
+        }
+    },
+    "rich-text#content-line3-second-table": {
+        "props": {
+            "text": "R$ 65.000,00",
+            "blockClass": ["bg-table", "franquia-cor-sec","content-table"]
+        }
+    },
+
+    "flex-layout.row#line4-second-table": {
+        "children": [
+            "rich-text#title-line4-second-table",
+            "rich-text#content-line4-second-table"
+        ]
+    },
+
+    "rich-text#title-line4-second-table": {
+        "props": {
+            "text": "CAPITAL DE GIRO:",
+            "blockClass": ["bg-table", "franquia-cor-1"]
+        }
+    },
+    "rich-text#content-line4-second-table": {
+        "props": {
+            "text": "20% do investimento total",
+            "blockClass": ["bg-table", "franquia-cor-1","content-table"]
+        }
+    },
+
+    "flex-layout.row#line5-second-table": {
+        "children": [
+            "rich-text#title-line5-second-table",
+            "rich-text#content-line5-second-table"
+        ]
+    },
+
+    "rich-text#title-line5-second-table": {
+        "props": {
+            "text": "TAXA DE ROYALTIES:",
+            "blockClass": ["bg-table", "franquia-cor-sec"]
+        }
+    },
+    "rich-text#content-line5-second-table": {
+        "props": {
+            "text": "5% do faturamento bruto",
+            "blockClass": ["bg-table", "franquia-cor-sec","content-table"]
+        }
+    },
+
+    "flex-layout.row#line6-second-table": {
+        "children": [
+            "rich-text#title-line6-second-table",
+            "rich-text#content-line6-second-table"
+        ]
+    },
+
+    "rich-text#title-line6-second-table": {
+        "props": {
+            "text": "FUNDO DE MARKETING:",
+            "blockClass": ["bg-table", "franquia-cor-1"]
+        }
+    },
+    "rich-text#content-line6-second-table": {
+        "props": {
+            "text": "1,5% do faturamento bruto",
+            "blockClass": ["bg-table", "franquia-cor-1","content-table"]
+        }
+    },
+    
+
+
+    "flex-layout.row#line7-second-table": {
+        "children": [
+            "rich-text#title-line7-second-table",
+            "rich-text#content-line7-second-table"
+        ]
+    },
+
+    "rich-text#title-line7-second-table": {
+        "props": {
+            "text": "RETORNO DE INVESTIMENTO:",
+            "blockClass": ["bg-table", "franquia-cor-sec"]
+        }
+    },
+    "rich-text#content-line7-second-table": {
+        "props": {
+            "text": "entre 24 e 36 meses",
+            "blockClass": ["bg-table", "franquia-cor-sec","content-table"]
+        }
+    },
+
+
+    "flex-layout.row#line8-second-table": {
+        "children": [
+            "rich-text#title-line8-second-table",
+            "rich-text#content-line8-second-table"
+        ]
+    },
+
+    "rich-text#title-line8-second-table": {
+        "props": {
+            "text": "TOTAL DE INVESTIMENTO",
+            "blockClass": ["bg-table", "franquia-cor-1"]
+        }
+    },
+    "rich-text#content-line8-second-table": {
+        "props": {
+            "text": "R$ 330.000,00",
+            "blockClass": ["bg-table", "franquia-cor-1","content-table"]
         }
     }
+
+
+
+    
     
 }

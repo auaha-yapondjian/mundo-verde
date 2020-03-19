@@ -294,6 +294,11 @@
   color: #fff;
   margin: 5px 0;
 }
+.container--franquia-cor-sec{
+  background: #a7d163;
+  color: #fff;
+  margin: 5px 0;
+}
 .container--franquia-cor-2{
   color: #fff;
   background: #a7d163;
@@ -307,5 +312,19 @@
 .paragraph--franquia-right{
   padding: 0 10px;
   justify-content: flex-start !important;
+}
+.container--bg-table{
+  display: flex;
+  justify-content: center;
+  
+}
+.paragraph--custo-investimento-content{
+  max-width: 500px;
+  margin-bottom: 70px;
+}
+.container--content-table{
+  @media screen and (min-width: 1024px){
+  margin-left: 10px;
+  }
 }
 //
