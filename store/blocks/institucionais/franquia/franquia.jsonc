@@ -523,13 +523,13 @@
     },
     "rich-text#custo-investimento-content": {
         "props": {
-            "text": "Todo o investimento para a abertura de um ponto de venda deverá ser disponibilizado pelo franqueado de acordo com o cronograma de construção. A estimativa do investimento depende da localização do seu ponto de venda, da área a ser ocupada e do tipo de loja. O investimento mínimo depende do tamanho e necessidade de cada ponto.",
+            "text": "Todo o investimento para a abertura de um ponto de venda  deverá ser disponibilizado pelo franqueado de acordo com o cronograma de construção. A estimativa do investimento depende da localização do seu ponto de venda, da área a ser ocupada e do tipo de loja. O investimento mínimo depende do tamanho e necessidade de cada ponto.",
             "blockClass": "custo-investimento-content"
         }
     },
     "rich-text#inclusao-investimento": {
         "props": {
-            "text": "O investimento inicial inclui: \n \n Taxa de franquia \n Montagem da loja \n Estoque inicial \n Equipamentos \n Treinamento",
+            "text": "O investimento inicial inclui: \n \n • Taxa de franquia \n • Montagem da loja \n • Estoque inicial \n • Equipamentos \n • Treinamento",
             "blockClass": "inclusao-investimento"
         }
     },

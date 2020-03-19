@@ -1,7 +1,7 @@
 {
     "store.custom#imprensa" : {
         "blocks": [
-            "flex-layout.row#rowmain"
+            "flex-layout.row#rowmain-imprensa"
 
         ]
     },
@@ -9,16 +9,16 @@
 
 
 
-    "flex-layout.row#rowmain": {
+    "flex-layout.row#rowmain-imprensa": {
         "children": [
-            "flex-layout.col#colmain"
+            "flex-layout.col#colmain-imprensa"
         ],
         "props": {
             "blockClass": ["container", "container-imprensa"]
         }
     },
 
-    "flex-layout.col#colmain": {
+    "flex-layout.col#colmain-imprensa": {
         "children": [
             "rich-text#title",
             "rich-text#assessoria",

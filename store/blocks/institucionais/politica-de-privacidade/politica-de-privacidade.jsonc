@@ -1,28 +1,28 @@
 {
     "store.custom#politica-de-privacidade" : {
         "blocks": [
-            "flex-layout.row#contentallrow"
+            "flex-layout.row#contentallrow-politica"
 
         ]
     },
 
-    "flex-layout.row#contentallrow": {
+    "flex-layout.row#contentallrow-politica": {
         "children": [
-            "flex-layout.col#contentallcol"
+            "flex-layout.col#contentallcol-politica"
         ],
         "props": {
             "blockClass": "container"
         }
     },
 
-    "flex-layout.col#contentallcol": {
+    "flex-layout.col#contentallcol-politica": {
         "children": [
-            "flex-layout.row#content1",
-            "flex-layout.row#content2",
-            "flex-layout.row#content3",
-            "flex-layout.row#content4",
-            "flex-layout.row#content5",
-            "flex-layout.row#content6"
+            "flex-layout.row#content1-politica",
+            "flex-layout.row#content2-politica",
+            "flex-layout.row#content3-politica",
+            "flex-layout.row#content4-politica",
+            "flex-layout.row#content5-politica",
+            "flex-layout.row#content6-politica"
         ],
         "props": {
 
@@ -31,182 +31,184 @@
 
 
 
-    "flex-layout.row#content1": {
+    "flex-layout.row#content1-politica": {
         "children": [
-            "flex-layout.col#col1"
+            "flex-layout.col#col1-politica"
         ],
         "props": {
 
         }
     },
-    "flex-layout.col#col1": {
+    "flex-layout.col#col1-politica": {
         "children": [
-            "rich-text#titulo1",
-            "rich-text#content1"
+            "rich-text#titulo1-politica",
+            "rich-text#content1-politica"
         ]
     },
-    "rich-text#titulo1": {
+    "rich-text#titulo1-politica": {
         "children": [],
         "props": {
             "text": "Política de privacidade da mundo verde",
             "blockClass": "title-policy"
         }
     },
-    "rich-text#content1": {
+    "rich-text#content1-politica": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade."
+            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.Mundo Verde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade. \n \n A Mundo Verde leva muito a sério a proteção dos dados pessoais dos usuários do Site. Por esta razão, não haverá coleta, processamento, armazenamento ou utilização dos dados pessoais dos usuários de forma diversa ou para outros fins que não aqueles explicitados mais adiante nesta Política de Privacidade. A Mundo Verde toma todas as medidas técnicas e organizacionais necessárias para garantir a proteção dos dados pessoais dos usuários do Site."
+            
         }
     },
 
 
 
 
-    "flex-layout.row#content2": {
+    "flex-layout.row#content2-politica": {
         "children": [
-            "flex-layout.col#col2"
+            "flex-layout.col#col2-politica"
         ],
         "props": {
 
         }
     },
-    "flex-layout.col#col2": {
+    "flex-layout.col#col2-politica": {
         "children": [
-            "rich-text#titulo2",
-            "rich-text#content2"
+            "rich-text#titulo2-politica",
+            "rich-text#content2-politica"
         ]
     },
-    "rich-text#titulo2": {
+    "rich-text#titulo2-politica": {
         "children": [],
         "props": {
             "text": "o que são dados pessoais?",
             "blockClass": "title-policy"
         }
     },
-    "rich-text#content2": {
+    "rich-text#content2-politica": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade."
+            "text": "São considerados dados pessoais as informações pertencentes e que possam ser diretamente relacionadas à identificação pessoal do usuário, tais como seu nome e endereço. Por outro lado, as informações que não possam ser diretamente relacionadas à identificação do usuário não serão consideradas como dados pessoais."
         }
     },
 
 
 
 
-    "flex-layout.row#content3": {
+    "flex-layout.row#content3-politica": {
         "children": [
-            "flex-layout.col#col3"
+            "flex-layout.col#col3-politica"
         ],
         "props": {
 
         }
     },
-    "flex-layout.col#col3": {
+    "flex-layout.col#col3-politica": {
         "children": [
-            "rich-text#titulo3",
-            "rich-text#content3"
+            "rich-text#titulo3-politica",
+            "rich-text#content3-politica"
         ]
     },
-    "rich-text#titulo3": {
+    "rich-text#titulo3-politica": {
         "children": [],
         "props": {
             "text": "o que a mundo verde fará com os seus dados pessoais?",
             "blockClass": "title-policy"
         }
     },
-    "rich-text#content3": {
+    "rich-text#content3-politica": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade."
+            "text": "O usuário poderá visitar o Site e obter informações sem ter de divulgar seus dados pessoais. Quando o usuário apenas visita o Site, ele permanece anônimo e suas informações de login transmitidas através de seu navegador de Internet para abrir cada página, tais como a data da consulta, seu tempo de permanência on-line ou o nome de seu provedor de serviços de Internet, serão utilizadas pela Mundo Verde, na forma descrita nesta Política de Privacidade, sem identificar o usuário, a menos que ele tenha se conectado usando seu nome de usuário e senha. \n \n O usuário poderá voluntariamente fornecer seus dados pessoais quando, por exemplo, fizer um pedido de compra, inscrever-se para receber uma newsletter ou quando executar operações semelhantes. Essas informações pessoais poderão incluir: \n \n •  Nome completo \n •  Endereço \n •  E-mail \n •  Número de telefone \n •  Número de fax \n •  Data de nascimento \n •  Número de cartão de crédito \n As informações acima poderão ser utilizadas pela Mundo Verde para redigir o contrato de compra com os usuários, fornecer serviços desejados, atender às solicitações de seus clientes e/ou entrar em contato com o usuário por meio do Serviço de Atendimento ao Cliente para, por exemplo, responder às suas perguntas. \n \n Caso a Mundo Verde necessite terceirizar a prestação de alguns de seus serviços (para uma empresa de transporte ou um prestador de serviços financeiros, por exemplo), o terceiro contratado não receberá da Mundo Verde nada além das informações indispensáveis à prestação de seu respectivo serviço e deverá, de sua parte, velar pela proteção dos dados pessoais dos usuários. \n \n A Mundo Verde necessitará do endereço de e-mail dos usuários do Site para poder confirmar seus pedidos de compras ou para comunicar-se com eles (para, por exemplo, enviar a confirmação de seu pedido ou um boletim informativo). \n \n Por ocasião do primeiro registro do usuário no Site, seja para fazer um pedido de compra ou para solicitar quaisquer outros serviços, os dados pessoais relativos à abertura de sua conta no Site serão armazenados para que o usuário, no futuro, possa fazer pedidos de compra de forma mais rápida e confortável. \n \n Quando o usuário subscrever uma newsletter, a Mundo Verde pedirá que ele forneça alguns de seus dados pessoais, especialmente seu endereço de e-mail. Como assinante, o usuário receberá informações gerais sobre os produtos da Mundo Verde e sobre ofertas comerciais vantajosas. Em alguns casos, a Mundo Verde utilizará o endereço de e-mail do usuário para fins promocionais ou para realizar pesquisas de mercado. O usuário poderá, a qualquer momento, simplesmente cancelar a assinatura da newsletter, assim negando o consentimento para que seus dados sejam utilizados no futuro para marketing, publicidade e pesquisa. Para tanto, basta o usuário contatar a Mundo Verde no telefone ou e-mail indicados abaixo."
+
         }
     },
 
 
 
 
-    "flex-layout.row#content4": {
+    "flex-layout.row#content4-politica": {
         "children": [
-            "flex-layout.col#col4"
+            "flex-layout.col#col4-politica"
         ],
         "props": {
 
         }
     },
-    "flex-layout.col#col4": {
+    "flex-layout.col#col4-politica": {
         "children": [
-            "rich-text#titulo4",
-            "rich-text#content4"
+            "rich-text#titulo4-politica",
+            "rich-text#content4-politica"
         ]
     },
-    "rich-text#titulo4": {
+    "rich-text#titulo4-politica": {
         "children": [],
         "props": {
             "text": "quais são os destinatários dos dados coletados?",
             "blockClass": "title-policy"
         }
     },
-    "rich-text#content4": {
+    "rich-text#content4-politica": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade."
+            "text": "Os dados pessoais dos usuários serão utilizados pela Mundo Verde, suas empresas afiliadas, seus parceiros e revendedores, observadas as restrições descritas na presente Política de Privacidade."
         }
     },
 
 
 
 
-    "flex-layout.row#content5": {
+    "flex-layout.row#content5-politica": {
         "children": [
-            "flex-layout.col#col5"
+            "flex-layout.col#col5-politica"
         ],
         "props": {
 
         }
     },
-    "flex-layout.col#col5": {
+    "flex-layout.col#col5-politica": {
         "children": [
-            "rich-text#titulo5",
-            "rich-text#content5"
+            "rich-text#titulo5-politica",
+            "rich-text#content5-politica"
         ]
     },
-    "rich-text#titulo5": {
+    "rich-text#titulo5-politica": {
         "children": [],
         "props": {
             "text": "o que são cookies e como são utilizados pela mundo verde?",
             "blockClass": "title-policy"
         }
     },
-    "rich-text#content5": {
+    "rich-text#content5-politica": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade."
+            "text": "Cookies são pequenos arquivos de texto que são armazenados no computador do usuário cada vez que ele abrir uma página na internet. \n \n A Mundo Verde utiliza os chamados 'cookies de sessão', que são imediatamente apagados quando o usuário sair do seu navegador. Os cookies de sessão permitem, por exemplo, simplificar o acesso a informações relativas ao carrinho de compras dos usuários e ter uma visão em tempo real do número de itens em seu carrinho de compras e seu valor atualizado. \n \n Além disso, a Mundo Verde também utiliza os chamados 'cookies persistentes', que permanecem presentes mesmo após o encerramento da sessão. Os cookies persistentes serão utilizados, em especial, para tornar o acesso às ofertas do Site mais simples, eficaz e segura. Com estes arquivos, informações específicas relacionadas aos interesses de cada usuário poderiam, por exemplo, ser exibidas nas páginas visitadas, tendo como finalidade unicamente a adaptação das ofertas da Mundo Verde aos desejos de cada usuário da melhor forma e tornar a experiência de navegação no Site o mais agradável possível. \n \n O usuário poderá autorizar ou recusar o uso de cookies configurando o seu navegador de forma adequada, devendo reportar-se, para tanto, às regras de utilização de seu navegador. \n \n De um modo geral, se desejar, o usuário poderá recusar todos os cookies. No entanto, se assim proceder, a utilização do Site pelo usuário poderá ser limitada ou inviabilizada."
         }
     },
-    "flex-layout.row#content6": {
+    "flex-layout.row#content6-politica": {
         "children": [
-            "flex-layout.col#col6"
+            "flex-layout.col#col6-politica"
         ],
         "props": {
 
         }
     },
-    "flex-layout.col#col6": {
+    "flex-layout.col#col6-politica": {
         "children": [
-            "rich-text#titulo6",
-            "rich-text#content6"
+            "rich-text#titulo6-politica",
+            "rich-text#content6-politica"
         ]
     },
-    "rich-text#titulo6": {
+    "rich-text#titulo6-politica": {
         "children": [],
         "props": {
             "text": "o que são cookies e como são utilizados pela mundo verde?",
             "blockClass": "title-policy"
         }
     },
-    "rich-text#content6": {
+    "rich-text#content6-politica": {
         "children": [],
         "props": {
-            "text": "A presente Política de Privacidade descreve a forma como a Mundo Verde Comércio de Cosméticos e Produtos Alimentícios em Geral Ltda. (“Mundo Verde”) - registrada sob o CNPJ 17.018.091/0001-95 - utiliza os dados fornecidos pelos usuários do site www.MundoVerde.com.br (o 'Site'). Ao fornecer à Mundo Verde suas informações pessoais em virtude de uma ordem de compra enviada pelo Site, o usuário declara expressamente conhecer e concordar com os termos e condições previstas nesta Política de Privacidade."
+            "text": "De acordo com o Art. 43, §2º e § 3º da Lei de Proteção ao Consumidor, o usuário poderá a qualquer momento consultar bem como alterar seus dados pessoais armazenados nos registros da Mundo Verde.             "
         }
     }
 

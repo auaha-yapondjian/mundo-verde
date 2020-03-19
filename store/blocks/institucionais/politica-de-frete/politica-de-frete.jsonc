@@ -952,7 +952,7 @@
     },
     "rich-text#entrega-caixa-content": {
         "props": {
-            "text": "A Mundo Verde não efetua entrega em caixas postais. Itens sujeitos a devolução;"
+            "text": "•  A Mundo Verde não efetua entrega em caixas postais. Itens sujeitos a devolução;"
         }
     },
     "flex-layout.col#awareness": {
@@ -970,7 +970,7 @@
     "rich-text#awareness-content": {
         "props": {
             "text": 
-            "O prazo de entrega começa a contar após a aprovação do pagamento. Assim que seu pagamento for aprovado você será notificado por e-mail; \n Todos os pedidos estão sujeitos à análise e aprovação de dados cadastrais, o que pode causar atrasos na confirmação do pagamento; \n O prazo de entrega informado inclui o prazo de processamento do pedido dentro do nosso armazém e o prazo para a realização da entrega pelo transportador. Pode haver atrasos."
+            "•  O prazo de entrega começa a contar após a aprovação do pagamento. Assim que seu pagamento for aprovado você será notificado por e-mail; \n •  Todos os pedidos estão sujeitos à análise e aprovação de dados cadastrais, o que pode causar atrasos na confirmação do pagamento; \n •  O prazo de entrega informado inclui o prazo de processamento do pedido dentro do nosso armazém e o prazo para a realização da entrega pelo transportador. Pode haver atrasos."
         }
     }
 
