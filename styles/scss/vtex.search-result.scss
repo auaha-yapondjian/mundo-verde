@@ -52,13 +52,28 @@
             margin: 0;
             margin-right: 10px;
             padding: 0;
-            font-size: 20px;
-            color: #333;
+            font-size: 18px;
+            color: #4d4d4d;
+            text-transform: lowercase;
         }
 
         .totalProducts--layout{
             padding: 0;
-            padding-top: 5px;
+            padding-top: 2px;
+            color: #4d4d4d;
+            font-size: 14px;
+            font-weight: 700;
+
+            &::before{
+                content: "(";
+            }
+            &::after{
+                content: ")";
+            }
+
+            .totalProductsMessage{
+                color: inherit;
+            }
         }
     }
 
@@ -90,6 +105,7 @@
     margin: 0 auto;
     margin-top: 30px;
     padding: 0 15px;
+    border-bottom: 1px solid #e3e4e6;
 }
 
 .galleryItem{
@@ -101,10 +117,23 @@
     margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1024px){
+    .gallery {
+        margin-right: -30px;
+        padding-left: 45px;
+
+        :global(.vtex-product-summary-2-x-container){
+            padding: 20px 60px 10px;
+        }
+    }
+
+}
+
 .orderByDropdown{
     z-index: 100;
 }
 
+.filterPopupArrowIcon,
 .gridIcon,
 .singleGridIcon{
     color: #008651;
@@ -112,4 +141,39 @@
 
 :global(.vtex-flex-layout-0-x-flexCol--orderByMobileCol){
     margin: 0 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--category-info-bottom){
+    max-width: 1250px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 36px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--category-info-bottom){
+    background-color: #fff;
+    padding: 15px 30px 50px;
+    border-radius: 4px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--category-info-title){
+    font-weight: 700;
+}
+
+:global(.vtex-store-components-3-x-imageElement--category-info-image){
+    width: 100% !important;
+    max-width: 300px;
+    margin-right: auto;
+}
+
+:global(.vtex-rich-text-0-x-container--category-info-content){
+    color: #333;
+    font-weight: 400;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    
+    :global(.vtex-rich-text-0-x-paragraph--category-info-content):first-child{
+        margin-top: 0;
+    }
 }

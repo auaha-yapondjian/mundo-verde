@@ -99,7 +99,8 @@
     "children": [
       "flex-layout.row#banner-seo",
       "flex-layout.row#searchbread",
-      "flex-layout.row#result"
+      "flex-layout.row#result",
+      "flex-layout.row#category-info"
     ],
     "props": {
       "pagination": "show-more",
@@ -354,7 +355,12 @@
   "gallery": {
     "blocks": [
       "product-summary.shelf"
-    ]
+    ],
+    "props": {
+      "maxItemsPerRow" : { 
+        "desktop": 3 
+      }
+    }
   },
   "filter-navigator.v3": {
     "props": {
@@ -386,6 +392,55 @@
     "props": {
       "src": "",
       "blockClass": "image-banner-seo"
+    }
+  },
+  "flex-layout.row#category-info": {
+    "children": [
+      "flex-layout.col#category-info"
+    ],
+    "props": {
+      "blockClass": "category-info-bottom",
+      "marginTop": 2,
+      "marginBottom": 8
+    }
+  },
+  "flex-layout.col#category-info": {
+    "children": [
+      "rich-text#category-info-title",
+      "flex-layout.row#category-info-content"
+    ]
+  },
+  "rich-text#category-info-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "font": "t-heading-6",
+      "textColor": "c-on-info",
+      "blockClass": "category-info-title"
+    }
+  },
+  "flex-layout.row#category-info-content": {
+    "children": [
+      "image#category-info-image",
+      "rich-text#category-info-content"
+    ],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+  "image#category-info-image": {
+    "props": {
+      "src": "",
+      "blockClass": "category-info-image",
+      "width": "30%"
+    }
+  },
+  "rich-text#category-info-content": {
+    "props": {
+      "text": "",
+      "width": "65%",
+      "blockClass": "category-info-content"
     }
   }
 }

@@ -214,7 +214,8 @@
           "muted-2": "#ffffff",
           "muted-3": "#3f3f40",
           "muted-4": "#3f3f40",
-          "muted-5": "#3f3f40"
+          "muted-5": "#3f3f40",
+          "info": "#f5a057"
         },
         "hover-on": {
           "action-primary": "#ffffff",
@@ -253,84 +254,84 @@
         "measure": [30, 34, 20],
         "styles": {
           "heading-1": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "700",
             "fontSize": "3rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-2": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "700",
             "fontSize": "2.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-3": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "700",
             "fontSize": "1.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-4": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1.5rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-5": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-6": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "body": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "0.875rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "mini": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "0.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "action": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "1rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "0.675rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--large": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "1.25rem",
             "textTransform": "uppercase",
