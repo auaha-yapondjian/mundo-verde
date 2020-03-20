@@ -74,7 +74,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#008651",
+          "action-primary": "#008651e6",
           "action-secondary": "#dbe9fd",
           "emphasis": "#008651",
           "success": "#8bc34a",
@@ -127,7 +127,7 @@
           "link": "#0c389f"
         },
         "hover-text": {
-          "action-primary": "#008651",
+          "action-primary": "#008651cc",
           "action-secondary": "#dbe9fd",
           "link": "#008651",
           "emphasis": "#008651",
@@ -311,9 +311,9 @@
           },
           "mini": {
             "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
-            "fontWeight": "normal",
-            "fontSize": "0.75rem",
-            "textTransform": "initial",
+            "fontWeight": "bold",
+            "fontSize": "1rem",
+            "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action": {
@@ -326,8 +326,8 @@
           "action--small": {
             "fontFamily": "Lato, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
-            "fontSize": "0.675rem",
-            "textTransform": "uppercase",
+            "fontSize": "0.875rem",
+            "textTransform": "initial",
             "letterSpacing": "0"
           },
           "action--large": {
