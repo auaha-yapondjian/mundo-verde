@@ -1,0 +1,22 @@
+:global(.vtex-account_menu-link){
+    &:hover{
+    text-decoration: underline;
+    }
+}
+:global(.vtex-button){
+    &:hover{
+        opacity: 0.9;
+    }
+}
+:global(.profileSummary .flex-ns .mb8 .c-on-base){
+    font-family: lato;
+}
+:global(.vtex-pageHeader__title){
+    font-family: gotham;
+}
+:global(.vtex-button__label .align-baseline){
+    font-weight: bold;
+}
+*{
+    font-family: lato;
+}
