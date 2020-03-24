@@ -114,7 +114,7 @@
   },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": ["mastercard", "visa", "diners club"]
+      "paymentMethods": ["mastercard", "elo", "visa", "diners club"]
     }
   }
 }

@@ -34,8 +34,8 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "product-rating-inline",
       "product-summary-space",
+      "product-rating-inline",
       "product-summary-price",
       "add-to-cart-button"
     ]

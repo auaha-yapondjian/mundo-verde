@@ -360,9 +360,80 @@
 
   }
 
+  :global(.vtex-reviews-and-ratings-1-x-stars){
+    color: #fecd00;
+    font-size: 18px;
+  }
+
+  :global(.vtex-reviews-and-ratings-1-x-summaryContainer){
+    font-size: 0;
+  }
+
   .productDescriptionContainer{
     max-width: 1250px;
     padding: 0 15px;
   }
-}
+  
+  .productBrandName{
+    color: #7c7c7c;
+  }
 
+  .price_listPriceContainer{
+    font-size: 18px;
+    color: #707070;
+    font-weight: 600;
+  }
+
+  .price_sellingPrice{
+    font-size: 44px;
+    padding: 0;
+  }
+
+  .productNameContainer{
+    color: #4d4d4f;
+    padding: 5px 0;
+    
+  }
+  
+  // buy button
+  :global(.vtex-flex-layout-0-x-flexColChild--product--buy-button){
+    display: flex;
+    justify-content: center;
+
+    :global(.vtex-button){
+      margin-top: 20px;
+      max-width: 200px;
+      :global(.vtex-button__label){
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      
+    }
+
+    @media screen and (min-width: 540px) {
+      justify-content: flex-end;
+    }
+  }
+
+ 
+  :global(.vtex-flex-layout-0-x-flexCol--product-info-right){
+
+    @media screen and (max-width: 540px) {
+      text-align: center;
+    }
+
+    .shippingContainer{
+      margin: 20px 0;
+
+      :global(.vtex-button){
+        margin: 10px 0;
+      }
+    }
+  }
+
+  :global(.vtex-reviews-and-ratings-1-x-container){
+    display: none;
+  }
+  
+}

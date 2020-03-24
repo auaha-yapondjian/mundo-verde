@@ -3,6 +3,10 @@
     max-width: 100%;
     background-color: #f2f2f2;
 
+    .filter__container--filterNavigator--title {
+        display: none;
+    }
+
     :global(.vtex-store-components-3-x-container) {
         max-width: 100%;
         padding: 0;

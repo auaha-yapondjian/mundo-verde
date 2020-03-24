@@ -4,9 +4,10 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
-      "shelf.relatedProducts",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "shelf.relatedProducts#View",
+      "shelf.relatedProducts#AlsoBought"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
@@ -79,17 +80,18 @@
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass": "product-info-right"
     },
     "children": [
+      "vtex.store-components:product-brand",
       "vtex.store-components:product-name",
       "product-rating-summary",
-      "product-price#product-details",
+      "flex-layout.row#product-price-and-buy-button",
       "product-separator",
       "product-identifier.product",
       "sku-selector",
       "product-assembly-options",
-      "flex-layout.row#buy-button",
       "availability-subscriber",
       "shipping-simulator",
       "share#default"
@@ -109,15 +111,30 @@
       "showSavings": true
     }
   },
-
   "flex-layout.row#buy-button": {
     "props": {
-      "marginTop": 4,
-      "marginBottom": 7
     },
     "children": ["add-to-cart-button"]
   },
 
+  "flex-layout.col#buy-button": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "product--buy-button"
+    },
+    "children": ["add-to-cart-button"]
+  },
+
+  "flex-layout.row#product-price-and-buy-button": {
+    "children": [
+      "product-price#product-details",
+      "flex-layout.col#buy-button"
+    ],
+    "props": {
+      "marginTop": 5,
+      "marginBottom": 4
+    }
+  },
   "share#default": {
     "props": {
       "social": {
@@ -126,6 +143,44 @@
         "Twitter": false,
         "Pinterest": true
       }
+    }
+  },
+  "shelf.relatedProducts#View": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "props": {
+        "recommendation": "editor.relatedProducts.view",
+        "productList": {
+            "maxItems": 12,
+            "itemsPerPage": 4,
+            "arrows": true,
+            "titleText": "Quem viu, viu também:"
+        },
+        "context": {
+          "maxItemsPerPage": 9,
+          "hideUnavailableItems": true
+        },
+        "blockClass": "product-who-saw"
+    }
+  },
+  "shelf.relatedProducts#AlsoBought": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "props": {
+        "recommendation": "editor.relatedProducts.buy",
+        "blockClass": "product-who-bought",
+        "productList": {
+            "maxItems": 24,
+            "itemsPerPage": 4,
+            "arrows": true,
+            "titleText": "Quem comprou, comprou também:"
+        },
+        "context": {
+            "maxItemsPerPage": 9,
+            "hideUnavailableItems": true
+        }
     }
   }
 }
