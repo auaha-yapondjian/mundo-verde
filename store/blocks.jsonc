@@ -34,9 +34,10 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "product-summary-space",
+      "vtex.store-components:product-brand",
       "product-rating-inline",
       "product-summary-price",
+      "product-summary-space",
       "add-to-cart-button"
     ]
   },

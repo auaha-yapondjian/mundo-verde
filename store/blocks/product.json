@@ -128,11 +128,13 @@
   "flex-layout.row#product-price-and-buy-button": {
     "children": [
       "product-price#product-details",
+      "product-quantity",
       "flex-layout.col#buy-button"
     ],
     "props": {
       "marginTop": 5,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "colGap": 0
     }
   },
   "share#default": {

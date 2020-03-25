@@ -224,7 +224,7 @@
   }
 
   .form{
-    max-width: 1080px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 15px 40px;
 
@@ -360,10 +360,7 @@
 
   }
 
-  :global(.vtex-reviews-and-ratings-1-x-stars){
-    color: #fecd00;
-    font-size: 18px;
-  }
+  
 
   :global(.vtex-reviews-and-ratings-1-x-summaryContainer){
     font-size: 0;
@@ -401,14 +398,13 @@
     justify-content: center;
 
     :global(.vtex-button){
-      margin-top: 20px;
       max-width: 200px;
+
       :global(.vtex-button__label){
         padding-top: 0 !important;
         padding-bottom: 0 !important;
       }
-
-      
+     
     }
 
     @media screen and (min-width: 540px) {
@@ -416,8 +412,16 @@
     }
   }
 
- 
   :global(.vtex-flex-layout-0-x-flexCol--product-info-right){
+    
+    :global(.vtex-flex-layout-0-x-flexRowContent){
+      justify-content: space-between;
+    }
+
+    :global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+      display: none;
+    }
+
 
     @media screen and (max-width: 540px) {
       text-align: center;
@@ -425,15 +429,63 @@
 
     .shippingContainer{
       margin: 20px 0;
-
+      
       :global(.vtex-button){
-        margin: 10px 0;
+        padding: 10px 0;
+        margin: 0;
+      }
+
+      :global(.vtex-button__label){
+        padding: 0 !important;
       }
     }
   }
 
-  :global(.vtex-reviews-and-ratings-1-x-container){
-    display: none;
+  :global(.vtex-product-quantity-1-x-quantitySelectorContainer){
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
   }
+
+}
+
+:global(.vtex-reviews-and-ratings-1-x-summaryContainer),
+:global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
+  min-height: 23px;
   
+}
+
+:global(.vtex-reviews-and-ratings-1-x-stars){
+  color: #fecd00;
+  font-size: 18px;
+}
+
+.shippingContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  :global(.vtex-button),
+  :global(.vtex-address-form__postalCode){
+    width: 200px;
+    padding: 10px 0;
+  }
+
+  @media screen and (max-width: 540px){
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ 
+}
+
+.shareButtons {
+  @media screen and (max-width: 540px) {
+    justify-content: center;
+  }
+}
+
+:global(.vtex-reviews-and-ratings-1-x-container){
+  padding-bottom: 20px;
 }
