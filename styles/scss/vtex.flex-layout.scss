@@ -146,3 +146,55 @@
   background-color: #f2f2f2;
   height: 80px;
 }
+
+// Payment Methods - footer
+.flexRowContent--footer--payments-methods--content{
+  @media screen and (max-width: 540px){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+// vtex-flex-layout-0-x-flexRowContent
+
+.flexCol--custom-payment-methods {
+  background-image: url(/arquivos/paymentIcons-s1dcb2d2979.png);
+  
+  &--visa{
+    background-position: 0 -70px;
+    width: 33px !important;
+    height: 25px;
+  }
+
+  &--mastercard{
+    background-position: 0 -45px;
+    width: 33px !important;
+    height: 25px;
+  }
+
+  &--american{
+    background-position: 0 -20px;
+    width: 49px !important;
+    height: 25px;
+  }
+
+  &--dinners{
+    background-position: 0 -95px;
+    width: 37px !important;
+    height: 25px;
+  }
+
+  &--elo{
+    background-position: -33px -70px;
+    width: 25px !important;
+    height: 25px;
+  }
+
+  &--boleto{
+    background-position: -33px -45px;
+    width: 36px !important;
+    height: 25px;
+  }
+}

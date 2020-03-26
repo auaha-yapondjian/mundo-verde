@@ -8,13 +8,6 @@
     }
 }
 
-.box {
-    right: initial !important;
-    left: 10px !important;
-    min-width: 200px;
-}
-
-
 .profileIcon {
     width: 38px;
     height: 28px;
@@ -34,9 +27,6 @@
 
 }
 
-.arrowUp {
-    left: 10px;
-}
 
 .button{
     padding-left: 0;
@@ -113,4 +103,8 @@
 
 .contentForm {
     min-width: 200px;
+}
+
+.formTitle{
+    font-size: 14px;
 }

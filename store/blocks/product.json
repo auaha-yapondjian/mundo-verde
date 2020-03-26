@@ -117,6 +117,13 @@
     "children": ["add-to-cart-button"]
   },
 
+  "product-quantity": {
+    "props": {
+      "showLabel": false,
+      "size": "large"
+    }
+  },
+
   "flex-layout.col#buy-button": {
     "props": {
       "verticalAlign": "middle",

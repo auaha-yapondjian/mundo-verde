@@ -157,6 +157,12 @@
     color: #008651;
 }
 
+.categoryItemChildren--filterNavigator {
+    color: #3f3f40;
+    background: #f2f2f2;
+    transform: translateX(-1px);
+}
+
 :global(.vtex-flex-layout-0-x-flexCol--orderByMobileCol){
     margin: 0 10px;
 }
