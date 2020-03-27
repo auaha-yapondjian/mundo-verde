@@ -22,7 +22,7 @@
     ],
     "props": {
       "blockClass": "footer-one--desktop",
-      "paddingTop": 5,
+      "paddingTop": 8,
       "paddingBottom": 3
     }
   },
