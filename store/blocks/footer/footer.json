@@ -22,7 +22,7 @@
     ],
     "props": {
       "blockClass": "footer-one--desktop",
-      "paddingTop": 3,
+      "paddingTop": 8,
       "paddingBottom": 3
     }
   },
@@ -65,7 +65,7 @@
     }
   },
   "flex-layout.col#footer--payments": {
-    "children": ["rich-text#footer-payment",  "accepted-payment-methods"],
+    "children": ["rich-text#footer-payment",  "flex-layout.row#footer--payments-methods"],
     "props": {
       "blockClass": "footer-payments"
     }
@@ -112,9 +112,54 @@
       "blockClass": "footer-social-networks"
     }
   },
+  "flex-layout.row#footer--payments-methods": {
+    "children": [
+      "flex-layout.col#payment-method--visa",
+      "flex-layout.col#payment-method--mastercard",
+      "flex-layout.col#payment-method--american",
+      "flex-layout.col#payment-method--dinners",
+      "flex-layout.col#payment-method--elo",
+      "flex-layout.col#payment-method--boleto"
+    ],
+    "props": {
+      "colGap": 6,
+      "colSizing": "auto",
+      "blockClass": "footer--payments-methods--content"
+    }
+  },
+  "flex-layout.col#payment-method--visa": {
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--visa"]
+    }
+  },
+  "flex-layout.col#payment-method--mastercard": {
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--mastercard"]
+    }
+  },
+  "flex-layout.col#payment-method--american": {
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--american"]
+    }
+  },
+  "flex-layout.col#payment-method--dinners": {
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--dinners"]
+    }
+  },
+  "flex-layout.col#payment-method--elo": {
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--elo"]
+    }
+  },
+  "flex-layout.col#payment-method--boleto": {
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--boleto"]
+    }
+  },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": ["mastercard", "visa", "diners club"]
+      "paymentMethods": ["mastercard", "elo", "visa", "diners club"]
     }
   }
 }

@@ -12,12 +12,44 @@
       color: #c4c4c4;
       font-size: 14px;
       font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .socialNetworkLink{
+      width: 24px;
+      height: 24px;
+      transition: transform .3s ease-in-out;
+
+      &--footer-social-networks--facebook{
+        background-image: url(/arquivos/social-f7d996ee.png);
+        background-position: -24px 0;
+      }
+
+      &--footer-social-networks--twitter{
+        background-image: url(/arquivos/social-footer-icons.png);
+        background-position: -48px -67.5px;
+      }
+
+      &--footer-social-networks--youtube{
+        background-image: url(/arquivos/social-footer-icons.png);
+        background-position: -48px -24px;
+      }
+
+      &--footer-social-networks--instagram{
+        background-image: url(/arquivos/social-footer-icons.png);
+        background-position: 0 -67.5px;
+      }
+
+      &:hover{
+        transform: scale(1.25);
+      }
     }
 
     .socialNetworkImage{
       width: 24px;
       height: 24px;
       transition: transform .3s ease-in-out;
+      display: none;
 
       &:hover{
         transform: scale(1.2);
