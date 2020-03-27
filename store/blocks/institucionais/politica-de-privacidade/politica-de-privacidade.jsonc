@@ -80,7 +80,7 @@
     "rich-text#titulo2-politica": {
         "children": [],
         "props": {
-            "text": "o que são dados pessoais?",
+            "text": "O que são dados pessoais?",
             "blockClass": "title-policy"
         }
     },
@@ -111,7 +111,7 @@
     "rich-text#titulo3-politica": {
         "children": [],
         "props": {
-            "text": "o que a mundo verde fará com os seus dados pessoais?",
+            "text": "O que a mundo verde fará com os seus dados pessoais?",
             "blockClass": "title-policy"
         }
     },
@@ -143,7 +143,7 @@
     "rich-text#titulo4-politica": {
         "children": [],
         "props": {
-            "text": "quais são os destinatários dos dados coletados?",
+            "text": "Quais são os destinatários dos dados coletados?",
             "blockClass": "title-policy"
         }
     },
@@ -174,7 +174,7 @@
     "rich-text#titulo5-politica": {
         "children": [],
         "props": {
-            "text": "o que são cookies e como são utilizados pela mundo verde?",
+            "text": "O que são cookies e como são utilizados pela mundo verde?",
             "blockClass": "title-policy"
         }
     },
@@ -201,7 +201,7 @@
     "rich-text#titulo6-politica": {
         "children": [],
         "props": {
-            "text": "o que são cookies e como são utilizados pela mundo verde?",
+            "text": "O que são cookies e como são utilizados pela mundo verde?",
             "blockClass": "title-policy"
         }
     },

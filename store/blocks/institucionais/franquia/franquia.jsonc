@@ -554,7 +554,10 @@
         "children": [
             "rich-text#title-line0-second-table",
             "rich-text#content-line0-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line0-second-table": {
@@ -575,7 +578,10 @@
         "children": [
             "rich-text#title-line1-second-table",
             "rich-text#content-line1-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line1-second-table": {
@@ -597,7 +603,10 @@
         "children": [
             "rich-text#title-line2-second-table",
             "rich-text#content-line2-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line2-second-table": {
@@ -618,7 +627,10 @@
         "children": [
             "rich-text#title-line3-second-table",
             "rich-text#content-line3-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line3-second-table": {
@@ -638,7 +650,10 @@
         "children": [
             "rich-text#title-line4-second-table",
             "rich-text#content-line4-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line4-second-table": {
@@ -658,7 +673,10 @@
         "children": [
             "rich-text#title-line5-second-table",
             "rich-text#content-line5-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line5-second-table": {
@@ -678,7 +696,10 @@
         "children": [
             "rich-text#title-line6-second-table",
             "rich-text#content-line6-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line6-second-table": {
@@ -700,7 +721,10 @@
         "children": [
             "rich-text#title-line7-second-table",
             "rich-text#content-line7-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line7-second-table": {
@@ -721,7 +745,10 @@
         "children": [
             "rich-text#title-line8-second-table",
             "rich-text#content-line8-second-table"
-        ]
+        ],
+        "props": {
+            "blockClass": "second-table-align"
+        }
     },
 
     "rich-text#title-line8-second-table": {

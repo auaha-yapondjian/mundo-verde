@@ -164,10 +164,12 @@
   color: #f5a057;
   font-size: 1.75em;
   font-weight: bold;
+  margin: 0;
 }
 .headingLevel5--titulo-imprensa{
   color: #99cd44;
-  font-family: 'comfortaabold';
+  font-family: gotham;
+  font-size: 18px;
   margin: 15px 0 0 0;
   background: #fff;
   opacity: 0.7;
@@ -241,7 +243,7 @@
     }
   color: #72C44B;
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 21px;
   margin: 0;
   }
   &--med-title{
@@ -251,7 +253,7 @@
     }
     color: #72C44B;
     font-weight: bold;
-    font-size: 1.75em;
+    font-size: 21px;
     margin: 0;
     }
   &--light-title{
@@ -261,7 +263,7 @@
     }
       color: #72C44B;
       font-weight: bold;
-      font-size: 1.75em;
+      font-size: 21px;
       margin: 0;
       }
 }
@@ -319,6 +321,10 @@
   justify-content: center;
   
 }
+.paragraph--bg-table{
+  margin: 14px 0;
+
+}
 .paragraph--custo-investimento-content{
   max-width: 500px;
   margin-bottom: 70px;
@@ -328,6 +334,7 @@
   margin-left: 10px;
   }
 }
+
 .paragraph.nostyle{
   color: initial;
   text-decoration: none;

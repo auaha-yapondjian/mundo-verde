@@ -179,7 +179,7 @@
     "rich-text#titulo5": {
         "children": [],
         "props": {
-            "text": "forma de restituição dos valores pagos",
+            "text": "Forma de restituição dos valores pagos",
             "blockClass": "title-policy"
         }
     },
