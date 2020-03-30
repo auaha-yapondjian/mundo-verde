@@ -497,3 +497,14 @@
 :global(.vtex-reviews-and-ratings-1-x-container){
   padding-bottom: 20px;
 }
+
+:global(.vtex-login-2-x-inputContainer){
+  min-width: 300px;
+
+}
+
+:global(.vtex-login-2-x-inputContainerAccessCode) {
+  :global(.vtex-styleguide-9-x-input)::placeholder{
+    font-family: lato;
+  }
+}

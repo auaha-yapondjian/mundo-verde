@@ -1,3 +1,7 @@
+.footerLayoutSpacer{
+  border-top: .08333rem solid #f2f2f2;
+}
+
 .footerLayout {
   margin: 15px 0;
 
@@ -100,9 +104,14 @@
     text-align: center;
   }
 
+
+  :global(.vtex-flex-layout-0-x-flexCol--footer--info-vtex){
+    justify-content: center;
+    margin-top: 30px;
+  }
+
   
 }
-
 
 
 :global(.vtex-flex-layout-0-x-flexRow--footer-one--desktop){
@@ -114,5 +123,28 @@
   .socialNetworkWrapper{
     width: auto;
     margin-left: auto;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--footer--info-vtex){
+  flex-direction: row;
+  justify-content: space-around;
+
+  :global(.vtex-store-components-3-x-imageElement--footer--info-vtex-corebiz){
+    width: 60px;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--footer--info-vtex-text){
+    margin: 0;
+    padding: 3px 10px;
+    font-size: 8px;
+    font-family: Gotham;
+    font-weight: bold;
+    color: #c4c4c4;
+    text-transform: uppercase;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--footer--info-vtex-logo){
+    width: 40px;
   }
 }

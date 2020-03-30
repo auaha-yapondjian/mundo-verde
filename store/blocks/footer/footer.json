@@ -18,12 +18,14 @@
     "children": [
       "flex-layout.col#footer--contact",
       "flex-layout.col#footer--payments",
-      "social-networks"
+      "social-networks",
+      "flex-layout.col#footer--info-vtex"
     ],
     "props": {
       "blockClass": "footer-one--desktop",
       "paddingTop": 8,
-      "paddingBottom": 3
+      "paddingBottom": 3,
+      "colSizing": "auto"
     }
   },
   "flex-layout.row#footer-info-geral-desktop": {
@@ -40,7 +42,8 @@
     "children": [
       "flex-layout.col#footer--contact",
       "flex-layout.col#footer--payments",
-      "social-networks"
+      "social-networks",
+      "flex-layout.col#footer--info-vtex"
     ],
     "props": {
       "blockClass": "footer-one--mobile",
@@ -157,9 +160,34 @@
       "blockClass": ["custom-payment-methods", "custom-payment-methods--boleto"]
     }
   },
-  "accepted-payment-methods": {
+  "flex-layout.col#footer--info-vtex": {
+    "children": [
+      "image#footer--info-vtex-corebiz",
+      "rich-text#footer--info-vtex-text",
+      "image#footer--info-vtex-logo"
+    ],
     "props": {
-      "paymentMethods": ["mastercard", "elo", "visa", "diners club"]
+      "blockClass": "footer--info-vtex"
+    }
+  },
+  "image#footer--info-vtex-corebiz": {
+    "props": {
+      "src": "/arquivos/logo-corebiz.png",
+      "blockClass": "footer--info-vtex-corebiz"
+    }
+  },
+  "rich-text#footer--info-vtex-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "POWERED BY:",
+      "blockClass": "footer--info-vtex-text"
+    }
+  },
+  "image#footer--info-vtex-logo": {
+    "props": {
+      "src": "/arquivos/logovtex.png",
+      "blockClass": "footer--info-vtex-logo"
     }
   }
 }

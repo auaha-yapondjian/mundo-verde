@@ -289,3 +289,19 @@
     height: 25px;
   }
 }
+
+
+// Página missão e visão
+.flexCol--container-missao-visao{
+
+
+  :global(.vtex-rich-text-0-x-paragraph){
+    margin: 0;
+  }
+
+  :global(.vtex-rich-text-0-x-strong--title-mission){
+    padding-top: 20px;
+    margin: 0;
+    display: block;
+  }
+}

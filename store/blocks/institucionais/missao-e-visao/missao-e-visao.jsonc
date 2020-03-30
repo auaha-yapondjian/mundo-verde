@@ -2,7 +2,6 @@
     "store.custom#missao-e-visao": {
         "blocks": [
             "image#bg-mission-missao",
-
             "flex-layout.row#rowmain-missao"
         ]
     },
@@ -22,8 +21,10 @@
             "flex-layout.col#missao-e-visao-col-missao",
             "rich-text#declaracao-valores-btn-missao",
             "flex-layout.col#declaracaocol-missao"
-            
-        ]
+        ],
+        "props": {
+            "blockClass": "container-missao-visao"
+        }
     },
     "image#bg-mission-missao": {
         "children": [],
@@ -34,8 +35,8 @@
     "rich-text#title-missao": {
         "children": [],
         "props": {
-            "text": "##### Quem somos",
-            "blockClass": "titulo-imprensa"
+            "text": "# Quem somos",
+            "blockClass": "titulo-quem-somos"
         }
     },
     "flex-layout.col#purposerow-missao": {
@@ -62,12 +63,6 @@
             "text": "Missão e Visão"
         }
     },
-
-
-
-
-
-
     "flex-layout.col#missao-e-visao-col-missao": {
         "children": [
             "rich-text#missaotitle-missao",
@@ -124,7 +119,8 @@
     },
     "rich-text#declaracaolist-title-missao": {
         "props": {
-            "text": "**São eles**"
+            "text": "**São eles**",
+            "blockClass": "title-mission"
         }
     },
     "rich-text#declaracaolist-content-missao": {
@@ -135,7 +131,8 @@
     },
     "rich-text#compromisso-title-missao": {
         "props": {
-            "text": "**Compromisso Público**"
+            "text": "**Compromisso Público**",
+            "blockClass": "title-mission"
         }
     },
     "rich-text#compromisso-content-missao": {
