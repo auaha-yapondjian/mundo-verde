@@ -1,5 +1,6 @@
 {
   "flex-layout.row#deals": {
+    "title": "Destaque Produtos",
     "children": [
       "rich-text#estilos-alimentacao",
       "slider-layout#deals"
@@ -9,6 +10,7 @@
     }
   },
   "rich-text#estilos-alimentacao": {
+    "title": "Título",
     "props": {
       "text": "Estilos de \n alimentação",
       "textAlignment": "left",
@@ -17,6 +19,7 @@
     }
   },
   "slider-layout#deals": {
+    "title": "Itens em destaque",
     "children": [
       "flex-layout.col#deals1", 
       "flex-layout.col#deals2", 
@@ -37,6 +40,7 @@
   },
 
   "flex-layout.col#deals1": {
+    "title": "Item 1",
     "children": [
       "image#deal1",
       "rich-text#deal1"
@@ -48,12 +52,14 @@
     }
   },
   "rich-text#deal1": {
+    "title": "Título item 1",
     "props": {
-      "text": "[Low Carb](https://www.mundoverde.com.br/dietas-especiais/low-carb/)",
+      "text": "[Low Carb](/paes-e-massas)",
       "blockClass": "deals"
     }
   },
   "flex-layout.col#deals2": {
+    "title": "Item 2",
     "children": [
       "image#deal2",
       "rich-text#deal2"
@@ -65,12 +71,14 @@
     }
   },
   "rich-text#deal2": {
+    "title": "Título item 2",
     "props": {
-      "text": "[Orgânico](https://www.mundoverde.com.br/organico/)",
+      "text": "[Orgânico](/paes-e-massas)",
       "blockClass": "deals"
     }
   },
   "flex-layout.col#deals3": {
+    "title": "Item 3",
     "children": [
       "image#deal3",
       "rich-text#deal3"
@@ -82,12 +90,14 @@
     }
   },
   "rich-text#deal3": {
+    "title": "Título item 3",
     "props": {
-      "text": "[Vegan](https://www.mundoverde.com.br/veganos/)",
+      "text": "[Vegan](/paes-e-massas)",
       "blockClass": "deals"
     }
   },
   "flex-layout.col#deals4": {
+    "title": "Item 4",
     "children": [
       "image#deal4",
       "rich-text#deal4"
@@ -99,12 +109,14 @@
     }
   },
   "rich-text#deal4": {
+    "title": "Título item 4",
     "props": {
-      "text": "[Paleo](https://www.mundoverde.com.br/paleo/)",
+      "text": "[Paleo](/paes-e-massas)",
       "blockClass": "deals"
     }
   },
   "flex-layout.col#deals5": {
+    "title": "Item 5",
     "children": [
       "image#deal5",
       "rich-text#deal5"
@@ -116,12 +128,14 @@
     }
   },
   "rich-text#deal5": {
+    "title": "Título item 5",
     "props": {
-      "text": "[Sem Glúten](https://www.mundoverde.com.br/sem-gluten/)",
+      "text": "[Sem Glúten](/paes-e-massas)",
       "blockClass": "deals"
     }
   },
   "flex-layout.col#deals6": {
+    "title": "Item 6",
     "children": [
       "image#deal6",
       "rich-text#deal6"
@@ -133,8 +147,9 @@
     }
   },
   "rich-text#deal6": {
+    "title": "Título item 6",
     "props": {
-      "text": "[Sem Lactose](https://www.mundoverde.com.br/sem-lactose/)",
+      "text": "[Sem Lactose](/paes-e-massas)",
       "blockClass": "deals"
     }
   }

@@ -53,6 +53,7 @@
     "children": ["rich-text#empty-state"]
   },
   "rich-text#empty-state": {
+    "title": "Mensagem carrinho vazio",
     "props": {
       "text": "Carrinho vazio!",
       "blockClass": "minicart-empty-card"

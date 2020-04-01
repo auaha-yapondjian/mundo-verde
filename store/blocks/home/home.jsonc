@@ -1,24 +1,32 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "list-context.image-list#main-banner",
       "flex-layout.row#deals",
       "flex-layout.row#season-promotion",
       "shelf#home",
-      "rich-text#promotion-news--title",
-      "flex-layout.row#promotion-news--top",
-      "flex-layout.row#promotion-news--bottom",
-      "flex-layout.row#divisor",
+      "flex-layout.row#promotion",
       "newsletter"
-      // "rich-text#shelf-title",
-      // "flex-layout.row#shelf",
-      // "info-card#home",
-      // "rich-text#question",
-      // "rich-text#link",
     ]
   },
-
+  "flex-layout.row#promotion": {
+    "title": "Novidades",
+    "children": [
+      "flex-layout.col#promotion"
+    ],
+    "props": {
+      "blockClass": "promotion--container"
+    }
+  },
+  "flex-layout.col#promotion": {
+    "children": [
+      "rich-text#promotion-news--title",
+      "flex-layout.row#promotion-news--top",
+      "flex-layout.row#promotion-news--bottom"
+    ]
+  },
   "shelf#home": {
+    "title": "Vitrine Produtos (1)",
     "blocks": ["product-summary.shelf"],
     "props": {
       "paginationDotsVisibility": "hidden",
@@ -33,19 +41,16 @@
       }
     }
   },
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#main-banner": {
+    "title" : "Banner Principal",
+    "children": ["slider-layout#banner-images"],
     "props": {
       "height": "auto",
-      "images": [
-        {
-          "image": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_desk.jpg",
-          "mobileImage": "https://media.natue.com.br/mundo-verde/2020_01_03_verao/2020_01_03_verao_mobile.jpg"
-        }
-      ]
+      "images": []
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#banner-images": {
+    "title": "Configuração Slider Banner",
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -59,7 +64,6 @@
       "fullWidth": true
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",
@@ -102,26 +106,8 @@
       "textAlignment": "center"
     }
   },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
-    }
-  },
-  "flex-layout.row#divisor": {
-    "props": {
-      "blockClass": "page-divisor"
-    }
-  },
   "newsletter": {
+    "title": "Newsletter",
     "props": {
         "blockClass": "footer-newsletter",
         "label": "Cadastre-se e receba ofertas exclusivas, dicas e receitas para uma vida mais saudável e equilibrada :)",

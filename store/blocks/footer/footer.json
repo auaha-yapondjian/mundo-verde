@@ -29,6 +29,7 @@
     }
   },
   "flex-layout.row#footer-info-geral-desktop": {
+    "title": "Footer - Menu",
     "children": [
       "logo#desktop",
       "vtex.menu@2.x:menu#footer-1",
@@ -52,6 +53,7 @@
     }
   },
   "flex-layout.row#footer-info-geral-mobile": {
+    "title": "Footer - Menu Mobile",
     "children": [
       "logo#desktop",
       "vtex.menu@2.x:menu#footer-1",

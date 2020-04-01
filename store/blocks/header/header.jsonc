@@ -6,6 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
+    "title": "Header",
     "children": [
       "flex-layout.row#1-desktop",
       "sticky-layout#2-desktop",
@@ -13,6 +14,7 @@
     ]
   },
   "flex-layout.row#1-desktop": {
+    "title": "Header Informação Superior",
     "children": ["rich-text#tipbartop"],
     "props": {
       "fullWidth": false,
@@ -20,6 +22,7 @@
     }
   },
   "rich-text#tipbartop": {
+    "title": "Texto Informação Superior",
     "props": {
         "textAlignment": "RIGHT",
         "textPosition": "RIGHT",
@@ -28,6 +31,7 @@
     }
   },
   "flex-layout.row#3-desktop": {
+    "title": "Header Menu Principal",
     "props": {
       "blockClass": "menu-link",
       "horizontalAlign": "center",
@@ -47,6 +51,7 @@
     }
   },
   "sticky-layout#2-desktop": {
+    "title": "Header fixo",
     "props": {
       "blockClass": "sticky-header"
     },
@@ -115,6 +120,7 @@
     "children": ["flex-layout.row#1-mobile"]
   },
   "flex-layout.row#1-mobile": {
+    "title": "Header Mobile",
     "children": [
       "drawer",
       "logo#mobile",
@@ -145,6 +151,7 @@
   },
 
   "logo#mobile": {
+    "title": "Logotipo mobile",
     "props": {
       "title": "Logo",
       "href": "/",

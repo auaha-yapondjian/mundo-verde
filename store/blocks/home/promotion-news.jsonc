@@ -1,5 +1,6 @@
 {
     "rich-text#promotion-news--title": {
+        "title": "Título",
         "props": {
           "text": "## Conheça nossas novidades",
           "blockClass": "promotion-news-content--title"
@@ -24,38 +25,42 @@
         }
     },
     "image#card-news-1": {
+        "title": "Imagem 1",
         "props": {
-            "src": "https://media.natue.com.br/mundo-verde/2019_11_14_black_friday/2019_11_14_black_friday_banner_novidades_1.jpg",
+            "src": "",
             "blockClass": ["promotion-news--image", "promotion-news--image--left"],
             "link": {
-                "url": "https://www.mundoverde.com.br/marcas/todas-as-marcas-alimentos/mundo-verde-selecao/"
+                "url": "/"
             }
         }
     },
     "image#card-news-2": {
+        "title": "Imagem 2",
         "props": {
-            "src": "https://media.natue.com.br/mundo-verde/2019_11_14_black_friday/2019_11_14_black_friday_banner_novidades_2.jpg",
+            "src": "",
             "blockClass": ["promotion-news--image", "promotion-news--image--right"],
             "link": {
-                "url": "https://www.mundoverde.com.br/marcas/todas-as-marcas-nutricao-esportiva/vitafor/"
+                "url": "/"
             }
         }
     },
     "image#card-news-3": {
+        "title": "Imagem 3",
         "props": {
-            "src": "https://media.natue.com.br/mundo-verde/2019_11_14_black_friday/2019_11_14_black_friday_banner_novidades_3.jpg",
+            "src": "",
             "blockClass": ["promotion-news--image", "promotion-news--image--left"],
             "link": {
-                "url": "https://www.mundoverde.com.br/ofertas-mundo-verde.html"
+                "url": "/"
             }
         }
     },
     "image#card-news-4": {
+        "title": "Imagem 4",
         "props": {
-            "src": "https://media.natue.com.br/mundo-verde/2019_11_14_black_friday/2019_11_14_black_friday_banner_novidades_4.jpg",
+            "src": "/",
             "blockClass": ["promotion-news--image", "promotion-news--image--right"],
             "link": {
-                "url": "https://www.natue.com.br/marcas/todas-as-marcas-alimentos/flormel/"
+                "url": ""
             }
         }
     }

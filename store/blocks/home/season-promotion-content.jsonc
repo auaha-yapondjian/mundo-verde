@@ -1,5 +1,6 @@
 {
     "flex-layout.row#season-promotion": {
+        "title": "Card Produtos",
         "children":[
             "flex-layout.col#season-promotion--cards"
         ],
@@ -20,38 +21,42 @@
         }
     },
     "image#card-link-1": {
+        "title": "Card 1",
         "props": {
             "src": "/arquivos/mini_banner_1.jpg",
             "blockClass": "season-promotion--card",
             "link": {
-                "url": "https://www.mundoverde.com.br/marcas/todas-as-marcas-suplementos-e-vitaminas/essential-nutrition/"
+                "url": "/"
             }
         }
     },
     "image#card-link-2": {
+        "title": "Card 2",
         "props": {
             "src": "/arquivos/mini_banner_2.jpg",
             "blockClass": "season-promotion--card",
             "link": {
-                "url": "https://www.mundoverde.com.br/marcas/todas-as-marcas-nutricao-esportiva/vitafor/"
+                "url": "/"
             }
         }
     },
     "image#card-link-3": {
+        "title": "Card 3",
         "props": {
             "src": "/arquivos/mini_banner_3.jpg",
             "blockClass": "season-promotion--card",
             "link": {
-                "url": "https://www.mundoverde.com.br/marcas/todas-as-marcas-alimentos/flormel/"
+                "url": "/"
             }
         }
     },
     "image#card-link-4": {
+        "title": "Card 4",
         "props": {
             "src": "/arquivos/mini_banner_4.jpg",
             "blockClass": "season-promotion--card",
             "link": {
-                "url": "https://www.mundoverde.com.br/marcas/todas-as-marcas-suplementos-e-vitaminas/upnutri/"
+                "url": "/"
             }
         }
     }
