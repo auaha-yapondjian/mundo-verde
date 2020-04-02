@@ -391,6 +391,7 @@
     }
   },
   "vtex.menu@2.x:menu#footer-1": {
+    "title": "Menu Footer (1)",
     "props": {
       "orientation": "vertical"
     },
@@ -448,6 +449,7 @@
 
 
   "vtex.menu@2.x:menu#footer-2": {
+    "title": "Menu Footer (2)",
     "props": {
       "orientation": "vertical"
     },
@@ -489,6 +491,7 @@
 
 
   "vtex.menu@2.x:menu#footer-3": {
+    "title": "Menu Footer (3)",
     "props": {
       "orientation": "vertical"
     },
@@ -529,6 +532,7 @@
   },
 
   "vtex.menu@2.x:menu#footer-4": {
+    "title": "Menu Footer (4)",
     "props": {
       "orientation": "vertical"
     },
@@ -569,6 +573,7 @@
   },
 
   "vtex.menu@2.x:menu#footer-5": {
+    "title": "Menu Footer (5)",
     "props": {
       "orientation": "vertical"
     },

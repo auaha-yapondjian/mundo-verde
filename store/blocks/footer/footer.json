@@ -1,5 +1,6 @@
 {
   "footer": {
+    "title": "Footer",
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
@@ -15,10 +16,11 @@
     ]
   },
   "flex-layout.row#footer-institucional-desktop": {
+    "title": "Footer - Informação Inferior",
     "children": [
       "flex-layout.col#footer--contact",
       "flex-layout.col#footer--payments",
-      "social-networks",
+      "flex-layout.col#footer--social-networks",
       "flex-layout.col#footer--info-vtex"
     ],
     "props": {
@@ -40,10 +42,11 @@
     ]
   },
   "flex-layout.row#footer-institucional-mobile": {
+    "title": "Footer - Informação Inferior Mobile",
     "children": [
       "flex-layout.col#footer--contact",
       "flex-layout.col#footer--payments",
-      "social-networks",
+      "flex-layout.col#footer--social-networks",
       "flex-layout.col#footer--info-vtex"
     ],
     "props": {
@@ -64,34 +67,43 @@
     ]
   },
   "flex-layout.col#footer--contact": {
+    "title": "Info Contato",
     "children": ["rich-text#footer-contact-title", "rich-text#footer-contact-text"],
     "props": {
       "blockClass": "footer-contact"
     }
   },
   "flex-layout.col#footer--payments": {
+    "title": "Info Pagamento",
     "children": ["rich-text#footer-payment",  "flex-layout.row#footer--payments-methods"],
     "props": {
       "blockClass": "footer-payments"
     }
   },
   "rich-text#footer-contact-text": {
+    "title": "Texto Contato",
     "props": {
       "text": "11 2388 0474 contato@mundoverde.net.br",
       "blockClass": "footer-contact-text"
     }
   },
   "rich-text#footer-contact-title": {
+    "title": "Título Contato",
     "props": {
       "text": "Atendimento",
       "blockClass": "footer--title"
     }
   },
   "rich-text#footer-payment": {
+    "title": "Título Pagamento",
     "props": {
       "text": "Formas de Pagamento",
       "blockClass": "footer--title"
     }
+  },
+  "flex-layout.col#footer--social-networks": {
+    "title": "Redes Sociais",
+    "children": ["social-networks"]
   },
   "social-networks": {
     "props": {
@@ -118,6 +130,7 @@
     }
   },
   "flex-layout.row#footer--payments-methods": {
+    "title": "Imagens Métodos Pagamento",
     "children": [
       "flex-layout.col#payment-method--visa",
       "flex-layout.col#payment-method--mastercard",
@@ -163,6 +176,7 @@
     }
   },
   "flex-layout.col#footer--info-vtex": {
+    "title": "Info Desenvolvimento",
     "children": [
       "image#footer--info-vtex-corebiz",
       "rich-text#footer--info-vtex-text",
@@ -173,12 +187,14 @@
     }
   },
   "image#footer--info-vtex-corebiz": {
+    "title": "Logo",
     "props": {
       "src": "/arquivos/logo-corebiz.png",
       "blockClass": "footer--info-vtex-corebiz"
     }
   },
   "rich-text#footer--info-vtex-text": {
+    "title": "Texto",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -187,6 +203,7 @@
     }
   },
   "image#footer--info-vtex-logo": {
+    "title": "Logo",
     "props": {
       "src": "/arquivos/logovtex.png",
       "blockClass": "footer--info-vtex-logo"
