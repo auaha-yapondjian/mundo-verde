@@ -392,6 +392,7 @@
     }
   },
   "flex-layout.row#banner-seo": {
+    "title": "Banner SEO",
     "children": ["flex-layout.col#banner-seo-content"],
     "props": {
       "blockClass": "banner-seo"
@@ -404,6 +405,7 @@
     }
   },
   "rich-text#banner-seo-title": {
+    "title": "Título SEO",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -412,6 +414,7 @@
     }
   },
   "image#banner-seo-image": {
+    "title": "Imagem de background",
     "props": {
       "src": "",
       "blockClass": "image-banner-seo"
@@ -428,12 +431,14 @@
     }
   },
   "flex-layout.col#category-info": {
+    "title": "Informação Departamento",
     "children": [
       "rich-text#category-info-title",
       "flex-layout.row#category-info-content"
     ]
   },
   "rich-text#category-info-title": {
+    "title": "Título",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
@@ -453,6 +458,7 @@
     }
   },
   "image#category-info-image": {
+    "title": "Imagem ilustrativa",
     "props": {
       "src": "",
       "blockClass": "category-info-image",
@@ -460,6 +466,7 @@
     }
   },
   "rich-text#category-info-content": {
+    "title": "Conteúdo informativo",
     "props": {
       "text": "",
       "width": "65%",
