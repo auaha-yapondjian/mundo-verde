@@ -17,5 +17,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/corebiz_ag/mundoverde#readme"
+  "homepage": "https://bitbucket.org/corebiz_ag/mundoverde#readme",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
 }
