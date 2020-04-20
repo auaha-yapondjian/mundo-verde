@@ -103,9 +103,9 @@
   },
   "flex-layout.col#footer--social-networks": {
     "title": "Redes Sociais",
-    "children": ["social-networks"]
+    "children": ["social-networks#social-footer"]
   },
-  "social-networks": {
+  "social-networks#social-footer": {
     "props": {
       "title": "Redes Sociais",
       "socialNetworks": [
