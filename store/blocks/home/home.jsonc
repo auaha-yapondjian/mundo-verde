@@ -4,7 +4,9 @@
       "list-context.image-list#main-banner",
       "flex-layout.row#deals",
       "flex-layout.row#season-promotion",
-      "shelf#home",
+      "shelf#home--1",
+      "shelf#home--2",
+      "shelf#home--3",
       "flex-layout.row#promotion",
       "newsletter"
     ]
@@ -25,7 +27,7 @@
       "flex-layout.row#promotion-news--bottom"
     ]
   },
-  "shelf#home": {
+  "shelf#home--1": {
     "title": "Vitrine Produtos (1)",
     "blocks": ["product-summary.shelf"],
     "props": {
@@ -37,6 +39,38 @@
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "Melhores produtos Vitafor",
+        "gap": "ph5"
+      }
+    }
+  },
+  "shelf#home--2": {
+    "title": "Vitrine Produtos (2)",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Especial Essential",
+        "gap": "ph5"
+      }
+    }
+  },
+  "shelf#home--3": {
+    "title": "Vitrine Produtos (3)",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Flormel",
         "gap": "ph5"
       }
     }
