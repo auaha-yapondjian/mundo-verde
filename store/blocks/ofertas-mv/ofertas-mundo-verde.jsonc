@@ -1,0 +1,186 @@
+{
+    "store.custom#ofertas-mundo-verde": { 
+      "blocks": [
+        "search-result-layout.customQuery#landing-promo"
+      ]
+    },
+    "image#banner-landing-promo": {
+        "props": {
+            "src": "https://via.placeholder.com/1920x300.png?text=1920x300",
+            "maxHeight": 290
+        }
+    },
+    "search-result-layout.customQuery#landing-promo": {
+        "props": {
+			"querySchema": {
+				"orderByField": "OrderByReleaseDateDESC",
+				"hideUnavailableItems": false,
+				"queryField": "137",
+				"maxItemsPerPage": 12,
+				"mapField": "productClusterIds"
+			}
+		},
+		"blocks": ["search-result-layout.mobile", "search-result-layout.desktop#landing-promo"]
+    },
+    "search-result-layout.desktop#landing-promo": {
+        "children": [
+            "flex-layout.row#banner-seo",
+            "flex-layout.row#promo--options",
+            "flex-layout.row#result#landing-promo"
+          ],
+        "props": {
+            "pagination": "show-more",
+            "blockClass": "searchResultLayoutDesktop",
+            "preventRouteChange": true,
+            "mobileLayout": {
+              "mode1": "small",
+              "mode2": "normal"
+            },
+            "paddingBottom": 10
+          }
+    },
+    "flex-layout.row#promo--options": {
+      "children": ["slider-layout#promo--options"]
+    },
+    "slider-layout#promo--options": {
+      "title": "Itens em destaque",
+      "children": [
+        "flex-layout.col#promo-option--1",
+        "flex-layout.col#promo-option--2",
+        "flex-layout.col#promo-option--3",
+        "flex-layout.col#promo-option--4"
+      ],
+      "props": {
+        "showPaginationDots": "never",
+        "showNavigationArrows": "mobileOnly",
+        "itemsPerPage": {
+          "desktop": 4,
+          "phone": 2
+        },
+        "blockClass": "promo-options"
+      }
+    },
+    "flex-layout.col#promo-option--1": {
+      "title": "Item 1",
+      "children": [
+        "image#promo-option--1",
+        "rich-text#promo-option--1"
+      ]
+    },
+    "image#promo-option--1": {
+      "props": {
+        "src": "/arquivos/alimentos_e_bebidas.png",
+        "link": {
+          "url": "/"
+        }
+      }
+    },
+    "rich-text#promo-option--1": {
+      "title": "Título item 1",
+      "props": {
+        "text": "[Alimentos e bebidas](/)",
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.col#promo-option--2": {
+      "title": "Item 2",
+      "children": [
+        "image#promo-option--2",
+        "rich-text#promo-option--2"
+      ]
+    },
+    "image#promo-option--2": {
+      "props": {
+        "src": "/arquivos/vitaminas_e_suplementos.png",
+        "link": {
+          "url": "/"
+        }
+      }
+    },
+    "rich-text#promo-option--2": {
+      "title": "Título item 2",
+      "props": {
+        "text": "[Vitaminas e suplementos](/)",
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.col#promo-option--3": {
+      "title": "Item 3",
+      "children": [
+        "image#promo-option--3",
+        "rich-text#promo-option--3"
+      ]
+    },
+    "image#promo-option--3": {
+      "props": {
+        "src": "/arquivos/esporte.png",
+        "link": {
+          "url": "/"
+        }
+      }
+    },
+    "rich-text#promo-option--3": {
+      "title": "Título item 3",
+      "props": {
+        "text": "[Esporte](/)",
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.col#promo-option--4": {
+      "title": "Item 4",
+      "children": [
+        "image#promo-option--4",
+        "rich-text#promo-option--4"
+      ]
+    },
+    "image#promo-option--4": {
+      "props": {
+        "src": "/arquivos/beleza.png",
+        "link": {
+          "url": "/"
+        }
+      }
+    },
+    "rich-text#promo-option--4": {
+      "title": "Título item 4",
+      "props": {
+        "text": "[Beleza](/)",
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.row#result#landing-promo": {
+        "children": ["flex-layout.col#result#landing-promo"],
+        "props": {
+            "blockClass": "content-result--landing-promo"
+        }
+    },
+    "flex-layout.col#result#landing-promo": {
+        "children": [
+            "flex-layout.row#searchinfo",
+            "flex-layout.row#fetchprevious",
+            "flex-layout.row#products#landing-promo",
+            "flex-layout.row#fetchmore"
+        ]
+    },
+    "flex-layout.row#products#landing-promo": {
+        "children": [
+          "search-content#landing-promo"
+        ]
+    },
+    "search-content#landing-promo": {
+        "blocks": [
+            "gallery#landing-promo",
+            "not-found"
+        ]
+    },
+    "gallery#landing-promo": {
+        "blocks": [
+          "product-summary.shelf"
+        ],
+        "props": {
+          "maxItemsPerRow" : { 
+            "desktop": 4
+          }
+        }
+    }
+}

@@ -97,6 +97,10 @@
 
 .flexRow--product-description {
   padding: 35px 0;
+
+  :global(.vtex-store-components-3-x-container){
+    max-width: 1250px;
+  }
 }
 
 .flexRowContent--season-promotion--cards {
@@ -329,5 +333,29 @@
     padding-top: 20px;
     margin: 0;
     display: block;
+  }
+}
+
+
+.flexCol--product-stack-info{
+
+  :global(.vtex-product-specification-badges-0-x-groupContainer ){
+    margin: 0;
+  }
+}
+
+// Promoções
+.flexRow--content-result--landing-promo {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 15px 50px;
+
+  .flexRow--productCountCol {
+    margin-left: 0 !important;
+  }
+
+  :global(.vtex-search-result-3-x-gallery) {
+    margin: 0 !important;
+    padding-left: 0px;
   }
 }

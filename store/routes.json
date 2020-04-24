@@ -1,6 +1,10 @@
 {
-    "store.custom#about-us": {
+  "store.custom#about-us": {
     "path": "/about-us"
+  },
+
+  "store.custom#ofertas-mundo-verde": {
+    "path": "/ofertas-mundo-verde"
   },
   
   "store.custom#fale-com-nutricionistas": {
