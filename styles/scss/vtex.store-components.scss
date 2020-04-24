@@ -516,5 +516,29 @@
     text-transform: uppercase;
     margin: 5px;
   }
+}
+
+.subscriberContainer {
+  margin: 30px 0 10px;
+
+  .title,
+  .subscribeLabel {
+    color: #008651;
+    font-weight: bold;
+  }
   
+  .form{
+    .content {
+      max-width: initial;
+
+      
+      .submit {
+        align-items: flex-start;
+      }
+      :global(.vtex-button){
+        width: 100%;
+        padding: 3px 0;
+      }
+    }
+  }
 }
