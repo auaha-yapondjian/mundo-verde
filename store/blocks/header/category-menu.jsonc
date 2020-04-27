@@ -1,0 +1,18 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "children": [
+      "category-menu"
+    ]
+  },
+  "category-menu": {
+    "props": {
+      "showPromotionCategory": true,
+      "showGiftCategory": false,
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "departments": [
+      ]
+    }
+  }
+}

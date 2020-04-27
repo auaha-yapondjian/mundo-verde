@@ -48,8 +48,10 @@
     },
     "children": [
       "flex-layout.col#category-menu",
+      "vtex.menu@2.x:menu#collections",
+      "vtex.menu@2.x:menu#custom-menu",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "vtex.menu@2.x:menu#custom-menu-right"
     ]
   },
   "flex-layout.col#spacer": {
@@ -113,7 +115,7 @@
   },
   "flex-layout.col#category-menu": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "left"
     },
     "children": [
       "vtex.menu@2.x:menu#category-menu"
@@ -172,9 +174,17 @@
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      // "menu-item#category-apparel",
+      // "menu-item#category-home",
+      // "menu-item#more"
+      // "vtex.menu@2.x:menu#category-menu"
+      // "flex-layout.col#category-menu",
+      // "vtex.menu@2.x:menu#collections"
+      "menu-item#mobile-category-one",
+      "menu-item#lancamento"
+      // "vtex.menu@2.x:menu#custom-menu",
+      // "flex-layout.col#spacer",
+      // "vtex.menu@2.x:menu#custom-menu-right"
     ],
     "props": {
       "orientation": "vertical"
@@ -193,6 +203,27 @@
     "props": {
       "showIconProfile": true,
       "iconLabel": "Entre ou Cadastre-se"
+    }
+  },
+  "vtex.menu@2.x:menu#custom-menu-right": {
+    "children": [
+      "menu-item#blog"
+    ]
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "blockClass": ["menu-item-blog"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blog",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
     }
   }
 }

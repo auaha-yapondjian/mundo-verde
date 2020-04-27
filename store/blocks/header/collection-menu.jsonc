@@ -1,0 +1,23 @@
+{
+    "vtex.menu@2.x:menu#collections": {
+        "children": [
+          "menu-item#lancamento"
+        ]
+    },
+    "menu-item#lancamento": {
+        "props": {
+            "id": "menu-black-friday",
+            "blockClass": ["custom-menu"],
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "/138?map=productClusterIds",
+            "noFollow": false,
+            "tagTitle": "Lançamento",
+            "text": "Lançamento"
+            }
+        }
+    }
+}
