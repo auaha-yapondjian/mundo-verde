@@ -1,0 +1,66 @@
+{
+    "menu-item#mobile-paes-e-massas": {
+        "props": {
+          "id": "",
+          "blockClass": ["menu-mobile-department"],
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 3
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#paes-e-massas"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#paes-e-massas": {
+        "children": [
+            "menu#menu-paes-e-massas"
+        ]
+    },
+    "menu#menu-paes-e-massas": {
+        "props": {
+            "orientation": "vertical"
+        },
+          "children": [
+            "menu-item#test-category--cat-4",
+            "menu-item#test-category--cat-5",
+            "menu-item#test-category--cat-8"
+           
+        ] 
+    },
+    "menu-item#test-category--cat-4": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 4
+            }
+        }
+    },
+    "menu-item#test-category--cat-5": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 5
+            }
+        }
+    },
+    "menu-item#test-category--cat-8": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 8
+            }
+        }
+    }
+}
