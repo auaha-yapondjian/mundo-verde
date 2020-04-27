@@ -46,7 +46,7 @@
     "children": [
       "product-summary-image",
       "product-bookmark",
-      "product-summary-specification-badges"
+      "product-specification-badges#shelf"
     ]
   },
 
@@ -56,12 +56,15 @@
     }
   },
 
-  "product-summary-specification-badges": {
+  "product-specification-badges#shelf": {
     "props": {
-      "specificationGroupName": "Group",
-      "specificationName": "On Sale",
-      "visibleWhen": "True",
-      "displayValue": "SPECIFICATION_NAME"
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "Tipo de produto",
+          "displayValue": "SPECIFICATION_VALUE"
+        }
+      ]
     }
   },
 

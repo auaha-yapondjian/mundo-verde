@@ -44,3 +44,29 @@
   width: 15px;
   height: 15px;
 }
+
+// Slider LP Promoções
+.sliderLayoutContainer--promo-options {
+  background-color: #fff;
+  margin-top: 20px;
+
+  .sliderTrackContainer{
+    max-width: 1250px;
+    padding: 20px 15px;
+  }
+
+  .slideChildrenContainer--promo-options{
+    text-align: center;
+
+    &:hover{
+      :global(.vtex-store-components-3-x-imageElement){
+        transition: transform .3s ease-in-out;
+        transform: scale(1.15);
+      }
+
+      :global(.vtex-rich-text-0-x-link--deals){
+        color: #008651;
+      }
+    }
+  }
+}

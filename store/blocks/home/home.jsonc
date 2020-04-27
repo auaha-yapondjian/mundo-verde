@@ -3,6 +3,7 @@
     "blocks": [
       "list-context.image-list#main-banner",
       "flex-layout.row#deals",
+      "__fold__",
       "flex-layout.row#season-promotion",
       "shelf#home--1",
       "shelf#home--2",

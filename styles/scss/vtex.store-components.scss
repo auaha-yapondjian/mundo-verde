@@ -499,3 +499,46 @@
     font-family: lato;
   }
 }
+
+:global(.vtex-product-specification-badges-0-x-groupContainer){
+  margin: -30px;
+
+  :global(.vtex-product-specification-badges-0-x-badgeContainer){
+    background-color: #fff;
+    border: 1px solid #008651;
+    border-radius: 4px;
+    padding: 0;
+  }
+
+  :global(.vtex-product-specification-badges-0-x-badgeText){
+    color: #008651;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 5px;
+  }
+}
+
+.subscriberContainer {
+  margin: 30px 0 10px;
+
+  .title,
+  .subscribeLabel {
+    color: #008651;
+    font-weight: bold;
+  }
+  
+  .form{
+    .content {
+      max-width: initial;
+
+      
+      .submit {
+        align-items: flex-start;
+      }
+      :global(.vtex-button){
+        width: 100%;
+        padding: 3px 0;
+      }
+    }
+  }
+}

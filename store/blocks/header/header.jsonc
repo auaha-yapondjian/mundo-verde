@@ -98,6 +98,7 @@
     ],
     "props": {
       "customSearchPageUrl": "/search?_query=${term}",
+      "attemptPageTypeSearch": true,
       "openAutocompleteOnFocus": true,
       "placeholder": "O que você procura ?",
       "blockClass": "main-search-bar",
@@ -107,7 +108,7 @@
   },
   "autocomplete-result-list.v2": {
     "blocks": [
-      "product-summary"
+      "product-summary.shelf"
     ]
   },
   "flex-layout.col#category-menu": {

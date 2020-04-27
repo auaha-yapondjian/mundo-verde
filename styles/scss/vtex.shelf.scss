@@ -42,31 +42,20 @@
     width: 90%;
 }
 
+:global(.vtex-add-to-cart-button-0-x-buttonDataContainer){
+    :global(.vtex-add-to-cart-button-0-x-buttonText){
+        font-size: 0px;
+
+        &::after{
+            content: "Comprar";
+            font-size: 1rem;
+        }
+    }
+}
+
 
 :global(.vtex-add-to-cart-button-0-x-buttonText) {
-    visibility: hidden;
-    position: relative;
-    
-
-    &::after{
-        content: "Comprar";
-        visibility: visible;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        text-transform: initial;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    @media screen and (max-width: 540px) {
-        height: 25px;
-    }
-
-    
+    text-transform: initial;
 }
 
 :global(.vtex-product-summary-2-x-container) {
