@@ -503,6 +503,11 @@
 :global(.vtex-product-specification-badges-0-x-groupContainer){
   margin: -30px;
 
+  @media screen and (max-width: 900px){
+    margin: 0;
+    display: none;
+  }
+
   :global(.vtex-product-specification-badges-0-x-badgeContainer){
     background-color: #fff;
     border: 1px solid #008651;

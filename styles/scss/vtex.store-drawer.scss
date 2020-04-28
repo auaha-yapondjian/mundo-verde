@@ -1,0 +1,52 @@
+.drawer {
+    
+    :global(.vtex-menu-2-x-menuContainer),
+    :global(.vtex-menu-2-x-menuContainerNav){
+        width: 100%;
+    }
+
+    :global(.vtex-menu-2-x-styledLinkContent){
+        padding: 5px 0;
+    }
+
+    :global(.vtex-menu-2-x-styledLinkContainer){
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(#333, 0.1);
+
+        &:global(.vtex-menu-2-x-styledLinkContainer--menu-btn){
+            padding: 0;
+
+            :global(.vtex-menu-2-x-styledLink--menu-btn){
+                border-radius: 0;
+            }
+        }
+    }
+
+    
+    
+    :global(.vtex-menu-2-x-styledLinkContent){
+        padding: 5px 0;
+        font-size: 1rem;
+        text-transform: initial;
+        letter-spacing: 1px;
+        color: #333;
+        font-weight: initial;
+
+        :global(.vtex-menu-2-x-accordionIcon--menu-mobile-department),
+        &:global(.vtex-menu-2-x-styledLinkContent--menu-mobile-department){
+            color: #008651;
+        }
+
+        &:global(.vtex-menu-2-x-styledLinkContent--menu-btn){
+            color: #fff;
+        }
+    }
+
+    :global(.vtex-menu-2-x-menuItem--custom-menu) {
+        
+        :global(.vtex-menu-2-x-styledLinkContent){
+            color: #008651;
+        }
+    }
+}

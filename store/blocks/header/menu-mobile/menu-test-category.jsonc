@@ -1,0 +1,93 @@
+{
+    "menu-item#mobile-test-category": {
+        "props": {
+          "id": "",
+          "type": "category",
+          "blockClass": ["menu-mobile-department"],
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 1
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#test-category"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#test-category": {
+        "children": [
+            "menu#menu-test-category"
+        ]
+    },
+    "menu#menu-test-category": {
+        "props": {
+            "orientation": "vertical"
+        },
+          "children": [
+            "menu-item#test-category--cat-2",
+            "menu-item#test-category--cat-6"
+        ] 
+    },
+    "menu-item#test-category--cat-2": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 2
+            }
+        }
+    },
+    "menu-item#test-category--cat-6": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 6
+            }
+          },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#category--cat-6"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#category--cat-6": {
+        "children": [
+            "menu#menu-subcategory-6"
+        ]
+    },
+    "menu#menu-subcategory-6": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#mobile-subcategory-7",
+            "menu-item#mobile-subcategory-9"
+        ] 
+    },
+    "menu-item#mobile-subcategory-7": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 7
+            }
+        }
+    },
+    "menu-item#mobile-subcategory-9": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "categoryId": 9
+            }
+        }
+    }
+
+}

@@ -1,0 +1,40 @@
+{
+  "vtex.menu@2.x:menu#custom-menu": {
+    "children": [
+      "menu-item#lojas",
+      "menu-item#promocoes"
+    ]
+  },
+  "menu-item#lojas": {
+    "props": {
+      "id": "menu-item-lojas",
+      "blockClass": ["menu-btn", "menu-lojas"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Lojas",
+        "text": "Lojas"
+      }
+    }
+  },
+  "menu-item#promocoes": {
+    "props": {
+      "id": "menu-item-promocoes",
+      "blockClass": ["menu-btn", "menu-promocoes"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/137?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Promoções",
+        "text": "Promoções"
+      }
+    }
+  }
+}
