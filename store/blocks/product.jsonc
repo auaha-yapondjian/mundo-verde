@@ -43,7 +43,8 @@
     "children": [
       "flex-layout.row#product-image",
       "product-bookmark",
-      "product-specification-badges#shelf"
+      "product-specification-badges#shelf",
+      "product-price-savings"
     ]
   },
   "flex-layout.col#stack": {
@@ -133,6 +134,14 @@
       "marginTop": 5,
       "marginBottom": 4,
       "colGap": 0
+    }
+  },
+  "product-price-savings": {
+    "props": {
+      "markers": [
+        "discount"
+      ],
+      "blockClass": "product-price-savings--badge"
     }
   },
   "share#default": {
