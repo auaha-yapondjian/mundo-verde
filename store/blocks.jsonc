@@ -59,6 +59,7 @@
   "product-specification-badges#shelf": {
     "props": {
       "specificationGroupName": "allSpecifications",
+      "multipleValuesSeparator": ", ",
       "specificationsOptions": [
         {
           "specificationName": "Tipo de produto",

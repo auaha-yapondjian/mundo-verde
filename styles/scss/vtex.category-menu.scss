@@ -52,16 +52,11 @@
     
 }
 
-
-:global(.vtex-menu-2-x-menuContainerNav) {
-    display: flex;
-    align-items: center;
-}
-
-:global(.vtex-menu-2-x-styledLinkContent){
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0;
+:global(.vtex-flex-layout-0-x-flexRow--menu-link){
+    :global(.vtex-menu-2-x-menuContainerNav) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 :global(.vtex-menu-2-x-styledLinkContainer) {
