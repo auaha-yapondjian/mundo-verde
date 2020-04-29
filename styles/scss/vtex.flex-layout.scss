@@ -359,3 +359,26 @@
     padding-left: 0px;
   }
 }
+
+// Nossas lojas
+.flexRow--nossas-lojas--header {
+  background-color: #56af31;
+
+  :global(.vtex-rich-text-0-x-container--nossas-lojas--title){
+    justify-content: center;
+ 
+    :global(.vtex-rich-text-0-x-paragraph),
+    :global(.vtex-rich-text-0-x-headingLevel1){
+      color: #fff;
+      font-weight: initial;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+  
+}

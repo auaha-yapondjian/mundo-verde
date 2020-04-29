@@ -1,0 +1,21 @@
+{
+    "store.custom#nossas-lojas": { 
+      "blocks": [
+        "flex-layout.row#header--nossas-lojas"
+      ]
+    },
+    "flex-layout.row#header--nossas-lojas": {
+        "children": [
+            "rich-text#title-nossas-loja"
+        ],
+        "props": {
+            "blockClass": "nossas-lojas--header"
+        }
+    },
+    "rich-text#title-nossas-loja": {
+        "props": {
+            "text": "# Encontre uma loja \n Utilize o buscador, encontre por CEP, nome de rua, cidade e estado",
+            "blockClass": "nossas-lojas--title"
+        }
+    }
+}

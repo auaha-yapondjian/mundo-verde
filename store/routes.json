@@ -31,6 +31,9 @@
   },
   "store.custom#politica-de-frete": {
     "path": "/politica-de-frete"
+  },
+  "store.custom#nossas-lojas": {
+    "path": "/nossas-lojas"
   }
 }
 
