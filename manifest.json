@@ -1,7 +1,7 @@
 {
   "vendor": "mundoverde",
   "name": "store-theme",
-  "version": "3.32.0",
+  "version": "3.33.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -52,6 +52,7 @@
     "vtex.product-bookmark-interfaces": "1.x",
     "vtex.slider-layout": "0.x",
     "vtex.store-image": "0.x",
+    "vtex.store-form": "0.x",
     "vtex.responsive-layout": "0.x",
     "vtex.category-menu": "2.x"
   },

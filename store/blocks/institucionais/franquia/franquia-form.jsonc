@@ -1,0 +1,85 @@
+{
+  "flex-layout.row#form-franquia": {
+    "children": [
+      "flex-layout.col#form-franquia"
+    ],
+    "props": {
+      "blockClass": "form-mundo-verde"
+    }
+  },
+  "flex-layout.col#form-franquia": {
+    "children": [
+      "form#franquia"
+    ]
+  },
+  "form#franquia": {
+    "props": {
+      "entity": "FR",
+      "schema": "seja-franqueado"
+    },
+    "children": [
+      "form-input.text#nome-franquia",
+      "form-input.text#email",
+      "form-input.text#telefone-franquia",
+      "form-input.dropdown#capital",
+      "form-input.dropdown#estado",
+      "form-input.textarea#mensagem-franquia",
+      "form-submit#franquia"
+    ],
+    "blocks": [
+      "form-success#franquia"
+    ]
+  },
+  "form-success#franquia": {
+    "children": [
+      "rich-text#success-submit-franquia"
+    ]
+  },
+  "rich-text#success-submit-franquia": {
+    "props": {
+      "text": "Formulário enviado com sucesso!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#nome-franquia": {
+    "props": {
+      "pointer": "#/properties/nome"
+    }
+  },
+  "form-input.text#telefone-franquia": {
+    "props": {
+      "pointer": "#/properties/telefone"
+    }
+  },
+  "form-input.text#email-franquia": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.dropdown#capital": {
+    "props": {
+      "pointer": "#/properties/capital"
+    }
+  },
+  "form-input.dropdown#estado": {
+    "props": {
+      "pointer": "#/properties/estado"
+    }
+  },
+  "form-input.text#assunto": {
+    "props": {
+      "pointer": "#/properties/assunto"
+    }
+  },
+  "form-input.textarea#mensagem-franquia": {
+    "props": {
+      "pointer": "#/properties/mensagem"
+    }
+  },
+  "form-submit#franquia": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}
