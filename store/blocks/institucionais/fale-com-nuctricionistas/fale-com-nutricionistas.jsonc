@@ -62,7 +62,10 @@
   "flex-layout.row#form-nutri": {
     "children": [
       "flex-layout.col#form-nutri"
-    ]
+    ],
+    "props": {
+      "blockClass": "form-mundo-verde"
+    }
   },
   "flex-layout.col#form-nutri": {
     "children": [

@@ -2,7 +2,10 @@
   "flex-layout.row#form-franquia": {
     "children": [
       "flex-layout.col#form-franquia"
-    ]
+    ],
+    "props": {
+      "blockClass": "form-mundo-verde"
+    }
   },
   "flex-layout.col#form-franquia": {
     "children": [

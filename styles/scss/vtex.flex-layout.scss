@@ -382,3 +382,30 @@
   }
   
 }
+
+// Forms (Nutricionistas e Franqueado)
+.flexRow--form-mundo-verde {
+  margin: 50px 0;
+
+  .flexRowContent{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 15px;
+
+    :global(.vtex-dropdown__label),
+    :global(.vtex-textarea__label),
+    :global(.vtex-input__label){
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    :global(.vtex-checkbox__line-container){
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    :global(.vtex-store-form-0-x-formSubmitContainer){
+      margin: 20px 0;
+    }
+  }
+}
