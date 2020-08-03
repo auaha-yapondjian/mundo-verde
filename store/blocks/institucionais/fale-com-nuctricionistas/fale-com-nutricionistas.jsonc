@@ -1,97 +1,141 @@
 {
-    "store.custom#fale-com-nutricionistas" : {
-        "blocks": [
-            "flex-layout.row#row-main"
-        ]
+  "store.custom#fale-com-nutricionistas": {
+    "blocks": [
+      "flex-layout.row#row-main",
+      "flex-layout.row#form-nutri"
+    ]
+  },
+  "flex-layout.row#row-main": {
+    "children": [
+      "flex-layout.col#col-main"
+    ],
+    "props": {
+      "blockClass": "row-main"
+    }
+  },
+  "flex-layout.col#col-main": {
+    "children": [
+      "image#olaNutri",
+      "flex-layout.col#text-col"
+    ],
+    "props": {}
+  },
+  "image#olaNutri": {
+    "props": {
+      "src": "/arquivos/ola-nutri.png",
+      "blockClass": "image-nutri",
+      "maxWidth": "176px",
+      "padding": "20px 0 0 0"
+    }
+  },
+  "flex-layout.col#text-col": {
+    "children": [
+      "rich-text#tire-duvidas1",
+      "rich-text#tire-duvidas2",
+      "rich-text#tire-duvidas3"
+    ],
+    "props": {
+      "blockClass": "text-col"
+    }
+  },
+  "rich-text#tire-duvidas1": {
+    "children": [],
+    "props": {
+      "text": "Tire suas dúvidas sobre nutrição, saúde e qualidade de vida!",
+      "font": "1rem"
+    }
+  },
+  "rich-text#tire-duvidas2": {
+    "children": [],
+    "props": {
+      "text": "De segunda a sexta-feira, das 10h ás 17h.",
+      "font": "1rem"
+    }
+  },
+  "rich-text#tire-duvidas3": {
+    "children": [],
+    "props": {
+      "text": "Serviço oferecido pelo Mundo Verde, através do telefone 0800 022 25 28 ou pelo formulário abaixo.",
+      "font": "1rem"
+    }
+  },
+  "flex-layout.row#form-nutri": {
+    "children": [
+      "flex-layout.col#form-nutri"
+    ],
+    "props": {
+      "blockClass": "form-mundo-verde"
+    }
+  },
+  "flex-layout.col#form-nutri": {
+    "children": [
+      "form#nutri"
+    ]
+  },
+  "form#nutri": {
+    "props": {
+      "entity": "FN",
+      "schema": "falar-nutricionistas"
     },
-
-    "flex-layout.row#row-main": {
-        "children": [
-            "flex-layout.col#col-main"
-        ],
-        "props": {
-            "blockClass": "row-main"
-        }
-
-    },
-    "flex-layout.col#col-main": {
-        "children": [
-            "image#olaNutri",
-            "flex-layout.col#text-col"
-
-            
-        ],
-        "props": {
-
-        }
-    },
-
-    "image#olaNutri": {
-        "props": {
-          "src": "/arquivos/ola-nutri.png",
-          "blockClass":  "image-nutri",
-          "maxWidth": "176px",
-          "padding": "20px 0 0 0"
-        }
-      },
-      "flex-layout.col#text-col": {
-        "children":[
-            "rich-text#tire-duvidas1",
-            "rich-text#tire-duvidas2",
-            "rich-text#tire-duvidas3"
-        ],
-        "props": {
-            "blockClass": "text-col"
-        }
-      },
-      "rich-text#tire-duvidas1": {
-        "children": [
-
-        ],
-        "props": {
-            "text": "Tire suas dúvidas sobre nutrição, saúde e qualidade de vida!",
-            "font": "1rem"
-        }
-      },
-      "rich-text#tire-duvidas2": {
-        "children": [
-
-        ],
-        "props": {
-            "text": "De segunda a sexta-feira, das 10h ás 17h.",
-            "font": "1rem"
-
-        }
-      },
-      "rich-text#tire-duvidas3": {
-        "children": [
-
-        ],
-        "props": {
-            "text": "Serviço oferecido pelo Mundo Verde, através do telefone 0800 022 25 28 ou pelo formulário abaixo.",
-            "font": "1rem"
-
-        }
-      },
-      "flex-layout.row#form-row": {
-        "children": [
-            
-        ],
-        "props": {
-            
-        }
-      },
-      "flex-layout.col#form-col": {
-        "children": [
-        ],
-        "props": {
-
-        }
-      }
-
-
-
-
-
-
+    "children": [
+      "form-input.text#nome",
+      "form-input.text#telefone",
+      "form-input.text#email",
+      "form-input.text#assunto",
+      "form-input.textarea#mensagem",
+      "form-input.checkbox#agreement",
+      "form-submit"
+    ],
+    "blocks": [
+      "form-success"
+    ]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Formulário enviado com sucesso!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#nome": {
+    "props": {
+      "pointer": "#/properties/nome"
+    }
+  },
+  "form-input.text#telefone": {
+    "props": {
+      "pointer": "#/properties/telefone"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.text#assunto": {
+    "props": {
+      "pointer": "#/properties/assunto"
+    }
+  },
+  "form-input.textarea#mensagem": {
+    "props": {
+      "pointer": "#/properties/mensagem"
+    }
+  },
+  "form-input.checkbox#agreement": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Quero receber notícias Mundo Verde por email"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
 }
