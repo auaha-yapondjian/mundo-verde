@@ -62,8 +62,6 @@
     },
 
 
-
-
     "flex-layout.row#content2": {
         "children": [
             "flex-layout.col#col2"

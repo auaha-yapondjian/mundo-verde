@@ -6,9 +6,6 @@
         ]
     },
 
-
-
-
     "flex-layout.row#rowmain-imprensa": {
         "children": [
             "flex-layout.col#colmain-imprensa"
