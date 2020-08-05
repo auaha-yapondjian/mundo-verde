@@ -67,10 +67,13 @@
 :global(.vtex-menu-2-x-styledLinkContainer--menu-btn) {
     margin: 0 10px;
     padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
     
     :global(.vtex-menu-2-x-styledLink--menu-btn){
         display: block;
-        background: #008651;
+        background: #FF6600;
         padding: 10px 20px;
         border-radius: 9px 0 9px 0;
 
@@ -106,3 +109,18 @@
 :global(.vtex-menu-2-x-styledLinkContainer--menu-item-blog){
     margin: 0;
 }
+
+.section--category {
+    height: 100%;
+}
+
+.itemContainer--category {
+    box-shadow: 1px 6px 12px -3px grey;
+    height: 100%;
+    max-height: 48%;
+    overflow-y: auto;
+}
+.submenuItem {
+    width: 230px;
+}
+ 

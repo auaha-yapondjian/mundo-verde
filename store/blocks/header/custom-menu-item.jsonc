@@ -1,7 +1,6 @@
 {
   "vtex.menu@2.x:menu#custom-menu": {
     "children": [
-      "menu-item#lojas",
       "menu-item#promocoes"
     ]
   },
@@ -17,7 +16,7 @@
         "href": "/nossas-lojas",
         "noFollow": false,
         "tagTitle": "Lojas",
-        "text": "Lojas"
+        "text": "Lojas/Delivery"
       }
     }
   },

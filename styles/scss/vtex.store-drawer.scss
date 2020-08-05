@@ -1,5 +1,8 @@
 .drawer {
-    
+    :global(.vtex-menu-2-x-menuItem--menu-btn) {
+        display: flex;
+        align-items: center;
+    }
     :global(.vtex-menu-2-x-menuContainer),
     :global(.vtex-menu-2-x-menuContainerNav){
         width: 100%;
@@ -13,6 +16,7 @@
         margin: 0;
         padding: 10px 20px;
         border-bottom: 1px solid rgba(#333, 0.1);
+
 
         &:global(.vtex-menu-2-x-styledLinkContainer--menu-btn){
             padding: 0;

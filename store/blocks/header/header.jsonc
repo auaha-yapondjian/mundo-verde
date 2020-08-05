@@ -48,7 +48,6 @@
     },
     "children": [
       "flex-layout.col#category-menu",
-      "vtex.menu@2.x:menu#collections",
       "vtex.menu@2.x:menu#custom-menu",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
@@ -177,9 +176,10 @@
       "menu-item#mobile-test-category",
       "menu-item#mobile-paes-e-massas",
       "menu-item#lancamento",
-      "menu-item#lojas",
       "menu-item#promocoes",
-      "menu-item#blog"
+      "menu-item#seja-franqueado",
+      "menu-item#lojas"
+
     ],
     "props": {
       "orientation": "vertical"
@@ -202,22 +202,23 @@
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
     "children": [
-      "menu-item#blog"
+      "menu-item#seja-franqueado",
+      "menu-item#lojas"
     ]
   },
-  "menu-item#blog": {
+  "menu-item#seja-franqueado": {
     "props": {
-      "id": "menu-item-blog",
+      "id": "menu-item-seja-franqueado",
       "blockClass": ["menu-item-blog"],
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/blog",
+        "href": "/seja-um-franqueado",
         "noFollow": false,
-        "tagTitle": "Blog",
-        "text": "Blog"
+        "tagTitle": "seja-franqueado",
+        "text": "Seja um Franqueado"
       }
     }
   }
