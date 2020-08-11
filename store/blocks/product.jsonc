@@ -79,10 +79,10 @@
     "children": [
       "vtex.store-components:product-brand",
       "vtex.store-components:product-name",
+      "product-identifier.product",
       "product-rating-summary",
       "flex-layout.row#product-price-and-buy-button",
       "product-separator",
-      "product-identifier.product",
       "sku-selector",
       "product-assembly-options",
       "availability-subscriber",
