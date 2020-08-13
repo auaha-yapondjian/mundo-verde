@@ -34,6 +34,9 @@
   },
   "store.custom#nossas-lojas": {
     "path": "/nossas-lojas"
+  },
+  "store.custom#faq-page": {
+    "path": "/faq"
   }
 }
 

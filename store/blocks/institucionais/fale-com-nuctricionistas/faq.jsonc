@@ -1,0 +1,806 @@
+{
+    "store.custom#faq-page" : {
+        "blocks": [
+            "flex-layout.row#contentallrow-faq"
+
+        ]
+    },
+
+    "flex-layout.row#contentallrow-faq": {
+        "children": [
+            "flex-layout.col#contentallcol-faq"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+
+    "flex-layout.col#contentallcol-faq": {
+        "children": [
+            "flex-layout.row#content1-faq",
+            "flex-layout.row#content2-faq",
+            "flex-layout.row#content3-faq",
+            "flex-layout.row#content4-faq",
+            "flex-layout.row#content5-faq",
+            "flex-layout.row#content6-faq",
+            "flex-layout.row#content7-faq",
+            "flex-layout.row#content8-faq",
+            "flex-layout.row#content9-faq",
+            "flex-layout.row#content10-faq",
+            "flex-layout.row#content11-faq",
+            "flex-layout.row#content12-faq",
+            "flex-layout.row#content13-faq",
+            "flex-layout.row#content14-faq",
+            "flex-layout.row#content15-faq",
+            "flex-layout.row#content16-faq",
+            "flex-layout.row#content17-faq",
+            "flex-layout.row#content18-faq",
+            "flex-layout.row#content19-faq",
+            "flex-layout.row#content20-faq",
+            "flex-layout.row#content21-faq",
+            "flex-layout.row#content22-faq",
+            "flex-layout.row#content23-faq",
+            "flex-layout.row#content24-faq",
+            "flex-layout.row#content25-faq",
+            "flex-layout.row#content26-faq"
+
+
+        ],
+        "props": {
+
+        }
+    },
+
+
+
+    "flex-layout.row#content1-faq": {
+        "children": [
+            "flex-layout.col#col1-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col1-faq": {
+        "children": [
+            "rich-text#titulo1-faq",
+            "rich-text#content1-faq"
+        ]
+    },
+    "rich-text#titulo1-faq": {
+        "children": [],
+        "props": {
+            "text": "Como faço uma compra?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content1-faq": {
+        "children": [],
+        "props": {
+            "text": "Para adquirir nossos produtos, acesse nosso site: www.natue.com.br e siga os seguintes passos: \n • Clique no produto desejado e clique em adicionar ao carrinho. \n • Coloque o CEP no campo correspondente e clique em calcular \n • O sistema irá calcular o valor de frete e o prazo de entrega \n • Preencha as informações para a entrega do pedido e selecione a opção de pagamento (cartão de credito ou boleto bancário) \n • Finalize a compra."
+                        
+        }
+    },
+
+
+
+
+    "flex-layout.row#content2-faq": {
+        "children": [
+            "flex-layout.col#col2-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col2-faq": {
+        "children": [
+            "rich-text#titulo2-faq",
+            "rich-text#content2-faq"
+        ]
+    },
+    "rich-text#titulo2-faq": {
+        "children": [],
+        "props": {
+            "text": "Qual o prazo de entrega?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content2-faq": {
+        "children": [],
+        "props": {
+            "text": "Não temos um prazo de entrega já estimado. Você pode clicar no produto desejado, adicionar ao carrinho e clicar em “comprar”, após isso, informe o seu CEP em “dados para entrega”. O valor e o prazo são calculados dependendo do peso, tamanho do produto e endereço a ser entregue."
+                }
+    },
+
+
+
+
+    "flex-layout.row#content3-faq": {
+        "children": [
+            "flex-layout.col#col3-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col3-faq": {
+        "children": [
+            "rich-text#titulo3-faq",
+            "rich-text#content3-faq"
+        ]
+    },
+    "rich-text#titulo3-faq": {
+        "children": [],
+        "props": {
+            "text": "Como excluir o produto do carrinho?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content3-faq": {
+        "children": [],
+        "props": {
+            "text": "Volte para a página inicial do site, passe o mouse sobre o carrinho e clique no 'X' ao lado do produto que deseja excluir."
+
+        }
+    },
+
+
+
+
+    "flex-layout.row#content4-faq": {
+        "children": [
+            "flex-layout.col#col4-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col4-faq": {
+        "children": [
+            "rich-text#titulo4-faq",
+            "rich-text#content4-faq"
+        ]
+    },
+    "rich-text#titulo4-faq": {
+        "children": [],
+        "props": {
+            "text": "Como eu uso o cupom?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content4-faq": {
+        "children": [],
+        "props": {
+            "text": "Abaixo de 'Resumo do pedido' e 'Finalizar pedido' haverá a pergunta 'Tem cupom? Clique aqui!', assim que for clicado o campo de preenchimento do cupom será disponibilizado, após informar o cupom basta clicar em 'Aplicar' para que o desconto seja acatado pelo nosso site."
+        }
+    },
+
+
+
+
+    "flex-layout.row#content5-faq": {
+        "children": [
+            "flex-layout.col#col5-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col5-faq": {
+        "children": [
+            "rich-text#titulo5-faq",
+            "rich-text#content5-faq"
+        ]
+    },
+    "rich-text#titulo5-faq": {
+        "children": [],
+        "props": {
+            "text": "Esqueci minha senha, e agora?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content5-faq": {
+        "children": [],
+        "props": {
+            "text": "No momento o link para recuperação de senha está passando por alguns ajustes. Neste caso, pedimos que nos contate através do e-mail: contato@natue.com.br, para que possamos dar orientações para redefinição de senha."
+        }
+    },
+    "flex-layout.row#content6-faq": {
+        "children": [
+            "flex-layout.col#col6-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col6-faq": {
+        "children": [
+            "rich-text#titulo6-faq",
+            "rich-text#content6-faq"
+        ]
+    },
+    "rich-text#titulo6-faq": {
+        "children": [],
+        "props": {
+            "text": "Vocês têm loja física?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content6-faq": {
+        "children": [],
+        "props": {
+            "text": "Infelizmente não temos loja física, a compra é exclusiva pelo site: www.natue.com.br. \n Entregamos em todo Brasil via correios ou transportadoras."
+        }
+    },
+
+
+
+    "flex-layout.row#content7-faq": {
+        "children": [
+            "flex-layout.col#col7-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col7-faq": {
+        "children": [
+            "rich-text#titulo7-faq",
+            "rich-text#content7-faq"
+        ]
+    },
+    "rich-text#titulo7-faq": {
+        "children": [],
+        "props": {
+            "text": "Posso retirar o meu pedido?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content7-faq": {
+        "children": [],
+        "props": {
+            "text": "A Natue ainda não conta com pontos de retirada. Mas entregamos em todo Brasil através de correios e transportadoras."
+        }
+    },
+
+    "flex-layout.row#content8-faq": {
+        "children": [
+            "flex-layout.col#col8-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col8-faq": {
+        "children": [
+            "rich-text#titulo8-faq",
+            "rich-text#content8-faq"
+        ]
+    },
+    "rich-text#titulo8-faq": {
+        "children": [],
+        "props": {
+            "text": "Como posso fazer parceria com a Natue?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content8-faq": {
+        "children": [],
+        "props": {
+            "text": "Agradecemos seu contato. Pedimos por gentileza que entre em contato diretamente com o setor responsável, o e-mail para contato é: relacionamento@natue.com.br.            "
+        }
+    },
+
+    "flex-layout.row#content9-faq": {
+        "children": [
+            "flex-layout.col#col9-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col9-faq": {
+        "children": [
+            "rich-text#titulo9-faq",
+            "rich-text#content9-faq"
+        ]
+    },
+    "rich-text#titulo9-faq": {
+        "children": [],
+        "props": {
+            "text": "O site é seguro?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content9-faq": {
+        "children": [],
+        "props": {
+            "text": "Podemos assegurar que nossas entregas e sistema de segurança são confiáveis. Nós trabalhamos arduamente para realizar a entrega de todos os pedidos confiados a nós, caso haja algum imprevisto e isto não ocorra, garantimos 100% a devolução do dinheiro pago. Além do mais, temos o selo de ouro no 'Ebit' que é um programa que avalia lojas virtuais o que faz com que nosso site possa ser ainda mais confiável."
+        }
+    },
+
+    "flex-layout.row#content10-faq": {
+        "children": [
+            "flex-layout.col#col10-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col10-faq": {
+        "children": [
+            "rich-text#titulo10-faq",
+            "rich-text#content10-faq"
+        ]
+    },
+    "rich-text#titulo10-faq": {
+        "children": [],
+        "props": {
+            "text": "Quanto custa o frete?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content10-faq": {
+        "children": [],
+        "props": {
+            "text": "Não temos um valor de frete já estimado. Você pode clicar no produto desejado, adicionar ao carrinho e clicar em “comprar”, após isso, informe o seu CEP em “dados para entrega”. O valor e o prazo são calculados dependendo do peso, tamanho do produto e endereço a ser entregue."
+        }
+    },
+
+    "flex-layout.row#content11-faq": {
+        "children": [
+            "flex-layout.col#col11-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col11-faq": {
+        "children": [
+            "rich-text#titulo11-faq",
+            "rich-text#content11-faq"
+        ]
+    },
+    "rich-text#titulo11-faq": {
+        "children": [],
+        "props": {
+            "text": "Qual a politica de frete?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content11-faq": {
+        "children": [],
+        "props": {
+            "text": "Nas compras acima de R$150,00 o frete é grátis para a região Sudeste (capital). Confira nossa política de frete para outras regiões do país: \n https://www.natue.com.br/politica-de-frete/"
+        }
+    },
+
+    "flex-layout.row#content12-faq": {
+        "children": [
+            "flex-layout.col#col12-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col12-faq": {
+        "children": [
+            "rich-text#titulo12-faq",
+            "rich-text#content12-faq"
+        ]
+    },
+    "rich-text#titulo12-faq": {
+        "children": [],
+        "props": {
+            "text": "Vocês entregam pra fora do Brasil?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content12-faq": {
+        "children": [],
+        "props": {
+            "text": "No momento, só fazemos entregas dentro do Brasil."
+        }
+    },
+
+
+
+    "flex-layout.row#content13-faq": {
+        "children": [
+            "flex-layout.col#col13-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col13-faq": {
+        "children": [
+            "rich-text#titulo13-faq",
+            "rich-text#content13-faq"
+        ]
+    },
+    "rich-text#titulo13-faq": {
+        "children": [],
+        "props": {
+            "text": "Como assino a Natuebox?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content13-faq": {
+        "children": [],
+        "props": {
+            "text": "A Natuebox é um serviço de assinatura que traz mensalmente uma seleção de produtos diferentes para que você possa conhecer e saborear em casa, no trabalho ou onde você quiser. Entretanto, o serviço está passando por uma reestruturação para melhorar a sua composição, relevância e proposta. Assim, as assinaturas estão suspensas pelos próximos meses e pedimos que aguarde nossas novidades assinando nossa newsletter."            
+        }
+    },
+
+
+    "flex-layout.row#content14-faq": {
+        "children": [
+            "flex-layout.col#col14-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col14-faq": {
+        "children": [
+            "rich-text#titulo14-faq",
+            "rich-text#content14-faq"
+        ]
+    },
+    "rich-text#titulo14-faq": {
+        "children": [],
+        "props": {
+            "text": "Como consigo o cupom de 1º compra?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content14-faq": {
+        "children": [],
+        "props": {
+            "text": "A Natue possui um serviço de envio de Newsletters gratuito para seu e-mail. Com ele você ficará por dentro de informações de nossos produtos e promoções e novidades na área da saúde e bem-estar. Para ter acesso imediato ao nosso Newsletter, basta inserir seu e-mail no campo da Newsletter, indicado no canto inferior de nossa página.Caso deseje cancelar o envio de nossa Newsletter, o processo é rápido e fácil. Basta acessar o link fornecido no final de cada notícia enviada."        }
+    },
+
+
+    "flex-layout.row#content15-faq": {
+        "children": [
+            "flex-layout.col#col15-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col15-faq": {
+        "children": [
+            "rich-text#titulo15-faq",
+            "rich-text#content15-faq"
+        ]
+    },
+    "rich-text#titulo15-faq": {
+        "children": [],
+        "props": {
+            "text": "Não quero mais receber e-mails. O que devo fazer?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content15-faq": {
+        "children": [],
+        "props": {
+            "text": "Uma alternativa é ir no rodapé do e-mail e clicar em: 'Caso não queira mais receber nossos e-mails, Descadastre-se'. Se o link não funcionar ou continuar recebendo algum e-mail após o período de 48 horas, entre em contato conosco."
+        }
+    },
+
+
+    "flex-layout.row#content16-faq": {
+        "children": [
+            "flex-layout.col#col16-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col16-faq": {
+        "children": [
+            "rich-text#titulo11-faq",
+            "rich-text#content11-faq"
+        ]
+    },
+    "rich-text#titulo16-faq": {
+        "children": [],
+        "props": {
+            "text": "Vocês aceitam cartão?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content16-faq": {
+        "children": [],
+        "props": {
+            "text": "Nós aceitamos pagamentos pelos cartões Visa, MasterCard, Elo, Ameican Express e Diners Club. Trabalhamos em conjunto com parceiros e adotamos medidas de segurança para garantir a proteção de seus dados. Caso haja qualquer divergência dos dados fornecidos para cadastro ou pagamento, a equipe da Natue entrará em contato para requisitar a aprovação do pedido. Para compras parceladas, a parcela mínima é de R$ 40,00 e em até 6 (seis) vezes sem juros."
+        }
+    },
+
+
+    "flex-layout.row#content17-faq": {
+        "children": [
+            "flex-layout.col#col17-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col17-faq": {
+        "children": [
+            "rich-text#titulo17-faq",
+            "rich-text#content17-faq"
+        ]
+    },
+    "rich-text#titulo17-faq": {
+        "children": [],
+        "props": {
+            "text": "Como localizo meu boleto?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content17-faq": {
+        "children": [],
+        "props": {
+            "text": "Você deve entra em “Minha conta” (lado superior direito da página), colocar o e-mail e senha, entrar em “Meus pedidos” e clicar em “Detalhes” lá estará o link do boleto"
+        }
+    },
+
+
+    "flex-layout.row#content18-faq": {
+        "children": [
+            "flex-layout.col#col18-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col18-faq": {
+        "children": [
+            "rich-text#titulo18-faq",
+            "rich-text#content18-faq"
+        ]
+    },
+    "rich-text#titulo18-faq": {
+        "children": [],
+        "props": {
+            "text": "Como cancelar o boleto?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content18-faq": {
+        "children": [],
+        "props": {
+            "text": "Basta desconsiderar o boleto. Após o vencimento a compra é automaticamente cancelada."
+        }
+    },
+
+
+    "flex-layout.row#content19-faq": {
+        "children": [
+            "flex-layout.col#col19-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col19-faq": {
+        "children": [
+            "rich-text#titulo19-faq",
+            "rich-text#content19-faq"
+        ]
+    },
+    "rich-text#titulo19-faq": {
+        "children": [],
+        "props": {
+            "text": "Como altero o vencimento do boleto?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content19-faq": {
+        "children": [],
+        "props": {
+            "text": "Após o vencimento do Boleto o pedido é automaticamente cancelado pelo sistema, sendo necessário a realização de uma nova compra para gerar um novo boleto."
+        }
+    },
+
+
+    "flex-layout.row#content20-faq": {
+        "children": [
+            "flex-layout.col#col20-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col20-faq": {
+        "children": [
+            "rich-text#titulo20-faq",
+            "rich-text#content20-faq"
+        ]
+    },
+    "rich-text#titulo20-faq": {
+        "children": [],
+        "props": {
+            "text": "Vocês parcelam?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content20-faq": {
+        "children": [],
+        "props": {
+            "text": "Parcelamos compras acima de R$80, sendo necessário ter no mínimo R$40 por parcela. Por ex: R$80 2x, R$120 3x, R$160 4x, R$200 5x, R$240 6x."
+        }
+    },
+
+    "flex-layout.row#content21-faq": {
+        "children": [
+            "flex-layout.col#col21-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col21-faq": {
+        "children": [
+            "rich-text#titulo21-faq",
+            "rich-text#content21-faq"
+        ]
+    },
+    "rich-text#titulo21-faq": {
+        "children": [],
+        "props": {
+            "text": "Sou nutricionista e gostaria de amostra. O que devo fazer?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content21-faq": {
+        "children": [],
+        "props": {
+            "text": "Infelizmente não trabalhamos com o envio de amostras, somos revendedores online dos produtos. No portal da Natue, temos uma área exclusiva para cadastro de nutricionista e obtenção de descontos. Acesse: http://www.natue.com.br/natue_health "
+        }
+    },
+
+    "flex-layout.row#content22-faq": {
+        "children": [
+            "flex-layout.col#col22-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col22-faq": {
+        "children": [
+            "rich-text#titulo22-faq",
+            "rich-text#content22-faq"
+        ]
+    },
+    "rich-text#titulo22-faq": {
+        "children": [],
+        "props": {
+            "text": "Como realizar pesquisa de produtos em nosso site?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content22-faq": {
+        "children": [],
+        "props": {
+            "text": "a) Pesquisa Padrão \n A pesquisa padrão pode ser consultada no centro superior de nossa página, acima do menu principal. Na pesquisa padrão você pode facilmente procurar produtos usando tanto critérios simples, tais como nome de fabricante, marca ou produto, como palavras compostas, de modo que a pesquisa procure essas palavras em todas as descrições de nossos produtos. Por exemplo, unir o nome do produto e do fabricante. \n b) Refinamento de Pesquisa \n O refinamento de pesquisa pode ser acessado pelo menu na lateral esquerda de nossa página. No refinamento de pesquisa você pode procurar produtos especificando os resultados que você deseja que apareçam a partir de filtros. Você pode especificar por funcionalidades do produto, tipos de substância ativa que o compõe, faixas de preço em que ele está inserido, entre outros. Por exemplo, produtos adequados para diabéticos."
+        }
+    },
+
+    "flex-layout.row#content23-faq": {
+        "children": [
+            "flex-layout.col#col23-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col23-faq": {
+        "children": [
+            "rich-text#titulo23-faq",
+            "rich-text#content23-faq"
+        ]
+    },
+    "rich-text#titulo23-faq": {
+        "children": [],
+        "props": {
+            "text": "O produto que quero está indisponível. Quando ele voltará ao estoque?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content23-faq": {
+        "children": [],
+        "props": {
+            "text": "Se um item está indisponível, você pode clicar em 'avise-me quando disponível' que quando o item voltar ao estoque, mandaremos um e-mail."
+        }
+    },
+
+    "flex-layout.row#content24-faq": {
+        "children": [
+            "flex-layout.col#col24-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col24-faq": {
+        "children": [
+            "rich-text#titulo24-faq",
+            "rich-text#content24-faq"
+        ]
+    },
+    "rich-text#titulo24-faq": {
+        "children": [],
+        "props": {
+            "text": "Onde está o meu pedido?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content24-faq": {
+        "children": [],
+        "props": {
+            "text": "Para rastrear seu pedido é muito simples e aconselhamos que você faça sempre! Por isso, para lhe auxiliar facilitamos o procedimento. Clicando em “Meus Pedidos” no seu cadastro, poderá acompanhar tudo sobre o pedido realizado, desde o momento em que ele foi efetivado e aprovado, até o momento em que chega na transportadora e por fim é entregue ao destinatário.Para isso, clique na setinha ao lado de 'refazer pedido' e abaixo da linha do tempo clique em 'Rastrear pedido'"
+        }
+    },
+
+    "flex-layout.row#content25-faq": {
+        "children": [
+            "flex-layout.col#col25-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col25-faq": {
+        "children": [
+            "rich-text#titulo25-faq",
+            "rich-text#content25-faq"
+        ]
+    },
+    "rich-text#titulo25-faq": {
+        "children": [],
+        "props": {
+            "text": "Como faço para revender o produto de vocês?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content25-faq": {
+        "children": [],
+        "props": {
+            "text": "Infelizmente no momento vendemos apenas para pessoas físicas. Somos revendedores dos produtos expostos em nosso site, sendo assim, não temos o contato direto de um fornecedor para que possamos lhe informar. Sugerimos que tente contatar a marca do produto que deseja para que possa adquiri-los para sua empresa."
+        }
+    },
+
+    "flex-layout.row#content26-faq": {
+        "children": [
+            "flex-layout.col#col26-faq"
+        ],
+        "props": {
+
+        }
+    },
+    "flex-layout.col#col26-faq": {
+        "children": [
+            "rich-text#titulo26-faq",
+            "rich-text#content26-faq"
+        ]
+    },
+    "rich-text#titulo26-faq": {
+        "children": [],
+        "props": {
+            "text": "Como faço a troca ou devolução de um item?",
+            "blockClass": "title-policy"
+        }
+    },
+    "rich-text#content26-faq": {
+        "children": [],
+        "props": {
+            "text": "Para informações sobre trocas e devoluções, entre em contato com nossa central de atendimento através do Chat, telefone ou e-mail."
+        }
+    }
+}
