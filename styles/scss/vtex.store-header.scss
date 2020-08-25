@@ -97,16 +97,13 @@
 /* stick wrapper with the same color as the desktop/mobile header */
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
   background-color: #fff;
+  padding: 10px 0;;
 }
 
 /* resize the logo for neat effect */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck) .logoLink {
   transform: scale(0.6);
   display: none;
-}
-
-:global(.vtex-sticky-layout-0-x-container--sticky-header) {
-  padding: 10px 0;
 }
 
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) {
