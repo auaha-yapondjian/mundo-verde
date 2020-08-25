@@ -2,8 +2,7 @@
     "flex-layout.row#season-promotion": {
         "title": "Card Produtos",
         "children": [
-            "responsive-layout.desktop#promotions1",
-            "responsive-layout.mobile#promotions2"
+            "flex-layout.col#season-promotion--cards"
         ],
         "props": {
             "blockClass": "season-promotion--cards"
@@ -11,7 +10,7 @@
     },
     "responsive-layout.desktop#promotions1": {
         "children": [
-            "flex-layout.col#season-promotion--cards"
+            "flex-layout.row#season-promotion"
         ]
     },
     "slider-layout#promotion-slider2": {
