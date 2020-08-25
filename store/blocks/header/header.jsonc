@@ -33,7 +33,7 @@
     "props": {
       "textAlignment": "RIGHT",
       "textPosition": "RIGHT",
-      "text": "[Frete Grátis acima de R$ 150. **Ver regras**](/politica-de-frete)",
+      "text": "",
       "blockClass": "textTipbar"
     }
   },
@@ -48,7 +48,6 @@
     },
     "children": [
       "flex-layout.col#category-menu",
-      // "vtex.menu@2.x:menu#custom-menu",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
     ]
@@ -74,7 +73,8 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "marginTop": "10"
     },
     "children": [
       "flex-layout.col#logo-desktop",

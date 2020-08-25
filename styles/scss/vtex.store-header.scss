@@ -105,6 +105,10 @@
   display: none;
 }
 
+:global(.vtex-sticky-layout-0-x-container--sticky-header) {
+  padding: 10px 0;
+}
+
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) {
   :global(.vtex-sticky-layout-0-x-container--sticky-header) {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
