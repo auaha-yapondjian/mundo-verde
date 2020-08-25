@@ -2,13 +2,13 @@
     "rich-text#promotion-news--title": {
         "title": "Título",
         "props": {
-          "text": "## Conheça nossas novidades",
-          "blockClass": "promotion-news-content--title"
+            "text": "## Conheça nossas novidades",
+            "blockClass": "promotion-news-content--title"
         }
     },
     "flex-layout.row#promotion-news--top": {
         "children": [
-            "image#card-news-1", 
+            "image#card-news-1",
             "image#card-news-2"
         ],
         "props": {
@@ -17,7 +17,7 @@
     },
     "flex-layout.row#promotion-news--bottom": {
         "children": [
-            "image#card-news-3", 
+            "image#card-news-3",
             "image#card-news-4"
         ],
         "props": {
@@ -28,7 +28,10 @@
         "title": "Imagem 1",
         "props": {
             "src": "",
-            "blockClass": ["promotion-news--image", "promotion-news--image--left"],
+            "blockClass": [
+                "promotion-news--image",
+                "promotion-news--image--left"
+            ],
             "link": {
                 "url": "/"
             }
@@ -38,7 +41,10 @@
         "title": "Imagem 2",
         "props": {
             "src": "",
-            "blockClass": ["promotion-news--image", "promotion-news--image--right"],
+            "blockClass": [
+                "promotion-news--image",
+                "promotion-news--image--right"
+            ],
             "link": {
                 "url": "/"
             }
@@ -48,7 +54,10 @@
         "title": "Imagem 3",
         "props": {
             "src": "",
-            "blockClass": ["promotion-news--image", "promotion-news--image--left"],
+            "blockClass": [
+                "promotion-news--image",
+                "promotion-news--image--left"
+            ],
             "link": {
                 "url": "/"
             }
@@ -58,7 +67,10 @@
         "title": "Imagem 4",
         "props": {
             "src": "/",
-            "blockClass": ["promotion-news--image", "promotion-news--image--right"],
+            "blockClass": [
+                "promotion-news--image",
+                "promotion-news--image--right"
+            ],
             "link": {
                 "url": ""
             }

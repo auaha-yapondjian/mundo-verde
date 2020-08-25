@@ -1,8 +1,32 @@
 {
     "flex-layout.row#season-promotion": {
         "title": "Card Produtos",
-        "children":[
+        "children": [
+            "responsive-layout.desktop#promotions1"
+        ],
+        "props": {
+            "blockClass": "season-promotion--cards"
+        }
+    },
+    "responsive-layout.desktop#promotions1": {
+        "children": [
             "flex-layout.col#season-promotion--cards"
+        ]
+    },
+    "slider-layout#promotion-slider2": {
+        "children": [
+            "image#card-link-1",
+            "image#card-link-2",
+            "image#card-link-3",
+            "image#card-link-4"
+        ],
+        "props": {
+            "blockClass": "season-promotion--cards"
+        }
+    },
+    "responsive-layout.mobile#promotions2": {
+        "children": [
+            "slider-layout#promotion-slider2"
         ],
         "props": {
             "blockClass": "season-promotion--cards"
@@ -10,7 +34,7 @@
     },
     "flex-layout.col#season-promotion--cards": {
         "children": [
-            "image#card-link-1", 
+            "image#card-link-1",
             "image#card-link-2",
             "image#card-link-3",
             "image#card-link-4"
@@ -60,5 +84,4 @@
             }
         }
     }
-
 }

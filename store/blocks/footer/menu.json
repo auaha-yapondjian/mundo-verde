@@ -70,7 +70,6 @@
       }
     }
   },
-
   "vtex.menu@2.x:menu#footer-decoration": {
     "props": {
       "orientation": "vertical"
@@ -81,7 +80,6 @@
       "menu-item#tvs"
     ]
   },
-
   "menu-item#smartphones": {
     "props": {
       "id": "menu-item-smartphones",
@@ -97,7 +95,6 @@
       }
     }
   },
-
   "menu-item#videogames": {
     "props": {
       "id": "menu-item-videogames",
@@ -113,7 +110,6 @@
       }
     }
   },
-
   "menu-item#tvs": {
     "props": {
       "id": "menu-item-tvs",
@@ -129,7 +125,6 @@
       }
     }
   },
-
   "vtex.menu@2.x:menu#footer-bags": {
     "props": {
       "orientation": "vertical"
@@ -140,7 +135,6 @@
       "menu-item#necessaire"
     ]
   },
-
   "menu-item#bags": {
     "props": {
       "id": "menu-item-bags",
@@ -156,7 +150,6 @@
       }
     }
   },
-
   "menu-item#backpacks": {
     "props": {
       "id": "menu-item-backpacks",
@@ -172,7 +165,6 @@
       }
     }
   },
-
   "menu-item#necessaire": {
     "props": {
       "id": "menu-item-necessaire",
@@ -188,7 +180,6 @@
       }
     }
   },
-
   "vtex.menu@2.x:menu#footer-clothing": {
     "props": {
       "orientation": "vertical"
@@ -202,7 +193,6 @@
       "menu-item#cropped"
     ]
   },
-
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
@@ -213,7 +203,6 @@
       "menu-item#sale-mobile"
     ]
   },
-
   "menu-item#clothing-mobile": {
     "props": {
       "id": "menu-item-category-clothing",
@@ -228,12 +217,15 @@
         "text": "Clothing"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#clothing"
+    ]
   },
   "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+    "children": [
+      "vtex.menu@2.x:menu#clothing-accordion"
+    ]
   },
-
   "vtex.menu@2.x:menu#clothing-accordion": {
     "props": {
       "orientation": "vertical"
@@ -246,7 +238,6 @@
       "menu-item#cropped"
     ]
   },
-
   "menu-item#decoration-mobile": {
     "props": {
       "itemProps": {
@@ -254,12 +245,15 @@
         "text": "Decoration"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#decoration"
+    ]
   },
   "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+    "children": [
+      "vtex.menu@2.x:menu#footer-decoration-mobile"
+    ]
   },
-
   "vtex.menu@2.x:menu#footer-decoration-mobile": {
     "props": {
       "orientation": "vertical"
@@ -270,7 +264,6 @@
       "menu-item#tvs"
     ]
   },
-
   "menu-item#sale-mobile": {
     "props": {
       "itemProps": {
@@ -278,12 +271,15 @@
         "text": "Sale"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#sale"
+    ]
   },
   "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+    "children": [
+      "vtex.menu@2.x:menu#footer-sale-mobile"
+    ]
   },
-
   "vtex.menu@2.x:menu#footer-sale-mobile": {
     "props": {
       "orientation": "vertical"
@@ -294,7 +290,6 @@
       "menu-item#tvs"
     ]
   },
-
   "menu-item#clothing": {
     "props": {
       "id": "menu-item-category-clothing",
@@ -310,7 +305,6 @@
       }
     }
   },
-
   "menu-item#shorts": {
     "props": {
       "id": "menu-item-shorts",
@@ -326,7 +320,6 @@
       }
     }
   },
-
   "menu-item#tank-tops": {
     "props": {
       "id": "menu-item-tank-tops",
@@ -342,7 +335,6 @@
       }
     }
   },
-
   "menu-item#shirts": {
     "props": {
       "id": "menu-item-shirts",
@@ -358,7 +350,6 @@
       }
     }
   },
-
   "menu-item#sweatshirt": {
     "props": {
       "id": "menu-item-sweat-shirts",
@@ -374,7 +365,6 @@
       }
     }
   },
-
   "menu-item#cropped": {
     "props": {
       "id": "menu-item-cropped",
@@ -446,8 +436,6 @@
       }
     }
   },
-
-
   "vtex.menu@2.x:menu#footer-2": {
     "title": "Menu Footer (2)",
     "props": {
@@ -488,8 +476,6 @@
       }
     }
   },
-
-
   "vtex.menu@2.x:menu#footer-3": {
     "title": "Menu Footer (3)",
     "props": {
@@ -530,7 +516,6 @@
       }
     }
   },
-
   "vtex.menu@2.x:menu#footer-4": {
     "title": "Menu Footer (4)",
     "props": {
@@ -571,7 +556,6 @@
       }
     }
   },
-
   "vtex.menu@2.x:menu#footer-5": {
     "title": "Menu Footer (5)",
     "props": {
@@ -590,7 +574,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/paes-e-massas",
+        "href": "/elixir",
         "noFollow": false,
         "tagTitle": "Elixir",
         "text": "Elixir"
@@ -605,12 +589,11 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/paes-e-massas",
+        "href": "/mundo-verde-selecao",
         "noFollow": false,
         "tagTitle": "Mundo Verde Seleção",
         "text": "Mundo Verde Seleção"
       }
     }
   }
-
 }
