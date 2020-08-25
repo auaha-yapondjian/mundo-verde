@@ -1,32 +1,87 @@
 {
-    "menu-item#mobile-test-category": {
+    "menu-item#mobile-alimentos-e-bebidas": {
         "props": {
-          "id": "",
-          "type": "category",
-          "blockClass": ["menu-mobile-department"],
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "categoryId": 1
-          }
+            "id": "",
+            "type": "category",
+            "blockClass": [
+                "menu-mobile-department"
+            ],
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 11
+            }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu.accordion#test-category"
+            "vtex.menu@2.x:submenu.accordion#alimentos-e-bebidas"
         ]
     },
-    "vtex.menu@2.x:submenu.accordion#test-category": {
+    "vtex.menu@2.x:submenu.accordion#alimentos-e-bebidas": {
         "children": [
-            "menu#menu-test-category"
+            "menu#menu-alimentos-e-bebidas"
         ]
     },
-    "menu#menu-test-category": {
+    "menu#menu-alimentos-e-bebidas": {
         "props": {
-            "orientation": "vertical"
+            "orientation": "vertical",
+            "categoryId": 11
+        }
+    },
+    "menu-item#mobile-suplementos": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "blockClass": [
+                "menu-mobile-department"
+            ],
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 10
+            }
         },
-          "children": [
-            "menu-item#test-category--cat-2",
-            "menu-item#test-category--cat-6"
-        ] 
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#suplementos"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#suplementos": {
+        "children": [
+            "menu#menu-suplementos"
+        ]
+    },
+    "menu#menu-suplementos": {
+        "props": {
+            "orientation": "vertical",
+            "categoryId": 10
+        }
+    },
+    "menu-item#mobile-outros": {
+        "props": {
+            "id": "",
+            "type": "category",
+            "blockClass": [
+                "menu-mobile-department"
+            ],
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 12
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#outros"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#outros": {
+        "children": [
+            "menu#menu-outros"
+        ]
+    },
+    "menu#menu-outros": {
+        "props": {
+            "orientation": "vertical",
+            "categoryId": 12
+        }
     },
     "menu-item#test-category--cat-2": {
         "props": {
@@ -35,7 +90,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-              "categoryId": 2
+                "categoryId": 2
             }
         }
     },
@@ -46,9 +101,9 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-              "categoryId": 6
+                "categoryId": 6
             }
-          },
+        },
         "blocks": [
             "vtex.menu@2.x:submenu.accordion#category--cat-6"
         ]
@@ -65,7 +120,7 @@
         "children": [
             "menu-item#mobile-subcategory-7",
             "menu-item#mobile-subcategory-9"
-        ] 
+        ]
     },
     "menu-item#mobile-subcategory-7": {
         "props": {
@@ -74,7 +129,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-              "categoryId": 7
+                "categoryId": 7
             }
         }
     },
@@ -85,9 +140,8 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-              "categoryId": 9
+                "categoryId": 9
             }
         }
     }
-
 }

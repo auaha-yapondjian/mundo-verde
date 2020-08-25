@@ -1,7 +1,10 @@
 {
   "footer": {
     "title": "Footer",
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
@@ -68,14 +71,20 @@
   },
   "flex-layout.col#footer--contact": {
     "title": "Info Contato",
-    "children": ["rich-text#footer-contact-title", "rich-text#footer-contact-text"],
+    "children": [
+      "rich-text#footer-contact-title",
+      "rich-text#footer-contact-text"
+    ],
     "props": {
       "blockClass": "footer-contact"
     }
   },
   "flex-layout.col#footer--payments": {
     "title": "Info Pagamento",
-    "children": ["rich-text#footer-payment",  "flex-layout.row#footer--payments-methods"],
+    "children": [
+      "rich-text#footer-payment",
+      "flex-layout.row#footer--payments-methods"
+    ],
     "props": {
       "blockClass": "footer-payments"
     }
@@ -83,7 +92,7 @@
   "rich-text#footer-contact-text": {
     "title": "Texto Contato",
     "props": {
-      "text": "11 2388 0474 contato@mundoverde.net.br",
+      "text": "11 2388 0474 contato@mundoverde.net.br \n *O estoque do ecommerce é diferente das franquias e lojas físicas",
       "blockClass": "footer-contact-text"
     }
   },
@@ -103,7 +112,9 @@
   },
   "flex-layout.col#footer--social-networks": {
     "title": "Redes Sociais",
-    "children": ["social-networks#social-footer"]
+    "children": [
+      "social-networks#social-footer"
+    ]
   },
   "social-networks#social-footer": {
     "props": {
@@ -147,32 +158,50 @@
   },
   "flex-layout.col#payment-method--visa": {
     "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--visa"]
+      "blockClass": [
+        "custom-payment-methods",
+        "custom-payment-methods--visa"
+      ]
     }
   },
   "flex-layout.col#payment-method--mastercard": {
     "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--mastercard"]
+      "blockClass": [
+        "custom-payment-methods",
+        "custom-payment-methods--mastercard"
+      ]
     }
   },
   "flex-layout.col#payment-method--american": {
     "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--american"]
+      "blockClass": [
+        "custom-payment-methods",
+        "custom-payment-methods--american"
+      ]
     }
   },
   "flex-layout.col#payment-method--dinners": {
     "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--dinners"]
+      "blockClass": [
+        "custom-payment-methods",
+        "custom-payment-methods--dinners"
+      ]
     }
   },
   "flex-layout.col#payment-method--elo": {
     "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--elo"]
+      "blockClass": [
+        "custom-payment-methods",
+        "custom-payment-methods--elo"
+      ]
     }
   },
   "flex-layout.col#payment-method--boleto": {
     "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--boleto"]
+      "blockClass": [
+        "custom-payment-methods",
+        "custom-payment-methods--boleto"
+      ]
     }
   },
   "flex-layout.col#footer--info-vtex": {
