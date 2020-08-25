@@ -2,7 +2,8 @@
     "flex-layout.row#season-promotion": {
         "title": "Card Produtos",
         "children": [
-            "responsive-layout.desktop#promotions1"
+            "responsive-layout.desktop#promotions1",
+            "responsive-layout.mobile#promotions2"
         ],
         "props": {
             "blockClass": "season-promotion--cards"
