@@ -180,7 +180,8 @@
       "menu-item#mobile-suplementos",
       "menu-item#mobile-alimentos-e-bebidas",
       "menu-item#mobile-outros",
-      "menu-item#seja-franqueado"
+      "menu-item#seja-franqueado",
+      "menu-item#lojas"
     ],
     "props": {
       "orientation": "vertical"
