@@ -203,9 +203,9 @@
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
     "children": [
-      "menu-item#seja-franqueado"
+      "menu-item#seja-franqueado",
       // ,
-      // "menu-item#lojas"
+      "menu-item#lojas"
     ]
   },
   "menu-item#seja-franqueado": {

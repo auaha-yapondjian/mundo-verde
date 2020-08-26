@@ -12,8 +12,8 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/nossas-lojas",
+        "type": "external",
+        "href": "/arquivos/listagem-de-lojas.pdf",
         "noFollow": false,
         "tagTitle": "Lojas",
         "text": "Lojas/Delivery"
