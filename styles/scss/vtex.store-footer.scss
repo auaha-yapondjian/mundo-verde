@@ -74,6 +74,13 @@
       }
     }
 
+    :global(.vtex-rich-text-0-x-paragraph--footer-contact-text):last-child{
+      margin-top: 9px;
+      font-size: 12px;
+      max-width: 320px;
+    }
+
+
     :global(.vtex-menu-2-x-styledLink) {
       font-size: 14px;
       font-weight: normal;
