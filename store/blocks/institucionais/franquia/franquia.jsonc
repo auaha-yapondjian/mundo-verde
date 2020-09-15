@@ -2,11 +2,12 @@
     "store.custom#franquia": {
         "blocks": [
             "image#bg-mission",
-            "flex-layout.row#form-franquia",
             "flex-layout.row#container-franquia",
             "image#bg-franquia-content",
             "flex-layout.row#secondary-content-row",
-            "flex-layout.row#main-content-franquia"
+            "flex-layout.row#main-content-franquia",
+            "flex-layout.row#form-franquia"
+
         ]
     },
     "image#bg-mission": {
