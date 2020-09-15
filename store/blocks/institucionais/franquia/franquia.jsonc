@@ -2,11 +2,11 @@
     "store.custom#franquia": {
         "blocks": [
             "image#bg-mission",
+            "flex-layout.row#form-franquia",
             "flex-layout.row#container-franquia",
             "image#bg-franquia-content",
             "flex-layout.row#secondary-content-row",
-            "flex-layout.row#main-content-franquia",
-            "flex-layout.row#form-franquia"
+            "flex-layout.row#main-content-franquia"
         ]
     },
     "image#bg-mission": {
@@ -62,7 +62,6 @@
             "rich-text#stats2",
             "rich-text#stats3",
             "rich-text#stats4",
-            "iframe#video-franquia",
             "rich-text#beneficios"
         ]
     },
@@ -93,13 +92,7 @@
             "text": "Descubra a missão, visão e valores do Mundo Verde <a href='/missao-e-visao'>aqui.</a>"
         }
     },
-    "iframe#video-franquia": {
-        "props": {
-            "src": "https://www.youtube.com/embed/3pujsPKL7RQ",
-            "width": "1250px",
-            "height": "370px"
-        }
-    },
+
     "rich-text#beneficios": {
         "props": {
             "text": "### BENEFÍCIOS AO FRANQUEADO:"
