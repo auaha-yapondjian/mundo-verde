@@ -58,12 +58,54 @@
 
   "product-specification-badges#shelf": {
     "props": {
-      "specificationGroupName": "allSpecifications",
+      "specificationGroupName": "Dietas Especiais",
       "multipleValuesSeparator": ", ",
       "specificationsOptions": [
         {
-          "specificationName": "Tipo de produto",
-          "displayValue": "SPECIFICATION_VALUE"
+          "specificationName": "Sem Ovo",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Sem Glúten",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Cetogênica",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Kosher",
+          "displayValue": "SPECIFICATION_NAME"
+        },        {
+          "specificationName": "Low Carb",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Orgânico",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Paleo",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Plant Based",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Sem Açúcar",
+          "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Sem Lactose",
+          "displayValue": "SPECIFICATION_NAME"
+        },        {
+          "specificationName": "Veganos",
+          "displayValue": "SPECIFICATION_NAME"
+        }
+        ,        {
+          "specificationName": "Vegetariano",
+          "displayValue": "SPECIFICATION_NAME"
         }
       ]
     }
