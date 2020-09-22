@@ -81,7 +81,7 @@
       "form-input.text#nome",
       "form-input.text#email",
       "form-input.text#telefone",
-      "form-input.text#empresa",
+      "form-input.text#assunto",
       "form-input.textarea#mensagem",
       "form-input.checkbox#agreement",
       "form-submit"
@@ -117,9 +117,9 @@
       "pointer": "#/properties/email"
     }
   },
-  "form-input.text#empresa": {
+  "form-input.text#assunto": {
     "props": {
-      "pointer": "#/properties/empresa"
+      "pointer": "#/properties/assunto"
     }
   },
   "form-input.textarea#mensagem": {
