@@ -34,5 +34,8 @@
   },
   "store.custom#faq-page": {
     "path": "/faq"
+  },
+  "store.custom#blackfriday": {
+    "path": "/blackfriday"
   }
 }

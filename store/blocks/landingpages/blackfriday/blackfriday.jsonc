@@ -1,0 +1,120 @@
+{
+  "store.custom#blackfriday": {
+    "blocks": [
+      "list-context.image-list#banner-blackfriday",
+      "flex-layout.row#row-blackfriday",
+      "flex-layout.row#form-blackfriday"
+    ]
+  },
+  "list-context.image-list#banner-blackfriday": {
+    "title": "Banner Principal",
+    "children": ["slider-layout#banner-images-blackfriday"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#banner-images-blackfriday": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#row-blackfriday": {
+    "children": ["flex-layout.col#col-blackfriday"],
+    "props": {
+      "blockClass": "container"
+    }
+  },
+  "flex-layout.col#col-blackfriday": {
+    "children": [
+      "flex-layout.row#title-blackfriday",
+      "flex-layout.row#text-blackfriday"
+    ]
+  },
+  "flex-layout.row#title-blackfriday": {
+    "children": ["flex-layout.col#col-title-blackfriday"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "flex-layout.col#col-title-blackfriday": {
+    "children": ["rich-text#titulo-blackfriday"]
+  },
+  "rich-text#titulo-blackfriday": {
+    "children": [],
+    "props": {
+      "text": "Prepare-se a Black Friday Mundo Verde 2020!",
+      "blockClass": "title-blackfriday",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#text-blackfriday": {
+    "children": ["rich-text#text-blackfriday"]
+  },
+  "rich-text#text-blackfriday": {
+    "children": [],
+    "props": {
+      "text": "Acompanhe nosso site e lojas físicas para garantir seus suplementos esportivos, vitaminas, alimentos naturais, snacks saudáveis, produtos para emagrecer e muito mais.",
+      "blockClass": "text-blackfriday"
+    }
+  },
+  "flex-layout.row#form-blackfriday": {
+    "children": ["flex-layout.row#form-container-blackfriday"],
+    "props": {
+      "fullWidth": "true",
+      "blockClass": "form-blackfriday"
+    }
+  },
+  "flex-layout.row#form-container-blackfriday": {
+    "children": ["flex-layout.col#col-form-blackfriday"],
+    "props": {
+      "blockClass": "container"
+    }
+  },
+  "flex-layout.col#col-form-blackfriday": {
+    "children": ["rich-text#text-form-blackfriday", "form#blackfriday"]
+  },
+  "rich-text#text-form-blackfriday": {
+    "children": [],
+    "props": {
+      "text": "Cadastre-se para aproveitar os descontos imperdíveis da Black Friday Mundo Verde. Não fique de fora!",
+      "blockClass": "text-form-blackfriday",
+      "fullWidth": "true"
+    }
+  },
+  "form#blackfriday": {
+    "props": {
+      "entity": "BF",
+      "schema": "blackfriday"
+    },
+    "children": ["form-input.text#email", "form-submit"],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": ["rich-text#successSubmit"]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Formulário enviado com sucesso!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Digite seu e-mail"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

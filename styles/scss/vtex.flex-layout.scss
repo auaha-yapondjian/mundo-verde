@@ -3,9 +3,7 @@
   padding: 0 0.5rem;
 }
 
-
 @media screen and (min-width: 40em) {
-
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
@@ -13,7 +11,6 @@
 }
 
 @media screen and (min-width: 80rem) {
-
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 15px;
@@ -88,7 +85,6 @@
   width: 20%;
 }
 
-
 /* Season Promotion Content */
 .flexRow--product-description,
 .flexRow--season-promotion--cards {
@@ -98,7 +94,7 @@
 .flexRow--product-description {
   padding: 35px 0;
 
-  :global(.vtex-store-components-3-x-container){
+  :global(.vtex-store-components-3-x-container) {
     max-width: 1250px;
   }
 }
@@ -109,7 +105,7 @@
   padding: 30px 15px;
 }
 
-.flexColChild--season-promotion--content-card { 
+.flexColChild--season-promotion--content-card {
   text-align: center;
 }
 
@@ -121,7 +117,6 @@
   }
 }
 
-
 /* Novidades Home */
 .flexRow--promotion--container {
   background: #333;
@@ -132,7 +127,6 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
 
 /* Header */
 .flexRowContent--main-header {
@@ -152,8 +146,8 @@
 
 .flexRow--menu-link {
   background-color: #fff;
-  border-top: .08333rem solid #f2f2f2;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, .1);
+  border-top: 0.08333rem solid #f2f2f2;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 .flexRow--page-divisor {
@@ -220,7 +214,6 @@
     width: 75%;
     margin-left: 25%;
     display: flex !important;
-
   }
 }
 
@@ -245,7 +238,6 @@
     grid-template-columns: 15% 100%;
     margin-top: -8px;
   }
-
 }
 
 .flexRowContent--tabela-contain {
@@ -255,7 +247,6 @@
     align-items: center;
     justify-content: center;
   }
-
 }
 
 .flexRow--secondary-table-container {
@@ -275,8 +266,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
 
 // vtex-flex-layout-0-x-flexRowContent
 
@@ -320,11 +309,8 @@
   }
 }
 
-
 // Página missão e visão
 .flexCol--container-missao-visao {
-
-
   :global(.vtex-rich-text-0-x-paragraph) {
     margin: 0;
   }
@@ -336,10 +322,8 @@
   }
 }
 
-
-.flexCol--product-stack-info{
-
-  :global(.vtex-product-specification-badges-0-x-groupContainer ){
+.flexCol--product-stack-info {
+  :global(.vtex-product-specification-badges-0-x-groupContainer) {
     margin: 0;
   }
 }
@@ -364,11 +348,11 @@
 .flexRow--nossas-lojas--header {
   background-color: #56af31;
 
-  :global(.vtex-rich-text-0-x-container--nossas-lojas--title){
+  :global(.vtex-rich-text-0-x-container--nossas-lojas--title) {
     justify-content: center;
- 
+
     :global(.vtex-rich-text-0-x-paragraph),
-    :global(.vtex-rich-text-0-x-headingLevel1){
+    :global(.vtex-rich-text-0-x-headingLevel1) {
       color: #fff;
       font-weight: initial;
       font-size: 24px;
@@ -380,32 +364,77 @@
       font-weight: bold;
     }
   }
-  
 }
 
 // Forms (Nutricionistas e Franqueado)
 .flexRow--form-mundo-verde {
   margin: 50px 0;
 
-  .flexRowContent{
+  .flexRowContent {
     max-width: 1250px;
     margin: auto;
     padding: 0 15px;
 
     :global(.vtex-dropdown__label),
     :global(.vtex-textarea__label),
-    :global(.vtex-input__label){
+    :global(.vtex-input__label) {
       font-weight: bold;
       margin-top: 10px;
     }
 
-    :global(.vtex-checkbox__line-container){
+    :global(.vtex-checkbox__line-container) {
       margin: 10px 0;
       font-weight: bold;
     }
 
-    :global(.vtex-store-form-0-x-formSubmitContainer){
+    :global(.vtex-store-form-0-x-formSubmitContainer) {
       margin: 20px 0;
+    }
+  }
+}
+
+// Black Friday 2020
+.flexRow--form-blackfriday {
+  text-align: center;
+  background: #000000;
+}
+
+.flexRow--form-blackfriday {
+  .flexRowContent {
+    :global(.vtex-flex-layout-0-x-flexColChild) {
+      margin-bottom: 18px;
+    }
+
+    :global(.vtex-input),
+    :global(.vtex-store-form-0-x-formSubmitContainer) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    :global(.vtex-input) {
+      width: 50%;
+      margin-right: 16px;
+
+      @media screen and (max-width: 680px) {
+        width: 90%;
+        margin-bottom: 16px;
+      }
+    }
+
+    :global(.vtex-store-form-0-x-formSubmitContainer) {
+      width: 112px;
+    }
+
+    :global(.vtex-button) {
+      border: 0;
+    }
+
+    :global(.vtex-input__label) {
+      display: none;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      border: 0;
     }
   }
 }
