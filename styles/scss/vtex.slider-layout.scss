@@ -2,10 +2,10 @@
   justify-content: center;
 }
 .sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
-.sliderLayoutContainer--season-promotion--cards{
+.sliderLayoutContainer--season-promotion--cards {
   background-color: #f2f2f2;
 }
 
@@ -14,8 +14,8 @@
 }
 
 .paginationDotsContainer {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .layoutContainer--shelf {
@@ -26,25 +26,25 @@
 
 .slide--shelf {
   margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .sliderArrows {
   color: #fff;
 }
 
-.sliderArrows--categories-slider{
+.sliderArrows--categories-slider {
   color: rgba(36, 134, 83, 1);
   top: 0;
   margin: 15px -15px;
 }
 
-.sliderArrows--categories-slider:hover{
-  color: rgba(36, 134, 83, .8);
+.sliderArrows--categories-slider:hover {
+  color: rgba(36, 134, 83, 0.8);
 }
 
-.caretIcon--categories-slider{
+.caretIcon--categories-slider {
   width: 15px;
   height: 15px;
 }
@@ -54,23 +54,30 @@
   background-color: #fff;
   margin-top: 20px;
 
-  .sliderTrackContainer{
+  .sliderTrackContainer {
     max-width: 1250px;
     padding: 20px 15px;
   }
 
-  .slideChildrenContainer--promo-options{
+  .slideChildrenContainer--promo-options {
     text-align: center;
 
-    &:hover{
-      :global(.vtex-store-components-3-x-imageElement){
-        transition: transform .3s ease-in-out;
+    &:hover {
+      :global(.vtex-store-components-3-x-imageElement) {
+        transition: transform 0.3s ease-in-out;
         transform: scale(1.15);
       }
 
-      :global(.vtex-rich-text-0-x-link--deals){
+      :global(.vtex-rich-text-0-x-link--deals) {
         color: #008651;
       }
     }
+  }
+}
+
+// Black Friday 2020
+.sliderLayoutContainer--banner-blackfriday {
+  :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
+    display: block;
   }
 }

@@ -375,7 +375,12 @@
 }
 
 .paragraph--text-blackfriday {
-  color: #7c7c7c;
+  color: #ffffff;
+  font-size: 16px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 16px;
+  }
 }
 
 .wrapper--text-form-blackfriday {

@@ -22,13 +22,14 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "banner-blackfriday"
     }
   },
   "flex-layout.row#row-blackfriday": {
     "children": ["flex-layout.col#col-blackfriday"],
     "props": {
-      "blockClass": "container"
+      "blockClass": "bg-blackfriday"
     }
   },
   "flex-layout.col#col-blackfriday": {
@@ -49,7 +50,7 @@
   "rich-text#titulo-blackfriday": {
     "children": [],
     "props": {
-      "text": "Prepare-se a Black Friday Mundo Verde 2020!",
+      "text": "Prepare-se para a Black Friday Mundo Verde 2020!",
       "blockClass": "title-blackfriday",
       "textPosition": "CENTER"
     }
@@ -60,7 +61,7 @@
   "rich-text#text-blackfriday": {
     "children": [],
     "props": {
-      "text": "Acompanhe nosso site e lojas físicas para garantir seus suplementos esportivos, vitaminas, alimentos naturais, snacks saudáveis, produtos para emagrecer e muito mais.",
+      "text": "Acompanhe nosso site e lojas físicas para garantir seus suplementos esportivos, vitaminas, alimentos naturais, snacks saudáveis, produtos para emagrecer e muito mais.\nDeixe seu e-mail para aproveitar os descontos imperdíveis da Black Friday Mundo Verde. Não fique de fora!",
       "blockClass": "text-blackfriday"
     }
   },
@@ -83,7 +84,7 @@
   "rich-text#text-form-blackfriday": {
     "children": [],
     "props": {
-      "text": "Cadastre-se para aproveitar os descontos imperdíveis da Black Friday Mundo Verde. Não fique de fora!",
+      "text": "Cadastre-se e saia na frente:",
       "blockClass": "text-form-blackfriday",
       "fullWidth": "true"
     }
