@@ -357,23 +357,6 @@
 //
 
 // Black Friday 2020
-.paragraph--title-blackfriday {
-  margin-bottom: 0;
-  color: #008651;
-  font-size: 24px;
-  font-weight: 700;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
-}
-
-.wrapper--text-blackfriday {
-  display: block;
-  max-width: 680px;
-  margin: 0 auto;
-}
-
 .paragraph--text-blackfriday {
   color: #ffffff;
   font-size: 16px;
@@ -387,11 +370,28 @@
   width: 100%;
 }
 
-.paragraph--text-form-blackfriday {
-  max-width: 550px;
-  margin: 32px auto 12px;
+.paragraph--text-form-blackfriday,
+.paragraph--title-success-blackfriday {
+  display: block;
+  margin: 0 auto 16px;
+  padding-top: 16px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
+
+.paragraph--title-success-blackfriday {
+  padding-top: 32px;
+  margin-bottom: 8px;
+}
+
+.paragraph--text-success-blackfriday {
+  color: #ffffff;
+  font-size: 18px;
+}
+// Fim Black Friday 2020
