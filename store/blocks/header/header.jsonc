@@ -1,15 +1,9 @@
 {
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "title": "Header Desktop",
@@ -20,9 +14,7 @@
     ]
   },
   "flex-layout.row#1-desktop": {
-    "children": [
-      "rich-text#tipbartop"
-    ],
+    "children": ["rich-text#tipbartop"],
     "props": {
       "fullWidth": false,
       "blockClass": "tip-bartop"
@@ -62,9 +54,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": [
-      "flex-layout.row#4-desktop"
-    ]
+    "children": ["flex-layout.row#4-desktop"]
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -89,14 +79,10 @@
       "verticalAlign": "middle",
       "blockClass": "logoBrand"
     },
-    "children": [
-      "logo#desktop"
-    ]
+    "children": ["logo#desktop"]
   },
   "search-bar": {
-    "blocks": [
-      "autocomplete-result-list.v2"
-    ],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "customSearchPageUrl": "/search?_query=${term}",
       "attemptPageTypeSearch": true,
@@ -108,17 +94,13 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": [
-      "product-summary.shelf"
-    ]
+    "blocks": ["product-summary.shelf"]
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "left"
     },
-    "children": [
-      "vtex.menu@2.x:menu#category-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -129,27 +111,19 @@
     }
   },
   "header-layout.mobile": {
-    "children": [
-      "flex-layout.row#1-desktop",
-      "sticky-layout#1-mobile"
-    ],
+    "children": ["flex-layout.row#1-desktop", "sticky-layout#1-mobile"],
     "props": {
       "blockClass": "header--mobile"
     }
   },
   "sticky-layout#1-mobile": {
-    "children": [
-      "flex-layout.row#1-mobile",
-      "flex-layout.row#2-mobile"
-    ],
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#2-mobile"],
     "props": {
       "blockClass": "custom-sticky-header--mobile"
     }
   },
   "flex-layout.row#2-mobile": {
-    "children": [
-      "search-bar"
-    ],
+    "children": ["search-bar"],
     "props": {
       "blockClass": "searchbar-mobile"
     }
@@ -171,9 +145,7 @@
     }
   },
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
+    "children": ["menu#drawer"]
   },
   "menu#drawer": {
     "children": [
@@ -181,7 +153,8 @@
       "menu-item#mobile-alimentos-e-bebidas",
       "menu-item#mobile-outros",
       "menu-item#seja-franqueado",
-      "menu-item#lojas"
+      "menu-item#lojas",
+      "menu-item#btn-blackfriday"
     ],
     "props": {
       "orientation": "vertical"
@@ -205,16 +178,30 @@
   "vtex.menu@2.x:menu#custom-menu-right": {
     "children": [
       "menu-item#seja-franqueado",
-      // ,
-      "menu-item#lojas"
+      "menu-item#lojas",
+      "menu-item#btn-blackfriday"
     ]
+  },
+  "menu-item#btn-blackfriday": {
+    "props": {
+      "id": "menu-item-btn-blackfriday",
+      "blockClass": ["menu-btn", "menu-blackfriday"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blackfriday",
+        "noFollow": false,
+        "tagTitle": "black-friday",
+        "text": "Black Friday"
+      }
+    }
   },
   "menu-item#seja-franqueado": {
     "props": {
       "id": "menu-item-seja-franqueado",
-      "blockClass": [
-        "menu-item-blog"
-      ],
+      "blockClass": ["menu-item-blog"],
       "type": "custom",
       "iconId": null,
       "highlight": false,
