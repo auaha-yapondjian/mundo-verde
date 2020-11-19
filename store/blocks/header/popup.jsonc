@@ -2,7 +2,7 @@
   "modal-trigger#popup-bf": {
     "children": ["modal-layout#popup-bf"],
     "props": {
-      "trigger": "load"
+      "trigger": "load-session"
     }
   },
   "modal-header#popup-bf": {
