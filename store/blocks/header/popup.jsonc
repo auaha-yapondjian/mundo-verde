@@ -1,0 +1,146 @@
+{
+  "modal-trigger#popup-bf": {
+    "children": ["modal-layout#popup-bf"],
+    "props": {
+      "trigger": "load"
+    }
+  },
+  "modal-header#popup-bf": {
+    "props": {
+      "showCloseButton": true,
+      "blockClass": "popup-banner-blackfriday-close"
+    }
+  },
+  "modal-layout#popup-bf": {
+    "children": [
+      "modal-header#popup-bf",
+      "list-context.image-list#popup-banner-bf",
+      "flex-layout.row#popup-form-bf"
+    ],
+    "props": {
+      "blockClass": "popup-blackfriday-scroll"
+    }
+  },
+  "list-context.image-list#popup-banner-bf": {
+    "title": "Popup - Banner",
+    "children": ["slider-layout#popup-images-bf"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#popup-images-bf": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "popup-banner-blackfriday"
+    }
+  },
+  "flex-layout.row#popup-form-bf": {
+    "children": ["flex-layout.row#popup-form-container-bf"],
+    "props": {
+      "fullWidth": "true",
+      "blockClass": "popup-form-blackfriday"
+    },
+    "title": "Popup - Textos"
+  },
+  "flex-layout.row#popup-form-container-bf": {
+    "children": ["flex-layout.col#col-popup-form-blackfriday"],
+    "props": {
+      "blockClass": "container"
+    }
+  },
+  "flex-layout.col#col-popup-form-blackfriday": {
+    "children": ["form#popup-blackfriday"]
+  },
+  "form#popup-blackfriday": {
+    "props": {
+      "entity": "BF",
+      "schema": "blackfriday"
+    },
+    "children": [
+      "rich-text#popup-text-form-blackfriday",
+      "form-input.text#popup-bf-name",
+      "form-input.text#popup-bf-email",
+      "form-input.text#popup-bf-phone",
+      "form-input.text#popup-bf-campaign",
+      "form-submit"
+    ],
+    "blocks": ["form-success#popup-bf"]
+  },
+  "form-success#popup-bf": {
+    "children": [
+      "rich-text#popup-title-success",
+      "rich-text#popup-text-success",
+      "modal-actions.close#popup-close"
+    ]
+  },
+  "rich-text#popup-text-form-blackfriday": {
+    "children": [],
+    "props": {
+      "text": "",
+      "blockClass": "text-popup-form-blackfriday",
+      "fullWidth": "true"
+    },
+    "title": "Formulário - Título"
+  },
+  "rich-text#popup-title-success": {
+    "props": {
+      "text": "",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "popup-title-success-blackfriday"
+    },
+    "title": "Mensagem sucesso - Título"
+  },
+  "rich-text#popup-text-success": {
+    "props": {
+      "text": "",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "popup-text-success-blackfriday"
+    },
+    "title": "Mensagem sucesso - Paragrafo"
+  },
+  "modal-actions.close#popup-close": {
+    "props": {
+      "label": "Ir para loja"
+    }
+  },
+  "form-input.text#popup-bf-name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "label": "Digite seu nome"
+    }
+  },
+  "form-input.text#popup-bf-email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "Digite seu e-mail"
+    }
+  },
+  "form-input.text#popup-bf-phone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "label": "Digite seu telefone"
+    }
+  },
+  "form-input.text#popup-bf-campaign": {
+    "props": {
+      "pointer": "#/properties/campaign",
+      "label": "popup",
+      "blockClass": "input-form-campaign"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Inscrever!"
+    }
+  }
+}

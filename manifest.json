@@ -56,7 +56,8 @@
     "vtex.store-form": "0.x",
     "vtex.responsive-layout": "0.x",
     "vtex.category-menu": "2.x",
-    "vtex.sandbox": "0.x"
+    "vtex.sandbox": "0.x",
+    "vtex.modal-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

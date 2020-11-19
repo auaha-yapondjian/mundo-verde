@@ -356,7 +356,7 @@
 }
 //
 
-// Black Friday 2020
+// Black Friday
 .paragraph--text-blackfriday {
   color: #ffffff;
   font-size: 16px;
@@ -394,4 +394,36 @@
   color: #ffffff;
   font-size: 18px;
 }
-// Fim Black Friday 2020
+// Fim Black Friday
+
+// Popup Black Friday
+.paragraph--popup-title-success-blackfriday {
+  min-height: 60px;
+  font-size: 0;
+
+  @media all and (max-width: 767px) {
+    min-height: 12px;
+  }
+}
+
+.wrapper--popup-text-success-blackfriday {
+  width: 100%;
+}
+
+.paragraph--popup-text-success-blackfriday {
+  display: block;
+  width: 100%;
+  max-width: 409px;
+  height: 74px;
+  margin: 0 auto 128px;
+  background: url("/arquivos/popup-bf-mundoverde-text-success.png") center
+    no-repeat;
+  background-size: 100% 100%;
+  font-size: 0;
+
+  @media all and (max-width: 767px) {
+    margin: 0 auto 48px;
+    background-size: contain;
+  }
+}
+// Fim Popup Black Friday

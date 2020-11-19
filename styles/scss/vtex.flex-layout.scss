@@ -393,7 +393,7 @@
   }
 }
 
-// Black Friday 2020
+// Black Friday
 .flexRow--bg-blackfriday {
   text-align: center;
   background: #000000;
@@ -465,3 +465,155 @@
     }
   }
 }
+// Fim Black Friday
+
+// Popup Black Friday
+.flexRow--popup-form-blackfriday {
+  position: relative;
+  margin-top: -376px;
+  padding-bottom: 72px;
+  text-align: center;
+  background: transparent;
+  border-bottom: 2px solid #000000;
+  z-index: 9;
+
+  @media all and (max-width: 767px) {
+    margin-top: -53%;
+    padding-bottom: 32px;
+    background: #000000;
+  }
+
+  .flexRowContent {
+    .flexRow--container {
+      margin: 0 auto;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexColChild) {
+      margin-bottom: 0;
+    }
+
+    :global(.vtex-rich-text-0-x-wrapper--text-popup-form-blackfriday) {
+      width: 100%;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph--text-popup-form-blackfriday) {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      height: 36px;
+      margin: 18px auto 48px;
+      background: url("/arquivos/popup-bf-mundoverde-text.png") center no-repeat;
+      background-size: 100% 100%;
+      font-size: 0;
+
+      @media all and (max-width: 767px) {
+        margin: 8px auto 18px;
+        background-size: contain;
+      }
+    }
+
+    :global(.vtex-input),
+    :global(.vtex-store-form-0-x-formSubmitContainer) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    :global(.vtex-rich-text-0-x-container--text-form-blackfriday) {
+      margin-bottom: 8px;
+
+      @media all and (max-width: 767px) {
+        margin-bottom: 0;
+      }
+    }
+
+    :global(.vtex-input) {
+      display: block;
+      width: 50%;
+      max-width: 420px;
+      margin: 0 auto 16px;
+
+      @media screen and (max-width: 680px) {
+        width: 90%;
+      }
+
+      :global(.vtex-input__label__text) {
+        display: none;
+      }
+    }
+
+    :global(.vtex-input__label) {
+      display: none;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      color: #ffffff;
+      text-align: center;
+      background: transparent;
+      border-bottom: 2px solid #ffffff;
+      border-radius: 0;
+    }
+
+    :global(.vtex-store-form-0-x-formSubmitContainer) {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    :global(.vtex-button) {
+      width: 100%;
+      max-width: 332px;
+      margin-top: 8px;
+      color: #000000;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 40px;
+      background: #3fb880;
+      border: 0;
+      border-radius: 0;
+      outline: none;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      border: 0;
+    }
+  }
+
+  :global(.vtex-modal-layout-0-x-closeButton) {
+    width: 100%;
+    max-width: 240px;
+    margin-top: 8px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #ffffff;
+    border: 0;
+    border-radius: 10px 0 10px 10px;
+    outline: none;
+  }
+}
+
+:global(.vtex-slider-layout-0-x-imageElement--popup-banner-blackfriday) {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+:global(.vtex-modal-layout-0-x-headerContainer--popup-banner-blackfriday-close) {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  border: 0;
+
+  :global(.vtex-modal-layout-0-x-closeIcon--popup-banner-blackfriday-close) {
+    color: #ffffff;
+  }
+}
+
+:global(.vtex-modal-layout-0-x-paper--popup-blackfriday-scroll) {
+  overflow: hidden;
+}
+
+:global(.vtex-modal-layout-0-x-backdrop) {
+  background-color: #000000;
+}
+// Fim Popup Black Friday

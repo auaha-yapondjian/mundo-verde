@@ -75,9 +75,38 @@
   }
 }
 
-// Black Friday 2020
+// Black Friday
 .sliderLayoutContainer--banner-blackfriday {
   :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
     display: block;
   }
 }
+// Fim Black Friday
+
+// Black Friday
+.sliderLayoutContainer--banner-blackfriday {
+  background: #000000;
+
+  :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
+    display: block;
+    height: auto;
+  }
+}
+
+.sliderLayoutContainer--banner-offers {
+  background: #000000;
+}
+
+.imageElement--banner-offers {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+// Fim Black Friday
+
+// Popup Black Friday
+:global(.vtex-store-components-3-x-imageElementLink--popup-banner-blackfriday) {
+  pointer-events: none;
+}
+// Fim Popup Black Friday
