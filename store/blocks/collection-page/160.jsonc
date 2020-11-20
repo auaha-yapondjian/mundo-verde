@@ -8,7 +8,7 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": false,
         "queryField": "160",
-        "maxItemsPerPage": 16,
+        "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }
     },
