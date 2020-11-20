@@ -1,5 +1,5 @@
 {
-  "store.custom#blackfriday": {
+  "store.custom#esquenta-blackfriday": {
     "blocks": [
       "list-context.image-list#banner-blackfriday",
       "flex-layout.row#form-blackfriday"
