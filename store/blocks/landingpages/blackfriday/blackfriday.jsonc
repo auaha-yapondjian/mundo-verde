@@ -91,19 +91,22 @@
   "form-input.text#name": {
     "props": {
       "pointer": "#/properties/name",
-      "label": "Digite seu nome"
+      "label": "Digite seu nome",
+      "placeholder": "Seu nome:"
     }
   },
   "form-input.text#email": {
     "props": {
       "pointer": "#/properties/email",
-      "label": "Digite seu e-mail"
+      "label": "Digite seu e-mail",
+      "placeholder": "Seu e-mail:"
     }
   },
   "form-input.text#phone": {
     "props": {
       "pointer": "#/properties/phone",
-      "label": "Digite seu telefone"
+      "label": "Digite seu telefone",
+      "placeholder": "Seu telefone:"
     }
   },
   "form-input.text#campaign": {
