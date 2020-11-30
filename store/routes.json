@@ -40,5 +40,8 @@
   },
   "store.custom#esquenta-blackfriday": {
     "path": "/esquenta-blackfriday"
+  },
+  "store.custom#cybermonday": {
+    "path": "/cybermonday"
   }
 }
