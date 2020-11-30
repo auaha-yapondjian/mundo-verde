@@ -8,7 +8,6 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
-      "modal-trigger#popup-bf",
       "flex-layout.row#1-desktop",
       "sticky-layout#2-desktop",
       "flex-layout.row#3-desktop"
@@ -112,11 +111,7 @@
     }
   },
   "header-layout.mobile": {
-    "children": [
-      "modal-trigger#popup-bf",
-      "flex-layout.row#1-desktop",
-      "sticky-layout#1-mobile"
-    ],
+    "children": ["flex-layout.row#1-desktop", "sticky-layout#1-mobile"],
     "props": {
       "blockClass": "header--mobile"
     }
