@@ -153,8 +153,7 @@
       "menu-item#mobile-alimentos-e-bebidas",
       "menu-item#mobile-outros",
       "menu-item#seja-franqueado",
-      "menu-item#lojas",
-      "menu-item#btn-blackfriday"
+      "menu-item#lojas"
     ],
     "props": {
       "orientation": "vertical"
@@ -176,27 +175,7 @@
     }
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
-    "children": [
-      "menu-item#seja-franqueado",
-      "menu-item#lojas",
-      "menu-item#btn-blackfriday"
-    ]
-  },
-  "menu-item#btn-blackfriday": {
-    "props": {
-      "id": "menu-item-btn-blackfriday",
-      "blockClass": ["menu-btn", "menu-blackfriday"],
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cybermonday",
-        "noFollow": false,
-        "tagTitle": "Cyber Monday",
-        "text": "Cyber Monday"
-      }
-    }
+    "children": ["menu-item#seja-franqueado", "menu-item#lojas"]
   },
   "menu-item#seja-franqueado": {
     "props": {
