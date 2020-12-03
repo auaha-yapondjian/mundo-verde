@@ -3,13 +3,13 @@
     "blocks": [
       "list-context.image-list#main-banner",
       "__fold__",
+      "flex-layout.row#deals",
       "responsive-layout.desktop#promotions1",
       "responsive-layout.mobile#promotions2",
       "shelf#home--1",
       "shelf#home--2",
       "shelf#home--3",
       "flex-layout.row#promotion",
-      "flex-layout.row#deals",
       "newsletter"
     ]
   },
