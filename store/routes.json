@@ -43,5 +43,8 @@
   },
   "store.custom#cybermonday": {
     "path": "/cybermonday"
+  },
+  "store.custom#natal": {
+    "path": "/natal"
   }
 }
