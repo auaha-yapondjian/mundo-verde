@@ -5,6 +5,7 @@
   "search-result-layout.customQuery#natal": {
     "props": {
       "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": false,
         "queryField": "163",
         "maxItemsPerPage": 18,
