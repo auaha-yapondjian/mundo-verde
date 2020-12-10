@@ -4,13 +4,16 @@
       "list-context.image-list#main-banner",
       "__fold__",
       "flex-layout.row#deals",
+      "chaordic-div#top",
       "responsive-layout.desktop#promotions1",
       "responsive-layout.mobile#promotions2",
+      "chaordic-div#middle",
       "shelf#home--1",
       "shelf#home--2",
       "shelf#home--3",
       "flex-layout.row#promotion",
-      "newsletter"
+      "newsletter",
+      "chaordic-div#bottom"
     ]
   },
   "flex-layout.row#promotion": {
