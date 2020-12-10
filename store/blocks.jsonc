@@ -7,7 +7,7 @@
  * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
  * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
  */
- {
+{
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
@@ -76,7 +76,8 @@
         {
           "specificationName": "Kosher",
           "displayValue": "SPECIFICATION_NAME"
-        },        {
+        },
+        {
           "specificationName": "Low Carb",
           "displayValue": "SPECIFICATION_NAME"
         },
@@ -99,11 +100,12 @@
         {
           "specificationName": "Sem Lactose",
           "displayValue": "SPECIFICATION_NAME"
-        },        {
+        },
+        {
           "specificationName": "Veganos",
           "displayValue": "SPECIFICATION_NAME"
-        }
-        ,        {
+        },
+        {
           "specificationName": "Vegetariano",
           "displayValue": "SPECIFICATION_NAME"
         }
@@ -172,6 +174,21 @@
         }
       },
       "pagination": "show-more"
+    }
+  },
+  "chaordic-div#top": {
+    "props": {
+      "position": "top"
+    }
+  },
+  "chaordic-div#middle": {
+    "props": {
+      "position": "middle"
+    }
+  },
+  "chaordic-div#bottom": {
+    "props": {
+      "position": "bottom"
     }
   }
 }
