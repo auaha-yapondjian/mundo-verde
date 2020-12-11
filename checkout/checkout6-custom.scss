@@ -16,6 +16,9 @@ body {
 }
 
 .header {
+  display: inline-block;
+  width: calc(100% - 480px);
+  margin-top: 8px;
   line-height: 1.5;
 }
 
@@ -78,6 +81,7 @@ h1 small {
   display: inline-block;
   vertical-align: middle;
 }
+
 .link-gift-card {
   position: initial;
   width: 32%;
@@ -96,6 +100,7 @@ p.link.link-gift-card a {
   justify-content: space-between;
   margin-right: 50px;
 }
+
 #pitbar {
   padding: 10px 0;
   background-color: #980000;
@@ -121,6 +126,11 @@ p.link.link-gift-card a {
   opacity: 0.8;
 }
 
+#barProgress {
+  float: right;
+  margin-top: 18px;
+}
+
 #barProgress .container {
   display: flex;
 }
@@ -135,10 +145,12 @@ p.link.link-gift-card a {
     width: 100%;
     justify-content: space-around;
   }
+
   #barProgress ul li span {
     width: min-content;
   }
 }
+
 #barProgress ul li {
   line-height: normal !important;
 }
@@ -191,11 +203,13 @@ p.link.link-gift-card a {
 #barProgress .container li.item-payment {
   margin-right: 0;
 }
+
 #barProgress .container li i {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 span.accordion-toggle.collapsed.accordion-toggle-active span {
   color: #008001;
   font-weight: bold;
@@ -221,6 +235,7 @@ span.accordion-toggle.collapsed.accordion-toggle-active {
 span.accordion-toggle.collapsed.accordion-toggle-active i {
   color: #333;
 }
+
 .footer {
   color: #adadad;
 }
@@ -978,10 +993,6 @@ small.vtex-operation-id-container {
   margin-top: 20px;
 }
 
-#barProgress {
-  float: right;
-}
-
 h1 {
   float: left;
   padding: 0;
@@ -1073,8 +1084,14 @@ h1 {
   }
 }
 @media (max-width: 979px) {
+  .header {
+    width: 100%;
+    margin-top: 0;
+  }
+
   #barProgress {
     width: 100%;
+    margin-top: 0;
   }
 
   #barProgress .container {
