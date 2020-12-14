@@ -8,6 +8,7 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
+      "telemarketing",
       "flex-layout.row#1-desktop",
       "sticky-layout#2-desktop",
       "flex-layout.row#3-desktop"
@@ -111,7 +112,11 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["flex-layout.row#1-desktop", "sticky-layout#1-mobile"],
+    "children": [
+      "telemarketing",
+      "flex-layout.row#1-desktop",
+      "sticky-layout#1-mobile"
+    ],
     "props": {
       "blockClass": "header--mobile"
     }
