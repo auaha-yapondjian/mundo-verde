@@ -46,5 +46,8 @@
   },
   "store.custom#natal": {
     "path": "/natal"
+  },
+  "store.custom#voce-mais-saudavel": {
+    "path": "/voce-mais-saudavel"
   }
 }
