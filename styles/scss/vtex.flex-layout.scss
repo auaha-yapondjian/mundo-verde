@@ -346,17 +346,18 @@
 
 // Nossas lojas
 .flexRow--nossas-lojas--header {
-  background-color: #56af31;
+  background-color: #f5f5f5;
 
   :global(.vtex-rich-text-0-x-container--nossas-lojas--title) {
     justify-content: center;
 
     :global(.vtex-rich-text-0-x-paragraph),
     :global(.vtex-rich-text-0-x-headingLevel1) {
-      color: #fff;
-      font-weight: initial;
-      font-size: 24px;
+      margin: 54px 0 32px;
+      color: #0f834c;
+      font-size: 32px;
       text-align: center;
+      font-weight: 600;
     }
 
     :global(.vtex-rich-text-0-x-paragraph) {
