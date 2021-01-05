@@ -176,7 +176,7 @@
   "login": {
     "props": {
       "showIconProfile": true,
-      "iconLabel": "Entre ou Cadastre-se"
+      "iconLabel": "Entre ou Cadastre-se "
     }
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
