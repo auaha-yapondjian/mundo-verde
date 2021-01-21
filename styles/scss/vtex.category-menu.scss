@@ -79,7 +79,7 @@
 }
 
 :global(.vtex-menu-2-x-styledLinkContainer--menu-btn) {
-  margin: 0 0 0 10px;
+  margin: 0 10px;
   padding: 0;
   height: 100%;
   display: flex;
@@ -150,6 +150,10 @@
   margin: 0;
 }
 
+:global(.vtex-menu-2-x-styledLinkContent--menu-item-blogmv) {
+  text-transform: uppercase;
+}
+
 :global(.vtex-menu-2-x-styledLinkContainer--menu-item-btn-blackfriday) {
   background: #000000;
 }
@@ -164,6 +168,7 @@
   max-height: 48%;
   overflow-y: auto;
 }
+
 .submenuItem {
   width: 230px;
 }

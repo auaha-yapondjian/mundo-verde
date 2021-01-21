@@ -180,7 +180,23 @@
     }
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
-    "children": ["menu-item#seja-franqueado", "menu-item#lojas"]
+    "children": ["menu-item#seja-franqueado", "menu-item#lojas", "menu-item#blog"]
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "blockClass": ["menu-item-blogmv"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://blog.mundoverde.com.br/",
+        "noFollow": false,
+        "tagTitle": "Blog Mundo Verde",
+        "text": "Blog"
+      }
+    }
   },
   "menu-item#seja-franqueado": {
     "props": {
