@@ -1,7 +1,7 @@
 {
   "vendor": "mundoverde",
   "name": "store-theme",
-  "version": "3.57.2",
+  "version": "3.58.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
