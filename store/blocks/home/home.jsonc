@@ -13,7 +13,8 @@
       "shelf#home--3",
       "flex-layout.row#promotion",
       "newsletter",
-      "chaordic-div#bottom"
+      "chaordic-div#bottom",
+      "modal-trigger#modal-newsletter"
     ]
   },
   "flex-layout.row#promotion": {
@@ -149,6 +150,23 @@
       "label": "Cadastre-se e receba ofertas exclusivas, dicas e receitas para uma vida mais saudável e equilibrada :)",
       "placeholder": "digite seu e-mail",
       "submit": "eu quero"
+    }
+  },
+  "modal-trigger#modal-newsletter": {
+    "children": ["modal-layout#form-news"],
+    "props": {
+      "trigger": "load"
+    }
+  },
+  "modal-layout#form-news": {
+    "children": ["rich-text#modal-header"]
+  },
+  "rich-text#modal-header": {
+    "props": {
+      "text": "Cadastre-se e **receba ofertas \n exclusicas,** dicas e receitas!",
+      "blockClass": "modalContentHeader",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   }
 }
