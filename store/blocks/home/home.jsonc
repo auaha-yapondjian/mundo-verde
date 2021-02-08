@@ -159,7 +159,7 @@
     }
   },
   "modal-layout#form-news": {
-    "children": ["rich-text#modal-header"]
+    "children": ["rich-text#modal-header", "rich-text#modal-text", "flex-layout.row#form"]
   },
   "rich-text#modal-header": {
     "props": {
@@ -167,6 +167,30 @@
       "blockClass": "modalContentHeader",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
+    }
+  },
+  "rich-text#modal-text": {
+    "props": {
+      "text": "você ainda \n ganha 10%",
+      "blockClass": "modalContentHeader",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#form": {
+    "children": [
+      "flex-layout.col#form"
+    ]    
+  },
+  "flex-layout.col#form": {
+    "children": [
+      "form"
+    ]
+  },
+  "form": {
+    "props": {
+      "entity": "PN",
+      "schema": "popupnews"
     }
   }
 }
