@@ -159,7 +159,11 @@
     }
   },
   "modal-layout#form-news": {
-    "children": ["rich-text#modal-header", "rich-text#modal-text", "flex-layout.row#form"]
+    "children": [
+      "rich-text#modal-header",
+      "rich-text#modal-text",
+      "flex-layout.row#form"
+    ]
   },
   "rich-text#modal-header": {
     "props": {
@@ -178,19 +182,80 @@
     }
   },
   "flex-layout.row#form": {
-    "children": [
-      "flex-layout.col#form"
-    ]    
+    "children": ["flex-layout.col#form"]
   },
   "flex-layout.col#form": {
-    "children": [
-      "form"
-    ]
+    "children": ["form"]
   },
   "form": {
     "props": {
       "entity": "PN",
       "schema": "popupnews"
+    },
+    "children": [
+      "rich-text#text-form-blackfriday",
+      "form-input.text#name",
+      "form-input.text#email",
+      "form-submit",
+      "rich-text#text-form-bottom"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": ["rich-text#title-success", "rich-text#text-success"]
+  },
+  "rich-text#title-success": {
+    "props": {
+      "text": "",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "title-success-blackfriday"
+    },
+    "title": "Mensagem sucesso - Título"
+  },
+  "rich-text#text-success": {
+    "props": {
+      "text": "",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-success-blackfriday"
+    },
+    "title": "Mensagem sucesso - Paragrafo"
+  },
+  "rich-text#text-form-blackfriday": {
+    "children": [],
+    "props": {
+      "text": "",
+      "blockClass": "text-form-blackfriday",
+      "fullWidth": "true"
+    },
+    "title": "Formulário - Título"
+  },
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "label": "Nome",
+      "placeholder": "digite seu nome:"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "E-mail",
+      "placeholder": "digite seu e-mail:"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "eu quero!"
+    }
+  },
+  "rich-text#text-form-bottom": {
+    "props": {
+      "text": "*Válido por 10 dias para comprar acima de R$ 99,00 \n Uma utilização por CPF",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-bottom-form"
     }
   }
 }
