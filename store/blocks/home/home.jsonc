@@ -159,6 +159,9 @@
     }
   },
   "modal-layout#form-news": {
+    "props": {
+      "blockClass": "modal-form-content"
+    },
     "children": [
       "rich-text#modal-header",
       "rich-text#modal-text",
@@ -175,8 +178,8 @@
   },
   "rich-text#modal-text": {
     "props": {
-      "text": "você ainda \n ganha 10%",
-      "blockClass": "modalContentHeader",
+      "text": "você ainda \n **ganha 10%**",
+      "blockClass": "modalContentContent",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
@@ -193,7 +196,7 @@
       "schema": "popupnews"
     },
     "children": [
-      "rich-text#text-form-blackfriday",
+      "rich-text#text-form-modal",
       "form-input.text#name",
       "form-input.text#email",
       "form-submit",
@@ -206,33 +209,34 @@
   },
   "rich-text#title-success": {
     "props": {
-      "text": "",
+      "text": "Teste",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "title-success-blackfriday"
+      "blockClass": "title-success-modal"
     },
     "title": "Mensagem sucesso - Título"
   },
   "rich-text#text-success": {
     "props": {
-      "text": "",
+      "text": "Teste 2",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "text-success-blackfriday"
+      "blockClass": "text-success-modal"
     },
     "title": "Mensagem sucesso - Paragrafo"
   },
-  "rich-text#text-form-blackfriday": {
+  "rich-text#text-form-modal": {
     "children": [],
     "props": {
       "text": "",
-      "blockClass": "text-form-blackfriday",
+      "blockClass": "text-form-modal",
       "fullWidth": "true"
     },
     "title": "Formulário - Título"
   },
   "form-input.text#name": {
     "props": {
+      "blockClass": "input-modal",
       "pointer": "#/properties/name",
       "label": "Nome",
       "placeholder": "digite seu nome:"
@@ -240,6 +244,7 @@
   },
   "form-input.text#email": {
     "props": {
+      "blockClass": "input-modal",
       "pointer": "#/properties/email",
       "label": "E-mail",
       "placeholder": "digite seu e-mail:"
