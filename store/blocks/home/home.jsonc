@@ -197,8 +197,8 @@
     },
     "children": [
       "rich-text#text-form-modal",
-      "form-input.text#name",
-      "form-input.text#email",
+      "form-input.text#pname",
+      "form-input.text#pemail",
       "form-submit",
       "rich-text#text-form-bottom"
     ],
@@ -234,17 +234,15 @@
     },
     "title": "Formulário - Título"
   },
-  "form-input.text#name": {
+  "form-input.text#pname": {
     "props": {
-      "blockClass": "input-modal",
       "pointer": "#/properties/name",
       "label": "Nome",
       "placeholder": "digite seu nome:"
     }
   },
-  "form-input.text#email": {
+  "form-input.text#pemail": {
     "props": {
-      "blockClass": "input-modal",
       "pointer": "#/properties/email",
       "label": "E-mail",
       "placeholder": "digite seu e-mail:"
