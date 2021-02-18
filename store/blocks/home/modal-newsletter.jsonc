@@ -10,8 +10,6 @@
       "blockClass": "modal-form-content"
     },
     "children": [
-      "rich-text#modal-header",
-      "rich-text#modal-text",
       "flex-layout.row#form"
     ]
   },
@@ -43,6 +41,8 @@
       "schema": "popupnews"
     },
     "children": [
+      "rich-text#modal-header",
+      "rich-text#modal-text",
       "rich-text#text-form-modal",
       "form-input.text#pname",
       "form-input.text#pemail",

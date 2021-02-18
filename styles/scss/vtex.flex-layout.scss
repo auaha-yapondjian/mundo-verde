@@ -635,7 +635,16 @@
 //modal newsletter
 :global(.vtex-modal-layout-0-x-paper--modal-form-content) {
   border-radius: 0;
-  width: 400px;
+  width: 693px;
+  height: 584px;
+  background: url('/arquivos/POP_UP_IMG_1.jpg') center no-repeat;
+
+  :global(.vtex-flex-layout-0-x-flexRow){
+    background: #fff;
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentHeader) {
     font-size: 20px;
