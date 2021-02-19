@@ -1,20 +1,26 @@
 {
   "flex-layout.row#modal-cupom": {
-    "children": ["flex-layout.row#modal-cupom-content"],
+    "children": [
+      "flex-layout.col#modal-cupom-left",
+      "flex-layout.col#modal-cupom-right"
+    ],
     "props": {
       "blockClass": "modal-cupom"
     }
   },
-  "flex-layout.row#modal-cupom-content": {
-    "children": ["flex-layout.row#modal-cupom-top", "flex-layout.row#modal-cupom-middle", "flex-layout.row#modal-cupom-bottom"],
-    "props": { 
-      "blockClass": "modal-cupom-content"
+  "flex-layout.col#modal-cupom-left": {
+    "props": {
+      "blockClass": "modal-cupom-left"
     }
   },
-  "flex-layout.row#modal-cupom-top": {
-    "children": ["rich-text#modal-cupom-top-text"],
+  "flex-layout.col#modal-cupom-right": {
+    "children": [
+      "rich-text#modal-cupom-top-text",
+      "rich-text#modal-cupom-middle-text",
+      "rich-text#modal-cupom-bottom-text"
+    ],
     "props": {
-      "blockClass": "modal-cupom-top"
+      "blockClass": "modal-cupom-right"
     }
   },
   "rich-text#modal-cupom-top-text": {
@@ -23,27 +29,15 @@
       "blockClass": "modal-cupom-top-text"
     }
   },
-  "flex-layout.row#modal-cupom-middle": {
-    "children": ["rich-text#modal-cupom-middle-text"],
-    "props": {
-      "blockClass": "modal-cupom-middle"
-    }
-  },
   "rich-text#modal-cupom-middle-text": {
     "props": {
-      "text": "Aqui está seu cumpom de \n **10% OFF**",
+      "text": "Aqui está seu cupom de \n **10% OFF** *BEMVINDO10*",
       "blockClass": "modal-cupom-middle-text"
-    }
-  },
-  "flex-layout.row#modal-cupom-bottom": {
-    "children": ["rich-text#modal-cupom-bottom-text"],
-    "props": {
-      "blockClass": "modal-cupom-bottom"
     }
   },
   "rich-text#modal-cupom-bottom-text": {
     "props": {
-      "text": "*Insira o código no seu carrinho **Válido por 10 dias para \n compras acima de R$ 99,00.** Uma utilização por CPF",
+      "text": " &#42; Insira o código no seu carrinho **Válido por 10 dias para \n compras acima de R$ 99,00.** Uma utilização por CPF",
       "blockClass": "modal-cupom-bottom-text"
     }
   }

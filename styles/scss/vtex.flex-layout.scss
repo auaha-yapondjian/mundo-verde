@@ -640,11 +640,15 @@
   background: url('/arquivos/POP_UP_IMG_1.jpg') center no-repeat;
   overflow: hidden;
 
-  :global(.vtex-flex-layout-0-x-flexRow--form-popup ){
+  :global(.vtex-flex-layout-0-x-flexRow--form-popup) {
     width: 400px;
     display: block;
     margin: auto;
     background: #fff;
+
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
 
@@ -662,7 +666,7 @@
     :global(.vtex-rich-text-0-x-strong--modalContentContent) {
       color: #3fb880;
 
-      &::after{
+      &::after {
         content: 'de desconto na primeira compra ;)';
         display: block;
         font-size: 12px;
@@ -691,6 +695,7 @@
 
     :global(.vtex-button) {
       border-radius: 0;
+
       :global(.vtex-button__label) {
         width: 250px;
         font-size: 0;
@@ -713,7 +718,7 @@
     font-size: 12px;
   }
 
-  :global(.vtex-styleguide-9-x-input){
+  :global(.vtex-styleguide-9-x-input) {
     padding: 0;
     text-align: center;
     width: 100%;
@@ -721,23 +726,103 @@
   }
 
 }
+
 //fim modal newsletter
 
 // inicio modal cupom
 
-:global(.vtex-flex-layout-0-x-flexRow--modal-cupom){
-  width: 100% !important;
-  background: url(/arquivos/POP_UP_IMG_2.jpg?v=12);
+:global(.vtex-flex-layout-0-x-flexRow--modal-cupom) {
   position: absolute;
+  background: url(/arquivos/POP_UP_IMG_2.jpg);
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  padding: 8px;
+  border: 5px solid #fff;
 
-  :global(.vtex-flex-layout-0-x-flexRow--modal-cupom-content ){
+  :global(.vtex-flex-layout-0-x-flexCol--modal-cupom-right) {
     background: #fff;
-    width: 50%;
-    height: 100%;
+    // height: 90vh;
+
+    @media all and (max-width: 767px) {
+      height: 80vh;
+    }
+
+    :global(.vtex-rich-text-0-x-wrapper--modal-cupom-top-text) {
+      display: block;
+      margin: 0 auto;
+
+      :global(.vtex-rich-text-0-x-paragraph--modal-cupom-top-text) {
+        color: #3fb880;
+        text-align: center;
+        width: 100%;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 0;
+
+        :global(.vtex-rich-text-0-x-strong--modal-cupom-top-text) {
+          color: #a09d9d;
+          font-size: 20px;
+          margin-top: 20px;
+          display: block;
+        }
+      }
+
+    }
+
+    :global(.vtex-rich-text-0-x-wrapper--modal-cupom-middle-text) {
+      display: block;
+      margin: 0 auto;
+
+      :global(.vtex-rich-text-0-x-paragraph--modal-cupom-middle-text) {
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+
+        :global(.vtex-rich-text-0-x-strong--modal-cupom-middle-text) {
+          font-size: 60px;
+          color: #3fb880;
+        }
+
+        :global(.vtex-rich-text-0-x-italic--modal-cupom-middle-text) {
+          display: block;
+          margin: 10px auto 0;
+          border: 2px solid #727273;
+          color: #727273;
+          font-size: 20px;
+          font-style: normal;
+          width: max-content;
+          padding: 0 15px;
+        }
+      }
+    }
+
+    :global(.vtex-rich-text-0-x-wrapper--modal-cupom-bottom-text){
+      display: block;
+      margin: -30px auto 0;
+
+      @media all and (max-width: 767px) {
+        margin: 0 auto;
+      }
+
+      :global(.vtex-rich-text-0-x-paragraph--modal-cupom-bottom-text){
+        font-size: 12px;
+        color: #727273;
+
+        &::before{
+          display: block;
+          content: 'aproveita já';
+          width: max-content;
+          padding: 5px 15px;
+          background: #3fb880;
+          margin: 0 auto 20px;
+          font-size: 32px;
+          color: #fff;
+        }
+      }
+    }
   }
 }
+
+//fim modal cupom
