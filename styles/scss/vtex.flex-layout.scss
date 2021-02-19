@@ -638,17 +638,15 @@
   width: 693px;
   height: 584px;
   background: url('/arquivos/POP_UP_IMG_1.jpg') center no-repeat;
+  overflow: hidden;
 
-  :global(.vtex-flex-layout-0-x-flexRow){
-    background: #fff;
+  :global(.vtex-flex-layout-0-x-flexRow--form-popup ){
     width: 400px;
     display: block;
     margin: auto;
-
-    @media all and (max-width: 767px) {
-      width: auto;
-    }
+    background: #fff;
   }
+
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentHeader) {
     font-size: 20px;
@@ -721,7 +719,25 @@
     width: 100%;
     height: 100%;
   }
+
 }
-
-
 //fim modal newsletter
+
+// inicio modal cupom
+
+:global(.vtex-flex-layout-0-x-flexRow--modal-cupom){
+  width: 100% !important;
+  background: url(/arquivos/POP_UP_IMG_2.jpg?v=12);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 8px;
+
+  :global(.vtex-flex-layout-0-x-flexRow--modal-cupom-content ){
+    background: #fff;
+    width: 50%;
+    height: 100%;
+  }
+}

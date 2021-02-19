@@ -30,9 +30,12 @@
     }
   },
   "flex-layout.row#form-popup": {
-    "children": ["flex-layout.col#form"]
+    "children": ["flex-layout.row#form"],
+    "props": {
+      "blockClass": "form-popup"
+    }
   },
-  "flex-layout.col#form": {
+  "flex-layout.row#form": {
     "children": ["form#popup"]
   },
   "form#popup": {
