@@ -10,7 +10,7 @@
       "blockClass": "modal-form-content"
     },
     "children": [
-      "flex-layout.row#form"
+      "flex-layout.row#form-popup"
     ]
   },
   "rich-text#modal-header": {
@@ -29,13 +29,13 @@
       "textPosition": "CENTER"
     }
   },
-  "flex-layout.row#form": {
+  "flex-layout.row#form-popup": {
     "children": ["flex-layout.col#form"]
   },
   "flex-layout.col#form": {
-    "children": ["form"]
+    "children": ["form#popup"]
   },
-  "form": {
+  "form#popup": {
     "props": {
       "entity": "PN",
       "schema": "popupnews"
@@ -43,43 +43,15 @@
     "children": [
       "rich-text#modal-header",
       "rich-text#modal-text",
-      "rich-text#text-form-modal",
       "form-input.text#pname",
       "form-input.text#pemail",
       "form-submit",
       "rich-text#text-form-bottom"
     ],
-    "blocks": ["form-success"]
+    "blocks": ["form-success#popup-newsletter"]
   },
-  "form-success": {
-    "children": ["rich-text#title-success", "rich-text#text-success"]
-  },
-  "rich-text#title-success": {
-    "props": {
-      "text": "Teste",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "blockClass": "title-success-modal"
-    },
-    "title": "Mensagem sucesso - Título"
-  },
-  "rich-text#text-success": {
-    "props": {
-      "text": "Teste 2",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "blockClass": "text-success-modal"
-    },
-    "title": "Mensagem sucesso - Paragrafo"
-  },
-  "rich-text#text-form-modal": {
-    "children": [],
-    "props": {
-      "text": "",
-      "blockClass": "text-form-modal",
-      "fullWidth": "true"
-    },
-    "title": "Formulário - Título"
+  "form-success#popup-newsletter": {
+    "children": ["flex-layout.row#modal-cupom"]
   },
   "form-input.text#pname": {
     "props": {
@@ -97,8 +69,7 @@
   },
   "form-submit": {
     "props": {
-      "label": "eu quero!"
-    }
+      "label": "eu quero!"    }
   },
   "rich-text#text-form-bottom": {
     "props": {

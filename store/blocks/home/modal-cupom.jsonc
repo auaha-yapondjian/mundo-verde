@@ -1,0 +1,32 @@
+{
+  "flex-layout.row#modal-cupom": {
+    "children": ["flex-layout.row#modal-cupom-content"],
+    "props": {
+      "blockClass": "modal-cupom"
+    }
+  },
+  "flex-layout.row#modal-cupom-content": {
+    "children": ["rich-text#modal-cupom-top", "rich-text#modal-cupom-middle", "rich-text#modal-cupom-bottom"],
+    "props": { 
+      "blockClass": "modal-cupom-content"
+    }
+  },
+  "rich-text#modal-cupom-top": {
+    "props": {
+      "text": "Obrigada por \n escolher a natue :) \n **Prepare-se para receber \n descontos incríveis!**",
+      "blockClass": "modal-cupom-top"
+    }
+  },
+  "rich-text#modal-cupom-middle": {
+    "props": {
+      "text": "Aqui está seu cumpom de \n **10% OFF**",
+      "blockClass": "modal-cupom-middle"
+    }
+  },
+  "rich-text#modal-cupom-bottom": {
+    "props": {
+      "text": "*Insira o código no seu carrinho **Válido por 10 dias para \n compras acima de R$ 99,00.** Uma utilização por CPF",
+      "blockClass": "modal-cupom-bottom"
+    }
+  }
+}

@@ -644,6 +644,10 @@
     width: 400px;
     display: block;
     margin: auto;
+
+    @media all and (max-width: 767px) {
+      width: auto;
+    }
   }
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentHeader) {
