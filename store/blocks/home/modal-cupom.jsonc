@@ -25,7 +25,7 @@
   },
   "rich-text#modal-cupom-top-text": {
     "props": {
-      "text": "Obrigada por \n escolher a natue :) \n **Prepare-se para receber \n descontos incríveis!**",
+      "text": "Obrigada por \n escolher a Mundo Verde :) \n **Prepare-se para receber \n descontos incríveis!**",
       "blockClass": "modal-cupom-top-text"
     }
   },

@@ -10,8 +10,16 @@
       "blockClass": "modal-form-content"
     },
     "children": [
-      "flex-layout.row#form-popup"
+      "flex-layout.row#form-popup",
+      "modal-header#form-news"
     ]
+  },
+  "modal-header#form-news": {
+    "props": {
+      "blockClass": "modal-header-form-news",
+      "showCloseButton": false,
+      "iconCloseSize": 64
+    }
   },
   "rich-text#modal-header": {
     "props": {

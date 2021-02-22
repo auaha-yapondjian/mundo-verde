@@ -633,6 +633,11 @@
 //fim nossas lojas
 
 //modal newsletter
+// :global(.vtex-modal-layout-0-x-headerContainer--modal-header-form-news){
+//   position: absolute;
+//   right: 0;
+// }
+
 :global(.vtex-modal-layout-0-x-paper--modal-form-content) {
   border-radius: 0;
   width: 693px;
@@ -742,7 +747,7 @@
 
   :global(.vtex-flex-layout-0-x-flexCol--modal-cupom-right) {
     background: #fff;
-    // height: 90vh;
+    height: 100vh;
 
     @media all and (max-width: 767px) {
       height: 80vh;
@@ -812,7 +817,7 @@
 
         &::before{
           display: block;
-          content: 'aproveita já';
+          content: 'aproveite já';
           width: max-content;
           padding: 5px 15px;
           background: #3fb880;
