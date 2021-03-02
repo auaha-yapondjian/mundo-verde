@@ -822,17 +822,18 @@
         text-align: center;
         font-weight: bold;
         margin: 0;
+        color: #fff;
 
         :global(.vtex-rich-text-0-x-strong--modal-cupom-middle-text) {
           font-size: 60px;
-          color: #3fb880;
+          color: #fff;
         }
 
         :global(.vtex-rich-text-0-x-italic--modal-cupom-middle-text) {
           display: block;
           margin: 10px auto 0;
-          border: 2px solid #727273;
-          color: #727273;
+          border: 2px solid #fff;
+          color: #fff;
           font-size: 20px;
           font-style: normal;
           width: max-content;
@@ -851,7 +852,7 @@
 
       :global(.vtex-rich-text-0-x-paragraph--modal-cupom-bottom-text) {
         font-size: 12px;
-        color: #727273;
+        color: #fff;
 
         &::before {
           display: block;
