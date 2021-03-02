@@ -21,6 +21,14 @@
       "iconCloseSize": 64
     }
   },
+  "rich-text#modal-header-logo": {
+    "props": {
+      "text": "Mundo Verde",
+      "blockClass": "modalHeaderLogo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
   "rich-text#modal-header": {
     "props": {
       "text": "Inscreva-se e receba nossas promoções, \n dicas e receitas!",
@@ -52,6 +60,7 @@
       "schema": "popupnews"
     },
     "children": [
+      "rich-text#modal-header-logo",
       "rich-text#modal-header",
       "rich-text#modal-text",
       "form-input.text#pname",
@@ -67,15 +76,13 @@
   "form-input.text#pname": {
     "props": {
       "pointer": "#/properties/name",
-      "label": "Nome",
-      "placeholder": "digite seu nome:"
+      "label": "Nome"
     }
   },
   "form-input.text#pemail": {
     "props": {
       "pointer": "#/properties/email",
-      "label": "E-mail",
-      "placeholder": "digite seu e-mail:"
+      "label": "E-mail"
     }
   },
   "form-submit": {

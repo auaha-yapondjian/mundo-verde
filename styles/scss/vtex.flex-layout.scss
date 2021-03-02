@@ -641,15 +641,15 @@
 :global(.vtex-modal-layout-0-x-paper--modal-form-content) {
   border-radius: 0;
   width: 800px;
-  height: 500px;
+  height: 650px;
   background: url('/arquivos/popup_Ativo3-min.png?v=hfd') no-repeat #fff;
-  background-position: 0 55px;
+  background-position: 0 75px;
   overflow: hidden;
   color: #fff;
 
   :global(.vtex-flex-layout-0-x-flexRow--form-popup) {
     width: 400px;
-    height: 584px;
+    height: 650px;
     display: block;
     margin: 0 0 0 auto;
     background: #008651;
@@ -659,10 +659,39 @@
     }
   }
 
+  :global(.vtex-rich-text-0-x-wrapper--modalHeaderLogo) {
+
+    &::before {
+      content: '';
+      background: url('/arquivos/popup_Ativo2-min.png') center no-repeat;
+      margin-right: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 178px;
+      height: 158px;
+      background-size: contain;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph--modalHeaderLogo) {
+      border-radius: 10px 0 10px 0;
+      background: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      color: #008651;
+      font-family: 'Gotham';
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+
+  }
+
+
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentHeader) {
     font-size: 20px;
     color: #fff;
+    text-align: left;
   }
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentContent) {
@@ -673,7 +702,7 @@
     margin-top: 0;
     margin-bottom: 20px;
     text-align: left;
-    
+
     :global(.vtex-rich-text-0-x-strong--modalContentContent) {
       color: #fff;
       font-size: 30px;
@@ -684,7 +713,7 @@
   :global(.vtex-input) {
     text-align: left;
 
-    :global(.vtex-input__label){
+    :global(.vtex-input__label) {
       color: #fff;
       margin-left: 20px;
     }
@@ -701,11 +730,11 @@
     text-align: right;
     font-weight: bold;
     margin-right: 20px;
-    
+
     :global(.vtex-button) {
       border-radius: 25px;
       background: #40B17D;
-      
+
       :global(.vtex-button__label) {
         height: 40px;
         width: 150px;
@@ -732,8 +761,9 @@
   }
 
   :global(.vtex-styleguide-9-x-input) {
-    padding: 0;
-    text-align: center;
+    padding-left: 10px;
+    color: #f2f2f2;
+    text-align: left;
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -748,15 +778,13 @@
 
 :global(.vtex-flex-layout-0-x-flexRow--modal-cupom) {
   position: absolute;
-  background: url(/arquivos/POP_UP_IMG_2.jpg);
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  border: 5px solid #fff;
 
   :global(.vtex-flex-layout-0-x-flexCol--modal-cupom-right) {
-    background: #fff;
+    background: #008651;
     height: 100vh;
 
     @media all and (max-width: 767px) {
@@ -768,7 +796,7 @@
       margin: 0 auto;
 
       :global(.vtex-rich-text-0-x-paragraph--modal-cupom-top-text) {
-        color: #3fb880;
+        color: #fff;
         text-align: center;
         width: 100%;
         font-size: 28px;
@@ -776,7 +804,7 @@
         margin: 0;
 
         :global(.vtex-rich-text-0-x-strong--modal-cupom-top-text) {
-          color: #a09d9d;
+          color: #fff;
           font-size: 20px;
           margin-top: 20px;
           display: block;
@@ -813,7 +841,7 @@
       }
     }
 
-    :global(.vtex-rich-text-0-x-wrapper--modal-cupom-bottom-text){
+    :global(.vtex-rich-text-0-x-wrapper--modal-cupom-bottom-text) {
       display: block;
       margin: -30px auto 0;
 
@@ -821,11 +849,11 @@
         margin: 0 auto;
       }
 
-      :global(.vtex-rich-text-0-x-paragraph--modal-cupom-bottom-text){
+      :global(.vtex-rich-text-0-x-paragraph--modal-cupom-bottom-text) {
         font-size: 12px;
         color: #727273;
 
-        &::before{
+        &::before {
           display: block;
           content: 'aproveite já';
           width: max-content;
