@@ -23,7 +23,7 @@
   },
   "rich-text#modal-header": {
     "props": {
-      "text": "Cadastre-se e **receba ofertas \n exclusicas,** dicas e receitas!",
+      "text": "Inscreva-se e receba nossas promoções, \n dicas e receitas!",
       "blockClass": "modalContentHeader",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
@@ -31,7 +31,7 @@
   },
   "rich-text#modal-text": {
     "props": {
-      "text": "você ainda \n **ganha 10%**",
+      "text": "Ganhe **10%** de desconto \n na primeira compra*",
       "blockClass": "modalContentContent",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
@@ -80,7 +80,7 @@
   },
   "form-submit": {
     "props": {
-      "label": "eu quero!"    }
+      "label": "Eu quero!"    }
   },
   "rich-text#text-form-bottom": {
     "props": {

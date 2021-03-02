@@ -640,16 +640,19 @@
 
 :global(.vtex-modal-layout-0-x-paper--modal-form-content) {
   border-radius: 0;
-  width: 693px;
-  height: 584px;
-  background: url('/arquivos/POP_UP_IMG_1.jpg') center no-repeat;
+  width: 800px;
+  height: 500px;
+  background: url('/arquivos/popup_Ativo3-min.png?v=hfd') no-repeat #fff;
+  background-position: 0 55px;
   overflow: hidden;
+  color: #fff;
 
   :global(.vtex-flex-layout-0-x-flexRow--form-popup) {
     width: 400px;
+    height: 584px;
     display: block;
-    margin: auto;
-    background: #fff;
+    margin: 0 0 0 auto;
+    background: #008651;
 
     @media all and (max-width: 767px) {
       width: 100%;
@@ -659,52 +662,55 @@
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentHeader) {
     font-size: 20px;
+    color: #fff;
   }
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentContent) {
-    font-size: 30px;
-    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Gotham';
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 20px;
-
+    text-align: left;
+    
     :global(.vtex-rich-text-0-x-strong--modalContentContent) {
-      color: #3fb880;
-
-      &::after {
-        content: 'de desconto na primeira compra ;)';
-        display: block;
-        font-size: 12px;
-        color: #7c7c7c;
-        text-transform: lowercase;
-        font-weight: lighter;
-      }
+      color: #fff;
+      font-size: 30px;
+      font-family: 'Gotham';
     }
   }
 
   :global(.vtex-input) {
-    text-align: center;
-    margin: 10px 0;
+    text-align: left;
+
+    :global(.vtex-input__label){
+      color: #fff;
+      margin-left: 20px;
+    }
 
     :global(.vtex-input-prefix__group) {
-      width: 250px;
+      width: 90%;
       display: block;
       margin: 0 auto 12px;
-      border-radius: 0;
+      border-radius: 25px;
     }
   }
 
   :global(.vtex-store-form-0-x-formSubmitButton) {
-    text-align: center;
+    text-align: right;
     font-weight: bold;
-
+    margin-right: 20px;
+    
     :global(.vtex-button) {
-      border-radius: 0;
-
+      border-radius: 25px;
+      background: #40B17D;
+      
       :global(.vtex-button__label) {
-        width: 250px;
+        height: 40px;
+        width: 150px;
         font-size: 0;
-        border-radius: 0;
+        border-radius: 25px;
         font-weight: bold;
 
         &::before {
@@ -720,6 +726,8 @@
   :global(.vtex-rich-text-0-x-paragraph--text-bottom-form) {
     color: #ccc;
     font-weight: lighter;
+    margin-top: 20px;
+    text-align-last: left;
     font-size: 12px;
   }
 
@@ -728,6 +736,8 @@
     text-align: center;
     width: 100%;
     height: 100%;
+    border-radius: 25px;
+    background: transparent;
   }
 
 }
