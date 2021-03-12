@@ -638,6 +638,15 @@
 //   right: 0;
 // }
 
+:global(.vtex-modal-layout-0-x-headerContainer--modal-header-form-news){
+  position: absolute;
+  right: 0;
+
+  :global(.vtex-modal-layout-0-x-closeButtonContainer--modal-header-form-news){
+    background: rgb(255, 255, 255, 0.5);
+  }
+}
+
 :global(.vtex-modal-layout-0-x-paper--modal-form-content) {
   border-radius: 0;
   width: 800px;

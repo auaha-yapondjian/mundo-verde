@@ -17,8 +17,8 @@
   "modal-header#form-news": {
     "props": {
       "blockClass": "modal-header-form-news",
-      "showCloseButton": false,
-      "iconCloseSize": 64
+      "showCloseButton": true,
+      "iconCloseSize": 32
     }
   },
   "rich-text#modal-header-logo": {
