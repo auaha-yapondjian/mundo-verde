@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.62.0] - 2021-03-15
+
 ## [3.61.0] - 2021-03-15 implements popup newsletter in home
 
 ## [3.60.0] - 2021-02-24
