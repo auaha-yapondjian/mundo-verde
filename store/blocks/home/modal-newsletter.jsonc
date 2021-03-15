@@ -1,0 +1,100 @@
+{
+  "modal-trigger#modal-newsletter": {
+    "children": ["modal-layout#form-news"],
+    "props": {
+      "trigger": "load-session"
+    }
+  },
+  "modal-layout#form-news": {
+    "props": {
+      "blockClass": "modal-form-content"
+    },
+    "children": [
+      "flex-layout.row#form-popup",
+      "modal-header#form-news"
+    ]
+  },
+  "modal-header#form-news": {
+    "props": {
+      "blockClass": "modal-header-form-news",
+      "showCloseButton": true,
+      "iconCloseSize": 32
+    }
+  },
+  "rich-text#modal-header-logo": {
+    "props": {
+      "text": "Mundo Verde",
+      "blockClass": "modalHeaderLogo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#modal-header": {
+    "props": {
+      "text": "Inscreva-se e receba nossas promoções, \n dicas e receitas!",
+      "blockClass": "modalContentHeader",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#modal-text": {
+    "props": {
+      "text": "Ganhe **10%** de desconto \n na primeira compra*",
+      "blockClass": "modalContentContent",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#form-popup": {
+    "children": ["flex-layout.row#form"],
+    "props": {
+      "blockClass": "form-popup"
+    }
+  },
+  "flex-layout.row#form": {
+    "children": ["form#popup"]
+  },
+  "form#popup": {
+    "props": {
+      "entity": "PN",
+      "schema": "popupnews"
+    },
+    "children": [
+      "rich-text#modal-header-logo",
+      "rich-text#modal-header",
+      "rich-text#modal-text",
+      "form-input.text#pname",
+      "form-input.text#pemail",
+      "form-submit",
+      "rich-text#text-form-bottom"
+    ],
+    "blocks": ["form-success#popup-newsletter"]
+  },
+  "form-success#popup-newsletter": {
+    "children": ["flex-layout.row#modal-cupom"]
+  },
+  "form-input.text#pname": {
+    "props": {
+      "pointer": "#/properties/name",
+      "label": "Nome"
+    }
+  },
+  "form-input.text#pemail": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "E-mail"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Eu quero!"    }
+  },
+  "rich-text#text-form-bottom": {
+    "props": {
+      "text": "*Válido por 10 dias para comprar acima de R$ 99,00 \n Uma utilização por CPF",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-bottom-form"
+    }
+  }
+}

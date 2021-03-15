@@ -13,7 +13,8 @@
       "shelf#home--3",
       "flex-layout.row#promotion",
       "newsletter",
-      "chaordic-div#bottom"
+      "chaordic-div#bottom",
+      "flex-layout.row#modal-news"
     ]
   },
   "flex-layout.row#promotion": {
@@ -150,5 +151,10 @@
       "placeholder": "digite seu e-mail",
       "submit": "eu quero"
     }
+  },"flex-layout.row#modal-news": {
+    "props": {
+      "blockClass": "swal-modal"
+    },
+    "children": ["modal-trigger#modal-newsletter"]
   }
 }

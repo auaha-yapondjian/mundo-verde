@@ -1,0 +1,44 @@
+{
+  "flex-layout.row#modal-cupom": {
+    "children": [
+      "flex-layout.col#modal-cupom-left",
+      "flex-layout.col#modal-cupom-right"
+    ],
+    "props": {
+      "blockClass": "modal-cupom"
+    }
+  },
+  "flex-layout.col#modal-cupom-left": {
+    "props": {
+      "blockClass": "modal-cupom-left"
+    }
+  },
+  "flex-layout.col#modal-cupom-right": {
+    "children": [
+      "rich-text#modal-cupom-top-text",
+      "rich-text#modal-cupom-middle-text",
+      "rich-text#modal-cupom-bottom-text"
+    ],
+    "props": {
+      "blockClass": "modal-cupom-right"
+    }
+  },
+  "rich-text#modal-cupom-top-text": {
+    "props": {
+      "text": "Obrigada por \n escolher a Mundo Verde :) \n **Prepare-se para receber \n descontos incríveis!**",
+      "blockClass": "modal-cupom-top-text"
+    }
+  },
+  "rich-text#modal-cupom-middle-text": {
+    "props": {
+      "text": "Aqui está seu cupom de \n **10% OFF** *BEMVINDO10*",
+      "blockClass": "modal-cupom-middle-text"
+    }
+  },
+  "rich-text#modal-cupom-bottom-text": {
+    "props": {
+      "text": " &#42; Insira o código no seu carrinho **Válido por 10 dias para \n compras acima de R$ 99,00.** Uma utilização por CPF",
+      "blockClass": "modal-cupom-bottom-text"
+    }
+  }
+}
