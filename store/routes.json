@@ -49,5 +49,8 @@
   },
   "store.custom#semana-do-consumidor": {
     "path": "/semana-do-consumidor"
+  },
+  "store.custom#ouvidoria": {
+    "path": "/ouvidoria"
   }
 }
