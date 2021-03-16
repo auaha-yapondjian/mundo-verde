@@ -595,5 +595,29 @@
         "text": "Mundo Verde Seleção"
       }
     }
+  },
+  "vtex.menu@2.x:menu#footer-6": {
+    "title": "Menu Footer (6)",
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ouvidoria"
+    ]
+  },
+  "menu-item#ouvidoria": {
+    "props": {
+      "id": "menu-item-ouvidoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ouvidoria",
+        "noFollow": false,
+        "tagTitle": "ouvidoria",
+        "text": "Ouvidoria"
+      }
+    }
   }
 }

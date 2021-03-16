@@ -41,7 +41,8 @@
       "vtex.menu@2.x:menu#footer-2",
       "vtex.menu@2.x:menu#footer-3",
       "vtex.menu@2.x:menu#footer-4",
-      "vtex.menu@2.x:menu#footer-5"
+      "vtex.menu@2.x:menu#footer-5",
+      "vtex.menu@2.x:menu#footer-6"
     ]
   },
   "flex-layout.row#footer-institucional-mobile": {
@@ -66,7 +67,8 @@
       "vtex.menu@2.x:menu#footer-2",
       "vtex.menu@2.x:menu#footer-3",
       "vtex.menu@2.x:menu#footer-4",
-      "vtex.menu@2.x:menu#footer-5"
+      "vtex.menu@2.x:menu#footer-5",
+      "vtex.menu@2.x:menu#footer-6"
     ]
   },
   "flex-layout.col#footer--contact": {
