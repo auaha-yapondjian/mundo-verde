@@ -1,10 +1,6 @@
 {
   "store.custom#ouvidoria": {
-    "blocks": [
-      "hello-world",
-      "flex-layout.row#row-main",
-      "flex-layout.row#form-ouvidoria"
-    ]
+    "blocks": ["flex-layout.row#row-main", "flex-layout.row#form-ouvidoria"]
   },
   "flex-layout.row#row-main": {
     "children": ["flex-layout.col#col-main"],
@@ -62,68 +58,6 @@
     }
   },
   "flex-layout.col#form-ouvidoria": {
-    "children": ["form#nutri"]
-  },
-  "form#nutri": {
-    "props": {
-      "entity": "OU",
-      "schema": "ouvidoria"
-    },
-    "children": [
-      // "form-input.text#nome",
-      // "form-input.text#email",
-      // "form-input.text#telefone",
-      // "form-input.text#assunto",
-      // "form-input.textarea#mensagem",
-      // "form-input.checkbox#agreement",
-      // "form-submit"
-    ],
-    "blocks": ["form-success"]
-  },
-  "form-success": {
-    "children": ["rich-text#successSubmit"]
-  },
-  "rich-text#successSubmit": {
-    "props": {
-      "text": "Formulário enviado com sucesso!",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "form-input.text#nome": {
-    "props": {
-      "pointer": "#/properties/nome"
-    }
-  },
-  "form-input.text#telefone": {
-    "props": {
-      "pointer": "#/properties/telefone"
-    }
-  },
-  "form-input.text#email": {
-    "props": {
-      "pointer": "#/properties/email"
-    }
-  },
-  "form-input.text#assunto": {
-    "props": {
-      "pointer": "#/properties/assunto"
-    }
-  },
-  "form-input.textarea#mensagem": {
-    "props": {
-      "pointer": "#/properties/mensagem"
-    }
-  },
-  "form-input.checkbox#agreement": {
-    "props": {
-      "pointer": "#/properties/agreement",
-      "label": "Quero receber notícias Mundo Verde por email"
-    }
-  },
-  "form-submit": {
-    "props": {
-      "label": "Enviar"
-    }
+    "children": ["hello-world"]
   }
 }
