@@ -1,23 +1,19 @@
 {
   "store.custom#ouvidoria": {
     "blocks": [
+      "hello-world",
       "flex-layout.row#row-main",
       "flex-layout.row#form-ouvidoria"
     ]
   },
   "flex-layout.row#row-main": {
-    "children": [
-      "flex-layout.col#col-main"
-    ],
+    "children": ["flex-layout.col#col-main"],
     "props": {
       "blockClass": "row-main"
     }
   },
   "flex-layout.col#col-main": {
-    "children": [
-      "image#olaNutri",
-      "flex-layout.col#text-col"
-    ],
+    "children": ["image#olaNutri", "flex-layout.col#text-col"],
     "props": {}
   },
   "image#olaNutri": {
@@ -60,17 +56,13 @@
     }
   },
   "flex-layout.row#form-ouvidoria": {
-    "children": [
-      "flex-layout.col#form-ouvidoria"
-    ],
+    "children": ["flex-layout.col#form-ouvidoria"],
     "props": {
       "blockClass": "form-mundo-verde"
     }
   },
   "flex-layout.col#form-ouvidoria": {
-    "children": [
-      "form#nutri"
-    ]
+    "children": ["form#nutri"]
   },
   "form#nutri": {
     "props": {
@@ -86,14 +78,10 @@
       // "form-input.checkbox#agreement",
       // "form-submit"
     ],
-    "blocks": [
-      "form-success"
-    ]
+    "blocks": ["form-success"]
   },
   "form-success": {
-    "children": [
-      "rich-text#successSubmit"
-    ]
+    "children": ["rich-text#successSubmit"]
   },
   "rich-text#successSubmit": {
     "props": {
