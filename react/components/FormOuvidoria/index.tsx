@@ -1,6 +1,8 @@
 import type { FormEvent } from "react";
 import React, { useState } from "react";
 import axios from "axios";
+
+import { maskDate, handleClean } from "../../utils/masks";
 import "./styles.css";
 
 interface IResponse {
@@ -9,9 +11,10 @@ interface IResponse {
   };
 }
 
-const HelloWorld = () => {
+const FormOuvidoria = () => {
   const [sent, setSent] = useState<boolean>(false);
   const [show, setShow] = useState<boolean>(false);
+  const [noIdentify, setNoIdentify] = useState<boolean>(false);
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
@@ -19,7 +22,10 @@ const HelloWorld = () => {
   const [date, setDate] = useState<string>("");
   const [locate, setLocate] = useState<string>("");
   const [reportedName, setReportedName] = useState<string>("");
-  const [subject, setSubject] = useState<string>("");
+  const [subject, setSubject] = useState<string>(
+    "FRAUDE, FURTO OU CORRUPÇÃO PÚBLICA"
+  );
+
   const [unity, setUnity] = useState<string>("");
   const [complaint, setComplaint] = useState<string>("");
   const [file, setFile] = useState<File>();
@@ -28,10 +34,14 @@ const HelloWorld = () => {
     setShow(!show);
   };
 
+  const hideInfo = () => {
+    setNoIdentify(!noIdentify);
+  };
+
   const sendForm = async (e: FormEvent) => {
     e.preventDefault();
 
-    const obj = {
+    const dirtyObj = {
       name,
       email,
       phone,
@@ -43,6 +53,8 @@ const HelloWorld = () => {
       unity,
       complaint,
     };
+
+    const obj = handleClean(dirtyObj);
 
     const response: IResponse = await axios.post(
       "/api/dataentities/OU/documents/",
@@ -78,7 +90,7 @@ const HelloWorld = () => {
     <>
       {sent === false ? (
         <div className="container">
-          <form onSubmit={sendForm} className="form-element">
+          <form onSubmit={(e) => sendForm(e)} className="form-element">
             {show === true ? (
               <div className="conditional-inputs">
                 <div className="name">
@@ -116,12 +128,24 @@ const HelloWorld = () => {
                   />
                 </div>
               </div>
+            ) : noIdentify === true ? (
+              <>
+                <p className="no-identify">Seus dados serão resguardados.</p>
+              </>
             ) : (
               <div className="identify-wrapper">
                 <p className="identify-p">Você deseja se identificar?</p>
-                <button className="identify-btn" onClick={() => showInputs()}>
-                  Sim
-                </button>
+                <div className="row-butons">
+                  <button className="identify-btn" onClick={() => showInputs()}>
+                    Sim
+                  </button>
+                  <button
+                    className="identify-btn-no"
+                    onClick={() => hideInfo()}
+                  >
+                    Não
+                  </button>
+                </div>
               </div>
             )}
 
@@ -131,7 +155,8 @@ const HelloWorld = () => {
               </span>
               <input
                 className="input-content"
-                type="text"
+                placeholder="__/__/____"
+                type="time"
                 name="approximateTime"
                 value={approximateTime}
                 onChange={(e) => setApproximateTime(e.target.value)}
@@ -141,11 +166,12 @@ const HelloWorld = () => {
             <div className="date">
               <span className="input-title">Data da Ocorrência</span>
               <input
-                className="input-content"
+                className="input-content-date"
+                placeholder="__/__/____"
                 type="text"
                 name="date"
                 value={date}
-                onChange={(e) => setDate(e.target.value)}
+                onChange={(e) => setDate(maskDate(e.target.value))}
               />
             </div>
 
@@ -262,4 +288,4 @@ const HelloWorld = () => {
   );
 };
 
-export default HelloWorld;
+export default FormOuvidoria;
