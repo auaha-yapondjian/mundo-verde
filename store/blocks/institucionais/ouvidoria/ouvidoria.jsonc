@@ -24,7 +24,8 @@
     "children": [
       "rich-text#tire-duvidas1",
       "rich-text#tire-duvidas2",
-      "rich-text#tire-duvidas3"
+      "rich-text#tire-duvidas3",
+      "rich-text#tire-duvidas4"
     ],
     "props": {
       "blockClass": "text-col"
@@ -33,21 +34,28 @@
   "rich-text#tire-duvidas1": {
     "children": [],
     "props": {
-      "text": "Tire suas dúvidas sobre nutrição, saúde e qualidade de vida!",
+      "text": "Além do nosso propósito de melhorar a vida dos nossos clientes, franqueados, colaboradores, fornecedores, parceiros e todos aqueles que vivem nesse Mundo, nós, Mundo Verde, também somos comprometidos com a ética e integridade. Não admitimos atalhos, fazemos o que é certo!",
       "font": "1rem"
     }
   },
   "rich-text#tire-duvidas2": {
     "children": [],
     "props": {
-      "text": "De segunda a sexta-feira, das 10h ás 17h.",
+      "text": "Dessa forma, a cooperação de nossos colaboradores, fornecedores, franqueados e parceiros é essencial para que possamos manter os valores da companhia.",
       "font": "1rem"
     }
   },
   "rich-text#tire-duvidas3": {
     "children": [],
     "props": {
-      "text": "Serviço oferecido pelo Mundo Verde, através do telefone 0800 022 25 28 ou pelo formulário abaixo.",
+      "text": "Caso você tenha alguma crítica, denúncia, sugestão ou presenciou algum acontecimento contrário aos bons costumes e ao Código de Ética Mundo Verde, faça uma denúncia para compliance@mundoverde.com.br ou preencha o formulário a seguir.",
+      "font": "1rem"
+    }
+  },
+  "rich-text#tire-duvidas4": {
+    "children": [],
+    "props": {
+      "text": "Suas informações serão tratadas de forma confidencial e sua identidade será preservada, se você desejar.",
       "font": "1rem"
     }
   },
