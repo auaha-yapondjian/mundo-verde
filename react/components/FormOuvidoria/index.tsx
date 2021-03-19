@@ -176,6 +176,7 @@ const HelloWorld = () => {
             <div className="subject">
               <span className="input-title">Assunto</span>
               <select
+                className="subject-select"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
               >

@@ -4,7 +4,6 @@
 }
 
 @media screen and (min-width: 40em) {
-
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
@@ -12,7 +11,6 @@
 }
 
 @media screen and (min-width: 80rem) {
-
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 15px;
@@ -638,11 +636,11 @@
 //   right: 0;
 // }
 
-:global(.vtex-modal-layout-0-x-headerContainer--modal-header-form-news){
+:global(.vtex-modal-layout-0-x-headerContainer--modal-header-form-news) {
   position: absolute;
   right: 0;
 
-  :global(.vtex-modal-layout-0-x-closeButtonContainer--modal-header-form-news){
+  :global(.vtex-modal-layout-0-x-closeButtonContainer--modal-header-form-news) {
     background: rgb(255, 255, 255, 0.5);
   }
 }
@@ -651,7 +649,7 @@
   border-radius: 0;
   width: 800px;
   height: 650px;
-  background: url('/arquivos/popup_Ativo3-min.png?v=hfd') no-repeat #fff;
+  background: url("/arquivos/popup_Ativo3-min.png?v=hfd") no-repeat #fff;
   background-position: 0 75px;
   overflow: hidden;
   color: #fff;
@@ -669,10 +667,9 @@
   }
 
   :global(.vtex-rich-text-0-x-wrapper--modalHeaderLogo) {
-
     &::before {
-      content: '';
-      background: url('/arquivos/popup_Ativo2-min.png') center no-repeat;
+      content: "";
+      background: url("/arquivos/popup_Ativo2-min.png") center no-repeat;
       margin-right: 12px;
       display: inline-block;
       vertical-align: middle;
@@ -687,15 +684,11 @@
       padding: 5px 10px;
       font-weight: bold;
       color: #008651;
-      font-family: 'Gotham';
+      font-family: "Gotham";
       display: inline-block;
       vertical-align: middle;
-
     }
-
   }
-
-
 
   :global(.vtex-rich-text-0-x-paragraph--modalContentHeader) {
     font-size: 20px;
@@ -706,7 +699,7 @@
   :global(.vtex-rich-text-0-x-paragraph--modalContentContent) {
     font-size: 24px;
     color: #fff;
-    font-family: 'Gotham';
+    font-family: "Gotham";
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 20px;
@@ -715,7 +708,7 @@
     :global(.vtex-rich-text-0-x-strong--modalContentContent) {
       color: #fff;
       font-size: 30px;
-      font-family: 'Gotham';
+      font-family: "Gotham";
     }
   }
 
@@ -742,7 +735,7 @@
 
     :global(.vtex-button) {
       border-radius: 25px;
-      background: #40B17D;
+      background: #40b17d;
 
       :global(.vtex-button__label) {
         height: 40px;
@@ -752,13 +745,12 @@
         font-weight: bold;
 
         &::before {
-          content: 'eu quero';
+          content: "eu quero";
           font-size: 19px;
           text-transform: lowercase;
         }
       }
     }
-
   }
 
   :global(.vtex-rich-text-0-x-paragraph--text-bottom-form) {
@@ -778,7 +770,6 @@
     border-radius: 25px;
     background: transparent;
   }
-
 }
 
 //fim modal newsletter
@@ -819,7 +810,6 @@
           display: block;
         }
       }
-
     }
 
     :global(.vtex-rich-text-0-x-wrapper--modal-cupom-middle-text) {
@@ -865,7 +855,7 @@
 
         &::before {
           display: block;
-          content: 'aproveite já';
+          content: "aproveite já";
           width: max-content;
           padding: 5px 15px;
           background: #3fb880;
@@ -879,3 +869,33 @@
 }
 
 //fim modal cupom
+
+//Form ouvidoria
+:global(.vtex-flex-layout-0-x-flexRow--row-main-ouvidoria) {
+  :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+    max-width: none;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    :global(.vtex-flex-layout-0-x-flexColChild) {
+      display: flex;
+      justify-content: center;
+
+      :global(.vtex-rich-text-0-x-container) {
+        flex: 1;
+      }
+
+      :global(.vtex-store-components-3-x-imageElement--image-ouvidoria) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.flexCol--text-col-ouvidoria {
+  max-width: 1250px;
+  padding: 0 15px;
+}
