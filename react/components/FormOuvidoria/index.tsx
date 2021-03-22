@@ -2,7 +2,7 @@ import type { FormEvent } from "react";
 import React, { useState } from "react";
 import axios from "axios";
 
-import { maskDate, handleClean } from "../../utils/masks";
+import { maskDate, handleClean, maskHour } from "../../utils/masks";
 import "./styles.css";
 
 interface IResponse {
@@ -154,12 +154,12 @@ const FormOuvidoria = () => {
                 Horário Aproximado da Ocorrência
               </span>
               <input
-                className="input-content"
-                placeholder="__/__/____"
-                type="time"
+                className="input-content-hour"
+                placeholder="--:--"
+                type="text"
                 name="approximateTime"
                 value={approximateTime}
-                onChange={(e) => setApproximateTime(e.target.value)}
+                onChange={(e) => setApproximateTime(maskHour(e.target.value))}
               />
             </div>
 
