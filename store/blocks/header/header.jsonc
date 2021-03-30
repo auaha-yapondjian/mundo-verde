@@ -85,8 +85,8 @@
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      "customSearchPageUrl": "/search?_query=${term}",
-      "attemptPageTypeSearch": true,
+      // "customSearchPageUrl": "/search?_query=${term}",
+      // "attemptPageTypeSearch": true,
       "openAutocompleteOnFocus": true,
       "placeholder": "O que você procura ?",
       "blockClass": "main-search-bar",
@@ -180,7 +180,11 @@
     }
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
-    "children": ["menu-item#seja-franqueado", "menu-item#lojas", "menu-item#blog"]
+    "children": [
+      "menu-item#seja-franqueado",
+      "menu-item#lojas",
+      "menu-item#blog"
+    ]
   },
   "menu-item#blog": {
     "props": {
