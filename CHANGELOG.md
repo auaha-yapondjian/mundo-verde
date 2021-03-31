@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [3.64.0] - 2021-03-31
+## [3.64.0] - 2021-03-31 fix search error (22294548)
 
 ## [3.63.0] - 2021-03-23 implements ombudsman page (22983915)
 
