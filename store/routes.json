@@ -52,5 +52,17 @@
   },
   "store.custom#ouvidoria": {
     "path": "/ouvidoria"
+  },
+  "store.custom#festival-ofertasbh": {
+    "path": "/festival-ofertasbh"
+  },
+  "store.custom#festival-ofertassa": {
+    "path": "/festival-ofertassa"
+  },
+  "store.custom#festival-ofertasimune": {
+    "path": "/festival-ofertasimune"
+  },
+  "store.custom#festival-imuneplus": {
+    "path": "/festival-imuneplus"
   }
 }
