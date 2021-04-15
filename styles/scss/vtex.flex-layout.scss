@@ -416,6 +416,54 @@
   }
 }
 
+// Festival Ofertas Imune+
+.flexRow--festival-ofertasimune--header {
+  background-color: #f5f5f5;
+
+  :global(.vtex-rich-text-0-x-container--festival-ofertasimune--title) {
+    justify-content: center;
+
+    :global(.vtex-rich-text-0-x-paragraph),
+    :global(.vtex-rich-text-0-x-headingLevel1) {
+      font-family: lato, sans-serif;
+      margin: 54px 0 32px;
+      color: #0f834c;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}
+
+// Festival Imune+
+.flexRow--festival-imuneplus--header {
+  background-color: #f5f5f5;
+
+  :global(.vtex-rich-text-0-x-container--festival-imuneplus--title) {
+    justify-content: center;
+
+    :global(.vtex-rich-text-0-x-paragraph),
+    :global(.vtex-rich-text-0-x-headingLevel1) {
+      font-family: lato, sans-serif;
+      margin: 54px 0 32px;
+      color: #0f834c;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}
+
 // Forms (Nutricionistas e Franqueado)
 .flexRow--form-mundo-verde {
   margin: 50px 0;

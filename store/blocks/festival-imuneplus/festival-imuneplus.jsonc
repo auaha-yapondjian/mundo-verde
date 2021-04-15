@@ -2,14 +2,14 @@
   "store.custom#festival-imuneplus": {
     "blocks": [
       "list-context.image-list#main-banner",
-      "flex-layout.row#header--nossas-lojas",
+      "flex-layout.row#header--festival-imuneplus",
       "flex-layout.row#content--festival-imuneplus"
     ]
   },
-  "flex-layout.row#header--nossas-lojas": {
-    "children": ["rich-text#title-nossas-loja"],
+  "flex-layout.row#header--festival-imuneplus": {
+    "children": ["rich-text#title-festival-imuneplus"],
     "props": {
-      "blockClass": "nossas-lojas--header"
+      "blockClass": "festival-imuneplus--header"
     }
   },
   "flex-layout.row#content--festival-imuneplus": {
@@ -41,7 +41,7 @@
       "fullWidth": true
     }
   },
-  "rich-text#title-nossas-loja": {
+  "rich-text#title-festival-imuneplus": {
     "props": {
       "text": "# Encontre a loja participante mais próxima da sua casa",
       "blockClass": "festival-imuneplus--title"

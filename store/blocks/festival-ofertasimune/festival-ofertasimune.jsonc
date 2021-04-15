@@ -2,14 +2,14 @@
   "store.custom#festival-ofertasimune": {
     "blocks": [
       "list-context.image-list#main-banner",
-      "flex-layout.row#header--nossas-lojas",
+      "flex-layout.row#header--festival-ofertasimune",
       "flex-layout.row#content--festival-ofertasimune"
     ]
   },
-  "flex-layout.row#header--nossas-lojas": {
-    "children": ["rich-text#title-nossas-loja"],
+  "flex-layout.row#header--festival-ofertasimune": {
+    "children": ["rich-text#title-festival-ofertasimune"],
     "props": {
-      "blockClass": "nossas-lojas--header"
+      "blockClass": "festival-ofertasimune--header"
     }
   },
   "flex-layout.row#content--festival-ofertasimune": {
@@ -41,7 +41,7 @@
       "fullWidth": true
     }
   },
-  "rich-text#title-nossas-loja": {
+  "rich-text#title-festival-ofertasimune": {
     "props": {
       "text": "# Encontre a loja participante mais próxima da sua casa",
       "blockClass": "festival-ofertasimune--title"
