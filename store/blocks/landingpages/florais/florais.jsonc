@@ -1,0 +1,360 @@
+{
+  "store.custom#florais": {
+    "blocks": [
+      "image#main-banner",
+      "video#ytvideo",
+      "image#florais-body",
+      "flex-layout.row#common-questions",
+      "flex-layout.row#common-questions--top",
+      "flex-layout.row#common-questions--bottom",
+      "rich-text#nutri-title",
+      "rich-text#nutri-content",
+      "image#nutri-logo",
+      "rich-text#nutri-bottom",
+      "flex-layout.row#nutri",
+      "rich-text#nossas-lojas",
+      "sandbox#nossas-lojas",
+      "newsletter"
+    ]
+  },
+  "image#main-banner": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "florais-mainBanner"
+    }
+  },
+  "video#ytvideo": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": false,
+      "src": "https://www.youtube.com/watch?v=6AMtRrCdO_I&feature=youtu.be",
+      "poster": "https://mundoverde.vteximg.com.br/arquivos/video-thumbnail.png",
+      "blockClass": "videoEl"
+    }
+  },
+  "image#florais-body": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "link": "#_nossas_lojas",
+      "blockClass": "florais-body"
+    }
+  },
+  "flex-layout.row#common-questions": {
+    "children": ["rich-text#common-questions"],
+    "props": {
+      "blockClass": "common-questions"
+    }
+  },
+  "rich-text#common-questions": {
+    "props": {
+      "text": "PERGUNTAS FREQUENTES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--title"
+    }
+  },
+  "flex-layout.row#common-questions--top": {
+    "children": [
+      "flex-layout.col#common-questions--left",
+      "flex-layout.col#common-questions--middle",
+      "flex-layout.col#common-questions--right"
+    ],
+    "props": {
+      "blockClass": "common-questions--top"
+    }
+  },
+  "flex-layout.col#common-questions--left": {
+    "children": [
+      "image#common-questions--left--logo",
+      "rich-text#common-questions--left--title",
+      "rich-text#common-questions--left--content"
+    ],
+    "props": {
+      "marginBottom": 5,
+      "blockClass": "common-questions--left"
+    }
+  },
+  "image#common-questions--left--logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "common-questions--icon"
+    }
+  },
+  "rich-text#common-questions--left--title": {
+    "props": {
+      "text": "Os florais de Bach \n são naturais?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--left--title"
+    }
+  },
+  "rich-text#common-questions--left--content": {
+    "props": {
+      "text": "Sim. São extratos líquidos naturais de plantas e flores que favorecem o equilíbrio emocional por frequência energética.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--content"
+    }
+  },
+  "flex-layout.col#common-questions--middle": {
+    "children": [
+      "image#common-questions--middle--logo",
+      "rich-text#common-questions--middle--title",
+      "rich-text#common-questions--middle--content"
+    ],
+    "props": {
+      "marginBottom": 5,
+      "blockClass": "common-questions--middle"
+    }
+  },
+  "image#common-questions--middle--logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "common-questions--icon"
+    }
+  },
+  "rich-text#common-questions--middle--title": {
+    "props": {
+      "text": "Qual o teor \n alcoólico dos \n Florais de Bach Elixir?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--middle--title"
+    }
+  },
+  "rich-text#common-questions--middle--content": {
+    "props": {
+      "text": "Nossa fórmula segue o sistema de Bach, que utiliza uma pequena quantidade de brandy (conhaque). São apenas 10°GL para a conservação das essências naturais. Não afeta a terapia, nem tem os mesmos efeitos da bebida alcoólica.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--content"
+    }
+  },
+  "flex-layout.col#common-questions--right": {
+    "children": [
+      "image#common-questions--right--logo",
+      "rich-text#common-questions--right--title",
+      "rich-text#common-questions--right--content"
+    ],
+    "props": {
+      "marginBottom": 5,
+      "blockClass": "common-questions--right"
+    }
+  },
+  "image#common-questions--right--logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "common-questions--icon"
+    }
+  },
+  "rich-text#common-questions--right--title": {
+    "props": {
+      "text": "Crianças podem \n consumir?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--right--title"
+    }
+  },
+  "rich-text#common-questions--right--content": {
+    "props": {
+      "text": "O Floral de Bach Elixir Ansiedade Kids é ideal para crianças, porque tem menor teor alcóolico, sendo apenas 3° GL. Seu uso e efeito sãoos mesmos dos florais para adultos.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--content"
+    }
+  },
+  "flex-layout.row#common-questions--bottom": {
+    "children": [
+      "flex-layout.col#common-questions-bottom--left",
+      "flex-layout.col#common-questions-bottom--middle",
+      "flex-layout.col#common-questions-bottom--right"
+    ],
+    "props": {
+      "blockClass": "common-questions--bottom"
+    }
+  },
+  "flex-layout.col#common-questions-bottom--left": {
+    "children": [
+      "image#common-questions--bleft--logo",
+      "rich-text#common-questions--bleft--title",
+      "rich-text#common-questions--bleft--content"
+    ],
+    "props": {
+      "marginBottom": 5,
+      "blockClass": "common-questions--bottom--left"
+    }
+  },
+  "flex-layout.col#common-questions-bottom--middle": {
+    "children": [
+      "image#common-questions--bmiddle--logo",
+      "rich-text#common-questions--bmiddle--title",
+      "rich-text#common-questions--bmiddle--content"
+    ],
+    "props": {
+      "marginBottom": 5,
+      "blockClass": "common-questions--bottom--middle"
+    }
+  },
+  "flex-layout.col#common-questions-bottom--right": {
+    "children": [
+      "image#common-questions--bright--logo",
+      "rich-text#common-questions--bright--title",
+      "rich-text#common-questions--bright--content"
+    ],
+    "props": {
+      "marginBottom": 5,
+      "blockClass": "common-questions--bottom--right"
+    }
+  },
+  "image#common-questions--bleft--logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "common-questions--icon"
+    }
+  },
+  "rich-text#common-questions--bleft--title": {
+    "props": {
+      "text": "O efeito é imediato?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--right--title"
+    }
+  },
+  "rich-text#common-questions--bleft--content": {
+    "props": {
+      "text": "Não. Os efeitos da terapia floral podem ser sentidos em 2 meses, se o uso seguir as indicações corretamente.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--content"
+    }
+  },
+  "image#common-questions--bmiddle--logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "common-questions--icon"
+    }
+  },
+  "rich-text#common-questions--bmiddle--title": {
+    "props": {
+      "text": "Como consumir?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--right--title"
+    }
+  },
+  "rich-text#common-questions--bmiddle--content": {
+    "props": {
+      "text": "Recomendamos 4 gotas sublinguais, 4 vezes ao dia. Utilize 10 min antes ou 30 min depois do consumo de alimentos ou bebidas que tenham menta ou hortelã.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--content"
+    }
+  },
+  "image#common-questions--bright--logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "common-questions--icon"
+    }
+  },
+  "rich-text#common-questions--bright--title": {
+    "props": {
+      "text": "Quantas terapias \n podem ser usadas \n ao mesmo tempo?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--right--title"
+    }
+  },
+  "rich-text#common-questions--bright--content": {
+    "props": {
+      "text": "Recomendamos o uso de até 3 terapias simultâneas, já que a fonte de desequilíbrio pode ser a mesma. Por isso, identifique as emoções que afetam você nesse momento.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "common-questions--content"
+    }
+  },
+  "flex-layout.row#nutri": {
+    "children": ["link#call-nutri"]
+  },
+  "rich-text#nutri-title": {
+    "props": {
+      "text": "Tem mais alguma dúvida sobre \n os Florais de Bach Elixir?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "nutri-title"
+    }
+  },
+  "rich-text#nutri-content": {
+    "props": {
+      "text": "Fale com as nutris do \n **Mundo Verde** pelo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "nutri-content"
+    }
+  },
+  "image#nutri-logo": {
+    "props": {
+      "src": "",
+      "maxHeight": "auto",
+      "maxWidth": "100%",
+      "blockClass": "nutri-icon"
+    }
+  },
+  "rich-text#nutri-bottom": {
+    "props": {
+      "text": "seu canal direto \n com o bem-estar.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "blockClass": "nutri-bottom"
+    }
+  },
+  "rich-text#nossas-lojas": {
+    "props": {
+      "text": "Encontre a loja mais proxima da sua casa",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "white-025",
+      "htmlId": "_nossas_lojas",
+      "blockClass": "nossas-lojas--text"
+    }
+  },
+  "link#call-nutri": {
+    "props": {
+      "href": "/fale-com-nutricionistas",
+      "label": "Chama a Nutri",
+      "blockClass": "call-nutri-link"
+    }
+  }
+}

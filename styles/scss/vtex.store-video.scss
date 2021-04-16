@@ -1,0 +1,11 @@
+:global(.vtex-store-video-1-x-videoContainer--videoEl){
+  margin-top: -5px;
+
+  @media all and (max-width: 767px){
+    :global(.vtex-store-video-1-x-videoElement--videoEl){
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

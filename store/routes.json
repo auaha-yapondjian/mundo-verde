@@ -47,6 +47,9 @@
   "store.custom#voce-mais-saudavel": {
     "path": "/voce-mais-saudavel"
   },
+  "store.custom#florais": {
+    "path": "/florais"
+  },
   "store.custom#semana-do-consumidor": {
     "path": "/semana-do-consumidor"
   },

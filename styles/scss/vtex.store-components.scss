@@ -34,7 +34,7 @@
 .searchBarContainer :global(.vtex-input__prefix) {
   position: absolute;
   background-color: transparent;
-  top: 0; 
+  top: 0;
   right: 0;
   bottom: 0;
   padding: 0;
@@ -255,7 +255,7 @@
       text-align: center;
     }
   }
- 
+
 }
 
 @media screen and (min-width: 640px) {
@@ -268,7 +268,7 @@
 
         .buttonContainer {
           margin-top: 0px;
-    
+
           :global(.vtex-button) {
             width: auto;
           }
@@ -293,7 +293,7 @@
         :global(.vtex-button) {
           padding: 0 100px;
         }
-  
+
         .label {
           font-size: 18px;
           text-transform: initial;
@@ -330,9 +330,9 @@
     margin: 0 auto;
     padding: 0 15px;
 
-    
+
     .productImagesGallerySwiperContainer {
-      
+
       width: 100%;
       max-width: 384px;
       max-height: 384px;
@@ -354,7 +354,7 @@
 
   }
 
-  
+
 
   :global(.vtex-reviews-and-ratings-1-x-summaryContainer){
     font-size: 0;
@@ -364,7 +364,7 @@
     max-width: 1250px;
     padding: 0 15px;
   }
-  
+
   .productBrandName{
     color: #7c7c7c;
   }
@@ -383,9 +383,9 @@
   .productNameContainer{
     color: #4d4d4f;
     padding: 5px 0;
-    
+
   }
-  
+
   // buy button
   :global(.vtex-flex-layout-0-x-flexColChild--product--buy-button){
     display: flex;
@@ -398,7 +398,7 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
       }
-     
+
     }
 
     @media screen and (min-width: 540px) {
@@ -407,7 +407,7 @@
   }
 
   :global(.vtex-flex-layout-0-x-flexCol--product-info-right){
-    
+
     :global(.vtex-flex-layout-0-x-flexRowContent){
       justify-content: space-between;
     }
@@ -427,7 +427,7 @@
 
     .shippingContainer{
       margin: 20px 0;
-      
+
       :global(.vtex-button){
         padding: 10px 0;
         margin: 0;
@@ -455,7 +455,7 @@
 :global(.vtex-reviews-and-ratings-1-x-summaryContainer),
 :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
   min-height: 23px;
-  
+
 }
 
 :global(.vtex-reviews-and-ratings-1-x-stars){
@@ -479,7 +479,7 @@
     justify-content: center;
   }
 
- 
+
 }
 
 .shareButtons {
@@ -534,12 +534,12 @@
     color: #008651;
     font-weight: bold;
   }
-  
+
   .form{
     .content {
       max-width: initial;
 
-      
+
       .submit {
         align-items: flex-start;
       }
@@ -554,3 +554,15 @@
 :global(.vtex-store-link-0-x-link){
   text-decoration: none;
 }
+
+// lp florais
+:global(.vtex-store-components-3-x-imageElement--nutri-icon){
+  display: block;
+  margin: 0 auto;
+}
+
+:global(.vtex-store-components-3-x-imageElement--florais-body){
+  margin-top: -25px;
+}
+
+// fim lp florais
