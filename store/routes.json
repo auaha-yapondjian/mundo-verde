@@ -67,5 +67,8 @@
   },
   "store.custom#festival-imuneplus": {
     "path": "/festival-imuneplus"
+  },
+  "store.custom#imune-mais": {
+    "path": "/imune-mais"
   }
 }
