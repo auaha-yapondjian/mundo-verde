@@ -53,8 +53,8 @@
   "store.custom#semana-do-consumidor": {
     "path": "/semana-do-consumidor"
   },
-  "store.custom#ouvidoria": {
-    "path": "/ouvidoria"
+  "store.custom#compliance": {
+    "path": "/compliance"
   },
   "store.custom#festival-ofertasbh": {
     "path": "/festival-ofertasbh"

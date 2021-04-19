@@ -1,76 +1,76 @@
 {
-  "store.custom#ouvidoria": {
+  "store.custom#compliance": {
     "blocks": [
-      "flex-layout.row#row-main-ouvidoria",
-      "flex-layout.row#form-ouvidoria"
+      "flex-layout.row#row-main-compliance",
+      "flex-layout.row#form-compliance"
     ],
     "props": {
-      "blockClass": "form-ouvidoria"
+      "blockClass": "form-compliance"
     }
   },
-  "flex-layout.row#row-main-ouvidoria": {
-    "children": ["flex-layout.col#col-main-ouvidoria"],
+  "flex-layout.row#row-main-compliance": {
+    "children": ["flex-layout.col#col-main-compliance"],
     "props": {
-      "blockClass": "row-main-ouvidoria"
+      "blockClass": "row-main-compliance"
     }
   },
-  "flex-layout.col#col-main-ouvidoria": {
-    "children": ["image#ouvidoria", "flex-layout.col#text-col-ouvidoria"],
+  "flex-layout.col#col-main-compliance": {
+    "children": ["image#compliance", "flex-layout.col#text-col-compliance"],
     "props": {}
   },
-  "image#ouvidoria": {
+  "image#compliance": {
     "props": {
       "src": "/arquivos/OUVIDORIA.png",
-      "blockClass": "image-ouvidoria",
+      "blockClass": "image-compliance",
       "padding": "20px 0 0 0"
     }
   },
-  "flex-layout.col#text-col-ouvidoria": {
+  "flex-layout.col#text-col-compliance": {
     "children": [
-      "rich-text#ouvidoria-text1",
-      "rich-text#ouvidoria-text2",
-      "rich-text#ouvidoria-text3",
-      "rich-text#ouvidoria-text4"
+      "rich-text#compliance-text1",
+      "rich-text#compliance-text2",
+      "rich-text#compliance-text3",
+      "rich-text#compliance-text4"
     ],
     "props": {
-      "blockClass": "text-col-ouvidoria"
+      "blockClass": "text-col-compliance"
     }
   },
-  "rich-text#ouvidoria-text1": {
+  "rich-text#compliance-text1": {
     "children": [],
     "props": {
       "text": "Além do nosso propósito de melhorar a vida dos nossos clientes, franqueados, colaboradores, fornecedores, parceiros e todos aqueles que vivem nesse Mundo, nós, Mundo Verde, também somos comprometidos com a ética e integridade. Não admitimos atalhos, fazemos o que é certo!",
       "font": "1rem"
     }
   },
-  "rich-text#ouvidoria-text2": {
+  "rich-text#compliance-text2": {
     "children": [],
     "props": {
       "text": "Dessa forma, a cooperação de nossos colaboradores, fornecedores, franqueados e parceiros é essencial para que possamos manter os valores da companhia.",
       "font": "1rem"
     }
   },
-  "rich-text#ouvidoria-text3": {
+  "rich-text#compliance-text3": {
     "children": [],
     "props": {
       "text": "Caso você tenha alguma crítica, denúncia, sugestão ou presenciou algum acontecimento contrário aos bons costumes e ao Código de Ética Mundo Verde, faça uma denúncia para compliance@mundoverde.com.br ou preencha o formulário a seguir.",
       "font": "1rem"
     }
   },
-  "rich-text#ouvidoria-text4": {
+  "rich-text#compliance-text4": {
     "children": [],
     "props": {
       "text": "Suas informações serão tratadas de forma confidencial e sua identidade será preservada, se você desejar.",
       "font": "1rem"
     }
   },
-  "flex-layout.row#form-ouvidoria": {
-    "children": ["flex-layout.col#form-ouvidoria"],
+  "flex-layout.row#form-compliance": {
+    "children": ["flex-layout.col#form-compliance"],
     "props": {
       "blockClass": "form-mundo-verde"
     }
   },
-  "flex-layout.col#form-ouvidoria": {
-    "children": ["form-ouvidoria"]
+  "flex-layout.col#form-compliance": {
+    "children": ["form-compliance"]
   }
 }

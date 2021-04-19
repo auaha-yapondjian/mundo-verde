@@ -217,14 +217,10 @@
         "text": "Clothing"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#clothing"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
   },
   "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": [
-      "vtex.menu@2.x:menu#clothing-accordion"
-    ]
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
   },
   "vtex.menu@2.x:menu#clothing-accordion": {
     "props": {
@@ -245,14 +241,10 @@
         "text": "Decoration"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#decoration"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
   },
   "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-decoration-mobile"
-    ]
+    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
   },
   "vtex.menu@2.x:menu#footer-decoration-mobile": {
     "props": {
@@ -271,14 +263,10 @@
         "text": "Sale"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#sale"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
   },
   "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-sale-mobile"
-    ]
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
   },
   "vtex.menu@2.x:menu#footer-sale-mobile": {
     "props": {
@@ -481,10 +469,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#imprensa",
-      "menu-item#faq"
-    ]
+    "children": ["menu-item#imprensa", "menu-item#faq"]
   },
   "menu-item#imprensa": {
     "props": {
@@ -561,10 +546,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#elixir",
-      "menu-item#mundo-verde-selecao"
-    ]
+    "children": ["menu-item#elixir", "menu-item#mundo-verde-selecao"]
   },
   "menu-item#elixir": {
     "props": {
@@ -601,22 +583,20 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#ouvidoria"
-    ]
+    "children": ["menu-item#compliance"]
   },
-  "menu-item#ouvidoria": {
+  "menu-item#compliance": {
     "props": {
-      "id": "menu-item-ouvidoria",
+      "id": "menu-item-compliance",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/ouvidoria",
+        "href": "/compliance",
         "noFollow": false,
-        "tagTitle": "ouvidoria",
-        "text": "Ouvidoria"
+        "tagTitle": "compliance",
+        "text": "Compliance"
       }
     }
   }

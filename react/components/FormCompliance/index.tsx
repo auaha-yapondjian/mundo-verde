@@ -11,7 +11,7 @@ interface IResponse {
   };
 }
 
-const FormOuvidoria = () => {
+const FormCompliance = () => {
   const [sent, setSent] = useState<boolean>(false);
   const [show, setShow] = useState<boolean>(false);
   const [noIdentify, setNoIdentify] = useState<boolean>(false);
@@ -288,4 +288,4 @@ const FormOuvidoria = () => {
   );
 };
 
-export default FormOuvidoria;
+export default FormCompliance;

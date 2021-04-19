@@ -6,7 +6,7 @@
   "store.search.v2": {
     "allowed": ["search-result", "search-result-layout"]
   },
-  "form-ouvidoria": {
-    "component": "FormOuvidoria"
+  "form-compliance": {
+    "component": "FormCompliance"
   }
 }

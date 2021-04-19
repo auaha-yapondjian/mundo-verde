@@ -1101,8 +1101,8 @@
 
 //fim modal cupom
 
-//Form ouvidoria
-:global(.vtex-flex-layout-0-x-flexRow--row-main-ouvidoria) {
+//Form compliance
+:global(.vtex-flex-layout-0-x-flexRow--row-main-compliance) {
   :global(.vtex-store-components-3-x-container) {
     padding: 0;
     max-width: none;
@@ -1119,14 +1119,14 @@
         flex: 1;
       }
 
-      :global(.vtex-store-components-3-x-imageElement--image-ouvidoria) {
+      :global(.vtex-store-components-3-x-imageElement--image-compliance) {
         width: 100%;
       }
     }
   }
 }
 
-.flexCol--text-col-ouvidoria {
+.flexCol--text-col-compliance {
   max-width: 1250px;
   padding: 0 15px;
 }
