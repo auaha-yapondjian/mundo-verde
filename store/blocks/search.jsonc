@@ -120,7 +120,13 @@
     }
   },
   "search-result-layout.desktop#subcategory": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#result"],
+    "children": [
+      "chaordic-div#top",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result",
+      "chaordic-div#middle",
+      "chaordic-div#bottom"
+    ],
     "props": {
       "pagination": "show-more",
       "blockClass": "searchResultLayoutDesktop",
@@ -313,7 +319,13 @@
     }
   },
   "search-not-found-layout": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
+    "children": [
+      "flex-layout.row#searchbread",
+      "chaordic-div#top",
+      "flex-layout.row#notfound",
+      "chaordic-div#middle",
+      "chaordic-div#bottom"
+    ]
   },
   "flex-layout.row#notfound": {
     "children": ["not-found"],
