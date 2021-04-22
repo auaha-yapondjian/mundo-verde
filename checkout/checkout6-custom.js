@@ -6,6 +6,7 @@ window.onhashchange = function () {
 window.onload = function () {
   changeActive();
   favicon();
+  document.querySelector(".newsletter-label input").checked = true;
 };
 
 function changeActive() {}
