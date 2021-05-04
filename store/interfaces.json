@@ -8,5 +8,8 @@
   },
   "form-compliance": {
     "component": "FormCompliance"
+  },
+  "ebit": {
+    "component": "EBit"
   }
 }
