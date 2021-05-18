@@ -1,0 +1,17 @@
+{
+  "store.custom#body-balance": {
+    "blocks": ["flex-layout.row#body-balance"],
+    "props": {
+      "blockClass": "body-balance"
+    }
+  },
+  "flex-layout.row#body-balance": {
+    "children": ["flex-layout.col#body-balance"],
+    "props": {
+      "blockClass": "form-mundo-verde"
+    }
+  },
+  "flex-layout.col#body-balance": {
+    "children": ["body-balance"]
+  }
+}
