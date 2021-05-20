@@ -11,11 +11,5 @@
   },
   "ebit": {
     "component": "EBit"
-  },
-  "whey-balance": {
-    "component": "WheyBalance"
-  },
-  "body-balance": {
-    "component": "BodyBalance"
   }
 }

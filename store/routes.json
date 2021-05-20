@@ -70,11 +70,5 @@
   },
   "store.custom#imune-mais": {
     "path": "/imune-mais"
-  },
-  "store.custom#whey-balance": {
-    "path": "/whey-balance"
-  },
-  "store.custom#body-balance": {
-    "path": "/body-balance"
   }
 }
