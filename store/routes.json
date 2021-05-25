@@ -70,5 +70,8 @@
   },
   "store.custom#imune-mais": {
     "path": "/imune-mais"
+  },
+  "store.custom#dia-dos-namorados": {
+    "path": "/dia-dos-namorados"
   }
 }
