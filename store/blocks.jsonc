@@ -108,6 +108,10 @@
         {
           "specificationName": "Vegetariano",
           "displayValue": "SPECIFICATION_NAME"
+        },
+        {
+          "specificationName": "Vencimento Próximo",
+          "displayValue": "SPECIFICATION_NAME"
         }
       ]
     }
