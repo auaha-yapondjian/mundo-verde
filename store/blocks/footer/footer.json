@@ -1,10 +1,7 @@
 {
   "footer": {
     "title": "Footer",
-    "blocks": [
-      "footer-layout.desktop",
-      "footer-layout.mobile"
-    ]
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
     "children": [
@@ -114,9 +111,7 @@
   },
   "flex-layout.col#footer--social-networks": {
     "title": "Redes Sociais",
-    "children": [
-      "social-networks#social-footer"
-    ]
+    "children": ["social-networks#social-footer"]
   },
   "social-networks#social-footer": {
     "props": {
@@ -150,7 +145,8 @@
       "flex-layout.col#payment-method--american",
       "flex-layout.col#payment-method--dinners",
       "flex-layout.col#payment-method--elo",
-      "flex-layout.col#payment-method--boleto"
+      "flex-layout.col#payment-method--boleto",
+      "flex-layout.col#payment-method--pix"
     ],
     "props": {
       "colGap": 6,
@@ -160,10 +156,7 @@
   },
   "flex-layout.col#payment-method--visa": {
     "props": {
-      "blockClass": [
-        "custom-payment-methods",
-        "custom-payment-methods--visa"
-      ]
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--visa"]
     }
   },
   "flex-layout.col#payment-method--mastercard": {
@@ -192,18 +185,18 @@
   },
   "flex-layout.col#payment-method--elo": {
     "props": {
-      "blockClass": [
-        "custom-payment-methods",
-        "custom-payment-methods--elo"
-      ]
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--elo"]
     }
   },
   "flex-layout.col#payment-method--boleto": {
     "props": {
-      "blockClass": [
-        "custom-payment-methods",
-        "custom-payment-methods--boleto"
-      ]
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--boleto"]
+    }
+  },
+  "flex-layout.col#payment-method--pix": {
+    "children": ["image#footer--info-pix-logo"],
+    "props": {
+      "blockClass": ["custom-payment-methods", "custom-payment-methods--pix"]
     }
   },
   "flex-layout.col#footer--info-vtex": {
@@ -238,6 +231,13 @@
     "props": {
       "src": "/arquivos/logovtex.png",
       "blockClass": "footer--info-vtex-logo"
+    }
+  },
+  "image#footer--info-pix-logo": {
+    "title": "Pix",
+    "props": {
+      "src": "/arquivos/pix.png",
+      "blockClass": "footer--info-pix-logo"
     }
   }
 }
