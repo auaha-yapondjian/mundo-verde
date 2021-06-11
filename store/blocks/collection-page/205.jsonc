@@ -1,0 +1,144 @@
+{
+  "store.custom#semana-do-esporte": {
+    "blocks": ["search-result-layout.customQuery#semana-do-esporte"]
+  },
+  "search-result-layout.customQuery#semana-do-esporte": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "queryField": "205",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#semana-do-esporte",
+      "search-result-layout.desktop#semana-do-esporte"
+    ]
+  },
+  "search-result-layout.desktop#semana-do-esporte": {
+    "children": [
+      "list-context.image-list#desktop-semana-do-esporte",
+      "flex-layout.row#result-semana-do-esporte"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
+  "search-result-layout.mobile#semana-do-esporte": {
+    "children": [
+      "list-context.image-list#mobile-semana-do-esporte",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "flex-layout.row#result-semana-do-esporte": {
+    "children": ["flex-layout.row#result#semana-do-esporte"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
+  "flex-layout.row#result#semana-do-esporte": {
+    "children": [
+      "flex-layout.col#filter-offers",
+      "flex-layout.col#result#semana-do-esporte"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "content-result--landing-promo"
+    }
+  },
+  "flex-layout.col#filter-offers": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "flex-layout.col#result#semana-do-esporte": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products#semana-do-esporte",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow"
+    }
+  },
+  "list-context.image-list#desktop-semana-do-esporte": {
+    "title": "Banner Página - Desktop",
+    "children": ["slider-layout#desktop-semana-do-esporte"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#desktop-semana-do-esporte": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+  "list-context.image-list#mobile-semana-do-esporte": {
+    "title": "Banner Página - Mobile",
+    "children": ["slider-layout#mobile-semana-do-esporte"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#mobile-semana-do-esporte": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+  "flex-layout.row#products#semana-do-esporte": {
+    "children": ["search-content#semana-do-esporte"]
+  },
+  "search-content#semana-do-esporte": {
+    "blocks": ["gallery#semana-do-esporte", "not-found"]
+  },
+  "gallery#semana-do-esporte": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxItemsPerRow": {
+        "desktop": 3
+      }
+    }
+  }
+}
