@@ -11,5 +11,8 @@
   },
   "ebit": {
     "component": "EBit"
+  },
+  "my-account-observer": {
+    "component": "AccountOrdersObserver"
   }
 }
