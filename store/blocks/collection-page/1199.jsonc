@@ -1,0 +1,144 @@
+{
+  "store.custom#festa-junina": {
+    "blocks": ["search-result-layout.customQuery#festa-junina"]
+  },
+  "search-result-layout.customQuery#festa-junina": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "queryField": "1199",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#festa-junina",
+      "search-result-layout.desktop#festa-junina"
+    ]
+  },
+  "search-result-layout.desktop#festa-junina": {
+    "children": [
+      "list-context.image-list#desktop-festa-junina",
+      "flex-layout.row#result-festa-junina"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
+  "search-result-layout.mobile#festa-junina": {
+    "children": [
+      "list-context.image-list#mobile-festa-junina",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "flex-layout.row#result-festa-junina": {
+    "children": ["flex-layout.row#result#festa-junina"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
+  "flex-layout.row#result#festa-junina": {
+    "children": [
+      "flex-layout.col#filter-offers",
+      "flex-layout.col#result#festa-junina"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "content-result--landing-promo"
+    }
+  },
+  "flex-layout.col#filter-offers": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "flex-layout.col#result#festa-junina": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products#festa-junina",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow"
+    }
+  },
+  "list-context.image-list#desktop-festa-junina": {
+    "title": "Banner Página - Desktop",
+    "children": ["slider-layout#desktop-festa-junina"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#desktop-festa-junina": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+  "list-context.image-list#mobile-festa-junina": {
+    "title": "Banner Página - Mobile",
+    "children": ["slider-layout#mobile-festa-junina"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#mobile-festa-junina": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+  "flex-layout.row#products#festa-junina": {
+    "children": ["search-content#festa-junina"]
+  },
+  "search-content#festa-junina": {
+    "blocks": ["gallery#festa-junina", "not-found"]
+  },
+  "gallery#festa-junina": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxItemsPerRow": {
+        "desktop": 3
+      }
+    }
+  }
+}
