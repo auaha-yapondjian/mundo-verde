@@ -1,12 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { canUseDOM, useRuntime } from "vtex.render-runtime";
 import axios from "axios";
+
+interface IDataItems {
+  id: string;
+  name: string;
+  quantity: number;
+  price: number;
+  unitMultiplier: number;
+  imageUrl: string;
+  detailUrl: string;
+}
 
 const AccountOrdersObserver: React.FC = () => {
   const [orderId, setOrderId] = useState<string>("");
   const [invoiceKey, setInvoiceKey] = useState<string>("");
   const [orderStatus, setOrderStatus] = useState<string>("");
   const [retirada, setRetirada] = useState<boolean>(false);
+  const [removedItems, setRemovedItems] = useState<[IDataItems]>();
+  const [orderItems, setOrderItems] = useState<[IDataItems]>();
   const { hints } = useRuntime();
 
   const waitForElementVar = (
@@ -64,8 +76,7 @@ const AccountOrdersObserver: React.FC = () => {
 
           const { invoiceKey } = data?.packageAttachment?.packages?.[0] || {};
 
-          console.log(data);
-
+          items(data);
           setInvoiceKey(invoiceKey);
         });
     }
@@ -316,6 +327,86 @@ const AccountOrdersObserver: React.FC = () => {
       aditionalInformation.style.display = "none";
     }
   };
+
+  const items = useCallback((data: any) => {
+    console.log(data);
+
+    let itemsRemoved = data?.changesAttachment?.changesData
+      ?.map((a: any) => a.itemsRemoved)
+      .flat(1);
+    let itemsAdd = data?.changesAttachment?.changesData
+      ?.map((a: any) => a.itemsAdd)
+      .flat(1);
+
+    if (itemsRemoved && itemsAdd) {
+      var orderRemovedItems = itemsRemoved
+        ?.filter((itemRemoved: IDataItems) => {
+          return !itemsAdd?.find(
+            (itemAdd: IDataItems) => itemAdd.id === itemRemoved.id
+          );
+        })
+        .flat(1);
+    } else {
+      var orderRemovedItems = itemsRemoved;
+    }
+
+    if (orderRemovedItems) {
+      var items = data?.items
+        .filter((item: IDataItems) => {
+          return !orderRemovedItems?.find(
+            (itemsRemoved: IDataItems) => itemsRemoved.id === item.id
+          );
+        })
+        .flat(1);
+    } else {
+      var items = data?.items.flat(1);
+    }
+
+    let removedItemsData = data?.items
+      .filter((item: IDataItems) => {
+        return orderRemovedItems?.find(
+          (itemsRemoved: IDataItems) => itemsRemoved.id === item.id
+        );
+      })
+      .flat(1);
+
+    if (removedItemsData?.length > 0) {
+      removedItemsData.forEach((removedItem: IDataItems) => {
+        removedItem.price = itemsRemoved.find(
+          (item: IDataItems) => item.id === removedItem.id
+        ).price;
+        removedItem.unitMultiplier = 1;
+      });
+
+      setRemovedItems(removedItemsData);
+    } else {
+      setRemovedItems(undefined);
+    }
+
+    console.log(itemsAdd);
+
+    if (itemsAdd) {
+      itemsAdd.forEach((element: IDataItems) => {
+        element.detailUrl = items.find(
+          (item: IDataItems) => item.id === element.id
+        )?.detailUrl;
+        element.imageUrl = items.find(
+          (item: IDataItems) => item.id === element.id
+        )?.imageUrl
+          ? items.find((item: IDataItems) => item.id === element.id)?.imageUrl
+          : "https://mundoverde.vtexassets.com/arquivos/sem-foto.gif";
+        element.unitMultiplier = 1;
+      });
+
+      items = items.filter((item: IDataItems) => {
+        return !itemsAdd?.find((itemAdd: IDataItems) => itemAdd.id === item.id);
+      });
+
+      items.push(...itemsAdd);
+      console.log(items);
+      setOrderItems(items);
+    }
+  }, []);
 
   useEffect(() => {
     waitForElementVar(".vtex-pageHeader__title", () => {
