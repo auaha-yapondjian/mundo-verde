@@ -76,11 +76,5 @@
   },
   "store.custom#festa-junina": {
     "path": "/festa-junina"
-  },
-  "store.custom#arraial-em-casa": {
-    "path": "/arraial-em-casa"
-  },
-  "store.custom#semana-do-esporte": {
-    "path": "/semana-do-esporte"
   }
 }
