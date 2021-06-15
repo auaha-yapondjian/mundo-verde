@@ -1,0 +1,10 @@
+:global(.vtex-account__order-details .fl.w-40-ns.pv3.pl0) {
+  display: flex;
+  flex-direction: column;
+}
+
+:global(.link-rastreio) {
+  color: #008651;
+  margin-top: 8px;
+  text-decoration: none;
+}
