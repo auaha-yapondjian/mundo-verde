@@ -4,7 +4,19 @@
 }
 
 :global(.link-rastreio) {
-  color: #008651;
+  background-color: #008651;
+  color: #fff;
   margin-top: 8px;
+  padding: 4px 8px;
   text-decoration: none;
+  width: 125px;
+  border-radius: 4px;
+}
+
+:global(.key-access-container) {
+  margin-bottom: 4px;
+}
+
+:global(.key-access-text) {
+  font-size: 0.875rem;
 }
