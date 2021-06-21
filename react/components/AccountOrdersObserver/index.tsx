@@ -49,14 +49,25 @@ const AccountOrdersObserver: React.FC = () => {
           element.innerHTML.toLowerCase() == "ver nota fiscal" ||
           element.innerHTML.toLowerCase() == "ver cupom fiscal"
         ) {
-          const div = document.createElement("div");
-          const span = document.createElement("span");
-          div.classList.add("key-access-container");
-          span.classList.add("key-access-text");
+          const keyAccessDiv = document.createElement("div");
+          const keyAccessSpan = document.createElement("span");
+          const keyAccessLink = document.createElement("a");
+
+          keyAccessDiv.classList.add("key-access-container");
+          keyAccessSpan.classList.add("key-access-text");
+          keyAccessLink.classList.add("key-access-link");
+
           if (orderNumber) {
-            span.innerHTML = `Chave de Acesso: ${orderNumber}`;
-            div.appendChild(span);
-            element.parentElement?.prepend(div);
+            keyAccessSpan.innerHTML = `Chave de Acesso: ${orderNumber}`;
+
+            keyAccessLink.innerHTML =
+              "Consulte sua Nota Fiscal com a Chave de Acesso aqui";
+            keyAccessLink.setAttribute("target", "_blank");
+            keyAccessLink.href = `http://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=&nfe=${orderNumber}`;
+
+            keyAccessDiv.appendChild(keyAccessLink);
+            keyAccessDiv.appendChild(keyAccessSpan);
+            element.parentElement?.prepend(keyAccessDiv);
           }
         }
       });
@@ -92,8 +103,8 @@ const AccountOrdersObserver: React.FC = () => {
         a.setAttribute("target", "_blank");
         a.classList.add("link-rastreio");
         a.textContent = "Link de rastreio";
-
-        trackingDiv.appendChild(a);
+        //www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=&nfe=32210617018091000276550020003819911886885327
+        http: trackingDiv.appendChild(a);
       }
     };
 
