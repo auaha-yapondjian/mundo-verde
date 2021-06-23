@@ -29,3 +29,7 @@
   font-size: 1rem;
   color: #008651;
 }
+
+:global(.vtex-account__page-body .w-100.pv7.fl .f6.link.no-underline.c-link) {
+  display: none;
+}
