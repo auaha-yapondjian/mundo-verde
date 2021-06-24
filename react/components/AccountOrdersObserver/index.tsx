@@ -86,6 +86,9 @@ const AccountOrdersObserver: React.FC = () => {
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
+            "X-VTEX-API-AppKey": "vtexappkey-mundoverde-DFLMLG",
+            "X-VTEX-API-AppToken":
+              "ADGXJINFWABHPRKPHPCFJGCHBRJRASXLHWGDZPYJHQKPIQAKDAKXAKEUAYWSZWFDCPATLGQSRSYTWMZKQZNZHZKWSLDASGKLLGMSQHYWKSGIMLYNZMBAIFWDFDAZDPZK",
           },
         });
 
