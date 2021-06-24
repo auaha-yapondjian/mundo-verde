@@ -10,6 +10,7 @@
     "children": [
       "telemarketing",
       "flex-layout.row#1-desktop",
+      "my-account-observer",
       "sticky-layout#2-desktop",
       "flex-layout.row#3-desktop"
     ]
@@ -115,6 +116,7 @@
     "children": [
       "telemarketing",
       "flex-layout.row#1-desktop",
+      "my-account-observer",
       "sticky-layout#1-mobile"
     ],
     "props": {
