@@ -103,8 +103,7 @@ const AccountOrdersObserver: React.FC = () => {
         a.setAttribute("target", "_blank");
         a.classList.add("link-rastreio");
         a.textContent = "Link de rastreio";
-        //www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=&nfe=32210617018091000276550020003819911886885327
-        http: trackingDiv.appendChild(a);
+        trackingDiv.appendChild(a);
       }
     };
 
