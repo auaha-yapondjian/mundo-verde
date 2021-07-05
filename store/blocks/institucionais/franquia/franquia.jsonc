@@ -8,6 +8,7 @@
       "flex-layout.row#main-content-franquia",
       //   "flex-layout.row#form-franquia"
       "sandbox#form-franquia"
+      // "franchise-form"
     ]
   },
   "image#bg-mission": {

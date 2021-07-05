@@ -14,5 +14,8 @@
   },
   "my-account-observer": {
     "component": "AccountOrdersObserver"
+  },
+  "franchise-form": {
+    "component": "FranchiseForm"
   }
 }
