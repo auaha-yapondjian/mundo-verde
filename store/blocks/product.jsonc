@@ -96,7 +96,7 @@
     "props": {
       "href": "/{brand}/"
     },
-    "children": ["vtex.store-components:product-brand"]
+    "children": []
   },
   "sku-selector": {
     "props": {
