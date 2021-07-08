@@ -8,7 +8,11 @@ export const maskDate = (date: string) => {
 
 export const handleClean = (obj: any) => {
   for (const key in obj) {
-    if (obj[key] === "" || obj[key] === undefined) {
+    if (
+      obj[key] === "" ||
+      obj[key] === undefined ||
+      obj[key] === "* Selecione *"
+    ) {
       delete obj[key];
     }
   }
