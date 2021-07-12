@@ -4,7 +4,7 @@ import axios from "axios";
 import { capitalRangesOptions, stateOptions } from "./utils";
 // components FranchiseForm
 import SendSuccessMessage from "./components/SendSuccessMessage";
-import { handleClean } from "../../utils/masks";
+
 import {
   Container,
   Form,
@@ -32,6 +32,7 @@ interface IRequiredFields {
   phone: boolean;
   capital: boolean;
   state: boolean;
+  message?: boolean;
 }
 
 const FranchiseForm: React.FC = () => {
@@ -58,17 +59,45 @@ const FranchiseForm: React.FC = () => {
       message,
     } = event.target as IFormTarget;
 
-    const data = {
-      nome: name.value,
+    const data: Record<string, any> = {
+      name: name.value,
       email: email.value,
-      telefone: phone.value,
+      phone: phone.value,
       capital: capital.value,
-      estado: state.value,
-      menssagem: message.value,
+      state: state.value,
+      message: message.value,
+    };
+    const fieldKeysList = Object.keys(data);
+
+    const validatedData = fieldKeysList.reduce(
+      (validatedData: any, currentField: string) => {
+        const currentFieldIsNotEmpty =
+          data[currentField] !== "" && data[currentField] !== "* Selecione *";
+        validatedData[currentField] = currentFieldIsNotEmpty;
+
+        validatedData.message = true;
+        return validatedData;
+      },
+      {} as IRequiredFields
+    );
+
+    const haveInvalidField = Object.values(validatedData).includes(false);
+    setValidFields(validatedData);
+
+    if (haveInvalidField) {
+      return;
+    }
+
+    const dataToSend = {
+      nome: data.name,
+      telefone: data.phone,
+      email: data.email,
+      capital: data.capital,
+      estado: data.state,
+      mensagem: data.message,
     };
 
-    const cleanObj = handleClean(data);
-    await axios.post("/api/dataentities/FR/documents/", cleanObj, {
+    await axios.post("/api/dataentities/FR/documents/", dataToSend, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

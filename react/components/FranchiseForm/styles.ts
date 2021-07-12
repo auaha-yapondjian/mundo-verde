@@ -83,7 +83,6 @@ export const Label = styled.label<IFormGroups>`
   font-weight: 700;
   width: 100%;
   color: ${({ validFields }) => !validFields && "#a94442"};
-
   @media (min-width: 768px) {
     padding-top: 7px;
     float: left;
@@ -141,7 +140,6 @@ export const Select = styled.select<IFormGroups>`
   color: #555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #e3e4e6;
   border-radius: 4px;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 
@@ -153,7 +151,7 @@ export const Select = styled.select<IFormGroups>`
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat;
 
-  border-color: ${({ validFields }) => !validFields && "#a94442 !important"};
+  border: ${({ validFields }) => !validFields ? "1px solid #a94442" : "1px solid #e3e4e6"};
 
   &:focus {
     border-color: #66afe6;
