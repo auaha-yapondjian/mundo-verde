@@ -19,15 +19,6 @@
       }
     }
   },
-  "store.search.v2": {
-    "blocks": ["search-result-layout"],
-    "props": {
-      "context": {
-        "priceRangeKey": "price",
-        "maxItemsPerPage": 12
-      }
-    }
-  },
   "store.search#department": {
     "blocks": ["search-result-layout"],
     "props": {

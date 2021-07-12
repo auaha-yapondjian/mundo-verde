@@ -3,9 +3,6 @@
     "before": ["header.full"],
     "after": ["footer"]
   },
-  "store.search.v2": {
-    "allowed": ["search-result", "search-result-layout"]
-  },
   "form-compliance": {
     "component": "FormCompliance"
   },
