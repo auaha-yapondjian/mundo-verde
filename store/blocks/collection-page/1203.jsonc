@@ -82,7 +82,8 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "grow"
+      "width": "grow",
+      "preventVerticalStretch": true
     }
   },
   "list-context.image-list#desktop-cozinha-saudavel": {
