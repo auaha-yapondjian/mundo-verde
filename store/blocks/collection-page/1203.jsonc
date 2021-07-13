@@ -5,7 +5,7 @@
   "search-result-layout.customQuery#cozinha-saudavel": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "queryField": "1203",
         "maxItemsPerPage": 18,
