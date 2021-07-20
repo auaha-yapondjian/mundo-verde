@@ -11,5 +11,8 @@
   },
   "my-account-observer": {
     "component": "AccountOrdersObserver"
+  },
+  "nossas-lojas": {
+    "component": "NossasLojas"
   }
 }
