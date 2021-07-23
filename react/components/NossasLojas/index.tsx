@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState, useRef, FormEvent } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ReactLoading from "react-loading";
 
 // Styles
