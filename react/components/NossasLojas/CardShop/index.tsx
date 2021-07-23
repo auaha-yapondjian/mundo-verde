@@ -8,7 +8,6 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 // Styles
 import { CardComponent, CardAddress, CardStatus } from "./style";
-import { ShopContainer } from "../styles";
 
 type Shop = {
   aberta_ao_publico: boolean;
@@ -53,13 +52,13 @@ export default function CardShop({ shop }: CardShopProps) {
             `
           Tel:
             (${shop?.telefone?.substring(0, 2)})
-             ${shop?.telefone?.substring(2, 6)} - 
+             ${shop?.telefone?.substring(2, 6)} -
              ${shop?.telefone?.substring(6, shop?.telefone?.length)}
             `}
           {shop?.telefone_2 &&
             `
                 / (${shop?.telefone_2?.substring(0, 2)})
-                ${shop?.telefone_2?.substring(2, 6)} - 
+                ${shop?.telefone_2?.substring(2, 6)} -
                 ${shop?.telefone_2?.substring(6, shop?.telefone_2?.length)}
               `}
         </p>
@@ -86,6 +85,7 @@ export default function CardShop({ shop }: CardShopProps) {
         )}
         {shop?.whatsapp && (
           <a
+            className="whatsapp"
             href={
               window.innerWidth < 768
                 ? `https://api.whatsapp.com/send?phone=55${shop.whatsapp}`
@@ -100,7 +100,7 @@ export default function CardShop({ shop }: CardShopProps) {
                 ${shop?.whatsapp?.substring(
                   2,
                   shop?.whatsapp?.length === 11 ? 7 : 6
-                )} - 
+                )} -
                 ${shop?.whatsapp?.substring(
                   shop?.whatsapp?.length === 11 ? 7 : 6,
                   shop?.whatsapp?.length

@@ -64,9 +64,11 @@ export const ShopContainer = styled.div`
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, clamp(200px, 100%, 260px));
   }
+
   @media (max-width: 930px) {
     grid-template-columns: repeat(2, clamp(200px, 100%, 260px));
   }
+
   @media (max-width: 675px) {
     grid-template-columns: repeat(1, clamp(200px, 100%, 260px));
   } ;

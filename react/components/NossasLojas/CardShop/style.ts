@@ -17,6 +17,7 @@ export const CardComponent = styled.div`
   > img {
     width: 110px;
   }
+
   h4,
   p,
   a {
@@ -25,6 +26,7 @@ export const CardComponent = styled.div`
     color: black;
     text-decoration: none;
   }
+
   P,
   a {
     display: flex;
@@ -34,13 +36,16 @@ export const CardComponent = styled.div`
     font-size: 14px;
     font-weight: 500;
   }
+
   h4 {
     font-size: 16px;
     font-weight: 1000;
   }
+
   a {
     cursor: pointer;
   }
+
   svg {
     width: 13px;
     display: flex;
@@ -52,12 +57,13 @@ export const CardAddress = styled.div`
   display: flex;
   gap: 5px;
   flex-direction: column;
-
   height: 150px;
+
   h4 {
     font-weight: 800;
   }
 `;
+
 export const CardStatus = styled.div`
   display: flex;
   flex-direction: column;
