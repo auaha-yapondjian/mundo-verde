@@ -79,8 +79,8 @@
       "blockClass": "product-info-right"
     },
     "children": [
-      "link.product#product-page",
       "vtex.store-components:product-name",
+      "link.product#product-page",
       "product-identifier.product",
       "product-rating-summary",
       "flex-layout.row#product-price-and-buy-button",
@@ -96,7 +96,7 @@
     "props": {
       "href": "/{brand}/"
     },
-    "children": []
+    "children": ["vtex.store-components:product-brand"]
   },
   "sku-selector": {
     "props": {

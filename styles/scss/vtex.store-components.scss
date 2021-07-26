@@ -342,6 +342,10 @@
     }
   }
 
+  :global(.vtex-store-components-3-x-shippingTableRadioBtn) {
+    display: none;
+  }
+
   :global(.vtex-reviews-and-ratings-1-x-summaryContainer) {
     font-size: 0;
   }
@@ -353,6 +357,7 @@
 
   .productBrandName {
     color: #7c7c7c;
+    text-decoration: underline;
   }
 
   .price_listPriceContainer {
