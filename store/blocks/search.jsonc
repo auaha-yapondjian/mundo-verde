@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout", "flex-layout.row#about"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -29,7 +29,7 @@
     }
   },
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout", "flex-layout.row#about"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -422,6 +422,122 @@
       "text": "",
       "width": "65%",
       "blockClass": "category-info-content"
+    }
+  },
+  "flex-layout.row#about": {
+    "title": "SEO 1",
+    "children": ["flex-layout.col#about-container"],
+    "props": {
+      "blockClass": "container-about"
+    }
+  },
+  "flex-layout.col#about-container": {
+    "children": [
+      "flex-layout.row#about-1",
+      "flex-layout.row#about-2",
+      "flex-layout.row#about-3"
+    ]
+  },
+  "flex-layout.row#about-1": {
+    "children": ["rich-text#about-title"]
+  },
+  "flex-layout.row#about-2": {
+    "children": ["flex-layout.col#content-1", "flex-layout.col#content-2"]
+  },
+  "flex-layout.col#content-1": {
+    "children": ["image#banner-content"],
+    "props": {
+      "width": "30%"
+    }
+  },
+  "flex-layout.col#content-2": {
+    "children": ["rich-text#content-2-text"],
+    "props": {
+      "width": "68%",
+      "blockClass": "abount-text-content-2"
+    }
+  },
+  "flex-layout.row#about-3": {
+    "children": ["flex-layout.col#content-3", "flex-layout.col#content-4"]
+  },
+  "flex-layout.col#content-3": {
+    "children": ["rich-text#about-subtitle-1", "rich-text#content-3-text"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#content-4": {
+    "children": ["rich-text#about-subtitle-2", "rich-text#content-4-text"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "image#banner-content": {
+    "props": {
+      "src": ""
+    }
+  },
+  "rich-text#about-title": {
+    "title": "Text 1 SEO",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "aaaaa",
+      "textColor": "c-on-base",
+      "font": "t-heading-10",
+      "blockClass": "about-title-category"
+    }
+  },
+  "rich-text#about-subtitle-1": {
+    "title": "SubTitle 1 SEO",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "bbbb",
+      "textColor": "c-on-base",
+      "font": "t-heading-10",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#about-subtitle-2": {
+    "title": "SubTitle 2 SEO",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "cccc",
+      "textColor": "c-on-base",
+      "font": "t-heading-10",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-2-text": {
+    "title": "Text Row 2 Col 2 SEO",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "asdasdasds",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "rich-text#content-3-text": {
+    "title": "Text Row 3 Col 1 SEO",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "asdasdasd",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "rich-text#content-4-text": {
+    "title": "Text Row 3 Col 2 SEO",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "dssdasdasd",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
     }
   }
 }

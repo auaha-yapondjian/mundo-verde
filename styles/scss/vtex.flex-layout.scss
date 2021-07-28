@@ -3,6 +3,14 @@
   padding: 0 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .flexRowContent--container-about {
+    padding-left: 1rem;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -1133,4 +1141,10 @@
 .flexCol--text-col-compliance {
   max-width: 1250px;
   padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .flexCol--abount-text-content-2 {
+    margin-left: 2rem;
+  }
 }

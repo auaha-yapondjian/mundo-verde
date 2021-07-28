@@ -51,6 +51,33 @@
   color: #03034e;
 }
 
+.container--about-title-category {
+  color: #008651;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+.container--about-title-quetions .heading-level-4 {
+  color: #008651;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 50px 0 10px 0;
+  height: auto;
+}
+
+.container--about-description {
+  font-family: sans-serif;
+  padding-right: 10px;
+}
+
+.container--about-description .paragraph {
+  font-family: sans-serif;
+  margin: 0;
+}
+
 .container--question .strong {
   font-size: 32px;
   line-height: 2rem;
