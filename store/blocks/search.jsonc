@@ -478,64 +478,64 @@
     }
   },
   "rich-text#about-title": {
-    "title": "Text 1 SEO",
+    "title": "Titulo Principal SEO",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "aaaaa",
+      "text": "",
       "textColor": "c-on-base",
       "font": "t-heading-10",
       "blockClass": "about-title-category"
     }
   },
   "rich-text#about-subtitle-1": {
-    "title": "SubTitle 1 SEO",
+    "title": "SubTitle 1 Col",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "bbbb",
+      "text": "",
       "textColor": "c-on-base",
       "font": "t-heading-10",
       "blockClass": "about-title-quetions"
     }
   },
   "rich-text#about-subtitle-2": {
-    "title": "SubTitle 2 SEO",
+    "title": "SubTitle 2 Col",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "cccc",
+      "text": "",
       "textColor": "c-on-base",
       "font": "t-heading-10",
       "blockClass": "about-title-quetions"
     }
   },
   "rich-text#content-2-text": {
-    "title": "Text Row 2 Col 2 SEO",
+    "title": "Texto a Direita Imagem",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "asdasdasds",
+      "text": "",
       "textColor": "c-on-base",
       "blockClass": "about-description"
     }
   },
   "rich-text#content-3-text": {
-    "title": "Text Row 3 Col 1 SEO",
+    "title": "Texto 1 Coluna Esquerda",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "asdasdasd",
+      "text": "",
       "textColor": "c-on-base",
       "blockClass": "about-description"
     }
   },
   "rich-text#content-4-text": {
-    "title": "Text Row 3 Col 2 SEO",
+    "title": "Texto 2 Coluna direita",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "dssdasdasd",
+      "text": "",
       "textColor": "c-on-base",
       "blockClass": "about-description"
     }

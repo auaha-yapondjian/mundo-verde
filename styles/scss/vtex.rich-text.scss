@@ -59,7 +59,7 @@
   font-family: sans-serif;
 }
 
-.container--about-title-quetions .heading-level-4 {
+.container--about-title-quetions .heading {
   color: #008651;
   margin: 0;
   font-weight: 700;
@@ -71,6 +71,30 @@
 .container--about-description {
   font-family: sans-serif;
   padding-right: 10px;
+
+  .strong {
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .italic {
+    font-family: sans-serif;
+  }
+
+  .link {
+    color: #008651;
+    font-family: sans-serif;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+
+  .listItem {
+    font-family: sans-serif;
+  }
 }
 
 .container--about-description .paragraph {
