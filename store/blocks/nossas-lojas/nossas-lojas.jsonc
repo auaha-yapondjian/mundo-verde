@@ -13,7 +13,7 @@
     }
   },
   "flex-layout.row#content--nossas-lojas": {
-    "children": ["sandbox#nossas-lojas"],
+    "children": ["nossas-lojas"],
     "props": {
       "blockClass": "nossas-lojas--content"
     }
