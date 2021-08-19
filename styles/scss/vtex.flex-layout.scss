@@ -1148,3 +1148,28 @@
     margin-left: 2rem;
   }
 }
+
+// category footer texts
+.flexRow--category-footer-texts {
+  max-width: 1250px;
+  margin: auto;
+  padding: 16px 0 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--category-footer-texts) {
+  @media (max-width: 1215px) {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.flexCol--category-footer-img-container {
+  padding: 0 15px;
+  background: url("/arquivos/background.png") no-repeat;
+
+  :global(.vtex-flex-layout-0-x-flexColChild--category-footer-img-content) {
+    margin-left: 100px;
+  }
+}
+// category footer texts

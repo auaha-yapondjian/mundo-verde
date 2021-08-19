@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout", "flex-layout.row#about"],
+    "blocks": ["search-result-layout", "flex-layout.row#category-footer-texts"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -29,7 +29,7 @@
     }
   },
   "store.search#category": {
-    "blocks": ["search-result-layout", "flex-layout.row#about"],
+    "blocks": ["search-result-layout", "flex-layout.row#category-footer-texts"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -424,120 +424,99 @@
       "blockClass": "category-info-content"
     }
   },
-  "flex-layout.row#about": {
-    "title": "SEO 1",
-    "children": ["flex-layout.col#about-container"],
-    "props": {
-      "blockClass": "container-about"
-    }
-  },
-  "flex-layout.col#about-container": {
+  "flex-layout.row#category-footer-texts": {
+    "title": "Conteúdo SEO",
     "children": [
-      "flex-layout.row#about-1",
-      "flex-layout.row#about-2",
-      "flex-layout.row#about-3"
-    ]
-  },
-  "flex-layout.row#about-1": {
-    "children": ["rich-text#about-title"]
-  },
-  "flex-layout.row#about-2": {
-    "children": ["flex-layout.col#content-1", "flex-layout.col#content-2"]
-  },
-  "flex-layout.col#content-1": {
-    "children": ["image#banner-content"],
+      "flex-layout.col#category-footer-img-container",
+      "flex-layout.col#category-footer-texts-container"
+    ],
     "props": {
-      "width": "30%"
+      "blockClass": "category-footer-texts"
     }
   },
-  "flex-layout.col#content-2": {
-    "children": ["rich-text#content-2-text"],
+  "flex-layout.col#category-footer-img-container": {
+    "children": ["flex-layout.col#category-footer-img-content"],
     "props": {
-      "width": "68%",
-      "blockClass": "abount-text-content-2"
+      "blockClass": "category-footer-img-container"
     }
   },
-  "flex-layout.row#about-3": {
-    "children": ["flex-layout.col#content-3", "flex-layout.col#content-4"]
-  },
-  "flex-layout.col#content-3": {
-    "children": ["rich-text#about-subtitle-1", "rich-text#content-3-text"],
+  "flex-layout.col#category-footer-img-content": {
+    "children": ["image#category-img-content"],
     "props": {
+      "blockClass": "category-footer-img-content"
+    }
+  },
+  "image#category-img-content": {
+    "props": {
+      "src": "/arquivos/whey-category-footer-testing.png"
+    }
+  },
+  "flex-layout.col#category-footer-texts-container": {
+    "children": [
+      "flex-layout.col#category-footer-texts-title-container",
+      "flex-layout.col#category-footer-texts-description-container"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts-container",
       "preventVerticalStretch": true
     }
   },
-  "flex-layout.col#content-4": {
-    "children": ["rich-text#about-subtitle-2", "rich-text#content-4-text"],
+  "flex-layout.col#category-footer-texts-title-container": {
+    "children": [
+      "rich-text#category-footer-texts-title",
+      "rich-text#category-footer-texts-subtitle",
+      "flex-layout.row#category-footer-texts-border-container"
+    ],
     "props": {
+      "blockClass": "category-footer-texts-title-container",
       "preventVerticalStretch": true
     }
   },
-  "image#banner-content": {
+  "flex-layout.col#category-footer-texts-description-container": {
+    "children": ["rich-text#category-footer-texts-description"],
     "props": {
-      "src": ""
+      "blockClass": "category-footer-texts-description-container",
+      "preventVerticalStretch": true
     }
   },
-  "rich-text#about-title": {
-    "title": "Titulo Principal SEO",
+  "rich-text#category-footer-texts-title": {
+    "title": "Título Principal SEO",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "",
-      "textColor": "c-on-base",
-      "font": "t-heading-10",
-      "blockClass": "about-title-category"
+      "text": "Whey Protein",
+      "blockClass": "category-footer-texts-title"
     }
   },
-  "rich-text#about-subtitle-1": {
-    "title": "SubTitle 1 Col",
+  "rich-text#category-footer-texts-subtitle": {
+    "title": "Subtítulo Principal",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "",
-      "textColor": "c-on-base",
-      "font": "t-heading-10",
-      "blockClass": "about-title-quetions"
+      "text": "o que é, como tomar e onde comprar",
+      "blockClass": "category-footer-texts-subtitle"
     }
   },
-  "rich-text#about-subtitle-2": {
-    "title": "SubTitle 2 Col",
+  "flex-layout.row#category-footer-texts-border-container": {
+    "children": ["rich-text#category-footer-texts-border"],
+    "props": {
+      "blockClass": "category-footer-texts-border-container"
+    }
+  },
+  "rich-text#category-footer-texts-border": {
+    "title": "Borda",
+    "props": {
+      "text": ".",
+      "blockClass": "category-footer-texts-border"
+    }
+  },
+  "rich-text#category-footer-texts-description": {
+    "title": "Descrição Principal",
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "",
-      "textColor": "c-on-base",
-      "font": "t-heading-10",
-      "blockClass": "about-title-quetions"
-    }
-  },
-  "rich-text#content-2-text": {
-    "title": "Texto a Direita Imagem",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "",
-      "textColor": "c-on-base",
-      "blockClass": "about-description"
-    }
-  },
-  "rich-text#content-3-text": {
-    "title": "Texto 1 Coluna Esquerda",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "",
-      "textColor": "c-on-base",
-      "blockClass": "about-description"
-    }
-  },
-  "rich-text#content-4-text": {
-    "title": "Texto 2 Coluna direita",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "",
-      "textColor": "c-on-base",
-      "blockClass": "about-description"
+      "text": "Whey protein é um dos suplementos para ganhar massa muscular mais apreciados por atletas e adeptos da musculação. Contudo, está cada vez mais em alta a utilização de whey protein como ingrediente em receitas fit, e não apenas como suplemento. Mas, vamos saber mais sobre whey protein, para que serve, seus benefícios, whey protein como tomar, os tipos de whey protein, entre outras coisas.",
+      "blockClass": "category-footer-texts-description"
     }
   }
 }

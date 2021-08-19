@@ -478,3 +478,73 @@
   }
 }
 // Fim Popup Black Friday
+
+// category footer texts
+
+:global(.vtex-rich-text-0-x-paragraph--category-footer-texts-title) {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 35px auto 0;
+  line-height: 26px;
+  color: #4b2b4a;
+  text-transform: uppercase;
+  font-family: Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--category-footer-texts-subtitle) {
+  font-size: 1.65rem;
+  font-weight: bold;
+  color: #4b2b4a;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--category-footer-texts-border) {
+  width: 100%;
+  position: relative;
+  margin-right: 30px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--category-footer-texts-border) {
+  background: #4b2b4a;
+  height: 2.5px;
+  position: absolute;
+  width: 120%;
+  max-width: 85vw;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  right: 0;
+
+  &::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2.5px solid #4b2b4a;
+    position: absolute;
+    left: -30px;
+  }
+
+  @media all and (max-width: 1250px) {
+    width: 102%;
+    margin-top: 8px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 90%;
+  }
+}
+
+:global(.vtex-rich-text-0-x-paragraph--category-footer-texts-description) {
+  color: #158957;
+  font-size: 16px;
+  margin-top: 24px;
+  line-height: 30px;
+}
+
+// category footer texts
