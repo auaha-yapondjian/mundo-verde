@@ -14,5 +14,8 @@
   },
   "nossas-lojas": {
     "component": "NossasLojas"
+  },
+  "text-observer": {
+    "component": "TextObserver"
   }
 }
