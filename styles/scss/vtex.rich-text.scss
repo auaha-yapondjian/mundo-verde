@@ -70,7 +70,7 @@
 
 .container--about-description {
   font-family: sans-serif;
-  padding-right: 10px;
+  padding-right: 30px;
 
   .strong {
     font-weight: bold;
@@ -100,6 +100,9 @@
 .container--about-description .paragraph {
   font-family: sans-serif;
   margin: 0;
+  color: #158957;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .container--question .strong {
@@ -545,6 +548,16 @@
   font-size: 16px;
   margin-top: 24px;
   line-height: 30px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--about-title-quetions) {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4b2b4a;
+  text-transform: uppercase;
+  margin: 20px 0 8px;
+  font-family: Gotham, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 // category footer texts

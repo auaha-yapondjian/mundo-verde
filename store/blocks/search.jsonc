@@ -1,6 +1,9 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout", "flex-layout.row#category-footer-texts"],
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#category-footer-texts-content"
+    ],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -29,7 +32,10 @@
     }
   },
   "store.search#category": {
-    "blocks": ["search-result-layout", "flex-layout.row#category-footer-texts"],
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#category-footer-texts-content"
+    ],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -424,8 +430,27 @@
       "blockClass": "category-info-content"
     }
   },
-  "flex-layout.row#category-footer-texts": {
+  "flex-layout.row#category-footer-texts-content": {
     "title": "Conteúdo SEO",
+    "children": ["flex-layout.col#category-footer-texts"],
+    "props": {
+      "blockClass": "category-footer-texts-row-container"
+    }
+  },
+  "flex-layout.col#category-footer-texts": {
+    "children": [
+      "flex-layout.row#category-footer-texts",
+      "flex-layout.row#category-footer-subtexts-1",
+      "flex-layout.row#category-footer-subtexts-2",
+      "flex-layout.row#category-footer-subtexts-3",
+      "flex-layout.row#category-footer-subtexts-4",
+      "flex-layout.row#category-footer-subtexts-5"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts-col-container"
+    }
+  },
+  "flex-layout.row#category-footer-texts": {
     "children": [
       "flex-layout.col#category-footer-img-container",
       "flex-layout.col#category-footer-texts-container"
@@ -517,6 +542,311 @@
       "textPosition": "LEFT",
       "text": "Whey protein é um dos suplementos para ganhar massa muscular mais apreciados por atletas e adeptos da musculação. Contudo, está cada vez mais em alta a utilização de whey protein como ingrediente em receitas fit, e não apenas como suplemento. Mas, vamos saber mais sobre whey protein, para que serve, seus benefícios, whey protein como tomar, os tipos de whey protein, entre outras coisas.",
       "blockClass": "category-footer-texts-description"
+    }
+  },
+  "flex-layout.row#category-footer-subtexts-1": {
+    "children": [
+      "flex-layout.col#category-footer-subtexts-container-1",
+      "flex-layout.col#category-footer-subtexts-container-2"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-1": {
+    "children": ["rich-text#about-subtitle-1", "rich-text#content-text-1"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-1": {
+    "title": "SubTitle 1 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "O que é Whey protein?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-1": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "O whey é uma proteína de alta qualidade (alto valor biológico) que possui rápida absorção no organismo. Essa valorização se deu pela alta quantidade de aminoácidos essenciais que possui, incluindo os BCAAs (leucina, valina e isoleucina) e também pela baixa quantidade de gorduras, que é justificada pelo fato de utilizar apenas o soro do leite no seu processo de extração.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-2": {
+    "children": ["rich-text#about-subtitle-2", "rich-text#content-text-2"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-2": {
+    "title": "SubTitle 2 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Diferença entre o whey protein concentrado, isolado e hidrolisado",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-2": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "As principais diferenças são a quantidade de proteínas e a velocidade de absorção entre elas. O concentrado tem menor quantidade de proteínas, o isolado possui mais proteínas que o concentrado e o hidrolisado é o que contém mais proteínas.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.row#category-footer-subtexts-2": {
+    "children": [
+      "flex-layout.col#category-footer-subtexts-container-3",
+      "flex-layout.col#category-footer-subtexts-container-4"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-3": {
+    "children": ["rich-text#about-subtitle-3", "rich-text#content-text-3"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-3": {
+    "title": "SubTitle 3 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Para que serve whey protein e quais são seus benefícios?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-3": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "O whey protein pode ser consumido em diversos momentos do dia, como você poderá observar no decorrer deste texto.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-4": {
+    "children": ["rich-text#about-subtitle-4", "rich-text#content-text-4"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-4": {
+    "title": "SubTitle 4 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Whey protein para hipertrofia",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-4": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Como vimos, a proteína do soro do leite pode promover diversos benefícios para a saúde. No entanto, a sua fama se dá, principalmente, por auxiliar na hipertrofia – aumento da massa muscular promovida pelo estímulo muscular a partir de exercícios como a musculação.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.row#category-footer-subtexts-3": {
+    "children": [
+      "flex-layout.col#category-footer-subtexts-container-5",
+      "flex-layout.col#category-footer-subtexts-container-6"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-5": {
+    "children": ["rich-text#about-subtitle-5", "rich-text#content-text-5"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-5": {
+    "title": "SubTitle 5 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Whey protein engorda?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-5": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Muita gente tem dúvida: whey protein engorda ou whey protein emagrece? Importante ressaltar que a proteína oferece as mesmas calorias do carboidrato, portanto, o whey protein pode engordar sim, dependendo de como for consumido. Apesar de ter como principal objetivo o ganho de massa magra, o suplemento whey protein também pode influenciar no ganho de massa gorda. Isso pode ocorrer quando o suplemento está inserido dentro de uma alimentação na qual há um consumo calórico maior do que será gasto.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-6": {
+    "children": ["rich-text#about-subtitle-6", "rich-text#content-text-6"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-6": {
+    "title": "SubTitle 6 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Qual melhor whey protein?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-6": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Como já foram mostradas as diferenças entre o whey protein concentrado, whey protein isolado e whey protein hidrolisado, a escolha do *melhor whey protein * depende de dois fatores: quanto está disposto a gastar? Qual a sua real necessidade? Se você for intolerante à lactose, o ideal é o hidrolisado; se estiver com pouca grana, o concentrado já supre as necessidades; e se quiser um meio termo, o isolado é muito indicado! Respondendo a esses questionamentos e sabendo a diferença entre eles, escolha o whey protein ideal para você!",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.row#category-footer-subtexts-4": {
+    "children": [
+      "flex-layout.col#category-footer-subtexts-container-7",
+      "flex-layout.col#category-footer-subtexts-container-8"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-7": {
+    "children": ["rich-text#about-subtitle-7", "rich-text#content-text-7"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-7": {
+    "title": "SubTitle 7 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Como tomar whey protein?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-7": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Saber como tomar whey protein é essencial para obter melhores resultados. O consumo do whey pode ser feito tanto no pré quanto no pós-treino. Estudos comprovam efeitos benéficos nos dois momentos, sobretudo em relação à resposta anabólica (equilíbrio entre as proteínas musculares). Nos dois momentos, a função do whey será aumentar a síntese e o balanço proteico, evitar o catabolismo (perda de massa magra), construir e preservar músculo e recuperação muscular, principalmente no pós-treino.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-8": {
+    "children": ["rich-text#about-subtitle-8", "rich-text#content-text-8"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-8": {
+    "title": "SubTitle 8 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Mulheres podem consumir whey protein?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-8": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Sim! O suplemento pode ser consumido tanto por homens quanto por mulheres. Inclusive, existe uma grande variedade de whey protein específico para mulheres, com adição de colágeno hidrolisado, vitaminas e minerais.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.row#category-footer-subtexts-5": {
+    "children": [
+      "flex-layout.col#category-footer-subtexts-container-9",
+      "flex-layout.col#category-footer-subtexts-container-10"
+    ],
+    "props": {
+      "blockClass": "category-footer-texts"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-9": {
+    "children": ["rich-text#about-subtitle-9", "rich-text#content-text-9"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-9": {
+    "title": "SubTitle 9 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Por que whey protein é caro?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-9": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Como já vimos, o whey protein é obtido a partir da fabricação do queijo, na qual o soro do leite é separado e filtrado. Nesse soro, estão disponíveis proteínas de alta qualidade que são utilizadas para a produção do whey protein.",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
+    }
+  },
+  "flex-layout.col#category-footer-subtexts-container-10": {
+    "children": ["rich-text#about-subtitle-10", "rich-text#content-text-10"],
+    "props": {
+      "blockClass": "category-footer-subtexts-container",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-subtitle-10": {
+    "title": "SubTitle 10 Col",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Onde comprar Whey Protein?",
+      "blockClass": "about-title-quetions"
+    }
+  },
+  "rich-text#content-text-10": {
+    "title": "SubText Description",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Agora que você sabe tudo de whey protein, como tomar e como inseri-lo na sua dieta alimentar, saiba que aqui, na Natue, você pode comprar whey protein com as melhores marcas e variedades, inclusive whey protein para mulheres. Whey protein, preço imbatível. Confira!",
+      "textColor": "c-on-base",
+      "blockClass": "about-description"
     }
   }
 }
