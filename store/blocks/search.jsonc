@@ -44,7 +44,10 @@
     }
   },
   "store.search#subcategory": {
-    "blocks": ["search-result-layout#subcategory"],
+    "blocks": [
+      "search-result-layout#subcategory",
+      "flex-layout.row#category-footer-texts-content"
+    ],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
