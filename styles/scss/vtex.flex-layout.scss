@@ -1165,11 +1165,8 @@
 }
 
 .flexCol--category-footer-img-container {
-  padding: 0 15px;
-  background: url("/arquivos/background.png") no-repeat;
-
   :global(.vtex-flex-layout-0-x-flexColChild--category-footer-img-content) {
-    margin-left: 100px;
+    margin: 0 170px 0 auto;
   }
 }
 // category footer texts
