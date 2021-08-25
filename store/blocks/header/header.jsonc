@@ -4,6 +4,7 @@
   },
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    // testing
   },
   "header-layout.desktop": {
     "title": "Header Desktop",
