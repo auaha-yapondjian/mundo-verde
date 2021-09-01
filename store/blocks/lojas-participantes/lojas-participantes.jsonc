@@ -7,7 +7,7 @@
     ]
   },
   "flex-layout.row#header--lojas-participantes": {
-    "children": ["rich-text#title-nossas-loja"],
+    "children": ["rich-text#title-lojas-participantes"],
     "props": {
       "blockClass": "nossas-lojas--header"
     }
@@ -41,9 +41,9 @@
       "fullWidth": true
     }
   },
-  "rich-text#title-nossas-loja": {
+  "rich-text#title-lojas-participantes": {
     "props": {
-      "text": "# Encontre a loja mais próxima da sua casa",
+      "text": "# Confira as lojas que seu desconto pode ser utilizado",
       "blockClass": "nossas-lojas--title"
     }
   }
