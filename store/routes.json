@@ -79,5 +79,8 @@
   },
   "store.custom#cozinha-saudavel": {
     "path": "/cozinha-saudavel"
+  },
+  "store.custom#semana-do-brasil": {
+    "path": "/semana-do-brasil"
   }
 }

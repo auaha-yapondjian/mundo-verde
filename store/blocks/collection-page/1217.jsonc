@@ -1,0 +1,145 @@
+{
+  "store.custom#semana-do-brasil": {
+    "blocks": ["search-result-layout.customQuery#semana-do-brasil"]
+  },
+  "search-result-layout.customQuery#semana-do-brasil": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByScoreDESC",
+        "hideUnavailableItems": false,
+        "queryField": "1217",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#semana-do-brasil",
+      "search-result-layout.desktop#semana-do-brasil"
+    ]
+  },
+  "search-result-layout.desktop#semana-do-brasil": {
+    "children": [
+      "list-context.image-list#desktop-semana-do-brasil",
+      "flex-layout.row#result-semana-do-brasil"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
+  "search-result-layout.mobile#semana-do-brasil": {
+    "children": [
+      "list-context.image-list#mobile-semana-do-brasil",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "flex-layout.row#result-semana-do-brasil": {
+    "children": ["flex-layout.row#result#semana-do-brasil"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
+  "flex-layout.row#result#semana-do-brasil": {
+    "children": [
+      "flex-layout.col#filter-offers",
+      "flex-layout.col#result#semana-do-brasil"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "content-result--landing-promo"
+    }
+  },
+  "flex-layout.col#filter-offers": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "flex-layout.col#result#semana-do-brasil": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products#semana-do-brasil",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "list-context.image-list#desktop-semana-do-brasil": {
+    "title": "Banner Página - Desktop",
+    "children": ["slider-layout#desktop-semana-do-brasil"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#desktop-semana-do-brasil": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+  "list-context.image-list#mobile-semana-do-brasil": {
+    "title": "Banner Página - Mobile",
+    "children": ["slider-layout#mobile-semana-do-brasil"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#mobile-semana-do-brasil": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+  "flex-layout.row#products#semana-do-brasil": {
+    "children": ["search-content#semana-do-brasil"]
+  },
+  "search-content#semana-do-brasil": {
+    "blocks": ["gallery#semana-do-brasil", "not-found"]
+  },
+  "gallery#semana-do-brasil": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxItemsPerRow": {
+        "desktop": 3
+      }
+    }
+  }
+}
