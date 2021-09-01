@@ -1,0 +1,50 @@
+{
+  "store.custom#lojas-participantes": {
+    "blocks": [
+      "list-context.image-list#main-banner",
+      "flex-layout.row#header--lojas-participantes",
+      "flex-layout.row#content--lojas-participantes"
+    ]
+  },
+  "flex-layout.row#header--lojas-participantes": {
+    "children": ["rich-text#title-nossas-loja"],
+    "props": {
+      "blockClass": "nossas-lojas--header"
+    }
+  },
+  "flex-layout.row#content--lojas-participantes": {
+    "children": ["lojas-participantes"],
+    "props": {
+      "blockClass": "nossas-lojas--content"
+    }
+  },
+  "list-context.image-list#main-banner": {
+    "title": "Banner Principal",
+    "children": ["slider-layout#banner-images"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  "slider-layout#banner-images": {
+    "title": "Configuração Slider Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true
+    }
+  },
+  "rich-text#title-nossas-loja": {
+    "props": {
+      "text": "# Encontre a loja mais próxima da sua casa",
+      "blockClass": "nossas-lojas--title"
+    }
+  }
+}
