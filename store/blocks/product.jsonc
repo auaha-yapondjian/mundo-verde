@@ -1,16 +1,16 @@
 {
   "store.product": {
     "children": [
-      "chaordic-div#top",
+      // "chaordic-div#top",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
       "product-reviews",
       "product-questions-and-answers",
-      "chaordic-div#middle",
+      // "chaordic-div#middle",
       "shelf.relatedProducts#View",
-      "shelf.relatedProducts#AlsoBought",
-      "chaordic-div#bottom"
+      "shelf.relatedProducts#AlsoBought"
+      // "chaordic-div#bottom"
     ]
   },
   "flex-layout.row#product-breadcrumb": {

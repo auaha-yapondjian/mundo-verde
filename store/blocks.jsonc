@@ -178,20 +178,20 @@
       },
       "pagination": "show-more"
     }
-  },
-  "chaordic-div#top": {
-    "props": {
-      "position": "top"
-    }
-  },
-  "chaordic-div#middle": {
-    "props": {
-      "position": "middle"
-    }
-  },
-  "chaordic-div#bottom": {
-    "props": {
-      "position": "bottom"
-    }
   }
+  // "chaordic-div#top": {
+  //   "props": {
+  //     "position": "top"
+  //   }
+  // },
+  // "chaordic-div#middle": {
+  //   "props": {
+  //     "position": "middle"
+  //   }
+  // },
+  // "chaordic-div#bottom": {
+  //   "props": {
+  //     "position": "bottom"
+  //   }
+  // }
 }
