@@ -1,8 +1,6 @@
 {
   "vtex.menu@2.x:menu#custom-menu": {
-    "children": [
-      "menu-item#promocoes"
-    ]
+    "children": ["menu-item#promocoes"]
   },
   "menu-item#lojas": {
     "props": {
@@ -29,7 +27,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/ofertas-mundo-verde",
+        "href": "/ofertas",
         "noFollow": false,
         "tagTitle": "Promoções",
         "text": "Promoções"

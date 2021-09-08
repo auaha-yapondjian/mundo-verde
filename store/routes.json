@@ -82,5 +82,8 @@
   },
   "store.custom#semana-do-brasil": {
     "path": "/semana-do-brasil"
+  },
+  "store.custom#ofertas": {
+    "path": "/ofertas"
   }
 }
