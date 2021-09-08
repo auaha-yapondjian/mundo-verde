@@ -17,5 +17,8 @@
   },
   "text-observer": {
     "component": "TextObserver"
+  },
+  "badges": {
+    "component": "ProductBadges"
   }
 }

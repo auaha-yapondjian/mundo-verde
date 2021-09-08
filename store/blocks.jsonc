@@ -45,7 +45,8 @@
     "children": [
       "product-summary-image",
       "product-bookmark",
-      "product-specification-badges#shelf"
+      "badges"
+      // "product-specification-badges#shelf"
     ]
   },
 
