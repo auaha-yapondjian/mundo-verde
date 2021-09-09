@@ -85,5 +85,11 @@
   },
   "store.custom#ofertas": {
     "path": "/ofertas"
+  },
+  "store.custom#longevidade": {
+    "path": "/longevidade"
+  },
+  "store.custom#semana-do-cliente": {
+    "path": "/semana-do-cliente"
   }
 }
