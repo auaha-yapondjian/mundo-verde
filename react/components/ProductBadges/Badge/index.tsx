@@ -1,15 +1,31 @@
 import React from 'react'
-import { Container } from './styles'
+import { useRuntime } from 'vtex.render-runtime'
+import { Link, Container } from './styles'
 
 interface IBadge {
   name: string
+  link: string
 }
 
-const Badge: React.FC<IBadge> = ({ name }) => {
+const Badge: React.FC<IBadge> = ({ name, link }) => {
+  const { navigate } = useRuntime()
+
   return (
-    <Container type={name}>
-      <p>{name}</p>
-    </Container>
+    <Link
+      href={`${link}`}
+      onClick={e => {
+        e.preventDefault()
+        e.stopPropagation()
+
+        navigate({
+          to: `${link}`,
+        })
+      }}
+    >
+      <Container type={name}>
+        <p>{name}</p>
+      </Container>
+    </Link>
   )
 }
 

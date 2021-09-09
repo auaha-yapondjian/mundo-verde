@@ -7,11 +7,17 @@ import Badge from './Badge'
 const ProductBadges: React.FC = () => {
   const { product } = useProduct()
   const [badges, setBadges] = useState<ProductTypes.SpecificationGroup>()
+  const [link, setLink] = useState('')
 
   const getBadges = () => {
     product?.specificationGroups?.map(item =>
       item.name === 'Dietas Especiais' ? setBadges(item) : false
     )
+
+    const str = product?.categories[product.categories.length - 1]
+    const treatedStr = str.replaceAll(/\s/g, '-').toLowerCase()
+
+    setLink(treatedStr)
   }
 
   useEffect(() => {
@@ -21,7 +27,15 @@ const ProductBadges: React.FC = () => {
   return (
     <Container>
       {badges?.specifications.map(item => (
-        <Badge name={item.name} />
+        <Badge
+          name={item.name}
+          link={`${link.replace(
+            /.$/,
+            ''
+          )}?map=category-1,${item.name
+            .replaceAll(/\s/g, '-')
+            .toLowerCase()}&query=${link}sim&searchState`}
+        />
       ))}
     </Container>
   )
