@@ -91,5 +91,8 @@
   },
   "store.custom#semana-do-cliente": {
     "path": "/semana-do-cliente"
+  },
+  "store.custom#lojas-participantes": {
+    "path": "/lojas-participantes-semana-do-cliente"
   }
 }

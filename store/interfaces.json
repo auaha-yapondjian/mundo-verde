@@ -17,5 +17,8 @@
   },
   "text-observer": {
     "component": "TextObserver"
+  },
+  "lojas-participantes": {
+    "component": "LojasParticipantes"
   }
 }
