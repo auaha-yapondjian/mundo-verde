@@ -13,7 +13,11 @@
   },
 
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "my-account",
+      "flex-layout.row#popular-products",
+      "flex-layout.row#recommendation-refresh"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
@@ -179,19 +183,4 @@
       "pagination": "show-more"
     }
   }
-  // "chaordic-div#top": {
-  //   "props": {
-  //     "position": "top"
-  //   }
-  // },
-  // "chaordic-div#middle": {
-  //   "props": {
-  //     "position": "middle"
-  //   }
-  // },
-  // "chaordic-div#bottom": {
-  //   "props": {
-  //     "position": "bottom"
-  //   }
-  // }
 }
