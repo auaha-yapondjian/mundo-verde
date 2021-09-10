@@ -42,7 +42,7 @@
     },
     "children": [
       "flex-layout.col#category-menu",
-      // "vtex.menu@2.x:menu#custom-menu",
+      "vtex.menu@2.x:menu#custom-menu",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
     ]
