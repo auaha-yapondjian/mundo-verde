@@ -110,3 +110,14 @@
   pointer-events: none;
 }
 // Fim Popup Black Friday
+
+.slideChildrenContainer--recommendation {
+  padding: 20px 1rem;
+}
+.slideChildrenContainer--recommendation
+  :global(.vtex-product-summary-2-x-container) {
+  padding: 20px 40px;
+}
+.sliderArrows--recommendation {
+  color: #008651;
+}

@@ -60,7 +60,9 @@
     "vtex.category-menu": "2.x",
     "vtex.sandbox": "0.x",
     "vtex.modal-layout": "0.x",
-    "vtex.store-video": "1.x"
+    "vtex.store-video": "1.x",
+    "vtex.shelf-components": "0.x",
+    "vtex.recommendation-shelf": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

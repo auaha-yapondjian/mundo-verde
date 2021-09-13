@@ -2,6 +2,7 @@
   "store.search": {
     "blocks": [
       "search-result-layout",
+      "flex-layout.row#navigation-history",
       "flex-layout.row#category-footer-texts-content"
     ],
     "props": {
@@ -12,7 +13,7 @@
     }
   },
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout", "flex-layout.row#navigation-history"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -23,7 +24,7 @@
     }
   },
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout", "flex-layout.row#navigation-history"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -34,6 +35,7 @@
   "store.search#category": {
     "blocks": [
       "search-result-layout",
+      "flex-layout.row#navigation-history",
       "flex-layout.row#category-footer-texts-content"
     ],
     "props": {
@@ -46,6 +48,7 @@
   "store.search#subcategory": {
     "blocks": [
       "search-result-layout#subcategory",
+      "flex-layout.row#navigation-history",
       "flex-layout.row#category-footer-texts-content"
     ],
     "props": {
@@ -322,10 +325,8 @@
   "search-not-found-layout": {
     "children": [
       "flex-layout.row#searchbread",
-      // "chaordic-div#top",
-      "flex-layout.row#notfound"
-      // "chaordic-div#middle",
-      // "chaordic-div#bottom"
+      "flex-layout.row#notfound",
+      "flex-layout.row#best-sellers"
     ]
   },
   "flex-layout.row#notfound": {
