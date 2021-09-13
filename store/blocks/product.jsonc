@@ -24,7 +24,12 @@
       "marginBottom": 7,
       "blockClass": "product-description"
     },
-    "children": ["product-description", "product-specifications"]
+    "children": ["product-description", "product-image"]
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false
+    }
   },
   "flex-layout.row#product-main": {
     "props": {
