@@ -3,6 +3,7 @@ import { useProduct } from 'vtex.product-context'
 import type { ProductTypes } from 'vtex.product-context'
 
 import { Container } from './styles'
+import { types } from './types'
 import Badge from './Badge'
 
 const ProductBadges: React.FC = () => {
@@ -17,7 +18,7 @@ const ProductBadges: React.FC = () => {
     )
 
     product?.properties?.map(item =>
-      item.name !== 'Unidades' ? setIsProduct(product) : false
+      item.name in types ? setIsProduct(product) : false
     )
 
     const str = product?.categories[product.categories.length - 1]

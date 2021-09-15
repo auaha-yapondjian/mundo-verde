@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRuntime } from 'vtex.render-runtime'
+
 import { Link, Container } from './styles'
 
 interface IBadge {
