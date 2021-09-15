@@ -45,7 +45,7 @@
     "children": [
       "flex-layout.row#product-image",
       "product-bookmark",
-      "product-specification-badges#shelf",
+      "badges",
       "product-price-savings"
     ]
   },

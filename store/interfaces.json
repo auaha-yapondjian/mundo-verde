@@ -20,5 +20,8 @@
   },
   "lojas-participantes": {
     "component": "LojasParticipantes"
+  },
+  "badges": {
+    "component": "ProductBadges"
   }
 }
