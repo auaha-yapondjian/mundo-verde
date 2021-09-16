@@ -67,9 +67,9 @@
   },
   "product-images": {
     "props": {
-      "showNavigationArrows": false,
+      "showNavigationArrows": true,
       "displayThumbnailsArrows": false,
-      "showPaginationDots": false,
+      "showPaginationDots": true,
       "thumbnailsOrientation": "horizontal",
       "zoomMode": "in-place-hover",
       "aspectRatio": "1:1",
