@@ -525,9 +525,9 @@ ms@2.1.2:
   version "0.0.2"
   resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.chaordic@0.0.2/public/@types/mundoverde.chaordic#7db4f4ff7f353ed175b2be54fd731fac0829a6d2"
 
-"mundoverde.store-theme@https://franchise--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.96.0+build1631730752/public/@types/mundoverde.store-theme":
-  version "3.96.0"
-  resolved "https://franchise--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.96.0+build1631730752/public/@types/mundoverde.store-theme#f836a92225c0d150deeb31b6f0d771f1140b5cc4"
+"mundoverde.store-theme@http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.110.7/public/@types/mundoverde.store-theme":
+  version "3.110.7"
+  resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.110.7/public/@types/mundoverde.store-theme#e90448f8e614428fea2b39656168fc6756ec3096"
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -698,13 +698,13 @@ typescript@3.9.7:
   version "0.5.6"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.6/public/@types/vtex.locale-switcher#5db8558af5593d65e4fff3da0903d0081dfcab42"
 
-"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.45.12/public/@types/vtex.login":
-  version "2.45.12"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.45.12/public/@types/vtex.login#51b7edc606f935280a5e50247bb7e2c32596bbe4"
+"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.45.13/public/@types/vtex.login":
+  version "2.45.13"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.45.13/public/@types/vtex.login#2778a79d16fd23a5a6fc7986fc0799caf44c8000"
 
-"vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.32.0/public/@types/vtex.menu":
-  version "2.32.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.32.0/public/@types/vtex.menu#c4bcf449ec2f106d7a2d324b8f334e6cc6c202fe"
+"vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.32.1/public/@types/vtex.menu":
+  version "2.32.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.32.1/public/@types/vtex.menu#5b82ee633ef76420187733843ef2205042a9f892"
 
 "vtex.minicart@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.minicart@2.61.1/public/@types/vtex.minicart":
   version "2.61.1"
@@ -714,9 +714,9 @@ typescript@3.9.7:
   version "0.10.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.modal-layout@0.10.0/public/@types/vtex.modal-layout#0f4056516b644aa066d4a3121e948b3ee1088377"
 
-"vtex.my-account@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.20.0/public/@types/vtex.my-account":
-  version "1.20.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.20.0/public/@types/vtex.my-account#edf1817e96799daca1b16bf76383b8e2d7c340f9"
+"vtex.my-account@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.21.0/public/@types/vtex.my-account":
+  version "1.21.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.21.0/public/@types/vtex.my-account#677a355eb13ad9249492dd26567e48e8eabea0ab"
 
 "vtex.order-placed@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.12.1/public/@types/vtex.order-placed":
   version "2.12.1"
@@ -766,9 +766,13 @@ typescript@3.9.7:
   version "0.3.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specification-badges@0.3.0/public/@types/vtex.product-specification-badges#2df6b189acfabf642504df02d7b8ad406ee90c07"
 
-"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.75.0/public/@types/vtex.product-summary":
-  version "2.75.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.75.0/public/@types/vtex.product-summary#808038db3547797bf01528bbff2d2ac2b5f229f6"
+"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.76.0/public/@types/vtex.product-summary":
+  version "2.76.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.76.0/public/@types/vtex.product-summary#687ec4afd8f972e58640b9536a0ff0853501c10a"
+
+"vtex.recommendation-shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.recommendation-shelf@1.6.1/public/@types/vtex.recommendation-shelf":
+  version "1.6.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.recommendation-shelf@1.6.1/public/@types/vtex.recommendation-shelf#8a66d6432b77c1ff6a6752f7724a2c6fe8737836"
 
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.131.1/public/@types/vtex.render-runtime":
   version "8.131.1"
@@ -786,13 +790,17 @@ typescript@3.9.7:
   version "0.5.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sandbox@0.5.1/public/@types/vtex.sandbox#be4a4153a0864282fdfbe0d63501daa3978fe6dc"
 
-"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.108.2/public/@types/vtex.search-result":
-  version "3.108.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.108.2/public/@types/vtex.search-result#39288cfdc63f04c1727e272e6512995555d5327f"
+"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.109.0/public/@types/vtex.search-result":
+  version "3.109.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.109.0/public/@types/vtex.search-result#044cfb1fd0860bfadc3d1119c007d6d33d5e4b1e"
 
 "vtex.search@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search@2.8.3/public/@types/vtex.search":
   version "2.8.3"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search@2.8.3/public/@types/vtex.search#270a00ca39cff54b570fc685596b4ae1f97cee6b"
+
+"vtex.shelf-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf-components@0.9.1/public/@types/vtex.shelf-components":
+  version "0.9.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf-components@0.9.1/public/@types/vtex.shelf-components#1e7c8cddef5bd24ceabd7a2c5ce88bc4b0ea1802"
 
 "vtex.shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.46.0/public/@types/vtex.shelf":
   version "1.46.0"
