@@ -10,7 +10,7 @@
     font-size: 1.125rem;
     font-weight: bold;
     color: #008651;
-    font-family: "Gotham";
+    font-family: 'Gotham';
   }
 }
 
@@ -183,7 +183,7 @@
 .heading--promotion-news-content--title {
   text-transform: uppercase;
   color: #008651;
-  font-family: "Gotham";
+  font-family: 'Gotham';
   font-size: 17px;
   font-weight: 600;
   padding-left: 1.25rem;
@@ -212,7 +212,7 @@
   font-weight: 100;
   letter-spacing: -0.5px;
   color: #7c7c7c;
-  font-family: "lucida sans unicode", "lucida grande", sans-serif;
+  font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
 
   @media screen and (max-width: 768px) {
   }
@@ -471,7 +471,7 @@
   max-width: 409px;
   height: 74px;
   margin: 0 auto 128px;
-  background: url("/arquivos/popup-bf-mundoverde-text-success.png") center
+  background: url('/arquivos/popup-bf-mundoverde-text-success.png') center
     no-repeat;
   background-size: 100% 100%;
   font-size: 0;
@@ -526,7 +526,7 @@
   display: none;
 
   &::before {
-    content: "";
+    content: '';
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -564,3 +564,18 @@
 }
 
 // category footer texts
+
+// department filter
+
+:global(.vtex-rich-text-0-x-container--department-filter-subtitle-text) {
+  display: flex;
+  margin-left: 64px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--department-filter-subtitle-text) {
+  color: #008651;
+  display: flex;
+  align-items: center;
+}
+
+// department filter

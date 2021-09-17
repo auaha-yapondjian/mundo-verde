@@ -187,6 +187,7 @@
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
+      "flex-layout.row#department-filter-subtitle",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"
@@ -204,6 +205,19 @@
     "props": {
       "blockClass": "productCountCol",
       "colSizing": "auto"
+    }
+  },
+  "flex-layout.row#department-filter-subtitle": {
+    "children": ["rich-text#department-subtitle"],
+    "props": {
+      "blockClass": "department-filter-subtitle"
+    }
+  },
+  "rich-text#department-subtitle": {
+    "title": "Filtro Departamento Subtitulo",
+    "props": {
+      "text": "",
+      "blockClass": "department-filter-subtitle-text"
     }
   },
   "flex-layout.col#orderby": {

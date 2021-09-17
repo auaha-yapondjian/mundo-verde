@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRuntime } from 'vtex.render-runtime'
 
+import DepartmentTitle from './DepartmentTitle'
 import { Link, Container } from './styles'
 
 interface IBadge {
@@ -21,6 +22,8 @@ const Badge: React.FC<IBadge> = ({ name, link }) => {
         navigate({
           to: `${link}`,
         })
+
+        DepartmentTitle({ name })
       }}
     >
       <Container type={name}>
