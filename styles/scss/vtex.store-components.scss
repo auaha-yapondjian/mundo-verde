@@ -271,7 +271,7 @@
       }
 
       :global(.vtex-input)::before {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: 0;
@@ -558,3 +558,10 @@
 }
 
 // fim lp florais
+
+// página de produto
+:global(.vtex-store-components-3-x-productImagesContainer--carousel) {
+  :global(.vtex-store-components-3-x-carouselGaleryThumbs) {
+    display: none !important;
+  }
+}
