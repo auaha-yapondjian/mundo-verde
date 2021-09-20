@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRuntime } from 'vtex.render-runtime'
 
-import DepartmentTitle from './DepartmentTitle'
 import { Link, Container } from './styles'
 
 interface IBadge {
@@ -12,6 +11,12 @@ interface IBadge {
 const Badge: React.FC<IBadge> = ({ name, link }) => {
   const { navigate } = useRuntime()
 
+  const changeCategoryTitleName = (nameToChange: string) => {
+    document.querySelector(
+      '.vtex-search-result-3-x-galleryTitle--layout.t-heading-1'
+    ).textContent = nameToChange
+  }
+
   return (
     <Link
       href={`${link}`}
@@ -19,11 +24,11 @@ const Badge: React.FC<IBadge> = ({ name, link }) => {
         e.preventDefault()
         e.stopPropagation()
 
+        changeCategoryTitleName(name)
+
         navigate({
           to: `${link}`,
         })
-
-        DepartmentTitle({ name })
       }}
     >
       <Container type={name}>
