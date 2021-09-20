@@ -24,7 +24,7 @@ const Badge: React.FC<IBadge> = ({ name, link }) => {
         e.preventDefault()
         e.stopPropagation()
 
-        changeCategoryTitleName(name)
+        // changeCategoryTitleName(name)
 
         navigate({
           to: `${link}`,
