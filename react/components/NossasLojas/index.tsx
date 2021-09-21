@@ -1,6 +1,9 @@
-import axios from "axios";
-import React, { useEffect, useState, useRef } from "react";
-import ReactLoading from "react-loading";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable @typescript-eslint/require-array-sort-compare */
+import axios from 'axios'
+import React, { useEffect, useState, useRef } from 'react'
+import ReactLoading from 'react-loading'
 
 // Styles
 import {
@@ -8,155 +11,170 @@ import {
   StyledSelect,
   ContainerSelects,
   LoaderContainer,
-} from "./styles";
+} from './styles'
 // Components
-import CardShop from "./CardShop/index";
+import CardShop from './CardShop/index'
 
 type Shop = {
-  aberta_ao_publico: boolean;
-  atendimento: string;
-  bairro: string;
-  cidade: string;
-  clube_mv: boolean;
-  complemento: string | null;
-  delivery: boolean;
-  drivethru: boolean;
-  endereco: string;
-  estado: string;
-  nome_loja: string;
-  numero: string;
-  telefone: string;
-  telefone_2: string | null;
-  whatsapp: string | null;
-};
+  aberta_ao_publico: boolean
+  atendimento: string
+  bairro: string
+  cidade: string
+  clube_mv: boolean
+  complemento: string | null
+  delivery: boolean
+  drivethru: boolean
+  endereco: string
+  estado: string
+  nome_loja: string
+  numero: string
+  telefone: string
+  telefone_2: string | null
+  whatsapp: string | null
+}
 
-type SelectProps = { value: string; label: string };
+type SelectProps = { value: string; label: string }
 
 type FilterShops = (
   shops: Shop[],
-  keyShop: "cidade" | "estado" | "nome_loja",
+  keyShop: 'cidade' | 'estado' | 'nome_loja',
   filterActive: string
-) => Shop[];
+) => Shop[]
 
 const NossasLojas: React.FC = () => {
-  const observer = useRef(null);
+  const observer = useRef(null)
 
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true)
 
-  const [shops, setShops] = useState<Shop[]>([]);
-  const [shopsIsActive, setShopsIsActive] = useState<Shop[]>([]);
-  const [shopsInWindow, setShopsInWindow] = useState<Shop[]>([]);
+  const [shops, setShops] = useState<Shop[]>([])
+  const [shopsIsActive, setShopsIsActive] = useState<Shop[]>([])
+  const [shopsInWindow, setShopsInWindow] = useState<Shop[]>([])
 
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1)
 
   const [filterCityActive, setFilterCityActive] = useState<SelectProps>({
-    value: "",
-    label: "",
-  });
+    value: '',
+    label: '',
+  })
+
   const [filterStateActive, setFilterStateActive] = useState<SelectProps>({
-    value: "",
-    label: "",
-  });
+    value: '',
+    label: '',
+  })
+
   const [filterUnityActive, setFilterUnityActive] = useState<SelectProps>({
-    value: "",
-    label: "",
-  });
+    value: '',
+    label: '',
+  })
 
-  const allStates = Array.from(new Set(shops.map((item) => item.estado)));
+  const allStates = Array.from(new Set(shops.map(item => item.estado)))
+  const allStatesAlphatically = allStates.sort((a, b) => a.localeCompare(b))
 
-  const allCities = Array.from(new Set(shops.map((item) => item.cidade)));
-  const citiesFilter = shopsIsActive.map((item) => item.cidade);
+  const allCities = Array.from(new Set(shops.map(item => item.cidade)))
+  const citiesFilter = shopsIsActive.map(item => item.cidade)
 
-  const allUnity = Array.from(new Set(shops.map((item) => item.nome_loja)));
-  const unityFilter = shopsIsActive.map((item) => item.nome_loja);
+  const allUnity = Array.from(new Set(shops.map(item => item.nome_loja)))
+  const unityFilter = shopsIsActive.map(item => item.nome_loja)
 
   const citiesOfState =
-    filterStateActive.value === ""
+    filterStateActive.value === ''
       ? allCities.sort()
-      : Array.from(new Set(citiesFilter)).sort();
+      : Array.from(new Set(citiesFilter)).sort()
 
   const unityOfCities =
-    filterCityActive.value == "" && filterStateActive.value === ""
+    filterCityActive.value === '' && filterStateActive.value === ''
       ? allUnity.sort()
-      : Array.from(new Set(unityFilter)).sort();
+      : Array.from(new Set(unityFilter)).sort()
 
   useEffect(() => {
     async function getShops() {
       const { data } = await axios.get(
-        "/api/dataentities/LO/search?_fields=nome_loja,endereco,numero,complemento,bairro,cidade,estado,atendimento,telefone,telefone_2,whatsapp,aberta_ao_publico,delivery,drivethru,clube_mv",
+        `/api/dataentities/LO/search?_fields=nome_loja,endereco,numero,complemento,bairro,cidade,estado,atendimento,telefone,telefone_2,whatsapp,aberta_ao_publico,delivery,drivethru,clube_mv`,
         {
           headers: {
-            "rest-range": "resources=0-500",
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+            'rest-range': 'resources=0-500',
           },
         }
-      );
+      )
 
-      setShops(data);
-      setShopsIsActive(data);
-      setShopsInWindow(data.slice(0, 12));
-      setLoading(false);
+      const alphabeticallyFormattedData = data.sort((a: any, b: any) =>
+        a.nome_loja.localeCompare(b.nome_loja)
+      )
+
+      setShops(alphabeticallyFormattedData)
+      setShopsIsActive(data)
+      setShopsInWindow(data.slice(0, 12))
+      setLoading(false)
     }
-    getShops();
-  }, []);
+
+    getShops()
+  }, [])
 
   useEffect(() => {
     function filterShops() {
-      const newShops = [...shops];
+      const newShops = [...shops]
 
       const filterShops: FilterShops = (shops, keyShop, filterActive) => {
-        if (filterActive !== "") {
-          return shops.filter((shop) => shop[keyShop] === filterActive);
-        } else {
-          return shops;
+        if (filterActive !== '') {
+          return shops.filter(shop => shop[keyShop] === filterActive)
         }
-      };
+
+        return shops
+      }
 
       const filterState = filterShops(
         newShops,
-        "estado",
+        'estado',
         filterStateActive.value
-      );
+      )
+
       const filterCity = filterShops(
         filterState,
-        "cidade",
+        'cidade',
         filterCityActive.value
-      );
+      )
+
       const filterUnity = filterShops(
         filterCity,
-        "nome_loja",
+        'nome_loja',
         filterUnityActive.value
-      );
+      )
 
-      setShopsIsActive(filterUnity);
-      setShopsInWindow(filterUnity.slice(0, 12));
+      setShopsIsActive(filterUnity)
+      setShopsInWindow(filterUnity.slice(0, 12))
     }
-    filterShops();
-  }, [filterCityActive, filterStateActive, filterUnityActive]);
+
+    filterShops()
+  }, [filterCityActive, filterStateActive, filterUnityActive])
 
   useEffect(() => {
     const newShopsInWindow = shopsIsActive.slice(
       shopsInWindow.length,
       shopsInWindow.length + 10
-    );
-    setShopsInWindow((currentShops) => [...currentShops, ...newShopsInWindow]);
-  }, [currentPage]);
+    )
+
+    setShopsInWindow(currentShops => [...currentShops, ...newShopsInWindow])
+  }, [currentPage])
 
   function clearAllFilters() {
-    setFilterCityActive({ label: "", value: "" });
-    setFilterStateActive({ label: "", value: "" });
-    setFilterUnityActive({ label: "", value: "" });
+    setFilterCityActive({ label: '', value: '' })
+    setFilterStateActive({ label: '', value: '' })
+    setFilterUnityActive({ label: '', value: '' })
   }
 
   useEffect(() => {
-    const intersectionObserver = new IntersectionObserver((entries) => {
-      if (entries.some((entry) => entry.isIntersecting)) {
-        setCurrentPage((currentValue) => currentValue + 1);
+    const intersectionObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        setCurrentPage(currentValue => currentValue + 1)
       }
-    });
-    intersectionObserver.observe(observer.current);
+    })
 
-    return () => intersectionObserver.disconnect();
-  }, []);
+    intersectionObserver.observe(observer.current)
+
+    return () => intersectionObserver.disconnect()
+  }, [])
 
   return (
     <div>
@@ -173,13 +191,13 @@ const NossasLojas: React.FC = () => {
                 placeholder="Selecione estado"
                 name="state"
                 value={
-                  filterStateActive.value === "" ? null : filterStateActive
+                  filterStateActive.value === '' ? null : filterStateActive
                 }
                 onChange={(e: SelectProps) => {
-                  e ? setFilterStateActive(e) : clearAllFilters();
+                  e ? setFilterStateActive(e) : clearAllFilters()
                 }}
                 isClearable
-                options={allStates?.map((state) => ({
+                options={allStatesAlphatically?.map(state => ({
                   value: state,
                   label: state,
                 }))}
@@ -189,11 +207,11 @@ const NossasLojas: React.FC = () => {
                 classNamePrefix="Select"
                 isClearable
                 placeholder="Selecione cidade"
-                value={filterCityActive.value === "" ? null : filterCityActive}
+                value={filterCityActive.value === '' ? null : filterCityActive}
                 onChange={(e: SelectProps) => {
-                  e ? setFilterCityActive(e) : clearAllFilters();
+                  e ? setFilterCityActive(e) : clearAllFilters()
                 }}
-                options={citiesOfState?.map((city) => ({
+                options={citiesOfState?.map(city => ({
                   value: city,
                   label: city,
                 }))}
@@ -203,13 +221,13 @@ const NossasLojas: React.FC = () => {
                 classNamePrefix="Select"
                 placeholder="Selecione unidade"
                 value={
-                  filterUnityActive.value === "" ? null : filterUnityActive
+                  filterUnityActive.value === '' ? null : filterUnityActive
                 }
                 onChange={(e: SelectProps) =>
                   e ? setFilterUnityActive(e) : clearAllFilters()
                 }
                 isClearable
-                options={unityOfCities?.map((unity) => ({
+                options={unityOfCities?.map(unity => ({
                   value: unity,
                   label: unity,
                 }))}
@@ -225,7 +243,7 @@ const NossasLojas: React.FC = () => {
       )}
       <pre ref={observer}></pre>
     </div>
-  );
-};
+  )
+}
 
-export default NossasLojas;
+export default NossasLojas

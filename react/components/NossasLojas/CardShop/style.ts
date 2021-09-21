@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const CardComponent = styled.div`
   flex: 0 0 260px;
@@ -51,7 +51,7 @@ export const CardComponent = styled.div`
     display: flex;
     justify-content: center;
   }
-`;
+`
 
 export const CardAddress = styled.div`
   display: flex;
@@ -62,7 +62,7 @@ export const CardAddress = styled.div`
   h4 {
     font-weight: 800;
   }
-`;
+`
 
 export const CardStatus = styled.div`
   display: flex;
@@ -75,4 +75,4 @@ export const CardStatus = styled.div`
     color: #0f834c;
     margin-left: 2px;
   }
-`;
+`

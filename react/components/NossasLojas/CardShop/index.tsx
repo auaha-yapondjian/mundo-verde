@@ -1,35 +1,36 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/* eslint-disable @typescript-eslint/prefer-optional-chain */
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCheckCircle,
   faMapMarkerAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 // Styles
-import { CardComponent, CardAddress, CardStatus } from "./style";
+import { CardComponent, CardAddress, CardStatus } from './style'
 
 type Shop = {
-  aberta_ao_publico: boolean;
-  atendimento: string;
-  bairro: string;
-  cidade: string;
-  clube_mv: boolean;
-  complemento: string | null;
-  delivery: boolean;
-  drivethru: boolean;
-  endereco: string;
-  estado: string;
-  nome_loja: string;
-  numero: string;
-  telefone: string;
-  telefone_2: string | null;
-  whatsapp?: string | null;
-};
+  aberta_ao_publico: boolean
+  atendimento: string
+  bairro: string
+  cidade: string
+  clube_mv: boolean
+  complemento: string | null
+  delivery: boolean
+  drivethru: boolean
+  endereco: string
+  estado: string
+  nome_loja: string
+  numero: string
+  telefone: string
+  telefone_2: string | null
+  whatsapp?: string | null
+}
 
 type CardShopProps = {
-  shop: Shop;
-};
+  shop: Shop
+}
 
 export default function CardShop({ shop }: CardShopProps) {
   return (
@@ -43,7 +44,7 @@ export default function CardShop({ shop }: CardShopProps) {
         <h4>{shop?.nome_loja}</h4>
         <p>
           {`${shop?.endereco}, ${shop?.numero}${
-            shop?.complemento ? `, ${shop.complemento}` : ""
+            shop?.complemento ? `, ${shop.complemento}` : ''
           }, ${shop?.bairro} - ${shop?.cidade}/${shop?.estado}`}
         </p>
         <p>Horário de Atendimento: {shop?.atendimento}</p>
@@ -92,7 +93,7 @@ export default function CardShop({ shop }: CardShopProps) {
                 : `https://web.whatsapp.com/send?phone=55${shop.whatsapp}`
             }
             target="_blank"
-            style={{ color: "#0e824c" }}
+            style={{ color: '#0e824c' }}
           >
             <FontAwesomeIcon icon={faWhatsapp} color="#0E824C" />
             {`
@@ -115,31 +116,31 @@ export default function CardShop({ shop }: CardShopProps) {
             shop.endereco &&
             shop.endereco
               .toLowerCase()
-              .replace(/(?:^|\s)\S/g, (e) => e.toUpperCase())
+              .replace(/(?:^|\s)\S/g, e => e.toUpperCase())
           }/
           ${
             shop.numero &&
             shop.numero
               .toLowerCase()
-              .replace(/(?:^|\s)\S/g, (e) => e.toUpperCase())
+              .replace(/(?:^|\s)\S/g, e => e.toUpperCase())
           }/
           ${
             shop.bairro &&
             shop.bairro
               .toLowerCase()
-              .replace(/(?:^|\s)\S/g, (e) => e.toUpperCase())
+              .replace(/(?:^|\s)\S/g, e => e.toUpperCase())
           }/
           ${
             shop.cidade &&
             shop.cidade
               .toLowerCase()
-              .replace(/(?:^|\s)\S/g, (e) => e.toUpperCase())
+              .replace(/(?:^|\s)\S/g, e => e.toUpperCase())
           }/
           ${
             shop.estado &&
             shop.estado
               .toLowerCase()
-              .replace(/(?:^|\s)\S/g, (e) => e.toUpperCase())
+              .replace(/(?:^|\s)\S/g, e => e.toUpperCase())
           }/
         `}
         >
@@ -148,5 +149,5 @@ export default function CardShop({ shop }: CardShopProps) {
         </a>
       </CardStatus>
     </CardComponent>
-  );
+  )
 }
