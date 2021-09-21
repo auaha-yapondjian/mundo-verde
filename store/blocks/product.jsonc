@@ -8,9 +8,7 @@
       "product-questions-and-answers",
       "flex-layout.row#similar-products",
       "flex-layout.row#buy-together",
-      "flex-layout.row#navigation-history",
-      "shelf.relatedProducts#View",
-      "shelf.relatedProducts#AlsoBought"
+      "flex-layout.row#navigation-history"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
