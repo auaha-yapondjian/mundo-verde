@@ -200,6 +200,7 @@
         "on": {
           "base": "#3f3f40",
           "base--inverted": "#ffffff",
+          "black": "#000000",
           "action-primary": "#ffffff",
           "action-secondary": "#008651",
           "emphasis": "#ffffff",
