@@ -1,0 +1,741 @@
+{
+	"store.custom#franquia": {
+		"blocks": [
+			// "flex-layout.row#franchise-float-form",
+			"flex-layout.row#franchise-main-banner",
+			"flex-layout.row#franchise-description",
+			"flex-layout.row#franchise-brand",
+			"flex-layout.row#franchise-tips",
+			"flex-layout.row#franchise-benefits",
+			"flex-layout.row#franchise-selection-1",
+			"flex-layout.row#franchise-selection-2",
+			"flex-layout.row#franchise-tax",
+			"flex-layout.row#franchise-cases"
+		]
+	},
+
+	//Float form
+	"flex-layout.row#franchise-float-form": {
+		"children":["sticky-layout#franchise-float-form"],
+		"title": "Float form"
+	},
+
+	"sticky-layout#franchise-float-form": {
+    "props": {
+      "position": "top"
+    },
+    "children": ["sandbox#franchise-form-franquia"]
+  },
+
+	"sandbox#franchise-form-franquia": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "initialContent": "<!DOCTYPE html><html lang='pt-BR'> <head> <meta charset='utf-8' /> <meta name='viewport' content='width=device-width, initial-scale=1.0' /> <title></title> <link type='text/css' rel='stylesheet' href='https://mundoverde.solutto.com.br/js/bootstrap/css/bootstrap.min.css' /> <script type='text/javascript' src='https://mundoverde.solutto.com.br/jquery-1.8.1.min.js' ></script> <script type='text/javascript' src='https://mundoverde.solutto.com.br/js/jquery/jquery.validate.1.11.1.customizado.min.js' ></script> <script type='text/javascript' src='https://mundoverde.solutto.com.br/js/jquery/jquery.mask.min.js' ></script> <script type='text/javascript' src='https://mundoverde.vteximg.com.br/arquivos/vtex-mundoverde-franquia.js' ></script> <style> .form-group { margin-bottom: 8px; } .form-group label { display: block; width: 100%; margin-bottom: 4px !important; text-align: left !important; } .form-group input { border-color: #e3e4e6; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; -webkit-box-shadow: none; box-shadow: none; } .form-group select { border-color: #e3e4e6; outline: none; -webkit-box-shadow: none; box-shadow: none; } .section-button { margin-left: 0; margin-bottom: 80px; padding-left: 0; } #btnEnviar { width: 120px; text-align: center; text-transform: uppercase; letter-spacing: 0.01em; background: #008651; border-color: #008651; } </style> </head> <body> <div class='container' id='divMessage' style='display: none'> <div class='alert alert-danger'> <div id='divErro'></div> </div> </div> <div class='container'> <form role='form' class='form-horizontal' action='https://mundoverde.solutto.com.br/investidores_form.aspx' method='POST' > <input id='empresa' name='empresa' type='hidden' value='Mundo Verde' /> <input id='usuario' name='usuario' type='hidden' value='WebSoftware' /> <input id='unidade' name='unidade' type='hidden' value='' /> <input id='RedirectSucesso' name='RedirectSucesso' type='hidden' value='https://mundoverde.solutto.com.br/forms/formulario_sucesso.htm' /> <input id='RedirectErro' name='RedirectErro' type='hidden' value='https://mundoverde.solutto.com.br/forms/formulario_erro.htm' /> <input id='historico_canal_id' name='historico_canal_id' type='hidden' value='' /> <input id='historico_categoria_id' name='historico_categoria_id' type='hidden' value='10932' /> <input id='historico_atendente_id' name='historico_atendente_id' type='hidden' value='18064' /> <input id='historico_descricao' name='historico_descricao' type='hidden' value='Candidato importado via web site da marca.' /> <div class='form-group'> <label for='Nome' class='control-label col-sm-2'>Nome Completo</label> <div class='col-sm-10'> <input type='text' id='Nome' name='Nome' class='form-control' data-rule-required='true' /> </div> </div> <div class='form-group'> <label for='Email' class='control-label col-sm-2'>E-mail</label> <div class='col-sm-10'> <input type='text' id='Email' name='Email' class='form-control' data-rule-required='true' data-rule-email='True' /> </div> </div> <div class='form-group'> <label for='Telefone' class='control-label col-sm-2'>Telefone</label> <div class='col-sm-10'> <input type='text' id='Telefone' name='Telefone' class='form-control' data-rule-required='true' maxlength='50' /> </div> </div> <input id='Marca' name='Marca' type='hidden' value='171121115742395' /> <div class='form-group'> <label for='Faixas_Capital' class='control-label col-sm-2' >Faixas de Capital</label > <div class='col-sm-10'> <select id='Faixas_Capital' name='Faixas_Capital' class='form-control' data-rule-required='true' > <option value=''>* Selecione *</option> <option value='67'>R$ 200.000,00</option> <option value='68'>R$ 300.000,00</option> <option value='69'>R$ 400.000,00</option> <option value='70'>R$ 500.000,00</option> <option value='71'>R$ 600.000,00</option> <option value='72'>R$ 700.000,00</option> <option value='73'>R$ 800.000,00</option> <option value='74'>R$ 900.000,00</option> <option value='75'>R$ 1.000.000,00</option> <option value='76'>R$ 1.500.000,00</option> </select> </div> </div> <input id='Origem' name='Origem' type='hidden' value='4277' /> <div class='form-group'> <label for='Estado' class='control-label col-sm-2'>Estado</label> <div class='col-sm-10'> <select id='Estado' name='Estado' class='form-control' data-rule-required='true' > <option value=''>* Selecione *</option> <option value='AC'>AC - Acre</option> <option value='AL'>AL - Alagoas</option> <option value='AM'>AM - Amazonas</option> <option value='AP'>AP - Amapá</option> <option value='BA'>BA - Bahia</option> <option value='CE'>CE - Ceará</option> <option value='DF'>DF - Distrito Federal</option> <option value='ES'>ES - Espírito Santo</option> <option value='GO'>GO - Goiás</option> <option value='MA'>MA - Maranhão</option> <option value='MG'>MG - Minas Gerais</option> <option value='MS'>MS - Mato Grosso Do Sul</option> <option value='MT'>MT - Mato Grosso</option> <option value='PA'>PA - Pará</option> <option value='PB'>PB - Paraíba</option> <option value='PE'>PE - Pernambuco</option> <option value='PI'>PI - Piaui</option> <option value='PR'>PR - Paraná</option> <option value='RJ'>RJ - Rio de Janeiro</option> <option value='RN'>RN - Rio Grande Do Norte</option> <option value='RO'>RO - Rondônia</option> <option value='RR'>RR - Roraima</option> <option value='RS'>RS - Rio Grande Do Sul</option> <option value='SC'>SC - Santa Catarina</option> <option value='SE'>SE - Sergipe</option> <option value='SP'>SP - São Paulo</option> <option value='TO'>TO - Tocantins</option> </select> </div> </div> <input id='cidade_interesse_1' name='cidade_interesse_1' type='hidden' /> <div class='form-group'> <label for='Obs' class='control-label col-sm-2'>Observações</label> <div class='col-sm-10'> <input type='text' id='Obs' name='Obs' class='form-control' maxlength='2000' /> </div> </div> <div class='clearfix'>&nbsp;</div> <div class='col-sm-offset-2 col-sm-10 section-button'> <button id='btnEnviar' type='submit' class='btn btn-primary'> Enviar </button> <!-- &nbsp; --> <!-- <button id='btnLimpar' type='reset' class='btn btn-warning'> Limpar </button> --> </div> </form> </div> </body></html>",
+      "allowCookies": false
+    }
+  },
+
+	//Main banner
+	"flex-layout.row#franchise-main-banner": {
+		"children":["list-context.image-list#franchise-main-banner"],
+		"title": "Banner principal"		
+	},
+
+	"list-context.image-list#franchise-main-banner": {
+		"children":["slider-layout#franchise-main-banner"],
+		"props":{
+			"height": "auto",
+      "images": [
+        {
+          "image": "https://mundoverde.vtexassets.com/arquivos/MundoVerde--main.png",
+          "mobileImage":"",
+          "description": "Main image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-main-banner": {
+		"props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+	},
+
+	//Description
+	"flex-layout.row#franchise-description": {
+		"children":[
+			"rich-text#franchise-description-text",
+			"list-context.image-list#franchise-description-image"
+		],
+		"props":{},
+		"title": "Descrição"
+	},
+
+	"rich-text#franchise-description-text": {
+		"props": {
+			"text":"### Experiência, inovação e sustentabilidade: ## Esse é o nosso negócio O **Mundo Verde** é uma marca consolidada no mercado, pioneira e líder no conceito de vida saudável. Com esse propósito tão enraizado já nos clientes, franqueados, colaboradores, fornecedores e parceiros, a franquia tornou-se uma lovebrand premiada e a principal rede de lojas de produtos saudáveis e bem-estar da América Latina."
+		},
+		"title": "Texto"
+	},
+
+	"list-context.image-list#franchise-description-image": {
+		"children":["slider-layout#franchise-description-slider"],
+		"props":{
+			"height": "auto",
+      "images": [
+        {
+          "image": "https://mundoverde.vtexassets.com/arquivos/ghee--image.png",
+          "mobileImage":"",
+          "description": "Main image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-description-slider": {
+		"props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+			"showPaginationDots": false,
+			"showNavigationArrows": false
+    }
+	},
+
+	//Brand
+	"flex-layout.row#franchise-brand": {
+		"children":[
+			"flex-layout.col#franchise-brand-box"
+		],
+		"title":"Marca"
+	},
+
+	"flex-layout.col#franchise-brand-box": {
+		"children":[
+			"rich-text#franchise-brand-title",
+			"flex-layout.row#franchise-brand-box"
+		]
+	},
+
+	"rich-text#franchise-brand-title": {
+		"props": {
+			"text": "## O que faz a marca Mundo Verde ser única?"
+		},
+		"title": "Título"
+	},
+
+	"flex-layout.row#franchise-brand-box": {
+		"children": [
+			"flex-layout.col#franchise-brand-box-1",
+			"flex-layout.col#franchise-brand-box-2",
+			"flex-layout.col#franchise-brand-box-3",
+			"flex-layout.col#franchise-brand-box-4",
+			"flex-layout.col#franchise-brand-box-5",
+			"flex-layout.col#franchise-brand-box-6",
+			"flex-layout.col#franchise-brand-box-7",
+			"flex-layout.col#franchise-brand-box-8"
+		],
+		"title":"Conteúdo"
+	},
+
+	"flex-layout.col#franchise-brand-box-1": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 1"
+	},
+
+	"flex-layout.col#franchise-brand-box-2": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 2"
+	},
+
+	"flex-layout.col#franchise-brand-box-3": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 3"
+	},
+
+	"flex-layout.col#franchise-brand-box-4": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 4"
+	},
+
+	"flex-layout.col#franchise-brand-box-5": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 5"
+	},
+
+	"flex-layout.col#franchise-brand-box-6": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 6"
+	},
+
+	"flex-layout.col#franchise-brand-box-7": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 7"
+	},
+
+	"flex-layout.col#franchise-brand-box-8": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+		"title": "Box 8"
+	},
+
+	"image#franchise-brand-box-image": {
+    "props": {
+      "src": "",
+      "maxHeight": 24
+    },
+		"title": "Icone"
+  },
+
+	"rich-text#franchise-box-text": {
+		"props":{
+			"text":"Lorem ipsum"
+		},
+		"title": "Texto"
+	},
+
+	//Tips
+	"flex-layout.row#franchise-tips": {
+		"children":[
+			"list-context.image-list#franchise-tips-background",
+			"rich-text#franchise-tips-title",
+			"rich-text#franchise-tips-text"
+		],
+		"title":"Dicas"
+	},
+	
+	"list-context.image-list#franchise-tips-background": {
+		"children":["slider-layout#franchise-tips-background"],
+		"props":{
+			"height": "auto",
+      "images": [
+        {
+          "image": "https://mundoverde.vtexassets.com/arquivos/running--image.png",
+          "mobileImage":"",
+          "description": "Dicas background"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-tips-background": {
+		"props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+			"showPaginationDots": false,
+			"showNavigationArrows": false
+    }
+	},
+
+	"rich-text#franchise-tips-title": {
+		"props": {
+			"text": "### A gente colher um Mundo cada vez melhor. ## Faça parte e torne-se um franqueado!"
+		},
+		"title": "Title"
+	},
+	
+	"rich-text#franchise-tips-text": {
+		"props": {
+			"text": "**Mercado de Alimentação saudável** **O consumo de alimentos saudáveis no Brasil atingiu** *R$100 Bilhões* **em 2020, segundo dados da Euromonitor Internacional** No final do último ano, 78% dos brasileiros entrevistados passaram a se preocupar mais com a qualidade da alimentação e a relação com a saúde e 84% afirmaram que a imunidade do corpo e sua relação com os alimentos será uma preocupação daqui pra frente. Esses dados foram apresentados pelo estudo Alimentação e Bem-estar, realizado pela RG Nutri em parceria com a Tech.Fit. Fonte: http/www.rgnutri.com.br/wp-content/uploads/2021/02/COVID-19_RGNutri_natal-small.pdf"
+		},
+		"title": "Texto"
+	},
+	
+	//Benefits
+	"flex-layout.row#franchise-benefits": {
+		"children":["flex-layout.col#franchise-benefits"],
+		"title":"Benefícios"
+	},
+
+	"flex-layout.col#franchise-benefits": {
+		"children": [
+			"rich-text#franchise-benefits-title",
+			"flex-layout.row#franchise-benefits-content"
+		]
+	},
+
+	"rich-text#franchise-benefits-title": {
+		"props": {
+			"text":"## Conheça os benefícios!"
+		},
+		"title":"Título"
+	},
+
+	"flex-layout.row#franchise-benefits-content": {
+		"children": [
+			"flex-layout.col#franchise-benefits-content-1",
+			"flex-layout.col#franchise-benefits-content-2",
+			"flex-layout.col#franchise-benefits-content-3",
+			"flex-layout.col#franchise-benefits-content-4",
+			"flex-layout.col#franchise-benefits-content-5",
+			"flex-layout.col#franchise-benefits-content-6",
+			"flex-layout.col#franchise-benefits-content-7",
+			"flex-layout.col#franchise-benefits-content-8",
+			"flex-layout.col#franchise-benefits-content-9"
+		],
+		"title":"Conteúdo"
+	},
+
+	"flex-layout.col#franchise-benefits-content-1": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 1"
+	},
+
+	"flex-layout.col#franchise-benefits-content-2": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 2"
+	},
+
+	"flex-layout.col#franchise-benefits-content-3": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 3"
+	},
+
+	"flex-layout.col#franchise-benefits-content-4": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 4"
+	},
+
+	"flex-layout.col#franchise-benefits-content-5": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 5"
+	},
+
+	"flex-layout.col#franchise-benefits-content-6": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 6"
+	},
+
+	"flex-layout.col#franchise-benefits-content-7": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 7"
+	},
+
+	"flex-layout.col#franchise-benefits-content-8": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 8"
+	},
+
+	"flex-layout.col#franchise-benefits-content-9": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+		"title":"Box 9"
+	},
+
+	"image#franchise-benefits-image": {
+		"props": {
+      "src": "",
+      "maxHeight": 24
+    },
+		"title":"Imagem"
+	},
+
+	"rich-text#franchise-benefits-box-text": {
+		"props":{
+			"text":"Lorem ipsum"
+		},
+		"title":"Texto"
+	},
+
+	//Selection 1
+	"flex-layout.row#franchise-selection-1": {
+		"children": [
+			"flex-layout.col#franchise-selection-col1",
+			"flex-layout.col#franchise-selection-col2"
+		],
+		"title":"Seleção - Parte 1"
+	},
+	
+	"flex-layout.col#franchise-selection-col1": {
+		"children": [
+			"image#franchise-selection-image",
+			"rich-text#franchise-selection-text"
+		]
+	},
+
+	"image#franchise-selection-image": {
+		"props": {
+      "src": "https://mundoverde.vtexassets.com/arquivos/selection--image.png",
+      "maxHeight": 24
+    }
+	},
+
+	"rich-text#franchise-selection-text": {
+		"props":{
+			"text":"Lançada em 2012 **a marca Mundo Verde Seleção conta com a experiência de mais de 30 anos de Mundo Verde para promover bem-estar e um estilo de alimentação mais saudável.** O portfó"
+		}
+	},
+
+	"flex-layout.col#franchise-selection-col2": {
+		"children":["list-context.image-list#franchise-selection-image"]
+	},
+
+	"list-context.image-list#franchise-selection-image": {
+		"children":["slider-layout#franchise-selection-slider"],
+		"props":{
+			"height": "auto",
+      "images": [
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/selection2--image.png",
+          "mobileImage":"",
+          "description": "Selection image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-selection-slider": {
+		"props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+	},
+
+	//Selection 2
+	"flex-layout.row#franchise-selection-2": {
+		"children": [
+			"flex-layout.col#franchise-selection-col3",
+			"flex-layout.col#franchise-selection-col4"
+		],
+		"title": "Seleção - Parte 2"
+	},
+
+	"flex-layout.col#franchise-selection-col3": {
+		"children":["list-context.image-list#franchise-selection2-image"]
+	},
+
+	"list-context.image-list#franchise-selection2-image": {
+		"children":["slider-layout#franchise-selection-slider"],
+		"props":{
+			"height": "auto",
+			"images": [
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/sleeping--image.png",
+          "mobileImage":"",
+          "description": "Sleeping image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-selection2-slider": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"fullWidth": true
+		}
+	},
+
+	"flex-layout.col#franchise-selection-col4": {
+		"children": [
+			"image#franchise-selection2-image",
+			"rich-text#franchise-selection2-text"
+		]
+	},
+
+	"image#franchise-selection2-image": {
+		"props": {
+			"src": "https://mundoverde.vtexassets.com/arquivos/elixir--image.png",
+			"maxHeight": 24
+		}
+	},
+	
+	"rich-text#franchise-selection2-text": {
+		"props":{
+			"text":"Marca de suplementos, nutricosméticos, nutrição esportiva e produtos para o bem-estar e cuidados pessoais voltados para a qualidade de vida, saúde e beleza. **Elixir é uma marca completa com 8 linhas de produtos:** Elixir Antiox para prevenção ao envelhecimento; Elixir Beauty, para cuidados com a pele, unhas e cabelos; Elixir Vita para a saúde e qualidade de vida; Elixir Slim, para controle de peso; Osteo, para manutenção da saúde óssea; Elixir Treino, especializada em produtos para aumentar o rendimento durante a prática de exercícios físicos; e Elixir Care, de cuidados pessoais. O Mundo Verde acredita na beleza da vida. **E que beleza e bem-estar devem conviver em harmonia.** Elixir 'A beleza de dentro para fora'."
+		}
+	},
+	
+	//Tax
+	"flex-layout.row#franchise-tax": {
+		"children": [
+			"flex-layout.col#franchise-tax"
+		],
+		"title": "Taxas"
+	},
+
+  "flex-layout.col#franchise-tax": {
+    "children":[
+      "rich-text#franchise-tax-title",
+      "rich-text#franchise-tax-subtitle",
+      "flex-layout.row#franchise-tax-content"
+    ]
+  },
+
+	"rich-text#franchise-tax-title": {
+		"props": {
+			"text": "## Seja um franqueado Mundo Verde"
+		}
+	},
+
+	"rich-text#franchise-tax-subtitle": {
+		"props": {
+			"text": "Conheça valores de referência para uma loja de 50 m²"
+		}
+	},
+
+  "flex-layout.row#franchise-tax-content": {
+    "children": [
+      "flex-layout.col#franchise-tax-content",
+      "flex-layout.col#franchise-tax-slider-content"
+    ]
+  },
+
+	"flex-layout.col#franchise-tax-content": {
+		"children": ["tab-layout#franchise-tabs"]
+	},
+
+	"tab-layout#franchise-tabs": {
+		"children": [
+	    "tab-list#franchise-tax-tabs",
+	    "tab-content#franchise-tabs-content"
+	  ],
+	  "props": {
+	    "defaultActiveTabId": "tab1"
+	  }
+	},
+
+	"tab-list#franchise-tax-tabs": {
+		"children": [
+			"tab-list.item#franchise-tax-tabs-1",
+			"tab-list.item#franchise-tax-tabs-2"
+		]
+	},
+
+	"tab-list.item#franchise-tax-tabs-1": {
+		"props": {
+			"tabId": "tab1",
+			"label": "Investimentos",
+			"defaultActiveTab": true
+		}
+	},
+
+	"tab-list.item#franchise-tax-tabs-2": {
+		"props": {
+			"tabId": "tab2",
+			"label": "Taxas"
+	 	}
+	},
+
+	"tab-content#franchise-tabs-content": {
+		"children": [
+			"tab-content.item#franchise-tabs-content-1",
+			"tab-content.item#franchise-tabs-content-2"
+		]
+	},
+
+	"tab-content.item#franchise-tabs-content-1": {
+		"children":["rich-text#tab-content"],
+		"props": {
+			"tabId": "tab1"
+		}
+	},
+	
+	"tab-content.item#franchise-tabs-content-2": {
+		"children":["rich-text#tab-content"],
+		"props": {
+			"tabId": "tab2"
+		}
+	},
+
+	"rich-text#tab-content": {
+		"props": {
+			"text":"Lorem Ipsum"
+		}
+	},
+
+  "flex-layout.col#franchise-tax-slider-content": {
+		"children": [
+      "list-context.image-list#franchise-tax-slider"
+    ]
+	},
+
+  "list-context.image-list#franchise-tax-slider": {
+		"children":["slider-layout#franchise-tax-slider"],
+		"props":{
+			"height": "auto",
+			"images": [
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/tax--images.png",
+          "mobileImage":"",
+          "description": "Store image"
+        },
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/tax--images.png",
+          "mobileImage":"",
+          "description": "Store image"
+        },
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/tax--images.png",
+          "mobileImage":"",
+          "description": "Store image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-tax-slider": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"fullWidth": true
+		}
+	},
+
+	//Cases
+	"flex-layout.row#franchise-cases": {
+		"children": [
+			"rich-text#franchises-cases-title",
+			"slider-layout#franchise-cases-slider"
+		],
+		"title":"Cases"
+	},
+
+	"rich-text#franchises-cases-title": {
+		"props": {
+			"text":"## Conheça alguns cases de sucesso dos franqueados Mundo Verde"
+		}
+	},
+
+  "slider-layout#franchise-cases-slider": {
+    "children":
+    [
+      "flex-layout.col#franchises-cases-1",
+      "flex-layout.col#franchises-cases-2",
+      "flex-layout.col#franchises-cases-3",
+      "flex-layout.col#franchises-cases-4"
+    ],
+		"props": {
+      "itemsPerPage": {
+        "desktop": 1.5,
+        "tablet": 1.5,
+        "phone": 1.5
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+	},
+
+  "flex-layout.col#franchises-cases-1": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchises-cases-content"
+    ]
+  },
+
+  "flex-layout.col#franchises-cases-2": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchises-cases-content"
+    ]
+  },
+
+  "flex-layout.col#franchises-cases-3": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchises-cases-content"
+    ]
+  },
+
+  "flex-layout.col#franchises-cases-4": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchises-cases-content"
+    ]
+  },
+
+  "image#franchise-cases-image": {
+    "props": {
+			"src": "https://mundoverde.vtexassets.com/arquivos/cases--image.png",
+			"maxHeight": 24
+		}
+  },
+
+  "flex-layout.row#franchises-cases-content": {
+    "children":[
+      "rich-text#franchises-cases-text"
+    ]
+  },
+
+  "rich-text#franchises-cases-text": {
+    "props": {
+      "text": "### Mundo Verde - Segunda do Futuro Na Bahia, a união dos franqueados é um dos mais importantes fatores de sucesso. Em 2015, um grupo de 12 unidades se uniu para transformar todas as suas lojas em grandes parceiras, abrindo mais possibilidades de crescimento juntos do que concorrendo entre si. A praça atua de forma unificada, trabalhando a marca própria estrategicamente, elevando o interesse do público e gerando ótimos resultaods em todas as unidades. Outra característica dessa região é a busca constante por inovação, pilotando novas ações e colocando em prática as de melhores resultados. A praça preza pela gestão de pessoas, com metas claras, time engajado e cuidados com o bem-estar de suas equipes."
+    }
+  }
+}
