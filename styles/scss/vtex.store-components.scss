@@ -565,3 +565,46 @@
     display: none !important;
   }
 }
+
+//Seja um franqueado
+.imageElement {
+  &--franchise {
+    &-main-banner {
+      object: {
+        fit: cover;
+        position: left 74px;
+      }
+      width: max-content !important;
+    }
+  }
+}
+
+.imageElement {
+  &--franchise {
+    &-description-slider {
+      border-bottom-left-radius: 41%;
+      border-top-left-radius: 50%;
+      height: 800px;
+      object: {
+        fit: cover;
+        position: center -47px;
+      }
+      overflow: hidden;
+    }
+
+    &-brand-box-image {
+      max-height: 60px !important;
+      min-width: 60px;
+    }
+
+    &-tips-background {
+      height: 1273px;
+      max-height: 1273px !important;
+      object: {
+        fit: cover;
+        position: center 76px;
+      }
+      width: auto;
+    }
+  }
+}

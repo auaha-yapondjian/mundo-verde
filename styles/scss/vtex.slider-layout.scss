@@ -121,3 +121,25 @@
 .sliderArrows--recommendation {
   color: #008651;
 }
+
+//Seja um franqueado
+.slideChildrenContainer {
+  &--franchise {
+    &-main-banner {
+      height: 500px;
+    }
+
+    &-description-slider {
+      display: flex;
+      height: 500px;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    &-tips-background {
+      height: 700px;
+      filter: brightness(0.3);
+    }
+  }
+}

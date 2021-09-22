@@ -579,3 +579,146 @@
 }
 
 // department filter
+
+//Seja um franqueado
+.container {
+  &--franchise {
+    &-description-text {
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+      padding-right: 30px;
+    }
+  }
+}
+
+.wrapper {
+  &--franchise {
+    &-description-text {
+      margin-left: auto;
+      padding-right: 40px;
+    }
+  }
+}
+
+.headingLevel3 {
+  &--franchise {
+    &-description-text {
+      font: {
+        size: 28px;
+        weight: 500;
+      }
+      margin: 0;
+    }
+
+    &-tips-title {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 600;
+      padding-bottom: 10px;
+      color: #fff;
+      padding-top: 30px;
+    }
+  }
+}
+
+.headingLevel2 {
+  &--franchise {
+    &-description-text {
+      font: {
+        size: 32px;
+        weight: 500;
+      }
+      margin: 0;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    &-brand-title {
+      font: {
+        size: 28px;
+        weight: 600;
+      }
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    &-tips-title {
+      margin: 0;
+      font-size: 55px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding-bottom: 10px;
+      max-width: 727px;
+      color: #008651;
+    }
+  }
+}
+
+.paragraph {
+  &--franchise {
+    &-description-text {
+      font: {
+        size: 18px;
+        weight: 300;
+      }
+      margin: 0;
+      max-width: 508px;
+    }
+
+    &-box-text {
+      font: {
+        size: 18px;
+        weight: normal;
+      }
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    &-tips-text {
+      color: #fff;
+      margin: 0;
+      font-size: 30px;
+      font-weight: normal;
+    }
+  }
+}
+
+.strong {
+  &--franchise {
+    &-tips-text {
+      &:first-child {
+        text-transform: uppercase;
+      }
+
+      font-weight: 600;
+      font-size: 30px;
+      color: #fff;
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}
+
+.italic {
+  &--franchise {
+    &-tips-text {
+      font-weight: 600;
+      font-size: 30px;
+      font-style: normal;
+      color: #008651;
+    }
+  }
+}
+
+.link {
+  &--franchise {
+    &-tips-text {
+      font-size: 21px;
+      color: #fff;
+      font-weight: normal;
+    }
+  }
+}

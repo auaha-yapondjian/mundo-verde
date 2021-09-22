@@ -1174,3 +1174,91 @@
   }
 }
 // category footer texts
+
+
+//seja um franqueado
+.flexRow {
+  &--franchise {
+    &-description {
+      background-color: #69c58d;
+    }
+
+    &-benefits {
+      background-color: #d57559;
+    }
+  }
+}
+
+.flexRowContent {
+  &--franchise {
+    &-description {
+      overflow: hidden;
+
+      .stretchChildrenWidth {
+        &:nth-child(even) {
+          position: relative;
+
+          &::before {
+            background: #f2c065;
+            border-bottom-left-radius: 42%;
+            border-top-left-radius: 58%;
+            content:"";
+            display: block;
+            height: 800px;
+            left: -39px;
+            position: absolute;
+            top: -278px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    
+    &-brand-box {
+      flex-wrap: wrap;
+
+      .stretchChildrenWidth {
+        padding-bottom: 25px;
+        width: 33.33% !important;
+      }
+    }
+
+    &-tips-content {
+      flex-direction: column;
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.flexCol {
+  &--franchise {
+    &-brand {
+      padding-bottom: 25px;
+      padding-top: 50px;
+
+      &-box-content {
+        align-items: flex-start;
+        flex-direction: row;
+      }
+    }
+
+    &-tips {
+      position: relative;
+    }
+  }
+}
+
+.flexColChild {
+  &--franchise {
+    &-tips {
+      &:nth-child(even) {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

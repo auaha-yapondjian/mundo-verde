@@ -64,6 +64,7 @@
 
 	"slider-layout#franchise-main-banner": {
 		"props": {
+      "blockClass": "franchise-main-banner",
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -104,11 +105,10 @@
 	"list-context.image-list#franchise-description-image": {
 		"children":["slider-layout#franchise-description-slider"],
 		"props":{
-			"height": "auto",
       "images": [
         {
           "image": "https://mundoverde.vtexassets.com/arquivos/ghee--image.png",
-          "mobileImage":"",
+          "mobileImage": "",
           "description": "Main image"
         }
       ]
@@ -117,6 +117,7 @@
 
 	"slider-layout#franchise-description-slider": {
 		"props": {
+      "blockClass": "franchise-description-slider",
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -159,7 +160,7 @@
       "blockClass": "franchise-brand-title",
 			"text": "## O que faz a marca Mundo Verde ser única?",
       "textAlignment": "CENTER",
-      "textColor":  "c-on-black",
+      "textColor":  "c-on-action-secondary",
       "textPosition": "CENTER"
 		},
 		"title": "Título"
@@ -178,7 +179,6 @@
 		],
     "props":{
       "blockClass": "franchise-brand-box",
-      "colSizing": "auto",
       "horizontalAlign":"left",
       "preserveLayoutOnMobile": true
     },
@@ -315,8 +315,9 @@
 
 	"image#franchise-brand-box-image": {
     "props": {
-      "src": "",
-      "alt": "Brand box image"
+      "src" : "",
+      "alt": "Brand box image",
+      "blockClass": "franchise-brand-box-image"
     },
 		"title": "Icone"
   },
@@ -349,8 +350,7 @@
   "flex-layout.col#franchise-tips": {
     "children": [
       "list-context.image-list#franchise-tips-background",
-			"rich-text#franchise-tips-title",
-			"rich-text#franchise-tips-text"
+			"flex-layout.row#franchise-tips-content"
     ],
     "props": {
       "blockClass": "franchise-tips",
@@ -362,8 +362,7 @@
 	
 	"list-context.image-list#franchise-tips-background": {
 		"children":["slider-layout#franchise-tips-background"],
-		"props":{
-			"height": "auto",
+		"props": {
       "images": [
         {
           "image": "https://mundoverde.vtexassets.com/arquivos/running--image.png",
@@ -376,6 +375,7 @@
 
 	"slider-layout#franchise-tips-background": {
 		"props": {
+      "blockClass": "franchise-tips-background",
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -386,6 +386,16 @@
 			"showNavigationArrows": false
     }
 	},
+
+  "flex-layout.row#franchise-tips-content": {
+    "children": [
+      "rich-text#franchise-tips-title",
+			"rich-text#franchise-tips-text"
+    ],
+    "props": {
+      "blockClass": "franchise-tips-content"
+    }
+  },
 
 	"rich-text#franchise-tips-title": {
 		"props": {
@@ -603,6 +613,7 @@
 
 	"image#franchise-benefits-image": {
 		"props": {
+      "blockClass": "franchise-benefits-image-background",
       "src": "",
       "alt": "Selection image"
     },
@@ -1084,7 +1095,7 @@
     "props": {
       "alt":"Cases image",
 			"src": "https://mundoverde.vtexassets.com/arquivos/cases--image.png",
-			"maxHeight": 24
+			"maxHeight": 60
 		}
   },
 
