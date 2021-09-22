@@ -1,5 +1,5 @@
-import Select from "react-select";
-import styled from "styled-components";
+import Select from 'react-select'
+import styled from 'styled-components'
 
 export const StyledSelect = styled(Select)`
   flex: 0 1 350px;
@@ -41,7 +41,7 @@ export const StyledSelect = styled(Select)`
   .Select__indicator:hover {
     color: #fff !important;
   }
-`;
+`
 
 export const ContainerSelects = styled.form`
   display: flex;
@@ -49,7 +49,7 @@ export const ContainerSelects = styled.form`
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-`;
+`
 
 export const ShopContainer = styled.div`
   display: grid;
@@ -72,10 +72,10 @@ export const ShopContainer = styled.div`
   @media (max-width: 675px) {
     grid-template-columns: repeat(1, clamp(200px, 100%, 260px));
   } ;
-`;
+`
 
 export const LoaderContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-`;
+`
