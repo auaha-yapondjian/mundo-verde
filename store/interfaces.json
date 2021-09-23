@@ -26,5 +26,8 @@
   },
   "product-image": {
     "component": "ProductImage"
+  },
+  "category-tree": {
+    "component": "CategoryTree"
   }
 }
