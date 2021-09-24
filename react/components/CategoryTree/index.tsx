@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Loading } from 'vtex.render-runtime'
+import { Loading, useRuntime } from 'vtex.render-runtime'
 import axios from 'axios'
 
 import { Container } from './styles'
@@ -16,6 +16,7 @@ interface IResponse {
 }
 
 const CategoryTree: React.FC = () => {
+  const { navigate } = useRuntime()
   const [categories, setCategories] = useState<IResponse>()
 
   const getCategoryTree = async (department: string) => {
@@ -53,7 +54,20 @@ const CategoryTree: React.FC = () => {
       <ul>
         {categories.children.map(item => (
           <li key={item.id}>
-            <a href={item.url}>{item.name}</a>
+            <a
+              href={item.url}
+              onClick={e => {
+                e.preventDefault()
+                e.stopPropagation()
+                const [, , , category, subcategory] = item.url.split('/')
+
+                navigate({
+                  to: `/${category}/${subcategory}`,
+                })
+              }}
+            >
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>
