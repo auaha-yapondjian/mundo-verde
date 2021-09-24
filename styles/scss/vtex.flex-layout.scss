@@ -1179,18 +1179,67 @@
 //seja um franqueado
 .flexRow {
   &--franchise {
+    &-main-banner {
+      font-family: 'Gotham'
+    }
+
     &-description {
       background-color: #69c58d;
     }
 
+    &-brand-box {
+      max-width: 1280px;
+    }
+
     &-benefits {
       background-color: #d57559;
+    }
+
+    &-tips-content {
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      display: flex;
+
+      @media (min-width: 1025px) {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+    }
+    
+    &-benefits-container {
+      max-width: 1280px;
+    }
+
+    &-tax-container {
+      padding: 0 20px;
     }
   }
 }
 
 .flexRowContent {
   &--franchise {
+    &-main-banner {
+      position: relative;
+      
+      .stretchChildrenWidth {
+        height: auto;
+
+        &:first-child {
+          width: 70% !important;
+        }
+
+        &:nth-child(even) {
+          position: absolute;
+          width: 60%!important;
+          left: 0;
+          height: 100%;
+          top: 0;
+        }
+      }
+    }
+
     &-description {
       overflow: hidden;
 
@@ -1198,22 +1247,34 @@
         &:nth-child(even) {
           position: relative;
 
-          &::before {
-            background: #f2c065;
-            border-bottom-left-radius: 42%;
-            border-top-left-radius: 58%;
-            content:"";
-            display: block;
-            height: 800px;
-            left: -39px;
-            position: absolute;
-            top: -278px;
-            width: 100%;
+          @media (min-width: 1025px) {
+            &::before {
+              background: #f2c065;
+              border-bottom-left-radius: 42%;
+              border-top-left-radius: 58%;
+              content:"";
+              display: block;
+              left: -39px;
+              position: absolute;
+              top: -278px;
+              width: 100%;
+              height: 675px;
+            }
+          }
+
+          @media (min-width: 1366px) {
+            &::before {
+              height: 800px;
+            }
           }
         }
       }
     }
     
+    &-brand {
+      padding: 0 20px;
+    }
+
     &-brand-box {
       flex-wrap: wrap;
 
@@ -1225,9 +1286,116 @@
 
     &-tips-content {
       flex-direction: column;
+      width: auto;
 
       .stretchChildrenWidth {
         width: 100% !important;
+      }
+    }
+    
+    &-benefits {
+      @media (min-width: 1025px) {
+        padding-top: 40px;
+        padding-bottom: 35px;
+      }
+
+      @media (min-width: 1366px) {
+        padding-top: 50px;
+        padding-bottom: 45px;
+      }
+    }
+
+    &-benefits-container {
+      flex-wrap: wrap;
+      padding: 0 20px;
+      
+      .stretchChildrenWidth {
+        width: 33.33% !important;
+        padding-bottom: 25px;
+      }
+    }
+
+    &-selection-first {
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
+
+    &-selection-rows {
+      position: relative;
+
+      @media (min-width: 1025px) {
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          left: 15%;
+          z-index: 1;
+          top: 0;
+          background-image: url("https://mundoverde.vtexassets.com/arquivos/back-selection--image13.png");
+        }
+      }
+
+      .stretchChildrenWidth {
+        &:first-child {
+          z-index: 1;
+          width: 46% !important;
+        }
+
+        &:last-child {
+          width: 54% !important;
+        }
+      }
+    }
+
+    &-selection-second  {
+      position: relative;
+
+      @media (min-width: 1025px) {
+        margin-top: -50px;
+      }
+
+      @media (min-width: 1366px) {
+        margin-top: -67px;
+      }
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        top: 0;
+        background-image: url("https://mundoverde.vtexassets.com/arquivos/selection3--image7.png");
+      }
+
+      .stretchChildrenWidth {
+        &:nth-child(odd) {
+          width: 54% !important;
+        }
+
+        &:nth-child(even) {
+          width: 46% !important;
+        }
+      }
+    }
+
+    &-tax-container {
+      max-width: 1000px;
+      
+      .stretchChildrenWidth {
+        &:nth-child(even) {
+          width: 30% !important;
+        }
+
+        &:nth-child(odd) {
+          width: 70% !important;
+        }
       }
     }
   }
@@ -1236,8 +1404,15 @@
 .flexCol {
   &--franchise {
     &-brand {
-      padding-bottom: 25px;
-      padding-top: 50px;
+      @media (min-width: 1025px) {
+        padding-bottom: 25px;
+        padding-top: 40px;
+      }
+
+      @media (min-width: 1366px) {
+        padding-bottom: 25px;
+        padding-top: 50px;
+      }
 
       &-box-content {
         align-items: flex-start;
@@ -1247,6 +1422,29 @@
 
     &-tips {
       position: relative;
+    }
+
+    &-benefits-content {
+      flex-direction: row;
+    }
+
+    &-selection-col1 {
+      padding-top: 0;
+    }
+
+    &-selection-col4 {
+      @media (min-width: 1025px) {
+        padding-top: 68px;
+        z-index: 1;
+      }
+
+      @media (min-width: 1366px) {
+        padding-top: 89px;
+      }
+    }
+
+    &-tax-slider-content-1 {
+      padding-right: 50px;
     }
   }
 }
@@ -1258,6 +1456,36 @@
         position: absolute;
         left: 0;
         top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-selection-col1 {
+      &:first-child {
+        @media (min-width: 1025px) {
+          height: 308px!important;
+          padding-top: 34px;
+        }
+  
+        @media (min-width: 1366px) {
+          height: 410px!important;
+          padding-top: 54px;
+        }
+      }
+    }
+
+    &-selection-col4 {
+      @media (min-width: 1025px) {
+        height: 253px!important;
+      }
+      
+      @media (min-width: 1366px) {
+        height: 320px!important;
+      }
+
+      &:last-child {
+        height: auto !important;
       }
     }
   }

@@ -584,10 +584,25 @@
 .container {
   &--franchise {
     &-description-text {
-      align-items: center;
-      display: flex;
-      margin: 0 auto;
-      padding-right: 30px;
+      @media (min-width: 1025px) {
+        padding-left: 20px;
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        padding-right: 30px;
+      }
+    }
+
+    &-benefits-text {
+      padding-left: 20px;
+    }
+
+    &-selection-text {
+      padding-right: 25px;
+    }
+
+    &-selection2-text {
+      padding-left: 15px;
     }
   }
 }
@@ -598,59 +613,158 @@
       margin-left: auto;
       padding-right: 40px;
     }
+
+    &-selection-text {
+      margin-left: auto;
+    }
   }
 }
 
 .headingLevel3 {
   &--franchise {
     &-description-text {
-      font: {
-        size: 28px;
-        weight: 500;
+      @media (min-width: 1025px) {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
       }
-      margin: 0;
+
+      @media (min-width: 1366px) {
+        font-size: 28px;
+        font-weight: 500;
+      }
     }
 
     &-tips-title {
       margin: 0;
-      font-size: 34px;
-      font-weight: 600;
-      padding-bottom: 10px;
       color: #fff;
-      padding-top: 30px;
+
+      @media (min-width: 1025px) {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        padding-top: 30px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 27px;
+        line-height: 30px;
+      }
     }
   }
 }
 
 .headingLevel2 {
   &--franchise {
-    &-description-text {
-      font: {
-        size: 32px;
-        weight: 500;
+    &-main-banner-text {
+      @media (min-width: 1025px) {
+        font-size: 31px;
+        line-height: 40px;
+        max-width: 375px;
+        padding-bottom: 15px;
+        margin: 0;
       }
-      margin: 0;
-      padding-bottom: 20px;
-      text-transform: uppercase;
+
+      @media (min-width: 1366px) {
+        font-size: 36px;
+        line-height: 46px;
+        max-width: 410px;
+      }
+    }
+
+    &-description-text {
+      @media (min-width: 1025px) {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+        margin: 0;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 32px;
+        line-height: 36px;
+      }
     }
     
     &-brand-title {
-      font: {
-        size: 28px;
-        weight: 600;
+      @media (min-width: 1025px) {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+        padding-bottom: 40px;
       }
-      margin: 0;
-      padding-bottom: 40px;
+
+      @media (min-width: 1366px) {
+        font-size: 28px;
+        font-weight: 600;
+      }
     }
 
     &-tips-title {
       margin: 0;
-      font-size: 55px;
-      text-transform: uppercase;
-      font-weight: 500;
-      padding-bottom: 10px;
-      max-width: 727px;
       color: #008651;
+
+      @media (min-width: 1025px) {
+        font-size: 33px;
+        line-height: 38px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-bottom: 20px;
+        max-width: 495px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 44px;
+        line-height: 48px;
+        max-width: 588px;
+      }
+    }
+
+    &-benefits-title {
+      @media (min-width: 1025px) {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0;
+        padding-bottom: 30px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+
+    &-selection-title {
+      @media (min-width: 1025px) {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0;
+        padding-bottom: 20px;
+        max-width: 395px;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+
+    &-tax-title {
+      @media (min-width: 1025px) {
+        margin: 0;
+        padding-bottom: 16px;
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 38px;
+        line-height: 40px;
+      }
     }
   }
 }
@@ -658,45 +772,162 @@
 .paragraph {
   &--franchise {
     &-description-text {
-      font: {
-        size: 18px;
-        weight: 300;
+      @media (min-width: 1025px) {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;
+        margin: 0;
+        max-width: 500px;
       }
-      margin: 0;
-      max-width: 508px;
+
+      @media (min-width: 1366px) {
+        font-size: 18px;
+        line-height: 23px;
+      }
     }
 
     &-box-text {
-      font: {
-        size: 18px;
-        weight: normal;
+      @media (min-width: 1025px) {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        margin: 0;
+        padding-left: 20px;
       }
+
+      @media (min-width: 1366px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &-tips-subtitle {
       margin: 0;
-      padding-left: 20px;
+      font-family: 'Gotham';
+      
+      @media (min-width: 1025px) {
+        padding-bottom: 20px;
+        max-width: 640px;
+      }
+
+      @media (min-width: 1366px) {
+        max-width: 890px;
+      }
     }
 
     &-tips-text {
-      color: #fff;
       margin: 0;
-      font-size: 30px;
-      font-weight: normal;
+      color: #fff;
+
+      @media (min-width: 1025px) {
+        padding-bottom: 10px;
+        line-height: 23px;
+        font-size: 18px;
+        max-width: 570px;    
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 24px;
+        max-width: 800px;
+        line-height: 28px;
+      }
+    }
+
+    &-tips-link {
+      margin: 0;
+      font-family: 'Gotham';
+
+      @media (min-width: 1025px) {
+        line-height: 15px;
+        font-size: 10px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 19px;
+        line-height: 24px;
+      }
+    }
+
+    &-benefits-text {
+      @media (min-width: 1025px) {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &-selection-text {
+      @media (min-width: 1025px) {
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 410px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+    &-selection2-text {
+      @media (min-width: 1025px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        max-width: 410px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+    &-tax-subtitle {
+      @media (min-width: 1025px) {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0;
+        max-width: 374px;
+        padding-bottom: 16px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
   }
 }
 
 .strong {
   &--franchise {
-    &-tips-text {
-      &:first-child {
-        text-transform: uppercase;
+    &-main-banner-text {
+      text-shadow: 2px 2px 2px #69c58d;
+      font-family: 'Gotham';
+    }
+
+    &-tips-subtitle {
+      @media (min-width: 1025px) {
+        text-transform: initial;
+        font-family: 'Gotham';
+        line-height: 23px;
+        font-size: 18px;
       }
 
-      font-weight: 600;
-      font-size: 30px;
-      color: #fff;
+      @media (min-width: 1366px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
 
-      &:last-child {
-        display: block;
+      &:first-child {
+        text-transform: uppercase;
       }
     }
   }
@@ -704,21 +935,42 @@
 
 .italic {
   &--franchise {
-    &-tips-text {
-      font-weight: 600;
-      font-size: 30px;
-      font-style: normal;
+    &-tips-subtitle {
       color: #008651;
+      text-transform: initial;
+      font-family: 'Gotham';
+
+      @media (min-width: 1025px) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 30px;
+        line-height: 31px;
+      }
     }
   }
 }
 
 .link {
   &--franchise {
-    &-tips-text {
-      font-size: 21px;
+    &-tips-link {
       color: #fff;
-      font-weight: normal;
+      margin: 0;
+      font-family: 'Gotham';
+
+      @media (min-width: 1025px) {
+        line-height: 15px;
+        font-size: 10px;
+      }
+
+      @media (min-width: 1366px) {
+        font-size: 17px;
+        line-height: 21px;
+      }
     }
   }
 }
