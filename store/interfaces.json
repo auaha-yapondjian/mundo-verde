@@ -29,5 +29,8 @@
   },
   "category-tree": {
     "component": "CategoryTree"
+  },
+  "sub-category-tree": {
+    "component": "SubCategoryTree"
   }
 }

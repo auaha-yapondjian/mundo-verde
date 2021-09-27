@@ -37,7 +37,7 @@
   },
   "store.search#category": {
     "blocks": [
-      "search-result-layout",
+      "search-result-layout#category",
       "flex-layout.row#navigation-history",
       "flex-layout.row#category-footer-texts-content"
     ],
@@ -79,6 +79,13 @@
     "blocks": [
       "search-result-layout.desktop#department",
       "search-result-layout.mobile#department",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout#category": {
+    "blocks": [
+      "search-result-layout.desktop#category",
+      "search-result-layout.mobile#category",
       "search-not-found-layout"
     ]
   },
@@ -147,6 +154,24 @@
       "paddingBottom": 10
     }
   },
+  "search-result-layout.desktop#category": {
+    "children": [
+      // "flex-layout.row#banner-seo",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result-category"
+      // "flex-layout.row#category-info"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
   "search-result-layout.desktop#subcategory": {
     "children": ["flex-layout.row#searchbread", "flex-layout.row#result"],
     "props": {
@@ -196,6 +221,13 @@
       "blockClass": "rowResult"
     }
   },
+  "flex-layout.row#result-category": {
+    "children": ["flex-layout.row#content-result-category"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
   "flex-layout.row#content-result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
@@ -212,6 +244,14 @@
       "blockClass": "rowContentResult"
     }
   },
+  "flex-layout.row#content-result-category": {
+    "children": ["flex-layout.col#filter-category", "flex-layout.col#content"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "rowContentResult"
+    }
+  },
   "flex-layout.col#filter": {
     "children": ["filter-navigator.v3"],
     "props": {
@@ -221,6 +261,13 @@
   },
   "flex-layout.col#filter-deparment": {
     "children": ["category-tree", "filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#filter-category": {
+    "children": ["sub-category-tree", "filter-navigator.v3"],
     "props": {
       "blockClass": "filterCol",
       "preventVerticalStretch": true
@@ -325,6 +372,22 @@
     }
   },
   "search-result-layout.mobile#department": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "search-result-layout.mobile#category": {
     "children": [
       "flex-layout.row#searchtitle",
       "flex-layout.row#searchinfomobile",
