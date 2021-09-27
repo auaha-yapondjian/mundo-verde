@@ -617,6 +617,13 @@
     &-selection-text {
       margin-left: auto;
     }
+
+    &-cases-title {
+      padding: 0 20px 30px;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -766,6 +773,32 @@
         line-height: 40px;
       }
     }
+
+    &-cases-title {
+      margin: 0;
+
+      @media (min-width: 1025px) {
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 445px;
+      }
+
+      @media (min-width: 1366px) {
+        line-height: 40px;
+        font-size: 38px;
+        max-width: 660px;
+      }
+    }
+  }
+}
+
+.headingLevel4 {
+  &--franchise {
+    &-cases-text {
+      margin: 0;
+      color: #fff;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -902,6 +935,12 @@
         font-size: 24px;
         line-height: 30px;
       }
+    }
+
+    &-cases-text {
+      font-size: 14px;
+      margin: 0;
+      line-height: 18px;
     }
   }
 }

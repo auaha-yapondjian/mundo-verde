@@ -1,0 +1,201 @@
+{
+  "flex-layout.col#franchise-benefits": {
+		"children": [
+			"rich-text#franchise-benefits-title",
+			"flex-layout.row#franchise-benefits-content"
+		],
+    "props": {
+      "blockClass": "franchise-benefits-container",
+      "horizontalAlign": "center",
+      "width": "100%"
+    }
+	},
+
+	"rich-text#franchise-benefits-title": {
+		"props": {
+      "blockClass": "franchise-benefits-title",
+			"text":"## Conheça os benefícios!",
+      "textAlignment": "CENTER",
+      "textColor":  "c-on-action-primary",
+      "textPosition": "CENTER"
+		},
+		"title":"Título"
+	},
+
+	"flex-layout.row#franchise-benefits-content": {
+		"children": [
+			"flex-layout.col#franchise-benefits-content-1",
+			"flex-layout.col#franchise-benefits-content-2",
+			"flex-layout.col#franchise-benefits-content-3",
+			"flex-layout.col#franchise-benefits-content-4",
+			"flex-layout.col#franchise-benefits-content-5",
+			"flex-layout.col#franchise-benefits-content-6",
+			"flex-layout.col#franchise-benefits-content-7",
+			"flex-layout.col#franchise-benefits-content-8",
+			"flex-layout.col#franchise-benefits-content-9"
+		],
+    "props": {
+      "blockClass": "franchise-benefits-container",
+      "colSizing": "equal",
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true
+    },
+		"title":"Conteúdo"
+	},
+
+	"flex-layout.col#franchise-benefits-content-1": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-1"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 1"
+	},
+
+	"flex-layout.col#franchise-benefits-content-2": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-2"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 2"
+	},
+
+	"flex-layout.col#franchise-benefits-content-3": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-3"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 3"
+	},
+
+	"flex-layout.col#franchise-benefits-content-4": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-4"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 4"
+	},
+
+	"flex-layout.col#franchise-benefits-content-5": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-5"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 5"
+	},
+
+	"flex-layout.col#franchise-benefits-content-6": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-6"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 6"
+	},
+
+	"flex-layout.col#franchise-benefits-content-7": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-7"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 7"
+	},
+
+	"flex-layout.col#franchise-benefits-content-8": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-8"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 8"
+	},
+
+	"flex-layout.col#franchise-benefits-content-9": {
+		"children": [
+			"image#franchise-benefits-image",
+			"rich-text#franchise-benefits-box-text"
+		],
+    "props": {
+      "blockClass":["franchise-benefits-content", "franchise-benefits-content-9"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "verticalAlign":"top",
+      "width":"33.33%"
+    },
+		"title":"Box 9"
+	},
+
+	"image#franchise-benefits-image": {
+		"props": {
+      "blockClass": "franchise-benefits-image",
+      "src": "",
+      "alt": "Selection image"
+    },
+		"title":"Imagem"
+	},
+
+	"rich-text#franchise-benefits-box-text": {
+		"props":{
+      "blockClass": "franchise-benefits-text",
+      "font": "t-body",
+			"text":"Lorem ipsum",
+      "textAlignment": "LEFT",
+      "textColor":  "c-on-action-primary",
+      "textPosition": "LEFT"
+		},
+		"title":"Texto"
+	}
+}

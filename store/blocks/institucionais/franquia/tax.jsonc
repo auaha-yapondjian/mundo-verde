@@ -1,0 +1,127 @@
+{
+	"flex-layout.col#franchise-tax": {
+    "children":["flex-layout.row#franchise-tax-content"],
+    "props": {
+      "blockClass": "franchise-tax",
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#franchise-tax-content": {
+    "children": [
+      "flex-layout.col#franchise-tax-content",
+      "flex-layout.col#franchise-tax-slider-content"
+    ],
+    "props": {
+      "blockClass": "franchise-tax-container",
+      "colSizing":"equal",
+      "horizontalAlign":"center",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+	"flex-layout.col#franchise-tax-content": {
+		"children": [
+      "rich-text#franchise-tax-title",
+      "rich-text#franchise-tax-subtitle",
+      "flex-layout.row#franchise-tax-tabs"
+    ],
+    "props": {
+      "blockClass": ["franchise-tax-slider-content", "franchise-tax-slider-content-1"],
+      "horizontalAlign": "left",
+      "verticalAlign":"top",
+      "width": "50%"
+    }
+	},
+
+  "rich-text#franchise-tax-title": {
+		"props": {
+      "blockClass": "franchise-tax-title",
+			"text": "## Seja um franqueado Mundo Verde",
+      "textAlignment": "LEFT",
+      "textColor":  "c-on-action-secondary",
+      "textPosition": "LEFT"
+		}
+	},
+
+	"rich-text#franchise-tax-subtitle": {
+		"props": {
+      "blockClass": "franchise-tax-subtitle",
+			"text": "Conheça valores de referência para uma loja de 50 m²",
+      "font": "t-heading-3",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-action-secondary",
+      "textPosition": "LEFT"
+		}
+	},
+
+  "flex-layout.row#franchise-tax-tabs": {
+    "children": [
+      "rich-text#tab-content"
+    ]
+  },
+
+	"rich-text#tab-content": {
+		"props": {
+      "blockClass": "tab-content",
+      "font": "t-body",
+			"text":"Lorem Ipsum - Customizar",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-black",
+      "textPosition": "LEFT"
+		}
+	},
+
+  "flex-layout.col#franchise-tax-slider-content": {
+		"children": [
+      "list-context.image-list#franchise-tax-slider"
+    ],
+    "props": {
+      "blockClass": ["franchise-tax-slider-content", "franchise-tax-slider-content-2"],
+      "horizontalAlign": "center",
+      "verticalAlign":"top",
+      "width": "50%"
+    }
+	},
+
+  "list-context.image-list#franchise-tax-slider": {
+		"children":["slider-layout#franchise-tax-slider"],
+		"props":{
+			"height": "auto",
+			"images": [
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/tax--images.png",
+          "mobileImage":"",
+          "description": "Store image"
+        },
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/tax--images.png",
+          "mobileImage":"",
+          "description": "Store image"
+        },
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/tax--images.png",
+          "mobileImage":"",
+          "description": "Store image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-tax-slider": {
+		"props": {
+      "blockClass": "franchise-tax-slider",
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always"
+		}
+	}
+}

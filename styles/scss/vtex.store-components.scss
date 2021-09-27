@@ -700,6 +700,25 @@
       object-fit: cover;
       object-position: center center;
     }
+
+    &-cases-back-image-desk {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+
+      @media (min-width: 1025px) {
+        object-position: center -373px;
+      }
+
+      @media (min-width: 1366px) {
+        object-position: center -502px;
+      }
+    }
+    
+    &-cases-image {
+      max-height: 500px !important;
+      display: block;
+    }
   }
 }
 

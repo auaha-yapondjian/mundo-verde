@@ -1,0 +1,173 @@
+{
+	"stack-layout#franchise-cases-stack": {
+    "children": ["flex-layout.col#franchise-cases-back-image", "flex-layout.col#franchise-cases"],
+    "props": {
+      "blockClass": "franchise-cases-stack",
+      "zIndexOffset": 0
+    }
+  },
+
+	//Background
+  "flex-layout.col#franchise-cases-back-image": {
+    "children":[
+      "responsive-layout.desktop#franchise-cases-backimage-desk",
+      "responsive-layout.mobile#franchise-cases-backimage-mobile"
+    ],
+    "props":{
+      "blockClass": "franchise-cases-back-image"
+    }
+  },
+
+  "responsive-layout.desktop#franchise-cases-backimage-desk": {
+    "children": ["image#franchise-cases-back-image-desk"]
+  },
+
+  "image#franchise-cases-back-image-desk": {
+    "props": {
+      "blockClass": "franchise-cases-back-image-desk",
+      "alt":"Cases image desktop",
+			"src": "https://mundoverde.vtexassets.com/arquivos/cases--backimage.png"
+    },
+    "title":"Imagem desktop"
+  },
+
+  "responsive-layout.mobile#franchise-cases-backimage-mobile": {
+    "children": ["image#franchise-cases-back-image-mobile"]
+  },
+
+  "image#franchise-cases-back-image-mobile": {
+    "props": {
+      "blockClass": "franchise-cases-back-image-mobile",
+      "alt":"Cases image mobile",
+			"src": "https://mundoverde.vtexassets.com/arquivos/cases--image.png"
+		},
+    "title": "Imagem mobile"
+  },
+
+	//Slider
+  "flex-layout.col#franchise-cases": {
+    "children": [
+      "rich-text#franchise-cases-title",
+			"slider-layout#franchise-cases-slider"
+    ],
+    "props": {
+      "blockClass": "franchise-cases",
+      "horizontalAlign": "left",
+      "verticalAlign": "top",
+      "width": "100%"
+    }
+  },
+
+	"rich-text#franchise-cases-title": {
+		"props": {
+      "blockClass": "franchise-cases-title",
+			"text":"## Conheça alguns cases de sucesso dos franqueados Mundo Verde",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-black",
+      "textPosition": "LEFT"
+		}
+	},
+
+  "slider-layout#franchise-cases-slider": {
+    "children": [
+      "flex-layout.col#franchise-cases-1",
+      "flex-layout.col#franchise-cases-2",
+      "flex-layout.col#franchise-cases-3",
+      "flex-layout.col#franchise-cases-4"
+    ],
+		"props": {
+      "blockClass": "franchise-cases-slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "centerMode": "center"
+    }
+	},
+
+  "flex-layout.col#franchise-cases-1": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchise-cases-content"
+    ],
+    "props": {
+      "blockClass": ["franchise-cases-content", "franchise-cases-1"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top",
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#franchise-cases-2": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchise-cases-content"
+    ],
+    "props": {
+      "blockClass": ["franchise-cases-content", "franchise-cases-2"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top",
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#franchise-cases-3": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchise-cases-content"
+    ],
+    "props": {
+      "blockClass": ["franchise-cases-content", "franchise-cases-3"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top",
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#franchise-cases-4": {
+    "children":[
+      "image#franchise-cases-image",
+      "flex-layout.row#franchise-cases-content"
+    ],
+    "props": {
+      "blockClass": ["franchise-cases-content", "franchise-cases-4"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top",
+      "width": "grow"
+    }
+  },
+
+  "image#franchise-cases-image": {
+    "props": {
+      "blockClass": "franchise-cases-image",
+      "alt":"Cases image",
+			"src": "https://mundoverde.vtexassets.com/arquivos/cases--image.png",
+			"maxHeight": 60
+		}
+  },
+
+  "flex-layout.row#franchise-cases-content": {
+    "children":["rich-text#franchise-cases-text"],
+    "props": {
+      "blockClass": "franchise-cases-texts",
+      "colSizing": "equal",
+      "horizontalAlign": "left"
+    }
+  },
+
+  "rich-text#franchise-cases-text": {
+    "props": {
+      "blockClass": "franchise-cases-text",
+      "font": "t-small",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-black",
+      "textPosition": "LEFT",
+      "text": "Mundo Verde - Segunda do Futuro Na Bahia, a união dos franqueados é um dos mais importantes fatores de sucesso. Em 2015, um grupo de 12 unidades se uniu para transformar todas as suas lojas em grandes parceiras, abrindo mais possibilidades de crescimento juntos do que concorrendo entre si. A praça atua de forma unificada, trabalhando a marca própria estrategicamente, elevando o interesse do público e gerando ótimos resultaods em todas as unidades. Outra característica dessa região é a busca constante por inovação, pilotando novas ações e colocando em prática as de melhores resultados. A praça preza pela gestão de pessoas, com metas claras, time engajado e cuidados com o bem-estar de suas equipes."
+    }
+  }
+}

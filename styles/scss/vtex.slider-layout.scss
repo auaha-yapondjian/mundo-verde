@@ -123,6 +123,36 @@
 }
 
 //Seja um franqueado
+.sliderLayoutContainer {
+  &--franchise {
+    &-cases-slider {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 160px;
+        height: 100%;
+        background-image: linear-gradient(to left, #cad6ce, transparent);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+      }
+
+      &::before {
+        content: "";
+        width: 160px;
+        height: 100%;
+        background-image: linear-gradient(to right, #cad6ce, transparent);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+    }
+  } 
+}
+
 .sliderTrackContainer {
   &--franchise {
     &-selection-slider-first {
@@ -219,6 +249,10 @@
       border-top-left-radius: 15px;
       border-bottom-right-radius: 15px;
     }
+
+    &-cases-slider {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -261,5 +295,32 @@
         background: #2e7743;
       }
     }  
+  }
+}
+
+.sliderArrows {
+  &--franchise {
+    &-cases-slider {
+      color: #000;
+    }
+  }
+}
+
+.sliderLeftArrow {
+  &--franchise {
+    &-cases-slider {
+      right: 10%;
+      top: -79px;
+      left: initial;
+    }
+  }
+}
+
+.sliderRightArrow {
+  &--franchise {
+    &-cases-slider {
+      top: -79px;
+      right: 7%;
+    }
   }
 }

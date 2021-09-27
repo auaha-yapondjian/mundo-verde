@@ -1,0 +1,192 @@
+{
+  "flex-layout.col#franchise-brand-box": {
+		"children":[
+			"rich-text#franchise-brand-title",
+			"flex-layout.row#franchise-brand-box"
+		],
+    "props": {
+      "blockClass": "franchise-brand",
+      "horizontalAlign": "center",
+      "width":"100%"
+    }
+	},
+
+	"rich-text#franchise-brand-title": {
+		"props": {
+      "blockClass": "franchise-brand-title",
+			"text": "## O que faz a marca Mundo Verde ser única?",
+      "textAlignment": "CENTER",
+      "textColor":  "c-on-action-secondary",
+      "textPosition": "CENTER"
+		},
+		"title": "Título"
+	},
+
+	"flex-layout.row#franchise-brand-box": {
+		"children": [
+			"flex-layout.col#franchise-brand-box-1",
+			"flex-layout.col#franchise-brand-box-2",
+			"flex-layout.col#franchise-brand-box-3",
+			"flex-layout.col#franchise-brand-box-4",
+			"flex-layout.col#franchise-brand-box-5",
+			"flex-layout.col#franchise-brand-box-6",
+			"flex-layout.col#franchise-brand-box-7",
+			"flex-layout.col#franchise-brand-box-8"
+		],
+    "props":{
+      "blockClass": "franchise-brand-box",
+      "horizontalAlign":"left",
+      "preserveLayoutOnMobile": true
+    },
+		"title":"Conteúdo"
+	},
+
+	"flex-layout.col#franchise-brand-box-1": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-1"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 1"
+	},
+
+	"flex-layout.col#franchise-brand-box-2": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-2"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 2"
+	},
+
+	"flex-layout.col#franchise-brand-box-3": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-3"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 3"
+	},
+
+	"flex-layout.col#franchise-brand-box-4": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-4"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 4"
+	},
+
+	"flex-layout.col#franchise-brand-box-5": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-5"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 5"
+	},
+
+	"flex-layout.col#franchise-brand-box-6": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-6"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 6"
+	},
+
+	"flex-layout.col#franchise-brand-box-7": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-7"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 7"
+	},
+
+	"flex-layout.col#franchise-brand-box-8": {
+		"children": [
+			"image#franchise-brand-box-image",
+			"rich-text#franchise-box-text"
+		],
+    "props": {
+      "blockClass": ["franchise-brand-box-content", "franchise-brand-box-content-8"],
+      "horizontalAlign": "center",
+      "paddingRight": 5,
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "width": "33.33%"
+    },
+		"title": "Box 8"
+	},
+
+	"image#franchise-brand-box-image": {
+    "props": {
+      "src" : "",
+      "alt": "Brand box image",
+      "blockClass": "franchise-brand-box-image"
+    },
+		"title": "Icone"
+  },
+
+	"rich-text#franchise-box-text": {
+		"props":{
+      "blockClass": "franchise-box-text",
+      "font": "t-body",
+			"text":"Lorem ipsum",
+      "textAlignment": "LEFT",
+      "textColor":  "c-on-black",
+      "textPosition": "LEFT"
+		},
+		"title": "Texto"
+	}
+}

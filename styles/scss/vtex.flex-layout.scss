@@ -1215,6 +1215,14 @@
     &-tax-container {
       padding: 0 20px;
     }
+
+    &-cases {
+      margin-top: 100px;
+    }
+
+    &-cases-texts {
+      padding: 15px 35px 35px;
+    }
   }
 }
 
@@ -1446,6 +1454,18 @@
     &-tax-slider-content-1 {
       padding-right: 50px;
     }
+
+    &-cases {
+      padding-top: 50px;
+    }
+
+    &-cases-content {
+      background: #69c58d;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      overflow: hidden;
+      box-shadow: -8px 13px 10px #adbab2;
+    }
   }
 }
 
@@ -1486,6 +1506,28 @@
 
       &:last-child {
         height: auto !important;
+      }
+    }
+
+    &-cases-back-image {
+      &:first-child {
+        @media (min-width: 1025px) {
+          height: 730px !important;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+        }
+  
+        @media (min-width: 1366px) {
+          height: 865px!important;
+        }
+      }
+    }
+
+    &-cases-content {
+      &:first-child {
+        border-bottom-right-radius: 15px;
+        overflow: hidden;
       }
     }
   }

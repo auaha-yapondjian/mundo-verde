@@ -1,0 +1,39 @@
+{
+  "rich-text#franchise-description-text": {
+		"props": {
+      "blockClass": "franchise-description-text",
+			"text":"### Experiência, inovação e sustentabilidade: ## Esse é o nosso negócio O **Mundo Verde** é uma marca consolidada no mercado, pioneira e líder no conceito de vida saudável. Com esse propósito tão enraizado já nos clientes, franqueados, colaboradores, fornecedores e parceiros, a franquia tornou-se uma lovebrand premiada e a principal rede de lojas de produtos saudáveis e bem-estar da América Latina.",
+      "textAlignment": "LEFT",
+      "textColor":  "c-on-action-primary",
+      "textPosition": "LEFT"
+		},
+		"title": "Texto"
+	},
+
+	"list-context.image-list#franchise-description-image": {
+		"children":["slider-layout#franchise-description-slider"],
+		"props":{
+      "images": [
+        {
+          "image": "https://mundoverde.vtexassets.com/arquivos/ghee--image.png",
+          "mobileImage": "",
+          "description": "Main image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-description-slider": {
+		"props": {
+      "blockClass": "franchise-description-slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+			"showPaginationDots": false,
+			"showNavigationArrows": false
+    }
+	}
+}

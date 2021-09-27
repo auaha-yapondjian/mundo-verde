@@ -1,0 +1,66 @@
+{
+  "flex-layout.col#franchise-main-banner": {
+    "children": ["list-context.image-list#franchise-main-banner"],
+    "props": {
+      "blockClass": "franchise-main-banner",
+      "width": "70%",
+      "verticalAlign": "top"
+    }
+  },
+    
+  "list-context.image-list#franchise-main-banner": {
+    "children":["slider-layout#franchise-main-banner"],
+    "props":{
+      "height": "auto",
+      "images": [
+        {
+          "image": "https://mundoverde.vtexassets.com/arquivos/MundoVerde--main.png",
+          "mobileImage":"",
+          "description": "Main image"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#franchise-main-banner": {
+    "props": {
+      "blockClass": "franchise-main-banner",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showPaginationDots": false,
+      "showNavigationArrows": false
+    }
+  },
+    
+  "flex-layout.col#franchise-main-banner-text": {
+    "children": ["rich-text#franchise-main-banner-text"],
+    "props": {
+      "blockClass": "franchise-main-banner-text",
+      "width": "70%",
+      "verticalAlign": "bottom"
+    }
+  },
+    
+  "rich-text#franchise-main-banner-text": {
+    "props": {
+      "blockClass": "franchise-main-banner-text",
+      "text": "## A **maior** franquia de alimentação saudável da **América Latina**",
+      "textAlignment": "RIGHT",
+      "textColor":  "c-on-action-primary",
+      "textPosition": "RIGHT"
+    }
+  },
+    
+  "flex-layout.col#franchise-main-banner-empty": {
+    "children": [],
+    "props": {
+      "blockClass": "franchise-main-banner-empty",
+      "width": "30%",
+      "verticalAlign": "top"
+    }
+  }
+}

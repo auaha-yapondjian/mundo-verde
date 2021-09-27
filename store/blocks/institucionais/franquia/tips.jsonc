@@ -1,0 +1,98 @@
+{
+	"flex-layout.col#franchise-tips": {
+		"children": [
+			"list-context.image-list#franchise-tips-background",
+			"flex-layout.row#franchise-tips-content"
+		],
+		"props": {
+			"blockClass": "franchise-tips",
+			"horizontalAlign": "left",
+			"verticalAlign": "middle",
+			"width": "100%"
+		}
+	},
+
+	"list-context.image-list#franchise-tips-background": {
+		"children":["slider-layout#franchise-tips-background"],
+		"props": {
+			"images": [
+				{
+					"image": "https://mundoverde.vtexassets.com/arquivos/running--image.png",
+					"mobileImage":"",
+					"description": "Dicas background"
+				}
+			]
+		}
+	},
+    
+	"slider-layout#franchise-tips-background": {
+		"props": {
+			"blockClass": "franchise-tips-background",
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": false,
+			"showPaginationDots": false,
+			"showNavigationArrows": false
+		}
+	},
+    
+	"flex-layout.row#franchise-tips-content": {
+		"children": [
+			"rich-text#franchise-tips-title",
+			"rich-text#franchise-tips-subtitle",
+			"rich-text#franchise-tips-text",
+			"rich-text#franchise-tips-link"
+		],
+		"props": {
+			"blockClass": "franchise-tips-content"
+		}
+	},
+    
+	"rich-text#franchise-tips-title": {
+		"props": {
+			"blockClass": "franchise-tips-title",
+			"text": "### A gente colhe um Mundo cada vez melhor. ## Faça parte e torne-se um franqueado!",
+			"textAlignment": "LEFT",
+			"textColor":  "c-on-action-primary",
+			"textPosition": "LEFT"
+		},
+		"title": "Title"
+	},
+    
+	"rich-text#franchise-tips-subtitle": {
+		"props": {
+			"blockClass": "franchise-tips-subtitle",
+			"text": "**Mercado de Alimentação saudável** **O consumo de alimentos saudáveis no Brasil atingiu** *R$100 Bilhões* **em 2020, segundo dados da Euromonitor Internacional**",
+			"textAlignment": "LEFT",
+			"textColor":  "c-on-action-primary",
+			"textPosition": "LEFT"
+		},
+		"title": "Subtititle"
+	},
+    
+	"rich-text#franchise-tips-text": {
+		"props": {
+			"blockClass": "franchise-tips-text",
+			"font": "t-body",
+			"text": "No final do último ano, 78% dos brasileiros entrevistados passaram a se preocupar mais com a qualidade da alimentação e a relação com a saúde e 84% afirmaram que a imunidade do corpo e sua relação com os alimentos será uma preocupação daqui pra frente. Esses dados foram apresentados pelo estudo Alimentação e Bem-estar, realizado pela RG Nutri em parceria com a Tech.Fit.",
+			"textAlignment": "LEFT",
+			"textColor":  "c-on-action-primary",
+			"textPosition": "LEFT"
+		},
+		"title": "Texto"
+	},
+    
+	"rich-text#franchise-tips-link": {
+		"props": {
+			"blockClass": "franchise-tips-link",
+			"text": "Fonte: http://www.rgnutri.com.br/wp-content/uploads/2021/02/COVID-19_RGNutri_natal-small.pdf",
+			"textAlignment": "LEFT",
+			"textColor":  "c-on-action-primary",
+			"textPosition": "LEFT"
+		},
+		"title": "link"
+	}
+}

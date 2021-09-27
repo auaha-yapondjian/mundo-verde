@@ -1,0 +1,112 @@
+{
+  "flex-layout.col#franchise-selection-content": {
+    "children": [
+      "flex-layout.row#franchise-selection-title",
+			"flex-layout.row#franchise-selection-rows"
+    ],
+    "props": {
+      "blockClass": "franchise-selection-content",
+      "horizontalAlign": "center",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#franchise-selection-title": {
+    "children": ["rich-text#franchise-selection-title"],
+    "props": {
+      "blockClass": "franchise-selection-title",
+      "horizontalAlign":"center"
+    }
+  },
+
+  "rich-text#franchise-selection-title": {
+    "props": {
+      "blockClass": "franchise-selection-title",
+      "text":"## Conheça as marcas próprias Mundo Verde",
+      "textAlignment": "CENTER",
+      "textColor":  "c-on-action-secondary",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#franchise-selection-rows": {
+    "children": [
+      "flex-layout.col#franchise-selection-row1",
+      "flex-layout.col#franchise-selection-col2"
+    ],
+    "props": {
+      "blockClass": "franchise-selection-rows",
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+	"flex-layout.col#franchise-selection-row1": {
+		"children": [
+			"image#franchise-selection-image",
+			"rich-text#franchise-selection-text"
+		],
+    "props": {
+      "blockClass": ["franchise-selection-col", "franchise-selection-col1"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+	},
+
+	"image#franchise-selection-image": {
+		"props": {
+      "blockClass": "franchise-selection-image",
+      "src": "https://mundoverde.vtexassets.com/arquivos/selection--image.png",
+      "alt": "Selection image"
+    }
+	},
+
+	"rich-text#franchise-selection-text": {
+		"props":{
+      "blockClass": "franchise-selection-text",
+      "font": "t-body",
+			"text":"Lançada em 2012 **a marca Mundo Verde Seleção conta com a experiência de mais de 30 anos de Mundo Verde para promover bem-estar e um estilo de alimentação mais saudável.** O portfólio tem mais de uma centena de opções nas principais categorias de produto e oferece uma gama completa de alimentos saudáveis e práticos para todas as ocasiões de consumo. Os melhores produtos **com máxima qualidade desenvolvidos com o apoio do time de nutrição** da rede Mundo Verde.",
+      "textAlignment": "LEFT",
+      "textColor":  "c-on-black",
+      "textPosition": "LEFT"
+		}
+	},
+
+	"flex-layout.col#franchise-selection-col2": {
+		"children":["list-context.image-list#franchise-selection-image"],
+    "props": {
+      "blockClass": ["franchise-selection-col", "franchise-selection-col2"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+	},
+
+	"list-context.image-list#franchise-selection-image": {
+		"children":["slider-layout#franchise-selection-slider"],
+		"props":{
+			"height": "auto",
+      "images": [
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/man--image.png",
+          "mobileImage":"",
+          "description": "Selection image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-selection-slider": {
+		"props": {
+      "blockClass": ["franchise-selection-slider", "franchise-selection-slider-first"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showPaginationDots": false,
+      "showNavigationArrows": false
+    }
+	}
+}

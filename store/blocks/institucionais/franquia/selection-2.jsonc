@@ -1,0 +1,70 @@
+{
+	"flex-layout.col#franchise-selection-col3": {
+		"children":["list-context.image-list#franchise-selection2-image"],
+    "props": {
+      "blockClass": ["franchise-selection-col", "franchise-selection-col3"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+	},
+
+	"list-context.image-list#franchise-selection2-image": {
+		"children":["slider-layout#franchise-selection2-slider"],
+		"props":{
+			"height": "auto",
+			"images": [
+        {
+          "image":"https://mundoverde.vtexassets.com/arquivos/sleeping--image.png",
+          "mobileImage":"",
+          "description": "Sleeping image"
+        }
+      ]
+		}
+	},
+
+	"slider-layout#franchise-selection2-slider": {
+		"props": {
+      "blockClass":"franchise-selection-slider-second",
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": false,
+			"fullWidth": true,
+      "showPaginationDots": false,
+      "showNavigationArrows": false
+		}
+	},
+
+	"flex-layout.col#franchise-selection-col4": {
+		"children": [
+			"image#franchise-selection2-image",
+			"rich-text#franchise-selection2-text"
+		],
+    "props": {
+      "blockClass": ["franchise-selection-col", "franchise-selection-col4"],
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+	},
+
+	"image#franchise-selection2-image": {
+		"props": {
+      "blockClass": "franchise-selection2-image",
+			"src": "https://mundoverde.vtexassets.com/arquivos/elixir--image.png",
+			"alt": "Elixir image"
+		}
+	},
+	
+	"rich-text#franchise-selection2-text": {
+		"props":{
+      "blockClass": "franchise-selection2-text",
+      "font": "t-body",
+			"text":"Marca de suplementos, nutricosméticos, nutrição esportiva e produtos para o bem-estar e cuidados pessoais voltados para a qualidade de vida, saúde e beleza. **Elixir é uma marca completa com 8 linhas de produtos:** Elixir Antiox para prevenção ao envelhecimento; Elixir Beauty, para cuidados com a pele, unhas e cabelos; Elixir Vita para a saúde e qualidade de vida; Elixir Slim, para controle de peso; Osteo, para manutenção da saúde óssea; Elixir Treino, especializada em produtos para aumentar o rendimento durante a prática de exercícios físicos; e Elixir Care, de cuidados pessoais. O Mundo Verde acredita na beleza da vida. **E que beleza e bem-estar devem conviver em harmonia.** Elixir 'A beleza de dentro para fora'.",
+      "textAlignment": "LEFT",
+      "textColor":  "c-on-black",
+      "textPosition": "LEFT"
+		}
+	}
+}
