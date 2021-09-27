@@ -4,7 +4,7 @@
       "list-context.image-list#main-banner",
       "__fold__",
       "flex-layout.row#deals",
-      "flex-layout.row#recommendation-refresh",
+      // "flex-layout.row#recommendation-refresh",
       "responsive-layout.desktop#promotions1",
       "responsive-layout.mobile#promotions2",
       "flex-layout.row#new-releases",
