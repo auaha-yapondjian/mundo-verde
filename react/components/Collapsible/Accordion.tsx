@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 import "./styles.css";
 
-function Accordion(props) {
+function Accordion(props:any) {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
   const [setRotate, setRotateState] = useState("accordionIcon");

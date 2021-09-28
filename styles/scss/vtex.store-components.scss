@@ -585,22 +585,22 @@
     }
 
     &-description-slider {
+      border-bottom-left-radius: 41%;
+      border-top-left-radius: 50%;
+      overflow: hidden;
+
       @media (min-width: 1025px) {
+        height: 600px;
         object: {
           fit: cover;
           position: center -47px;
         }
-        height: 600px;
       }
 
       @media (min-width: 1366px) {
         height: 800px;
         object-position: center -30px;
       }
-
-      border-bottom-left-radius: 41%;
-      border-top-left-radius: 50%;
-      overflow: hidden;
     }
 
     &-brand-box-image {
@@ -639,24 +639,28 @@
 
     &-selection-image {
       @media (min-width: 1025px) {
-        width: max-content;
-        object-fit: cover;
         height: 234px;
-        object-position: -157px center;
+        object: {
+          fit: cover;
+          position: -157px center;
+        }
+        width: max-content;
       }
 
       @media (min-width: 1366px) {
-        object-position: 50% center;
         height: 322px;
+        object-position: 50% center;
       }
     }
 
     &-selection-slider {
       @media (min-width: 1025px) {
         height: 732px;
-        object-fit: cover;
+        object: {
+          fit: cover;
+          position: center 67px;
+        }
         width: max-content!important;
-        object-position: center 67px;
       }
 
       @media (min-width: 1366px) {
@@ -667,11 +671,12 @@
 
     &-selection2-image {
       @media (min-width: 1025px) {
-        object-position: -137px center;
         height: 218px;
+        object: {
+          position: center center;
+          fit: cover;
+        }
         width: max-content;
-        object-fit: cover;
-        object-position: center center;
       }
 
       @media (min-width: 1366px) {
@@ -682,29 +687,33 @@
 
     &-selection-slider-second {
       @media (min-width: 1025px) {
-        width: max-content!important;
-        object-fit: cover;
         height: 720px;
-        object-position: -187px center;
+        object: {
+          fit: cover;
+          position: -187px center;
+        }
+        width: max-content!important;
       }
 
       @media (min-width: 1366px) {
-        object-position: -347px -10px;
         height: 1035px;
+        object-position: -347px -10px;
       }
     }
 
     &-tax-slider {
       height: 510px;
+      object: {
+        fit: cover;
+        position: center center;
+      }
       width: max-content !important;
-      object-fit: cover;
-      object-position: center center;
     }
 
     &-cases-back-image-desk {
+      height: auto;
       object-fit: cover;
       width: 100%;
-      height: auto;
 
       @media (min-width: 1025px) {
         object-position: center -373px;
@@ -716,8 +725,8 @@
     }
     
     &-cases-image {
-      max-height: 500px !important;
       display: block;
+      max-height: 500px !important;
     }
   }
 }
@@ -725,8 +734,8 @@
 :global(.vtex-flex-layout-0-x-flexRow--franchise-description) {
   .container {
     margin: 0;
-    width: 100%;
     max-width: 100%;
     padding: 0;
+    width: 100%;
   }
 }
