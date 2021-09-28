@@ -25,15 +25,8 @@ function Accordion(props) {
 				<p className={`${setRotate}`}></p>
         <p className="accordionTitle">{props.title}</p>
       </button>
-      <div
-        ref={content}
-        style={{ maxHeight: `${setHeight}` }}
-        className="accordionContent"
-      >
-        <div
-          className="accordionText"
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
+      <div ref={content} style={{ maxHeight: `${setHeight}` }} className="accordionContent">
+        <div className="accordionText" dangerouslySetInnerHTML={{ __html: props.content }} />
       </div>
     </div>
   );

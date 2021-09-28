@@ -604,6 +604,16 @@
     &-selection2-text {
       padding-left: 15px;
     }
+
+    &-main-banner-text {
+      @media (min-width: 1025px) {
+        padding-right: 40px;
+      }
+
+      @media (min-width: 1366px) {
+        padding-right: 95px;
+      }
+    }
   }
 }
 

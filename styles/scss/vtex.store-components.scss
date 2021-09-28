@@ -571,10 +571,10 @@
   &--franchise {
     &-main-banner {
       @media (min-width: 1025px) {
-        height: 530px;
+        height: 570px;
         object: {
           fit: cover;
-          position: right 74px;
+          position: right -39px;
         }
         width: max-content !important;
       }

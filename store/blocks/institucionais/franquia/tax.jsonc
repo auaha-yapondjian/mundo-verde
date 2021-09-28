@@ -58,9 +58,7 @@
 	},
 
   "flex-layout.row#franchise-tax-tabs": {
-    "children": [
-      "accordeon"
-    ]
+    "children": ["accordeon"]
   },
 
 	"rich-text#tab-content": {

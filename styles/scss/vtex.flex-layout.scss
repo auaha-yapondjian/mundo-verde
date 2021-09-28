@@ -1179,6 +1179,10 @@
 //seja um franqueado
 .flexRow {
   &--franchise {
+    &-float-form {
+      position: relative;
+    }
+
     &-main-banner {
       font-family: 'Gotham'
     }
@@ -1228,19 +1232,16 @@
 
 .flexRowContent {
   &--franchise {
+
     &-main-banner {
       position: relative;
       
       .stretchChildrenWidth {
         height: auto;
 
-        &:first-child {
-          width: 70% !important;
-        }
-
         &:nth-child(even) {
           position: absolute;
-          width: 60%!important;
+          width: 65% !important;
           left: 0;
           height: 100%;
           top: 0;
@@ -1411,6 +1412,15 @@
 
 .flexCol {
   &--franchise {
+    &-main-banner {
+      width: max-content !important;
+    }
+   
+    &-float-form {
+      display: flex;
+      flex-direction: row;
+    }
+
     &-brand {
       @media (min-width: 1025px) {
         padding-bottom: 25px;
@@ -1471,6 +1481,16 @@
 
 .flexColChild {
   &--franchise {
+    &-float-form {
+      &:first-child {
+        width: 65%;
+      }
+
+      &:last-child {
+        width: 35%;
+      }
+    }
+
     &-tips {
       &:nth-child(even) {
         position: absolute;

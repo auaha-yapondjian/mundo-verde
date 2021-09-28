@@ -164,16 +164,16 @@
 .slideChildrenContainer {
   &--franchise {
     &-main-banner {
+      position: relative;
+
       @media (min-width: 1025px) {
-        height: 375px;
+        height: 380px;
+        display: block;
       }
 
       @media (min-width: 1366px) {
         height: 500px;
       }
-
-      position: relative;
-      
 
       &::before {
         content: "";
