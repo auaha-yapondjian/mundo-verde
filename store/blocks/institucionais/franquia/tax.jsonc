@@ -59,7 +59,7 @@
 
   "flex-layout.row#franchise-tax-tabs": {
     "children": [
-      "rich-text#tab-content"
+      "accordeon"
     ]
   },
 

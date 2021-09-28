@@ -64,7 +64,8 @@
     "vtex.store-video": "1.x",
     "vtex.shelf-components": "0.x",
     "vtex.recommendation-shelf": "1.x",
-    "vtex.tab-layout": "0.x"
+    "vtex.tab-layout": "0.x",
+    "vtex.css-handles": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

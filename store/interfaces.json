@@ -26,5 +26,8 @@
   },
   "product-image": {
     "component": "ProductImage"
+  },
+  "accordeon": {
+    "component": "Collapsible"
   }
 }
