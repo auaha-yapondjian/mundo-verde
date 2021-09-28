@@ -52,9 +52,10 @@ const SubCategoryTree: React.FC = () => {
 
   const defineDepartment = () => {
     const { pathname } = window?.location || {}
+
     const [, windowDepartment, windowCategory] = pathname?.split('/')
     const formattedDepartment = windowDepartment.replaceAll('-', ' ')
-    const formattedCategory = windowCategory.replaceAll('-', ' ')
+    const formattedCategory = windowCategory?.replaceAll('-', ' ')
 
     getCategoryTree(formattedDepartment, formattedCategory)
   }
