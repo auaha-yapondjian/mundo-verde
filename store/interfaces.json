@@ -32,5 +32,8 @@
   },
   "sub-category-tree": {
     "component": "SubCategoryTree"
+  },
+  "breadcrumb-custom": {
+    "component": "BreadcrumbCustom"
   }
 }

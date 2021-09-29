@@ -201,7 +201,7 @@
     }
   },
   "flex-layout.row#searchbread": {
-    "children": ["breadcrumb.search"],
+    "children": ["breadcrumb-custom"],
     "props": {
       "preserveLayoutOnMobile": true,
       "fullWidth": true
