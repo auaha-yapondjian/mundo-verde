@@ -32,6 +32,9 @@
   "store.custom#faq-page": {
     "path": "/faq"
   },
+  "store.custom#faq-ame": {
+    "path": "/faq-ame"
+  },
   "store.custom#blackfriday": {
     "path": "/blackfriday"
   },
