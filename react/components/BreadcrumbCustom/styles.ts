@@ -13,6 +13,11 @@ export const Container = styled.div`
   a {
     text-decoration: none;
     color: #008651;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   span {
@@ -26,7 +31,6 @@ export const Container = styled.div`
     p {
       display: flex;
       color: #979899;
-      text-transform: capitalize;
       padding-right: 0.25rem;
       transition: color 0.15s ease-in;
 

@@ -8,13 +8,15 @@ const BreadcrumbCustom: React.FC = () => {
   const [paths, setPaths] = useState<string[]>()
   const { navigate } = useRuntime()
 
+  const Capitalize = (s: string) => (s && s[0].toUpperCase() + s.slice(1)) || ''
+
   const defineUrl = () => {
     const { pathname } = window?.location || {}
     const pathnames = pathname?.split('/')
 
     const nonEmptyPathnames = pathnames?.filter(item => item !== '')
     const formattedPathnames = nonEmptyPathnames.map(item =>
-      item.replaceAll('-', ' ')
+      Capitalize(item.replaceAll('-', ' '))
     )
 
     setPaths(formattedPathnames)
@@ -32,13 +34,13 @@ const BreadcrumbCustom: React.FC = () => {
       {paths[0] && (
         <span>
           <Link
-            to={`/${paths[0].replaceAll(' ', '-')}`}
+            to={`/${paths[0].replaceAll(' ', '-').toLowerCase()}`}
             onClick={e => {
               e.preventDefault()
               e.stopPropagation()
 
               navigate({
-                to: `/${paths[0].replaceAll(' ', '-')}`,
+                to: `/${paths[0].replaceAll(' ', '-').toLowerCase()}`,
               })
             }}
           >
@@ -49,19 +51,19 @@ const BreadcrumbCustom: React.FC = () => {
       {paths[1] && (
         <span>
           <Link
-            to={`/${paths[0].replaceAll(' ', '-')}/${paths[1].replaceAll(
-              ' ',
-              '-'
-            )}`}
+            to={`/${paths[0]
+              .replaceAll(' ', '-')
+              .toLowerCase()}/${paths[1].replaceAll(' ', '-').toLowerCase()}`}
             onClick={e => {
               e.preventDefault()
               e.stopPropagation()
 
               navigate({
-                to: `/${paths[0].replaceAll(' ', '-')}/${paths[1].replaceAll(
-                  ' ',
-                  '-'
-                )}`,
+                to: `/${paths[0]
+                  .replaceAll(' ', '-')
+                  .toLowerCase()}/${paths[1]
+                  .replaceAll(' ', '-')
+                  .toLowerCase()}`,
               })
             }}
           >
@@ -72,19 +74,23 @@ const BreadcrumbCustom: React.FC = () => {
       {paths[2] && (
         <span>
           <Link
-            to={`/${paths[0].replaceAll(' ', '-')}/${paths[1].replaceAll(
-              ' ',
-              '-'
-            )}/${paths[2].replaceAll(' ', '-')}`}
+            to={`/${paths[0]
+              .replaceAll(' ', '-')
+              .toLowerCase()}/${paths[1]
+              .replaceAll(' ', '-')
+              .toLowerCase()}/${paths[2].replaceAll(' ', '-').toLowerCase()}`}
             onClick={e => {
               e.preventDefault()
               e.stopPropagation()
 
               navigate({
-                to: `/${paths[0].replaceAll(' ', '-')}/${paths[1].replaceAll(
-                  ' ',
-                  '-'
-                )}/${paths[2].replaceAll(' ', '-')}`,
+                to: `/${paths[0]
+                  .replaceAll(' ', '-')
+                  .toLowerCase()}/${paths[1]
+                  .replaceAll(' ', '-')
+                  .toLowerCase()}/${paths[2]
+                  .replaceAll(' ', '-')
+                  .toLowerCase()}`,
               })
             }}
           >
