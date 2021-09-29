@@ -23,20 +23,21 @@
 	&--franchise {
 		&-float-form {
 			@media (min-width: 1025px) {
+				background: #69c58d;
 				border-bottom-left-radius: 20px;
 				height: 380px;
 				left: inherit;
 				margin-left: auto;
 				overflow: hidden;
 				right: 14px;
-				top: 125px;
 				width: 108%;
+				z-index: 3;
 			}
 
 			@media (min-width: 1366px) {
 				height: 500px;
 				background: #6ac68d;
-    		padding-top: 60px;
+    			padding-top: 60px;
 				right: 20px;
 			}
 	
