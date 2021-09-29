@@ -1,6 +1,7 @@
-import React from "react"
-import "./styles.css"
-import Accordion from "./Accordion"
+import React from 'react'
+
+import './styles.css'
+import Accordion from './Accordion'
 
 function Collapsible() {
   return (
@@ -29,7 +30,7 @@ function Collapsible() {
         "
       />
     </div>
-  );
+  )
 }
 
 export default Collapsible

@@ -1,35 +1,50 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react'
 
-import "./styles.css";
+import './styles.css'
 
-function Accordion(props:any) {
-  const [setActive, setActiveState] = useState("");
-  const [setHeight, setHeightState] = useState("0px");
-  const [setRotate, setRotateState] = useState("accordionIcon");
+interface IAccordion {
+  title: string
+  content: string
+}
 
-  const content = useRef(null);
+const Accordion: React.FC<IAccordion> = props => {
+  const [setActive, setActiveState] = useState('')
+  const [setHeight, setHeightState] = useState('0px')
+  const [setRotate, setRotateState] = useState('accordionIcon')
 
-  function toggleAccordion() {
-    setActiveState(setActive === "" ? "active" : "");
+  const content = useRef(null)
+
+  const toggleAccordion = () => {
+    setActiveState(setActive === '' ? 'active' : '')
     setHeightState(
-      setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
-    );
+      setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
+    )
     setRotateState(
-      setActive === "active" ? "accordionIcon" : "accordionIcon minus"
-    );
+      setActive === 'active' ? 'accordionIcon' : 'accordionIcon minus'
+    )
   }
 
   return (
     <div className="accordionSection">
-      <button className={`accordionButton ${setActive}`} onClick={toggleAccordion}>
-				<p className={`${setRotate}`}></p>
+      <button
+        className={`accordionButton ${setActive}`}
+        onClick={toggleAccordion}
+      >
+        <p className={`${setRotate}`}></p>
         <p className="accordionTitle">{props.title}</p>
       </button>
-      <div ref={content} style={{ maxHeight: `${setHeight}` }} className="accordionContent">
-        <div className="accordionText" dangerouslySetInnerHTML={{ __html: props.content }} />
+      <div
+        ref={content}
+        style={{ maxHeight: `${setHeight}` }}
+        className="accordionContent"
+      >
+        <div
+          className="accordionText"
+          dangerouslySetInnerHTML={{ __html: props.content }}
+        />
       </div>
     </div>
-  );
+  )
 }
 
-export default Accordion;
+export default Accordion
