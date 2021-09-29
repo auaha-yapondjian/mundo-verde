@@ -1,0 +1,9 @@
+{
+  //Totalizador de produtos
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+	//Breadcrumb de busca
+	"flex-layout.row#searchbread": {
+		"children": ["breadcrumb.search"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		}
+	}
+}

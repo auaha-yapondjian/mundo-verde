@@ -1,0 +1,38 @@
+{
+	"store.search#subcategory": {
+		"blocks": [
+			"search-result-layout#subcategory",
+			"flex-layout.row#navigation-history",
+			"flex-layout.row#category-footer-texts-content"
+		],
+		"props": {
+			"context": {
+				"skusFilter": "FIRST_AVAILABLE",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	
+	"search-result-layout#subcategory": {
+		"blocks": [
+			"search-result-layout.desktop#subcategory",
+			"search-result-layout.mobile",
+			"search-not-found-layout"
+		]
+	},
+	"search-result-layout.desktop#subcategory": {
+		"children": [
+			"flex-layout.row#searchbread",
+			"flex-layout.row#result"
+		],
+		"props": {
+			"pagination": "show-more",
+			"blockClass": "searchResultLayoutDesktop",
+			"preventRouteChange": true,
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	}
+}
