@@ -26,5 +26,14 @@
   },
   "product-image": {
     "component": "ProductImage"
+  },
+  "category-tree": {
+    "component": "CategoryTree"
+  },
+  "sub-category-tree": {
+    "component": "SubCategoryTree"
+  },
+  "breadcrumb-custom": {
+    "component": "BreadcrumbCustom"
   }
 }
