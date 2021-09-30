@@ -17,12 +17,6 @@
     },
     "children": ["breadcrumb"]
   },
-  //Breadcrumb
-  "breadcrumb": {
-    "props": {
-      "showOnMobile": true
-    }
-  },
   "flex-layout.row#description": {
     "props": {
       "marginBottom": 7,

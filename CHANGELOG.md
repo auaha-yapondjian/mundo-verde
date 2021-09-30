@@ -7,10 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-### Added
-
-- **25649124** - block SEO added to black friday page
-
 ## [3.110.12] - 2021-09-29
 
 ## [3.110.11] - 2021-09-29

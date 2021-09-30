@@ -1,6 +1,0 @@
-{
-	//Titulo da busca
-	"flex-layout.row#searchtitle": {
-		"children": ["search-title.v2"]
-	}
-}

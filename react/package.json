@@ -22,7 +22,7 @@
     "@types/styled-components": "^5.1.11",
     "@vtex/tsconfig": "^0.5.6",
     "mundoverde.chaordic": "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.chaordic@0.0.2/public/@types/mundoverde.chaordic",
-    "mundoverde.store-theme": "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.110.7/public/@types/mundoverde.store-theme",
+    "mundoverde.store-theme": "https://category--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.10+build1632862546/public/@types/mundoverde.store-theme",
     "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.26.13/public/@types/vtex.add-to-cart-button",
     "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.4/public/@types/vtex.breadcrumb",
