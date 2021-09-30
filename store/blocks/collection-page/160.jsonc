@@ -1,6 +1,9 @@
 {
   "store.custom#blackfriday": {
-    "blocks": ["search-result-layout.customQuery#esquenta-blackfriday"]
+    "blocks": [
+      "search-result-layout.customQuery#esquenta-blackfriday",
+      "flex-layout.row#category-footer-texts-content"
+    ]
   },
   "search-result-layout.customQuery#esquenta-blackfriday": {
     "props": {
