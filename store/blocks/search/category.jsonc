@@ -1,0 +1,15 @@
+{
+	"store.search#category": {
+		"blocks": [
+			"search-result-layout",
+			"flex-layout.row#navigation-history",
+			"flex-layout.row#category-footer-texts-content"
+		],
+		"props": {
+			"context": {
+				"skusFilter": "FIRST_AVAILABLE",
+				"maxItemsPerPage": 12
+			}
+		}
+	}
+}

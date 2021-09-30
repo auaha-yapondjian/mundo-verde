@@ -1,0 +1,61 @@
+{
+	//SEARCH INFO DESKTOP
+	"flex-layout.row#searchinfo": {
+    "children": ["flex-layout.row#productCount", "flex-layout.col#orderby"]
+  },
+	
+	//Titulo da busca e total de produtos
+	"flex-layout.row#productCount": {
+    "children": ["search-title.v2", "total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol",
+      "colSizing": "auto"
+    }
+  },
+
+	//Ordenar por
+	"flex-layout.col#orderby": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByCol"
+    }
+  },
+
+	//SEARCH INFO MOBILE
+	"flex-layout.row#searchinfomobile": {
+		"children": [
+			"flex-layout.col#orderByMobile",
+			"flex-layout.col#filterMobile",
+			"flex-layout.col#switcherMobile"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around"
+		}
+	},
+
+	//Ordenar por
+	"flex-layout.col#orderByMobile": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "orderByMobileCol"
+		}
+	},
+
+	//Filtros laterais
+	"flex-layout.col#filterMobile": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"blockClass": "filterMobileCol"
+		}
+	},
+
+	//Switcher
+	"flex-layout.col#switcherMobile": {
+		"children": ["search-layout-switcher"],
+		"props": {
+			"blockClass": "switcherMobileCol"
+		}
+	}
+}
