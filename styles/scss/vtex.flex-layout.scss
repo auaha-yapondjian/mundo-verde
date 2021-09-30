@@ -1183,7 +1183,8 @@
     }
 
     &-main-banner {
-      font-family: 'Gotham'
+      font-family: 'Gotham';
+      overflow-x: hidden;
     }
 
     &-description {
@@ -1213,6 +1214,10 @@
     
     &-benefits-container {
       max-width: 1280px;
+    }
+
+    &-selection-first {
+      overflow-x: hidden;
     }
 
     &-tax-container {
@@ -1541,7 +1546,7 @@
         }
   
         @media (min-width: 1366px) {
-          height: 865px !important;
+          height: 890px!important;
         }
       }
     }
