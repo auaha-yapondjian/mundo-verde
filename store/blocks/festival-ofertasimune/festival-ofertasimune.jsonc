@@ -6,47 +6,28 @@
       "flex-layout.row#content--festival-ofertasimune"
     ]
   },
+
   "flex-layout.row#header--festival-ofertasimune": {
     "children": ["rich-text#title-festival-ofertasimune"],
     "props": {
       "blockClass": "festival-ofertasimune--header"
     }
   },
+
   "flex-layout.row#content--festival-ofertasimune": {
     "children": ["sandbox#festival-ofertasimune"],
     "props": {
       "blockClass": "festival-ofertasimune--content"
     }
   },
-  "list-context.image-list#main-banner": {
-    "title": "Banner Principal",
-    "children": ["slider-layout#banner-images"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#banner-images": {
-    "title": "Configuração Slider Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "blockClass": "carousel",
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "fullWidth": true
-    }
-  },
+
   "rich-text#title-festival-ofertasimune": {
     "props": {
       "text": "# Encontre a loja participante mais próxima da sua casa",
       "blockClass": "festival-ofertasimune--title"
     }
   },
+  
   "sandbox#festival-ofertasimune": {
     "props": {
       "width": "100%",

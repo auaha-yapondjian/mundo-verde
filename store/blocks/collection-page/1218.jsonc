@@ -2,6 +2,7 @@
   "store.custom#ofertas": {
     "blocks": ["search-result-layout.customQuery#ofertas"]
   },
+
   "search-result-layout.customQuery#ofertas": {
     "props": {
       "querySchema": {
@@ -13,133 +14,8 @@
       }
     },
     "blocks": [
-      "search-result-layout.mobile#ofertas",
-      "search-result-layout.desktop#ofertas"
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
     ]
-  },
-  "search-result-layout.desktop#ofertas": {
-    "children": [
-      "list-context.image-list#desktop-ofertas",
-      "flex-layout.row#result-ofertas"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "blockClass": "searchResultLayoutDesktop",
-      "preventRouteChange": true,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "paddingBottom": 10
-    }
-  },
-  "search-result-layout.mobile#ofertas": {
-    "children": [
-      "list-context.image-list#mobile-ofertas",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#contentmobile"
-    ],
-    "props": {
-      "pagination": "infinity-scroll",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-ofertas": {
-    "children": ["flex-layout.row#result#ofertas"],
-    "props": {
-      "preventHorizontalStretch": false,
-      "blockClass": "rowResult"
-    }
-  },
-  "flex-layout.row#result#ofertas": {
-    "children": [
-      "flex-layout.col#filter-offers",
-      "flex-layout.col#result#ofertas"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true,
-      "blockClass": "content-result--landing-promo"
-    }
-  },
-  "flex-layout.col#filter-offers": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#result#ofertas": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products#ofertas",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "width": "grow",
-      "preventVerticalStretch": true
-    }
-  },
-  "list-context.image-list#desktop-ofertas": {
-    "title": "Banner Página - Desktop",
-    "children": ["slider-layout#desktop-ofertas"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#desktop-ofertas": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "list-context.image-list#mobile-ofertas": {
-    "title": "Banner Página - Mobile",
-    "children": ["slider-layout#mobile-ofertas"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#mobile-ofertas": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "flex-layout.row#products#ofertas": {
-    "children": ["search-content#ofertas"]
-  },
-  "search-content#ofertas": {
-    "blocks": ["gallery#ofertas", "not-found"]
-  },
-  "gallery#ofertas": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "maxItemsPerRow": {
-        "desktop": 3
-      }
-    }
   }
 }

@@ -2,6 +2,7 @@
   "store.custom#natal": {
     "blocks": ["search-result-layout.customQuery#natal"]
   },
+
   "search-result-layout.customQuery#natal": {
     "props": {
       "querySchema": {
@@ -11,133 +12,10 @@
         "mapField": "productClusterIds"
       }
     },
+
     "blocks": [
-      "search-result-layout.mobile#natal",
-      "search-result-layout.desktop#natal"
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
     ]
-  },
-  "search-result-layout.desktop#natal": {
-    "children": [
-      "list-context.image-list#desktop-natal",
-      "flex-layout.row#result-natal"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "blockClass": "searchResultLayoutDesktop",
-      "preventRouteChange": true,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "paddingBottom": 10
-    }
-  },
-  "search-result-layout.mobile#natal": {
-    "children": [
-      "list-context.image-list#mobile-natal",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#contentmobile"
-    ],
-    "props": {
-      "pagination": "infinity-scroll",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-natal": {
-    "children": ["flex-layout.row#result#natal"],
-    "props": {
-      "preventHorizontalStretch": false,
-      "blockClass": "rowResult"
-    }
-  },
-  "flex-layout.row#result#natal": {
-    "children": [
-      "flex-layout.col#filter-offers",
-      "flex-layout.col#result#natal"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true,
-      "blockClass": "content-result--landing-promo"
-    }
-  },
-  "flex-layout.col#filter-offers": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#result#natal": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products#natal",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "width": "grow"
-    }
-  },
-  "list-context.image-list#desktop-natal": {
-    "title": "Banner Página - Desktop",
-    "children": ["slider-layout#desktop-natal"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#desktop-natal": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "list-context.image-list#mobile-natal": {
-    "title": "Banner Página - Mobile",
-    "children": ["slider-layout#mobile-natal"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#mobile-natal": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "flex-layout.row#products#natal": {
-    "children": ["search-content#natal"]
-  },
-  "search-content#natal": {
-    "blocks": ["gallery#natal", "not-found"]
-  },
-  "gallery#natal": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "maxItemsPerRow": {
-        "desktop": 3
-      }
-    }
   }
 }

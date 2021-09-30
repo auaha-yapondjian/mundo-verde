@@ -2,6 +2,7 @@
   "store.custom#dia-dos-namorados": {
     "blocks": ["search-result-layout.customQuery#dia-dos-namorados"]
   },
+
   "search-result-layout.customQuery#dia-dos-namorados": {
     "props": {
       "querySchema": {
@@ -13,132 +14,8 @@
       }
     },
     "blocks": [
-      "search-result-layout.mobile#dia-dos-namorados",
-      "search-result-layout.desktop#dia-dos-namorados"
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
     ]
-  },
-  "search-result-layout.desktop#dia-dos-namorados": {
-    "children": [
-      "list-context.image-list#desktop-dia-dos-namorados",
-      "flex-layout.row#result-dia-dos-namorados"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "blockClass": "searchResultLayoutDesktop",
-      "preventRouteChange": true,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "paddingBottom": 10
-    }
-  },
-  "search-result-layout.mobile#dia-dos-namorados": {
-    "children": [
-      "list-context.image-list#mobile-dia-dos-namorados",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#contentmobile"
-    ],
-    "props": {
-      "pagination": "infinity-scroll",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-dia-dos-namorados": {
-    "children": ["flex-layout.row#result#dia-dos-namorados"],
-    "props": {
-      "preventHorizontalStretch": false,
-      "blockClass": "rowResult"
-    }
-  },
-  "flex-layout.row#result#dia-dos-namorados": {
-    "children": [
-      "flex-layout.col#filter-offers",
-      "flex-layout.col#result#dia-dos-namorados"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true,
-      "blockClass": "content-result--landing-promo"
-    }
-  },
-  "flex-layout.col#filter-offers": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#result#dia-dos-namorados": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products#dia-dos-namorados",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "width": "grow"
-    }
-  },
-  "list-context.image-list#desktop-dia-dos-namorados": {
-    "title": "Banner Página - Desktop",
-    "children": ["slider-layout#desktop-dia-dos-namorados"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#desktop-dia-dos-namorados": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "list-context.image-list#mobile-dia-dos-namorados": {
-    "title": "Banner Página - Mobile",
-    "children": ["slider-layout#mobile-dia-dos-namorados"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#mobile-dia-dos-namorados": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "flex-layout.row#products#dia-dos-namorados": {
-    "children": ["search-content#dia-dos-namorados"]
-  },
-  "search-content#dia-dos-namorados": {
-    "blocks": ["gallery#dia-dos-namorados", "not-found"]
-  },
-  "gallery#dia-dos-namorados": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "maxItemsPerRow": {
-        "desktop": 3
-      }
-    }
   }
 }

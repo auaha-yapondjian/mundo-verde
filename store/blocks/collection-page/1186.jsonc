@@ -1,14 +1,13 @@
 {
-  "store.custom#semana-do-cliente": {
-    "blocks": ["search-result-layout.customQuery#semana-do-cliente"]
+  "store.custom#imune-mais": {
+    "blocks": ["search-result-layout.customQuery#imune-mais"]
   },
 
-  "search-result-layout.customQuery#semana-do-cliente": {
+  "search-result-layout.customQuery#imune-mais": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
-        "queryField": "1220",
+        "queryField": "1186",
         "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }

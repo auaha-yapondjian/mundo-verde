@@ -5,6 +5,7 @@
       "flex-layout.row#category-footer-texts-content"
     ]
   },
+
   "search-result-layout.customQuery#esquenta-blackfriday": {
     "props": {
       "querySchema": {
@@ -16,132 +17,8 @@
       }
     },
     "blocks": [
-      "search-result-layout.mobile#esquenta-blackfriday",
-      "search-result-layout.desktop#esquenta-blackfriday"
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
     ]
-  },
-  "search-result-layout.desktop#esquenta-blackfriday": {
-    "children": [
-      "list-context.image-list#desktop-esquenta-blackfriday",
-      "flex-layout.row#result-esquenta-blackfriday"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "blockClass": "searchResultLayoutDesktop",
-      "preventRouteChange": true,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "paddingBottom": 10
-    }
-  },
-  "search-result-layout.mobile#esquenta-blackfriday": {
-    "children": [
-      "list-context.image-list#mobile-esquenta-blackfriday",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#contentmobile"
-    ],
-    "props": {
-      "pagination": "infinity-scroll",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-esquenta-blackfriday": {
-    "children": ["flex-layout.row#result#esquenta-blackfriday"],
-    "props": {
-      "preventHorizontalStretch": false,
-      "blockClass": "rowResult"
-    }
-  },
-  "flex-layout.row#result#esquenta-blackfriday": {
-    "children": [
-      "flex-layout.col#filter-offers",
-      "flex-layout.col#result#esquenta-blackfriday"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true,
-      "blockClass": "content-result--landing-promo"
-    }
-  },
-  "flex-layout.col#filter-offers": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#result#esquenta-blackfriday": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products#esquenta-blackfriday",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "width": "grow"
-    }
-  },
-  "list-context.image-list#desktop-esquenta-blackfriday": {
-    "title": "Banner Página - Desktop",
-    "children": ["slider-layout#desktop-esquenta-blackfriday"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#desktop-esquenta-blackfriday": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "list-context.image-list#mobile-esquenta-blackfriday": {
-    "title": "Banner Página - Mobile",
-    "children": ["slider-layout#mobile-esquenta-blackfriday"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#mobile-esquenta-blackfriday": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "flex-layout.row#products#esquenta-blackfriday": {
-    "children": ["search-content#esquenta-blackfriday"]
-  },
-  "search-content#esquenta-blackfriday": {
-    "blocks": ["gallery#esquenta-blackfriday", "not-found"]
-  },
-  "gallery#esquenta-blackfriday": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "maxItemsPerRow": {
-        "desktop": 3
-      }
-    }
   }
 }

@@ -525,9 +525,9 @@ ms@2.1.2:
   version "0.0.2"
   resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.chaordic@0.0.2/public/@types/mundoverde.chaordic#7db4f4ff7f353ed175b2be54fd731fac0829a6d2"
 
-"mundoverde.store-theme@https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme":
-  version "3.110.12"
-  resolved "https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme#227dec16262b90a86edc89563e42c0835df101ae"
+"mundoverde.store-theme@https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.13+build1632862546/public/@types/mundoverde.store-theme":
+  version "3.110.13"
+  resolved "https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.13+build1632862546/public/@types/mundoverde.store-theme#212e1b203e4c32617696fd8a63b85ea9e7eebe87"
 
 object-assign@^4.1.1:
   version "4.1.1"
