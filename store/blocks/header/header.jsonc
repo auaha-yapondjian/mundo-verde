@@ -8,6 +8,7 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
+      "google-site-verification",
       "telemarketing",
       "flex-layout.row#1-desktop",
       "my-account-observer",

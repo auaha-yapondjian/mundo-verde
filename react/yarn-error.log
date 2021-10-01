@@ -1,25 +1,25 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn
+  /usr/local/Cellar/node@14/14.17.6/bin/node /Users/leandromartins/.config/yarn/global/node_modules/yarn/bin/yarn.js --non-interactive --ignore-engines
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/leandromartins/.zinit/polaris/bin
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/leandromartins/.zinit/polaris/bin:/usr/local/opt/node@14/bin:/usr/local/opt/node@14/bin
 
 Yarn version: 
   1.22.11
 
 Node version: 
-  14.17.5
+  14.17.6
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: https://category--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme: Request failed "500 Internal Server Error"
-      at ResponseError.ExtendableBuiltin (/usr/local/lib/node_modules/yarn/lib/cli.js:696:66)
-      at new ResponseError (/usr/local/lib/node_modules/yarn/lib/cli.js:802:124)
-      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:67062:16)
+  Error: https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/Users/leandromartins/.config/yarn/global/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/Users/leandromartins/.config/yarn/global/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/Users/leandromartins/.config/yarn/global/node_modules/yarn/lib/cli.js:67062:16)
       at Request.emit (events.js:400:28)
-      at Request.module.exports.Request.onRequestResponse (/usr/local/lib/node_modules/yarn/lib/cli.js:141640:10)
+      at Request.module.exports.Request.onRequestResponse (/Users/leandromartins/.config/yarn/global/node_modules/yarn/lib/cli.js:141640:10)
       at ClientRequest.emit (events.js:400:28)
       at HTTPParser.parserOnIncomingClient (_http_client.js:647:27)
       at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)
@@ -51,7 +51,7 @@ npm manifest:
       "@types/styled-components": "^5.1.11",
       "@vtex/tsconfig": "^0.5.6",
       "mundoverde.chaordic": "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.chaordic@0.0.2/public/@types/mundoverde.chaordic",
-      "mundoverde.store-theme": "https://category--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme",
+      "mundoverde.store-theme": "https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme",
       "typescript": "3.9.7",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.26.13/public/@types/vtex.add-to-cart-button",
       "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.4/public/@types/vtex.breadcrumb",
@@ -638,9 +638,9 @@ Lockfile:
     version "0.0.2"
     resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.chaordic@0.0.2/public/@types/mundoverde.chaordic#7db4f4ff7f353ed175b2be54fd731fac0829a6d2"
   
-  "mundoverde.store-theme@https://category--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.10+build1632862546/public/@types/mundoverde.store-theme":
-    version "3.110.10"
-    resolved "https://category--mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.10+build1632862546/public/@types/mundoverde.store-theme#c3bcb9ea1161fc5f66b2d9725ab76f1e60be06c0"
+  "mundoverde.store-theme@https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme":
+    version "3.110.12"
+    resolved "https://mundoverde.myvtex.com/_v/private/typings/linked/v1/mundoverde.store-theme@3.110.12+build1632862546/public/@types/mundoverde.store-theme#227dec16262b90a86edc89563e42c0835df101ae"
   
   object-assign@^4.1.1:
     version "4.1.1"
