@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+**25753682** - SEO text blocks adjusts
+
 ## [3.111.0] - 2021-10-04
 
 ### Added
