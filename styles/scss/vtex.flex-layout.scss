@@ -1174,3 +1174,35 @@
   }
 }
 // category footer texts
+
+.flexRow {
+  &--seo {
+    &-content {
+      max-width: 1250px;
+      margin: auto;
+      padding: 0;
+    }
+  }
+}
+
+.flexRowContent {
+  &--seo {
+    &-content-top {
+      flex-direction: column;
+
+      @media (min-width: 1025px) {
+        flex-direction: row;
+      }
+
+      .stretchChildrenWidth {
+        margin: 0 auto;
+        width: 100% !important;
+
+        @media (min-width: 1025px) {
+          margin: 0;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "flex-layout.row#seo-content": {
+    "children": ["flex-layout.col#seo-content"],
+    "props": {
+      "blockClass": "seo-content"
+    },
+    "title": "Conteúdo SEO"
+  },
+
+  "flex-layout.col#seo-content": {
+    "children": [
+      "flex-layout.row#seo-content-top",
+      "flex-layout.row#seo-content-bottom"
+    ],
+    "props": {
+      "blockClass": "seo-content",
+      "preserveLayoutOnMobile": false
+    }
+  },
+
+  "flex-layout.row#seo-content-top": {
+    "children": [
+      "image#seo-content-top",
+      "rich-text#seo-content-top"
+    ],
+    "props": {
+      "blockClass": "seo-content-top"
+    },
+    "title": "Conteúdo SEO superior"
+  },
+
+  "image#seo-content-top": {
+    "props": {
+      "blockClass": "seo-content-top",
+      "src": ""
+    },
+    "title": "Imagem"
+  },
+
+  "rich-text#seo-content-top": {
+    "props": {
+      "blockClass": "seo-content-top",
+      "text": ""
+    },
+    "title":"Texto"
+  },
+
+  "flex-layout.row#seo-content-bottom": {
+    "children": [
+      "flex-layout.col#seo-content-bottom-left",
+      "flex-layout.col#seo-content-bottom-right"
+    ],
+    "props": {
+      "blockClass": "seo-content-bottom"
+    },
+    "title": "Conteúdo SEO inferior"
+  },
+
+  "flex-layout.col#seo-content-bottom-left": {
+    "children": ["rich-text#seo-content-bottom-left"],
+    "props": {
+      "blockClass": ["seo-content-bottom", "seo-content-bottom-left"]
+    }
+  },
+
+  "rich-text#seo-content-bottom-left": {
+    "props": {
+      "blockClass": ["seo-content-bottom", "seo-content-bottom-left"],
+      "text": ""
+    },
+    "title": "Texto - esquerda"
+  },
+
+  "flex-layout.col#seo-content-bottom-right": {
+    "children": ["rich-text#seo-content-right"],
+    "props": {
+      "blockClass": ["seo-content-bottom", "seo-content-bottom-right"]
+    }
+  },
+
+  "rich-text#seo-content-right": {
+    "props": {
+      "blockClass": ["seo-content-bottom", "seo-content-bottom-right"],
+      "text": ""
+    },
+    "title": "Texto - direita"
+  }
+}
