@@ -565,3 +565,21 @@
     display: none !important;
   }
 }
+
+
+//Faq ame
+:global(.vtex-flex-layout-0-x-flexRow--faq-ame-main-banner) {
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--faq-ame-text) {
+  .container {
+    padding: 0 20px 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
