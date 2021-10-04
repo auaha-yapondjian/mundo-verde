@@ -24,7 +24,10 @@
     }
   },
   "store.search#department": {
-    "blocks": ["search-result-layout", "flex-layout.row#navigation-history"],
+    "blocks": [
+      "search-result-layout#department",
+      "flex-layout.row#navigation-history"
+    ],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -34,7 +37,7 @@
   },
   "store.search#category": {
     "blocks": [
-      "search-result-layout",
+      "search-result-layout#category",
       "flex-layout.row#navigation-history",
       "flex-layout.row#category-footer-texts-content"
     ],
@@ -72,6 +75,20 @@
       "search-not-found-layout"
     ]
   },
+  "search-result-layout#department": {
+    "blocks": [
+      "search-result-layout.desktop#department",
+      "search-result-layout.mobile#department",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout#category": {
+    "blocks": [
+      "search-result-layout.desktop#category",
+      "search-result-layout.mobile#category",
+      "search-not-found-layout"
+    ]
+  },
   "search-result-layout#subcategory": {
     "blocks": [
       "search-result-layout.desktop#subcategory",
@@ -104,11 +121,44 @@
   "search-result-layout.desktop": {
     "children": [
       // "flex-layout.row#banner-seo",
-      // "chaordic-div#top",
       "flex-layout.row#searchbread",
       "flex-layout.row#result"
-      // "chaordic-div#middle",
-      // "chaordic-div#bottom"
+      // "flex-layout.row#category-info"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
+  "search-result-layout.desktop#department": {
+    "children": [
+      // "flex-layout.row#banner-seo",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result-department"
+      // "flex-layout.row#category-info"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
+  "search-result-layout.desktop#category": {
+    "children": [
+      // "flex-layout.row#banner-seo",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result-category"
       // "flex-layout.row#category-info"
     ],
     "props": {
@@ -123,13 +173,7 @@
     }
   },
   "search-result-layout.desktop#subcategory": {
-    "children": [
-      // "chaordic-div#top",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#result"
-      // "chaordic-div#middle",
-      // "chaordic-div#bottom"
-    ],
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#result"],
     "props": {
       "pagination": "show-more",
       "blockClass": "searchResultLayoutDesktop",
@@ -157,7 +201,7 @@
     }
   },
   "flex-layout.row#searchbread": {
-    "children": ["breadcrumb.search"],
+    "children": ["breadcrumb-custom"],
     "props": {
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -165,6 +209,20 @@
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.row#content-result"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
+  "flex-layout.row#result-department": {
+    "children": ["flex-layout.row#content-result-department"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
+  "flex-layout.row#result-category": {
+    "children": ["flex-layout.row#content-result-category"],
     "props": {
       "preventHorizontalStretch": false,
       "blockClass": "rowResult"
@@ -178,10 +236,41 @@
       "blockClass": "rowContentResult"
     }
   },
+  "flex-layout.row#content-result-department": {
+    "children": ["flex-layout.col#filter-deparment", "flex-layout.col#content"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "rowContentResult"
+    }
+  },
+  "flex-layout.row#content-result-category": {
+    "children": ["flex-layout.col#filter-category", "flex-layout.col#content"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "rowContentResult"
+    }
+  },
   "flex-layout.col#filter": {
     "children": ["filter-navigator.v3"],
     "props": {
-      "blockClass": "filterCol"
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#filter-deparment": {
+    "children": ["category-tree", "filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#filter-category": {
+    "children": ["sub-category-tree", "filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true
     }
   },
   "flex-layout.col#content": {
@@ -271,11 +360,40 @@
       "flex-layout.row#searchtitle",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
-      // "chaordic-div#top",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#contentmobile"
-      // "chaordic-div#middle",
-      // "chaordic-div#bottom"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "search-result-layout.mobile#department": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "search-result-layout.mobile#category": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
     ],
     "props": {
       "pagination": "infinity-scroll",
