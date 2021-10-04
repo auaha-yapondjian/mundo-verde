@@ -1,0 +1,57 @@
+{
+  "store.custom#faq-ame": {
+    "children":[
+      "flex-layout.row#faq-ame-main-banner",
+      "flex-layout.row#faq-ame-text"
+    ]
+  },
+
+  "flex-layout.row#faq-ame-main-banner": {
+    "children": ["list-context.image-list#faq-ame-main-banner"],
+    "props": {
+      "blockClass": "faq-ame-main-banner"
+    },
+    "title": "Banner"
+  },
+
+  "list-context.image-list#faq-ame-main-banner": {
+    "children": ["slider-layout#faq-ame-main-banner"],
+    "props": {
+      "height": "auto",
+      "images": []
+    },
+    "title": "Imagens"
+  },
+
+  "slider-layout#faq-ame-main-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "faq-ame-main-banner",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true
+    },
+    "title": "Slider Banner"
+  },
+
+  "flex-layout.row#faq-ame-text": {
+    "children": ["rich-text#faq-ame-text"],
+    "props": {
+      "blockClass": "faq-ame-text"
+    },
+    "title": "Texto"
+  },
+
+  "rich-text#faq-ame-text": {
+    "props": {
+      "blockClass": "faq-ame-text",
+      "text": ""
+    },
+    "title": "Textos"
+  }
+}

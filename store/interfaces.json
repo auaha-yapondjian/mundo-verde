@@ -35,5 +35,8 @@
   },
   "breadcrumb-custom": {
     "component": "BreadcrumbCustom"
+  },
+  "google-site-verification": {
+    "component": "GoogleSiteVerification"
   }
 }

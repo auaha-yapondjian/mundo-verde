@@ -579,3 +579,20 @@
 }
 
 // department filter
+
+//Faq AME
+.heading {
+  &--faq {
+    &-ame-text {
+      color: #008651;
+    }
+  }
+}
+
+.strong {
+  &--faq {
+    &-ame-text {
+      text-decoration: underline;
+    }
+  }
+}
