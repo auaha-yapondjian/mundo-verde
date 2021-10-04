@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.0] - 2021-10-04
+
 ### Added
 
 **25705060** - Faq AME page added
