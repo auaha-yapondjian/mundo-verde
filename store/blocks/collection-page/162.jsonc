@@ -1,6 +1,9 @@
 {
   "store.custom#cybermonday": {
-    "blocks": ["search-result-layout.customQuery#cybermonday"]
+    "blocks": [
+      "search-result-layout.customQuery#cybermonday",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#cybermonday": {
     "props": {
