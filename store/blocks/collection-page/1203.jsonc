@@ -1,6 +1,9 @@
 {
   "store.custom#cozinha-saudavel": {
-    "blocks": ["search-result-layout.customQuery#cozinha-saudavel"]
+    "blocks": [
+      "search-result-layout.customQuery#cozinha-saudavel",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#cozinha-saudavel": {
     "props": {

@@ -1,6 +1,9 @@
 {
   "store.custom#ofertas": {
-    "blocks": ["search-result-layout.customQuery#ofertas"]
+    "blocks": [
+      "search-result-layout.customQuery#ofertas",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#ofertas": {
     "props": {

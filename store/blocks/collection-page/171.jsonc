@@ -1,6 +1,9 @@
 {
   "store.custom#voce-mais-saudavel": {
-    "blocks": ["search-result-layout.customQuery#voce-mais-saudavel"]
+    "blocks": [
+      "search-result-layout.customQuery#voce-mais-saudavel",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#voce-mais-saudavel": {
     "props": {
