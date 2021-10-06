@@ -1,0 +1,49 @@
+{
+  //Banner slider desktop
+  "list-context.image-list#collection-banner-desktop": {
+    "title": "Banner Página - Desktop",
+    "children": ["slider-layout#collection-banner-desktop"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+
+  "slider-layout#collection-banner-desktop": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  },
+
+  //Banner slider mobilee
+  "list-context.image-list#collection-banner-mobile": {
+    "title": "Banner Página - Mobile",
+    "children": ["slider-layout#collection-banner-mobile"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+
+  "slider-layout#collection-banner-mobile": {
+    "title": "Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "banner-offers"
+    }
+  }
+}

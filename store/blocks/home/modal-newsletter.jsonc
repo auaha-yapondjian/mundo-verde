@@ -65,7 +65,7 @@
       "rich-text#modal-text",
       "form-input.text#pname",
       "form-input.text#pemail",
-      "form-submit",
+      "form-submit#popup",
       "rich-text#text-form-bottom"
     ],
     "blocks": ["form-success#popup-newsletter"]
@@ -85,7 +85,7 @@
       "label": "E-mail"
     }
   },
-  "form-submit": {
+  "form-submit#popup": {
     "props": {
       "label": "Eu quero!"    }
   },

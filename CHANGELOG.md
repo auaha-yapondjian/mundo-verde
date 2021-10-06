@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Removing duplicated blocks, adjusts in collection files
+
 ## [3.111.3] - 2021-10-06
 
 ### Hotfix

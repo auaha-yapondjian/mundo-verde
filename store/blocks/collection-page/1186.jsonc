@@ -1,17 +1,13 @@
 {
-  "store.custom#blackfriday": {
-    "blocks": [
-      "search-result-layout.customQuery#esquenta-blackfriday",
-      "flex-layout.row#seo-content"
-    ]
+  "store.custom#imune-mais": {
+    "blocks": ["search-result-layout.customQuery#imune-mais"]
   },
 
-  "search-result-layout.customQuery#esquenta-blackfriday": {
+  "search-result-layout.customQuery#imune-mais": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": false,
-        "queryField": "160",
+        "queryField": "1186",
         "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }

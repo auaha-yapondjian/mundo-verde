@@ -1,0 +1,36 @@
+{
+  "search-result-layout.desktop#collection-content": {
+    "children": [
+      "list-context.image-list#collection-banner-desktop",
+      "flex-layout.row#collection-result-container"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "searchResultLayoutDesktop",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "paddingBottom": 10
+    }
+  },
+
+  "search-result-layout.mobile#collection-content": {
+    "children": [
+      "list-context.image-list#collection-banner-mobile",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#contentmobile"
+    ],
+    "props": {
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  }
+}

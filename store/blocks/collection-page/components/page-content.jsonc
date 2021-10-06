@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#collection-result-container": {
+    "children": ["flex-layout.row#collection-result"],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "rowResult"
+    }
+  },
+
+  "flex-layout.row#collection-result": {
+    "children": [
+      "flex-layout.col#filter-offers",
+      "flex-layout.col#collections-result"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "content-result--landing-promo"
+    }
+  },
+
+  "flex-layout.col#collections-result": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#collection-products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  }
+}
