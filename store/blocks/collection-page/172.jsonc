@@ -1,6 +1,9 @@
 {
   "store.custom#semana-do-consumidor": {
-    "blocks": ["search-result-layout.customQuery#semana-do-consumidor"]
+    "blocks": [
+      "search-result-layout.customQuery#semana-do-consumidor",
+      "flex-layout.row#seo-content"
+    ]
   },
 
   "search-result-layout.customQuery#semana-do-consumidor": {

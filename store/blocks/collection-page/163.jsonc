@@ -1,6 +1,9 @@
 {
   "store.custom#natal": {
-    "blocks": ["search-result-layout.customQuery#natal"]
+    "blocks": [
+      "search-result-layout.customQuery#natal",
+      "flex-layout.row#seo-content"
+    ]
   },
 
   "search-result-layout.customQuery#natal": {

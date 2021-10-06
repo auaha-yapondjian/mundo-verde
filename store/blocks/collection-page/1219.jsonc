@@ -1,6 +1,9 @@
 {
   "store.custom#longevidade": {
-    "blocks": ["search-result-layout.customQuery#longevidade"]
+    "blocks": [
+      "search-result-layout.customQuery#longevidade",
+      "flex-layout.row#seo-content"
+    ]
   },
 
   "search-result-layout.customQuery#longevidade": {

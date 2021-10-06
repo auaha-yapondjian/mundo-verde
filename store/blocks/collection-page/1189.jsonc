@@ -1,6 +1,9 @@
 {
   "store.custom#dia-dos-namorados": {
-    "blocks": ["search-result-layout.customQuery#dia-dos-namorados"]
+    "blocks": [
+      "search-result-layout.customQuery#dia-dos-namorados",
+      "flex-layout.row#seo-content"
+    ]
   },
 
   "search-result-layout.customQuery#dia-dos-namorados": {

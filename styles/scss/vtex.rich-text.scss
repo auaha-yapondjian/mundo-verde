@@ -579,9 +579,37 @@
 }
 
 // department filter
+.container {
+  //Seo content
+  &--seo {
+    &-content-bottom {
+      @media (min-width: 640px) {
+        width: 100% !important;
+      }
+    }
+  }
+}
 
-//Faq AME
+.wrapper {
+  //Seo content
+  &--seo {
+    &-content-bottom-left {
+      @media (min-width: 640px) {
+        padding-right: 30px;
+      }
+    }
+
+    &-content-bottom-right {
+
+      @media (min-width: 640px) {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
 .heading {
+  //Faq AME
   &--faq {
     &-ame-text {
       color: #008651;
@@ -589,10 +617,189 @@
   }
 }
 
+.headingLevel2 {
+  //SEO content
+  &--seo {
+    &-content-top {
+      font-size: 1.75rem;
+      font-weight: bold;
+      margin: 35px auto 0;
+      line-height: 26px;
+      color: #4b2b4a;
+      text-transform: uppercase;
+
+      @media (min-width: 1025px) {
+        margin-top: 35px;
+        padding-left: 30px;
+      }
+    }
+
+    &-content-bottom {
+      color: #008651;
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 50px 0 10px 0;
+      height: auto;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}
+
+.headingLevel3 {
+  //SEO content
+  &--seo {
+    &-content-top {
+      font-size: 1.55rem;
+      font-weight: bold;
+      color: #4b2b4a;
+      margin: 0;
+      text-transform: uppercase;
+
+      @media (min-width: 1025px) {
+        padding-left: 30px;
+      }
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    &-content-bottom {
+      color: #008651;
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 50px 0 10px 0;
+      height: auto;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}
+
+.headingLevel4 {
+  //SEO content
+  &--seo {
+    &-content-bottom {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #4b2b4a;
+      text-transform: uppercase;
+      margin: 20px 0 8px;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}
+
 .strong {
+  //Faq AME
   &--faq {
     &-ame-text {
       text-decoration: underline;
+    }
+  }
+}
+
+.paragraph {
+  //SEO content
+  &--seo {
+    &-content-top {
+      color: #158957;
+      font-size: 16px;
+      margin-top: 24px;
+      line-height: 30px;
+      text-align: justify;
+      position: relative;
+
+      @media (min-width: 1025px) {
+        padding-left: 30px;
+      }
+
+      &:empty {
+        display: none;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        border: 2.5px solid #4b2b4a;
+        border-radius: 50%;
+        background: #fff;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -1px;
+        top: -24px;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: #4b2b4a;
+        height: 2.5px;
+        position: absolute;
+        width: 100%;
+        max-width: 95vw;
+        margin: 0;
+        font-size: 0;
+        align-items: center;
+        right: 0;
+        top: -10px;
+      }
+
+      @media (min-width: 1025px) {
+        &::before {
+          left: -30px;
+          top: -35px;
+        }
+  
+        &::after {
+          right: 0;
+          top: -22px;
+          
+        }
+      }
+    }
+
+    &-content-bottom {
+      font-family: sans-serif;
+      margin: 0;
+      color: #3f3f40;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: justify;
+
+      &:empty {
+        display: none;
+      }
+
+      &:last-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.link {
+  //Seo content
+  &--seo {
+    &-content-bottom {
+      color: #008651;
+      font-family: sans-serif;
+
+      &:empty {
+        display: none;
+      }
     }
   }
 }

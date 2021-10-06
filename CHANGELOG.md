@@ -11,6 +11,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Removing duplicated blocks, adjusts in collection files
 
+## [3.111.3] - 2021-10-06
+
+### Hotfix
+
+**25753682** - SEO text blocks adjusts
+
+## [3.111.2] - 2021-10-05
+
+## [3.111.1] - 2021-10-05
+
+### Fixed
+
+**25753682** - SEO text blocks adjusts
+
 ## [3.111.0] - 2021-10-04
 
 ### Added

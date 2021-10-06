@@ -1,0 +1,14 @@
+{
+  "store.search#department": {
+    "blocks": [
+      "search-result-layout#department",
+      "flex-layout.row#navigation-history"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "maxItemsPerPage": 12
+      }
+    }
+  }
+}
