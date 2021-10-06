@@ -1,6 +1,9 @@
 {
   "store.custom#festa-junina": {
-    "blocks": ["search-result-layout.customQuery#festa-junina"]
+    "blocks": [
+      "search-result-layout.customQuery#festa-junina",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#festa-junina": {
     "props": {

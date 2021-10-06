@@ -1,6 +1,9 @@
 {
   "store.custom#semana-do-cliente": {
-    "blocks": ["search-result-layout.customQuery#semana-do-cliente"]
+    "blocks": [
+      "search-result-layout.customQuery#semana-do-cliente",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#semana-do-cliente": {
     "props": {

@@ -3,7 +3,7 @@
     "blocks": [
       "search-result-layout",
       "flex-layout.row#navigation-history",
-      "flex-layout.row#category-footer-texts-content"
+      "flex-layout.row#seo-content"
     ],
     "props": {
       "context": {
