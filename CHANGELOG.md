@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- **24663915** - Franchise form
+
 ## [3.96.0] - 2021-06-24
 
 ## [3.95.0] - 2021-06-24
