@@ -1,7 +1,7 @@
 {
   "vendor": "mundoverde",
   "name": "store-theme",
-  "version": "3.96.0",
+  "version": "3.111.4",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "mundoverde.chaordic": "0.x",
+    "vtex.product-context": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
@@ -29,7 +30,7 @@
     "vtex.minicart": "2.x",
     "vtex.product-details": "1.x",
     "vtex.product-kit": "1.x",
-    "vtex.search": "0.x",
+    "vtex.search": "2.x",
     "vtex.search-result": "3.x",
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
@@ -60,7 +61,10 @@
     "vtex.category-menu": "2.x",
     "vtex.sandbox": "0.x",
     "vtex.modal-layout": "0.x",
-    "vtex.store-video": "1.x"
+    "vtex.store-video": "1.x",
+    "vtex.shelf-components": "0.x",
+    "vtex.recommendation-shelf": "1.x",
+    "vtex.store-icons": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

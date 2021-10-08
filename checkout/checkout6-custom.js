@@ -17,6 +17,12 @@ function changeActive() {
     $(".item-cart").addClass("active");
     $(".item-shipping").removeClass("active");
     $(".item-payment").removeClass("active");
+
+    document
+      .getElementById("cart-to-orderform")
+      .addEventListener("click", function () {
+        document.getElementById("open-shipping").click();
+      });
   } else if (url.includes("/payment")) {
     $(".item-cart").removeClass("active");
     $(".item-shipping").removeClass("active");

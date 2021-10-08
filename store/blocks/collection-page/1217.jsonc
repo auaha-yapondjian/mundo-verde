@@ -1,0 +1,24 @@
+{
+  "store.custom#semana-do-brasil": {
+    "blocks": [
+      "search-result-layout.customQuery#semana-do-brasil",
+      "flex-layout.row#seo-content"
+    ]
+  },
+
+  "search-result-layout.customQuery#semana-do-brasil": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByScoreDESC",
+        "hideUnavailableItems": false,
+        "queryField": "1217",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
+    ]
+  }
+}

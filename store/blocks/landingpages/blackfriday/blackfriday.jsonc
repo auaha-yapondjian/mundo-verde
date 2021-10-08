@@ -5,6 +5,7 @@
       "flex-layout.row#form-blackfriday"
     ]
   },
+
   "list-context.image-list#banner-blackfriday": {
     "title": "Banner Principal",
     "children": ["slider-layout#banner-images-blackfriday"],
@@ -13,6 +14,7 @@
       "images": []
     }
   },
+
   "slider-layout#banner-images-blackfriday": {
     "title": "Banner Principal",
     "props": {
@@ -26,6 +28,7 @@
       "blockClass": "banner-blackfriday"
     }
   },
+
   "flex-layout.row#form-blackfriday": {
     "children": ["flex-layout.row#form-container-blackfriday"],
     "props": {
@@ -34,15 +37,18 @@
     },
     "title": "Textos da página"
   },
+
   "flex-layout.row#form-container-blackfriday": {
     "children": ["flex-layout.col#col-form-blackfriday"],
     "props": {
       "blockClass": "container"
     }
   },
+
   "flex-layout.col#col-form-blackfriday": {
     "children": ["form#blackfriday"]
   },
+
   "form#blackfriday": {
     "props": {
       "entity": "BF",
@@ -51,16 +57,18 @@
     "children": [
       "rich-text#text-form-blackfriday",
       "form-input.text#name",
-      "form-input.text#email",
+      "form-input.text#email-bf",
       "form-input.text#phone",
       "form-input.text#campaign",
-      "form-submit"
+      "form-submit#campaign"
     ],
-    "blocks": ["form-success"]
+    "blocks": ["form-success#blackfriday"]
   },
-  "form-success": {
+
+  "form-success#blackfriday": {
     "children": ["rich-text#title-success", "rich-text#text-success"]
   },
+
   "rich-text#title-success": {
     "props": {
       "text": "",
@@ -70,6 +78,7 @@
     },
     "title": "Mensagem sucesso - Título"
   },
+
   "rich-text#text-success": {
     "props": {
       "text": "",
@@ -79,6 +88,7 @@
     },
     "title": "Mensagem sucesso - Paragrafo"
   },
+
   "rich-text#text-form-blackfriday": {
     "children": [],
     "props": {
@@ -88,6 +98,7 @@
     },
     "title": "Formulário - Título"
   },
+
   "form-input.text#name": {
     "props": {
       "pointer": "#/properties/name",
@@ -95,13 +106,15 @@
       "placeholder": "Seu nome:"
     }
   },
-  "form-input.text#email": {
+
+  "form-input.text#email-bf": {
     "props": {
       "pointer": "#/properties/email",
       "label": "Digite seu e-mail",
       "placeholder": "Seu e-mail:"
     }
   },
+
   "form-input.text#phone": {
     "props": {
       "pointer": "#/properties/phone",
@@ -109,6 +122,7 @@
       "placeholder": "Seu telefone:"
     }
   },
+
   "form-input.text#campaign": {
     "props": {
       "pointer": "#/properties/campaign",
@@ -116,7 +130,8 @@
       "blockClass": "input-form-campaign"
     }
   },
-  "form-submit": {
+  
+  "form-submit#campaign": {
     "props": {
       "label": "Inscrever!"
     }

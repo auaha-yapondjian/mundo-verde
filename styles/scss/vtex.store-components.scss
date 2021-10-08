@@ -271,7 +271,7 @@
       }
 
       :global(.vtex-input)::before {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: 0;
@@ -342,6 +342,10 @@
     }
   }
 
+  :global(.vtex-store-components-3-x-shippingTableRadioBtn) {
+    display: none;
+  }
+
   :global(.vtex-reviews-and-ratings-1-x-summaryContainer) {
     font-size: 0;
   }
@@ -353,6 +357,7 @@
 
   .productBrandName {
     color: #7c7c7c;
+    text-decoration: underline;
   }
 
   .price_listPriceContainer {
@@ -553,3 +558,43 @@
 }
 
 // fim lp florais
+
+// página de produto
+:global(.vtex-store-components-3-x-productImagesContainer--carousel) {
+  :global(.vtex-store-components-3-x-carouselGaleryThumbs) {
+    display: none !important;
+  }
+}
+
+
+//Faq ame
+:global(.vtex-flex-layout-0-x-flexRow--faq-ame-main-banner) {
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--faq-ame-text) {
+  .container {
+    padding: 0 20px 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.imageElement {
+  // SEO content
+  &--seo {
+    &-content-top {
+      max-width: 442px;
+      width: 100%;
+      margin-top: 35px;
+
+      @media (min-width: 1025px) {
+        max-width: 90%;
+      }
+    }
+  } 
+}

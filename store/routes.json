@@ -32,6 +32,9 @@
   "store.custom#faq-page": {
     "path": "/faq"
   },
+  "store.custom#faq-ame": {
+    "path": "/faq-ame"
+  },
   "store.custom#blackfriday": {
     "path": "/blackfriday"
   },
@@ -79,5 +82,20 @@
   },
   "store.custom#cozinha-saudavel": {
     "path": "/cozinha-saudavel"
+  },
+  "store.custom#semana-do-brasil": {
+    "path": "/semana-do-brasil"
+  },
+  "store.custom#ofertas": {
+    "path": "/ofertas"
+  },
+  "store.custom#longevidade": {
+    "path": "/longevidade"
+  },
+  "store.custom#semana-do-cliente": {
+    "path": "/semana-do-cliente"
+  },
+  "store.custom#lojas-participantes": {
+    "path": "/lojas-participantes-semana-do-cliente"
   }
 }

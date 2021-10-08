@@ -3,9 +3,6 @@
     "before": ["header.full"],
     "after": ["footer"]
   },
-  "store.search.v2": {
-    "allowed": ["search-result", "search-result-layout"]
-  },
   "form-compliance": {
     "component": "FormCompliance"
   },
@@ -17,5 +14,32 @@
   },
   "franchise-form": {
     "component": "FranchiseForm"
+  },
+  "nossas-lojas": {
+    "component": "NossasLojas"
+  },
+  "text-observer": {
+    "component": "TextObserver"
+  },
+  "lojas-participantes": {
+    "component": "LojasParticipantes"
+  },
+  "badges": {
+    "component": "ProductBadges"
+  },
+  "product-image": {
+    "component": "ProductImage"
+  },
+  "category-tree": {
+    "component": "CategoryTree"
+  },
+  "sub-category-tree": {
+    "component": "SubCategoryTree"
+  },
+  "breadcrumb-custom": {
+    "component": "BreadcrumbCustom"
+  },
+  "google-site-verification": {
+    "component": "GoogleSiteVerification"
   }
 }

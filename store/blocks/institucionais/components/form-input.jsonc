@@ -1,0 +1,7 @@
+{
+  "form-input.text#assunto": {
+    "props": {
+      "pointer": "#/properties/assunto"
+    }
+  }
+}

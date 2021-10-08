@@ -1,7 +1,11 @@
 {
   "store.custom#cybermonday": {
-    "blocks": ["search-result-layout.customQuery#cybermonday"]
+    "blocks": [
+      "search-result-layout.customQuery#cybermonday",
+      "flex-layout.row#seo-content"
+    ]
   },
+  
   "search-result-layout.customQuery#cybermonday": {
     "props": {
       "querySchema": {
@@ -13,132 +17,8 @@
       }
     },
     "blocks": [
-      "search-result-layout.mobile#cybermonday",
-      "search-result-layout.desktop#cybermonday"
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
     ]
-  },
-  "search-result-layout.desktop#cybermonday": {
-    "children": [
-      "list-context.image-list#desktop-cybermonday",
-      "flex-layout.row#result-cybermonday"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "blockClass": "searchResultLayoutDesktop",
-      "preventRouteChange": true,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "paddingBottom": 10
-    }
-  },
-  "search-result-layout.mobile#cybermonday": {
-    "children": [
-      "list-context.image-list#mobile-cybermonday",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#contentmobile"
-    ],
-    "props": {
-      "pagination": "infinity-scroll",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-cybermonday": {
-    "children": ["flex-layout.row#result#cybermonday"],
-    "props": {
-      "preventHorizontalStretch": false,
-      "blockClass": "rowResult"
-    }
-  },
-  "flex-layout.row#result#cybermonday": {
-    "children": [
-      "flex-layout.col#filter-offers",
-      "flex-layout.col#result#cybermonday"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true,
-      "blockClass": "content-result--landing-promo"
-    }
-  },
-  "flex-layout.col#filter-offers": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#result#cybermonday": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products#cybermonday",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "width": "grow"
-    }
-  },
-  "list-context.image-list#desktop-cybermonday": {
-    "title": "Banner Página - Desktop",
-    "children": ["slider-layout#desktop-cybermonday"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#desktop-cybermonday": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "list-context.image-list#mobile-cybermonday": {
-    "title": "Banner Página - Mobile",
-    "children": ["slider-layout#mobile-cybermonday"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#mobile-cybermonday": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "flex-layout.row#products#cybermonday": {
-    "children": ["search-content#cybermonday"]
-  },
-  "search-content#cybermonday": {
-    "blocks": ["gallery#cybermonday", "not-found"]
-  },
-  "gallery#cybermonday": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "maxItemsPerRow": {
-        "desktop": 3
-      }
-    }
   }
 }

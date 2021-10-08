@@ -4,16 +4,17 @@
       "list-context.image-list#main-banner",
       "__fold__",
       "flex-layout.row#deals",
-      "chaordic-div#top",
+      // "flex-layout.row#recommendation-refresh",
       "responsive-layout.desktop#promotions1",
       "responsive-layout.mobile#promotions2",
-      "chaordic-div#middle",
+      "flex-layout.row#new-releases",
+      "flex-layout.row#popular-products",
       "shelf#home--1",
       "shelf#home--2",
       "shelf#home--3",
+      "flex-layout.row#navigation-history",
       "flex-layout.row#promotion",
       "newsletter",
-      "chaordic-div#bottom",
       "flex-layout.row#modal-news"
     ]
   },
@@ -79,29 +80,7 @@
       }
     }
   },
-  "list-context.image-list#main-banner": {
-    "title": "Banner Principal",
-    "children": ["slider-layout#banner-images"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#banner-images": {
-    "title": "Configuração Slider Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "blockClass": "carousel",
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "fullWidth": true
-    }
-  },
+
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",
@@ -151,7 +130,8 @@
       "placeholder": "digite seu e-mail",
       "submit": "eu quero"
     }
-  },"flex-layout.row#modal-news": {
+  },
+  "flex-layout.row#modal-news": {
     "props": {
       "blockClass": "swal-modal"
     },

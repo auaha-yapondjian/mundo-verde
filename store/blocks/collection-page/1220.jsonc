@@ -1,0 +1,24 @@
+{
+  "store.custom#semana-do-cliente": {
+    "blocks": [
+      "search-result-layout.customQuery#semana-do-cliente",
+      "flex-layout.row#seo-content"
+    ]
+  },
+
+  "search-result-layout.customQuery#semana-do-cliente": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByScoreDESC",
+        "hideUnavailableItems": false,
+        "queryField": "1220",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
+    ]
+  }
+}

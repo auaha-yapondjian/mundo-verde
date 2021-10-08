@@ -1,11 +1,15 @@
 {
   "store.custom#cozinha-saudavel": {
-    "blocks": ["search-result-layout.customQuery#cozinha-saudavel"]
+    "blocks": [
+      "search-result-layout.customQuery#cozinha-saudavel",
+      "flex-layout.row#seo-content"
+    ]
   },
+
   "search-result-layout.customQuery#cozinha-saudavel": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "queryField": "1203",
         "maxItemsPerPage": 18,
@@ -13,132 +17,8 @@
       }
     },
     "blocks": [
-      "search-result-layout.mobile#cozinha-saudavel",
-      "search-result-layout.desktop#cozinha-saudavel"
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
     ]
-  },
-  "search-result-layout.desktop#cozinha-saudavel": {
-    "children": [
-      "list-context.image-list#desktop-cozinha-saudavel",
-      "flex-layout.row#result-cozinha-saudavel"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "blockClass": "searchResultLayoutDesktop",
-      "preventRouteChange": true,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "paddingBottom": 10
-    }
-  },
-  "search-result-layout.mobile#cozinha-saudavel": {
-    "children": [
-      "list-context.image-list#mobile-cozinha-saudavel",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#contentmobile"
-    ],
-    "props": {
-      "pagination": "infinity-scroll",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-cozinha-saudavel": {
-    "children": ["flex-layout.row#result#cozinha-saudavel"],
-    "props": {
-      "preventHorizontalStretch": false,
-      "blockClass": "rowResult"
-    }
-  },
-  "flex-layout.row#result#cozinha-saudavel": {
-    "children": [
-      "flex-layout.col#filter-offers",
-      "flex-layout.col#result#cozinha-saudavel"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true,
-      "blockClass": "content-result--landing-promo"
-    }
-  },
-  "flex-layout.col#filter-offers": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#result#cozinha-saudavel": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products#cozinha-saudavel",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "width": "grow"
-    }
-  },
-  "list-context.image-list#desktop-cozinha-saudavel": {
-    "title": "Banner Página - Desktop",
-    "children": ["slider-layout#desktop-cozinha-saudavel"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#desktop-cozinha-saudavel": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "list-context.image-list#mobile-cozinha-saudavel": {
-    "title": "Banner Página - Mobile",
-    "children": ["slider-layout#mobile-cozinha-saudavel"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#mobile-cozinha-saudavel": {
-    "title": "Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "banner-offers"
-    }
-  },
-  "flex-layout.row#products#cozinha-saudavel": {
-    "children": ["search-content#cozinha-saudavel"]
-  },
-  "search-content#cozinha-saudavel": {
-    "blocks": ["gallery#cozinha-saudavel", "not-found"]
-  },
-  "gallery#cozinha-saudavel": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "maxItemsPerRow": {
-        "desktop": 3
-      }
-    }
   }
 }

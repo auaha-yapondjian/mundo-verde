@@ -1,6 +1,9 @@
 {
   "store.custom#imune-mais": {
-    "blocks": ["search-result-layout.customQuery#imune-mais"]
+    "blocks": [
+      "search-result-layout.customQuery#imune-mais",
+      "flex-layout.row#seo-content"
+    ]
   },
   "search-result-layout.customQuery#imune-mais": {
     "props": {

@@ -84,13 +84,13 @@
       "form-input.text#assunto",
       "form-input.textarea#mensagem",
       "form-input.checkbox#agreement",
-      "form-submit"
+      "form-submit#agreement"
     ],
     "blocks": [
-      "form-success"
+      "form-success#successSubmit"
     ]
   },
-  "form-success": {
+  "form-success#successSubmit": {
     "children": [
       "rich-text#successSubmit"
     ]
@@ -117,11 +117,7 @@
       "pointer": "#/properties/email"
     }
   },
-  "form-input.text#assunto": {
-    "props": {
-      "pointer": "#/properties/assunto"
-    }
-  },
+
   "form-input.textarea#mensagem": {
     "props": {
       "pointer": "#/properties/mensagem"
@@ -133,7 +129,7 @@
       "label": "Quero receber notícias Mundo Verde por email"
     }
   },
-  "form-submit": {
+  "form-submit#agreement": {
     "props": {
       "label": "Enviar"
     }
