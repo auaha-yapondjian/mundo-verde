@@ -36,15 +36,15 @@
     "title": "Vitrine Produtos (1)",
     "blocks": ["product-summary.shelf"],
     "props": {
+      "blockClass":["shelf-home", "shelf-home-1"],
       "paginationDotsVisibility": "hidden",
       "productList": {
         "maxItems": 8,
         "itemsPerPage": 4,
-        "minItemsPerPage": 1,
+        "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Melhores produtos Vitafor",
-        "gap": "ph5"
+        "titleText": "Melhores produtos Vitafor"
       }
     }
   },
@@ -52,15 +52,15 @@
     "title": "Vitrine Produtos (2)",
     "blocks": ["product-summary.shelf"],
     "props": {
+      "blockClass":["shelf-home", "shelf-home-2"],
       "paginationDotsVisibility": "hidden",
       "productList": {
         "maxItems": 8,
         "itemsPerPage": 4,
-        "minItemsPerPage": 1,
+        "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Especial Essential",
-        "gap": "ph5"
+        "titleText": "Especial Essential"
       }
     }
   },
@@ -68,15 +68,15 @@
     "title": "Vitrine Produtos (3)",
     "blocks": ["product-summary.shelf"],
     "props": {
+      "blockClass":["shelf-home", "shelf-home-3"],
       "paginationDotsVisibility": "hidden",
       "productList": {
         "maxItems": 8,
         "itemsPerPage": 4,
-        "minItemsPerPage": 1,
+        "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Flormel",
-        "gap": "ph5"
+        "titleText": "Flormel"
       }
     }
   },

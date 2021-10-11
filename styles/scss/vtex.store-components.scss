@@ -584,6 +584,14 @@
   }
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--navigation-history),
+:global(.vtex-flex-layout-0-x-flexRow--popular-products),
+:global(.vtex-flex-layout-0-x-flexRow--new-releases) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 .imageElement {
   // SEO content
   &--seo {
