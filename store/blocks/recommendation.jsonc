@@ -3,7 +3,10 @@
     "children": ["recommendation-refresh"]
   },
   "flex-layout.row#new-releases": {
-    "children": ["recommendation-shelf#new-releases"]
+    "children": ["recommendation-shelf#new-releases"],
+    "props":{
+      "blockClass": "new-releases"
+    }
   },
   "flex-layout.row#popular-products": {
     "children": ["recommendation-shelf#popular-products"]
@@ -107,6 +110,8 @@
       "BuyButton": "add-to-cart-button"
     }
   },
+
+
   "recommendation-shelf#new-releases": {
     "blocks": ["default-shelf#new-releases"],
     "props": {
@@ -114,16 +119,31 @@
       "secondaryStrategy": "BEST_SELLERS"
     }
   },
+
   "default-shelf#new-releases": {
     "blocks": [
-      "vtex.product-summary:list-context.product-list",
-      "list-context.product-list-static"
+      "list-context.product-list#new-releases",
+      "list-context.product-list-static#new-releases"
     ],
     "props": {
       "title": "Lançamentos",
       "secondaryTitle": "Mais Vendidos"
     }
   },
+
+  "list-context.product-list#new-releases": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"]
+  },
+
+  "list-context.product-list-static#new-releases": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"]
+  },
+
+
+
+
   "recommendation-shelf#popular-products": {
     "blocks": ["default-shelf#popular-products"],
     "props": {
