@@ -111,7 +111,6 @@
     }
   },
 
-
   "recommendation-shelf#new-releases": {
     "blocks": ["default-shelf#new-releases"],
     "props": {
@@ -140,9 +139,6 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf"]
   },
-
-
-
 
   "recommendation-shelf#popular-products": {
     "blocks": ["default-shelf#popular-products"],
