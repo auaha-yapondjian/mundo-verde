@@ -41,7 +41,7 @@
       "productList": {
         "maxItems": 8,
         "itemsPerPage": 4,
-        "minItemsPerPage": 2,
+        "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "Melhores produtos Vitafor"
@@ -57,7 +57,7 @@
       "productList": {
         "maxItems": 8,
         "itemsPerPage": 4,
-        "minItemsPerPage": 2,
+        "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "Especial Essential"
@@ -73,7 +73,7 @@
       "productList": {
         "maxItems": 8,
         "itemsPerPage": 4,
-        "minItemsPerPage": 2,
+        "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "Flormel"
