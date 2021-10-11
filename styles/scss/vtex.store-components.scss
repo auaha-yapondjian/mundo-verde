@@ -598,3 +598,10 @@
     }
   } 
 }
+
+:global(.vtex-flex-layout-0-x-flexRow--main-banner) {
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}

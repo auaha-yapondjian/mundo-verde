@@ -1186,6 +1186,14 @@
 }
 
 .flexRowContent {
+  //Main banner
+  &--main-banner {
+    .stretchChildrenWidth {
+      width: auto !important;
+    }
+  }
+
+  //SEO content
   &--seo {
     &-content-top {
       flex-direction: column;
@@ -1205,4 +1213,6 @@
       }
     }
   }
+
+  
 }
