@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#footer-powered": {
+    "children": ["flex-layout.col#footer-powered-content"],
+    "props": {
+      "blockClass": "footer-powered",
+      "colSizing": "equal"
+    },
+    "title": "Desenvolvido por"
+  },
+
+  "flex-layout.col#footer-powered-content": {
+    "children": [
+      "flex-layout.row#footer-powered-corebiz",
+      "flex-layout.row#footer-powered-vtex"
+    ],
+    "props": {
+      "blockClass": "footer-powered-content"
+    }
+  },
+
+  "flex-layout.row#footer-powered-corebiz": {
+    "children": ["image#footer-powered-corebiz"],
+    "props": {
+      "blockClass":"footer-powered-corebiz"
+    }
+  },
+
+  "image#footer-powered-corebiz": {
+    "props": {
+      "src": "/arquivos/logo-corebiz.png",
+      "blockClass": "footer-powered-corebiz"
+    },
+    "title": "Logo Corebiz"
+  },
+
+  "flex-layout.row#footer-powered-vtex": {
+    "children": ["powered-by"],
+    "props": {
+      "blockClass":"footer-powered-vtex"
+    },
+    "title": "Logo Vtex"
+  },
+  "powered-by": {
+    "props": {
+      "showInColor": true
+    }
+  }
+}
