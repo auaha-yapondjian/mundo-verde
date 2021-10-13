@@ -1186,6 +1186,40 @@
 }
 
 .flexRowContent {
+  //Barra de categorias
+  &--deals {
+    @media (min-width: 640px) {
+      flex-wrap: wrap;
+    }
+    
+    @media (min-width: 1025px) {
+      flex-wrap: nowrap;
+    }
+    
+    .stretchChildrenWidth {
+      &:first-child {
+        @media (min-width: 640px) {
+          width: 100% !important;
+        }
+
+        @media (min-width: 1025px) {
+          width: 15% !important;
+        }
+      }
+
+      &:last-child {
+        @media (min-width: 640px) {
+          width: 100% !important;
+        }
+
+        @media (min-width: 1025px) {
+          width: 85% !important;
+        }
+      }
+    }
+  }
+
+  //SEO content
   &--seo {
     &-content-top {
       flex-direction: column;
