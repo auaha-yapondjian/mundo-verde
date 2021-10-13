@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- **25833284** - Category bar adjusts
+
 ## [3.111.7] - 2021-10-13
 
 ### Fixed
