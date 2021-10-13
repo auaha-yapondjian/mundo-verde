@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.8] - 2021-10-13
+
 ### Changed
 
 - **25833260** - Footer structure changed
