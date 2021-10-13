@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+**25833272** - Home shelfs quantity and paddings
+
 ## [3.111.4] - 2021-10-06
 
 ### Fixed
