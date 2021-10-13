@@ -30,9 +30,5 @@ export const Container = styled.div<ITypeBadge>`
     text-transform: uppercase;
     text-align: left;
     margin: 5px;
-
-    @media (min-width: 1025px) {
-      font-size: 12px;
-    }
   }
 `
