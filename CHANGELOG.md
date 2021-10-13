@@ -11,6 +11,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - **25833260** - Footer structure changed
 
+## [3.111.7] - 2021-10-13
+
+### Fixed
+
+**25833272** - Shelves adjusts
+
+## [3.111.6] - 2021-10-13
+
+### Hotfix
+
+- Badges discount position
+
+## [3.111.5] - 2021-10-13
+
+### Fixed
+
+**25833272** - Home shelfs quantity and paddings
+
 ## [3.111.4] - 2021-10-06
 
 ### Fixed

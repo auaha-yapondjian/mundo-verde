@@ -110,14 +110,28 @@
   pointer-events: none;
 }
 // Fim Popup Black Friday
+.slideChildrenContainer {
+  &--recommendation {
+    padding: 10px;
 
-.slideChildrenContainer--recommendation {
-  padding: 20px 1rem;
+    :global(.vtex-product-summary-2-x-container) {
+      padding: 0;
+    }
+  }
 }
-.slideChildrenContainer--recommendation
-  :global(.vtex-product-summary-2-x-container) {
-  padding: 20px 40px;
+
+@media (min-width: 1025px) {
+  .slideChildrenContainer {
+    &--recommendation {
+      padding: 20px 5px;
+
+      :global(.vtex-product-summary-2-x-container) {
+        padding: 20px 15px;
+      }
+    }
+  }
 }
+  
 .sliderArrows--recommendation {
   color: #008651;
 }
