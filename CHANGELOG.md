@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+**25833277** - Header and badges adjusts
+
 ## [3.111.9] - 2021-10-18
 
 ### Fixed
