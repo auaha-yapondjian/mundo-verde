@@ -11,8 +11,4 @@ export const Container = styled.div`
   @media (min-width: 530px) {
     margin: -30px 0;
   }
-  
-  @media (min-width: 1025px) {
-    margin: -30px;
-  }
 `

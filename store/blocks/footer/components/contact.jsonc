@@ -1,0 +1,62 @@
+{
+  "flex-layout.row#footer-contact": {
+    "children": ["flex-layout.col#footer-contact-content"],
+    "props": {
+      "blockClass": "footer-contact"
+    },
+    "title": "Contato"
+  },
+
+  "flex-layout.col#footer-contact-content": {
+    "children": [
+      "flex-layout.row#footer-contact-title",
+      "flex-layout.row#footer-contact-text"
+    ],
+    "props": {
+      "blockClass": "footer-contact-content"
+    }
+  },
+
+  "flex-layout.row#footer-contact-title": {
+    "children": ["rich-text#footer-contact-title"],
+    "props": {
+      "blockClass": "footer-contact-title"
+    },
+    "title": "Título"
+  },
+
+  "rich-text#footer-contact-title": {
+    "props": {
+      "blockClass":"footer-contact-title",
+      "text": "Atendimento"
+    },
+    "title": "Título"
+  },
+
+  "flex-layout.row#footer-contact-text": {
+    "children": [
+      "rich-text#footer-contact",
+      "rich-text#footer-contact-text"
+    ],
+    "props": {
+      "blockClass": "footer-contact-text"
+    },
+    "title": "Textos"
+  },
+
+  "rich-text#footer-contact": {
+    "props": {
+      "blockClass":"footer-contact-email",
+      "text": "11 2388 0474 contato@mundoverde.net.br"
+    },
+    "title": "Texto"
+  },
+
+  "rich-text#footer-contact-text": {
+    "props": {
+      "blockClass":"footer-contact-text",
+      "text": "*As condições comerciais, produtos e preços do site são exclusivos para a venda no e-commerce. Poderão haver diferenças nas lojas físicas."
+    },
+    "title": "Texto"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#footer-social": {
+    "children": ["social-networks#footer-social-content"],
+    "props": {
+      "blockClass": "footer-social"
+    },
+    "title": "Redes Sociais"
+  },
+
+  "social-networks#footer-social-content": {
+    "props": {
+      "title": "Redes Sociais",
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/MundoVerde/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/mundoverde"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/videomundoverde"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/mundoverde_brasil/"
+        }
+      ],
+      "blockClass": "footer-social-content"
+    }
+  }
+}
