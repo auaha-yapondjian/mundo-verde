@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.9] - 2021-10-18
+
 ### Fixed
 
 - **25823234** - Search shelf adjusts
