@@ -11,6 +11,42 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 **25833739** - Main banner adjust to accept tablet image
 
+## [3.111.10] - 2021-10-18
+
+### Fixed
+
+**25833277** - Header and badges adjusts
+
+## [3.111.9] - 2021-10-18
+
+### Fixed
+
+- **25823234** - Search shelf adjusts
+
+## [3.111.8] - 2021-10-13
+
+### Changed
+
+- **25833260** - Footer structure changed
+
+## [3.111.7] - 2021-10-13
+
+### Fixed
+
+**25833272** - Shelves adjusts
+
+## [3.111.6] - 2021-10-13
+
+### Hotfix
+
+- Badges discount position
+
+## [3.111.5] - 2021-10-13
+
+### Fixed
+
+**25833272** - Home shelfs quantity and paddings
+
 ## [3.111.4] - 2021-10-06
 
 ### Fixed
