@@ -1228,6 +1228,13 @@
 }
 
 .flexRowContent {
+  //Main banner
+  &--main-banner {
+    .stretchChildrenWidth {
+      width: auto !important;
+    }
+  }
+  
   //Footer
   &--footer {
     &-top-content {

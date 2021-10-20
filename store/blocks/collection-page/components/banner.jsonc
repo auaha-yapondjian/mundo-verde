@@ -1,6 +1,33 @@
 {
+  "flex-layout.row#main-banner": {
+    "children": [
+      "responsive-layout.desktop#main-banner",
+      "responsive-layout.tablet#main-banner",
+      "responsive-layout.phone#main-banner"
+    ],
+    "props": {
+      "blockClass": "main-banner"
+    },
+    "title": "Banner principal"
+  },
+
+  "responsive-layout.desktop#main-banner": {
+    "children": ["list-context.image-list#main-banner"],
+    "title": "Desktop"
+  },
+
+  "responsive-layout.tablet#main-banner": {
+    "children": ["list-context.image-list#main-banner"],
+    "title": "Tablet"
+  },
+
+  "responsive-layout.phone#main-banner": {
+    "children": ["list-context.image-list#main-banner"],
+    "title": "Mobile"
+  },
+
   "list-context.image-list#main-banner": {
-    "title": "Banner Principal",
+    "title": "Imagens",
     "children": ["slider-layout#banner-images"],
     "props": {
       "height": "auto",
