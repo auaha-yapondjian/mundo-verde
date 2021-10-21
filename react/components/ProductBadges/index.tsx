@@ -22,8 +22,7 @@ const ProductBadges: React.FC = () => {
     )
 
     const str = product?.categories[product.categories.length - 1]
-    const treatedStr = str.replaceAll(/\s/g, '-').toLowerCase()
-
+    const treatedStr = str?.replaceAll(/\s/g, '-').toLowerCase()
     setLink(treatedStr)
   }
 

@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.12] - 2021-10-21
+
+### Hotfix
+
+- Horizontal scroll removed
+
+## [3.111.11] - 2021-10-20
+
+### Fixed
+
+**25833739** - Main banner adjust to accept tablet image
+
+## [3.111.10] - 2021-10-18
+
+### Fixed
+
+**25833277** - Header and badges adjusts
+
+## [3.111.9] - 2021-10-18
+
+### Fixed
+
+- **25823234** - Search shelf adjusts
+
 ## [3.111.8] - 2021-10-13
 
 ### Changed
