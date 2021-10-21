@@ -1,1 +1,1 @@
-
+.wrapper--stuck:not(:hover){background:#fff;padding-bottom:5px;padding-top:5px}.wrapper--sticky-header{background-color:#fff;padding:10px 0}.wrapper--sticky-header--stuck :global(.vtex-input-prefix__group){height:30px;margin-bottom:0}.wrapper--stuck .container--sticky-header{box-shadow:0 4px 5px rgba(0,0,0,.1)}

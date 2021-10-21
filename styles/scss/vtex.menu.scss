@@ -1,4 +1,5 @@
 .menuContainer  {
+  //Footer
   &--footer {
     &-menu-links {
       @media (min-width: 640px) {
@@ -13,6 +14,7 @@
 }
 
 .menuItem {
+  //Footer
   &--footer {
     &-menu-links {
       @media (min-width: 640px) {
@@ -27,6 +29,55 @@
 }
 
 .styledLinkContainer {
+  margin: {
+    left: 0;
+    right: 30px;
+  }
+
+  //Menu
+  &--menu-btn {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  &--menu {
+    &-lojas {
+      @media all and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    &-item {
+      &-blog {
+        margin: 0;
+      }
+
+      &-btn-blackfriday {
+        background: #000000;
+      }
+    }
+
+    &-blackfriday {
+      margin: 0;
+    
+      @media all and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  
+  &--custom-menu {
+    border-bottom: 2px solid transparent;
+  
+    &:hover {
+      border-color: #008651;
+    }
+  }
+
+  //Footer
   &--footer {
     &-menu-links {
       padding: 0 0 15px;
@@ -40,6 +91,25 @@
 }
 
 .styledLinkContent {
+  //Menu
+  &--menu {
+    &-btn {
+      color: #fff;
+      text-transform: uppercase;
+    }
+    
+    &-item-blogmv {
+      text-transform: uppercase;
+    }
+  }
+  
+  &--custom-menu {
+    color: #008651;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  //Footer
   &--footer {
     &-menu-links {
       color: #008651;
@@ -50,4 +120,102 @@
       line-height: 18px;
     }
   }
+}
+
+.styledLink {
+  &--menu-btn {
+    background: #ff6600;
+    border-radius: 9px 0 9px 0;
+    display: block;
+    padding: 10px 20px;
+
+    &:hover {
+      box-shadow: 0 0 0.41667rem 0;
+    }
+
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &--menu-promocoes {
+    background: #008651;
+    transition: 0.2s;
+  }
+
+  &--menu-blackfriday {
+    background: #000000;
+
+    &:hover {
+      box-shadow: 0 0 0.41667rem 0;
+    }
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-link) {
+  .menuContainerNav {
+    align-items: center;
+    display: flex;
+  }
+}
+
+//Drawer
+:global(.vtex-store-drawer-0-x-drawer) {
+  .menuItem {
+    &--menu-btn {
+      align-items: center;
+      display: flex;
+    }
+
+    &--custom-menu {
+      .styledLinkContent {
+        color: #008651;
+      }
+    }
+	}
+
+	.menuContainer,
+	.menuContainerNav {
+		width: 100%;
+	}
+
+	.styledLinkContent {
+		color: #333;
+		font: {
+			size: 1rem;
+			weight: initial;
+		}
+		letter-spacing: 1px;
+		padding: 5px 0;
+		text-transform: initial;
+
+    .accordionIcon {
+      &--menu-mobile-department {
+        color: #008651;
+      }
+    }
+
+    &--menu-mobile-department {
+      color: #008651;
+    }
+
+    &--menu-btn {
+      color: #fff;
+			text-transform: uppercase;
+    }
+	}
+  
+  .styledLinkContainer {
+		border-bottom: 1px solid rgba(#333, 0.1);
+		margin: 0;
+		padding: 10px 20px;
+
+		&--menu-btn {
+			padding: 0;
+
+			.styledLink--menu-btn {
+				border-radius: 0;
+			}
+		}
+	}
 }
