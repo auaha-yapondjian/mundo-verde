@@ -8,7 +8,6 @@
 
 .searchBarContainer {
   padding: 0;
-  margin-left: 10px;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
@@ -16,7 +15,6 @@
   border: none;
   padding: 0;
   position: relative;
-  margin-bottom: 10px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
@@ -741,6 +739,25 @@
   .searchBarContainer {
     display: block;
     transition: all 0.3s ease;
+  }
+}
+
+.searchBarInnerContainer {
+  &--main-search-bar {
+    @media (min-width: 1025px) {
+      margin-left: 5px;
+    }
+    
+    @media (min-width: 1280px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+//Search bar
+:global(.vtex-flex-layout-0-x-flexRow--searchbar-mobile) {
+  .container {
+    padding: 0;
   }
 }
   

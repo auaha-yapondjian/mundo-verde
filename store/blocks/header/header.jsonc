@@ -43,7 +43,6 @@
     },
     "children": [
       "flex-layout.col#category-menu",
-      // "vtex.menu@2.x:menu#custom-menu",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
     ]
@@ -73,7 +72,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar",
-      "flex-layout.col#spacer",
+      // "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ]

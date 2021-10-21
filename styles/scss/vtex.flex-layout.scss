@@ -30,9 +30,9 @@
   padding: 0 15px;
 }
 
-// .flexRowContent--main-header,
 .flexRow--searchbar-mobile {
   background-color: #ffffff !important;
+  padding: 10px;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -1197,6 +1197,8 @@
 .flexRowContent {
   //Main banner
   &--main-banner {
+    justify-content: center;
+    
     .stretchChildrenWidth {
       width: auto !important;
     }
@@ -1243,10 +1245,7 @@
       &-mobile {
         align-items: center;
         background-color: #ffffff;
-        padding: {
-          bottom: 5px;
-          top: 5px;
-        }
+        padding: 5px 10px;
         will-change: padding, background, box-shadow;
       }
     }
