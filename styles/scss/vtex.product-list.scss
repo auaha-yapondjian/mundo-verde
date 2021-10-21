@@ -1,0 +1,61 @@
+//Minicart
+:global(.vtex-minicart-2-x-minicartProductListContainer) {
+  padding: 0;
+
+  .productImageContainer {
+    margin-right: 10px;
+    width: 60px !important;
+
+    .productImage {
+      max-width: 60px;
+    }
+  }
+
+  .productName {
+    color: #7c7c7c;
+    font-size: 12px;
+  }
+
+  .productPrice {
+    font: {
+      size: 16px;
+      weight: bolder;
+    }
+  }
+
+  .productListItem {
+    padding: 5px 15px;
+  }
+}
+
+:global(.vtex-minicart-2-x-minicartSideBarContentWrapper) {
+  :global(.vtex-flex-layout-0-x-flexRowContent) {
+    display: flex;
+
+    .productImageContainer {
+      width: 60px !important;
+
+      .productImage {
+        max-width: 50px;
+      }
+    }
+
+    .productName {
+      color: #7c7c7c;
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .productPrice {
+      margin-top: 8px;
+    }
+  }
+
+  .productListItem {
+    :global(.vtex-flex-layout-0-x-flexRowContent){
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      padding: 10px 0;
+    }
+  }
+}
