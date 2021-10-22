@@ -72,7 +72,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar",
-      // "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ]
@@ -87,8 +87,6 @@
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      // "customSearchPageUrl": "/search?_query=${term}",
-      // "attemptPageTypeSearch": true,
       "openAutocompleteOnFocus": true,
       "placeholder": "O que você procura ?",
       "blockClass": "main-search-bar",
