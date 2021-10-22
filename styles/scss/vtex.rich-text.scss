@@ -573,13 +573,41 @@
 }
 
 :global(.vtex-rich-text-0-x-wrapper--department-filter-subtitle-text) {
+  align-items: center;
   color: #008651;
   display: flex;
-  align-items: center;
 }
 
-// department filter
 .container {
+  //Minicart
+  &--minicart {
+    &-empty-card {
+      justify-content: center;
+      padding: 10px 0;
+    }
+  }
+
+  //Footer
+  &--footer {
+    &-contact {
+      &-email {
+        justify-content: center;
+        
+        @media (min-width: 1025px) {
+          justify-content: flex-start;
+        }
+      }
+
+      &-text {
+        justify-content: center;
+
+        @media (min-width: 1025px) {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
   //Seo content
   &--seo {
     &-content-bottom {
@@ -591,6 +619,31 @@
 }
 
 .wrapper {
+  //Footer
+  &--footer {
+    &-contact {
+      &-title {
+        text-align: center;
+        width: 100%;
+
+        @media (min-width: 1025px) {
+          text-align: left;
+        }
+      }
+    }
+
+    &-methods {
+      &-title {
+        text-align: center;
+        width: 100%;
+
+        @media (min-width: 1025px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
   //Seo content
   &--seo {
     &-content-bottom-left {
@@ -710,6 +763,62 @@
 }
 
 .paragraph {
+  //Footer
+  &--footer {
+    &-contact {
+      &-title {
+        color: #c4c4c4;
+        font: {
+          size: 14px;
+          weight: 700;
+        }
+        line-height: 18px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+      }
+
+      &-email {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+        text-align: center;
+
+        @media (min-width: 1025px) {
+          text-align: left;
+        }
+
+        @media (min-width: 1280px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &-text {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+        text-align: center;
+
+        @media (min-width: 1025px) {
+          text-align: left;
+        }
+      }
+    }
+
+    &-methods {
+      &-title {
+        color: #c4c4c4;
+        font: {
+          size: 14px;
+          weight: 700;
+        }
+        line-height: 18px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
   //SEO content
   &--seo {
     &-content-top {
@@ -791,6 +900,17 @@
 }
 
 .link {
+  //Footer
+  &--footer {
+    &-contact {
+      &-email {
+        color: inherit;
+        padding-left: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+
   //Seo content
   &--seo {
     &-content-bottom {
