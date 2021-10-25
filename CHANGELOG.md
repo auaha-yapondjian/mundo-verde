@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.14] - 2021-10-25
+
 - **25833327** - Institutional title colors
 
 ## [3.111.13] - 2021-10-25
