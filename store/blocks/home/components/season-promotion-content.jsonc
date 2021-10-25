@@ -61,7 +61,7 @@
 			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/7783af2d-c348-4488-846f-030163d211aa___9fcfc97a1a1bb16298953e0f74af38c5.png",
 			"blockClass": "season-promotion--card",
 			"link": {
-				"url": "/"
+				"url": "/essential-nutrition/?order=OrderByBestDiscountDESC"
 			}
 		},
 		"title": "Card 1"
@@ -72,7 +72,7 @@
 			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/3ba1c618-b167-45c6-ae00-8e9ee16769e2___8dfa914a8489f4e58aaf532af84f6fa2.png",
 			"blockClass": "season-promotion--card",
 			"link": {
-				"url": "/"
+				"url": "/sundown?order=OrderByBestDiscountDESC"
 			}
 		},
 		"title": "Card 2"
@@ -83,7 +83,7 @@
 			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/5a4434f7-2790-4d1f-be44-2736bdba5743___e0711aa8abee5e279e27d9c5c12e2277.png",
 			"blockClass": "season-promotion--card",
 			"link": {
-				"url": "/"
+				"url": "/suplementos/vitaminas?order=OrderByBestDiscountDESC"
 			}
 		},
 		"title": "Card 3"
@@ -94,7 +94,7 @@
 			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/06f6f61f-569d-4ec3-93d8-ad9edb973463___6683e6a38568c6cb9e0b0746802ad517.png",
 			"blockClass": "season-promotion--card",
 			"link": {
-				"url": "/"
+				"url": "/suplementos/antioxidantes?order=OrderByBestDiscountDESC"
 			}
 		},
 		"title": "Card 4"
