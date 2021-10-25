@@ -1,16 +1,4 @@
 {
-  "flex-layout.row#main-banner": {
-    "children": [
-      "responsive-layout.desktop#main-banner",
-      "responsive-layout.tablet#main-banner",
-      "responsive-layout.phone#main-banner"
-    ],
-    "props": {
-      "blockClass": "main-banner"
-    },
-    "title": "Banner principal"
-  },
-
   "responsive-layout.desktop#main-banner": {
     "children": ["list-context.image-list#main-banner"],
     "title": "Desktop"

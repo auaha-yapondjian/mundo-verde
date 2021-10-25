@@ -94,8 +94,7 @@
 }
 
 /* Season Promotion Content */
-.flexRow--product-description,
-.flexRow--season-promotion--cards {
+.flexRow--product-description {
   background-color: #f2f2f2;
 }
 
@@ -1176,6 +1175,22 @@
 // category footer texts
 
 .flexRow {
+  //Promoções
+  &--promotions {
+    background-color: #f2f2f2;
+  }
+
+  //Vitrines home
+  &--shelves-home {
+    background-color: #f2f2f2;
+  }
+  
+  //Newsletter
+  &--newsletter {
+    margin-top: 80px;
+    background-color: #008651;
+  }
+
   //Footer
   &--footer {
     &-logo {

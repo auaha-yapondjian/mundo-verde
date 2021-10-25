@@ -19,14 +19,6 @@
   },
 
   //Lançamentos
-  "flex-layout.row#new-releases": {
-    "children": ["recommendation-shelf#new-releases"],
-    "props": {
-      "blockClass": "new-releases"
-    },
-    "title":"Recomendações 1"
-  },
-
   "recommendation-shelf#new-releases": {
     "blocks":["default-shelf#new-releases"],
     "props": {
@@ -138,7 +130,8 @@
     "children": ["recommendation-shelf#navigation-history"],
     "props": {
       "blockClass": "navigation-history"
-    }
+    },
+    "title": "Vitrine de histórico de navegação"
   },
 
   "recommendation-shelf#navigation-history": {
