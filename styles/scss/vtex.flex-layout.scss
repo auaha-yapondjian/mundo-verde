@@ -80,8 +80,7 @@
 }
 
 /* Season Promotion Content */
-.flexRow--product-description,
-.flexRow--season-promotion--cards {
+.flexRow--product-description {
   background-color: #f2f2f2;
 }
 
@@ -1101,8 +1100,35 @@
     margin-left: 2rem;
   }
 }
-
+  
 .flexRow {
+  //Header
+  &--main-header {
+    background: white;
+    box-shadow: none;
+  }
+
+  &--menu-link {
+    background-color: #fff;
+    border-top: 0.08333rem solid #f2f2f2;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &--page-divisor {
+    background-color: #f2f2f2;
+    height: 80px;
+  }
+
+  //Promoções
+  &--promotions {
+    background-color: #f2f2f2;
+  }
+
+  //Vitrines home
+  &--shelves-home {
+    background-color: #f2f2f2;
+  }
+
   //Ofertas Mundo Verde
   &--banner-seo {
     position: relative;
@@ -1135,21 +1161,10 @@
     }
   }
 
-  //Header
-  &--main-header {
-    background: white;
-    box-shadow: none;
-  }
-
-  &--menu-link {
-    background-color: #fff;
-    border-top: 0.08333rem solid #f2f2f2;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  &--page-divisor {
-    background-color: #f2f2f2;
-    height: 80px;
+  //Newsletter
+  &--newsletter {
+    margin-top: 80px;
+    background-color: #008651;
   }
 
   //Footer
@@ -1201,6 +1216,39 @@
     
     .stretchChildrenWidth {
       width: auto !important;
+    }
+  }
+
+  //Barra de categorias
+  &--deals {
+    @media (min-width: 640px) {
+      flex-wrap: wrap;
+    }
+    
+    @media (min-width: 1025px) {
+      flex-wrap: nowrap;
+    }
+    
+    .stretchChildrenWidth {
+      &:first-child {
+        @media (min-width: 640px) {
+          width: 100% !important;
+        }
+
+        @media (min-width: 1025px) {
+          width: 15% !important;
+        }
+      }
+
+      &:last-child {
+        @media (min-width: 640px) {
+          width: 100% !important;
+        }
+
+        @media (min-width: 1025px) {
+          width: 85% !important;
+        }
+      }
     }
   }
   

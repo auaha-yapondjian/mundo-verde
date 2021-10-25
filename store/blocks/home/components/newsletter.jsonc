@@ -1,0 +1,11 @@
+{
+  "newsletter": {
+    "title": "Newsletter",
+    "props": {
+      "blockClass": "footer-newsletter",
+      "label": "Cadastre-se e receba ofertas exclusivas, dicas e receitas para uma vida mais saudável e equilibrada :)",
+      "placeholder": "digite seu e-mail",
+      "submit": "eu quero"
+    }
+  }
+}

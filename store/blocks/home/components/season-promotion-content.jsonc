@@ -1,0 +1,102 @@
+{
+	"flex-layout.col#promotions": {
+		"children": [
+			"responsive-layout.desktop#promotions",
+			"responsive-layout.mobile#promotions"
+		],
+		"props": {
+			"blockClass": "promotions"
+		}
+	},
+
+	//Container desktop
+	"responsive-layout.desktop#promotions": {
+		"children": ["flex-layout.row#season-promotion"]
+	},
+
+	"flex-layout.row#season-promotion": {
+		"children": ["flex-layout.col#season-promotion--cards"],
+		"props": {
+			"blockClass": "season-promotion--cards"
+		},
+		"title": "Card Produtos"
+	},
+
+	"flex-layout.col#season-promotion--cards": {
+		"children": [
+			"image#card-link-1",
+			"image#card-link-2",
+			"image#card-link-3",
+			"image#card-link-4"
+		],
+		"props": {
+			"blockClass": "season-promotion--content-card",
+			"rowGap": "6"
+		}
+	},
+
+	//Container mobile
+	"responsive-layout.mobile#promotions": {
+		"children": ["slider-layout#promotion-slider2"],
+		"props": {
+			"blockClass": "season-promotion--cards"
+		}
+	},
+
+	"slider-layout#promotion-slider2": {
+		"children": [
+			"image#card-link-1",
+			"image#card-link-2",
+			"image#card-link-3",
+			"image#card-link-4"
+		],
+		"props": {
+			"blockClass": "season-promotion--cards"
+		},
+		"title": "Slider"
+	},
+
+	"image#card-link-1": {
+		"props": {
+			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/7783af2d-c348-4488-846f-030163d211aa___9fcfc97a1a1bb16298953e0f74af38c5.png",
+			"blockClass": "season-promotion--card",
+			"link": {
+				"url": "/essential-nutrition/?order=OrderByBestDiscountDESC"
+			}
+		},
+		"title": "Card 1"
+	},
+
+	"image#card-link-2": {
+		"props": {
+			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/3ba1c618-b167-45c6-ae00-8e9ee16769e2___8dfa914a8489f4e58aaf532af84f6fa2.png",
+			"blockClass": "season-promotion--card",
+			"link": {
+				"url": "/sundown?order=OrderByBestDiscountDESC"
+			}
+		},
+		"title": "Card 2"
+	},
+
+	"image#card-link-3": {
+		"props": {
+			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/5a4434f7-2790-4d1f-be44-2736bdba5743___e0711aa8abee5e279e27d9c5c12e2277.png",
+			"blockClass": "season-promotion--card",
+			"link": {
+				"url": "/suplementos/vitaminas?order=OrderByBestDiscountDESC"
+			}
+		},
+		"title": "Card 3"
+	},
+
+	"image#card-link-4": {
+		"props": {
+			"src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/06f6f61f-569d-4ec3-93d8-ad9edb973463___6683e6a38568c6cb9e0b0746802ad517.png",
+			"blockClass": "season-promotion--card",
+			"link": {
+				"url": "/suplementos/antioxidantes?order=OrderByBestDiscountDESC"
+			}
+		},
+		"title": "Card 4"
+	}
+}

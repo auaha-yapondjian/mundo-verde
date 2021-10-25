@@ -4,138 +4,92 @@
       "flex-layout.row#main-banner",
       "__fold__",
       "flex-layout.row#deals",
-      // "flex-layout.row#recommendation-refresh",
-      "responsive-layout.desktop#promotions1",
-      "responsive-layout.mobile#promotions2",
+      "flex-layout.row#promotions-top",
       "flex-layout.row#new-releases",
       "flex-layout.row#popular-products",
-      "shelf#home--1",
-      "shelf#home--2",
-      "shelf#home--3",
+      "flex-layout.row#shelves-home",
       "flex-layout.row#navigation-history",
-      "flex-layout.row#promotion",
-      "newsletter",
+      "flex-layout.row#promotions-bottom",
+      "flex-layout.row#newsletter",
       "flex-layout.row#modal-news"
     ]
   },
+  
+  //Banner principal
+  "flex-layout.row#main-banner": {
+    "children": [
+      "responsive-layout.desktop#main-banner",
+      "responsive-layout.tablet#main-banner",
+      "responsive-layout.phone#main-banner"
+    ],
+    "props": {
+      "blockClass": "main-banner"
+    },
+    "title": "Banner principal"
+  },
 
-  "flex-layout.row#promotion": {
-    "title": "Novidades",
+  //Barrinha de categorias
+  "flex-layout.row#deals": {
+    "children": [
+      "rich-text#estilos-alimentacao",
+      "slider-layout#deals"
+    ],
+    "props": {
+      "blockClass": "deals"
+    },
+    "title": "Destaque Produtos"
+  },
+
+  //Imagens de promoções
+  "flex-layout.row#promotions-top": {
+		"children": ["flex-layout.col#promotions"],
+		"props": {
+			"blockClass": "promotions"
+		},
+		"title": "Cards de promoções"
+	},
+
+  //Vitrines de lançamentos
+  "flex-layout.row#new-releases": {
+    "children": ["recommendation-shelf#new-releases"],
+    "props": {
+      "blockClass": "new-releases"
+    },
+    "title":"Recomendações 1"
+  },
+
+  //Vitrines da home
+  "flex-layout.row#shelves-home": {
+    "children": ["flex-layout.col#shelves-home"],
+    "props": {
+      "blockClass": "shelves-home"
+    },
+    "title": "Vitrines"
+  },
+
+  //Novidades
+  "flex-layout.row#promotions-bottom": {
     "children": ["flex-layout.col#promotion"],
     "props": {
       "blockClass": "promotion--container"
-    }
-  },
-  "flex-layout.col#promotion": {
-    "children": [
-      "rich-text#promotion-news--title",
-      "flex-layout.row#promotion-news--top",
-      "flex-layout.row#promotion-news--bottom"
-    ]
-  },
-  "shelf#home--1": {
-    "title": "Vitrine Produtos (1)",
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "blockClass":["shelf-home", "shelf-home-1"],
-      "paginationDotsVisibility": "hidden",
-      "productList": {
-        "maxItems": 8,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 1,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Melhores produtos Vitafor"
-      }
-    }
-  },
-  "shelf#home--2": {
-    "title": "Vitrine Produtos (2)",
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "blockClass":["shelf-home", "shelf-home-2"],
-      "paginationDotsVisibility": "hidden",
-      "productList": {
-        "maxItems": 8,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 1,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Especial Essential"
-      }
-    }
-  },
-  "shelf#home--3": {
-    "title": "Vitrine Produtos (3)",
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "blockClass":["shelf-home", "shelf-home-3"],
-      "paginationDotsVisibility": "hidden",
-      "productList": {
-        "maxItems": 8,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 1,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Flormel"
-      }
-    }
+    },
+    "title": "Novidades"
   },
 
-  "rich-text#shelf-title": {
+  //Newsletter
+  "flex-layout.row#newsletter": {
+    "children": ["newsletter"],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "blockClass": "newsletter"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "blockClass": "shelf"
-    }
-  },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  "newsletter": {
-    "title": "Newsletter",
-    "props": {
-      "blockClass": "footer-newsletter",
-      "label": "Cadastre-se e receba ofertas exclusivas, dicas e receitas para uma vida mais saudável e equilibrada :)",
-      "placeholder": "digite seu e-mail",
-      "submit": "eu quero"
-    }
-  },
+  
+  //Modal
   "flex-layout.row#modal-news": {
+    "children": ["modal-trigger#modal-newsletter"],
     "props": {
       "blockClass": "swal-modal"
     },
-    "children": ["modal-trigger#modal-newsletter"]
+    "title": "Modal home"
   }
 }

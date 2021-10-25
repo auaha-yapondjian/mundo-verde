@@ -1,24 +1,25 @@
 .sliderLayoutContainer {
   justify-content: center;
-}
+  
+  &--carousel {
+    background-color: #f0f0f0;
+  }
 
-.sliderLayoutContainer--carousel {
-  background-color: #f0f0f0;
-}
-
-.sliderLayoutContainer--season-promotion--cards {
-  background-color: #f2f2f2;
+  // Slider LP Promoções
+  &--promo-options {
+    background-color: #fff;
+    margin-top: 20px;
+  
+    .sliderTrackContainer {
+      max-width: 1250px;
+      padding: 20px 15px;
+    }
+  
+  }
 }
 
 .sliderTrackContainer {
   max-width: 100%;
-}
-
-.paginationDotsContainer {
-  margin: {
-    bottom: 0.5rem;
-    top: 0.5rem;
-  }
 }
 
 .layoutContainer--shelf {
@@ -37,57 +38,26 @@
   }
 }
 
-.sliderArrows {
-  color: #fff;
-}
-
-.sliderArrows--categories-slider {
-  color: rgba(36, 134, 83, 1);
-  margin: 15px -15px;
-  top: 0;
-}
-
-.sliderArrows--categories-slider:hover {
-  color: rgba(36, 134, 83, 0.8);
-}
-
-.caretIcon--categories-slider {
-  height: 15px;
-  width: 15px;
-}
-
-// Slider LP Promoções
-.sliderLayoutContainer--promo-options {
-  background-color: #fff;
-  margin-top: 20px;
-
-  .sliderTrackContainer {
-    max-width: 1250px;
-    padding: 20px 15px;
+.slideChildrenContainer {
+  &--banner-offers {
+    background: #000000;
   }
 
-  .slideChildrenContainer--promo-options {
+  &--promo-options {
     text-align: center;
-
+  
     &:hover {
       :global(.vtex-store-components-3-x-imageElement) {
         transform: scale(1.15);
         transition: transform 0.3s ease-in-out;
       }
-
+  
       :global(.vtex-rich-text-0-x-link--deals) {
         color: #008651;
       }
     }
   }
-}
 
-.sliderLayoutContainer--banner-offers {
-  background: #000000;
-}
-
-// Fim Popup Black Friday
-.slideChildrenContainer {
   &--recommendation {
     padding: 10px;
 
@@ -104,7 +74,53 @@
     }
   }
 }
+
+.sliderArrows {
+  color: #fff;
+
+  // Categories slider
+  &--categories-slider {
+    color: rgba(36, 134, 83, 1);
+    margin: auto;
+    bottom: 0;
+    top: -24px;
+
+    &:hover {
+      color: rgba(36, 134, 83, 0.8);
+    }
+  }
   
-.sliderArrows--recommendation {
-  color: #008651;
+  //Vitrine de recomendações
+  &--recommendation {
+    color: #008651;
+  }
+}
+
+.sliderLeftArrow {
+  // Categories slider
+  &--categories-slider {
+    left: -15px;
+  }
+}
+
+.sliderRightArrow {
+  // Categories slider
+  &--categories-slider {
+    right: -15px;
+  }
+}
+
+.caretIcon {
+  // Categories slider
+  &--categories-slider {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.paginationDotsContainer {
+  margin: {
+    bottom: 0.5rem;
+    top: 0.5rem;
+  }
 }

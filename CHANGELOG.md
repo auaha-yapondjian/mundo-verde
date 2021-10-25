@@ -11,6 +11,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - **25833253** - Sass refactoring
 
+## [3.111.15] - 2021-10-25
+
+### Fixed
+
+- **25833744** - New releases shelf adjusts
+
+## [3.111.14] - 2021-10-25
+
+- **25833327** - Institutional title colors
+
+## [3.111.13] - 2021-10-25
+
+### Fixed
+
+- **25833284** - Category bar adjusts
+- **25833327** - Institutional title colors
+
 ## [3.111.12] - 2021-10-21
 
 ### Hotfix
