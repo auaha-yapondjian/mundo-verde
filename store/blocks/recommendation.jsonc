@@ -5,11 +5,7 @@
 
   "flex-layout.row#new-releases": {
     "children": ["recommendation-shelf#new-releases"],
-<<<<<<< HEAD
-    "props":{
-=======
     "props": {
->>>>>>> 8e82fbd055d1973dd8b54202bfdffe4697e8c1d7
       "blockClass": "new-releases"
     }
   },
