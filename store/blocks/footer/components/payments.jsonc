@@ -1,0 +1,107 @@
+{
+  "flex-layout.row#footer-methods": {
+    "children": ["flex-layout.col#footer-methods-content"],
+    "props": {
+      "blockClass":"footer-methods"
+    },
+    "title": "Métodos de pagamento"
+  },
+
+  "flex-layout.col#footer-methods-content": {
+    "children": [
+      "flex-layout.row#footer-methods-title",
+      "flex-layout.row#footer-methods-images"
+    ],
+    "props": {
+      "blockClass": "footer-methods-content"
+    }
+  },
+
+  "flex-layout.row#footer-methods-title": {
+    "children": ["rich-text#footer-methods-title"],
+    "props": {
+      "blockClass": "footer-methods"
+    }
+  },
+
+  "rich-text#footer-methods-title": {
+    "props": {
+      "blockClass":"footer-methods-title",
+      "text":"Formas de pagamento"
+    },
+    "title": "Título"
+  },
+
+  "flex-layout.row#footer-methods-images": {
+    "children": [
+      "image#footer-methods-visa",
+      "image#footer-methods-mastercard",
+      "image#footer-methods-american",
+      "image#footer-methods-diners",
+      "image#footer-methods-elo",
+      "image#footer-methods-boleto",
+      "image#footer-methods-pix"
+    ],
+    "props": {
+      "blockClass": "footer-methods-images",
+      "preserveLayoutOnMobile": true
+    },
+    "title": "Imagens"
+  },
+
+  "image#footer-methods-visa": {
+    "props": {
+      "src": "/arquivos/visa-logo-gray.png",
+      "blockClass": ["footer-methods", "footer-methods-visa"]
+    },
+    "title": "Visa"
+  },
+
+  "image#footer-methods-mastercard": {
+    "props": {
+      "src": "/arquivos/footer-mastercard.png",
+      "blockClass": ["footer-methods", "footer-methods-mastercard"]
+    },
+    "title": "Mastercard"
+  },
+
+  "image#footer-methods-american": {
+    "props": {
+      "src": "/arquivos/footer-american-express.png",
+      "blockClass": ["footer-methods", "footer-methods-american"]
+    },
+    "title": "American Express"
+  },
+
+  "image#footer-methods-diners": {
+    "props": {
+      "src": "/arquivos/Footer-Diners.png",
+      "blockClass": ["footer-methods", "footer-methods-diners"]
+    },
+    "title": "Diners"
+  },
+
+  "image#footer-methods-elo": {
+    "props": {
+      "src": "/arquivos/footer-elo.png",
+      "blockClass": ["footer-methods", "footer-methods-elo"]
+    },
+    "title": "Elo"
+  },
+
+  "image#footer-methods-boleto": {
+    "props": {
+      "src": "/arquivos/boleto-icon.png",
+      "blockClass": ["footer-methods", "footer-methods-boleto"]
+    },
+    "title": "Boleto"
+  },
+
+  "image#footer-methods-pix": {
+    "props": {
+      "src": "/arquivos/pix.png",
+      "blockClass": ["footer-methods", "footer-methods-pix"]
+    },
+    "title": "Pix"
+  }
+}
