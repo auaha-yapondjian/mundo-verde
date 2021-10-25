@@ -1,0 +1,98 @@
+{
+  "flex-layout.col#promotion": {
+    "children": [
+      "rich-text#promotion-news--title",
+      "flex-layout.row#promotion-news--top",
+      "flex-layout.row#promotion-news--bottom"
+    ],
+    "props": {
+      "blockClass": "promotions-bottom"
+    }
+  },
+
+  //Título
+  "rich-text#promotion-news--title": {
+    "title": "Título",
+    "props": {
+      "text": "## Conheça nossas novidades",
+      "blockClass": "promotion-news-content--title"
+    }
+  },
+
+  //Conteúdo
+  "flex-layout.row#promotion-news--top": {
+    "children": [
+      "image#card-news-1",
+      "image#card-news-2"
+    ],
+    "props": {
+      "blockClass": "promotion-news-content"
+    }
+  },
+
+  "image#card-news-1": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/74e77db1-9164-4abb-b49f-0aa4d562a479___823899e7a15e8cf328b85f6c9df532ae.png",
+      "blockClass": [
+        "promotion-news--image",
+        "promotion-news--image--left"
+      ],
+      "link": {
+        "url": "/mundo-verde-selecao/"
+      }
+    },
+    "title": "Imagem 1"
+  },
+
+  "image#card-news-2": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/b60ec1e6-3c97-4644-be81-f4f48115ad65___c8bdd6f2660aa7a4226e681534d745d2.png",
+      "blockClass": [
+        "promotion-news--image",
+        "promotion-news--image--right"
+      ],
+      "link": {
+        "url": "/caffeine-army/"
+      }
+    },
+    "title": "Imagem 2"
+  },
+
+  "flex-layout.row#promotion-news--bottom": {
+    "children": [
+      "image#card-news-3",
+      "image#card-news-4"
+    ],
+    "props": {
+      "blockClass": "promotion-news-content"
+    }
+  },
+
+  "image#card-news-3": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/6272fbd7-7d19-4d0f-afe0-b7a8de99deaf___38698f126267ff9749fd73f318f216d1.png",
+      "blockClass": [
+        "promotion-news--image",
+        "promotion-news--image--left"
+      ],
+      "link": {
+        "url": "/elixir"
+      }
+    },
+    "title": "Imagem 3"
+  },
+
+  "image#card-news-4": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/e9fcb38c-6dfc-4135-97b9-f467642372e7___6e46b54623705e5b458db47ddd8323f1.png",
+      "blockClass": [
+        "promotion-news--image",
+        "promotion-news--image--right"
+      ],
+      "link": {
+        "url": "/essential-nutrition"
+      }
+    },
+    "title": "Imagem 4"
+  }
+}

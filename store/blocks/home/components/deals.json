@@ -1,14 +1,4 @@
 {
-  "flex-layout.row#deals": {
-    "title": "Destaque Produtos",
-    "children": [
-      "rich-text#estilos-alimentacao",
-      "slider-layout#deals"
-    ],
-    "props": {
-      "blockClass": "deals"
-    }
-  },
   "rich-text#estilos-alimentacao": {
     "title": "Título",
     "props": {
@@ -18,8 +8,8 @@
       "width": "15%"
     }
   },
+
   "slider-layout#deals": {
-    "title": "Itens em destaque",
     "children": [
       "flex-layout.col#deals1", 
       "flex-layout.col#deals2", 
@@ -36,121 +26,163 @@
         "phone": 3
       },
       "blockClass": "categories-slider"
-    }
+    },
+    "title": "Itens em destaque"
   },
 
   "flex-layout.col#deals1": {
-    "title": "Item 1",
     "children": [
       "image#deal1",
       "rich-text#deal1"
-    ]
+    ],
+    "props": {
+      "blockClass": ["deals", "deals1"]
+    },
+    "title": "Item 1"
   },
+
   "image#deal1": {
     "props": {
-      "src": "/arquivos/low_carb.png"
+      "src": "/arquivos/low_carb.png",
+      "blockClass": ["deal", "deal1"]
     }
   },
+
   "rich-text#deal1": {
     "title": "Título item 1",
     "props": {
       "text": "[Low Carb](/paes-e-massas)",
-      "blockClass": "deals"
+      "blockClass": ["deals", "deal1"]
     }
   },
+
   "flex-layout.col#deals2": {
-    "title": "Item 2",
     "children": [
       "image#deal2",
       "rich-text#deal2"
-    ]
+    ],
+    "props": {
+      "blockClass": ["deals", "deals2"]
+    },
+    "title": "Item 2"
   },
+
   "image#deal2": {
     "props": {
-      "src": "/arquivos/organic.png"
+      "src": "/arquivos/organic.png",
+      "blockClass": ["deal", "deal2"]
     }
   },
+
   "rich-text#deal2": {
     "title": "Título item 2",
     "props": {
       "text": "[Orgânico](/paes-e-massas)",
-      "blockClass": "deals"
+      "blockClass": ["deals", "deal2"]
     }
   },
+
   "flex-layout.col#deals3": {
-    "title": "Item 3",
     "children": [
       "image#deal3",
       "rich-text#deal3"
-    ]
+    ],
+    "props": {
+      "blockClass": ["deals", "deals3"]
+    },
+    "title": "Item 3"
   },
+
   "image#deal3": {
     "props": {
-      "src": "/arquivos/vegan.png"
+      "src": "/arquivos/vegan.png",
+      "blockClass": ["deal", "deal3"]
     }
   },
+
   "rich-text#deal3": {
     "title": "Título item 3",
     "props": {
       "text": "[Vegan](/paes-e-massas)",
-      "blockClass": "deals"
+      "blockClass": ["deals", "deal3"]
     }
   },
+
   "flex-layout.col#deals4": {
-    "title": "Item 4",
     "children": [
       "image#deal4",
       "rich-text#deal4"
-    ]
+    ],
+    "props": {
+      "blockClass": ["deals", "deals4"]
+    },
+    "title": "Item 4"
   },
+
   "image#deal4": {
     "props": {
-      "src": "/arquivos/paleo.png"
+      "src": "/arquivos/paleo.png",
+      "blockClass": ["deal", "deal4"]
     }
   },
+
   "rich-text#deal4": {
     "title": "Título item 4",
     "props": {
       "text": "[Paleo](/paes-e-massas)",
-      "blockClass": "deals"
+      "blockClass": ["deals", "deal4"]
     }
   },
+
   "flex-layout.col#deals5": {
-    "title": "Item 5",
     "children": [
       "image#deal5",
       "rich-text#deal5"
-    ]
+    ],
+    "props": {
+      "blockClass": ["deals", "deals5"]
+    },
+    "title": "Item 5"
   },
+
   "image#deal5": {
     "props": {
-      "src": "/arquivos/gluten_free.png"
+      "src": "/arquivos/gluten_free.png",
+      "blockClass": ["deal", "deal5"]
     }
   },
+
   "rich-text#deal5": {
     "title": "Título item 5",
     "props": {
       "text": "[Sem Glúten](/paes-e-massas)",
-      "blockClass": "deals"
+      "blockClass": ["deals", "deal5"]
     }
   },
+
   "flex-layout.col#deals6": {
-    "title": "Item 6",
     "children": [
       "image#deal6",
       "rich-text#deal6"
-    ]
+    ],
+    "props": {
+      "blockClass": ["deals", "deals6"]
+    },
+    "title": "Item 6"
   },
+
   "image#deal6": {
     "props": {
-      "src": "/arquivos/without_lactose.png"
+      "src": "/arquivos/without_lactose.png",
+      "blockClass": ["deal", "deal6"]
     }
   },
+
   "rich-text#deal6": {
     "title": "Título item 6",
     "props": {
       "text": "[Sem Lactose](/paes-e-massas)",
-      "blockClass": "deals"
+      "blockClass": ["deals", "deal6"]
     }
   }
 }
