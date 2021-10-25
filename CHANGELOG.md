@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25833327** - Institutional title colors
+- **25833284** - Category bar adjusts
+- **25833327** - Institutional title colors
 
 ## [3.111.12] - 2021-10-21
 
@@ -21,13 +22,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25833739** - Main banner adjust to accept tablet image
+- **25833739** - Main banner adjust to accept tablet image
 
 ## [3.111.10] - 2021-10-18
 
 ### Fixed
 
-**25833277** - Header and badges adjusts
+- **25833277** - Header and badges adjusts
 
 ## [3.111.9] - 2021-10-18
 
