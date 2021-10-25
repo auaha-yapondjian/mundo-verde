@@ -1,8 +1,13 @@
+
 .container {
     background-color: #f2f2f2;
 
     :global(.vtex-product-summary-2-x-element) {
         padding: 0;
+    }
+
+    &--shelf-home {
+        padding: 0 15px 30px;
     }
 }
 
@@ -84,7 +89,7 @@
     border-top-right-radius: 4px;
     font-size: 13px;
     font-weight: normal;
-    margin-right: -30px;
+    margin-right: 0;
 
     &::before {
         left: -11px;
@@ -101,7 +106,7 @@
 }
 
 .shelfContentContainer {
-    max-width: 1250px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -115,14 +120,25 @@
     padding-right: 1.25rem;
 }
 
+.slide {
+    &--shelf-home {
+        padding: 0 5px;
+    }
+    
+}
 .sliderContainer {
     :global(.vtex-product-summary-2-x-container) {
-        padding: 20px 40px;
+        padding: 15px 10px;
+
+        @media (min-width: 1025px) {
+            padding: 20px 15px;
+        }
     }
 }
 
 .arrow {
     color: #008651;
+    padding: 0;
 
     .caretIcon{
         width: 25px;

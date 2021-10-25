@@ -2,24 +2,39 @@
   "flex-layout.row#recommendation-refresh": {
     "children": ["recommendation-refresh"]
   },
+
   "flex-layout.row#new-releases": {
     "children": ["recommendation-shelf#new-releases"],
+<<<<<<< HEAD
     "props":{
+=======
+    "props": {
+>>>>>>> 8e82fbd055d1973dd8b54202bfdffe4697e8c1d7
       "blockClass": "new-releases"
     }
   },
+
   "flex-layout.row#popular-products": {
-    "children": ["recommendation-shelf#popular-products"]
+    "children": ["recommendation-shelf#popular-products"],
+    "props": {
+      "blockClass": "popular-products"
+    }
   },
+
   "flex-layout.row#buy-together": {
     "children": ["recommendation-buy-together"]
   },
   "flex-layout.row#best-sellers": {
     "children": ["recommendation-shelf#best-sellers"]
   },
+
   "flex-layout.row#navigation-history": {
-    "children": ["recommendation-shelf#navigation-history"]
+    "children": ["recommendation-shelf#navigation-history"],
+    "props": {
+      "blockClass": "navigation-history"
+    }
   },
+
   "flex-layout.row#similar-products": {
     "children": ["recommendation-shelf#similar-products"]
   },
@@ -147,6 +162,7 @@
       "secondaryStrategy": "PRICE_REDUCTION"
     }
   },
+  
   "default-shelf#popular-products": {
     "blocks": [
       "vtex.product-summary:list-context.product-list",

@@ -1,0 +1,16 @@
+{
+  "flex-layout.row#footer-menu": {
+    "children": ["menu#footer-links"],
+    "props": {
+      "blockClass": "footer-menu"
+    },
+    "title":"Links"
+  },
+
+  "menu#footer-links": {
+    "props": {
+      "blockClass": "footer-menu-links"
+    },
+    "title":"Adicionar Links"
+  }
+}

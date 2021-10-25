@@ -3,241 +3,45 @@
     "title": "Footer",
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
+
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-info-geral-desktop",
-      "flex-layout.row#footer-institucional-desktop"
-    ]
+      "flex-layout.row#footer-top-content",
+      "flex-layout.row#footer-bottom-content"
+    ],
+    "title": "Desktop"
   },
+
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#footer-info-geral-mobile",
-      "flex-layout.row#footer-institucional-mobile"
-    ]
+      "flex-layout.row#footer-top-content",
+      "flex-layout.row#footer-contact",
+      "flex-layout.row#footer-methods",
+      "flex-layout.row#footer-social",
+      "flex-layout.row#footer-powered"
+    ],
+    "title": "Mobile"
   },
-  "flex-layout.row#footer-institucional-desktop": {
-    "title": "Footer - Informação Inferior",
+
+  "flex-layout.row#footer-top-content": {
     "children": [
-      "flex-layout.col#footer--contact",
-      "flex-layout.col#footer--payments",
-      "flex-layout.col#footer--social-networks",
-      "flex-layout.col#footer--info-vtex"
+      "flex-layout.row#footer-logo",
+      "flex-layout.row#footer-menu"
     ],
     "props": {
-      "blockClass": "footer-one--desktop",
-      "paddingTop": 8,
-      "paddingBottom": 3,
-      "colSizing": "auto"
+      "blockClass": "footer-top-content"
     }
   },
-  "flex-layout.row#footer-info-geral-desktop": {
-    "title": "Footer - Menu",
+
+  "flex-layout.row#footer-bottom-content": {
     "children": [
-      "logo#desktop",
-      "vtex.menu@2.x:menu#footer-1",
-      "vtex.menu@2.x:menu#footer-2",
-      "vtex.menu@2.x:menu#footer-3",
-      "vtex.menu@2.x:menu#footer-4",
-      "vtex.menu@2.x:menu#footer-5",
-      "vtex.menu@2.x:menu#footer-6"
-    ]
-  },
-  "flex-layout.row#footer-institucional-mobile": {
-    "title": "Footer - Informação Inferior Mobile",
-    "children": [
-      "flex-layout.col#footer--contact",
-      "flex-layout.col#footer--payments",
-      "flex-layout.col#footer--social-networks",
-      "flex-layout.col#footer--info-vtex"
+      "flex-layout.row#footer-contact",
+      "flex-layout.row#footer-methods",
+      "flex-layout.row#footer-social",
+      "flex-layout.row#footer-powered"
     ],
     "props": {
-      "blockClass": "footer-one--mobile",
-      "paddingTop": 3,
-      "paddingBottom": 3
-    }
-  },
-  "flex-layout.row#footer-info-geral-mobile": {
-    "title": "Footer - Menu Mobile",
-    "children": [
-      "logo#desktop",
-      "vtex.menu@2.x:menu#footer-1",
-      "vtex.menu@2.x:menu#footer-2",
-      "vtex.menu@2.x:menu#footer-3",
-      "vtex.menu@2.x:menu#footer-4",
-      "vtex.menu@2.x:menu#footer-5",
-      "vtex.menu@2.x:menu#footer-6"
-    ]
-  },
-  "flex-layout.col#footer--contact": {
-    "title": "Info Contato",
-    "children": [
-      "rich-text#footer-contact-title",
-      "rich-text#footer-contact-text"
-    ],
-    "props": {
-      "blockClass": "footer-contact"
-    }
-  },
-  "flex-layout.col#footer--payments": {
-    "title": "Info Pagamento",
-    "children": [
-      "rich-text#footer-payment",
-      "flex-layout.row#footer--payments-methods"
-    ],
-    "props": {
-      "blockClass": "footer-payments"
-    }
-  },
-  "rich-text#footer-contact-text": {
-    "title": "Texto Contato",
-    "props": {
-      "text": "11 2388 0474 contato@mundoverde.net.br \n *O estoque do ecommerce é diferente das franquias e lojas físicas",
-      "blockClass": "footer-contact-text"
-    }
-  },
-  "rich-text#footer-contact-title": {
-    "title": "Título Contato",
-    "props": {
-      "text": "Atendimento",
-      "blockClass": "footer--title"
-    }
-  },
-  "rich-text#footer-payment": {
-    "title": "Título Pagamento",
-    "props": {
-      "text": "Formas de Pagamento",
-      "blockClass": "footer--title"
-    }
-  },
-  "flex-layout.col#footer--social-networks": {
-    "title": "Redes Sociais",
-    "children": ["social-networks#social-footer"]
-  },
-  "social-networks#social-footer": {
-    "props": {
-      "title": "Redes Sociais",
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/MundoVerde/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/mundoverde"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/videomundoverde"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/mundoverde_brasil/"
-        }
-      ],
-      "blockClass": "footer-social-networks"
-    }
-  },
-  "flex-layout.row#footer--payments-methods": {
-    "title": "Imagens Métodos Pagamento",
-    "children": [
-      "flex-layout.col#payment-method--visa",
-      "flex-layout.col#payment-method--mastercard",
-      "flex-layout.col#payment-method--american",
-      "flex-layout.col#payment-method--dinners",
-      "flex-layout.col#payment-method--elo",
-      "flex-layout.col#payment-method--boleto",
-      "flex-layout.col#payment-method--pix"
-    ],
-    "props": {
-      "colGap": 6,
-      "colSizing": "auto",
-      "blockClass": "footer--payments-methods--content"
-    }
-  },
-  "flex-layout.col#payment-method--visa": {
-    "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--visa"]
-    }
-  },
-  "flex-layout.col#payment-method--mastercard": {
-    "props": {
-      "blockClass": [
-        "custom-payment-methods",
-        "custom-payment-methods--mastercard"
-      ]
-    }
-  },
-  "flex-layout.col#payment-method--american": {
-    "props": {
-      "blockClass": [
-        "custom-payment-methods",
-        "custom-payment-methods--american"
-      ]
-    }
-  },
-  "flex-layout.col#payment-method--dinners": {
-    "props": {
-      "blockClass": [
-        "custom-payment-methods",
-        "custom-payment-methods--dinners"
-      ]
-    }
-  },
-  "flex-layout.col#payment-method--elo": {
-    "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--elo"]
-    }
-  },
-  "flex-layout.col#payment-method--boleto": {
-    "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--boleto"]
-    }
-  },
-  "flex-layout.col#payment-method--pix": {
-    "children": ["image#footer--info-pix-logo"],
-    "props": {
-      "blockClass": ["custom-payment-methods", "custom-payment-methods--pix"]
-    }
-  },
-  "flex-layout.col#footer--info-vtex": {
-    "title": "Info Desenvolvimento",
-    "children": [
-      "image#footer--info-vtex-corebiz",
-      "rich-text#footer--info-vtex-text",
-      "image#footer--info-vtex-logo"
-    ],
-    "props": {
-      "blockClass": "footer--info-vtex"
-    }
-  },
-  "image#footer--info-vtex-corebiz": {
-    "title": "Logo",
-    "props": {
-      "src": "/arquivos/logo-corebiz.png",
-      "blockClass": "footer--info-vtex-corebiz"
-    }
-  },
-  "rich-text#footer--info-vtex-text": {
-    "title": "Texto",
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "POWERED BY:",
-      "blockClass": "footer--info-vtex-text"
-    }
-  },
-  "image#footer--info-vtex-logo": {
-    "title": "Logo",
-    "props": {
-      "src": "/arquivos/logovtex.png",
-      "blockClass": "footer--info-vtex-logo"
-    }
-  },
-  "image#footer--info-pix-logo": {
-    "title": "Pix",
-    "props": {
-      "src": "/arquivos/pix.png",
-      "blockClass": "footer--info-pix-logo"
+      "blockClass": "footer-bottom-content"
     }
   }
 }
