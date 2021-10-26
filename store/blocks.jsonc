@@ -16,7 +16,6 @@
     "blocks": [
       "my-account",
       "flex-layout.row#popular-products"
-      // "flex-layout.row#recommendation-refresh"
     ],
     "parent": {
       "challenge": "challenge.profile"
@@ -50,7 +49,6 @@
       "product-summary-image",
       "product-bookmark",
       "badges"
-      // "product-specification-badges#shelf"
     ]
   },
 

@@ -1,12 +1,35 @@
 .sliderLayoutContainer {
   justify-content: center;
-}
-.sliderLayoutContainer--carousel {
-  background-color: #f0f0f0;
-}
 
-.sliderLayoutContainer--season-promotion--cards {
-  background-color: #f2f2f2;
+  &--carousel {
+    background-color: #f0f0f0;
+  }
+
+  // Slider LP Promoções
+  &--promo-options {
+    background-color: #fff;
+    margin-top: 20px;
+  
+    .sliderTrackContainer {
+      max-width: 1250px;
+      padding: 20px 15px;
+    }
+  
+    .slideChildrenContainer--promo-options {
+      text-align: center;
+  
+      &:hover {
+        :global(.vtex-store-components-3-x-imageElement) {
+          transition: transform 0.3s ease-in-out;
+          transform: scale(1.15);
+        }
+  
+        :global(.vtex-rich-text-0-x-link--deals) {
+          color: #008651;
+        }
+      }
+    }
+  }
 }
 
 .sliderTrackContainer {
@@ -32,46 +55,45 @@
 
 .sliderArrows {
   color: #fff;
-}
 
-.sliderArrows--categories-slider {
-  color: rgba(36, 134, 83, 1);
-  top: 0;
-  margin: 15px -15px;
-}
-
-.sliderArrows--categories-slider:hover {
-  color: rgba(36, 134, 83, 0.8);
-}
-
-.caretIcon--categories-slider {
-  width: 15px;
-  height: 15px;
-}
-
-// Slider LP Promoções
-.sliderLayoutContainer--promo-options {
-  background-color: #fff;
-  margin-top: 20px;
-
-  .sliderTrackContainer {
-    max-width: 1250px;
-    padding: 20px 15px;
-  }
-
-  .slideChildrenContainer--promo-options {
-    text-align: center;
-
+  // Categories slider
+  &--categories-slider {
+    color: rgba(36, 134, 83, 1);
+    margin: auto;
+    bottom: 0;
+    top: -24px;
+    
+    
     &:hover {
-      :global(.vtex-store-components-3-x-imageElement) {
-        transition: transform 0.3s ease-in-out;
-        transform: scale(1.15);
-      }
-
-      :global(.vtex-rich-text-0-x-link--deals) {
-        color: #008651;
-      }
+      color: rgba(36, 134, 83, 0.8);
     }
+  }
+  
+  //Vitrine de recomendações
+  &--recommendation {
+    color: #008651;
+  }
+}
+
+.sliderLeftArrow {
+  // Categories slider
+  &--categories-slider {
+    left: -15px;
+  }
+}
+
+.sliderRightArrow {
+  // Categories slider
+  &--categories-slider {
+    right: -15px;
+  }
+}
+
+.caretIcon {
+  // Categories slider
+  &--categories-slider {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -110,14 +132,24 @@
   pointer-events: none;
 }
 // Fim Popup Black Friday
+.slideChildrenContainer {
+  &--recommendation {
+    padding: 10px;
 
-.slideChildrenContainer--recommendation {
-  padding: 20px 1rem;
+    :global(.vtex-product-summary-2-x-container) {
+      padding: 0;
+    }
+  }
 }
-.slideChildrenContainer--recommendation
-  :global(.vtex-product-summary-2-x-container) {
-  padding: 20px 40px;
-}
-.sliderArrows--recommendation {
-  color: #008651;
+
+@media (min-width: 1025px) {
+  .slideChildrenContainer {
+    &--recommendation {
+      padding: 20px 5px;
+
+      :global(.vtex-product-summary-2-x-container) {
+        padding: 20px 15px;
+      }
+    }
+  }
 }

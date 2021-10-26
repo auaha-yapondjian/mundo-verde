@@ -1,0 +1,64 @@
+{
+  "flex-layout.col#shelves-home": {
+    "children": [
+      "shelf#home--1",
+      "shelf#home--2",
+      "shelf#home--3"
+    ],
+    "props": {
+      "blockClass": "shelves-home"
+    }
+  },
+
+  "shelf#home--1": {
+    "title": "Vitrine Produtos (1)",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass":["shelf-home", "shelf-home-1"],
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "BIO2"
+      }
+    }
+  },
+
+  "shelf#home--2": {
+    "title": "Vitrine Produtos (2)",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass":["shelf-home", "shelf-home-2"],
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "ELIXIR"
+        
+      }
+    }
+  },
+
+  "shelf#home--3": {
+    "title": "Vitrine Produtos (3)",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass":["shelf-home", "shelf-home-3"],
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "BANANA BRASIL"
+      }
+    }
+  }
+}
