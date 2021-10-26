@@ -19,7 +19,7 @@
     },
     "children": [
       "form-input.text#nome-franquia",
-      "form-input.text#email",
+      "form-input.text#email-franquia",
       "form-input.text#telefone-franquia",
       "form-input.dropdown#capital",
       "form-input.dropdown#estado",
@@ -67,11 +67,7 @@
       "pointer": "#/properties/estado"
     }
   },
-  "form-input.text#assunto": {
-    "props": {
-      "pointer": "#/properties/assunto"
-    }
-  },
+
   "form-input.textarea#mensagem-franquia": {
     "props": {
       "pointer": "#/properties/mensagem"

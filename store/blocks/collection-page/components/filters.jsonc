@@ -1,0 +1,8 @@
+{
+	"flex-layout.col#filter-offers": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"blockClass": "filterCol"
+		}
+	}
+}

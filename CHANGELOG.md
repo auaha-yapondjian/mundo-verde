@@ -11,6 +11,103 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - **25575349** - Franchise landing page
 
+## [3.111.15] - 2021-10-25
+
+### Fixed
+
+- **25833744** - New releases shelf adjusts
+
+## [3.111.14] - 2021-10-25
+
+- **25833327** - Institutional title colors
+
+## [3.111.13] - 2021-10-25
+
+### Fixed
+
+- **25833284** - Category bar adjusts
+- **25833327** - Institutional title colors
+
+## [3.111.12] - 2021-10-21
+
+### Hotfix
+
+- Horizontal scroll removed
+
+## [3.111.11] - 2021-10-20
+
+### Fixed
+
+- **25833739** - Main banner adjust to accept tablet image
+
+## [3.111.10] - 2021-10-18
+
+### Fixed
+
+- **25833277** - Header and badges adjusts
+
+## [3.111.9] - 2021-10-18
+
+### Fixed
+
+- **25823234** - Search shelf adjusts
+
+## [3.111.8] - 2021-10-13
+
+### Changed
+
+- **25833260** - Footer structure changed
+
+## [3.111.7] - 2021-10-13
+
+### Fixed
+
+**25833272** - Shelves adjusts
+
+## [3.111.6] - 2021-10-13
+
+### Hotfix
+
+- Badges discount position
+
+## [3.111.5] - 2021-10-13
+
+### Fixed
+
+**25833272** - Home shelfs quantity and paddings
+
+## [3.111.4] - 2021-10-06
+
+### Fixed
+
+- Removing duplicated blocks, adjusts in collection files
+
+## [3.111.3] - 2021-10-06
+
+### Hotfix
+
+**25753682** - SEO text blocks adjusts
+
+## [3.111.2] - 2021-10-05
+
+## [3.111.1] - 2021-10-05
+
+### Fixed
+
+**25753682** - SEO text blocks adjusts
+
+## [3.111.0] - 2021-10-04
+
+### Added
+
+**25705060** - Faq AME page added
+
+## [3.110.14] - 2021-10-01
+
+## [3.110.13] - 2021-09-30
+
+## [3.110.12] - 2021-09-29
+
 ## [3.110.11] - 2021-09-29
 
 ## [3.110.10] - 2021-09-21

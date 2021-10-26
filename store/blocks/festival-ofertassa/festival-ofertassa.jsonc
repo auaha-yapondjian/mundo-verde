@@ -6,47 +6,28 @@
       "flex-layout.row#content--festival-ofertassa"
     ]
   },
+
   "flex-layout.row#header--festival-ofertassa": {
     "children": ["rich-text#title-festival-ofertassa"],
     "props": {
       "blockClass": "festival-ofertassa--header"
     }
   },
+
   "flex-layout.row#content--festival-ofertassa": {
     "children": ["sandbox#festival-ofertassa"],
     "props": {
       "blockClass": "festival-ofertassa--content"
     }
   },
-  "list-context.image-list#main-banner": {
-    "title": "Banner Principal",
-    "children": ["slider-layout#banner-images"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#banner-images": {
-    "title": "Configuração Slider Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "blockClass": "carousel",
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "fullWidth": true
-    }
-  },
+
   "rich-text#title-festival-ofertassa": {
     "props": {
       "text": "# Encontre a loja participante mais próxima da sua casa",
       "blockClass": "festival-ofertassa--title"
     }
   },
+  
   "sandbox#festival-ofertassa": {
     "props": {
       "width": "100%",

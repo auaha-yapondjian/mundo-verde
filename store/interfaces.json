@@ -29,5 +29,17 @@
   },
   "accordeon": {
     "component": "Collapsible"
+  },
+  "category-tree": {
+    "component": "CategoryTree"
+  },
+  "sub-category-tree": {
+    "component": "SubCategoryTree"
+  },
+  "breadcrumb-custom": {
+    "component": "BreadcrumbCustom"
+  },
+  "google-site-verification": {
+    "component": "GoogleSiteVerification"
   }
 }

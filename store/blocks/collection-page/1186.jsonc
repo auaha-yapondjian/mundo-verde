@@ -1,0 +1,20 @@
+{
+  "store.custom#imune-mais": {
+    "blocks": ["search-result-layout.customQuery#imune-mais"]
+  },
+
+  "search-result-layout.customQuery#imune-mais": {
+    "props": {
+      "querySchema": {
+        "hideUnavailableItems": false,
+        "queryField": "1186",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
+    ]
+  }
+}

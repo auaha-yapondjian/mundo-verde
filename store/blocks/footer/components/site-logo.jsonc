@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#footer-logo": {
+    "children": ["logo#footer-logo"],
+    "props": {
+      "blockClass": "footer-logo"
+    },
+    "title": "Logo"
+  },
+  
+  "logo#footer-logo": {
+    "props": {
+      "title": "imagem",
+      "href": "/",
+      "url": "https://mundoverde.vtexassets.com/arquivos/mundo-verde-footer-logo.png",
+      "width": "160"
+    }
+  }
+}

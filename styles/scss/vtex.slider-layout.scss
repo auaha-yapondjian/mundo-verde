@@ -1,129 +1,12 @@
 .sliderLayoutContainer {
   justify-content: center;
-}
-.sliderLayoutContainer--carousel {
-  background-color: #f0f0f0;
-}
 
-.sliderLayoutContainer--season-promotion--cards {
-  background-color: #f2f2f2;
-}
-
-.sliderTrackContainer {
-  max-width: 100%;
-}
-
-.paginationDotsContainer {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.layoutContainer--shelf {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 96rem;
-}
-
-.slide--shelf {
-  margin-bottom: 25px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.sliderArrows {
-  color: #fff;
-}
-
-.sliderArrows--categories-slider {
-  color: rgba(36, 134, 83, 1);
-  top: 0;
-  margin: 15px -15px;
-}
-
-.sliderArrows--categories-slider:hover {
-  color: rgba(36, 134, 83, 0.8);
-}
-
-.caretIcon--categories-slider {
-  width: 15px;
-  height: 15px;
-}
-
-// Slider LP Promoções
-.sliderLayoutContainer--promo-options {
-  background-color: #fff;
-  margin-top: 20px;
-
-  .sliderTrackContainer {
-    max-width: 1250px;
-    padding: 20px 15px;
+  //Vitrine
+  &--carousel {
+    background-color: #f0f0f0;
   }
 
-  .slideChildrenContainer--promo-options {
-    text-align: center;
-
-    &:hover {
-      :global(.vtex-store-components-3-x-imageElement) {
-        transition: transform 0.3s ease-in-out;
-        transform: scale(1.15);
-      }
-
-      :global(.vtex-rich-text-0-x-link--deals) {
-        color: #008651;
-      }
-    }
-  }
-}
-
-// Black Friday
-.sliderLayoutContainer--banner-blackfriday {
-  :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
-    display: block;
-  }
-}
-// Fim Black Friday
-
-// Black Friday
-.sliderLayoutContainer--banner-blackfriday {
-  background: #000000;
-
-  :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
-    display: block;
-    height: auto;
-  }
-}
-
-.sliderLayoutContainer--banner-offers {
-  background: #000000;
-}
-
-.imageElement--banner-offers {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-// Fim Black Friday
-
-// Popup Black Friday
-:global(.vtex-store-components-3-x-imageElementLink--popup-banner-blackfriday) {
-  pointer-events: none;
-}
-// Fim Popup Black Friday
-
-.slideChildrenContainer--recommendation {
-  padding: 20px 1rem;
-}
-.slideChildrenContainer--recommendation
-  :global(.vtex-product-summary-2-x-container) {
-  padding: 20px 40px;
-}
-.sliderArrows--recommendation {
-  color: #008651;
-}
-
-//Seja um franqueado
-.sliderLayoutContainer {
+  //Seja um franqueado
   &--franchise {
     &-cases-slider {
       position: relative;
@@ -151,9 +34,52 @@
       }
     }
   } 
+
+  &--banner-offers {
+    background: #000000;
+  }
+
+  // Black Friday
+  &--banner-blackfriday {
+    background: #000000;
+
+    :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
+      display: block;
+      height: auto;
+    }
+  }
+
+  // Slider LP Promoções
+  &--promo-options {
+    background-color: #fff;
+    margin-top: 20px;
+  
+    .sliderTrackContainer {
+      max-width: 1250px;
+      padding: 20px 15px;
+    }
+  
+    .slideChildrenContainer--promo-options {
+      text-align: center;
+  
+      &:hover {
+        :global(.vtex-store-components-3-x-imageElement) {
+          transition: transform 0.3s ease-in-out;
+          transform: scale(1.15);
+        }
+  
+        :global(.vtex-rich-text-0-x-link--deals) {
+          color: #008651;
+        }
+      }
+    }
+  }
 }
 
 .sliderTrackContainer {
+  max-width: 100%;
+
+  //Seja um franqueado
   &--franchise {
     &-selection-slider-first {
       overflow: inherit !important;
@@ -161,7 +87,162 @@
   }
 }
 
+.paginationDotsContainer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  //Seja um franqueado
+  &--franchise {
+    &-tax-slider {
+      align-items: center;
+      background: #fff;
+      border-bottom-right-radius: 20px;
+      border-top-left-radius: 20px;
+      bottom: -37px;
+      box-shadow: -5px 12px 8px #d1d6d3;
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      left: inherit;
+      margin: 0 !important;
+      min-width: 150px;
+      right: 20px;
+      width: auto;
+    }
+  }
+}
+
+.paginationDot {
+  //Seja um franqueado
+  &--franchise {
+    &-tax-slider {
+      background: #fff;
+      border: solid 2px #a1a1a1;
+
+      &--isActive {
+        background: #2e7743;
+      }
+    }  
+  }
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide {
+  //Shelf padrão
+  &--shelf {
+    margin-bottom: 25px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  //Seja um franqueado
+  &--franchise {
+    &-selection-slider-first {
+      position: relative;
+    }
+  }
+}
+
+.sliderArrows {
+  color: #fff;
+
+  // Categories slider
+  &--categories-slider {
+    color: rgba(36, 134, 83, 1);
+    margin: auto;
+    bottom: 0;
+    top: -24px;
+    
+    
+    &:hover {
+      color: rgba(36, 134, 83, 0.8);
+    }
+  }
+  
+  //Vitrine de recomendações
+  &--recommendation {
+    color: #008651;
+  }
+
+  //Seja um franqueado
+  &--franchise {
+    &-cases-slider {
+      color: #000;
+    }
+  }
+}
+
+.sliderLeftArrow {
+  // Categories slider
+  &--categories-slider {
+    left: -15px;
+  }
+
+  //Seja um franqueado
+  &--franchise {
+    &-cases-slider {
+      left: initial;
+      right: 10%;
+      top: -79px;
+    }
+  }
+}
+
+.sliderRightArrow {
+  // Categories slider
+  &--categories-slider {
+    right: -15px;
+  }
+
+  //Seja um franqueado
+  &--franchise {
+    &-cases-slider {
+      right: 7%;
+      top: -79px;
+    }
+  }
+}
+
+.caretIcon {
+  // Categories slider
+  &--categories-slider {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.imageElement--banner-offers {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+// Fim Black Friday
+
 .slideChildrenContainer {
+  //Vitrine de recomendações
+  &--recommendation {
+    padding: 10px;
+
+    @media (min-width: 1025px) {
+      padding: 20px 5px;
+    }
+
+    :global(.vtex-product-summary-2-x-container) {
+      padding: 0;
+     
+      @media (min-width: 1025px) {
+        padding: 20px 15px;
+      }
+    }
+  }
+
+  //Seja um franqueado
   &--franchise {
     &-main-banner {
       position: relative;
@@ -252,75 +333,6 @@
 
     &-cases-slider {
       margin-bottom: 60px;
-    }
-  }
-}
-
-.slide {
-  &--franchise {
-    &-selection-slider-first {
-      position: relative;
-    }
-  }
-}
-
-.paginationDotsContainer {
-  &--franchise {
-    &-tax-slider {
-      align-items: center;
-      background: #fff;
-      border-bottom-right-radius: 20px;
-      border-top-left-radius: 20px;
-      bottom: -37px;
-      box-shadow: -5px 12px 8px #d1d6d3;
-      display: flex;
-      height: 50px;
-      justify-content: center;
-      left: inherit;
-      margin: 0 !important;
-      min-width: 150px;
-      right: 20px;
-      width: auto;
-    }
-  }
-}
-
-.paginationDot {
-  &--franchise {
-    &-tax-slider {
-      background: #fff;
-      border: solid 2px #a1a1a1;
-
-      &--isActive {
-        background: #2e7743;
-      }
-    }  
-  }
-}
-
-.sliderArrows {
-  &--franchise {
-    &-cases-slider {
-      color: #000;
-    }
-  }
-}
-
-.sliderLeftArrow {
-  &--franchise {
-    &-cases-slider {
-      left: initial;
-      right: 10%;
-      top: -79px;
-    }
-  }
-}
-
-.sliderRightArrow {
-  &--franchise {
-    &-cases-slider {
-      right: 7%;
-      top: -79px;
     }
   }
 }

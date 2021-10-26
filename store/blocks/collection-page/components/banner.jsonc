@@ -1,0 +1,41 @@
+{
+  "responsive-layout.desktop#main-banner": {
+    "children": ["list-context.image-list#main-banner"],
+    "title": "Desktop"
+  },
+
+  "responsive-layout.tablet#main-banner": {
+    "children": ["list-context.image-list#main-banner"],
+    "title": "Tablet"
+  },
+
+  "responsive-layout.phone#main-banner": {
+    "children": ["list-context.image-list#main-banner"],
+    "title": "Mobile"
+  },
+
+  "list-context.image-list#main-banner": {
+    "title": "Imagens",
+    "children": ["slider-layout#banner-images"],
+    "props": {
+      "height": "auto",
+      "images": []
+    }
+  },
+  
+  "slider-layout#banner-images": {
+    "title": "Configuração Slider Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true
+    }
+  }
+}

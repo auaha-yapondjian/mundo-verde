@@ -18,29 +18,7 @@
       "blockClass": "nossas-lojas--content"
     }
   },
-  "list-context.image-list#main-banner": {
-    "title": "Banner Principal",
-    "children": ["slider-layout#banner-images"],
-    "props": {
-      "height": "auto",
-      "images": []
-    }
-  },
-  "slider-layout#banner-images": {
-    "title": "Configuração Slider Banner",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "blockClass": "carousel",
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "fullWidth": true
-    }
-  },
+
   "rich-text#title-lojas-participantes": {
     "props": {
       "text": "# Confira as lojas que seu desconto pode ser utilizado",
