@@ -59,20 +59,6 @@
       padding: 20px 15px;
     }
   
-    .slideChildrenContainer--promo-options {
-      text-align: center;
-  
-      &:hover {
-        :global(.vtex-store-components-3-x-imageElement) {
-          transition: transform 0.3s ease-in-out;
-          transform: scale(1.15);
-        }
-  
-        :global(.vtex-rich-text-0-x-link--deals) {
-          color: #008651;
-        }
-      }
-    }
   }
 }
 
@@ -88,8 +74,10 @@
 }
 
 .paginationDotsContainer {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: {
+    bottom: 0.5rem;
+    top: 0.5rem;
+  }
 
   //Seja um franqueado
   &--franchise {
@@ -127,8 +115,10 @@
 }
 
 .layoutContainer--shelf {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: {
+    bottom: 20px;
+    top: 20px;
+  }
   max-width: 96rem;
 }
 
@@ -136,14 +126,53 @@
   //Shelf padrão
   &--shelf {
     margin-bottom: 25px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: {
+      left: 0.5rem;
+      right: 0.5rem;
+    }
   }
 
   //Seja um franqueado
   &--franchise {
     &-selection-slider-first {
       position: relative;
+    }
+  }
+}
+
+.slideChildrenContainer {
+  &--banner-offers {
+    background: #000000;
+  }
+
+  &--promo-options {
+    text-align: center;
+  
+    &:hover {
+      :global(.vtex-store-components-3-x-imageElement) {
+        transform: scale(1.15);
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      :global(.vtex-rich-text-0-x-link--deals) {
+        color: #008651;
+      }
+    }
+  }
+
+  &--recommendation {
+    padding: 10px;
+
+    @media (min-width: 1025px) {
+      padding: 20px 5px;
+    }
+
+    :global(.vtex-product-summary-2-x-container) {
+      padding: 0;
+
+      @media (min-width: 1025px) {
+        padding: 20px 15px;
+      }
     }
   }
 }
@@ -157,8 +186,7 @@
     margin: auto;
     bottom: 0;
     top: -24px;
-    
-    
+
     &:hover {
       color: rgba(36, 134, 83, 0.8);
     }
@@ -211,8 +239,8 @@
 .caretIcon {
   // Categories slider
   &--categories-slider {
-    width: 15px;
     height: 15px;
+    width: 15px;
   }
 }
 

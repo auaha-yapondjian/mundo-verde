@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - **25575349** - Franchise landing page
 
+## [3.111.16] - 2021-10-27
+
+### Fixed
+
+- **25833253** - Sass refactoring
+
 ## [3.111.15] - 2021-10-25
 
 ### Fixed
@@ -62,7 +68,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25833272** - Shelves adjusts
+- **25833272** - Shelves adjusts
 
 ## [3.111.6] - 2021-10-13
 
@@ -74,7 +80,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25833272** - Home shelfs quantity and paddings
+- **25833272** - Home shelfs quantity and paddings
 
 ## [3.111.4] - 2021-10-06
 
@@ -86,7 +92,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Hotfix
 
-**25753682** - SEO text blocks adjusts
+- **25753682** - SEO text blocks adjusts
 
 ## [3.111.2] - 2021-10-05
 
@@ -94,13 +100,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25753682** - SEO text blocks adjusts
+- **25753682** - SEO text blocks adjusts
 
 ## [3.111.0] - 2021-10-04
 
 ### Added
 
-**25705060** - Faq AME page added
+- **25705060** - Faq AME page added
 
 ## [3.110.14] - 2021-10-01
 

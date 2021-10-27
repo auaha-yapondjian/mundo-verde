@@ -43,7 +43,6 @@
     },
     "children": [
       "flex-layout.col#category-menu",
-      // "vtex.menu@2.x:menu#custom-menu",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
     ]
@@ -88,8 +87,6 @@
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      // "customSearchPageUrl": "/search?_query=${term}",
-      // "attemptPageTypeSearch": true,
       "openAutocompleteOnFocus": true,
       "placeholder": "O que você procura ?",
       "blockClass": "main-search-bar",

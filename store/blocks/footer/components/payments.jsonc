@@ -59,7 +59,7 @@
 
   "image#footer-methods-mastercard": {
     "props": {
-      "src": "/arquivos/footer-mastercard.png",
+      "src": "/arquivos/footer-mastercard1.png",
       "blockClass": ["footer-methods", "footer-methods-mastercard"]
     },
     "title": "Mastercard"
@@ -75,7 +75,7 @@
 
   "image#footer-methods-diners": {
     "props": {
-      "src": "/arquivos/Footer-Diners.png",
+      "src": "/arquivos/Footer-Diners1.png",
       "blockClass": ["footer-methods", "footer-methods-diners"]
     },
     "title": "Diners"
@@ -83,7 +83,7 @@
 
   "image#footer-methods-elo": {
     "props": {
-      "src": "/arquivos/footer-elo.png",
+      "src": "/arquivos/footer-elo1.png",
       "blockClass": ["footer-methods", "footer-methods-elo"]
     },
     "title": "Elo"

@@ -502,12 +502,38 @@
     }
   }
 
+  //Ofertas Mundo Verde
+  &--title-text-banner-seo {
+    background-color: rgba(77,77,74,.5);
+    bottom: 0;
+    color: #f1f2f2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
   //Departamento
   &--department {
     &-filter {
       &-subtitle-text {
         display: flex;
         margin-left: 64px;
+      }
+    }
+  }
+
+  //Category info
+  &--category {
+    &-info-content {
+      color: #333;
+      font: {
+        family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        size: 14px;
+        weight: 400;
+      }
+
+      &:first-child {
+        margin-top: 0;
       }
     }
   }
@@ -654,6 +680,14 @@
 }
 
 .heading {
+  //Ofertas Mundo Verde
+  &--title-text-banner-seo {
+    font-size: 30px;
+    line-height: 1.4;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+
   //Faq AME
   &--faq {
     &-ame-text {
@@ -830,40 +864,6 @@
 }
 
 .headingLevel3 {
-  //SEO content
-  &--seo {
-    &-content-top {
-      font-size: 1.55rem;
-      font-weight: bold;
-      color: #4b2b4a;
-      margin: 0;
-      text-transform: uppercase;
-
-      @media (min-width: 1025px) {
-        padding-left: 30px;
-      }
-
-      &:empty {
-        display: none;
-      }
-    }
-
-    &-content-bottom {
-      color: #008651;
-      margin: 0;
-      font-weight: 700;
-      font-size: 18px;
-      padding: 50px 0 10px 0;
-      height: auto;
-
-      &:empty {
-        display: none;
-      }
-    }
-  }
-}
-
-.headingLevel3 {
   //Seja um franqueado
   &--franchise {
     &-description-text {
@@ -900,6 +900,38 @@
       @media (min-width: 1366px) {
         font-size: 27px;
         line-height: 30px;
+      }
+    }
+  }
+
+  //SEO content
+  &--seo {
+    &-content-top {
+      font-size: 1.55rem;
+      font-weight: bold;
+      color: #4b2b4a;
+      margin: 0;
+      text-transform: uppercase;
+
+      @media (min-width: 1025px) {
+        padding-left: 30px;
+      }
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    &-content-bottom {
+      color: #008651;
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 50px 0 10px 0;
+      height: auto;
+
+      &:empty {
+        display: none;
       }
     }
   }
@@ -969,6 +1001,13 @@
 }
 
 .paragraph {
+  //Category info
+  &--category {
+    &-info-title {
+      font-weight: 700;
+    }
+  }
+
   //Seja um franqueado
   &--franchise {
     &-description-text {

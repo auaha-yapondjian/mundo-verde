@@ -8,7 +8,6 @@
 
 .searchBarContainer {
   padding: 0;
-  margin-left: 10px;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
@@ -16,7 +15,6 @@
   border: none;
   padding: 0;
   position: relative;
-  margin-bottom: 10px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
@@ -560,17 +558,7 @@
 :global(.vtex-store-components-3-x-imageElement--florais-body) {
   margin-top: -25px;
 }
-
 // fim lp florais
-
-// página de produto
-.productImagesContainer {
-  &--carousel {
-    .carouselGaleryThumbs {
-      display: none !important;
-    }
-  }
-}
 
 .imageElementLink {
   //Black Friday
@@ -580,6 +568,23 @@
 }
 
 .imageElement {
+  //Category info
+  &--category {
+    &-info-image {
+      margin-right: auto;
+      max-width: 300px;
+      width: 100% !important;
+    }
+  }
+
+  //Ofertas Mundo Verde
+  &--image-banner-seo {
+    display: block;
+    height: 290px;
+    object-fit: cover;
+    width: 100%;
+  }
+
   //Seja um franqueado
   &--franchise {
     &-main-banner {
@@ -743,6 +748,27 @@
     }
   }
 
+  //Black Friday
+  &--banner-offers {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  // SEO content
+  &--seo {
+    &-content-top {
+      margin-top: 35px;
+      max-width: 442px;
+      width: 100%;
+
+      @media (min-width: 1025px) {
+        max-width: 90%;
+      }
+    }
+  }
+
   //Footer
   &--footer {
     &-methods {
@@ -766,27 +792,66 @@
       }
     }
   }
-
-  // SEO content
-  &--seo {
-    &-content-top {
-      margin-top: 35px;
-      max-width: 442px;
-      width: 100%;
-
-      @media (min-width: 1025px) {
-        max-width: 90%;
-      }
-    }
-  } 
 }
 
-//Banner principal
+.productImagesContainer {
+  // página de produto
+  &--carousel {
+    .carouselGaleryThumbs {
+      display: none !important;
+    }
+  }
+}
+
+//Shelf
+.sellingPriceLabel,
+.listPriceLabel {
+  display: none;
+}
+
+.listPriceValue {
+  margin-top: 6px;
+}
+
+.discountInsideContainer {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	font: {
+		size: 13px;
+		weight: normal;
+	}
+	margin-right: 0;
+
+	&::before {
+		border: {
+			bottom: 11px solid transparent;
+			right: 11px solid #008651;
+			top: 11px solid transparent;
+		}
+		content: '';
+		height: 0;
+		left: -11px;
+		position: absolute;
+		top: 0;
+		width: 0;
+		z-index: 9;
+	}
+}
+
+//Main banner
 :global(.vtex-flex-layout-0-x-flexRow--main-banner) {
   .container {
     padding: 0;
     max-width: 100%;
   }
+}
+
+//Search result
+:global(.vtex-search-result-3-x-searchResultContainer) {
+  .container {
+		max-width: 100%;
+		padding: 0;
+	}
 }
 
 //Seja um franqueado
@@ -824,7 +889,58 @@
   }
 }
 
-//Footer logo
-:global(.vtex-flex-layout-0-x-flexRowContent--footer-logo) .logoContainer {
-  padding: 0;
+//Black Friday
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-blackfriday) {
+  background: #000000;
+
+  .imageElement--banner-blackfriday {
+    display: block;
+    height: auto;
+  }
+}
+
+//Header
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) {
+  .logoImage {
+    transition: all .1s ease-in-out;
+    width: 110px;
+  }
+
+  .searchBarContainer {
+    align-items: center;
+    display: flex;
+  }
+}
+
+:global(.vtex-sticky-layout-0-x-container) {
+  .searchBarContainer {
+    display: block;
+    transition: all 0.3s ease;
+  }
+}
+
+.searchBarInnerContainer {
+  &--main-search-bar {
+    @media (min-width: 1025px) {
+      margin-left: 5px;
+    }
+    
+    @media (min-width: 1280px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+//Search bar
+:global(.vtex-flex-layout-0-x-flexRow--searchbar-mobile) {
+  .container {
+    padding: 0;
+  }
+}
+  
+//Footer
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-logo) {
+  .logoContainer {
+    padding: 0;
+  }
 }

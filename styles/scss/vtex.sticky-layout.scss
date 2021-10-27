@@ -1,5 +1,35 @@
 .wrapper {
-  &--franchise {
+	//Header
+  &--stuck:not(:hover) {
+    background: #fff;
+    padding: {
+      bottom: 5px;
+      top: 5px;
+    }
+  }
+
+  &--sticky-header {
+    background-color: #fff;
+    padding: 10px 0;
+
+    &--stuck {
+      :global(.vtex-input-prefix__group) {
+        height: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--stuck {
+    .container {
+      &--sticky-header {
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+	//Seja um franqueado
+	&--franchise {
 		&-float-form {
 			height: 100% !important;
 			margin-left: auto;
@@ -20,6 +50,7 @@
 }
 
 .container {
+	//Seja um franqueado
 	&--franchise {
 		&-float-form {
 			@media (min-width: 1025px) {
