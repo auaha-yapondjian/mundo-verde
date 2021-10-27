@@ -61,7 +61,6 @@ function CustomBlackFridayForm() {
   };
 
   return (
-    <>
     <FormBlackFriday onSubmit={formSubmitEvent}>
       <input type="text" placeholder="nome:" name="name" />
       <input type="text" type="email" placeholder="email:" name="email" />
@@ -79,7 +78,6 @@ function CustomBlackFridayForm() {
       </label>      
       <button disabled={isChecked ? false : true} type="submit">INSCREVER</button>
     </FormBlackFriday>
-    </>
   );
 }
 
