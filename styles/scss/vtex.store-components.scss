@@ -101,6 +101,24 @@
   margin-bottom: 20px;
 }
 
+.imageElement--left-background-element {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.imageElement--right-background-element {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.imageElement--dots-background-elemtent {
+  position: absolute;
+  left: 50px;
+  top: 0;
+}
+
 .imageElement--season-promotion--image {
   width: 10%;
 }

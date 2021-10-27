@@ -1,9 +1,180 @@
 {
   "store.custom#esquenta-blackfriday": {
     "blocks": [
-      "list-context.image-list#banner-blackfriday",
-      "flex-layout.row#form-blackfriday"
+      "flex-layout.row#body-blackfriday"
+      // "list-context.image-list#banner-blackfriday",
+      // "flex-layout.row#form-blackfriday"
     ]
+  },
+
+  "flex-layout.row#body-blackfriday": {
+    "children": [
+      "image#left-background-element",
+      "image#right-background-element",
+      "image#dots-background-elemtent",
+      "flex-layout.col#backfriday-container" 
+    ],
+    "props": {
+      "fullWidth": "true",
+      "blockClass": "body-blackfriday",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#backfriday-container": {
+    "children": [
+      "image#backfriday-banner-2021",
+      "rich-text#blackfriday-inscreva-se",
+      "rich-text#blackfriday-letreiro",
+      "flex-layout.row#brands-bf",
+      "flex-layout.row#form-container-blackfriday"
+    ],
+    "props": {
+      "blockClass": "container-blackfriday",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#left-background-element": {
+    "props": {
+      "src": "/arquivos/left-background-element.png",
+      "blockClass": ["left-background-element"]
+    },
+    "title": "left element"
+  },
+
+  "rich-text#blackfriday-inscreva-se": {
+    "props": {
+      "text": "SEJA O PRIMEIRO A RECEBER OS DESCONTOS DA BLACK FRIDAY!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-inscreva-se-blackfriday"
+    },
+    "title": "Mensagem de inscreva-se - Paragrafo"
+  },
+
+  "rich-text#blackfriday-letreiro": {
+    "props": {
+      "text": "*até* **60% off** *nas* \nMELHORES MARCAS",
+      "blockClass":"blackfriday-letreiro"
+    }
+  },
+
+  "flex-layout.row#brands-bf": {
+    "children": [
+      "flex-layout.col#brands-bf1",
+      "flex-layout.col#brands-bf2",
+      "flex-layout.col#brands-bf3",
+      "flex-layout.col#brands-bf4",
+      "flex-layout.col#brands-bf5",
+      "flex-layout.col#brands-bf6",
+      "flex-layout.col#brands-bf7"
+    ],
+    "props": {
+      "blockClass":"container-brands",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.col#brands-bf1": {
+    "children": ["image#brands-bf1"]
+  },
+
+  "image#brands-bf1": {
+    "props": {
+      "src": "/arquivos/mundoverde-bf.png"
+    },
+    "title": "image 1"
+  },
+
+  "flex-layout.col#brands-bf2": {
+    "children": ["image#brands-bf2"]   
+  },
+
+  "image#brands-bf2": {
+    "props": {
+      "src": "/arquivos/vitafor-bf.png"
+    },
+    "title": "image 2"
+  },
+
+  "flex-layout.col#brands-bf3": {
+    "children": ["image#brands-bf3"]   
+  },
+
+  "image#brands-bf3": {
+    "props": {
+      "src": "/arquivos/caffeinearmy-bf.png"
+    },
+    "title": "image 3"
+  },
+
+  "flex-layout.col#brands-bf4": {
+    "children": ["image#brands-bf4"]   
+  },
+
+  "image#brands-bf4": {
+    "props": {
+      "src": "/arquivos/desincha-bf.png"
+    },
+    "title": "image 4"
+  },
+
+  "flex-layout.col#brands-bf5": {
+    "children": ["image#brands-bf5"]   
+  },
+
+  "image#brands-bf5": {
+    "props": {
+      "src": "/arquivos/flormel-bf.png"
+    },
+    "title": "image 5"
+  },
+
+  "flex-layout.col#brands-bf6": {
+    "children": ["image#brands-bf6"]   
+  },
+
+  "image#brands-bf6": {
+    "props": {
+      "src": "/arquivos/essential-bf.png"
+    },
+    "title": "image 6"
+  },
+
+  "flex-layout.col#brands-bf7": {
+    "children": ["image#brands-bf7"]   
+  },
+
+  "image#brands-bf7": {
+    "props": {
+      "src": "/arquivos/elixir-bf.png"
+    },
+    "title": "image 7"
+  },
+
+  "image#right-background-element": {
+    "props": {
+      "src": "/arquivos/right-background-element.png",
+      "blockClass": ["right-background-element"]
+    },
+    "title": "right element"
+  },
+
+  "image#dots-background-elemtent": {
+    "props": {
+      "src": "/arquivos/dots-background-elemtent.png",
+      "blockClass": ["dots-background-elemtent"]
+    },
+    "title": "dots element"
+  },
+
+  "image#backfriday-banner-2021": {
+    "props": {
+      "src": "/arquivos/backfriday-banner-2021.png",
+      "blockClass": ["backfriday-banner-2021"]
+    },
+    "title": "blackfriday banner"
   },
 
   "list-context.image-list#banner-blackfriday": {
@@ -46,13 +217,19 @@
   },
 
   "flex-layout.col#col-form-blackfriday": {
-    "children": ["form#blackfriday"]
+    "children": [
+      // "form#blackfriday"
+      "custom-form-blackfriday"
+    ],
+    "props": {
+      "blockClass": "blackfriday-container"
+    }
   },
 
   "form#blackfriday": {
     "props": {
       "entity": "BF",
-      "schema": "blackfriday"
+      "schema": "Blackfriday"
     },
     "children": [
       "rich-text#text-form-blackfriday",
@@ -60,6 +237,7 @@
       "form-input.text#email-bf",
       "form-input.text#phone",
       "form-input.text#campaign",
+      // "form-input.checkbox#blackfriday",
       "form-submit#campaign"
     ],
     "blocks": ["form-success#blackfriday"]
@@ -103,7 +281,7 @@
     "props": {
       "pointer": "#/properties/name",
       "label": "Digite seu nome",
-      "placeholder": "Seu nome:"
+      "placeholder": "NOME:"
     }
   },
 
@@ -111,7 +289,7 @@
     "props": {
       "pointer": "#/properties/email",
       "label": "Digite seu e-mail",
-      "placeholder": "Seu e-mail:"
+      "placeholder": "EMAIL:"
     }
   },
 
@@ -119,7 +297,7 @@
     "props": {
       "pointer": "#/properties/phone",
       "label": "Digite seu telefone",
-      "placeholder": "Seu telefone:"
+      "placeholder": "TELEFONE:"
     }
   },
 
@@ -130,10 +308,17 @@
       "blockClass": "input-form-campaign"
     }
   },
-  
+
+  "form-input.checkbox#blackfriday": {
+    "props": {
+      "pointer": "#/properties/accept",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+
   "form-submit#campaign": {
     "props": {
-      "label": "Inscrever!"
+      "label": "INSCREVER"
     }
   }
 }
