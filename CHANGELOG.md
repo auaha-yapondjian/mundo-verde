@@ -7,11 +7,46 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.16] - 2021-10-27
+
+### Fixed
+
+- **25833253** - Sass refactoring
+
+## [3.111.15] - 2021-10-25
+
+### Fixed
+
+- **25833744** - New releases shelf adjusts
+
+## [3.111.14] - 2021-10-25
+
+- **25833327** - Institutional title colors
+
+## [3.111.13] - 2021-10-25
+
+### Fixed
+
+- **25833284** - Category bar adjusts
+- **25833327** - Institutional title colors
+
+## [3.111.12] - 2021-10-21
+
+### Hotfix
+
+- Horizontal scroll removed
+
+## [3.111.11] - 2021-10-20
+
+### Fixed
+
+- **25833739** - Main banner adjust to accept tablet image
+
 ## [3.111.10] - 2021-10-18
 
 ### Fixed
 
-**25833277** - Header and badges adjusts
+- **25833277** - Header and badges adjusts
 
 ## [3.111.9] - 2021-10-18
 
@@ -29,7 +64,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25833272** - Shelves adjusts
+- **25833272** - Shelves adjusts
 
 ## [3.111.6] - 2021-10-13
 
@@ -41,7 +76,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25833272** - Home shelfs quantity and paddings
+- **25833272** - Home shelfs quantity and paddings
 
 ## [3.111.4] - 2021-10-06
 
@@ -53,7 +88,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Hotfix
 
-**25753682** - SEO text blocks adjusts
+- **25753682** - SEO text blocks adjusts
 
 ## [3.111.2] - 2021-10-05
 
@@ -61,13 +96,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-**25753682** - SEO text blocks adjusts
+- **25753682** - SEO text blocks adjusts
 
 ## [3.111.0] - 2021-10-04
 
 ### Added
 
-**25705060** - Faq AME page added
+- **25705060** - Faq AME page added
 
 ## [3.110.14] - 2021-10-01
 

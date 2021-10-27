@@ -1,7 +1,7 @@
 {
   "vendor": "mundoverde",
   "name": "store-theme",
-  "version": "3.111.10",
+  "version": "3.111.16",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -64,7 +64,8 @@
     "vtex.store-video": "1.x",
     "vtex.shelf-components": "0.x",
     "vtex.recommendation-shelf": "1.x",
-    "vtex.store-icons": "0.x"
+    "vtex.store-icons": "0.x",
+    "vtex.toggle-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

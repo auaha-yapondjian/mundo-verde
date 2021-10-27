@@ -1,137 +1,126 @@
 .sliderLayoutContainer {
   justify-content: center;
-}
-.sliderLayoutContainer--carousel {
-  background-color: #f0f0f0;
-}
+  
+  &--carousel {
+    background-color: #f0f0f0;
+  }
 
-.sliderLayoutContainer--season-promotion--cards {
-  background-color: #f2f2f2;
+  // Slider LP Promoções
+  &--promo-options {
+    background-color: #fff;
+    margin-top: 20px;
+  
+    .sliderTrackContainer {
+      max-width: 1250px;
+      padding: 20px 15px;
+    }
+  
+  }
 }
 
 .sliderTrackContainer {
   max-width: 100%;
 }
 
-.paginationDotsContainer {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .layoutContainer--shelf {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: {
+    bottom: 20px;
+    top: 20px;
+  }
   max-width: 96rem;
 }
 
 .slide--shelf {
   margin-bottom: 25px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: {
+    left: 0.5rem;
+    right: 0.5rem;
+  }
 }
 
-.sliderArrows {
-  color: #fff;
-}
-
-.sliderArrows--categories-slider {
-  color: rgba(36, 134, 83, 1);
-  top: 0;
-  margin: 15px -15px;
-}
-
-.sliderArrows--categories-slider:hover {
-  color: rgba(36, 134, 83, 0.8);
-}
-
-.caretIcon--categories-slider {
-  width: 15px;
-  height: 15px;
-}
-
-// Slider LP Promoções
-.sliderLayoutContainer--promo-options {
-  background-color: #fff;
-  margin-top: 20px;
-
-  .sliderTrackContainer {
-    max-width: 1250px;
-    padding: 20px 15px;
+.slideChildrenContainer {
+  &--banner-offers {
+    background: #000000;
   }
 
-  .slideChildrenContainer--promo-options {
+  &--promo-options {
     text-align: center;
-
+  
     &:hover {
       :global(.vtex-store-components-3-x-imageElement) {
-        transition: transform 0.3s ease-in-out;
         transform: scale(1.15);
+        transition: transform 0.3s ease-in-out;
       }
-
+  
       :global(.vtex-rich-text-0-x-link--deals) {
         color: #008651;
       }
     }
   }
-}
 
-// Black Friday
-.sliderLayoutContainer--banner-blackfriday {
-  :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
-    display: block;
-  }
-}
-// Fim Black Friday
-
-// Black Friday
-.sliderLayoutContainer--banner-blackfriday {
-  background: #000000;
-
-  :global(.vtex-store-components-3-x-imageElement--banner-blackfriday) {
-    display: block;
-    height: auto;
-  }
-}
-
-.sliderLayoutContainer--banner-offers {
-  background: #000000;
-}
-
-.imageElement--banner-offers {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-// Fim Black Friday
-
-// Popup Black Friday
-:global(.vtex-store-components-3-x-imageElementLink--popup-banner-blackfriday) {
-  pointer-events: none;
-}
-// Fim Popup Black Friday
-.slideChildrenContainer {
   &--recommendation {
     padding: 10px;
 
+    @media (min-width: 1025px) {
+      padding: 20px 5px;
+    }
+
     :global(.vtex-product-summary-2-x-container) {
       padding: 0;
-    }
-  }
-}
 
-@media (min-width: 1025px) {
-  .slideChildrenContainer {
-    &--recommendation {
-      padding: 20px 5px;
-
-      :global(.vtex-product-summary-2-x-container) {
+      @media (min-width: 1025px) {
         padding: 20px 15px;
       }
     }
   }
 }
+
+.sliderArrows {
+  color: #fff;
+
+  // Categories slider
+  &--categories-slider {
+    color: rgba(36, 134, 83, 1);
+    margin: auto;
+    bottom: 0;
+    top: -24px;
+
+    &:hover {
+      color: rgba(36, 134, 83, 0.8);
+    }
+  }
   
-.sliderArrows--recommendation {
-  color: #008651;
+  //Vitrine de recomendações
+  &--recommendation {
+    color: #008651;
+  }
+}
+
+.sliderLeftArrow {
+  // Categories slider
+  &--categories-slider {
+    left: -15px;
+  }
+}
+
+.sliderRightArrow {
+  // Categories slider
+  &--categories-slider {
+    right: -15px;
+  }
+}
+
+.caretIcon {
+  // Categories slider
+  &--categories-slider {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.paginationDotsContainer {
+  margin: {
+    bottom: 0.5rem;
+    top: 0.5rem;
+  }
 }

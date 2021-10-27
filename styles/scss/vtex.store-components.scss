@@ -8,7 +8,6 @@
 
 .searchBarContainer {
   padding: 0;
-  margin-left: 10px;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
@@ -16,7 +15,6 @@
   border: none;
   padding: 0;
   position: relative;
-  margin-bottom: 10px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
@@ -214,9 +212,7 @@
 
 // NewsLetter
 .newsletter {
-  background-color: #008651;
   max-width: 100%;
-  margin-top: 80px;
 
   .container {
     max-width: 1250px;
@@ -574,16 +570,138 @@
 :global(.vtex-store-components-3-x-imageElement--florais-body) {
   margin-top: -25px;
 }
-
 // fim lp florais
 
-// página de produto
-:global(.vtex-store-components-3-x-productImagesContainer--carousel) {
-  :global(.vtex-store-components-3-x-carouselGaleryThumbs) {
-    display: none !important;
+.imageElement {
+  //Ofertas Mundo Verde
+  &--image-banner-seo {
+    display: block;
+    height: 290px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  //Category info
+  &--category {
+    &-info-image {
+      margin-right: auto;
+      max-width: 300px;
+      width: 100% !important;
+    }
+  }
+
+  //Black Friday
+  &--banner-offers {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  //Footer
+  &--footer {
+    &-methods {
+      display: block;
+      height: max-content;
+      max-width: 45px;
+
+      @media (min-width: 1025px) {
+        max-width: 45px;
+      }
+
+      &-elo {
+        max-width: 35px;
+      }
+    }
+
+    &-powered {
+      &-corebiz {
+        max-width: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+  // SEO content
+  &--seo {
+    &-content-top {
+      margin-top: 35px;
+      max-width: 442px;
+      width: 100%;
+
+      @media (min-width: 1025px) {
+        max-width: 90%;
+      }
+    }
+  } 
+}
+
+.imageElementLink {
+  //Black Friday
+  &--popup-banner-blackfriday {
+    pointer-events: none;
   }
 }
 
+.productImagesContainer {
+  // página de produto
+  &--carousel {
+    &-carouselGaleryThumbs {
+      display: none !important;
+    }
+  }
+}
+
+//Shelf
+.sellingPriceLabel,
+.listPriceLabel {
+  display: none;
+}
+
+.listPriceValue {
+  margin-top: 6px;
+}
+
+.discountInsideContainer {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	font: {
+		size: 13px;
+		weight: normal;
+	}
+	margin-right: 0;
+
+	&::before {
+		border: {
+			bottom: 11px solid transparent;
+			right: 11px solid #008651;
+			top: 11px solid transparent;
+		}
+		content: '';
+		height: 0;
+		left: -11px;
+		position: absolute;
+		top: 0;
+		width: 0;
+		z-index: 9;
+	}
+}
+
+//Main banner
+:global(.vtex-flex-layout-0-x-flexRow--main-banner) {
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+//Search result
+:global(.vtex-search-result-3-x-searchResultContainer) {
+  .container {
+		max-width: 100%;
+		padding: 0;
+	}
+}
 
 //Faq ame
 :global(.vtex-flex-layout-0-x-flexRow--faq-ame-main-banner) {
@@ -610,46 +728,58 @@
   }
 }
 
-.imageElement {
-  //Footer
-  &--footer {
-    &-methods {
-      display: block;
-      height: max-content;
-      max-width: 45px;
+//Black Friday
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-blackfriday) {
+  background: #000000;
 
-      @media (min-width: 1025px) {
-        max-width: 45px;
-      }
-
-      &-elo {
-        max-width: 35px;
-      }
-    }
-
-    &-powered {
-      &-corebiz {
-        max-width: 50px;
-        width: 50px;
-      }
-    }
+  .imageElement--banner-blackfriday {
+    display: block;
+    height: auto;
   }
-
-
-  // SEO content
-  &--seo {
-    &-content-top {
-      margin-top: 35px;
-      max-width: 442px;
-      width: 100%;
-
-      @media (min-width: 1025px) {
-        max-width: 90%;
-      }
-    }
-  } 
 }
 
-:global(.vtex-flex-layout-0-x-flexRowContent--footer-logo) .logoContainer {
-  padding: 0;
+//Header
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) {
+  .logoImage {
+    transition: all .1s ease-in-out;
+    width: 110px;
+  }
+
+  .searchBarContainer {
+    align-items: center;
+    display: flex;
+  }
+}
+
+:global(.vtex-sticky-layout-0-x-container) {
+  .searchBarContainer {
+    display: block;
+    transition: all 0.3s ease;
+  }
+}
+
+.searchBarInnerContainer {
+  &--main-search-bar {
+    @media (min-width: 1025px) {
+      margin-left: 5px;
+    }
+    
+    @media (min-width: 1280px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+//Search bar
+:global(.vtex-flex-layout-0-x-flexRow--searchbar-mobile) {
+  .container {
+    padding: 0;
+  }
+}
+  
+//Footer
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-logo) {
+  .logoContainer {
+    padding: 0;
+  }
 }

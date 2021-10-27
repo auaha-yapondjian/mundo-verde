@@ -247,7 +247,7 @@
 }
 //
 .paragraph--title-policy {
-  color: #f5a057;
+  color: #008651;
   font-size: 1.75em;
   font-weight: bold;
   margin: 0;
@@ -256,7 +256,7 @@
 
 .headingLevel1--titulo-quem-somos,
 .headingLevel5--titulo-imprensa {
-  color: #99cd44;
+  color: #008651;
   font-family: gotham;
   font-size: 18px;
   margin: 15px 0 0 0;
@@ -615,6 +615,40 @@
 }
 
 .container {
+  //Minicart
+  &--minicart {
+    &-empty-card {
+      justify-content: center;
+      padding: 10px 0;
+    }
+  }
+
+  //Ofertas Mundo Verde
+  &--title-text-banner-seo {
+    background-color: rgba(77,77,74,.5);
+    bottom: 0;
+    color: #f1f2f2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  //Category info
+  &--category {
+    &-info-content {
+      color: #333;
+      font: {
+        family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        size: 14px;
+        weight: 400;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
   //Footer
   &--footer {
     &-contact {
@@ -690,6 +724,14 @@
 }
 
 .heading {
+  //Ofertas Mundo Verde
+  &--title-text-banner-seo {
+    font-size: 30px;
+    line-height: 1.4;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+
   //Faq AME
   &--faq {
     &-ame-text {
@@ -806,6 +848,13 @@
 }
 
 .paragraph {
+  //Category info
+  &--category {
+    &-info-title {
+      font-weight: 700;
+    }
+  }
+
   //Footer
   &--footer {
     &-contact {
