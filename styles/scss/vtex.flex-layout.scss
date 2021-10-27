@@ -1,5 +1,4 @@
-.flexRowContent--menu-link,
-.flexRowContent--main-header {
+.flexRowContent--menu-link {
   padding: 0 0.5rem;
 }
 
@@ -12,15 +11,13 @@
 }
 
 @media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--menu-link {
     padding: 0 1rem;
   }
 }
 
 @media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--menu-link {
     padding: 0 15px;
   }
 }
@@ -33,24 +30,13 @@
   padding: 0 15px;
 }
 
-// .flexRowContent--main-header,
 .flexRow--searchbar-mobile {
   background-color: #ffffff !important;
-}
-
-.flexRowContent--main-header-mobile {
-  align-items: center;
-  padding: 0.625rem 0.5rem;
-  background-color: #ffffff;
+  padding: 10px;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #7c7c7c;
-  font-size: 14px;
-}
-
-.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
   font-size: 14px;
 }
 
@@ -137,33 +123,6 @@
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-/* Header */
-.flexRowContent--main-header {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
-.flexRow--main-header,
-.flexRowContent--main-header {
-  background: white;
-}
-
-.flexRow--main-header {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: none;
-}
-
-.flexRow--menu-link {
-  background-color: #fff;
-  border-top: 0.08333rem solid #f2f2f2;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-}
-
-.flexRow--page-divisor {
-  background-color: #f2f2f2;
-  height: 80px;
 }
 
 //
@@ -266,16 +225,6 @@
 
 .flexColChild--left-table-main {
   height: auto !important;
-}
-
-//
-
-// Payment Methods - footer
-.flexRowContent--footer--payments-methods--content {
-  @media screen and (max-width: 540px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 // vtex-flex-layout-0-x-flexRowContent
@@ -1151,30 +1100,25 @@
     margin-left: 2rem;
   }
 }
-
-// category footer texts
-.flexRow--category-footer-texts {
-  max-width: 1250px;
-  margin: auto;
-  padding: 16px 0 0;
-}
-
-:global(.vtex-flex-layout-0-x-flexRowContent--category-footer-texts) {
-  @media (max-width: 1215px) {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.flexCol--category-footer-img-container {
-  :global(.vtex-flex-layout-0-x-flexColChild--category-footer-img-content) {
-    margin: 35px 115px 0 auto;
-  }
-}
-// category footer texts
-
+  
 .flexRow {
+  //Header
+  &--main-header {
+    background: white;
+    box-shadow: none;
+  }
+
+  &--menu-link {
+    background-color: #fff;
+    border-top: 0.08333rem solid #f2f2f2;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &--page-divisor {
+    background-color: #f2f2f2;
+    height: 80px;
+  }
+
   //Promoções
   &--promotions {
     background-color: #f2f2f2;
@@ -1184,7 +1128,39 @@
   &--shelves-home {
     background-color: #f2f2f2;
   }
-  
+
+  //Ofertas Mundo Verde
+  &--banner-seo {
+    position: relative;
+  }
+
+  &--productCountCol {
+    align-items: center;
+    display: flex;
+  }
+
+  //Category info
+  &--category {
+    &-info-bottom {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+      max-width: 1250px;
+      padding: 36px;
+      width: 100%;
+    }
+  }
+
+  //SEO content
+  &--seo {
+    &-content {
+      max-width: 1250px;
+      margin: auto;
+      padding: 0;
+    }
+  }
+
   //Newsletter
   &--newsletter {
     margin-top: 80px;
@@ -1231,20 +1207,13 @@
       }
     }
   }
-
-  //SEO content
-  &--seo {
-    &-content {
-      max-width: 1250px;
-      margin: auto;
-      padding: 0;
-    }
-  }
 }
 
 .flexRowContent {
   //Main banner
   &--main-banner {
+    justify-content: center;
+    
     .stretchChildrenWidth {
       width: auto !important;
     }
@@ -1283,6 +1252,53 @@
     }
   }
   
+  //Ofertas Mundo Verde
+  &--productCountCol {
+    justify-content: flex-start;
+  }
+
+  //Category info
+  &--category {
+    &-info-bottom {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 15px 30px 50px;
+    }
+  }
+
+  //Search result
+  &--rowResult {
+    border-bottom: 1px solid #e3e4e6;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 1250px;
+    padding: 0 15px;
+    padding-bottom: 40px;
+  }
+
+  //Header
+  &--main {
+    &-header {
+      background: white;
+      margin: 0 auto;
+      max-width: 1280px;
+      padding: 0 5px;
+      will-change: padding, background, box-shadow;
+
+      :global(.vtex-menu-2-x-styledLink) {
+        color: #727273;
+        font-size: 14px;
+      }
+      
+      &-mobile {
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px 10px 0;
+        will-change: padding, background, box-shadow;
+      }
+    }
+  }
+
   //Footer
   &--footer {
     &-top-content {
@@ -1427,6 +1443,11 @@
 }
 
 .flexCol {
+  //Category info
+  &--orderByMobileCol {
+    margin: 0 10px;
+  }
+
   //Footer
   &--footer {
     &-powered {
@@ -1459,5 +1480,29 @@
         }
       }
     }
+  }
+}
+
+//Header
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) {
+  .flexRowContent {
+    &--main-header {
+      box-shadow: none; 
+      padding: 5px;
+      transition: padding 0.3s ease;
+      
+      &-mobile {
+        box-shadow: none; 
+      }
+    }
+  }
+}
+
+@supports (backdrop-filter: blur(5px)) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    .flexRowContent--main-header,
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    .flexRowContent--main-header-mobile {
+    backdrop-filter: blur(8px);
   }
 }

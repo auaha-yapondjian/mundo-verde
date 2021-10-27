@@ -1,0 +1,15 @@
+//Botão de adicionar ao Carrinho
+.buttonDataContainer {
+	.buttonText {
+		font-size: 0px;
+	
+		&::after {
+			content: "Comprar";
+			font-size: 1rem;
+		}
+	}
+}
+
+.buttonText {
+	text-transform: initial;
+}

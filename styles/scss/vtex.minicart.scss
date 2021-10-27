@@ -12,7 +12,7 @@
 	}
 }
 
-:global(.vtex-minicart-2-x-minicartSideBarContentWrapper) {
+.minicartSideBarContentWrapper {
 	.minicartContentContainer {
 		height: auto;
 		justify-content: flex-start;
@@ -83,3 +83,29 @@
 		right: -9px;
 	}
 } 
+
+.cartIcon {
+	color: #0f834c;
+	height: 35px;
+	width: 40px;
+}
+
+.openIconContainer {
+	display: block;
+  padding: 0;
+	transition: all 0.3s ease;
+}
+
+.minicartWrapperContainer {
+  :global(.vtex-button) {
+    background-color: transparent;
+    outline: none;
+  }
+
+  :global(.vtex-button__label) {
+    padding: {
+			left: 0;
+			right: 0;
+		}
+  }
+}
