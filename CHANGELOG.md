@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.111.16] - 2021-10-27
+
 ### Fixed
 
 - **25833253** - Sass refactoring
