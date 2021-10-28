@@ -12,7 +12,7 @@
       "image#left-background-element",
       "image#right-background-element",
       "image#dots-background-elemtent",
-      "flex-layout.col#backfriday-container" 
+      "flex-layout.col#backfriday-container"
     ],
     "props": {
       "fullWidth": "true",
@@ -56,7 +56,7 @@
   "rich-text#blackfriday-letreiro": {
     "props": {
       "text": "*até* **60% off** *nas* \nMELHORES MARCAS",
-      "blockClass":"blackfriday-letreiro"
+      "blockClass": "blackfriday-letreiro"
     }
   },
 
@@ -71,7 +71,7 @@
       "flex-layout.col#brands-bf7"
     ],
     "props": {
-      "blockClass":"container-brands",
+      "blockClass": "container-brands",
       "preserveLayoutOnMobile": true
     }
   },
@@ -82,13 +82,13 @@
 
   "image#brands-bf1": {
     "props": {
-      "src": "/arquivos/mundoverde-bf.png"
+      "src": "/arquivos/mundoverde2-bf.png"
     },
     "title": "image 1"
   },
 
   "flex-layout.col#brands-bf2": {
-    "children": ["image#brands-bf2"]   
+    "children": ["image#brands-bf2"]
   },
 
   "image#brands-bf2": {
@@ -99,7 +99,7 @@
   },
 
   "flex-layout.col#brands-bf3": {
-    "children": ["image#brands-bf3"]   
+    "children": ["image#brands-bf3"]
   },
 
   "image#brands-bf3": {
@@ -110,7 +110,7 @@
   },
 
   "flex-layout.col#brands-bf4": {
-    "children": ["image#brands-bf4"]   
+    "children": ["image#brands-bf4"]
   },
 
   "image#brands-bf4": {
@@ -121,7 +121,7 @@
   },
 
   "flex-layout.col#brands-bf5": {
-    "children": ["image#brands-bf5"]   
+    "children": ["image#brands-bf5"]
   },
 
   "image#brands-bf5": {
@@ -132,7 +132,7 @@
   },
 
   "flex-layout.col#brands-bf6": {
-    "children": ["image#brands-bf6"]   
+    "children": ["image#brands-bf6"]
   },
 
   "image#brands-bf6": {
@@ -143,7 +143,7 @@
   },
 
   "flex-layout.col#brands-bf7": {
-    "children": ["image#brands-bf7"]   
+    "children": ["image#brands-bf7"]
   },
 
   "image#brands-bf7": {
