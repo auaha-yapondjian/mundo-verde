@@ -22,7 +22,7 @@ interface IformValues {
 }
 
 function CustomBlackFridayForm() {
-  const [isChecked, setIsChecked] = useState(false)
+  const [isChecked, setIsChecked] = useState(true)
   const [formValues, setFormValues] = useState({})
   const [modalIsShow, setModalIsShow] = useState(false)
   const [currentModalMessageType, setCurrentModalMessageType] = useState(

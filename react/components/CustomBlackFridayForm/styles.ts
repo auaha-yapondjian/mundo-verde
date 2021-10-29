@@ -70,7 +70,8 @@ export const FormBlackFriday = styled.form`
     width: 100%;
 
     ::placeholder {
-      font-size: 26px;
+      font-size: 20px;
+      font-style: italic;
     }
   }
 
@@ -78,9 +79,10 @@ export const FormBlackFriday = styled.form`
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    -webkit-text-fill-color: green;
+    -webkit-text-fill-color: #ddd;
     -webkit-box-shadow: 0 0 0px 1000px #000 inset;
     transition: background-color 5000s ease-in-out 0s;
+    font-size: 20px;
   }
 
   input:focus {
@@ -103,6 +105,11 @@ export const FormBlackFriday = styled.form`
     border-radius: 18px;
     outline: none;
     transition: all 0.3s ease;
+    cursor: pointer;
+
+    :hover {
+      background-color: #cecece;
+    }
   }
 
   button:disabled {
