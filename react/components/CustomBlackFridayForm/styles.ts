@@ -59,7 +59,7 @@ export const FormBlackFriday = styled.form`
 
   > input {
     color: #f1ffff;
-    font-size: 22px;
+    font-size: 20px;
     text-align: left;
     background: transparent;
     border: none;
@@ -94,8 +94,8 @@ export const FormBlackFriday = styled.form`
     text-transform: uppercase;
     font-size: 28px;
     float: right;
-    width: 100%;
-    margin-top: 8px;
+    height: 40px;
+    margin: 8px 20px 0 20px;
     padding: 2px 0;
     color: #018a54;
     font-weight: 800;
@@ -106,14 +106,11 @@ export const FormBlackFriday = styled.form`
     outline: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    z-index: 1;
 
     :hover {
       background-color: #cecece;
     }
-  }
-
-  button:disabled {
-    opacity: 0.2;
   }
 `
 

@@ -55,7 +55,7 @@
 
   "rich-text#blackfriday-letreiro": {
     "props": {
-      "text": "*até* **60% off** *nas* \nMELHORES MARCAS",
+      "text": "*até* **60% OFF** *nas* \nMELHORES MARCAS",
       "blockClass": "blackfriday-letreiro"
     }
   },
@@ -171,7 +171,7 @@
 
   "image#backfriday-banner-2021": {
     "props": {
-      "src": "/arquivos/backfriday-banner-2021.png",
+      "src": "/arquivos/Logo-BF-2021-mundoverde.png",
       "blockClass": ["backfriday-banner-2021"]
     },
     "title": "blackfriday banner"
