@@ -13,7 +13,7 @@
 
       &::after {
         background-image: linear-gradient(to left, #cad6ce, transparent);
-        content: "";
+        content: '';
         height: 100%;
         position: absolute;
         right: 0;
@@ -24,7 +24,7 @@
 
       &::before {
         background-image: linear-gradient(to right, #cad6ce, transparent);
-        content: "";
+        content: '';
         height: 100%;
         left: 0;
         position: absolute;
@@ -33,7 +33,7 @@
         z-index: 1;
       }
     }
-  } 
+  }
 
   &--banner-offers {
     background: #000000;
@@ -53,12 +53,11 @@
   &--promo-options {
     background-color: #fff;
     margin-top: 20px;
-  
+
     .sliderTrackContainer {
       max-width: 1250px;
       padding: 20px 15px;
     }
-  
   }
 }
 
@@ -110,7 +109,7 @@
       &--isActive {
         background: #2e7743;
       }
-    }  
+    }
   }
 }
 
@@ -147,13 +146,13 @@
 
   &--promo-options {
     text-align: center;
-  
+
     &:hover {
       :global(.vtex-store-components-3-x-imageElement) {
         transform: scale(1.15);
         transition: transform 0.3s ease-in-out;
       }
-  
+
       :global(.vtex-rich-text-0-x-link--deals) {
         color: #008651;
       }
@@ -191,7 +190,7 @@
       color: rgba(36, 134, 83, 0.8);
     }
   }
-  
+
   //Vitrine de recomendações
   &--recommendation {
     color: #008651;
@@ -263,7 +262,7 @@
 
     :global(.vtex-product-summary-2-x-container) {
       padding: 0;
-     
+
       @media (min-width: 1025px) {
         padding: 20px 15px;
       }
@@ -286,7 +285,7 @@
 
       &::before {
         background-image: linear-gradient(to bottom, transparent, #000);
-        content: "";
+        content: '';
         display: block;
         height: 100%;
         left: 0;

@@ -1,99 +1,99 @@
 .popupWrapper {
-	.popupChildrenContainer {
-		padding: 0;
-		
-		.minicartContentContainer {
-			padding: 20px;
-		}
-	}
+  .popupChildrenContainer {
+    padding: 0;
 
-	.minicartTitle {
-		display: none;
-	}
+    .minicartContentContainer {
+      padding: 20px;
+    }
+  }
+
+  .minicartTitle {
+    display: none;
+  }
 }
 
 .minicartSideBarContentWrapper {
-	.minicartContentContainer {
-		height: auto;
-		justify-content: flex-start;
-		padding: 20px;
-	}
+  .minicartContentContainer {
+    height: auto;
+    justify-content: flex-start;
+    padding: 20px;
+  }
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) {
   box-shadow: none;
 
-	.minicartCheckoutButton {
-		margin: 0;
-		padding: 0;
-	}
+  .minicartCheckoutButton {
+    margin: 0;
+    padding: 0;
+  }
 
-	:global(.vtex-button) {
-		border-radius: 0;
+  :global(.vtex-button) {
+    border-radius: 0;
 
-		:global(.vtex-button__label) {
-			position: relative;
-			visibility: hidden;
+    :global(.vtex-button__label) {
+      position: relative;
+      visibility: hidden;
 
-			&::before {
-				align-items: center;
-				content: "Comprar";
-				display: flex;
-				height: 100%;
-				justify-content: center;
-				left: 0;
-				position: absolute;
-				text-transform: initial;
-				top: 0;
-				visibility: visible;
-				width: 100%;
-			}
-		}
-	}
+      &::before {
+        align-items: center;
+        content: 'Comprar';
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        text-transform: initial;
+        top: 0;
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
 
-	:global(.vtex-checkout-summary-0-x-summaryItemPrice) {
-		font-weight: bold;
-	}
+  :global(.vtex-checkout-summary-0-x-summaryItemPrice) {
+    font-weight: bold;
+  }
 }
 
 .closeIconContainer {
-    position: absolute;
+  position: absolute;
 
-    .closeIconButton {
-        color: #0F834C;
-    }
+  .closeIconButton {
+    color: #0f834c;
+  }
 }
 
 .minicartTitle {
-	font-size: 17px;
-	margin-bottom: 20px;
-	padding: {
-		bottom: 8px;
-		top: 8px;
-	}
-	text: {
-		align: center;
-		transform: uppercase;
-	}
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding: {
+    bottom: 8px;
+    top: 8px;
+  }
+  text: {
+    align: center;
+    transform: uppercase;
+  }
 }
 
 .minicartIconContainer {
-	.minicartQuantityBadge {
-		top: -10px;
-		right: -9px;
-	}
-} 
+  .minicartQuantityBadge {
+    top: -10px;
+    right: -9px;
+  }
+}
 
 .cartIcon {
-	color: #0f834c;
-	height: 35px;
-	width: 40px;
+  color: #0f834c;
+  height: 35px;
+  width: 40px;
 }
 
 .openIconContainer {
-	display: block;
+  display: block;
   padding: 0;
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .minicartWrapperContainer {
@@ -104,8 +104,8 @@
 
   :global(.vtex-button__label) {
     padding: {
-			left: 0;
-			right: 0;
-		}
+      left: 0;
+      right: 0;
+    }
   }
 }

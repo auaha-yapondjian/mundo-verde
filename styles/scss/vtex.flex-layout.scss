@@ -679,10 +679,10 @@
       width: 100%;
       margin-top: 8px;
       padding: 2px 0;
-      color: #018A54;
+      color: #018a54;
       font-weight: 800;
       text-transform: capitalize;
-      background:#fff;
+      background: #fff;
       border: 0;
       border-radius: 20px;
       outline: none;
@@ -1141,7 +1141,7 @@
     margin-left: 2rem;
   }
 }
-  
+
 .flexRow {
   //Header
   &--main-header {
@@ -1243,7 +1243,7 @@
         padding: 0 20px;
       }
     }
-    
+
     &-benefits-container {
       max-width: 1280px;
     }
@@ -1311,7 +1311,7 @@
   //Main banner
   &--main-banner {
     justify-content: center;
-    
+
     .stretchChildrenWidth {
       width: auto !important;
     }
@@ -1322,11 +1322,11 @@
     @media (min-width: 640px) {
       flex-wrap: wrap;
     }
-    
+
     @media (min-width: 1025px) {
       flex-wrap: nowrap;
     }
-    
+
     .stretchChildrenWidth {
       &:first-child {
         @media (min-width: 640px) {
@@ -1354,7 +1354,7 @@
   &--franchise {
     &-main-banner {
       position: relative;
-      
+
       .stretchChildrenWidth {
         height: auto;
 
@@ -1380,7 +1380,7 @@
               background: #f2c065;
               border-bottom-left-radius: 42%;
               border-top-left-radius: 58%;
-              content:"";
+              content: '';
               display: block;
               height: 675px;
               left: -39px;
@@ -1398,7 +1398,7 @@
         }
       }
     }
-    
+
     &-brand {
       padding: 0 20px;
     }
@@ -1420,7 +1420,7 @@
         width: 100% !important;
       }
     }
-    
+
     &-benefits {
       @media (min-width: 1025px) {
         padding-bottom: 35px;
@@ -1436,7 +1436,7 @@
     &-benefits-container {
       flex-wrap: wrap;
       padding: 0 20px;
-      
+
       .stretchChildrenWidth {
         padding-bottom: 25px;
         width: 33.33% !important;
@@ -1456,9 +1456,9 @@
           background: {
             repeat: no-repeat;
             size: 100% 100%;
-            image: url("https://mundoverde.vtexassets.com/arquivos/back-selection--image13.png");
+            image: url('https://mundoverde.vtexassets.com/arquivos/back-selection--image13.png');
           }
-          content: "";
+          content: '';
           height: 100%;
           left: 15%;
           position: absolute;
@@ -1493,11 +1493,11 @@
 
       &::before {
         background: {
-          image: url("https://mundoverde.vtexassets.com/arquivos/selection3--image7.png");
+          image: url('https://mundoverde.vtexassets.com/arquivos/selection3--image7.png');
           repeat: no-repeat;
           size: 100% 100%;
         }
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         left: 0;
@@ -1519,7 +1519,7 @@
 
     &-tax-container {
       max-width: 1000px;
-      
+
       .stretchChildrenWidth {
         &:nth-child(even) {
           width: 30% !important;
@@ -1531,7 +1531,7 @@
       }
     }
   }
-  
+
   //Ofertas Mundo Verde
   &--productCountCol {
     justify-content: flex-start;
@@ -1569,7 +1569,7 @@
         color: #727273;
         font-size: 14px;
       }
-      
+
       &-mobile {
         align-items: center;
         background-color: #ffffff;
@@ -1589,7 +1589,7 @@
           }
 
           @media (min-width: 1025px) {
-            width: 15%!important;
+            width: 15% !important;
           }
         }
 
@@ -1604,7 +1604,7 @@
         }
       }
     }
-    
+
     &-bottom-content {
       .stretchChildrenWidth {
         @media (min-width: 1025px) {
@@ -1727,13 +1727,13 @@
   &--orderByMobileCol {
     margin: 0 10px;
   }
-  
+
   //Seja um franqueado
   &--franchise {
     &-main-banner {
       width: max-content !important;
     }
-   
+
     &-float-form {
       display: flex;
       flex-direction: row;
@@ -1839,12 +1839,12 @@
     &-selection-col1 {
       &:first-child {
         @media (min-width: 1025px) {
-          height: 308px!important;
+          height: 308px !important;
           padding-top: 34px;
         }
-  
+
         @media (min-width: 1366px) {
-          height: 410px!important;
+          height: 410px !important;
           padding-top: 54px;
         }
       }
@@ -1852,11 +1852,11 @@
 
     &-selection-col4 {
       @media (min-width: 1025px) {
-        height: 253px!important;
+        height: 253px !important;
       }
-      
+
       @media (min-width: 1366px) {
-        height: 320px!important;
+        height: 320px !important;
       }
 
       &:last-child {
@@ -1872,9 +1872,9 @@
           justify-content: center;
           overflow: hidden;
         }
-  
+
         @media (min-width: 1366px) {
-          height: 890px!important;
+          height: 890px !important;
         }
       }
     }
@@ -1908,20 +1908,19 @@
 :global(.vtex-sticky-layout-0-x-wrapper--stuck) {
   .flexRowContent {
     &--main-header {
-      box-shadow: none; 
+      box-shadow: none;
       padding: 5px;
       transition: padding 0.3s ease;
-      
+
       &-mobile {
-        box-shadow: none; 
+        box-shadow: none;
       }
     }
   }
 }
 
 @supports (backdrop-filter: blur(5px)) {
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    .flexRowContent--main-header,
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) .flexRowContent--main-header,
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     .flexRowContent--main-header-mobile {
     backdrop-filter: blur(8px);

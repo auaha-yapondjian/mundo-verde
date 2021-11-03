@@ -1,23 +1,21 @@
 {
-	"store.custom#franquia": {
-		"blocks": [
-			"flex-layout.row#franchise-main-banner",
-			"flex-layout.row#franchise-description",
-			"flex-layout.row#franchise-brand",
-			"flex-layout.row#franchise-tips",
-			"flex-layout.row#franchise-benefits",
-			"flex-layout.row#franchise-selection-1",
-			"flex-layout.row#franchise-selection-2",
-			"flex-layout.row#franchise-tax",
-			"flex-layout.row#franchise-cases"
-		]
-	},
+  "store.custom#franquia": {
+    "blocks": [
+      "flex-layout.row#franchise-main-banner",
+      "flex-layout.row#franchise-description",
+      "flex-layout.row#franchise-brand",
+      "flex-layout.row#franchise-tips",
+      "flex-layout.row#franchise-benefits",
+      "flex-layout.row#franchise-selection-1",
+      "flex-layout.row#franchise-selection-2",
+      "flex-layout.row#franchise-tax",
+      "flex-layout.row#franchise-cases"
+    ]
+  },
 
-	//Main banner
-	"flex-layout.row#franchise-main-banner": {
-		"children":[
-      "flex-layout.col#franchise-float-form-banner"
-    ],
+  //Main banner
+  "flex-layout.row#franchise-main-banner": {
+    "children": ["flex-layout.col#franchise-float-form-banner"],
     "props": {
       "blockClass": "franchise-main-banner",
       "preventVerticalStretch": true,
@@ -25,11 +23,14 @@
       "fullWidth": true,
       "horizontalAlign": "left"
     },
-		"title": "Banner principal"		
-	},
+    "title": "Banner principal"
+  },
 
   "flex-layout.col#franchise-float-form-banner": {
-    "children": ["flex-layout.row#franchise-main-banner-container", "sticky-layout#franchise-float-form"],
+    "children": [
+      "flex-layout.row#franchise-main-banner-container",
+      "sticky-layout#franchise-float-form"
+    ],
     "props": {
       "blockClass": "franchise-float-form",
       "width": "100%"
@@ -45,46 +46,44 @@
     "children": ["sandbox#franchise-form-franquia"]
   },
 
-"sandbox#franchise-form-franquia": {
-  "props": {
-    "width": "100%",
-    "height": "auto",
-    "initialContent": "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1.0'/><title></title><link type='text/css' rel='stylesheet' href='https://mundoverde.solutto.com.br/js/bootstrap/css/bootstrap.min.css'/><script type='text/javascript' src='https://mundoverde.solutto.com.br/jquery-1.8.1.min.js'></script><script type='text/javascript' src='https://mundoverde.solutto.com.br/js/jquery/jquery.validate.1.11.1.customizado.min.js'></script><script type='text/javascript' src='https://mundoverde.solutto.com.br/js/jquery/jquery.mask.min.js'></script><script type='text/javascript' src='https://mundoverde.vteximg.com.br/arquivos/vtex-mundoverde-franquia.js'></script><style>.form-container{background: #6ac68d;padding: 20px 40px 60px;height: 100%;}.form-title{margin: 0;font-size: 23px;padding-bottom: 22px;font-weight: bold;color: #fff;}form{max-width: 265px;}.form-group{margin: 0 0 17px;}.form-group label{display: block;width: 100%;margin-bottom: 4px !important;text-align: left !important;}.form-group input{-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;-webkit-box-shadow: none;box-shadow: none;border-radius: 15px;border: none;color: #313131;background: #e1f4e8;padding: 0 10px;font-weight: bold;}.form-group select{outline: none;-webkit-box-shadow: none;box-shadow: none;border-radius: 15px;font-weight: bold;border: none;color: #313131;background: #e1f4e8;padding: 0 10px;}.section-button{margin: 0;padding-left: 0;}.help-block{font-size: 10px;margin: 0;padding: 0 10px;position: absolute;left: 15px;bottom: -14px;}#btnEnviar{width: 120px;text-align: center;text-transform: inherit;letter-spacing: 0.01em;font-weight: bold;background: #d67559;border-top-left-radius: 15px;border-bottom-right-radius: 15px;border-color: #d67559;}</style></head><body><div class='container' id='divMessage' style='display: none;'><div class='alert alert-danger'><div id='divErro'></div></div></div><div class='container form-container'><h3 class='form-title'>Seja um Franqueado</h3><form role='form' class='form-horizontal' action='https://mundoverde.solutto.com.br/investidores_form.aspx' method='POST'><input id='empresa' name='empresa' type='hidden' value='Mundo Verde'/> <input id='usuario' name='usuario' type='hidden' value='WebSoftware'/> <input id='unidade' name='unidade' type='hidden' value=''/><input id='RedirectSucesso' name='RedirectSucesso' type='hidden' value='https://mundoverde.solutto.com.br/forms/formulario_sucesso.htm'/><input id='RedirectErro' name='RedirectErro' type='hidden' value='https://mundoverde.solutto.com.br/forms/formulario_erro.htm'/> <input id='historico_canal_id' name='historico_canal_id' type='hidden' value=''/><input id='historico_categoria_id' name='historico_categoria_id' type='hidden' value='10932'/> <input id='historico_atendente_id' name='historico_atendente_id' type='hidden' value='18064'/><input id='historico_descricao' name='historico_descricao' type='hidden' value='Candidato importado via web site da marca.'/><div class='form-group'><div class='col-sm-10'><input type='text' id='Nome' placeholder='Nome' name='Nome' class='form-control' data-rule-required='true'/></div></div><div class='form-group'><div class='col-sm-10'><input type='text' id='Email' placeholder='Email' name='Email' class='form-control' data-rule-required='true' data-rule-email='True'/></div></div><div class='form-group'><div class='col-sm-10'><input type='text' id='Telefone' placeholder='Telefone' name='Telefone' class='form-control' data-rule-required='true' maxlength='50'/></div></div><input id='Origem' name='Origem' type='hidden' value='4277'/><div class='form-group'><div class='col-sm-10'><select id='Estado' name='Estado' class='form-control' data-rule-required='true'><option value=''>UF</option><option value='AC'>AC - Acre</option><option value='AL'>AL - Alagoas</option><option value='AM'>AM - Amazonas</option><option value='AP'>AP - Amapá</option><option value='BA'>BA - Bahia</option><option value='CE'>CE - Ceará</option><option value='DF'>DF - Distrito Federal</option><option value='ES'>ES - Espírito Santo</option><option value='GO'>GO - Goiás</option><option value='MA'>MA - Maranhão</option><option value='MG'>MG - Minas Gerais</option><option value='MS'>MS - Mato Grosso Do Sul</option><option value='MT'>MT - Mato Grosso</option><option value='PA'>PA - Pará</option><option value='PB'>PB - Paraíba</option><option value='PE'>PE - Pernambuco</option><option value='PI'>PI - Piaui</option><option value='PR'>PR - Paraná</option><option value='RJ'>RJ - Rio de Janeiro</option><option value='RN'>RN - Rio Grande Do Norte</option><option value='RO'>RO - Rondônia</option><option value='RR'>RR - Roraima</option><option value='RS'>RS - Rio Grande Do Sul</option><option value='SC'>SC - Santa Catarina</option><option value='SE'>SE - Sergipe</option><option value='SP'>SP - São Paulo</option><option value='TO'>TO - Tocantins</option></select></div></div><div class='form-group'><div class='col-sm-10'><input id='cidade_interesse_1' placeholder='Cidade de interesse' name='cidade_interesse_1' class='form-control' type='text'/></div></div><div class='col-sm-offset-2 col-sm-10 section-button'><button id='btnEnviar' type='submit' class='btn btn-primary'>Cadastrar-se</button></div></form></div></body></html>",
-    "allowCookies": false
-  }
-},
-	//Description
-	"flex-layout.row#franchise-description": {
-		"children":[
-			"rich-text#franchise-description-text",
-			"list-context.image-list#franchise-description-image"
-		],
-		"props":{
+  "sandbox#franchise-form-franquia": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "initialContent": "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1.0'/><title></title><link type='text/css' rel='stylesheet' href='https://mundoverde.solutto.com.br/js/bootstrap/css/bootstrap.min.css'/><script type='text/javascript' src='https://mundoverde.solutto.com.br/jquery-1.8.1.min.js'></script><script type='text/javascript' src='https://mundoverde.solutto.com.br/js/jquery/jquery.validate.1.11.1.customizado.min.js'></script><script type='text/javascript' src='https://mundoverde.solutto.com.br/js/jquery/jquery.mask.min.js'></script><script type='text/javascript' src='https://mundoverde.vteximg.com.br/arquivos/vtex-mundoverde-franquia.js'></script><style>.form-container{background: #6ac68d;padding: 20px 40px 60px;height: 100%;}.form-title{margin: 0;font-size: 23px;padding-bottom: 22px;font-weight: bold;color: #fff;}form{max-width: 265px;}.form-group{margin: 0 0 17px;}.form-group label{display: block;width: 100%;margin-bottom: 4px !important;text-align: left !important;}.form-group input{-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;-webkit-box-shadow: none;box-shadow: none;border-radius: 15px;border: none;color: #313131;background: #e1f4e8;padding: 0 10px;font-weight: bold;}.form-group select{outline: none;-webkit-box-shadow: none;box-shadow: none;border-radius: 15px;font-weight: bold;border: none;color: #313131;background: #e1f4e8;padding: 0 10px;}.section-button{margin: 0;padding-left: 0;}.help-block{font-size: 10px;margin: 0;padding: 0 10px;position: absolute;left: 15px;bottom: -14px;}#btnEnviar{width: 120px;text-align: center;text-transform: inherit;letter-spacing: 0.01em;font-weight: bold;background: #d67559;border-top-left-radius: 15px;border-bottom-right-radius: 15px;border-color: #d67559;}</style></head><body><div class='container' id='divMessage' style='display: none;'><div class='alert alert-danger'><div id='divErro'></div></div></div><div class='container form-container'><h3 class='form-title'>Seja um Franqueado</h3><form role='form' class='form-horizontal' action='https://mundoverde.solutto.com.br/investidores_form.aspx' method='POST'><input id='empresa' name='empresa' type='hidden' value='Mundo Verde'/> <input id='usuario' name='usuario' type='hidden' value='WebSoftware'/> <input id='unidade' name='unidade' type='hidden' value=''/><input id='RedirectSucesso' name='RedirectSucesso' type='hidden' value='https://mundoverde.solutto.com.br/forms/formulario_sucesso.htm'/><input id='RedirectErro' name='RedirectErro' type='hidden' value='https://mundoverde.solutto.com.br/forms/formulario_erro.htm'/> <input id='historico_canal_id' name='historico_canal_id' type='hidden' value=''/><input id='historico_categoria_id' name='historico_categoria_id' type='hidden' value='10932'/> <input id='historico_atendente_id' name='historico_atendente_id' type='hidden' value='18064'/><input id='historico_descricao' name='historico_descricao' type='hidden' value='Candidato importado via web site da marca.'/><div class='form-group'><div class='col-sm-10'><input type='text' id='Nome' placeholder='Nome' name='Nome' class='form-control' data-rule-required='true'/></div></div><div class='form-group'><div class='col-sm-10'><input type='text' id='Email' placeholder='Email' name='Email' class='form-control' data-rule-required='true' data-rule-email='True'/></div></div><div class='form-group'><div class='col-sm-10'><input type='text' id='Telefone' placeholder='Telefone' name='Telefone' class='form-control' data-rule-required='true' maxlength='50'/></div></div><input id='Origem' name='Origem' type='hidden' value='4277'/><div class='form-group'><div class='col-sm-10'><select id='Estado' name='Estado' class='form-control' data-rule-required='true'><option value=''>UF</option><option value='AC'>AC - Acre</option><option value='AL'>AL - Alagoas</option><option value='AM'>AM - Amazonas</option><option value='AP'>AP - Amapá</option><option value='BA'>BA - Bahia</option><option value='CE'>CE - Ceará</option><option value='DF'>DF - Distrito Federal</option><option value='ES'>ES - Espírito Santo</option><option value='GO'>GO - Goiás</option><option value='MA'>MA - Maranhão</option><option value='MG'>MG - Minas Gerais</option><option value='MS'>MS - Mato Grosso Do Sul</option><option value='MT'>MT - Mato Grosso</option><option value='PA'>PA - Pará</option><option value='PB'>PB - Paraíba</option><option value='PE'>PE - Pernambuco</option><option value='PI'>PI - Piaui</option><option value='PR'>PR - Paraná</option><option value='RJ'>RJ - Rio de Janeiro</option><option value='RN'>RN - Rio Grande Do Norte</option><option value='RO'>RO - Rondônia</option><option value='RR'>RR - Roraima</option><option value='RS'>RS - Rio Grande Do Sul</option><option value='SC'>SC - Santa Catarina</option><option value='SE'>SE - Sergipe</option><option value='SP'>SP - São Paulo</option><option value='TO'>TO - Tocantins</option></select></div></div><div class='form-group'><div class='col-sm-10'><input id='cidade_interesse_1' placeholder='Cidade de interesse' name='cidade_interesse_1' class='form-control' type='text'/></div></div><div class='col-sm-offset-2 col-sm-10 section-button'><button id='btnEnviar' type='submit' class='btn btn-primary'>Cadastrar-se</button></div></form></div></body></html>",
+      "allowCookies": false
+    }
+  },
+  //Description
+  "flex-layout.row#franchise-description": {
+    "children": [
+      "rich-text#franchise-description-text",
+      "list-context.image-list#franchise-description-image"
+    ],
+    "props": {
       "blockClass": "franchise-description",
       "colSizing": "equal",
       "preserveLayoutOnMobile": true,
       "preventVerticalStretch": true
     },
-		"title": "Descrição"
-	},
+    "title": "Descrição"
+  },
 
-	//Brand
-	"flex-layout.row#franchise-brand": {
-		"children":[
-			"flex-layout.col#franchise-brand-box"
-		],
+  //Brand
+  "flex-layout.row#franchise-brand": {
+    "children": ["flex-layout.col#franchise-brand-box"],
     "props": {
       "blockClass": "franchise-brand",
       "colSizing": "equal",
       "fullWidth": true,
       "preserveLayoutOnMobile": true
     },
-		"title":"Marca"
-	},
+    "title": "Marca"
+  },
 
-	//Tips
-	"flex-layout.row#franchise-tips": {
-		"children":["flex-layout.col#franchise-tips"],
+  //Tips
+  "flex-layout.row#franchise-tips": {
+    "children": ["flex-layout.col#franchise-tips"],
     "props": {
       "blockClass": "franchise-tips",
       "colSizing": "equal",
@@ -92,72 +91,72 @@
       "horizontalAlign": "left",
       "preserveLayoutOnMobile": true
     },
-		"title":"Dicas"
-	},
-	
-	//Benefits
-	"flex-layout.row#franchise-benefits": {
-		"children":["flex-layout.col#franchise-benefits"],
+    "title": "Dicas"
+  },
+
+  //Benefits
+  "flex-layout.row#franchise-benefits": {
+    "children": ["flex-layout.col#franchise-benefits"],
     "props": {
       "blockClass": "franchise-benefits",
       "colSizing": "equal",
       "fullWidth": true,
       "preserveLayoutOnMobile": true
     },
-		"title":"Benefícios"
-	},
+    "title": "Benefícios"
+  },
 
-	//Selection 1
-	"flex-layout.row#franchise-selection-1": {
-		"children": ["flex-layout.col#franchise-selection-content"],
+  //Selection 1
+  "flex-layout.row#franchise-selection-1": {
+    "children": ["flex-layout.col#franchise-selection-content"],
     "props": {
       "blockClass": ["franchise-selection", "franchise-selection-first"],
       "colSizing": "equal",
       "fullWidth": true,
-      "horizontalAlign":"center",
+      "horizontalAlign": "center",
       "preserveLayoutOnMobile": true
     },
-		"title":"Seleção - Parte 1"
-	},
+    "title": "Seleção - Parte 1"
+  },
 
-	//Selection 2
-	"flex-layout.row#franchise-selection-2": {
-		"children": [
-			"flex-layout.col#franchise-selection-col3",
-			"flex-layout.col#franchise-selection-col4"
-		],
+  //Selection 2
+  "flex-layout.row#franchise-selection-2": {
+    "children": [
+      "flex-layout.col#franchise-selection-col3",
+      "flex-layout.col#franchise-selection-col4"
+    ],
     "props": {
       "blockClass": ["franchise-selection", "franchise-selection-second"],
       "colSizing": "equal",
       "fullWidth": true,
-      "horizontalAlign":"center",
+      "horizontalAlign": "center",
       "preserveLayoutOnMobile": true
     },
-		"title": "Seleção - Parte 2"
-	},
-	
-	//Tax
-	"flex-layout.row#franchise-tax": {
-		"children": ["flex-layout.col#franchise-tax"],
+    "title": "Seleção - Parte 2"
+  },
+
+  //Tax
+  "flex-layout.row#franchise-tax": {
+    "children": ["flex-layout.col#franchise-tax"],
     "props": {
       "blockClass": "franchise-tax",
-      "colSizing":"equal",
+      "colSizing": "equal",
       "fullWidth": true,
       "horizontalAlign": "center"
     },
-		"title": "Taxas"
-	},
+    "title": "Taxas"
+  },
 
-	//Cases container
-	"flex-layout.row#franchise-cases": {
-		"children": ["stack-layout#franchise-cases-stack"],
-    "props":{
+  //Cases container
+  "flex-layout.row#franchise-cases": {
+    "children": ["stack-layout#franchise-cases-stack"],
+    "props": {
       "blockClass": "franchise-cases",
       "colSizing": "equal",
       "fullWidth": true,
       "horizontalAlign": "center",
       "preserveLayoutOnMobile": true
     },
-		"title":"Cases"
-	}
+    "title": "Cases"
+  }
 }

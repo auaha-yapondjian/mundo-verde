@@ -1,5 +1,5 @@
 .wrapper {
-	//Header
+  //Header
   &--stuck:not(:hover) {
     background: #fff;
     padding: {
@@ -28,53 +28,53 @@
     }
   }
 
-	//Seja um franqueado
-	&--franchise {
-		&-float-form {
-			height: 100% !important;
-			margin-left: auto;
-			position: relative;
-			right: 0;
-			width: 100%;
-			margin-left: -10px;
+  //Seja um franqueado
+  &--franchise {
+    &-float-form {
+      height: 100% !important;
+      margin-left: auto;
+      position: relative;
+      right: 0;
+      width: 100%;
+      margin-left: -10px;
 
-			&--stuck {
-				.container--franchise-float-form {
-					top: 58px !important;
-					width: 37%;
-					right: 0px;
-				}
-			}
-		}
-	}
+      &--stuck {
+        .container--franchise-float-form {
+          top: 58px !important;
+          width: 37%;
+          right: 0px;
+        }
+      }
+    }
+  }
 }
 
 .container {
-	//Seja um franqueado
-	&--franchise {
-		&-float-form {
-			@media (min-width: 1025px) {
-				background: #69c58d;
-				border-bottom-left-radius: 20px;
-				height: 380px;
-				left: inherit;
-				margin-left: auto;
-				overflow: hidden;
-				right: 14px;
-				width: 108%;
-				z-index: 3;
-			}
+  //Seja um franqueado
+  &--franchise {
+    &-float-form {
+      @media (min-width: 1025px) {
+        background: #69c58d;
+        border-bottom-left-radius: 20px;
+        height: 380px;
+        left: inherit;
+        margin-left: auto;
+        overflow: hidden;
+        right: 14px;
+        width: 108%;
+        z-index: 3;
+      }
 
-			@media (min-width: 1366px) {
-				height: 500px;
-				background: #6ac68d;
-    			padding-top: 60px;
-				right: 20px;
-			}
-	
-			:global(.vtex-sandbox-iframe) {
-				height: 100% !important;
-			}
-		}
-	}
+      @media (min-width: 1366px) {
+        height: 500px;
+        background: #6ac68d;
+        padding-top: 60px;
+        right: 20px;
+      }
+
+      :global(.vtex-sandbox-iframe) {
+        height: 100% !important;
+      }
+    }
+  }
 }
