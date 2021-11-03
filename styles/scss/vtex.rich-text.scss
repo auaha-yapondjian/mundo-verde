@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&family=Rubik:wght@300;900&display=swap');
+
 .container--deals {
   color: #7c7c7c;
   text-align: center;
@@ -18,6 +20,29 @@
   .container--deals--title {
     text-align: left;
     justify-content: flex-start;
+  }
+}
+
+.paragraph {
+  &--blackfriday-letreiro {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+
+    .strong--blackfriday-letreiro {
+      color: #00c985;
+      font-size: 38px;
+      font-weight: 900;
+      font-family: 'Rubik';
+    }
+
+    .italic--blackfriday-letreiro {
+      font-style: normal;
+      font-size: 20px;
+    }
   }
 }
 
@@ -392,6 +417,11 @@
   display: flex;
   justify-content: center;
 }
+
+.container--blackfriday-letreiro {
+  margin: 0 auto;
+}
+
 .paragraph--bg-table {
   margin: 14px 0;
 }
@@ -448,6 +478,13 @@
 .paragraph--text-success-blackfriday {
   color: #ffffff;
   font-size: 18px;
+  margin-top: 0;
+}
+
+.paragraph--text-inscreva-se-blackfriday {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
 }
 // Fim Black Friday
 
@@ -504,7 +541,7 @@
 
   //Ofertas Mundo Verde
   &--title-text-banner-seo {
-    background-color: rgba(77,77,74,.5);
+    background-color: rgba(77, 77, 74, 0.5);
     bottom: 0;
     color: #f1f2f2;
     position: absolute;
@@ -527,7 +564,7 @@
     &-info-content {
       color: #333;
       font: {
-        family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         size: 14px;
         weight: 400;
       }
@@ -583,13 +620,13 @@
       }
     }
   }
-  
+
   //Footer
   &--footer {
     &-contact {
       &-email {
         justify-content: center;
-        
+
         @media (min-width: 1025px) {
           justify-content: flex-start;
         }
@@ -624,11 +661,11 @@
       margin-left: auto;
       padding-right: 40px;
     }
-  
+
     &-selection-text {
       margin-left: auto;
     }
-  
+
     &-cases-title {
       margin: 0 auto;
       max-width: 1000px;
@@ -671,7 +708,6 @@
     }
 
     &-content-bottom-right {
-
       @media (min-width: 640px) {
         padding-left: 30px;
       }
@@ -732,7 +768,7 @@
         line-height: 36px;
       }
     }
-    
+
     &-brand-title {
       @media (min-width: 1025px) {
         font-size: 24px;
@@ -863,6 +899,21 @@
   }
 }
 
+@keyframes blackfriday-letreiro {
+  0% {
+    text-shadow: 0px 0px 12px rgb(0, 255, 0);
+    transition: 0.5s linear;
+  }
+  50% {
+    text-shadow: 0px 0px 12px transparent;
+    transition: 0.5s linear;
+  }
+  100% {
+    text-shadow: 0px 0px 12px rgb(0, 255, 0);
+    transition: 0.5s linear;
+  }
+}
+
 .headingLevel3 {
   //Seja um franqueado
   &--franchise {
@@ -872,7 +923,7 @@
         line-height: 24px;
         margin: 0;
       }
-  
+
       @media (min-width: 1366px) {
         font: {
           size: 28px;
@@ -880,11 +931,11 @@
         }
       }
     }
-  
+
     &-tips-title {
       color: #fff;
       margin: 0;
-  
+
       @media (min-width: 1025px) {
         font: {
           size: 20px;
@@ -896,7 +947,7 @@
           top: 30px;
         }
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 27px;
         line-height: 30px;
@@ -970,7 +1021,7 @@
       font-family: 'Gotham';
       text-shadow: 2px 2px 2px #69c58d;
     }
-  
+
     &-tips-subtitle {
       @media (min-width: 1025px) {
         font: {
@@ -980,12 +1031,12 @@
         line-height: 23px;
         text-transform: initial;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 24px;
         line-height: 28px;
       }
-  
+
       &:first-child {
         text-transform: uppercase;
       }
@@ -1020,13 +1071,13 @@
         margin: 0;
         max-width: 500px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 18px;
         line-height: 23px;
       }
     }
-  
+
     &-box-text {
       @media (min-width: 1025px) {
         font: {
@@ -1037,73 +1088,73 @@
         margin: 0;
         padding-left: 20px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 18px;
         line-height: 22px;
       }
     }
-  
+
     &-tips-subtitle {
       font-family: 'Gotham';
       margin: 0;
-  
+
       @media (min-width: 1025px) {
         max-width: 640px;
         padding-bottom: 20px;
       }
-  
+
       @media (min-width: 1366px) {
         max-width: 890px;
       }
     }
-  
+
     &-tips-text {
       color: #fff;
       margin: 0;
-  
+
       @media (min-width: 1025px) {
         font-size: 18px;
         line-height: 23px;
         max-width: 570px;
-        padding-bottom: 10px;   
+        padding-bottom: 10px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 24px;
         line-height: 28px;
         max-width: 800px;
       }
     }
-  
+
     &-tips-link {
       font-family: 'Gotham';
       margin: 0;
-  
+
       @media (min-width: 1025px) {
         font-size: 10px;
         line-height: 15px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 19px;
         line-height: 24px;
       }
     }
-  
+
     &-benefits-text {
       @media (min-width: 1025px) {
         font-size: 14px;
         line-height: 18px;
         margin: 0;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 18px;
         line-height: 22px;
       }
     }
-  
+
     &-selection-text {
       @media (min-width: 1025px) {
         margin: 0;
@@ -1111,13 +1162,13 @@
         line-height: 20px;
         max-width: 410px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 20px;
         line-height: 25px;
       }
     }
-  
+
     &-selection2-text {
       @media (min-width: 1025px) {
         font-size: 16px;
@@ -1125,13 +1176,13 @@
         margin: 0;
         max-width: 410px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 20px;
         line-height: 25px;
       }
     }
-  
+
     &-tax-subtitle {
       @media (min-width: 1025px) {
         font-size: 20px;
@@ -1140,13 +1191,13 @@
         max-width: 374px;
         padding-bottom: 16px;
       }
-  
+
       @media (min-width: 1366px) {
         font-size: 24px;
         line-height: 30px;
       }
     }
-  
+
     &-cases-text {
       font-size: 14px;
       line-height: 18px;
@@ -1173,7 +1224,7 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         display: block;
         border: 2.5px solid #4b2b4a;
         border-radius: 50%;
@@ -1187,7 +1238,7 @@
       }
 
       &::after {
-        content: "";
+        content: '';
         display: block;
         background: #4b2b4a;
         height: 2.5px;
@@ -1210,7 +1261,6 @@
         &::after {
           right: 0;
           top: -22px;
-          
         }
       }
     }

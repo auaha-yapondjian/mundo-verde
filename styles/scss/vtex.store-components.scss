@@ -99,6 +99,38 @@
   margin-bottom: 20px;
 }
 
+.imageElement--left-background-element {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.imageElement--right-background-element {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.imageElement--dots-background-elemtent {
+  position: absolute;
+  left: 50px;
+  top: 0;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imageElement--backfriday-banner-2021 {
+  max-width: 420px;
+  margin: 0 auto;
+  z-index: 1;
+
+  @media screen and (max-width: 560px) {
+    width: 300px;
+  }
+}
+
 .imageElement--season-promotion--image {
   width: 10%;
 }
@@ -635,17 +667,17 @@
 
       @media (min-width: 1025px) {
         height: 1015px;
-        max-height: 1015px!important;
+        max-height: 1015px !important;
       }
 
       @media (min-width: 1366px) {
         height: 1173px;
-        max-height: 1173px!important;
+        max-height: 1173px !important;
       }
 
       @media (min-width: 1760px) {
         height: 1270px;
-        max-height: 1270px!important;
+        max-height: 1270px !important;
         object-position: center 155px;
       }
     }
@@ -678,7 +710,7 @@
           fit: cover;
           position: center 67px;
         }
-        width: max-content!important;
+        width: max-content !important;
       }
 
       @media (min-width: 1366px) {
@@ -710,7 +742,7 @@
           fit: cover;
           position: -187px center;
         }
-        width: max-content!important;
+        width: max-content !important;
       }
 
       @media (min-width: 1366px) {
@@ -741,7 +773,7 @@
         object-position: center -502px;
       }
     }
-    
+
     &-cases-image {
       display: block;
       max-height: 500px !important;
@@ -792,6 +824,26 @@
       }
     }
   }
+
+  // SEO content
+  &--seo {
+    &-content-top {
+      margin-top: 35px;
+      max-width: 442px;
+      width: 100%;
+
+      @media (min-width: 1025px) {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+.imageElementLink {
+  //Black Friday
+  &--popup-banner-blackfriday {
+    pointer-events: none;
+  }
 }
 
 .productImagesContainer {
@@ -814,28 +866,28 @@
 }
 
 .discountInsideContainer {
-	border-bottom-right-radius: 4px;
-	border-top-right-radius: 4px;
-	font: {
-		size: 13px;
-		weight: normal;
-	}
-	margin-right: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  font: {
+    size: 13px;
+    weight: normal;
+  }
+  margin-right: 0;
 
-	&::before {
-		border: {
-			bottom: 11px solid transparent;
-			right: 11px solid #008651;
-			top: 11px solid transparent;
-		}
-		content: '';
-		height: 0;
-		left: -11px;
-		position: absolute;
-		top: 0;
-		width: 0;
-		z-index: 9;
-	}
+  &::before {
+    border: {
+      bottom: 11px solid transparent;
+      right: 11px solid #008651;
+      top: 11px solid transparent;
+    }
+    content: '';
+    height: 0;
+    left: -11px;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 9;
+  }
 }
 
 //Main banner
@@ -849,9 +901,9 @@
 //Search result
 :global(.vtex-search-result-3-x-searchResultContainer) {
   .container {
-		max-width: 100%;
-		padding: 0;
-	}
+    max-width: 100%;
+    padding: 0;
+  }
 }
 
 //Seja um franqueado
@@ -902,7 +954,7 @@
 //Header
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) {
   .logoImage {
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     width: 110px;
   }
 
@@ -924,7 +976,7 @@
     @media (min-width: 1025px) {
       margin-left: 5px;
     }
-    
+
     @media (min-width: 1280px) {
       margin-left: 20px;
     }
@@ -937,7 +989,7 @@
     padding: 0;
   }
 }
-  
+
 //Footer
 :global(.vtex-flex-layout-0-x-flexRowContent--footer-logo) {
   .logoContainer {
