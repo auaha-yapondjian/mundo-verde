@@ -65,7 +65,8 @@
     "vtex.shelf-components": "0.x",
     "vtex.recommendation-shelf": "1.x",
     "vtex.store-icons": "0.x",
-    "vtex.toggle-layout": "0.x"
+    "vtex.toggle-layout": "0.x",
+    "vtex.product-highlights": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
