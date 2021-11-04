@@ -532,9 +532,9 @@ ms@2.1.2:
   version "0.0.2"
   resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.chaordic@0.0.2/public/@types/mundoverde.chaordic#7db4f4ff7f353ed175b2be54fd731fac0829a6d2"
 
-"mundoverde.store-theme@http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.110.13/public/@types/mundoverde.store-theme":
-  version "3.110.13"
-  resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.110.13/public/@types/mundoverde.store-theme#212e1b203e4c32617696fd8a63b85ea9e7eebe87"
+"mundoverde.store-theme@http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.111.4/public/@types/mundoverde.store-theme":
+  version "3.111.4"
+  resolved "http://mundoverde.vtexassets.com/_v/public/typings/v1/mundoverde.store-theme@3.111.4/public/@types/mundoverde.store-theme#35682d4af1dd92ba187acbb79ceb7970663aab9c"
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -710,13 +710,13 @@ typescript@3.9.7:
   version "0.5.6"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.6/public/@types/vtex.locale-switcher#5db8558af5593d65e4fff3da0903d0081dfcab42"
 
-"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.46.1/public/@types/vtex.login":
-  version "2.46.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.46.1/public/@types/vtex.login#642fd529e55c6aaeed666babddddb4f77be99990"
+"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.47.0/public/@types/vtex.login":
+  version "2.47.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.47.0/public/@types/vtex.login#0aa578d9355c93d1d649236d8573334fe114f8b0"
 
-"vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.33.0/public/@types/vtex.menu":
-  version "2.33.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.33.0/public/@types/vtex.menu#f48464df3c9ce1133ac81d22cfbe6e4b003149d9"
+"vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.34.0/public/@types/vtex.menu":
+  version "2.34.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.34.0/public/@types/vtex.menu#58bbbbb9b2430554412f97d317134e40d2075012"
 
 "vtex.minicart@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.minicart@2.62.0/public/@types/vtex.minicart":
   version "2.62.0"
@@ -730,9 +730,9 @@ typescript@3.9.7:
   version "1.22.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.22.0/public/@types/vtex.my-account#d3ca631dd45c2bebb938239ff912125ad7c09c4c"
 
-"vtex.order-placed@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.12.1/public/@types/vtex.order-placed":
-  version "2.12.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.12.1/public/@types/vtex.order-placed#a7b55fee127fc8b70bf755e5a0377ba806bbd6ea"
+"vtex.order-placed@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.12.0/public/@types/vtex.order-placed":
+  version "2.12.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.12.0/public/@types/vtex.order-placed#1899985df826aac3ceff9ec9086e135e988059ad"
 
 "vtex.product-bookmark-interfaces@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-bookmark-interfaces@1.0.1/public/@types/vtex.product-bookmark-interfaces":
   version "1.0.1"
@@ -786,9 +786,9 @@ typescript@3.9.7:
   version "1.6.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.recommendation-shelf@1.6.1/public/@types/vtex.recommendation-shelf#8a66d6432b77c1ff6a6752f7724a2c6fe8737836"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.2/public/@types/vtex.render-runtime":
-  version "8.132.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.2/public/@types/vtex.render-runtime#e17dc097ba2b445771310cdbe9acd75af358b756"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.3/public/@types/vtex.render-runtime":
+  version "8.132.3"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.3/public/@types/vtex.render-runtime#c7dd142e384f38bd7a7c841543b73e9349fadc93"
 
 "vtex.responsive-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout":
   version "0.1.2"
@@ -834,9 +834,9 @@ typescript@3.9.7:
   version "0.3.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sticky-layout@0.3.4/public/@types/vtex.sticky-layout#5b786d6f9ab0a40e4997c955a75885eee32515ef"
 
-"vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.153.0/public/@types/vtex.store-components":
-  version "3.153.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.153.0/public/@types/vtex.store-components#d30db6ec0903e4e5e9a46393119fbd5842051d5b"
+"vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.155.0/public/@types/vtex.store-components":
+  version "3.155.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.155.0/public/@types/vtex.store-components#15aa9f691cdabe4fcbfd2491e46e31a102554ac7"
 
 "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.0/public/@types/vtex.store-drawer":
   version "0.16.0"
