@@ -6,6 +6,9 @@
   "form-compliance": {
     "component": "FormCompliance"
   },
+  "custom-form-blackfriday": {
+    "component": "CustomBlackFridayForm"
+  },
   "ebit": {
     "component": "EBit"
   },

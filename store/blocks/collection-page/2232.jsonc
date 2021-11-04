@@ -1,0 +1,24 @@
+{
+  "store.custom#desconto-progressivo-ate-25": {
+    "blocks": [
+      "search-result-layout.customQuery#desconto-progressivo-ate-25",
+      "flex-layout.row#seo-content"
+    ]
+  },
+
+  "search-result-layout.customQuery#desconto-progressivo-ate-25": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "queryField": "2232",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
+    ]
+  }
+}
