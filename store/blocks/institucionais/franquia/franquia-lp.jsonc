@@ -15,7 +15,7 @@
 
   //Main banner
   "flex-layout.row#franchise-main-banner": {
-    "children": ["flex-layout.col#franchise-float-form-banner"],
+    "children": ["flex-layout.col#franchise-banner"],
     "props": {
       "blockClass": "franchise-main-banner",
       "preventVerticalStretch": true,
@@ -26,23 +26,12 @@
     "title": "Banner principal"
   },
 
-  "flex-layout.col#franchise-float-form-banner": {
-    "children": [
-      "flex-layout.row#franchise-main-banner-container",
-      "sticky-layout#franchise-float-form"
-    ],
-    "props": {
-      "blockClass": "franchise-float-form",
-      "width": "100%"
-    }
+  "flex-layout.col#franchise-banner": {
+    "children": ["flex-layout.row#franchise-main-banner-container"]
   },
 
-  //Float form
-  "sticky-layout#franchise-float-form": {
-    "props": {
-      "position": "top",
-      "blockClass": "franchise-float-form"
-    },
+  // //Float form
+  "flex-layout.col#franchise-float-form": {
     "children": ["sandbox#franchise-form-franquia"]
   },
 
@@ -54,6 +43,7 @@
       "allowCookies": false
     }
   },
+
   //Description
   "flex-layout.row#franchise-description": {
     "children": [
