@@ -32,6 +32,47 @@
   padding: 0 15px;
 }
 
+.flexRowContent--back-to-top :global(.vtex-button) {
+  background-color: #e1f4e8;
+  width: 240px;
+  height: 30px !important;
+  color: #7c7c7c;
+  border: none;
+  border-radius: 14px;
+  font-size: 0;
+  &::after {
+    content: 'Voltar para o formulário';
+    font-size: 12px;
+  }
+}
+
+.flexRowContent--back-to-top :global(.vtex-button__label) {
+  height: 0 !important;
+}
+
+.flexRowContent--back-to-top {
+  :global(.vtex-store-components-3-x-backToTopButtonContainer) {
+    width: 280px !important;
+    height: 80px !important;
+    background-color: #6ac68d;
+    top: 60px !important;
+    right: 0px !important;
+    border-radius: 0px 0px 0px 15px;
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+    flex-direction: column;
+
+    &::before {
+      content: 'Seja um Franqueado';
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+  }
+}
+
 .flexRow--form-blackfriday :global(.vtex-input) {
   width: 100% !important;
 }
@@ -70,9 +111,22 @@
   align-items: center;
 }
 
-.flexCol--filterCol {
+.flexCol--franchise-main-banner {
+  overflow: hidden;
+  position: relative;
+}
+
+.flexColChild--franchise-main-banner {
+  overflow: hidden;
+}
+
+.flexCol--col-banner-franchise {
   max-width: 500px;
   min-width: 230px;
+}
+
+.flexCol--col-form-franchise {
+  z-index: 1;
 }
 
 .flexCol--productCountCol {
@@ -1359,10 +1413,10 @@
         height: auto;
 
         &:nth-child(even) {
-          height: 100%;
-          left: 0;
-          position: absolute;
-          top: 0;
+          // height: 100%;
+          // left: 0;
+          // position: absolute;
+          // top: 0;
           width: 65% !important;
         }
       }

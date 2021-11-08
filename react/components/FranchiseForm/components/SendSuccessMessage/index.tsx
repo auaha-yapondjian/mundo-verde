@@ -1,5 +1,5 @@
-import React from "react";
-import { Container } from "./styles";
+import React from 'react'
+import { Container } from './styles'
 
 const SendSuccessMessage: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const SendSuccessMessage: React.FC = () => {
       <strong>Sucesso!</strong>
       <p> Cadastro realizado com sucesso. Obrigado!</p>
     </Container>
-  );
-};
+  )
+}
 
-export default SendSuccessMessage;
+export default SendSuccessMessage

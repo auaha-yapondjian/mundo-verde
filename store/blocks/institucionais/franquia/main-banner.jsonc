@@ -1,21 +1,22 @@
 {
-  "flex-layout.row#franchise-main-banner-container": {
-    "children": [
-      "flex-layout.col#franchise-main-banner",
-      "flex-layout.col#franchise-main-banner-text",
-      "flex-layout.col#franchise-main-banner-empty"
-    ],
-    "props": {
-      "width": "60%",
-      "blockClass": "franchise-main-banner-container"
-    }
-  },
+  // "flex-layout.row#franchise-main-banner-container": {
+  //   "children": [
+  //     "flex-layout.col#franchise-main-banner",
+  //     // "flex-layout.col#franchise-main-banner-text",
+  //     "flex-layout.col#franchise-main-banner-empty"
+  //   ],
+  //   "props": {
+  //     "blockClass": "franchise-main-banner-container"
+  //   }
+  // },
 
   "flex-layout.col#franchise-main-banner": {
-    "children": ["list-context.image-list#franchise-main-banner"],
+    "children": [
+      "list-context.image-list#franchise-main-banner",
+      "rich-text#franchise-main-banner-text"
+    ],
     "props": {
       "blockClass": "franchise-main-banner",
-      "width": "70%",
       "verticalAlign": "top"
     }
   },
@@ -52,7 +53,6 @@
     "children": ["rich-text#franchise-main-banner-text"],
     "props": {
       "blockClass": "franchise-main-banner-text",
-      "width": "70%",
       "verticalAlign": "bottom"
     }
   },

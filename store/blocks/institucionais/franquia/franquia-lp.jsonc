@@ -4,6 +4,7 @@
       "flex-layout.row#franchise-main-banner",
       "flex-layout.row#franchise-description",
       "flex-layout.row#franchise-brand",
+      "flex-layout.row#back-to-top",
       "flex-layout.row#franchise-tips",
       "flex-layout.row#franchise-benefits",
       "flex-layout.row#franchise-selection-1",
@@ -13,9 +14,20 @@
     ]
   },
 
+  "flex-layout.row#back-to-top": {
+    "children": ["back-to-top-button"],
+    "props": {
+      "blockClass": "back-to-top",
+      "preventHorizontalStretch": true
+    }
+  },
+
   //Main banner
   "flex-layout.row#franchise-main-banner": {
-    "children": ["flex-layout.col#franchise-banner"],
+    "children": [
+      "flex-layout.col#franchise-main-banner",
+      "flex-layout.col#franchise-float-form"
+    ],
     "props": {
       "blockClass": "franchise-main-banner",
       "preventVerticalStretch": true,
@@ -26,13 +38,13 @@
     "title": "Banner principal"
   },
 
-  "flex-layout.col#franchise-banner": {
-    "children": ["flex-layout.row#franchise-main-banner-container"]
-  },
-
-  // //Float form
+  //Float form
   "flex-layout.col#franchise-float-form": {
-    "children": ["sandbox#franchise-form-franquia"]
+    "children": ["franchise-form"],
+    "props": {
+      "width": "30%",
+      "blockClass": "col-form-franchise"
+    }
   },
 
   "sandbox#franchise-form-franquia": {

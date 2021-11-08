@@ -1,31 +1,36 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   max-width: 1212px;
-  width: 95vw;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 15px;
 
   border: 1px solid transparent;
-  border-radius: 4px;
-  border-color: #b2dba1;
+  border-radius: 0px 0px 0px 15px;
+  border-color: #6ac68d;
 
-  background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
-  font-size: 14px;
+  background: #6ac68d;
   line-height: 1.42857143;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #3c763d;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
 
   strong {
     font-weight: 700;
+    font-size: 36px;
+    text-align: center;
   }
 
   p {
     margin: 0;
+    font-size: 26px;
+    text-align: center;
   }
-`;
+`

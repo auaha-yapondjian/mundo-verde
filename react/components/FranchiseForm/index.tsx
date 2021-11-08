@@ -1,9 +1,9 @@
-import React, { FormEvent, useState, InputHTMLAttributes } from "react";
-import axios from "axios";
+import React, { FormEvent, useState, InputHTMLAttributes } from 'react'
+import axios from 'axios'
 // utils FranchiseForm
-import { capitalRangesOptions, stateOptions } from "./utils";
+import { capitalRangesOptions, stateOptions } from './utils'
 // components FranchiseForm
-import SendSuccessMessage from "./components/SendSuccessMessage";
+import SendSuccessMessage from './components/SendSuccessMessage'
 
 import {
   Container,
@@ -15,49 +15,43 @@ import {
   Select,
   ButtonGroup,
   Button,
-} from "./styles";
+} from './styles'
 
 interface IFormTarget extends EventTarget {
-  name: InputHTMLAttributes<HTMLElement>;
-  email: InputHTMLAttributes<HTMLElement>;
-  phone: InputHTMLAttributes<HTMLElement>;
-  capital: InputHTMLAttributes<HTMLElement>;
-  state: InputHTMLAttributes<HTMLElement>;
-  message: InputHTMLAttributes<HTMLElement>;
+  name: InputHTMLAttributes<HTMLElement>
+  email: InputHTMLAttributes<HTMLElement>
+  phone: InputHTMLAttributes<HTMLElement>
+  capital: InputHTMLAttributes<HTMLElement>
+  state: InputHTMLAttributes<HTMLElement>
+  message: InputHTMLAttributes<HTMLElement>
 }
 
 interface IRequiredFields {
-  name: boolean;
-  email: boolean;
-  phone: boolean;
-  capital: boolean;
-  state: boolean;
-  message?: boolean;
+  name: boolean
+  email: boolean
+  phone: boolean
+  capital: boolean
+  state: boolean
+  message?: boolean
 }
 
 const FranchiseForm: React.FC = () => {
-  const [sent, setSent] = useState<boolean>(false);
+  const [sent, setSent] = useState<boolean>(false)
   const [validFields, setValidFields] = useState<IRequiredFields>({
     name: true,
     email: true,
     phone: true,
     capital: true,
     state: true,
-  });
+  })
 
-  const requiredInputMessage = "Este campo é requerido.";
+  const requiredInputMessage = 'Este campo é requerido.'
 
   const sendForm = async (event: FormEvent) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    const {
-      name,
-      email,
-      phone,
-      capital,
-      state,
-      message,
-    } = event.target as IFormTarget;
+    const { name, email, phone, capital, state, message } =
+      event.target as IFormTarget
 
     const data: Record<string, any> = {
       name: name.value,
@@ -66,26 +60,26 @@ const FranchiseForm: React.FC = () => {
       capital: capital.value,
       state: state.value,
       message: message.value,
-    };
-    const fieldKeysList = Object.keys(data);
+    }
+    const fieldKeysList = Object.keys(data)
 
     const validatedData = fieldKeysList.reduce(
       (validatedData: any, currentField: string) => {
         const currentFieldIsNotEmpty =
-          data[currentField] !== "" && data[currentField] !== "* Selecione *";
-        validatedData[currentField] = currentFieldIsNotEmpty;
+          data[currentField] !== '' && data[currentField] !== '* Selecione *'
+        validatedData[currentField] = currentFieldIsNotEmpty
 
-        validatedData.message = true;
-        return validatedData;
+        validatedData.message = true
+        return validatedData
       },
       {} as IRequiredFields
-    );
+    )
 
-    const haveInvalidField = Object.values(validatedData).includes(false);
-    setValidFields(validatedData);
+    const haveInvalidField = Object.values(validatedData).includes(false)
+    setValidFields(validatedData)
 
     if (haveInvalidField) {
-      return;
+      return
     }
 
     const dataToSend = {
@@ -95,30 +89,36 @@ const FranchiseForm: React.FC = () => {
       capital: data.capital,
       estado: data.state,
       mensagem: data.message,
-    };
+    }
 
-    await axios.post("/api/dataentities/FR/documents/", dataToSend, {
+    await axios.post('/api/dataentities/FR/documents/', dataToSend, {
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
-    });
+    })
 
-    setSent(true);
-  };
+    setSent(true)
+  }
 
   if (sent) {
-    return <SendSuccessMessage />;
+    return <SendSuccessMessage />
   } else {
     return (
       <Container>
         <Form onSubmit={sendForm}>
+          <h1>Seja um Franqueado</h1>
           <FormGroup validFields={validFields.name}>
             <Label htmlFor="Nome" validFields={validFields.name}>
               Nome Completo
             </Label>
             <InputDiv>
-              <Input type="text" name="name" validFields={validFields.name} />
+              <Input
+                placeholder="Nome"
+                type="text"
+                name="name"
+                validFields={validFields.name}
+              />
             </InputDiv>
             <span>{requiredInputMessage}</span>
           </FormGroup>
@@ -129,6 +129,7 @@ const FranchiseForm: React.FC = () => {
             </Label>
             <InputDiv>
               <Input
+                placeholder="Email"
                 type="email"
                 name="email"
                 validFields={validFields.email}
@@ -142,7 +143,12 @@ const FranchiseForm: React.FC = () => {
               Telefone
             </Label>
             <InputDiv>
-              <Input type="text" name="phone" validFields={validFields.phone} />
+              <Input
+                placeholder="Telefone"
+                type="text"
+                name="phone"
+                validFields={validFields.phone}
+              />
             </InputDiv>
             <span>{requiredInputMessage}</span>
           </FormGroup>
@@ -180,9 +186,8 @@ const FranchiseForm: React.FC = () => {
           </FormGroup>
 
           <FormGroup>
-            <p>Observações</p>
             <InputDiv>
-              <input type="text" name="message" />
+              <input placeholder="Observações" type="text" name="message" />
             </InputDiv>
           </FormGroup>
 
@@ -191,8 +196,8 @@ const FranchiseForm: React.FC = () => {
           </ButtonGroup>
         </Form>
       </Container>
-    );
+    )
   }
-};
+}
 
-export default FranchiseForm;
+export default FranchiseForm
