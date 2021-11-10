@@ -33,28 +33,36 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "flag-progressive-promotion",
       "product-summary-name",
       "product-rating-inline",
       "product-summary-price",
       "product-summary-space",
-      "add-to-cart-button",
-      "vtex.product-highlights@2.x:product-highlights"
+
+      "add-to-cart-button"
+
+      // "vtex.product-highlights@2.x:product-highlights#teste"
     ]
   },
 
-  "vtex.product-highlights@2.x:product-highlights": {
-    "children": ["product-highlight-text"],
+  "vtex.product-highlights@2.x:product-highlights#teste": {
+    "children": ["product-highlight-wrapper#teste"],
     "props": {
+      "type": "teaser",
+      "blockClass": "promo-bf-25",
       "filter": {
-        "type": "promotion",
-        "highlightNames": ["10% Boleto"]
+        "highlightNames": ["teste promo progressiva"]
       }
     }
   },
 
-  "product-highlight-text": {
+  "product-highlight-wrapper#teste": {
+    "children": ["product-highlight-text#teste"]
+  },
+
+  "product-highlight-text#teste": {
     "props": {
-      "message": "{highlightName}"
+      "message": "kfhbvkdnvlihkfngv"
     }
   },
 

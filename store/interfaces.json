@@ -41,5 +41,8 @@
   },
   "google-site-verification": {
     "component": "GoogleSiteVerification"
+  },
+  "flag-progressive-promotion": {
+    "component": "FlagProgressivePromotion"
   }
 }

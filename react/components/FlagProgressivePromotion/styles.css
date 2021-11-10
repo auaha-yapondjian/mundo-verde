@@ -1,0 +1,12 @@
+:global(.bf-flag-container) {
+  background-color: #000;
+  padding: 6px;
+  margin: 8px 0;
+}
+
+:global(.bf-flag-text) {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
