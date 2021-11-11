@@ -33,12 +33,13 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "flag-progressive-promotion",
       "product-summary-name",
       "product-rating-inline",
       "product-summary-price",
       "product-summary-space",
-      "add-to-cart-button"
-      // "vtex.product-highlights@2.x:product-highlights#teste"
+      "add-to-cart-button",
+      "vtex.product-highlights@2.x:product-highlights#teste"
     ]
   },
 
@@ -59,17 +60,12 @@
 
   "product-highlight-text#teste": {
     "props": {
-      "message": "kfhbvkdnvlihkfngv"
+      "message": "Imagem de teste"
     }
   },
 
   "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image",
-      "product-bookmark",
-      "badges",
-      "flag-progressive-promotion"
-    ]
+    "children": ["product-summary-image", "product-bookmark", "badges"]
   },
 
   "product-summary-image": {

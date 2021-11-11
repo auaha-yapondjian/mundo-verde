@@ -9,33 +9,11 @@
   color: #fff;
   font-weight: bold;
   font-size: 14px;
-  position: absolute;
-  width: 190px;
-  right: -218px;
-  top: 182px;
 }
 
 @media (max-width: 560px) {
   :global(.bf-flag-container) {
-    font-size: 14px;
-    width: auto;
-    right: -203px;
-  }
-}
-
-@media (max-width: 415px) {
-  :global(.bf-flag-container) {
-    font-size: 9px;
-    width: 128px;
-    right: -152px;
-  }
-}
-
-@media (max-width: 375px) {
-  :global(.bf-flag-container) {
-    font-size: 9px;
-    width: 128px;
-    right: -140px;
+    font-size: 12px;
   }
 }
 

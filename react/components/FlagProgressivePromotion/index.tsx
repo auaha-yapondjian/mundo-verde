@@ -23,7 +23,9 @@ const TagComponent: React.FC<IFlagDiscount> = ({ discount }) => {
           to: `/${discount}`,
         })
       }}
-    ></Link>
+    >
+      desconto progressivo
+    </Link>
   )
 }
 
