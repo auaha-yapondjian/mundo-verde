@@ -2,11 +2,43 @@
   background-color: #000;
   padding: 6px;
   margin: 8px 0;
-}
-
-:global(.bf-flag-text) {
-  margin: 0;
+  z-index: 9;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
   color: #fff;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
+  position: absolute;
+  width: 190px;
+  right: -218px;
+  top: 182px;
+}
+
+@media (max-width: 560px) {
+  :global(.bf-flag-container) {
+    font-size: 14px;
+    width: auto;
+    right: -203px;
+  }
+}
+
+@media (max-width: 415px) {
+  :global(.bf-flag-container) {
+    font-size: 9px;
+    width: 128px;
+    right: -152px;
+  }
+}
+
+@media (max-width: 375px) {
+  :global(.bf-flag-container) {
+    font-size: 9px;
+    width: 128px;
+    right: -140px;
+  }
+}
+
+:global(.bf-flag-container):hover {
+  background-color: rgb(73, 73, 73);
 }
