@@ -158,6 +158,7 @@
       "menu-item#mobile-suplementos",
       "menu-item#mobile-alimentos-e-bebidas",
       "menu-item#mobile-outros",
+      "menu-item#blackfriday-button",
       "menu-item#seja-franqueado",
       "menu-item#lojas"
     ],
@@ -182,6 +183,7 @@
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
     "children": [
+      "menu-item#blackfriday-button",
       "menu-item#seja-franqueado",
       "menu-item#lojas",
       "menu-item#blog"
@@ -216,6 +218,23 @@
         "noFollow": false,
         "tagTitle": "seja-franqueado",
         "text": "Seja um Franqueado"
+      }
+    }
+  },
+
+  "menu-item#blackfriday-button": {
+    "props": {
+      "id": "menu-item-blackfriday-button",
+      "blockClass": ["menu-btn-blackfriday", "menu-lojas"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "/esquenta-blackfriday",
+        "noFollow": false,
+        "tagTitle": "BlackfridayButton",
+        "text": "black friday"
       }
     }
   }

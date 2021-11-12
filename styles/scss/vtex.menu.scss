@@ -1,4 +1,4 @@
-.menuContainer  {
+.menuContainer {
   //Footer
   &--footer {
     &-menu-links {
@@ -29,6 +29,10 @@
 }
 
 .styledLinkContainer {
+  &--menu-item-blog {
+    margin: 10px !important;
+  }
+
   margin: {
     left: 0;
     right: 30px;
@@ -62,16 +66,16 @@
 
     &-blackfriday {
       margin: 0;
-    
+
       @media all and (max-width: 767px) {
         width: 100%;
       }
     }
   }
-  
+
   &--custom-menu {
     border-bottom: 2px solid transparent;
-  
+
     &:hover {
       border-color: #008651;
     }
@@ -97,12 +101,12 @@
       color: #fff;
       text-transform: uppercase;
     }
-    
+
     &-item-blogmv {
       text-transform: uppercase;
     }
   }
-  
+
   &--custom-menu {
     color: #008651;
     font-weight: bold;
@@ -128,6 +132,23 @@
     border-radius: 9px 0 9px 0;
     display: block;
     padding: 10px 20px;
+
+    &:hover {
+      box-shadow: 0 0 0.41667rem 0;
+    }
+
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &--menu-btn-blackfriday {
+    background: #000;
+    border-radius: 9px 0 9px 0;
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff !important;
 
     &:hover {
       box-shadow: 0 0 0.41667rem 0;
@@ -172,22 +193,22 @@
         color: #008651;
       }
     }
-	}
+  }
 
-	.menuContainer,
-	.menuContainerNav {
-		width: 100%;
-	}
+  .menuContainer,
+  .menuContainerNav {
+    width: 100%;
+  }
 
-	.styledLinkContent {
-		color: #333;
-		font: {
-			size: 1rem;
-			weight: initial;
-		}
-		letter-spacing: 1px;
-		padding: 5px 0;
-		text-transform: initial;
+  .styledLinkContent {
+    color: #333;
+    font: {
+      size: 1rem;
+      weight: initial;
+    }
+    letter-spacing: 1px;
+    padding: 5px 0;
+    text-transform: initial;
 
     .accordionIcon {
       &--menu-mobile-department {
@@ -201,21 +222,21 @@
 
     &--menu-btn {
       color: #fff;
-			text-transform: uppercase;
+      text-transform: uppercase;
     }
-	}
-  
+  }
+
   .styledLinkContainer {
-		border-bottom: 1px solid rgba(#333, 0.1);
-		margin: 0;
-		padding: 10px 20px;
+    border-bottom: 1px solid rgba(#333, 0.1);
+    margin: 0;
+    padding: 10px 20px;
 
-		&--menu-btn {
-			padding: 0;
+    &--menu-btn {
+      padding: 0;
 
-			.styledLink--menu-btn {
-				border-radius: 0;
-			}
-		}
-	}
+      .styledLink--menu-btn {
+        border-radius: 0;
+      }
+    }
+  }
 }
