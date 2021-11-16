@@ -49,14 +49,6 @@
     }
   },
 
-  "flex-layout.col#franchise-main-banner-text": {
-    "children": ["rich-text#franchise-main-banner-text"],
-    "props": {
-      "blockClass": "franchise-main-banner-text",
-      "verticalAlign": "bottom"
-    }
-  },
-
   "rich-text#franchise-main-banner-text": {
     "props": {
       "blockClass": "franchise-main-banner-text",

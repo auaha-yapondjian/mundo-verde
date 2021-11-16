@@ -66,6 +66,12 @@
   bottom: 0;
 }
 
+@media only screen and (max-width: 1012px) {
+  .headingLevel2--franchise-main-banner-text {
+    font-size: 12px;
+  }
+}
+
 .container--link {
   justify-content: center;
 }
