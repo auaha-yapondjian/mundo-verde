@@ -38,7 +38,7 @@ const FlagProgressivePromotion = () => {
     2229: 'desconto-progressivo-ate-50',
     2230: 'desconto-progressivo-ate-40',
     2231: 'desconto-progressivo-ate-30',
-    2233: 'desconto-progressivo-ate-25',
+    2232: 'desconto-progressivo-ate-25',
   }
 
   return productClusterHighlight?.map(highlight => {
