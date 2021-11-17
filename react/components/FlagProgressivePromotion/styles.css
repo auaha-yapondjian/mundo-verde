@@ -1,0 +1,22 @@
+:global(.bf-flag-container) {
+  background-color: #000;
+  padding: 6px;
+  margin: 8px 0;
+  z-index: 9;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  :global(.bf-flag-container) {
+    font-size: 12px;
+  }
+}
+
+:global(.bf-flag-container):hover {
+  background-color: rgb(73, 73, 73);
+}

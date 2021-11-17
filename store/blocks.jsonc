@@ -13,10 +13,7 @@
   },
 
   "store.account": {
-    "blocks": [
-      "my-account",
-      "flex-layout.row#popular-products"
-    ],
+    "blocks": ["my-account", "flex-layout.row#popular-products"],
     "parent": {
       "challenge": "challenge.profile"
     }
@@ -36,20 +33,39 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "flag-progressive-promotion",
       "product-summary-name",
       "product-rating-inline",
       "product-summary-price",
       "product-summary-space",
-      "add-to-cart-button"
+      "add-to-cart-button",
+      "vtex.product-highlights@2.x:product-highlights#teste"
     ]
   },
 
+  "vtex.product-highlights@2.x:product-highlights#teste": {
+    "children": ["product-highlight-wrapper#teste"],
+    "props": {
+      "type": "teaser",
+      "blockClass": "promo-bf-25",
+      "filter": {
+        "highlightNames": ["teste promo progressiva"]
+      }
+    }
+  },
+
+  "product-highlight-wrapper#teste": {
+    "children": ["product-highlight-text#teste"]
+  },
+
+  "product-highlight-text#teste": {
+    "props": {
+      "message": "Imagem de teste"
+    }
+  },
+
   "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image",
-      "product-bookmark",
-      "badges"
-    ]
+    "children": ["product-summary-image", "product-bookmark", "badges"]
   },
 
   "product-summary-image": {

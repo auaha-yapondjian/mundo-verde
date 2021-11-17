@@ -9,8 +9,17 @@
       "flex-layout.row#similar-products",
       "flex-layout.row#buy-together",
       "flex-layout.row#navigation-history"
+      // "product-price-savings#price-pdp"
     ]
   },
+
+  "product-price-savings#price-pdp": {
+    "props": {
+      "message": "{savingsPercentage}",
+      "blockClass": "price-pdp"
+    }
+  },
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
