@@ -30,7 +30,10 @@
 
 .styledLinkContainer {
   &--menu-item-blog {
-    margin: 10px !important;
+    // margin: 10px !important;
+
+    // ------- BLACK FRIDAY -------
+    border: none !important;
   }
 
   margin: {
@@ -98,6 +101,11 @@
   //Menu
   &--menu {
     &-btn {
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    &-btn-blackfriday {
       color: #fff;
       text-transform: uppercase;
     }
@@ -224,6 +232,11 @@
       color: #fff;
       text-transform: uppercase;
     }
+
+    &--menu-btn-blackfriday {
+      color: #fff;
+      text-transform: uppercase;
+    }
   }
 
   .styledLinkContainer {
@@ -235,6 +248,18 @@
       padding: 0;
 
       .styledLink--menu-btn {
+        border-radius: 0;
+      }
+
+      .styledLink--menu-btn-blackfriday {
+        border-radius: 0;
+      }
+    }
+
+    &--menu-btn-blackfriday {
+      padding: 0;
+
+      .styledLink--menu-btn-blackfriday {
         border-radius: 0;
       }
     }
