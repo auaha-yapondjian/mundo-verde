@@ -70,6 +70,10 @@
       color: #fff;
       margin-bottom: 8px;
     }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
@@ -120,6 +124,7 @@
   .flexRowContent--franchise-main-banner {
     min-width: 1000px;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -1419,18 +1424,49 @@
       .stretchChildrenWidth {
         height: auto;
 
-        &:nth-child(even) {
-          // height: 100%;
-          // left: 0;
-          // position: absolute;
-          // top: 0;
-          width: 65% !important;
+        &:first-child {
+          width: 70% !important;
+
+          @media (max-width: 768px) {
+            width: 77% !important;
+            order: 1;
+          }
+
+          @media (max-width: 425px) {
+            width: 43% !important;
+            order: 1;
+          }
+
+          @media (max-width: 320px) {
+            width: 36% !important;
+            order: 1;
+          }
+        }
+
+        &:last-child {
+          width: 70% !important;
+
+          // @media (max-width: 768px) {
+          //   width: 77% !important;
+          // }
+
+          @media (max-width: 425px) {
+            width: 43% !important;
+          }
+
+          // @media (max-width: 320px) {
+          //   width: 36% !important;
+          // }
         }
       }
     }
 
     &-description {
       overflow: hidden;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
 
       .stretchChildrenWidth {
         &:nth-child(even) {
@@ -1581,13 +1617,25 @@
     &-tax-container {
       max-width: 1000px;
 
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+
       .stretchChildrenWidth {
-        &:nth-child(even) {
-          width: 30% !important;
+        &:first-child {
+          width: 70% !important;
+
+          @media (max-width: 1024px) {
+            width: 100% !important;
+          }
         }
 
-        &:nth-child(odd) {
-          width: 70% !important;
+        &:last-child {
+          width: 30% !important;
+
+          @media (max-width: 1024px) {
+            width: 100% !important;
+          }
         }
       }
     }
@@ -1842,6 +1890,10 @@
 
     &-tax-slider-content-1 {
       padding-right: 50px;
+
+      @media (max-width: 1024px) {
+        padding-right: 0;
+      }
     }
 
     &-cases {
@@ -1877,6 +1929,14 @@
 .flexColChild {
   //Seja um franqueado
   &--franchise {
+    &-tax-slider-content-1 {
+      .flexRowContent {
+        .stretchChildrenWidth {
+          width: 100% !important;
+        }
+      }
+    }
+
     &-float-form {
       &:first-child {
         width: 65%;

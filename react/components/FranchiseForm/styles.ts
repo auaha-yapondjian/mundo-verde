@@ -16,24 +16,14 @@ export const Container = styled.div`
   border-radius: 0px 0px 0px 15px;
   margin-left: -20px;
   z-index: 1;
-
-  @media (min-width: 768px) {
-    width: 750px;
-  }
-
-  @media (min-width: 992px) {
-    width: 970px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1170px;
-  }
+  width: 100%;
 `
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 
   h1 {
     color: #fff;

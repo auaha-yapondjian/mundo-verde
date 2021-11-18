@@ -3,14 +3,14 @@
     "blocks": [
       "flex-layout.row#franchise-main-banner",
       "flex-layout.row#franchise-description",
-      "flex-layout.row#franchise-brand",
+      // "flex-layout.row#franchise-brand",
       "flex-layout.row#back-to-top",
-      "flex-layout.row#franchise-tips",
-      "flex-layout.row#franchise-benefits",
-      "flex-layout.row#franchise-selection-1",
-      "flex-layout.row#franchise-selection-2",
-      "flex-layout.row#franchise-tax",
-      "flex-layout.row#franchise-cases"
+      // "flex-layout.row#franchise-tips",
+      // "flex-layout.row#franchise-benefits",
+      "responsive-layout.desktop#franchise-selection-1",
+      "responsive-layout.desktop#franchise-selection-2",
+      "flex-layout.row#franchise-tax"
+      // "flex-layout.row#franchise-cases"
     ]
   },
 
@@ -42,7 +42,7 @@
   "flex-layout.col#franchise-float-form": {
     "children": ["franchise-form"],
     "props": {
-      "width": "30%",
+      // "width": "30%",
       "blockClass": "col-form-franchise"
     }
   },
@@ -109,6 +109,10 @@
   },
 
   //Selection 1
+  "responsive-layout.desktop#franchise-selection-1": {
+    "children": ["flex-layout.row#franchise-selection-1"]
+  },
+
   "flex-layout.row#franchise-selection-1": {
     "children": ["flex-layout.col#franchise-selection-content"],
     "props": {
@@ -122,6 +126,10 @@
   },
 
   //Selection 2
+  "responsive-layout.desktop#franchise-selection-2": {
+    "children": ["flex-layout.row#franchise-selection-2"]
+  },
+
   "flex-layout.row#franchise-selection-2": {
     "children": [
       "flex-layout.col#franchise-selection-col3",

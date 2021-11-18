@@ -5,7 +5,7 @@ import { NoSSR } from 'vtex.render-runtime'
 
 import { FormModal } from './FormModal'
 
-import { FormBlackFriday, LoadingBlackFriday } from './styles'
+import { FormBlackFriday } from './styles'
 
 interface IFormTarget extends EventTarget {
   name: InputHTMLAttributes<HTMLElement>
@@ -25,9 +25,8 @@ function CustomBlackFridayForm() {
   const [isChecked, setIsChecked] = useState(true)
   const [formValues, setFormValues] = useState({})
   const [modalIsShow, setModalIsShow] = useState(false)
-  const [currentModalMessageType, setCurrentModalMessageType] = useState(
-    'invalidFields'
-  )
+  const [currentModalMessageType, setCurrentModalMessageType] =
+    useState('invalidFields')
 
   const showFormModal = (messageType: string) => {
     setCurrentModalMessageType(messageType)
