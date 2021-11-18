@@ -958,6 +958,32 @@
         font-size: 27px;
         line-height: 30px;
       }
+
+      @media (max-width: 1024px) {
+        font-size: 29px;
+        padding: 0 8px;
+
+        .strong--franchise-tips-title {
+          padding: 20px 0;
+          font-style: normal;
+          font-size: 33px;
+          text-transform: uppercase;
+          color: #00c68b;
+          font-family: 'Gotham';
+        }
+      }
+
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -1113,6 +1139,15 @@
       @media (min-width: 1366px) {
         max-width: 890px;
       }
+
+      @media (max-width: 1024px) {
+        padding: 26px 8px 0 8px;
+
+        .italic--franchise-tips-subtitle {
+          color: #00c68b;
+          font-style: normal;
+        }
+      }
     }
 
     &-tips-text {
@@ -1131,6 +1166,10 @@
         line-height: 28px;
         max-width: 800px;
       }
+
+      @media (max-width: 1024px) {
+        padding: 20px 8px 0 8px;
+      }
     }
 
     &-tips-link {
@@ -1145,6 +1184,17 @@
       @media (min-width: 1366px) {
         font-size: 19px;
         line-height: 24px;
+      }
+
+      @media (max-width: 1024px) {
+        padding: 20px 8px 0 8px;
+        font-size: 10px;
+        font-family: 'lato';
+
+        .link--franchise-tips-link {
+          text-decoration: none;
+          font-family: 'lato';
+        }
       }
     }
 

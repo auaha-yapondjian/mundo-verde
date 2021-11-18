@@ -1,25 +1,40 @@
 .stackItem--product {
-  
-  &--product-price-savings--badge{
+  &--product-price-savings--badge {
     background-color: #008651;
     color: #fff;
     right: 0;
     left: initial;
     border-radius: 0 4px 4px 0;
-
-   
   }
 }
 
-:global(.vtex-product-price-1-x-savings--product-price-savings--badge){
+.stackItem--franchise-mobile-tips-background {
+  filter: brightness(40%);
+  overflow: hidden;
+}
+
+.stackContainer--container-stack-franchise-chips {
+  height: 600px;
+}
+
+.stackItem--container-stack-franchise-chips--franchise-mobile-tips-background {
+  height: 600px;
+}
+
+.stackItem--container-stack-franchise-chips--franchise-tips-content {
+  bottom: 8px;
+  top: auto;
+}
+
+:global(.vtex-product-price-1-x-savings--product-price-savings--badge) {
   padding: 2px 5px 2px 3px;
   display: block;
 
-  &::before{
-    content: "";
+  &::before {
+    content: '';
     left: -11px;
     top: 0;
-    content: "";
+    content: '';
     position: absolute;
     z-index: 9;
     width: 0;
@@ -29,4 +44,3 @@
     border-right: 11px solid #008651;
   }
 }
-

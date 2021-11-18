@@ -55,7 +55,7 @@
   "rich-text#franchise-tips-title": {
     "props": {
       "blockClass": "franchise-tips-title",
-      "text": "### A gente colhe um Mundo cada vez melhor. ## Faça parte e torne-se um franqueado!",
+      "text": "### A gente colhe um Mundo cada vez melhor. **Faça parte e torne-se um franqueado!**",
       "textAlignment": "LEFT",
       "textColor": "c-on-action-primary",
       "textPosition": "LEFT"

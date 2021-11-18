@@ -99,6 +99,11 @@
   margin-bottom: 20px;
 }
 
+.imageElement--franchise-mobile-tips-background {
+  height: 100%;
+  object-fit: cover;
+}
+
 .imageElement--left-background-element {
   position: absolute;
   left: 0;
@@ -640,7 +645,7 @@
       border-top-left-radius: 50%;
       overflow: hidden;
 
-      @media (min-width: 1025px) {
+      @media (min-width: 1024px) {
         height: 600px;
         object: {
           fit: cover;
@@ -651,6 +656,22 @@
       @media (min-width: 1366px) {
         height: 800px;
         object-position: center -30px;
+      }
+
+      @media (max-width: 768px) {
+        border-radius: 260px 320px 0px 0px;
+      }
+
+      @media (max-width: 425px) {
+        border-radius: 160px 240px 0px 0px;
+      }
+
+      @media (max-width: 375px) {
+        border-radius: 140px 200px 0px 0px;
+      }
+
+      @media (max-width: 320px) {
+        border-radius: 140px 180px 0px 0px;
       }
     }
 

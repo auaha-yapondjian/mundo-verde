@@ -1446,10 +1446,6 @@
         &:last-child {
           width: 70% !important;
 
-          // @media (max-width: 768px) {
-          //   width: 77% !important;
-          // }
-
           @media (max-width: 425px) {
             width: 43% !important;
           }
@@ -1469,8 +1465,44 @@
       }
 
       .stretchChildrenWidth {
+        @media (max-width: 1024px) {
+          width: 100% !important;
+        }
+
         &:nth-child(even) {
           position: relative;
+
+          &::before {
+            background: #f2c065;
+            content: '';
+            display: block;
+            right: -25%;
+            bottom: 0px;
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 50% 50% 0px 0px;
+
+            @media (max-width: 768px) {
+              width: 550px;
+              height: 550px;
+            }
+
+            @media (max-width: 425px) {
+              width: 320px;
+              height: 320px;
+            }
+
+            @media (max-width: 375px) {
+              width: 290px;
+              height: 290px;
+            }
+
+            @media (max-width: 320px) {
+              width: 260px;
+              height: 260px;
+            }
+          }
 
           @media (min-width: 1025px) {
             &::before {

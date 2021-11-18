@@ -5,7 +5,9 @@
       "flex-layout.row#franchise-description",
       // "flex-layout.row#franchise-brand",
       "flex-layout.row#back-to-top",
-      // "flex-layout.row#franchise-tips",
+      "responsive-layout.desktop#franchise-tips",
+      "responsive-layout.tablet#franchise-tips",
+      "responsive-layout.phone#franchise-tips",
       // "flex-layout.row#franchise-benefits",
       "responsive-layout.desktop#franchise-selection-1",
       "responsive-layout.desktop#franchise-selection-2",
@@ -84,6 +86,10 @@
   },
 
   //Tips
+  "responsive-layout.desktop#franchise-tips": {
+    "children": ["flex-layout.row#franchise-tips"]
+  },
+
   "flex-layout.row#franchise-tips": {
     "children": ["flex-layout.col#franchise-tips"],
     "props": {
@@ -94,6 +100,33 @@
       "preserveLayoutOnMobile": true
     },
     "title": "Dicas"
+  },
+
+  "responsive-layout.tablet#franchise-tips": {
+    "children": ["stack-layout#franchise-tips"]
+  },
+
+  "responsive-layout.phone#franchise-tips": {
+    "children": ["stack-layout#franchise-tips"]
+  },
+
+  "stack-layout#franchise-tips": {
+    "children": [
+      "image#franchise-mobile-tips-background",
+      "flex-layout.row#franchise-tips-content"
+    ],
+    "props": {
+      "blockClass": "container-stack-franchise-chips",
+      "zIndexOffset": 0
+    }
+  },
+
+  "image#franchise-mobile-tips-background": {
+    "props": {
+      "blockClass": "franchise-mobile-tips-background",
+      "src": "https://mundoverde.vtexassets.com/arquivos/running--image.png"
+    },
+    "title": "Dicas background"
   },
 
   //Benefits
