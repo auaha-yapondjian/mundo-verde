@@ -607,7 +607,9 @@
     }
 
     &-benefits-text {
-      padding-left: 20px;
+      @media (min-width: 768px) {
+        padding-left: 20px;
+      }
     }
 
     &-selection-text {
@@ -829,11 +831,27 @@
     }
 
     &-benefits-title {
-      @media (min-width: 1025px) {
+      color: #008651;
+      padding: 12px 6px 15px 6px;
+
+      @media (min-width: 320px) {
+        font-size: 20px;
+      }
+
+      @media (min-width: 375px) {
+        font-size: 22px;
+      }
+
+      @media (min-width: 425px) {
+        font-size: 26px;
+      }
+
+      @media (min-width: 768px) {
         font-size: 24px;
         line-height: 28px;
         margin: 0;
         padding-bottom: 30px;
+        color: #fff;
       }
 
       @media (min-width: 1366px) {
@@ -1199,10 +1217,13 @@
     }
 
     &-benefits-text {
-      @media (min-width: 1025px) {
+      color: #0b0b0b;
+      text-align: center;
+      @media (min-width: 768px) {
         font-size: 14px;
         line-height: 18px;
         margin: 0;
+        color: #fff;
       }
 
       @media (min-width: 1366px) {

@@ -96,6 +96,11 @@
   padding: 10px;
 }
 
+.flexRow--section-benefits {
+  background-color: #f3f3f3;
+  height: 360px;
+}
+
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #7c7c7c;
   font-size: 14px;
@@ -1911,6 +1916,11 @@
 
     &-benefits-content {
       flex-direction: row;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        padding-right: 0 !important;
+      }
     }
 
     &-selection-col1 {

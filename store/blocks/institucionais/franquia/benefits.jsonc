@@ -14,7 +14,7 @@
   "rich-text#franchise-benefits-title": {
     "props": {
       "blockClass": "franchise-benefits-title",
-      "text": "## Conheça os benefícios!",
+      "text": "## Sua franquina no verde. Conheça os benefícios!",
       "textAlignment": "CENTER",
       "textColor": "c-on-action-primary",
       "textPosition": "CENTER"
@@ -45,6 +45,16 @@
 
   // ------------------------MOBILE--------------------
 
+  "flex-layout.row#franchise-benefits-slider": {
+    "children": [
+      "rich-text#franchise-benefits-title",
+      "slider-layout#franchise-benefits-slider"
+    ],
+    "props": {
+      "blockClass": "section-benefits"
+    }
+  },
+
   "slider-layout#franchise-benefits-slider": {
     "children": [
       "flex-layout.col#franchise-benefits-content-1",
@@ -58,8 +68,7 @@
       "flex-layout.col#franchise-benefits-content-9"
     ],
     "props": {
-      // "blockClass": "franchise-cases-slider",
-      "blockClass": "franchise-benefits-container",
+      "blockClass": "franchise-benefits-slider",
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -240,7 +249,7 @@
   "image#franchise-benefits-image": {
     "props": {
       "blockClass": "franchise-benefits-image",
-      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/c44aaf6a-3c50-45b9-890b-639610350cac___71c9386d73a5dc324a6d7c742c17c08d.png",
+      "src": "",
       "alt": "Selection image"
     },
     "title": "Imagem"
@@ -250,7 +259,7 @@
     "props": {
       "blockClass": "franchise-benefits-text",
       "font": "t-body",
-      "text": "Treinamento na Universidade Mundo Verde e Olá Nutri",
+      "text": "Lorem Ipsun",
       "textAlignment": "LEFT",
       "textColor": "c-on-action-primary",
       "textPosition": "LEFT"
