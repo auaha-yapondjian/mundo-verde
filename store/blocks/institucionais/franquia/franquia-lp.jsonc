@@ -8,7 +8,9 @@
       "responsive-layout.desktop#franchise-tips",
       "responsive-layout.tablet#franchise-tips",
       "responsive-layout.phone#franchise-tips",
-      // "flex-layout.row#franchise-benefits",
+      "flex-layout.row#franchise-benefits",
+      // "responsive-layout.desktop#franchise-benefits",
+      // "responsive-layout.phone#franchise-benefits",
       "responsive-layout.desktop#franchise-selection-1",
       "responsive-layout.desktop#franchise-selection-2",
       "flex-layout.row#franchise-tax"
@@ -130,6 +132,10 @@
   },
 
   //Benefits
+  "responsive-layout.desktop#franchise-benefits": {
+    "children": ["flex-layout.row#franchise-benefits"]
+  },
+
   "flex-layout.row#franchise-benefits": {
     "children": ["flex-layout.col#franchise-benefits"],
     "props": {
@@ -139,6 +145,10 @@
       "preserveLayoutOnMobile": true
     },
     "title": "Benefícios"
+  },
+
+  "responsive-layout.phone#franchise-benefits": {
+    "children": ["slider-layout#franchise-benefits-slider"]
   },
 
   //Selection 1
