@@ -676,6 +676,11 @@
 
   //Seja um franqueado
   &--franchise {
+    &-benefits-text {
+      display: flex;
+      justify-content: center;
+    }
+
     &-description-text {
       margin-left: auto;
       padding-right: 40px;
@@ -832,7 +837,7 @@
 
     &-benefits-title {
       color: #008651;
-      padding: 12px 6px 15px 6px;
+      padding: 18px 6px 26px 6px;
 
       @media (min-width: 320px) {
         font-size: 20px;
@@ -993,6 +998,10 @@
 
       @media (max-width: 425px) {
         font-size: 16px;
+
+        .strong--franchise-tips-title {
+          font-size: 22px;
+        }
       }
 
       @media (max-width: 375px) {
@@ -1111,6 +1120,13 @@
 
   //Seja um franqueado
   &--franchise {
+    &-box-mobile-text {
+      text-align: center;
+      font-size: 10px;
+      width: 200px;
+      margin-top: 1px;
+    }
+
     &-description-text {
       @media (min-width: 1025px) {
         font: {
@@ -1142,6 +1158,10 @@
       @media (min-width: 1366px) {
         font-size: 18px;
         line-height: 22px;
+      }
+
+      @media (max-width: 1024px) {
+        text-align: center;
       }
     }
 
@@ -1219,6 +1239,8 @@
     &-benefits-text {
       color: #0b0b0b;
       text-align: center;
+      width: 70%;
+
       @media (min-width: 768px) {
         font-size: 14px;
         line-height: 18px;

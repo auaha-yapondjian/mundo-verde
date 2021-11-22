@@ -15,10 +15,18 @@
 
 .stackContainer--container-stack-franchise-chips {
   height: 600px;
+
+  @media (min-width: 768px) {
+    height: 679px;
+  }
 }
 
 .stackItem--container-stack-franchise-chips--franchise-mobile-tips-background {
   height: 600px;
+
+  @media (min-width: 768px) {
+    height: 679px;
+  }
 }
 
 .stackItem--container-stack-franchise-chips--franchise-tips-content {

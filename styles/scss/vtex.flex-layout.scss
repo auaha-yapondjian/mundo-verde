@@ -1298,6 +1298,10 @@
       max-width: 1280px;
     }
 
+    &-brand-box-mobile {
+      background-color: #f7f7f7;
+    }
+
     &-benefits {
       background-color: #d57559;
     }
@@ -1321,6 +1325,12 @@
 
     &-selection-first {
       overflow-x: hidden;
+    }
+
+    &-tax {
+      @media (max-width: 425px) {
+        margin-bottom: 40px;
+      }
     }
 
     &-tax-container {
@@ -1428,6 +1438,7 @@
 
       .stretchChildrenWidth {
         height: auto;
+        background-color: #6ac68d;
 
         &:first-child {
           width: 70% !important;
@@ -1551,6 +1562,38 @@
       .stretchChildrenWidth {
         padding-bottom: 25px;
         width: 33.33% !important;
+      }
+    }
+
+    &-brand-box-mobile {
+      flex-direction: column;
+
+      :last-child {
+        &::before {
+          display: none;
+        }
+      }
+
+      .stretchChildrenWidth {
+        width: 100% !important;
+        padding: 20px 0;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 50%;
+          transform: translate(50%);
+          width: 35px;
+          height: 2px;
+          background-color: #00c78c;
+        }
+
+        .flexColChild {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
 
@@ -1907,6 +1950,11 @@
       &-box-content {
         align-items: flex-start;
         flex-direction: row;
+
+        @media (max-width: 1024px) {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
 

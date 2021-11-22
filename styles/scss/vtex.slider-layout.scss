@@ -188,11 +188,7 @@
 
   &--franchise-benefits-slider {
     color: #a8a8a8;
-    bottom: 188px;
-
-    @media (min-width: 375px) {
-      bottom: 166px;
-    }
+    top: 13px;
   }
 
   // Categories slider
@@ -291,7 +287,7 @@
       position: relative;
 
       @media (min-width: 1025px) {
-        height: 440px;
+        height: 479px;
         display: block;
       }
 

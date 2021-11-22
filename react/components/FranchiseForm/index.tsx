@@ -16,6 +16,7 @@ import {
   ButtonGroup,
   Button,
 } from './styles'
+import { NoSSR } from 'vtex.render-runtime'
 
 interface IFormTarget extends EventTarget {
   name: InputHTMLAttributes<HTMLElement>
@@ -105,97 +106,105 @@ const FranchiseForm: React.FC = () => {
     return <SendSuccessMessage />
   } else {
     return (
-      <Container>
-        <Form onSubmit={sendForm}>
-          <h1>Seja um Franqueado</h1>
-          <FormGroup validFields={validFields.name}>
-            <Label htmlFor="Nome" validFields={validFields.name}>
-              Nome Completo
-            </Label>
-            <InputDiv>
-              <Input
-                placeholder="Nome"
-                type="text"
-                name="name"
-                validFields={validFields.name}
-              />
-            </InputDiv>
-            <span>{requiredInputMessage}</span>
-          </FormGroup>
+      <NoSSR
+        onSSR={
+          <div style={{ fontSize: 26, color: '#fff', margin: '0 auto' }}>
+            Carregando...
+          </div>
+        }
+      >
+        <Container>
+          <Form onSubmit={sendForm}>
+            <h1>Seja um Franqueado</h1>
+            <FormGroup validFields={validFields.name}>
+              <Label htmlFor="Nome" validFields={validFields.name}>
+                Nome Completo
+              </Label>
+              <InputDiv>
+                <Input
+                  placeholder="Nome"
+                  type="text"
+                  name="name"
+                  validFields={validFields.name}
+                />
+              </InputDiv>
+              <span>{requiredInputMessage}</span>
+            </FormGroup>
 
-          <FormGroup validFields={validFields.email}>
-            <Label htmlFor="Email" validFields={validFields.email}>
-              E-mail
-            </Label>
-            <InputDiv>
-              <Input
-                placeholder="Email"
-                type="email"
-                name="email"
-                validFields={validFields.email}
-              />
-            </InputDiv>
-            <span>{requiredInputMessage}</span>
-          </FormGroup>
+            <FormGroup validFields={validFields.email}>
+              <Label htmlFor="Email" validFields={validFields.email}>
+                E-mail
+              </Label>
+              <InputDiv>
+                <Input
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                  validFields={validFields.email}
+                />
+              </InputDiv>
+              <span>{requiredInputMessage}</span>
+            </FormGroup>
 
-          <FormGroup validFields={validFields.phone}>
-            <Label htmlFor="Telefone" validFields={validFields.phone}>
-              Telefone
-            </Label>
-            <InputDiv>
-              <Input
-                placeholder="Telefone"
-                type="text"
-                name="phone"
-                validFields={validFields.phone}
-              />
-            </InputDiv>
-            <span>{requiredInputMessage}</span>
-          </FormGroup>
+            <FormGroup validFields={validFields.phone}>
+              <Label htmlFor="Telefone" validFields={validFields.phone}>
+                Telefone
+              </Label>
+              <InputDiv>
+                <Input
+                  placeholder="Telefone"
+                  type="text"
+                  name="phone"
+                  validFields={validFields.phone}
+                />
+              </InputDiv>
+              <span>{requiredInputMessage}</span>
+            </FormGroup>
 
-          <FormGroup validFields={validFields.capital}>
-            <Label htmlFor="Faixas_Capital" validFields={validFields.capital}>
-              Faixas de Capital
-            </Label>
-            <InputDiv>
-              <Select name="capital" validFields={validFields.capital}>
-                {capitalRangesOptions.map(({ value, text }, index) => (
-                  <option key={index} value={value}>
-                    {text}
-                  </option>
-                ))}
-              </Select>
-            </InputDiv>
-            <span>{requiredInputMessage}</span>
-          </FormGroup>
+            <FormGroup validFields={validFields.capital}>
+              <Label htmlFor="Faixas_Capital" validFields={validFields.capital}>
+                Faixas de Capital
+              </Label>
+              <InputDiv>
+                <Select name="capital" validFields={validFields.capital}>
+                  {capitalRangesOptions.map(({ value, text }, index) => (
+                    <option key={index} value={value}>
+                      {text}
+                    </option>
+                  ))}
+                </Select>
+              </InputDiv>
+              <span>{requiredInputMessage}</span>
+            </FormGroup>
 
-          <FormGroup validFields={validFields.state}>
-            <Label htmlFor="Estado" validFields={validFields.state}>
-              Estado
-            </Label>
-            <InputDiv>
-              <Select name="state" validFields={validFields.state}>
-                {stateOptions.map(({ value, text }, index) => (
-                  <option key={index} value={value}>
-                    {text}
-                  </option>
-                ))}
-              </Select>
-            </InputDiv>
-            <span>{requiredInputMessage}</span>
-          </FormGroup>
+            <FormGroup validFields={validFields.state}>
+              <Label htmlFor="Estado" validFields={validFields.state}>
+                Estado
+              </Label>
+              <InputDiv>
+                <Select name="state" validFields={validFields.state}>
+                  {stateOptions.map(({ value, text }, index) => (
+                    <option key={index} value={value}>
+                      {text}
+                    </option>
+                  ))}
+                </Select>
+              </InputDiv>
+              <span>{requiredInputMessage}</span>
+            </FormGroup>
 
-          <FormGroup>
-            <InputDiv>
-              <input placeholder="Observações" type="text" name="message" />
-            </InputDiv>
-          </FormGroup>
+            <FormGroup>
+              <InputDiv>
+                <input placeholder="Observações" type="text" name="message" />
+              </InputDiv>
+            </FormGroup>
 
-          <ButtonGroup>
-            <Button type="submit">Enviar</Button>
-          </ButtonGroup>
-        </Form>
-      </Container>
+            <ButtonGroup>
+              <Button type="submit">Enviar</Button>
+            </ButtonGroup>
+          </Form>
+        </Container>
+      </NoSSR>
     )
   }
 }

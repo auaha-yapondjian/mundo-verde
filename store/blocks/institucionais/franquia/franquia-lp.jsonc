@@ -3,7 +3,9 @@
     "blocks": [
       "flex-layout.row#franchise-main-banner",
       "flex-layout.row#franchise-description",
-      // "flex-layout.row#franchise-brand",
+      "responsive-layout.desktop#franchise-brand",
+      "responsive-layout.tablet#franchise-brand",
+      "responsive-layout.phone#franchise-brand",
       "flex-layout.row#back-to-top",
       "responsive-layout.desktop#franchise-tips",
       "responsive-layout.tablet#franchise-tips",
@@ -76,6 +78,18 @@
   },
 
   //Brand
+  "responsive-layout.desktop#franchise-brand": {
+    "children": ["flex-layout.row#franchise-brand"]
+  },
+
+  "responsive-layout.tablet#franchise-brand": {
+    "children": ["flex-layout.row#franchise-brand"]
+  },
+
+  "responsive-layout.phone#franchise-brand": {
+    "children": ["flex-layout.row#franchise-brand-box-mobile"]
+  },
+
   "flex-layout.row#franchise-brand": {
     "children": ["flex-layout.col#franchise-brand-box"],
     "props": {

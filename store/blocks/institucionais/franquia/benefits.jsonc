@@ -77,8 +77,7 @@
       "infinite": true,
       "fullWidth": true,
       "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "centerMode": "center"
+      "showPaginationDots": "never"
     }
   },
 
