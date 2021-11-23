@@ -38,8 +38,7 @@
       "product-rating-inline",
       "product-summary-price",
       "product-summary-space",
-      "add-to-cart-button",
-      "vtex.product-highlights@2.x:product-highlights#teste"
+      "add-to-cart-button"
     ]
   },
 
