@@ -12,7 +12,7 @@
       }
     }
   },
-  
+
   "search-result-layout#search": {
     "blocks": [
       "search-result-layout.desktop",
@@ -52,12 +52,9 @@
       "search-not-found-layout"
     ]
   },
-  
+
   "search-result-layout.desktop": {
-    "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#result"
-    ],
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#result"],
     "props": {
       "pagination": "show-more",
       "blockClass": "searchResultLayoutDesktop",
@@ -515,7 +512,7 @@
       "width": "30%"
     }
   },
-  
+
   "rich-text#category-info-content": {
     "title": "Conteúdo informativo",
     "props": {

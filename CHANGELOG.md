@@ -7,9 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-### Added
+## [3.111.19] - 2021-11-22
 
-- **25575349** - Franchise landing page
+## [3.111.18] - 2021-11-17
+
 ## [3.111.17] - 2021-11-01
 
 ## [3.111.16] - 2021-10-27

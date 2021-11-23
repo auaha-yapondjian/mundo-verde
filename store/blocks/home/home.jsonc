@@ -10,11 +10,11 @@
       "flex-layout.row#shelves-home",
       "flex-layout.row#navigation-history",
       "flex-layout.row#promotions-bottom",
-      "flex-layout.row#newsletter",
-      "flex-layout.row#modal-news"
+      "flex-layout.row#newsletter"
+      // "flex-layout.row#modal-news"
     ]
   },
-  
+
   //Banner principal
   "flex-layout.row#main-banner": {
     "children": [
@@ -30,10 +30,7 @@
 
   //Barrinha de categorias
   "flex-layout.row#deals": {
-    "children": [
-      "rich-text#estilos-alimentacao",
-      "slider-layout#deals"
-    ],
+    "children": ["rich-text#estilos-alimentacao", "slider-layout#deals"],
     "props": {
       "blockClass": "deals"
     },
@@ -42,12 +39,12 @@
 
   //Imagens de promoções
   "flex-layout.row#promotions-top": {
-		"children": ["flex-layout.col#promotions"],
-		"props": {
-			"blockClass": "promotions"
-		},
-		"title": "Cards de promoções"
-	},
+    "children": ["flex-layout.col#promotions"],
+    "props": {
+      "blockClass": "promotions"
+    },
+    "title": "Cards de promoções"
+  },
 
   //Vitrines de lançamentos
   "flex-layout.row#new-releases": {
@@ -55,7 +52,7 @@
     "props": {
       "blockClass": "new-releases"
     },
-    "title":"Recomendações 1"
+    "title": "Recomendações 1"
   },
 
   //Vitrines da home
@@ -83,7 +80,7 @@
       "blockClass": "newsletter"
     }
   },
-  
+
   //Modal
   "flex-layout.row#modal-news": {
     "children": ["modal-trigger#modal-newsletter"],

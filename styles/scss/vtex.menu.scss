@@ -29,6 +29,13 @@
 }
 
 .styledLinkContainer {
+  &--menu-item-blog {
+    // margin: 10px !important;
+
+    // ------- BLACK FRIDAY -------
+    border: none !important;
+  }
+
   margin: {
     left: 0;
     right: 30px;
@@ -98,6 +105,11 @@
       text-transform: uppercase;
     }
 
+    &-btn-blackfriday {
+      color: #fff;
+      text-transform: uppercase;
+    }
+
     &-item-blogmv {
       text-transform: uppercase;
     }
@@ -128,6 +140,23 @@
     border-radius: 9px 0 9px 0;
     display: block;
     padding: 10px 20px;
+
+    &:hover {
+      box-shadow: 0 0 0.41667rem 0;
+    }
+
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &--menu-btn-blackfriday {
+    background: #000;
+    border-radius: 9px 0 9px 0;
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff !important;
 
     &:hover {
       box-shadow: 0 0 0.41667rem 0;
@@ -203,6 +232,11 @@
       color: #fff;
       text-transform: uppercase;
     }
+
+    &--menu-btn-blackfriday {
+      color: #fff;
+      text-transform: uppercase;
+    }
   }
 
   .styledLinkContainer {
@@ -214,6 +248,18 @@
       padding: 0;
 
       .styledLink--menu-btn {
+        border-radius: 0;
+      }
+
+      .styledLink--menu-btn-blackfriday {
+        border-radius: 0;
+      }
+    }
+
+    &--menu-btn-blackfriday {
+      padding: 0;
+
+      .styledLink--menu-btn-blackfriday {
         border-radius: 0;
       }
     }
