@@ -200,7 +200,7 @@ const FranchiseForm: React.FC = () => {
             </FormGroup>
 
             <ButtonGroup>
-              <Button type="submit">Enviar</Button>
+              <Button type="submit">CADASTRAR-SE</Button>
             </ButtonGroup>
           </Form>
         </Container>

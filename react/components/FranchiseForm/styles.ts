@@ -177,14 +177,14 @@ export const ButtonGroup = styled.div`
 
 export const Button = styled.button`
   display: inline-block;
-  width: 120px;
+  width: 130px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   background: #d67559;
   color: #fff;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.42857143;
   white-space: nowrap;
