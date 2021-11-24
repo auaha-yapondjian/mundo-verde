@@ -33,4 +33,12 @@ export const Container = styled.div`
     font-size: 27px;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    padding-right: 253px;
+  }
+
+  @media (max-width: 425px) {
+    padding-right: 46px;
+  }
 `
