@@ -5,6 +5,9 @@
   "store.custom#desconto-progressivo-ate-50": {
     "path": "/desconto-progressivo-ate-50"
   },
+  "store.custom#natal-saudavel": {
+    "path": "/natal-saudavel"
+  },
   "store.custom#desconto-progressivo-ate-40": {
     "path": "/desconto-progressivo-ate-40"
   },

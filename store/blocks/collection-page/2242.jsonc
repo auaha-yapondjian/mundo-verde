@@ -1,17 +1,17 @@
 {
-  "store.custom#blackfriday": {
+  "store.custom#natal-saudavel": {
     "blocks": [
-      "search-result-layout.customQuery#esquenta-blackfriday",
+      "search-result-layout.customQuery#natal-saudavel",
       "flex-layout.row#seo-content"
     ]
   },
 
-  "search-result-layout.customQuery#esquenta-blackfriday": {
+  "search-result-layout.customQuery#natal-saudavel": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByScoreDESC",
+        "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": false,
-        "queryField": "160",
+        "queryField": "2242",
         "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }
