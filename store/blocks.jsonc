@@ -33,7 +33,6 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      "flag-progressive-promotion",
       "product-summary-name",
       "product-rating-inline",
       "product-summary-price",
