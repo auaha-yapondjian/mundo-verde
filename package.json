@@ -48,6 +48,6 @@
   "dependencies": {
     "react": "file:react",
     "react-collapse": "^5.1.0",
-    "sass": "^1.26.3"
+    "sass": "^1.44.0"
   }
 }

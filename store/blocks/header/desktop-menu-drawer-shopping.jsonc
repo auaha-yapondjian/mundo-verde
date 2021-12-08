@@ -1,0 +1,168 @@
+{
+  //drawer desktop
+  "menu-item#shopping-all-departments": {
+    "props": {
+      "id": "shoppingHeaderMenu",
+      "blockClass": "header-desktop-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Todos os Departamentos",
+        "text": "Todos os Departamentos"
+      }
+    },
+    "blocks": ["submenu#shopping-submenu-desktop"]
+  },
+  "menu#shopping-menu-desktop": {
+    "children": [
+      "menu-item#shopping-submenu-desktop-1",
+      "menu-item#shopping-submenu-desktop-2",
+      "menu-item#shopping-submenu-desktop-3",
+      "menu-item#shopping-submenu-desktop-4",
+      "menu-item#shopping-submenu-desktop-5"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-menu"
+    }
+  },
+  //Submenu 1 - ALIMENTOS E BEBIDAS
+  "menu-item#shopping-submenu-desktop-1": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Alimentos e Bebidas",
+        "text": "Alimentos e Bebidas"
+      },
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "header-market-right-arrow",
+        "size": "25px",
+        "viewBox": "0 0 10 10",
+        "activeClassName": "arrow-right-market",
+        "iconPosition": "center",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": ["submenu#shopping-desktop-drawer-submenu-auto"]
+  },
+  //Submenu2 - Suplementos
+  "menu-item#shopping-submenu-desktop-2": {
+    "props": {
+      "id": "menu-link-decoracao",
+      "blockClass": "submenu-desktop-shopping-suplementos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Suplementos",
+        "text": "Suplementos"
+      },
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "header-market-right-arrow",
+        "size": "25px",
+        "viewBox": "0 0 10 10",
+        "activeClassName": "arrow-right-market",
+        "iconPosition": "center",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": ["submenu#shopping-desktop-drawer-submenu-suplementos"]
+  },
+
+  // Submenu 3 - Outros
+
+  "menu-item#shopping-submenu-desktop-3": {
+    "props": {
+      "id": "menu-link-decoracao",
+      "blockClass": "submenu-desktop-shopping-suplementos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Outros",
+        "text": "Outros"
+      },
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "header-market-right-arrow",
+        "size": "25px",
+        "viewBox": "0 0 10 10",
+        "activeClassName": "arrow-right-market",
+        "iconPosition": "center",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": ["submenu#shopping-desktop-drawer-submenu-outros"]
+  },
+
+  // Submenu 4 - Ofertas
+
+  "menu-item#shopping-submenu-desktop-4": {
+    "props": {
+      "id": "menu-link-decoracao",
+      "blockClass": "submenu-desktop-shopping-suplementos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      },
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "header-market-right-arrow",
+        "size": "25px",
+        "viewBox": "0 0 10 10",
+        "activeClassName": "arrow-right-market",
+        "iconPosition": "center",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": ["submenu#shopping-desktop-drawer-submenu-ofertas"]
+  },
+
+  // Submenu 5 - Marcas
+
+  "menu-item#shopping-submenu-desktop-5": {
+    "props": {
+      "id": "menu-link-decoracao",
+      "blockClass": "submenu-desktop-shopping-suplementos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      },
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "header-market-right-arrow",
+        "size": "25px",
+        "viewBox": "0 0 10 10",
+        "activeClassName": "arrow-right-market",
+        "iconPosition": "center",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": ["submenu#shopping-desktop-drawer-submenu-marcas"]
+  }
+}

@@ -42,11 +42,71 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#category-menu",
+      // "flex-layout.col#category-menu",
+      "menu#shopping-header-categoryMenu",
+      // "menu#store-selector",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
     ]
   },
+
+  // HEADER -------------------------------------------------------------------
+
+  "menu#store-selector": {
+    "children": ["menu-item#store-shopping", "menu-item#store-market"],
+    "props": {
+      "blockClass": "store-selector-menu"
+    }
+  },
+
+  "menu-item#store-shopping": {
+    "props": {
+      "id": "store-selector-shopping",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "store-selector-shopping",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shopping",
+        "text": "Shopping"
+      },
+      "iconProps": {
+        "id": "shopping-topbar-icon",
+        "size": "25",
+        "viewBox": "7 5 14 14",
+        "activeClassName": "shopping-icon",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  "menu-item#store-market": {
+    "props": {
+      "id": "store-selector-market",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "store-selector-market",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Mercado",
+        "text": "Mercado"
+      },
+      "iconProps": {
+        "id": "market-topbar-icon",
+        "size": "25",
+        "viewBox": "0 5 15 5",
+        "activeClassName": "market-icon",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  // END HEADER ----------------------------------------------------------------
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"

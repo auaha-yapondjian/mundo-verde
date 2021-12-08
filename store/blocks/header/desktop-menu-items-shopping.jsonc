@@ -1,0 +1,90 @@
+{
+  "menu#shopping-header-categoryMenu": {
+    "children": [
+      "menu-item#shopping-all-departments",
+      "menu-item#menu-item-alimentos",
+      "menu-item#menu-item-suplementos",
+      "menu-item#menu-item-outros",
+      "menu-item#menu-item-marcas"
+    ],
+    "props": {
+      "blockClass": "header-categoryMenu"
+    },
+    "title": "Menu Hotbar"
+  },
+
+  "submenu#shopping-submenu-desktop": {
+    "children": ["menu#shopping-menu-desktop"],
+    "props": {
+      "blockClass": "departmentSubmenu"
+    }
+  },
+
+  "menu-item#menu-item-alimentos": {
+    "props": {
+      "id": "headerMenuAlimentos",
+      "blockClass": "header-menu-links",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Alimentos e Bebidas",
+        "text": "Alimentos e Bebidas"
+      }
+    }
+    // "blocks": ["submenu#shopping-category-submenu-click"]
+  },
+
+  "menu-item#menu-item-suplementos": {
+    "props": {
+      "id": "headerMenuSuplementos",
+      "blockClass": "header-menu-links",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Suplementos",
+        "text": "Suplementos"
+      }
+    }
+    // "blocks": ["submenu#shopping-category-submenu-tv"]
+  },
+
+  "menu-item#menu-item-outros": {
+    "props": {
+      "id": "headerMenuOutros",
+      "blockClass": "header-menu-links",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Outros",
+        "text": "Outros"
+      }
+    }
+    // "blocks": ["submenu#shopping-category-submenu-school"]
+  },
+
+  "menu-item#menu-item-marcas": {
+    "props": {
+      "id": "headerMenuMarcas",
+      "blockClass": "header-menu-links",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      }
+    }
+    // "blocks": ["submenu#shopping-category-submenu-phones"]
+  }
+}
