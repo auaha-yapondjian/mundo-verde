@@ -1,0 +1,154 @@
+{
+  // drawer outros
+  "menu-item#menu-item-outros": {
+    "props": {
+      "id": "headerMenuOutros",
+      "blockClass": "header-desktop-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Outros",
+        "text": "Outros"
+      }
+    },
+    "blocks": ["submenu#shopping-horizontal-outros"]
+  },
+
+  "submenu#shopping-horizontal-outros": {
+    "children": [
+      "menu#shopping-horizontal-outros",
+      "flex-layout.row#shopping-desktop-drawer-menu-outros-img"
+    ],
+    "props": {
+      "blockClass": "departmentSubmenu-alimentos"
+    }
+  },
+
+  "flex-layout.row#shopping-desktop-drawer-menu-outros-img": {
+    "children": ["image#shopping-desktop-drawer-menu-outros-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+
+  "image#shopping-desktop-drawer-menu-outros-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-1nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "menu#shopping-horizontal-outros": {
+    "children": [
+      "menu-item#shopping-submenu-horizontal-outros-1",
+      "menu-item#shopping-submenu-horizontal-outros-2",
+      "menu-item#shopping-submenu-horizontal-outros-3",
+      "menu-item#shopping-submenu-horizontal-outros-4",
+      "menu-item#shopping-submenu-horizontal-outros-5",
+      "menu-item#shopping-submenu-horizontal-outros-6"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-menu"
+    }
+  },
+  // ITEMS
+  "menu-item#shopping-submenu-horizontal-outros-1": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 1",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-outros-2": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 2",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-outros-3": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 3",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-outros-4": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 4",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-outros-5": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 5",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-outros-6": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  }
+}

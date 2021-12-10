@@ -269,6 +269,18 @@
 // NOVO MENU ====================================================
 // PRIMEIRA CAMADA ==============================================
 
+.styledLink--header-desktop-menu {
+  color: #008651 !important;
+
+  :hover {
+    color: #fff !important;
+  }
+}
+
+.menuContainerNav--all-departments-menu {
+  align-items: flex-start !important;
+}
+
 .styledLinkContent--header-desktop-menu {
   font-family: 'Gotham';
   font-weight: bold;
@@ -283,6 +295,7 @@
 
 .styledLinkContainer--header-desktop-menu {
   margin-top: 7px;
+  margin-right: 45px;
   padding: 10px 8px 8px 8px !important;
   height: 30px !important;
   border-radius: 8px 8px 0px 0px;
@@ -302,26 +315,40 @@
   color: #fff;
 
   & .styledLink--header-desktop-menu {
-    color: #fff;
+    color: #fff !important;
   }
+}
+
+.styledLinkContainer--header-menu-links {
+  margin-right: 60px;
 }
 
 // PRIMEIRA CAMADA ============================================== END
 // SEGUNDA CAMADA ===============================================
 
+.menuContainerNav--all-departments-menu {
+  min-width: 200px;
+}
+
 .submenuWrapper--departmentSubmenu {
+  border-radius: 0px 0px 10px 10px;
   background-color: #008651;
   color: #fff;
   border: none;
   padding-left: 10px;
   left: -8px;
+  padding-top: 30px;
+  min-width: 550px;
+}
 
-  & :hover {
-    background-color: #008651;
-  }
-
-  & :hover .styledLinkContainer--header-desktop-menu {
-  }
+.submenuWrapper--departmentSubmenu-alimentos {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #008651;
+  color: #fff;
+  border: none;
+  left: -8px;
+  padding-top: 30px;
+  min-width: 550px;
 }
 
 .styledLinkContent--submenu-desktop-shopping-alimentos,
@@ -348,6 +375,10 @@
   margin: 0px;
 }
 
+.menuItem--submenu-desktop-shopping-horizontal-alimentos {
+  margin-bottom: 8px;
+}
+
 // SEGUNDA CAMADA =============================================== END
 // TERCEIRA CAMADA ===============================================
 
@@ -356,39 +387,57 @@
 .submenuWrapper--shopping-desktop-drawer-submenu-container-outros,
 .submenuWrapper--shopping-desktop-drawer-submenu-container-ofertas,
 .submenuWrapper--shopping-desktop-drawer-submenu-container-marcas {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 0px 0px 10px 0px;
   background: #008651;
   width: max-content;
-  min-height: 333px;
   border: none;
   padding: 0;
   clip-path: inset(-20px -20px -20px 0px);
+  min-height: 486px;
 }
 
 .submenuWrapper--shopping-desktop-drawer-submenu-container-alimentos {
   left: 196px;
-  top: -48px;
+  top: -66px;
 }
 
 .submenuWrapper--shopping-desktop-drawer-submenu-container-suplementos {
   left: 196px;
-  top: -85px;
+  top: -103px;
 }
 
 .submenuWrapper--shopping-desktop-drawer-submenu-container-outros {
   left: 196px;
-  top: -121px;
+  top: -139px;
 }
 
 .submenuWrapper--shopping-desktop-drawer-submenu-container-ofertas {
   left: 196px;
-  top: -157px;
+  top: -175px;
 }
 
 .submenuWrapper--shopping-desktop-drawer-submenu-container-marcas {
   left: 196px;
-  top: -193px;
+  top: -211px;
+}
+
+.styledLinkContent--shopping-desktop-drawer-submenu {
+  color: #fff;
+}
+
+.styledLinkContent--shopping-desktop-drawer-submenu-title {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.styledLinkContent--shopping-desktop-drawer-submenu-items {
+  color: #fff;
+  font-weight: bold;
+}
+
+.styledLinkContainer--shopping-desktop-drawer-submenu-title {
+  padding-top: 0 !important;
 }
 
 // TERCEIRA CAMADA =============================================== END

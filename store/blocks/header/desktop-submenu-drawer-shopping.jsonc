@@ -25,10 +25,11 @@
   },
   "image#shopping-desktop-drawer-submenu-auto-img": {
     "props": {
-      "src": "https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/menu-smartphones-parcerias-galaxy___c0dcbfc4f0826391371f4d5367b5d218.png",
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
       "link": {
         "url": "/#"
-      }
+      },
+      "blockClass": "submenu-3nivel-image"
     },
     "title": "Banner"
   },
@@ -39,7 +40,18 @@
       "menu-item#shopping-desktop-submenu-alimentos-item-title",
       "menu-item#shopping-desktop-submenu-alimentos-item-1",
       "menu-item#shopping-desktop-submenu-alimentos-item-2",
-      "menu-item#shopping-desktop-submenu-alimentos-item-3"
+      "menu-item#shopping-desktop-submenu-alimentos-item-3",
+      "menu-item#shopping-desktop-submenu-alimentos-item-4",
+      "menu-item#shopping-desktop-submenu-alimentos-item-5",
+      "menu-item#shopping-desktop-submenu-alimentos-item-6",
+      "menu-item#shopping-desktop-submenu-alimentos-item-7",
+      "menu-item#shopping-desktop-submenu-alimentos-item-8",
+      "menu-item#shopping-desktop-submenu-alimentos-item-9",
+      "menu-item#shopping-desktop-submenu-alimentos-item-10",
+      "menu-item#shopping-desktop-submenu-alimentos-item-11",
+      "menu-item#shopping-desktop-submenu-alimentos-item-12",
+      "menu-item#shopping-desktop-submenu-alimentos-item-13",
+      "menu-item#shopping-desktop-submenu-alimentos-item-14"
     ],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu",
@@ -56,8 +68,8 @@
         "type": "internal",
         "href": "/#",
         "noFollow": false,
-        "tagTitle": "Second level title",
-        "text": "Second level title"
+        "tagTitle": "Alimentos e Bebidas Title",
+        "text": "Alimentos e Bebidas"
       }
     }
   },
@@ -71,8 +83,8 @@
         "type": "internal",
         "href": "/#",
         "noFollow": false,
-        "tagTitle": "Second level alimentos",
-        "text": "Second level alimentos"
+        "tagTitle": "Primeiro item",
+        "text": "Açucar e Adoçantes"
       }
     }
   },
@@ -86,8 +98,8 @@
         "type": "internal",
         "href": "/#",
         "noFollow": false,
-        "tagTitle": "Second level alimentos",
-        "text": "Second level alimentos"
+        "tagTitle": "Segundo item",
+        "text": "Barras"
       }
     }
   },
@@ -101,8 +113,8 @@
         "type": "internal",
         "href": "/#",
         "noFollow": false,
-        "tagTitle": "Second level alimentos",
-        "text": "Second level alimentos"
+        "tagTitle": "Terceiro item",
+        "text": "Bebidas"
       }
     }
   },
@@ -116,8 +128,158 @@
         "type": "internal",
         "href": "/#",
         "noFollow": false,
-        "tagTitle": "Second level alimentos",
-        "text": "Second level alimentos"
+        "tagTitle": "Quarto item",
+        "text": "Castanhas e Sementes"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-5": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Quinto item",
+        "text": "Doces"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-6": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Sexto item",
+        "text": "Farinhas"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-7": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Setimo item",
+        "text": "Granola e Aveias"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-8": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Oitavo item",
+        "text": "Grãos e Cereais"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-9": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Nono item",
+        "text": "Lanches"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-10": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item10",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Deciso item",
+        "text": "Óleos e Vinagres"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-11": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item11",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Decimo primeiro",
+        "text": "Outros"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-12": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item12",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Decimo segundo",
+        "text": "Pães e Massas"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-13": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item13",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Decimo terceiro",
+        "text": "Sopas e Temperos"
+      }
+    }
+  },
+  "menu-item#shopping-desktop-submenu-alimentos-item-14": {
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-items",
+      "id": "alimentos-item14",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Decimo quarto",
+        "text": "Superfood"
       }
     }
   },
@@ -149,10 +311,11 @@
   },
   "image#shopping-desktop-drawer-submenu-suplementos-img": {
     "props": {
-      "src": "",
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
       "link": {
         "url": "/#"
-      }
+      },
+      "blockClass": "submenu-3nivel-image"
     },
     "title": "Banner"
   },
@@ -273,10 +436,11 @@
   },
   "image#shopping-desktop-drawer-submenu-outros-img": {
     "props": {
-      "src": "",
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
       "link": {
         "url": "/#"
-      }
+      },
+      "blockClass": "submenu-3nivel-image"
     },
     "title": "Banner"
   },
@@ -397,10 +561,11 @@
   },
   "image#shopping-desktop-drawer-submenu-ofertas-img": {
     "props": {
-      "src": "",
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
       "link": {
         "url": "/#"
-      }
+      },
+      "blockClass": "submenu-3nivel-image"
     },
     "title": "Banner"
   },
@@ -473,10 +638,11 @@
   },
   "image#shopping-desktop-drawer-submenu-marcas-img": {
     "props": {
-      "src": "",
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
       "link": {
         "url": "/#"
-      }
+      },
+      "blockClass": "submenu-3nivel-image"
     },
     "title": "Banner"
   },
