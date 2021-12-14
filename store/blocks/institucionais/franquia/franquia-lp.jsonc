@@ -46,7 +46,10 @@
 
   //Float form
   "flex-layout.col#franchise-float-form": {
-    "children": ["franchise-form"],
+    "children": [
+      // "franchise-form",
+      "sandbox#franchise-form-franquia"
+    ],
     "props": {
       // "width": "30%",
       "blockClass": "col-form-franchise"
