@@ -49,6 +49,18 @@
   }
 }
 
+:global(.vtex-sandbox-iframe) {
+  height: 100% !important;
+  border-radius: 0 0 18px 18px;
+  margin-left: -20px;
+
+  @media (max-width: 768px) {
+    height: 445px !important;
+    margin-left: 0px;
+    border-radius: 0;
+  }
+}
+
 .container {
   //Seja um franqueado
   &--franchise {
@@ -70,10 +82,6 @@
         background: #6ac68d;
         padding-top: 60px;
         right: 20px;
-      }
-
-      :global(.vtex-sandbox-iframe) {
-        height: 100% !important;
       }
     }
   }
