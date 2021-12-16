@@ -51,8 +51,14 @@ const FranchiseForm: React.FC = () => {
   const sendForm = async (event: FormEvent) => {
     event.preventDefault()
 
-    const { name, email, phone, capital, state, message } =
-      event.target as IFormTarget
+    const {
+      name,
+      email,
+      phone,
+      capital,
+      state,
+      message,
+    } = event.target as IFormTarget
 
     const data: Record<string, any> = {
       name: name.value,
@@ -98,6 +104,17 @@ const FranchiseForm: React.FC = () => {
         Accept: 'application/json',
       },
     })
+
+    await axios.post(
+      'https://teste.solutto.com.br/webhook-investidores.aspx?chave=876678-13728282-181812',
+      dataToSend,
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      }
+    )
 
     setSent(true)
   }
