@@ -1395,6 +1395,10 @@
 
     .stretchChildrenWidth {
       width: auto !important;
+
+      &:last-child {
+        border-radius: 0px 0px 18px 18px;
+      }
     }
   }
 
