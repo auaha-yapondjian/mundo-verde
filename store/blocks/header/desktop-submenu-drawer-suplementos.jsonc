@@ -53,7 +53,11 @@
       "menu-item#shopping-submenu-horizontal-suplementos-3",
       "menu-item#shopping-submenu-horizontal-suplementos-4",
       "menu-item#shopping-submenu-horizontal-suplementos-5",
-      "menu-item#shopping-submenu-horizontal-suplementos-6"
+      "menu-item#shopping-submenu-horizontal-suplementos-6",
+      "menu-item#shopping-submenu-horizontal-suplementos-7",
+      "menu-item#shopping-submenu-horizontal-suplementos-8",
+      "menu-item#shopping-submenu-horizontal-suplementos-9",
+      "menu-item#shopping-submenu-horizontal-suplementos-10"
     ],
     "props": {
       "orientation": "vertical",
@@ -137,6 +141,66 @@
     }
   },
   "menu-item#shopping-submenu-horizontal-suplementos-6": {
+    "props": {
+      "id": "menu-link-suplementos",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-suplementos-7": {
+    "props": {
+      "id": "menu-link-suplementos",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-suplementos-8": {
+    "props": {
+      "id": "menu-link-suplementos",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-suplementos-9": {
+    "props": {
+      "id": "menu-link-suplementos",
+      "blockClass": "submenu-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-suplementos-10": {
     "props": {
       "id": "menu-link-suplementos",
       "blockClass": "submenu-desktop-shopping-alimentos",

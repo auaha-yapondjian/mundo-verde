@@ -53,7 +53,11 @@
       "menu-item#shopping-submenu-horizontal-marcas-3",
       "menu-item#shopping-submenu-horizontal-marcas-4",
       "menu-item#shopping-submenu-horizontal-marcas-5",
-      "menu-item#shopping-submenu-horizontal-marcas-6"
+      "menu-item#shopping-submenu-horizontal-marcas-6",
+      "menu-item#shopping-submenu-horizontal-marcas-7",
+      "menu-item#shopping-submenu-horizontal-marcas-8",
+      "menu-item#shopping-submenu-horizontal-marcas-9",
+      "menu-item#shopping-submenu-horizontal-marcas-10"
     ],
     "props": {
       "orientation": "vertical",
@@ -64,7 +68,7 @@
   "menu-item#shopping-submenu-horizontal-marcas-1": {
     "props": {
       "id": "menu-link-ferramentas",
-      "blockClass": "submenu-desktop-shopping-alimentos",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -79,7 +83,7 @@
   "menu-item#shopping-submenu-horizontal-marcas-2": {
     "props": {
       "id": "menu-link-ferramentas",
-      "blockClass": "submenu-desktop-shopping-alimentos",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -94,7 +98,7 @@
   "menu-item#shopping-submenu-horizontal-marcas-3": {
     "props": {
       "id": "menu-link-ferramentas",
-      "blockClass": "submenu-desktop-shopping-alimentos",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -109,7 +113,7 @@
   "menu-item#shopping-submenu-horizontal-marcas-4": {
     "props": {
       "id": "menu-link-ferramentas",
-      "blockClass": "submenu-desktop-shopping-alimentos",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -124,7 +128,7 @@
   "menu-item#shopping-submenu-horizontal-marcas-5": {
     "props": {
       "id": "menu-link-ferramentas",
-      "blockClass": "submenu-desktop-shopping-alimentos",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -139,7 +143,67 @@
   "menu-item#shopping-submenu-horizontal-marcas-6": {
     "props": {
       "id": "menu-link-ferramentas",
-      "blockClass": "submenu-desktop-shopping-alimentos",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-marcas-7": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-marcas-8": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-marcas-9": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
+        "noFollow": false,
+        "tagTitle": "Item 6",
+        "text": "Lorem Ipsum"
+      }
+    }
+  },
+  "menu-item#shopping-submenu-horizontal-marcas-10": {
+    "props": {
+      "id": "menu-link-ferramentas",
+      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
       "itemProps": {

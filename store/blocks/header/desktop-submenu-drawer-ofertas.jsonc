@@ -1,8 +1,8 @@
 {
-  // drawer alimentos
-  "menu-item#menu-item-alimentos": {
+  // drawer ofertas
+  "menu-item#menu-item-ofertas": {
     "props": {
-      "id": "headerMenuAlimentos",
+      "id": "headerMenuOutros",
       "blockClass": "header-desktop-menu",
       "type": "custom",
       "highlight": false,
@@ -10,32 +10,32 @@
         "type": "internal",
         "href": "/#",
         "noFollow": false,
-        "tagTitle": "Alimentos e Bebidas",
-        "text": "Alimentos e Bebidas"
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
       }
     },
-    "blocks": ["submenu#shopping-horizontal-alimentos"]
+    "blocks": ["submenu#shopping-horizontal-ofertas"]
   },
 
-  "submenu#shopping-horizontal-alimentos": {
+  "submenu#shopping-horizontal-ofertas": {
     "children": [
-      "menu#shopping-horizontal-alimentos",
-      "flex-layout.row#shopping-desktop-drawer-menu-alimentos-img"
+      "menu#shopping-horizontal-ofertas",
+      "flex-layout.row#shopping-desktop-drawer-menu-ofertas-img"
     ],
     "props": {
       "blockClass": "departmentSubmenu-alimentos"
     }
   },
 
-  "flex-layout.row#shopping-desktop-drawer-menu-alimentos-img": {
-    "children": ["image#shopping-desktop-drawer-menu-alimentos-img"],
+  "flex-layout.row#shopping-desktop-drawer-menu-ofertas-img": {
+    "children": ["image#shopping-desktop-drawer-menu-ofertas-img"],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu-img",
       "fullWidth": true
     }
   },
 
-  "image#shopping-desktop-drawer-menu-alimentos-img": {
+  "image#shopping-desktop-drawer-menu-ofertas-img": {
     "props": {
       "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
       "link": {
@@ -46,28 +46,28 @@
     "title": "Banner"
   },
 
-  "menu#shopping-horizontal-alimentos": {
+  "menu#shopping-horizontal-ofertas": {
     "children": [
-      "menu-item#shopping-submenu-horizontal-aliementos-1",
-      "menu-item#shopping-submenu-horizontal-aliementos-2",
-      "menu-item#shopping-submenu-horizontal-aliementos-3",
-      "menu-item#shopping-submenu-horizontal-aliementos-4",
-      "menu-item#shopping-submenu-horizontal-aliementos-5",
-      "menu-item#shopping-submenu-horizontal-aliementos-6",
-      "menu-item#shopping-submenu-horizontal-aliementos-7",
-      "menu-item#shopping-submenu-horizontal-aliementos-8",
-      "menu-item#shopping-submenu-horizontal-aliementos-9",
-      "menu-item#shopping-submenu-horizontal-aliementos-10"
+      "menu-item#shopping-submenu-horizontal-ofertas-1",
+      "menu-item#shopping-submenu-horizontal-ofertas-2",
+      "menu-item#shopping-submenu-horizontal-ofertas-3",
+      "menu-item#shopping-submenu-horizontal-ofertas-4",
+      "menu-item#shopping-submenu-horizontal-ofertas-5",
+      "menu-item#shopping-submenu-horizontal-ofertas-6",
+      "menu-item#shopping-submenu-horizontal-ofertas-7",
+      "menu-item#shopping-submenu-horizontal-ofertas-8",
+      "menu-item#shopping-submenu-horizontal-ofertas-9",
+      "menu-item#shopping-submenu-horizontal-ofertas-10"
     ],
     "props": {
       "orientation": "vertical",
       "blockClass": "all-departments-menu"
     }
   },
-  //Submenu 1 - ALIMENTOS E BEBIDAS
-  "menu-item#shopping-submenu-horizontal-aliementos-1": {
+  // ITEMS
+  "menu-item#shopping-submenu-horizontal-ofertas-1": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -76,13 +76,13 @@
         "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
         "noFollow": false,
         "tagTitle": "Item 1",
-        "text": "Lorem Ipsum Lorem"
+        "text": "Lorem Ipsum"
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-2": {
+  "menu-item#shopping-submenu-horizontal-ofertas-2": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -95,9 +95,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-3": {
+  "menu-item#shopping-submenu-horizontal-ofertas-3": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -110,9 +110,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-4": {
+  "menu-item#shopping-submenu-horizontal-ofertas-4": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -125,9 +125,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-5": {
+  "menu-item#shopping-submenu-horizontal-ofertas-5": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -140,9 +140,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-6": {
+  "menu-item#shopping-submenu-horizontal-ofertas-6": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -155,9 +155,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-7": {
+  "menu-item#shopping-submenu-horizontal-ofertas-7": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -170,9 +170,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-8": {
+  "menu-item#shopping-submenu-horizontal-ofertas-8": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -185,9 +185,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-9": {
+  "menu-item#shopping-submenu-horizontal-ofertas-9": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,
@@ -200,9 +200,9 @@
       }
     }
   },
-  "menu-item#shopping-submenu-horizontal-aliementos-10": {
+  "menu-item#shopping-submenu-horizontal-ofertas-10": {
     "props": {
-      "id": "menu-link-ferramentas",
+      "id": "menu-link-ofertas",
       "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
       "type": "custom",
       "highlight": false,

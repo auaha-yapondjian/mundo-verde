@@ -5,7 +5,8 @@
       "menu-item#menu-item-alimentos",
       "menu-item#menu-item-suplementos",
       "menu-item#menu-item-outros",
-      "menu-item#menu-item-marcas"
+      "menu-item#menu-item-marcas",
+      "menu-item#menu-item-ofertas"
     ],
     "props": {
       "blockClass": "header-categoryMenu"

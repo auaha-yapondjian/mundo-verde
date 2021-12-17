@@ -281,6 +281,11 @@
   align-items: flex-start !important;
 }
 
+.styledLinkContent--all-departments-menu {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
 .styledLinkContent--header-desktop-menu {
   font-family: 'Gotham';
   font-weight: bold;
@@ -359,12 +364,18 @@
   color: #fff;
   font-family: 'Gotham';
   align-items: center;
+  height: 28px;
+}
 
-  ::after {
-    content: url('/arquivos/menu-arrow-rigth.svg');
-    width: 10px;
-    height: 10px;
-  }
+.styledLinkContent--submenu-horizontal-desktop-shopping-alimentos,
+.styledLinkContent--submenu-horizontal-desktop-shopping-suplementos,
+.styledLinkContent--submenu-horizontal-desktop-shopping-outros,
+.styledLinkContent--submenu-horizontal-desktop-shopping-ofertas,
+.styledLinkContent--submenu-horizontal-desktop-shopping-marcas {
+  color: #fff;
+  font-family: 'Gotham';
+  align-items: center;
+  height: 28px;
 }
 
 .styledLinkContainer--submenu-desktop-shopping-alimentos,
@@ -373,10 +384,29 @@
 .styledLinkContainer--submenu-desktop-shopping-ofertas,
 .styledLinkContainer--submenu-desktop-shopping-marcas {
   margin: 0px;
+  transition: all 0.1s;
+  :hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    background-color: #017446 !important;
+  }
+}
+
+.styledLinkContainer--submenu-horizontal-desktop-shopping-alimentos,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-suplementos,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-outros,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-ofertas,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-marcas {
+  margin: 0px;
 }
 
 .menuItem--submenu-desktop-shopping-horizontal-alimentos {
   margin-bottom: 8px;
+}
+
+.menuContainer--shopping-desktop-drawer-submenu {
+  margin-top: 35px;
 }
 
 // SEGUNDA CAMADA =============================================== END
