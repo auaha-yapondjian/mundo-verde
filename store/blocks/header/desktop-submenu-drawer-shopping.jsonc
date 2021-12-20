@@ -10,7 +10,7 @@
     }
   },
   "flex-layout.row#shopping-desktop-drawer-submenu-auto": {
-    "children": ["menu#shopping-desktop-submenu-alimentos-container-1"],
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-alimentos"],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu-content",
       "fullWidth": true
@@ -34,173 +34,26 @@
     "title": "Banner"
   },
 
-  //Item 1
-  "menu#shopping-desktop-submenu-alimentos-container-1": {
-    "children": [
-      "menu-item#shopping-desktop-submenu-alimentos-item-1",
-      "menu-item#shopping-desktop-submenu-alimentos-item-2",
-      "menu-item#shopping-desktop-submenu-alimentos-item-3",
-      "menu-item#shopping-desktop-submenu-alimentos-item-4",
-      "menu-item#shopping-desktop-submenu-alimentos-item-5",
-      "menu-item#shopping-desktop-submenu-alimentos-item-6",
-      "menu-item#shopping-desktop-submenu-alimentos-item-7",
-      "menu-item#shopping-desktop-submenu-alimentos-item-8",
-      "menu-item#shopping-desktop-submenu-alimentos-item-9",
-      "menu-item#shopping-desktop-submenu-alimentos-item-10"
-    ],
+  "vtex.menu@2.x:menu#submenu-horizontal-alimentos": {
     "props": {
-      "blockClass": "shopping-desktop-drawer-submenu",
-      "orientation": "vertical"
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-1": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Primeiro item",
-        "text": "Açucar e Adoçantes"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-2": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item2",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Segundo item",
-        "text": "Barras"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-3": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item3",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Terceiro item",
-        "text": "Bebidas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-4": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Quarto item",
-        "text": "Castanhas e Sementes"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-5": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item5",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Quinto item",
-        "text": "Doces"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-6": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item6",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Sexto item",
-        "text": "Farinhas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-7": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item7",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Setimo item",
-        "text": "Granola e Aveias"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-8": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item8",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Oitavo item",
-        "text": "Grãos e Cereais"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-9": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item9",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Nono item",
-        "text": "Lanches"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-alimentos-item-10": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "alimentos-item10",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Deciso item",
-        "text": "Óleos e Vinagres"
-      }
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Alimentos item 1",
+            "text": "Alimentos 1"
+          }
+        }
+      ]
     }
   },
   /*Submenu de ALIMENTOS E BEBIDAS - END*/
@@ -216,7 +69,7 @@
     }
   },
   "flex-layout.row#shopping-desktop-drawer-submenu-suplementos": {
-    "children": ["menu#shopping-desktop-submenu-first-container-1"],
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-suplementos"],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu-content",
       "fullWidth": true
@@ -239,175 +92,30 @@
     },
     "title": "Banner"
   },
-  //Item 1
-  "menu#shopping-desktop-submenu-first-container-1": {
-    "children": [
-      "menu-item#shopping-desktop-submenu-first-item-1",
-      "menu-item#shopping-desktop-submenu-first-item-2",
-      "menu-item#shopping-desktop-submenu-first-item-3",
-      "menu-item#shopping-desktop-submenu-first-item-4",
-      "menu-item#shopping-desktop-submenu-first-item-5",
-      "menu-item#shopping-desktop-submenu-first-item-6",
-      "menu-item#shopping-desktop-submenu-first-item-7",
-      "menu-item#shopping-desktop-submenu-first-item-8",
-      "menu-item#shopping-desktop-submenu-first-item-9",
-      "menu-item#shopping-desktop-submenu-first-item-10"
-    ],
+
+  "vtex.menu@2.x:menu#submenu-horizontal-suplementos": {
     "props": {
-      "blockClass": "shopping-desktop-drawer-submenu",
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Suplementos item 1",
+            "text": "Suplementos 1"
+          }
+        }
+      ]
     }
   },
-  "menu-item#shopping-desktop-submenu-first-item-1": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": "Second level first"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-2": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item2",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": "Second level first"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-3": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item3",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": "Second level first"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-4": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": "Second level first"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-5": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": ""
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-6": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": ""
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-7": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": ""
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-8": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": ""
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-9": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": ""
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-first-item-10": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "first-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level first",
-        "text": ""
-      }
-    }
-  },
+
   /*Submenu de SUPLEMENTOS - END*/
 
   /*Submenu de OUTROS*/
@@ -421,7 +129,7 @@
     }
   },
   "flex-layout.row#shopping-desktop-drawer-submenu-outros": {
-    "children": ["menu#shopping-desktop-submenu-outros-container-1"],
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-outros"],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu-content",
       "fullWidth": true
@@ -444,173 +152,27 @@
     },
     "title": "Banner"
   },
-  //Item 1
-  "menu#shopping-desktop-submenu-outros-container-1": {
-    "children": [
-      "menu-item#shopping-desktop-submenu-outros-item-1",
-      "menu-item#shopping-desktop-submenu-outros-item-2",
-      "menu-item#shopping-desktop-submenu-outros-item-3",
-      "menu-item#shopping-desktop-submenu-outros-item-4",
-      "menu-item#shopping-desktop-submenu-outros-item-5",
-      "menu-item#shopping-desktop-submenu-outros-item-6",
-      "menu-item#shopping-desktop-submenu-outros-item-7",
-      "menu-item#shopping-desktop-submenu-outros-item-8",
-      "menu-item#shopping-desktop-submenu-outros-item-9",
-      "menu-item#shopping-desktop-submenu-outros-item-10"
-    ],
+
+  "vtex.menu@2.x:menu#submenu-horizontal-outros": {
     "props": {
-      "blockClass": "shopping-desktop-drawer-submenu",
-      "orientation": "vertical"
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-1": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-2": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item2",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-3": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item3",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-4": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-5": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-6": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-7": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-8": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-9": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-outros-item-10": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "outros-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level outros",
-        "text": "Second level outros"
-      }
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Outros item 1",
+            "text": "Outros 1"
+          }
+        }
+      ]
     }
   },
   /*Submenu de OUTROS - END*/
@@ -626,7 +188,7 @@
     }
   },
   "flex-layout.row#shopping-desktop-drawer-submenu-ofertas": {
-    "children": ["menu#shopping-desktop-submenu-ofertas-container-1"],
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-ofertas"],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu-content",
       "fullWidth": true
@@ -649,174 +211,27 @@
     },
     "title": "Banner"
   },
-  //Item 1
-  "menu#shopping-desktop-submenu-ofertas-container-1": {
-    "children": [
-      "menu-item#shopping-desktop-submenu-ofertas-item-1",
-      "menu-item#shopping-desktop-submenu-ofertas-item-2",
-      "menu-item#shopping-desktop-submenu-ofertas-item-3",
-      "menu-item#shopping-desktop-submenu-ofertas-item-4",
-      "menu-item#shopping-desktop-submenu-ofertas-item-5",
-      "menu-item#shopping-desktop-submenu-ofertas-item-6",
-      "menu-item#shopping-desktop-submenu-ofertas-item-7",
-      "menu-item#shopping-desktop-submenu-ofertas-item-8",
-      "menu-item#shopping-desktop-submenu-ofertas-item-9",
-      "menu-item#shopping-desktop-submenu-ofertas-item-10"
-    ],
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu",
-      "orientation": "vertical"
-    }
-  },
 
-  "menu-item#shopping-desktop-submenu-ofertas-item-1": {
+  "vtex.menu@2.x:menu#submenu-horizontal-ofertas": {
     "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-2": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-3": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-4": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-5": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-6": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-7": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-8": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-9": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-ofertas-item-10": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "ofertas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level ofertas",
-        "text": "Second level ofertas"
-      }
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ofertas item 1",
+            "text": "Ofertas 1"
+          }
+        }
+      ]
     }
   },
   /*Submenu 4 - OFERTAS - END*/
@@ -832,7 +247,7 @@
     }
   },
   "flex-layout.row#shopping-desktop-drawer-submenu-marcas": {
-    "children": ["menu#shopping-desktop-submenu-marcas-container-1"],
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-marcas"],
     "props": {
       "blockClass": "shopping-desktop-drawer-submenu-content",
       "fullWidth": true
@@ -855,173 +270,27 @@
     },
     "title": "Banner"
   },
-  //Item 1
-  "menu#shopping-desktop-submenu-marcas-container-1": {
-    "children": [
-      "menu-item#shopping-desktop-submenu-marcas-item-1",
-      "menu-item#shopping-desktop-submenu-marcas-item-2",
-      "menu-item#shopping-desktop-submenu-marcas-item-3",
-      "menu-item#shopping-desktop-submenu-marcas-item-4",
-      "menu-item#shopping-desktop-submenu-marcas-item-5",
-      "menu-item#shopping-desktop-submenu-marcas-item-6",
-      "menu-item#shopping-desktop-submenu-marcas-item-7",
-      "menu-item#shopping-desktop-submenu-marcas-item-8",
-      "menu-item#shopping-desktop-submenu-marcas-item-9",
-      "menu-item#shopping-desktop-submenu-marcas-item-10"
-    ],
+
+  "vtex.menu@2.x:menu#submenu-horizontal-marcas": {
     "props": {
-      "blockClass": "shopping-desktop-drawer-submenu",
-      "orientation": "vertical"
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-1": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item1",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-2": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item2",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-3": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item3",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-4": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-5": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-6": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-7": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-8": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-9": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
-    }
-  },
-  "menu-item#shopping-desktop-submenu-marcas-item-10": {
-    "props": {
-      "blockClass": "shopping-desktop-drawer-submenu-items",
-      "id": "marcas-item4",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/#",
-        "noFollow": false,
-        "tagTitle": "Second level marcas",
-        "text": "Second level marcas"
-      }
+      "orientation": "vertical",
+      "blockClass": "marcas-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Marcas item 1",
+            "text": "Marcas 1"
+          }
+        }
+      ]
     }
   }
   /*Submenu 5 - MARCAS - END*/

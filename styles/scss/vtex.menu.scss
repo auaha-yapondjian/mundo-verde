@@ -281,9 +281,38 @@
   align-items: flex-start !important;
 }
 
+.menuContainerNav--marcas-menu {
+  align-items: flex-start !important;
+}
+
+.menuContainerNav--all-departments-submenu {
+  align-items: flex-start !important;
+}
+
+.menuContainerNav--marcas-submenu {
+  align-items: flex-start !important;
+}
+
 .styledLinkContent--all-departments-menu {
   color: #fff;
   margin-bottom: 10px;
+}
+
+.styledLinkContent--marcas-menu {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.styledLinkContent--all-departments-submenu {
+  color: #fff;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.styledLinkContent--marcas-submenu {
+  color: #fff;
+  margin-bottom: 4px;
+  font-weight: bold;
 }
 
 .styledLinkContent--header-desktop-menu {
@@ -333,6 +362,68 @@
 
 .menuContainerNav--all-departments-menu {
   min-width: 200px;
+}
+
+.menuContainerNav--marcas-menu {
+  min-width: 200px;
+}
+
+.menuContainerNav--all-departments-submenu {
+  min-width: 200px;
+}
+
+.menuContainerNav--marcas-submenu {
+  min-width: 200px;
+}
+
+.menuContainerNav--all-departments-submenu {
+  margin-top: 31px;
+}
+
+.menuContainerNav--marcas-submenu {
+  margin-top: 31px;
+}
+
+.menuItem--marcas-menu {
+  &:last-child {
+    margin-top: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+    background-color: #fff;
+
+    & .styledLinkContainer--marcas-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0 !important;
+
+      & .styledLinkContent--marcas-menu {
+        color: #008651;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.menuItem--marcas-submenu {
+  &:last-child {
+    margin-top: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+    background-color: #fff;
+
+    & .styledLinkContainer--marcas-submenu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0 !important;
+
+      & .styledLinkContent--marcas-submenu {
+        color: #008651;
+      }
+    }
+  }
 }
 
 .submenuWrapper--departmentSubmenu {

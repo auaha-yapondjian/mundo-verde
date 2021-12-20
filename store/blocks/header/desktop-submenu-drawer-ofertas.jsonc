@@ -19,7 +19,7 @@
 
   "submenu#shopping-horizontal-ofertas": {
     "children": [
-      "menu#shopping-horizontal-ofertas",
+      "vtex.menu@2.x:menu#menu-horizontal-ofertas",
       "flex-layout.row#shopping-desktop-drawer-menu-ofertas-img"
     ],
     "props": {
@@ -46,173 +46,26 @@
     "title": "Banner"
   },
 
-  "menu#shopping-horizontal-ofertas": {
-    "children": [
-      "menu-item#shopping-submenu-horizontal-ofertas-1",
-      "menu-item#shopping-submenu-horizontal-ofertas-2",
-      "menu-item#shopping-submenu-horizontal-ofertas-3",
-      "menu-item#shopping-submenu-horizontal-ofertas-4",
-      "menu-item#shopping-submenu-horizontal-ofertas-5",
-      "menu-item#shopping-submenu-horizontal-ofertas-6",
-      "menu-item#shopping-submenu-horizontal-ofertas-7",
-      "menu-item#shopping-submenu-horizontal-ofertas-8",
-      "menu-item#shopping-submenu-horizontal-ofertas-9",
-      "menu-item#shopping-submenu-horizontal-ofertas-10"
-    ],
+  "vtex.menu@2.x:menu#menu-horizontal-ofertas": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "all-departments-menu"
-    }
-  },
-  // ITEMS
-  "menu-item#shopping-submenu-horizontal-ofertas-1": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 1",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-2": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 2",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-3": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 3",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-4": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 4",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-5": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 5",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-6": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 6",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-7": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 6",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-8": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 6",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-9": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 6",
-        "text": "Lorem Ipsum"
-      }
-    }
-  },
-  "menu-item#shopping-submenu-horizontal-ofertas-10": {
-    "props": {
-      "id": "menu-link-ofertas",
-      "blockClass": "submenu-horizontal-desktop-shopping-alimentos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "https://www.mundoverde.com.br/alimentos-e-bebidas",
-        "noFollow": false,
-        "tagTitle": "Item 6",
-        "text": "Lorem Ipsum"
-      }
+      "blockClass": "all-departments-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ofertas item 1",
+            "text": "Ofertas 1"
+          }
+        }
+      ]
     }
   }
 }
