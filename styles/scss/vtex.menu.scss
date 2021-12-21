@@ -562,3 +562,21 @@
 }
 
 // TERCEIRA CAMADA =============================================== END
+
+.styledLinkContent--delivery-button {
+  display: flex;
+  align-items: center;
+  font-family: 'Gotham';
+  color: #008651;
+  font-weight: bold;
+}
+
+.styledLinkIcon--delivery-button {
+  display: flex;
+  align-items: center;
+  :first-child {
+    margin-top: 8px;
+    width: 40px;
+    height: 29.51px;
+  }
+}

@@ -18,6 +18,7 @@
       }
     }
   },
+
   "menu-item#promocoes": {
     "props": {
       "id": "menu-item-promocoes",

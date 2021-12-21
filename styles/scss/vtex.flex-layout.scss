@@ -2146,6 +2146,10 @@
   }
 }
 
+.flexRow--franqueado-header-container {
+  background-color: #eeeeee;
+}
+
 // NOVO MENU ===========================================================
 // PRIMEIRO BLOCO ======================================================
 
@@ -2158,3 +2162,13 @@
 // TERCEIRO BLOCO ======================================================
 
 // TERCEIRO BLOCO ====================================================== END
+
+.flexRowContent--franqueado-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    max-width: 1280px;
+  }
+}
