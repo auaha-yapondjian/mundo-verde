@@ -104,6 +104,12 @@
       "share#default"
     ]
   },
+
+  "shipping-simulator": {
+    "props": {
+      "pricingMode": "grouped"
+    }
+  },
   "link.product#product-page": {
     "props": {
       "href": "/{brand}/"
