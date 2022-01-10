@@ -2149,3 +2149,30 @@
     backdrop-filter: blur(8px);
   }
 }
+
+.flexRow--franqueado-header-container {
+  background-color: #eeeeee;
+}
+
+// NOVO MENU ===========================================================
+// PRIMEIRO BLOCO ======================================================
+
+.flexRowContent--shopping-desktop-drawer-submenu-content {
+  padding: 4px 12px 0 12px;
+}
+
+// PRIMEIRO BLOCO ====================================================== END
+
+// TERCEIRO BLOCO ======================================================
+
+// TERCEIRO BLOCO ====================================================== END
+
+.flexRowContent--franqueado-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    max-width: 1280px;
+  }
+}

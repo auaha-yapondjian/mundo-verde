@@ -1,0 +1,71 @@
+{
+  // drawer marcas
+  "menu-item#menu-item-marcas": {
+    "props": {
+      "id": "headerMenuMarcas",
+      "blockClass": "header-desktop-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      }
+    },
+    "blocks": ["submenu#shopping-horizontal-marcas"]
+  },
+
+  "submenu#shopping-horizontal-marcas": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-horizontal-marcas",
+      "flex-layout.row#shopping-desktop-drawer-menu-marcas-img"
+    ],
+    "props": {
+      "blockClass": "departmentSubmenu-alimentos"
+    }
+  },
+
+  "flex-layout.row#shopping-desktop-drawer-menu-marcas-img": {
+    "children": ["image#shopping-desktop-drawer-menu-marcas-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+
+  "image#shopping-desktop-drawer-menu-marcas-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-1nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#menu-horizontal-marcas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "marcas-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Marcas item 1",
+            "text": "Marcas 1"
+          }
+        }
+      ]
+    }
+  }
+}

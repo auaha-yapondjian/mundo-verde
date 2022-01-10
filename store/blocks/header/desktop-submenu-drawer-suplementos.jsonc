@@ -1,0 +1,71 @@
+{
+  // drawer suplementos
+  "menu-item#menu-item-suplementos": {
+    "props": {
+      "id": "headerMenuOutros",
+      "blockClass": "header-desktop-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Suplementos",
+        "text": "Suplementos"
+      }
+    },
+    "blocks": ["submenu#shopping-horizontal-suplementos"]
+  },
+
+  "submenu#shopping-horizontal-suplementos": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-horizontal-ofertas",
+      "flex-layout.row#shopping-desktop-drawer-menu-suplementos-img"
+    ],
+    "props": {
+      "blockClass": "departmentSubmenu-alimentos"
+    }
+  },
+
+  "flex-layout.row#shopping-desktop-drawer-menu-suplementos-img": {
+    "children": ["image#shopping-desktop-drawer-menu-suplementos-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+
+  "image#shopping-desktop-drawer-menu-suplementos-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-1nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#menu-horizontal-suplementos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Suplementos item 1",
+            "text": "Suplementos 1"
+          }
+        }
+      ]
+    }
+  }
+}
