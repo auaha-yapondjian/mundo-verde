@@ -295,17 +295,16 @@
 
 .styledLinkContent--all-departments-menu {
   color: #fff;
-  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .styledLinkContent--marcas-menu {
   color: #fff;
-  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .styledLinkContent--all-departments-submenu {
   color: #fff;
-  margin-bottom: 4px;
   font-weight: bold;
 }
 
@@ -427,6 +426,7 @@
 }
 
 .submenuWrapper--departmentSubmenu {
+  z-index: 999;
   border-radius: 0px 0px 10px 10px;
   background-color: #008651;
   color: #fff;
@@ -438,6 +438,7 @@
 }
 
 .submenuWrapper--departmentSubmenu-alimentos {
+  z-index: 999;
   border-radius: 0px 0px 10px 10px;
   background-color: #008651;
   color: #fff;
