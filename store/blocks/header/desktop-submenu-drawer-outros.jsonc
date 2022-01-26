@@ -1,0 +1,72 @@
+{
+  // drawer outros
+  "menu-item#menu-item-outros": {
+    "props": {
+      "id": "headerMenuOutros",
+      "blockClass": "header-desktop-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Outros",
+        "text": "Outros"
+      }
+    },
+    "blocks": ["submenu#shopping-horizontal-outros"]
+  },
+
+  "submenu#shopping-horizontal-outros": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-horizontal-outros",
+      "flex-layout.row#shopping-desktop-drawer-menu-outros-img"
+    ],
+    "props": {
+      "blockClass": "departmentSubmenu-alimentos"
+    }
+  },
+
+  "flex-layout.row#shopping-desktop-drawer-menu-outros-img": {
+    "children": ["image#shopping-desktop-drawer-menu-outros-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+
+  "image#shopping-desktop-drawer-menu-outros-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-1nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#menu-horizontal-outros": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "blockClass": "item-menu2",
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Outros item 1",
+            "text": "Outros 1"
+          }
+        }
+      ]
+    }
+  }
+}

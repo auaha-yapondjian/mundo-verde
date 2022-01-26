@@ -12,10 +12,37 @@
       "telemarketing",
       "flex-layout.row#1-desktop",
       "my-account-observer",
+      "flex-layout.row#seja-um-franqueado-header",
       "sticky-layout#2-desktop",
       "flex-layout.row#3-desktop"
     ]
   },
+
+  "flex-layout.row#seja-um-franqueado-header": {
+    "children": ["flex-layout.col#col-header-franqueados"],
+    "props": {
+      "fullWidth": false,
+      "blockClass": "franqueado-header-container"
+    }
+  },
+
+  "flex-layout.col#col-header-franqueados": {
+    "children": ["rich-text#franqueado-header-text"],
+    "props": {
+      "blockClass": "franqueado-header-col"
+    }
+  },
+
+  "rich-text#franqueado-header-text": {
+    "title": "Texto Seja um Franqueado no Header",
+    "props": {
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT",
+      "text": "<a href='https://www.mundoverde.com.br/seja-um-franqueado' >Seja um franqueado</a>",
+      "blockClass": "franqueado-header-text"
+    }
+  },
+
   "flex-layout.row#1-desktop": {
     "children": ["rich-text#tipbartop"],
     "props": {
@@ -42,11 +69,71 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#category-menu",
+      // "flex-layout.col#category-menu",
+      "menu#shopping-header-categoryMenu",
+      // "menu#store-selector",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#custom-menu-right"
     ]
   },
+
+  // HEADER -------------------------------------------------------------------
+
+  "menu#store-selector": {
+    "children": ["menu-item#store-shopping", "menu-item#store-market"],
+    "props": {
+      "blockClass": "store-selector-menu"
+    }
+  },
+
+  "menu-item#store-shopping": {
+    "props": {
+      "id": "store-selector-shopping",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "store-selector-shopping",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shopping",
+        "text": "Shopping"
+      },
+      "iconProps": {
+        "id": "shopping-topbar-icon",
+        "size": "25",
+        "viewBox": "7 5 14 14",
+        "activeClassName": "shopping-icon",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  "menu-item#store-market": {
+    "props": {
+      "id": "store-selector-market",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "store-selector-market",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Mercado",
+        "text": "Mercado"
+      },
+      "iconProps": {
+        "id": "market-topbar-icon",
+        "size": "25",
+        "viewBox": "0 5 15 5",
+        "activeClassName": "market-icon",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  // END HEADER ----------------------------------------------------------------
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -72,8 +159,8 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar",
-      "flex-layout.col#spacer",
       "login",
+      "flex-layout.col#spacer",
       "minicart.v2"
     ]
   },
@@ -178,17 +265,45 @@
   "login": {
     "props": {
       "showIconProfile": true,
-      "iconLabel": "Entre ou Cadastre-se "
+      "iconLabel": "Bem vindo :)",
+      "blockClass": "login-icon"
     }
   },
   "vtex.menu@2.x:menu#custom-menu-right": {
     "children": [
-      "menu-item#blackfriday-button",
-      "menu-item#seja-franqueado",
-      "menu-item#lojas",
+      // "menu-item#blackfriday-button",
+      // "menu-item#seja-franqueado",
+      "menu-item#lojas-new",
       "menu-item#blog"
     ]
   },
+
+  "menu-item#lojas-new": {
+    "props": {
+      "id": "menu-item-lojas",
+      "blockClass": ["delivery-button"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconPosition": "right",
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.mundoverde.com.br/nossas-lojas/",
+        "noFollow": false,
+        "tagTitle": "Lojas",
+        "text": "Lojas/Delivery"
+      },
+      "iconProps": {
+        "id": "delivery-icon",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "activeClassName": "delivery-button-icon",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheLeft": true
+    }
+  },
+
   "menu-item#blog": {
     "props": {
       "id": "menu-item-blog",

@@ -1,0 +1,71 @@
+{
+  // drawer alimentos
+  "menu-item#menu-item-alimentos": {
+    "props": {
+      "id": "headerMenuAlimentos",
+      "blockClass": "header-desktop-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": false,
+        "tagTitle": "Alimentos e Bebidas",
+        "text": "Alimentos e Bebidas"
+      }
+    },
+    "blocks": ["submenu#shopping-horizontal-alimentos"]
+  },
+
+  "submenu#shopping-horizontal-alimentos": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-horizontal-alimentos",
+      "flex-layout.row#shopping-desktop-drawer-menu-alimentos-img"
+    ],
+    "props": {
+      "blockClass": "departmentSubmenu-alimentos"
+    }
+  },
+
+  "flex-layout.row#shopping-desktop-drawer-menu-alimentos-img": {
+    "children": ["image#shopping-desktop-drawer-menu-alimentos-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+
+  "image#shopping-desktop-drawer-menu-alimentos-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-1nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#menu-horizontal-alimentos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Alimentos item 1",
+            "text": "Alimentos 1"
+          }
+        }
+      ]
+    }
+  }
+}

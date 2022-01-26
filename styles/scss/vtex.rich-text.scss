@@ -456,6 +456,24 @@
   color: initial;
   text-decoration: none;
 }
+
+.paragraph--franqueado-header-text {
+  margin: 2px 0;
+  font-family: 'Gotham';
+  font-weight: bold;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+
+  :first-child {
+    color: #008651;
+  }
+
+  &::before {
+    content: url('/arquivos/peopleGroupFranchise.svg');
+    margin-right: 8px;
+  }
+}
 //
 
 // Black Friday

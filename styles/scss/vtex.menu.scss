@@ -265,3 +265,318 @@
     }
   }
 }
+
+// NOVO MENU ====================================================
+// PRIMEIRA CAMADA ==============================================
+
+.styledLink--header-desktop-menu {
+  color: #008651 !important;
+
+  :hover {
+    color: #fff !important;
+  }
+}
+
+.menuContainerNav--all-departments-menu {
+  align-items: flex-start !important;
+}
+
+.menuContainerNav--marcas-menu {
+  align-items: flex-start !important;
+}
+
+.menuContainerNav--all-departments-submenu {
+  align-items: flex-start !important;
+}
+
+.menuContainerNav--marcas-submenu {
+  align-items: flex-start !important;
+}
+
+.styledLinkContent--all-departments-menu {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.styledLinkContent--marcas-menu {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.styledLinkContent--all-departments-submenu {
+  color: #fff;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.styledLinkContent--marcas-submenu {
+  color: #fff;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.styledLinkContent--header-desktop-menu {
+  font-family: 'Gotham';
+  font-weight: bold;
+}
+
+.styledLinkIcon--header-desktop-menu {
+  width: 15px;
+  height: 10px;
+  stroke: #333;
+  overflow: unset !important;
+}
+
+.styledLinkContainer--header-desktop-menu {
+  margin-top: 7px;
+  margin-right: 45px;
+  padding: 10px 8px 8px 8px !important;
+  height: 30px !important;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #008651;
+    color: #fff;
+  }
+}
+
+.menuItem--header-desktop-menu:hover .styledLinkContainer--header-desktop-menu {
+  background-color: #008651;
+  color: #fff;
+
+  & .styledLink--header-desktop-menu {
+    color: #fff !important;
+  }
+}
+
+.styledLinkContainer--header-menu-links {
+  margin-right: 60px;
+}
+
+// PRIMEIRA CAMADA ============================================== END
+// SEGUNDA CAMADA ===============================================
+
+.menuContainerNav--all-departments-menu {
+  min-width: 200px;
+}
+
+.menuContainerNav--marcas-menu {
+  min-width: 200px;
+}
+
+.menuContainerNav--all-departments-submenu {
+  min-width: 200px;
+}
+
+.menuContainerNav--marcas-submenu {
+  min-width: 200px;
+}
+
+.menuContainerNav--all-departments-submenu {
+  margin-top: 31px;
+}
+
+.menuContainerNav--marcas-submenu {
+  margin-top: 31px;
+}
+
+.menuItem--marcas-menu {
+  &:last-child {
+    margin-top: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+    background-color: #fff;
+
+    & .styledLinkContainer--marcas-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0 !important;
+
+      & .styledLinkContent--marcas-menu {
+        color: #008651;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.menuItem--marcas-submenu {
+  &:last-child {
+    margin-top: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+    background-color: #fff;
+
+    & .styledLinkContainer--marcas-submenu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0 !important;
+
+      & .styledLinkContent--marcas-submenu {
+        color: #008651;
+      }
+    }
+  }
+}
+
+.submenuWrapper--departmentSubmenu {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #008651;
+  color: #fff;
+  border: none;
+  padding-left: 10px;
+  left: -8px;
+  padding-top: 30px;
+  min-width: 550px;
+}
+
+.submenuWrapper--departmentSubmenu-alimentos {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #008651;
+  color: #fff;
+  border: none;
+  left: -8px;
+  padding-top: 30px;
+  min-width: 550px;
+}
+
+.styledLinkContent--submenu-desktop-shopping-alimentos,
+.styledLinkContent--submenu-desktop-shopping-suplementos,
+.styledLinkContent--submenu-desktop-shopping-outros,
+.styledLinkContent--submenu-desktop-shopping-ofertas,
+.styledLinkContent--submenu-desktop-shopping-marcas {
+  color: #fff;
+  font-family: 'Gotham';
+  align-items: center;
+  height: 28px;
+}
+
+.styledLinkContent--submenu-horizontal-desktop-shopping-alimentos,
+.styledLinkContent--submenu-horizontal-desktop-shopping-suplementos,
+.styledLinkContent--submenu-horizontal-desktop-shopping-outros,
+.styledLinkContent--submenu-horizontal-desktop-shopping-ofertas,
+.styledLinkContent--submenu-horizontal-desktop-shopping-marcas {
+  color: #fff;
+  font-family: 'Gotham';
+  align-items: center;
+  height: 28px;
+}
+
+.styledLinkContainer--submenu-desktop-shopping-alimentos,
+.styledLinkContainer--submenu-desktop-shopping-suplementos,
+.styledLinkContainer--submenu-desktop-shopping-outros,
+.styledLinkContainer--submenu-desktop-shopping-ofertas,
+.styledLinkContainer--submenu-desktop-shopping-marcas {
+  margin: 0px;
+  transition: all 0.1s;
+  :hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    background-color: #017446 !important;
+  }
+}
+
+.styledLinkContainer--submenu-horizontal-desktop-shopping-alimentos,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-suplementos,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-outros,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-ofertas,
+.styledLinkContainer--submenu-horizontal-desktop-shopping-marcas {
+  margin: 0px;
+}
+
+.menuItem--submenu-desktop-shopping-horizontal-alimentos {
+  margin-bottom: 8px;
+}
+
+.menuContainer--shopping-desktop-drawer-submenu {
+  margin-top: 35px;
+}
+
+// SEGUNDA CAMADA =============================================== END
+// TERCEIRA CAMADA ===============================================
+
+.submenuWrapper--shopping-desktop-drawer-submenu-container-alimentos,
+.submenuWrapper--shopping-desktop-drawer-submenu-container-suplementos,
+.submenuWrapper--shopping-desktop-drawer-submenu-container-outros,
+.submenuWrapper--shopping-desktop-drawer-submenu-container-ofertas,
+.submenuWrapper--shopping-desktop-drawer-submenu-container-marcas {
+  border-radius: 0px 0px 10px 0px;
+  background: #008651;
+  width: max-content;
+  border: none;
+  padding: 0;
+  clip-path: inset(-20px -20px -20px 0px);
+  min-height: 482px;
+}
+
+.submenuWrapper--shopping-desktop-drawer-submenu-container-alimentos {
+  left: 196px;
+  top: -66px;
+}
+
+.submenuWrapper--shopping-desktop-drawer-submenu-container-suplementos {
+  left: 196px;
+  top: -102px;
+}
+
+.submenuWrapper--shopping-desktop-drawer-submenu-container-outros {
+  left: 196px;
+  top: -138px;
+}
+
+.submenuWrapper--shopping-desktop-drawer-submenu-container-ofertas {
+  left: 196px;
+  top: -174px;
+}
+
+.submenuWrapper--shopping-desktop-drawer-submenu-container-marcas {
+  left: 196px;
+  top: -210px;
+}
+
+.styledLinkContent--shopping-desktop-drawer-submenu {
+  color: #fff;
+}
+
+.styledLinkContent--shopping-desktop-drawer-submenu-title {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.styledLinkContent--shopping-desktop-drawer-submenu-items {
+  color: #fff;
+  font-weight: bold;
+}
+
+.styledLinkContainer--shopping-desktop-drawer-submenu-title {
+  padding-top: 0 !important;
+}
+
+// TERCEIRA CAMADA =============================================== END
+
+.styledLinkContent--delivery-button {
+  display: flex;
+  align-items: center;
+  font-family: 'Gotham';
+  color: #008651;
+  font-weight: bold;
+}
+
+.styledLinkIcon--delivery-button {
+  display: flex;
+  align-items: center;
+  :first-child {
+    margin-top: 8px;
+    width: 40px;
+    height: 29.51px;
+  }
+}

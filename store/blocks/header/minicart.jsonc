@@ -2,8 +2,17 @@
   "minicart.v2": {
     "children": ["minicart-base-content"],
     "props": {
+      "MinicartIcon": "icon-cart#minicart-icon",
       "variation": "popup",
       "openOnHover": true
+    }
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "size": 24,
+      "id": "new-minicart",
+      "viewBox": "0 0 24 24",
+      "blockClass": "new-minicart"
     }
   },
   "minicart-base-content": {
@@ -65,7 +74,7 @@
   "flex-layout.row#product-content": {
     "children": [
       "product-list-image",
-      "flex-layout.col#product-description", 
+      "flex-layout.col#product-description",
       "flex-layout.col#product-option"
     ],
     "props": {

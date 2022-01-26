@@ -1,0 +1,297 @@
+{
+  /*Submenu de ALIMENTOS E BEBIDAS desktop*/
+  "submenu#shopping-desktop-drawer-submenu-auto": {
+    "children": [
+      "flex-layout.row#shopping-desktop-drawer-submenu-auto",
+      "flex-layout.row#shopping-desktop-drawer-submenu-auto-img"
+    ],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-container-alimentos"
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-auto": {
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-alimentos"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-content",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-auto-img": {
+    "children": ["image#shopping-desktop-drawer-submenu-auto-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+  "image#shopping-desktop-drawer-submenu-auto-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/550d769d-8a73-4099-8cc5-146abac5cd41___f485a3092d3f2a8a13241dee1bf15362.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-3nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#submenu-horizontal-alimentos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Alimentos item 1",
+            "text": "Alimentos 1"
+          }
+        }
+      ]
+    }
+  },
+  /*Submenu de ALIMENTOS E BEBIDAS - END*/
+
+  /*Submenu de SUPLEMENTOS*/
+  "submenu#shopping-desktop-drawer-submenu-suplementos": {
+    "children": [
+      "flex-layout.row#shopping-desktop-drawer-submenu-suplementos",
+      "flex-layout.row#shopping-desktop-drawer-submenu-suplementos-img"
+    ],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-container-suplementos"
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-suplementos": {
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-suplementos"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-content",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-suplementos-img": {
+    "children": ["image#shopping-desktop-drawer-submenu-suplementos-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+  "image#shopping-desktop-drawer-submenu-suplementos-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-3nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#submenu-horizontal-suplementos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Suplementos item 1",
+            "text": "Suplementos 1"
+          }
+        }
+      ]
+    }
+  },
+
+  /*Submenu de SUPLEMENTOS - END*/
+
+  /*Submenu de OUTROS*/
+  "submenu#shopping-desktop-drawer-submenu-outros": {
+    "children": [
+      "flex-layout.row#shopping-desktop-drawer-submenu-outros",
+      "flex-layout.row#shopping-desktop-drawer-submenu-outros-img"
+    ],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-container-outros"
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-outros": {
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-outros"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-content",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-outros-img": {
+    "children": ["image#shopping-desktop-drawer-submenu-outros-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+  "image#shopping-desktop-drawer-submenu-outros-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-3nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#submenu-horizontal-outros": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Outros item 1",
+            "text": "Outros 1"
+          }
+        }
+      ]
+    }
+  },
+  /*Submenu de OUTROS - END*/
+
+  /*Submenu de OFERTAS*/
+  "submenu#shopping-desktop-drawer-submenu-ofertas": {
+    "children": [
+      "flex-layout.row#shopping-desktop-drawer-submenu-ofertas",
+      "flex-layout.row#shopping-desktop-drawer-submenu-ofertas-img"
+    ],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-container-ofertas"
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-ofertas": {
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-ofertas"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-content",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-ofertas-img": {
+    "children": ["image#shopping-desktop-drawer-submenu-ofertas-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+  "image#shopping-desktop-drawer-submenu-ofertas-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-3nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#submenu-horizontal-ofertas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "all-departments-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ofertas item 1",
+            "text": "Ofertas 1"
+          }
+        }
+      ]
+    }
+  },
+  /*Submenu 4 - OFERTAS - END*/
+
+  /*Submenu de MARCAS*/
+  "submenu#shopping-desktop-drawer-submenu-marcas": {
+    "children": [
+      "flex-layout.row#shopping-desktop-drawer-submenu-marcas",
+      "flex-layout.row#shopping-desktop-drawer-submenu-marcas-img"
+    ],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-container-marcas"
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-marcas": {
+    "children": ["vtex.menu@2.x:menu#submenu-horizontal-marcas"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-content",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#shopping-desktop-drawer-submenu-marcas-img": {
+    "children": ["image#shopping-desktop-drawer-submenu-marcas-img"],
+    "props": {
+      "blockClass": "shopping-desktop-drawer-submenu-img",
+      "fullWidth": true
+    }
+  },
+  "image#shopping-desktop-drawer-submenu-marcas-img": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/25820215-df88-4fd5-a915-a9d34bbd540a___2abb6b680d69df2a6e48ae32fb547d34.png",
+      "link": {
+        "url": "/#"
+      },
+      "blockClass": "submenu-3nivel-image"
+    },
+    "title": "Banner"
+  },
+
+  "vtex.menu@2.x:menu#submenu-horizontal-marcas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "marcas-submenu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Marcas item 1",
+            "text": "Marcas 1"
+          }
+        }
+      ]
+    }
+  }
+  /*Submenu 5 - MARCAS - END*/
+}
