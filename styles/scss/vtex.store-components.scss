@@ -831,7 +831,7 @@
   &--footer {
     &-methods {
       display: block;
-      height: max-content;
+      // height: max-content;
       max-width: 45px;
 
       @media (min-width: 1025px) {
