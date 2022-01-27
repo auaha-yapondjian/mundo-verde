@@ -1,0 +1,24 @@
+{
+  "store.custom#lancheira-saudavel": {
+    "blocks": [
+      "search-result-layout.customQuery#lancheira-saudavel",
+      "flex-layout.row#seo-content"
+    ]
+  },
+
+  "search-result-layout.customQuery#lancheira-saudavel": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "queryField": "2255",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
+    ]
+  }
+}

@@ -112,5 +112,8 @@
   },
   "store.custom#lojas-participantes": {
     "path": "/lojas-participantes-semana-do-cliente"
+  },
+  "store.custom#lancheira-saudavel": {
+    "path": "/lancheira-saudavel"
   }
 }
