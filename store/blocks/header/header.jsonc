@@ -26,6 +26,21 @@
     }
   },
 
+  "flex-layout.col#image-col-header-franqueados": {
+    "children": ["rich-text#franqueado-header-text"],
+    "props": {
+      "blockClass": "franqueado-header-col"
+    }
+  },
+
+  "image#footer-methods-visa": {
+    "props": {
+      "src": "/arquivos/visa-logo-gray.png",
+      "blockClass": ["footer-methods", "footer-methods-visa"]
+    },
+    "title": "Visa"
+  },
+
   "flex-layout.col#col-header-franqueados": {
     "children": ["rich-text#franqueado-header-text"],
     "props": {
