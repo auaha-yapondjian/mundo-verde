@@ -2151,7 +2151,7 @@
 }
 
 .flexRow--franqueado-header-container {
-  background-color: #eeeeee;
+  background-color: #008651;
 }
 
 // NOVO MENU ===========================================================
@@ -2175,4 +2175,8 @@
   & :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     max-width: 1280px;
   }
+}
+
+.flexRow--franqueado-header-container {
+  height: 45px;
 }

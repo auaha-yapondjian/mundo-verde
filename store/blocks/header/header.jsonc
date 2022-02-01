@@ -19,26 +19,15 @@
   },
 
   "flex-layout.row#seja-um-franqueado-header": {
-    "children": ["flex-layout.col#col-header-franqueados"],
+    "children": [
+      "flex-layout.col#image-col1-header-franqueados",
+      "flex-layout.col#image-col2-header-franqueados",
+      "flex-layout.col#col-header-franqueados"
+    ],
     "props": {
       "fullWidth": false,
       "blockClass": "franqueado-header-container"
     }
-  },
-
-  "flex-layout.col#image-col-header-franqueados": {
-    "children": ["rich-text#franqueado-header-text"],
-    "props": {
-      "blockClass": "franqueado-header-col"
-    }
-  },
-
-  "image#footer-methods-visa": {
-    "props": {
-      "src": "/arquivos/visa-logo-gray.png",
-      "blockClass": ["footer-methods", "footer-methods-visa"]
-    },
-    "title": "Visa"
   },
 
   "flex-layout.col#col-header-franqueados": {
@@ -46,6 +35,36 @@
     "props": {
       "blockClass": "franqueado-header-col"
     }
+  },
+
+  "flex-layout.col#image-col1-header-franqueados": {
+    "children": ["image#image-1-header-franqueados"],
+    "props": {
+      "blockClass": []
+    }
+  },
+
+  "image#image-1-header-franqueados": {
+    "props": {
+      "src": "/arquivos/retangulo-amarelo.png",
+      "blockClass": []
+    },
+    "title": "Imagem 1"
+  },
+
+  "flex-layout.col#image-col2-header-franqueados": {
+    "children": ["image#image-2-header-franqueados"],
+    "props": {
+      "blockClass": []
+    }
+  },
+
+  "image#image-2-header-franqueados": {
+    "props": {
+      "src": "/arquivos/retangulo-goiaba.png",
+      "blockClass": []
+    },
+    "title": "Imagem 2"
   },
 
   "rich-text#franqueado-header-text": {
