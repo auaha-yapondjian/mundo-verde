@@ -1,14 +1,14 @@
 /* /files/checkout5-custom.css */
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap');
 
 *,
 input,
 button,
 select,
 textarea {
-  font-family: "lato";
+  font-family: 'lato';
 }
 
 body {
@@ -71,7 +71,7 @@ body {
 h1 {
   color: #000;
   font-size: 28px;
-  font-family: "lato";
+  font-family: 'lato';
 }
 
 h1 small {
@@ -113,7 +113,7 @@ p.link.link-gift-card a {
 }
 
 #pitbar a {
-  font-family: "lato";
+  font-family: 'lato';
   color: #fff;
   text-decoration: none;
   font-size: 9px;
@@ -274,7 +274,7 @@ span.accordion-toggle.collapsed.accordion-toggle-active i {
   color: #fff;
   font-size: 14px;
   margin: 0;
-  font-family: "lato";
+  font-family: 'lato';
 }
 
 .footer .container .logovtex {
@@ -285,7 +285,7 @@ span.accordion-toggle.collapsed.accordion-toggle-active i {
 .footer .container p {
   color: #fff;
   font-size: 14px;
-  font-family: "lato";
+  font-family: 'lato';
 }
 
 .footer .container ul {
@@ -324,8 +324,8 @@ span.accordion-toggle.collapsed.accordion-toggle-active i {
   display: none;
 }
 
-h1[data-i18n="shoppingCart"]:before {
-  content: "Carrinho de Compras";
+h1[data-i18n='shoppingCart']:before {
+  content: 'Carrinho de Compras';
   font-size: 28px;
 }
 
@@ -343,7 +343,7 @@ h1#cart-title {
 
 .cart-template.active .cart .cart-items thead tr .product {
   width: 30%;
-  font-family: "lato";
+  font-family: 'lato';
 }
 
 .cart-template.active .cart .cart-items thead tr th {
@@ -357,7 +357,7 @@ h1#cart-title {
   tr
   th:not(.item-remove):not(.quantity-price):after {
   background: rgba(85, 85, 85, 0.2);
-  content: "";
+  content: '';
   width: 1px;
   height: 25px;
   display: inline-block;
@@ -380,7 +380,7 @@ h1#cart-title {
   font-size: 1.3em;
   color: #333333;
   text-transform: capitalize;
-  font-family: "lato";
+  font-family: 'lato';
 }
 
 .cart-template.active .cart .cart-items tbody .quantity,
@@ -430,7 +430,7 @@ h1#cart-title {
   tbody
   .item-quantity-change
   .icon-minus-sign:before {
-  content: "";
+  content: '';
   font-size: 12px;
 }
 
@@ -440,7 +440,7 @@ h1#cart-title {
   tbody
   .item-quantity-change
   .icon-plus-sign:before {
-  content: "";
+  content: '';
   font-size: 12px;
 }
 
@@ -740,9 +740,9 @@ a {
 
 #orderform-minicart-to-cart:before,
 #orderform-to-cart:before {
-  content: "";
+  content: '';
   margin-right: 4px;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
@@ -808,7 +808,7 @@ a {
 #address-toggle-0 + label:before,
 #opt-in-newsletter + span:before {
   margin-bottom: -4px;
-  content: "";
+  content: '';
   width: 18px;
   height: 18px;
   border-radius: 100%;
@@ -1387,7 +1387,7 @@ h1 {
   line-height: 1 !important;
 }
 #cart-coupon-add::before {
-  content: "Aplicar";
+  content: 'Aplicar';
   font-size: 13px;
   margin: 0 10px;
 }
