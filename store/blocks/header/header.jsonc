@@ -37,10 +37,20 @@
     }
   },
 
+  "rich-text#franqueado-header-text": {
+    "title": "Texto Seja um Franqueado no Header",
+    "props": {
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT",
+      "text": "<a href='https://www.mundoverde.com.br/seja-um-franqueado' >Seja um franqueado</a>",
+      "blockClass": "franqueado-header-text"
+    }
+  },
+
   "flex-layout.col#image-col1-header-franqueados": {
     "children": ["image#image-1-header-franqueados"],
     "props": {
-      "blockClass": []
+      "blockClass": "first-image-franchisebar"
     }
   },
 
@@ -55,26 +65,15 @@
   "flex-layout.col#image-col2-header-franqueados": {
     "children": ["image#image-2-header-franqueados"],
     "props": {
-      "blockClass": []
+      "blockClass": "second-image-franchisebar"
     }
   },
 
   "image#image-2-header-franqueados": {
     "props": {
-      "src": "/arquivos/retangulo-goiaba.png",
-      "blockClass": []
+      "src": "/arquivos/retangulo-goiaba.png"
     },
     "title": "Imagem 2"
-  },
-
-  "rich-text#franqueado-header-text": {
-    "title": "Texto Seja um Franqueado no Header",
-    "props": {
-      "textAlignment": "RIGHT",
-      "textPosition": "RIGHT",
-      "text": "<a href='https://www.mundoverde.com.br/seja-um-franqueado' >Seja um franqueado</a>",
-      "blockClass": "franqueado-header-text"
-    }
   },
 
   "flex-layout.row#1-desktop": {
