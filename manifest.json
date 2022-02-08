@@ -1,13 +1,14 @@
 {
   "vendor": "mundoverde",
   "name": "store-theme",
-  "version": "3.111.33",
+  "version": "3.111.35",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
     "docs": "0.x",
-    "react": "3.x"
+    "react": "3.x",
+    "checkout-ui-custom": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
