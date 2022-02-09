@@ -115,5 +115,8 @@
   },
   "store.custom#lancheira-saudavel": {
     "path": "/lancheira-saudavel"
+  },
+  "store.custom#sobre-nos": {
+    "path": "/sobre-nos"
   }
 }

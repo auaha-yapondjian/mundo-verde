@@ -1,0 +1,247 @@
+:global(.first-row) {
+  position: relative;
+  height: 500px;
+  overflow-x: clip;
+}
+
+@media (max-width: 425px) {
+  :global(.first-row) {
+    position: relative;
+    height: 370px;
+  }
+}
+
+:global(.imagem-banner-first-sobrenos) {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center -380px;
+}
+
+@media (max-width: 425px) {
+  :global(.imagem-banner-first-sobrenos) {
+    object-position: 0 0;
+  }
+}
+
+:global(.imagem-absolute-first-banner) {
+  position: absolute;
+  bottom: -560px;
+  right: 110px;
+  width: 807px;
+}
+
+@media (max-width: 1440px) {
+  :global(.imagem-absolute-first-banner) {
+    bottom: -426px;
+    right: 66px;
+    width: 620px;
+  }
+}
+
+@media (max-width: 1380px) {
+  :global(.imagem-absolute-first-banner) {
+    bottom: -349px;
+    right: 77px;
+    width: 510px;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.imagem-absolute-first-banner) {
+    bottom: -304px;
+    right: -45px;
+    width: 615px;
+  }
+}
+
+@media (max-width: 425px) {
+  :global(.imagem-absolute-first-banner) {
+    bottom: -249px;
+    width: 360px;
+  }
+}
+
+:global(.second-row) {
+  height: 599px;
+}
+
+@media (max-width: 1380px) {
+  :global(.second-row) {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.second-row) {
+    height: 660px;
+  }
+}
+
+@media (max-width: 425px) {
+  :global(.second-row) {
+    height: 470px;
+  }
+}
+
+:global(.second-row) > div {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  :global(.second-row) > div {
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 28px;
+  }
+}
+
+:global(.second-row) > div > h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 105.8%;
+  color: #158957;
+}
+
+@media (max-width: 425px) {
+  :global(.second-row) > div > h1 {
+    font-size: 25px;
+  }
+}
+
+:global(.second-row) > div > p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 134.8%;
+  color: #a8a8a8;
+  max-width: 50%;
+}
+
+@media (max-width: 1380px) {
+  :global(.second-row) > div > p {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.second-row) > div > p {
+    max-width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  :global(.second-row) > div > p {
+    font-size: 12px;
+  }
+}
+
+/* -------------------- Carrossel ------------------------------ */
+
+:global(.third-row-sobrenos) {
+  background-color: #f3f3f3;
+}
+
+:global(.third-row-sobrenos-content) {
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  height: 549px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+:global(.third-row-sobrenos-content) > h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 134.8%;
+  color: #158957;
+}
+
+:global(.third-row-sobrenos-content) > p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #158957;
+}
+
+:global(.sobrenos-item-carrossel) {
+  background-color: #f3f3f3;
+  height: 237px;
+  width: 600px;
+  background-color: #2da679;
+  background: #2da679;
+  border-radius: 40px 0px;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+:global(.sobrenos-item-carrossel)::before {
+  background: url('https://mundoverde.vtexassets.com/arquivos/sobrenos-carrossel-left-icon.png');
+  content: '';
+}
+
+:global(.sobrenos-item-carrossel) > p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 134.8%;
+  color: #ffffff;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+:global(.sobrenos-item-carrossel) > h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 134.8%;
+  color: #ffffff;
+}
+
+:global(.mundoverde-store-theme-3-x-sliderLeftArrow) {
+  left: unset;
+  right: 32px;
+  top: -95px;
+  color: #158957;
+}
+
+:global(.mundoverde-store-theme-3-x-sliderLeftArrow):disabled {
+  color: #69c58d;
+}
+
+:global(.mundoverde-store-theme-3-x-sliderRightArrow) {
+  top: -95px;
+  color: #158957;
+}
+
+:global(.mundoverde-store-theme-3-x-sliderRightArrow):disabled {
+  color: #69c58d;
+}
+
+:global(.mundoverde-store-theme-3-x-slideChildrenContainer) {
+  background: url('https://mundoverde.vtexassets.com/arquivos/sobrenos-carrossel-left-icon.png')
+    no-repeat;
+  content: '';
+}
