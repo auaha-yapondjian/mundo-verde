@@ -20,8 +20,8 @@
 
   "flex-layout.row#seja-um-franqueado-header": {
     "children": [
-      "flex-layout.col#image-col1-header-franqueados",
-      "flex-layout.col#image-col2-header-franqueados",
+      "flex-layout.col#firstlink-col1-header-franqueados",
+      "flex-layout.col#secondlink-col1-header-franqueados",
       "flex-layout.col#col-header-franqueados"
     ],
     "props": {
@@ -47,33 +47,38 @@
     }
   },
 
-  "flex-layout.col#image-col1-header-franqueados": {
-    "children": ["image#image-1-header-franqueados"],
+  "flex-layout.col#firstlink-col1-header-franqueados": {
+    "children": ["rich-text#firstlink-franqueado-header-text"],
     "props": {
       "blockClass": "first-image-franchisebar"
     }
   },
 
-  "image#image-1-header-franqueados": {
+  "rich-text#firstlink-franqueado-header-text": {
+    "title": "Primeiro Link",
     "props": {
-      "src": "/arquivos/retangulo-amarelo.png",
-      "blockClass": []
-    },
-    "title": "Imagem 1"
-  },
-
-  "flex-layout.col#image-col2-header-franqueados": {
-    "children": ["image#image-2-header-franqueados"],
-    "props": {
-      "blockClass": "second-image-franchisebar"
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT",
+      "text": "<a href='https://www.mundoverde.com.br/seja-um-franqueado' >Primeiro Link</a>",
+      "blockClass": "text-link-franqueado-header"
     }
   },
 
-  "image#image-2-header-franqueados": {
+  "flex-layout.col#secondlink-col1-header-franqueados": {
+    "children": ["rich-text#secondlink-franqueado-header-text"],
     "props": {
-      "src": "/arquivos/retangulo-goiaba.png"
-    },
-    "title": "Imagem 2"
+      "blockClass": "first-image-franchisebar"
+    }
+  },
+
+  "rich-text#secondlink-franqueado-header-text": {
+    "title": "Segundo Link",
+    "props": {
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT",
+      "text": "<a href='https://www.mundoverde.com.br/seja-um-franqueado' >Segundo Link</a>",
+      "blockClass": "text-link-franqueado-header"
+    }
   },
 
   "flex-layout.row#1-desktop": {

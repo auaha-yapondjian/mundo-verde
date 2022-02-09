@@ -470,8 +470,9 @@
   }
 
   &::before {
-    content: url('/arquivos/peopleGroupFranchise.svg');
-    margin-right: 8px;
+    content: url('/arquivos/franqueado-icon-white1.png');
+    margin-right: 10px;
+    padding-top: 7px;
   }
 }
 //
@@ -1526,5 +1527,14 @@
         text-decoration: none;
       }
     }
+  }
+}
+
+.paragraph--text-link-franqueado-header {
+  margin: 0;
+  :first-child {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gotham', sans-serif;
   }
 }
