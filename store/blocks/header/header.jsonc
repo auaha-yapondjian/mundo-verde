@@ -240,6 +240,7 @@
     "children": [
       "telemarketing",
       "flex-layout.row#1-desktop",
+      "flex-layout.row#seja-um-franqueado-header",
       "my-account-observer",
       "sticky-layout#1-mobile"
     ],

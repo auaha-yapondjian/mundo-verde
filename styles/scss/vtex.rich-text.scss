@@ -475,6 +475,20 @@
     padding-top: 7px;
   }
 }
+
+@media (max-width: 425px) {
+  .paragraph--franqueado-header-text {
+    font-size: 12px;
+
+    :first-child {
+      text-align: center;
+      max-width: 70px;
+    }
+    &::before {
+      margin-right: 3px;
+    }
+  }
+}
 //
 
 // Black Friday
@@ -1536,5 +1550,13 @@
     color: #fff;
     text-decoration: none;
     font-family: 'Gotham', sans-serif;
+  }
+}
+
+@media (max-width: 425px) {
+  .paragraph--text-link-franqueado-header {
+    font-size: 10px;
+    :first-child {
+    }
   }
 }
