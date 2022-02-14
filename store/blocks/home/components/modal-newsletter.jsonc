@@ -9,10 +9,7 @@
     "props": {
       "blockClass": "modal-form-content"
     },
-    "children": [
-      "flex-layout.row#form-popup",
-      "modal-header#form-news"
-    ]
+    "children": ["flex-layout.row#form-popup", "modal-header#form-news"]
   },
   "modal-header#form-news": {
     "props": {
@@ -87,11 +84,12 @@
   },
   "form-submit#popup": {
     "props": {
-      "label": "Eu quero!"    }
+      "label": "Eu quero!"
+    }
   },
   "rich-text#text-form-bottom": {
     "props": {
-      "text": "*Válido por 10 dias para comprar acima de R$ 99,00 \n Uma utilização por CPF",
+      "text": "*Válido por 10 dias para compras acima de R$ 99,00 \n  vendidas e entregues pelo site Mundo Verde \n (não aplicável em pedidos entregues ou retirados em loja física). \n Uma utilização por CPF.",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "text-bottom-form"

@@ -10,8 +10,8 @@
       "flex-layout.row#shelves-home",
       "flex-layout.row#navigation-history",
       "flex-layout.row#promotions-bottom",
-      "flex-layout.row#newsletter"
-      // "flex-layout.row#modal-news"
+      "flex-layout.row#newsletter",
+      "flex-layout.row#modal-news"
     ]
   },
 
