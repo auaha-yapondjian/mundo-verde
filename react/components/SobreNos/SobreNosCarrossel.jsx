@@ -7,41 +7,40 @@ import './styles.css'
 function SobreNosCarrossel() {
   const [rightButtonIsHidden, setRightButtonIsHidden] = useState(false)
   const [leftButtonIsHidden, setLeftButtonIsHidden] = useState(true)
+
   useEffect(() => {
+    const arrowButton = document.querySelectorAll(
+      '.mundoverde-store-theme-3-x-sliderArrows'
+    )
+
+    const leftButton = document.querySelector(
+      '.mundoverde-store-theme-3-x-sliderLeftArrow'
+    )
+
     const rightButton = document.querySelector(
       '.mundoverde-store-theme-3-x-sliderRightArrow'
     )
 
-    rightButton.addEventListener('click', () => {
-      setTimeout(() => {
-        console.log('RIGHT BUTTON: ', rightButton.disabled)
-        if (rightButton.disabled) {
-          setRightButtonIsHidden(true)
-        }
-      }, 300)
-    })
+    arrowButton.forEach(item =>
+      item.addEventListener('click', () => {
+        console.log('CLICK: ', leftButtonIsHidden)
+        setTimeout(() => {
+          setRightButtonIsHidden(rightButton.disabled)
+          setLeftButtonIsHidden(leftButton.disabled)
+        }, 300)
+      })
+    )
   }, [])
 
-  useEffect(() => {
-    const leftButton = document.querySelector(
-      '.mundoverde-store-theme-3-x-sliderLeftArrow'
-    )
-    leftButton.addEventListener('click', () => {
-      setTimeout(() => {
-        console.log('LEFT BUTTON: ', leftButton.disabled)
-        if (leftButton.disabled) {
-          setLeftButtonIsHidden(true)
-        }
-      }, 300)
-    })
-  }, [])
+  console.log('STATE RIGHT: ', rightButtonIsHidden)
+  console.log('STATE LEFT: ', leftButtonIsHidden)
 
   return (
     <div className="third-row-sobrenos">
       <div
-        // className={leftButtonIsHidden ? 'is-hidden' : 'left-shadow-sobrenos'}
-        className={leftButtonIsHidden ? 'is-hidden' : 'left-shadow-sobrenos'}
-        // className="left-shadow-sobrenos"
+        className={
+          leftButtonIsHidden ? 'left-is-hidden' : 'left-shadow-sobrenos'
+        }
       ></div>
       <div className="third-row-sobrenos-content">
         <h1>Nossa História</h1>

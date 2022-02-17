@@ -2,18 +2,11 @@ import React from 'react'
 
 import './styles.css'
 
-function SobreNosBanner() {
+function SobreNosBanner({ textBanner }) {
   return (
     <section className="container-banner-sobrenos">
       <div className="first-row">
-        <p>
-          Este é o<br />
-          <strong>
-            nosso
-            <br />
-          </strong>
-          mundo
-        </p>
+        <p>{textBanner}</p>
         <img
           src="https://mundoverde.vtexassets.com/arquivos/banner-sobrenos-mobile2.png"
           alt="Banner Sobre Nos"
