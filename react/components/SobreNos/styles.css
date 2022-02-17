@@ -11,6 +11,49 @@
   }
 }
 
+:global(.first-row) > p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 63px;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 300px;
+}
+
+@media (max-width: 1440px) {
+  :global(.first-row) > p {
+    margin-left: 145px;
+  }
+}
+
+@media (max-width: 1280px) {
+  :global(.first-row) > p {
+    margin-left: 100px;
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.first-row) > p {
+    font-size: 54px;
+    line-height: 37px;
+  }
+}
+
+@media (max-width: 425px) {
+  :global(.first-row) > p {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  :global(.first-row) > p {
+    margin-left: 20px;
+  }
+}
+
 :global(.imagem-banner-first-sobrenos) {
   height: 100%;
   width: 100%;
@@ -151,6 +194,7 @@
 
 :global(.third-row-sobrenos) {
   background-color: #f3f3f3;
+  position: relative;
 }
 
 :global(.third-row-sobrenos-content) {
@@ -170,6 +214,14 @@
   font-size: 40px;
   line-height: 134.8%;
   color: #158957;
+  z-index: 1;
+  width: max-content;
+}
+
+@media (max-width: 1280px) {
+  :global(.third-row-sobrenos-content) > h1 {
+    margin-left: 20px;
+  }
 }
 
 :global(.third-row-sobrenos-content) > p {
@@ -180,12 +232,33 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #158957;
+  position: relative;
+  margin-left: 25px;
+  z-index: 1;
+}
+
+@media (max-width: 1280px) {
+  :global(.third-row-sobrenos-content) > p {
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+:global(.third-row-sobrenos-content) > p::before {
+  content: '';
+  background: url('https://mundoverde.vtexassets.com/arquivos/sobrenos-arrow-2.png')
+    no-repeat center;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: -25px;
 }
 
 :global(.sobrenos-item-carrossel) {
   background-color: #f3f3f3;
   height: 237px;
-  width: 600px;
+  width: 540px;
   background-color: #2da679;
   background: #2da679;
   border-radius: 40px 0px;
@@ -193,11 +266,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  :global(.sobrenos-item-carrossel) {
+    margin: 0 20px;
+  }
 }
 
 :global(.sobrenos-item-carrossel)::before {
   background: url('https://mundoverde.vtexassets.com/arquivos/sobrenos-carrossel-left-icon.png');
   content: '';
+  position: absolute;
+  width: 39px;
 }
 
 :global(.sobrenos-item-carrossel) > p {
@@ -209,6 +291,13 @@
   color: #ffffff;
   word-wrap: break-word;
   margin: 0;
+}
+
+@media (max-width: 425px) {
+  :global(.sobrenos-item-carrossel) > p {
+    text-align: center;
+    padding-bottom: 25px;
+  }
 }
 
 :global(.sobrenos-item-carrossel) > h1 {
@@ -223,8 +312,9 @@
 :global(.mundoverde-store-theme-3-x-sliderLeftArrow) {
   left: unset;
   right: 32px;
-  top: -95px;
+  top: -110px;
   color: #158957;
+  z-index: 9;
 }
 
 :global(.mundoverde-store-theme-3-x-sliderLeftArrow):disabled {
@@ -232,16 +322,133 @@
 }
 
 :global(.mundoverde-store-theme-3-x-sliderRightArrow) {
-  top: -95px;
+  top: -110px;
   color: #158957;
+  z-index: 9;
 }
 
 :global(.mundoverde-store-theme-3-x-sliderRightArrow):disabled {
   color: #69c58d;
 }
 
-:global(.mundoverde-store-theme-3-x-slideChildrenContainer) {
-  background: url('https://mundoverde.vtexassets.com/arquivos/sobrenos-carrossel-left-icon.png')
-    no-repeat;
-  content: '';
+/* -------------------- Images ------------------------------ */
+
+/* :global(.third-row-sobrenos) {
+  width: 100%;
+} */
+
+:global(.fourth-row-sobrenos-content) {
+  margin: 0 auto;
+  min-height: 600px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+:global(.fourth-row-sobrenos-content) > h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 105.8%;
+  color: #158957;
+}
+
+@media (max-width: 1280px) {
+  :global(.fourth-row-sobrenos-content) > h1 {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  :global(.fourth-row-sobrenos-content) > h1 {
+    margin: 0 auto;
+    width: 241px;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+}
+
+:global(.images-sobrenos-content) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+:global(.images-sobrenos-content) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1280px) {
+  :global(.images-sobrenos-content) {
+    margin: 0 20px;
+  }
+}
+
+:global(.images-sobrenos-content) > img {
+  margin: 20px;
+  width: 166px;
+}
+
+@media (max-width: 425px) {
+  :global(.images-sobrenos-content) > img {
+    margin: 0 0 20px 0;
+    width: 100px;
+  }
+}
+
+:global(.traco-left) {
+  position: absolute;
+  left: -51px;
+}
+
+:global(.traco-right) {
+  position: absolute;
+  right: -50px;
+}
+
+:global(.left-shadow-sobrenos) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 549px;
+  width: 170px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.95) 72.68%,
+    rgba(255, 255, 255, 0) 86.01%
+  );
+}
+
+:global(.right-shadow-sobrenos) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 549px;
+  width: 170px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.95) 72.68%,
+    rgba(255, 255, 255, 0) 86.01%
+  );
+  transform: rotate(180deg);
+  transition: right 0.5s;
+}
+
+:global(.right-is-hidden) {
+  right: -170px;
 }

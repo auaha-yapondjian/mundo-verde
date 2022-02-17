@@ -6,6 +6,14 @@ function SobreNosBanner() {
   return (
     <section className="container-banner-sobrenos">
       <div className="first-row">
+        <p>
+          Este é o<br />
+          <strong>
+            nosso
+            <br />
+          </strong>
+          mundo
+        </p>
         <img
           src="https://mundoverde.vtexassets.com/arquivos/banner-sobrenos-mobile2.png"
           alt="Banner Sobre Nos"

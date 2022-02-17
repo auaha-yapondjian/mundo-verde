@@ -1,6 +1,7 @@
 import React from 'react'
 import SobreNosBanner from './SobreNosBanner'
 import SobreNosCarrossel from './SobreNosCarrossel'
+import SobreNosImages from './SobreNosImages'
 
 // import { Container } from './styles';
 
@@ -9,6 +10,7 @@ function SobreNos() {
     <>
       <SobreNosBanner />
       <SobreNosCarrossel />
+      <SobreNosImages />
     </>
   )
 }
