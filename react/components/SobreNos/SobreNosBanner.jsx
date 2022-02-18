@@ -1,14 +1,29 @@
 import React from 'react'
 
+import { index as RichText } from 'vtex.rich-text'
+
 import './styles.css'
 
-function SobreNosBanner({ textBanner }) {
+function SobreNosBanner({
+  textBanner,
+  imageBanner,
+  titleSecondBanner,
+  textSecondBanner,
+}) {
   return (
     <section className="container-banner-sobrenos">
       <div className="first-row">
-        <p>{textBanner}</p>
+        <p>
+          Este é o<br />
+          <strong>
+            nosso
+            <br />
+          </strong>
+          mundo
+        </p>
+        {/* <RichText text={textBanner} /> */}
         <img
-          src="https://mundoverde.vtexassets.com/arquivos/banner-sobrenos-mobile2.png"
+          src={imageBanner}
           alt="Banner Sobre Nos"
           className="imagem-banner-first-sobrenos"
         />
@@ -20,15 +35,8 @@ function SobreNosBanner({ textBanner }) {
       </div>
       <div className="second-row">
         <div>
-          <h1>Você mais saudável</h1>
-          <p>
-            A gente pode provar que com saúde tudo é possível e mais gostoso. O
-            Mundo Verde é uma marca centrada no bem-estar do todo: pessoas,
-            natureza e economia. Afinal, está tudo conectado. Todos os passos
-            são dados seguindo o compromisso de mostrar que uma vida saudável,
-            prazerosa e com um mundo inteiro de opções para cada estilo existe
-            por e pela natureza!
-          </p>
+          <h1>{titleSecondBanner}</h1>
+          <p>{textSecondBanner}</p>
         </div>
       </div>
     </section>

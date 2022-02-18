@@ -4,7 +4,17 @@ import { SliderLayout } from 'vtex.slider-layout'
 
 import './styles.css'
 
-function SobreNosCarrossel() {
+function SobreNosCarrossel({
+  titleOfCarroussel,
+  carrosselItemTitle1,
+  carrosselItemText1,
+  carrosselItemTitle2,
+  carrosselItemText2,
+  carrosselItemTitle3,
+  carrosselItemText3,
+  carrosselItemTitle4,
+  carrosselItemText4,
+}) {
   const [rightButtonIsHidden, setRightButtonIsHidden] = useState(false)
   const [leftButtonIsHidden, setLeftButtonIsHidden] = useState(true)
 
@@ -39,11 +49,13 @@ function SobreNosCarrossel() {
     <div className="third-row-sobrenos">
       <div
         className={
-          leftButtonIsHidden ? 'left-is-hidden' : 'left-shadow-sobrenos'
+          leftButtonIsHidden
+            ? 'left-shadow-sobrenos left-is-hidden'
+            : 'left-shadow-sobrenos'
         }
       ></div>
       <div className="third-row-sobrenos-content">
-        <h1>Nossa História</h1>
+        <h1>{titleOfCarroussel}</h1>
         <SliderLayout
           className="sliderSobrenos"
           itemsPerPage={{
@@ -55,13 +67,8 @@ function SobreNosCarrossel() {
           navigationStep={1}
         >
           <div className="sobrenos-item-carrossel">
-            <h1>1987</h1>
-            <p>
-              Nasce o Mundo Verde, em Petrópolis, Rio de Janeiro. Criado por
-              Isabel Maria Antunes Joffe, seu marido Elísio Joffe e seus irmãos,
-              Jorge e Arlindo Antunes. A primeira loja tinha 25m 2 e apenas um
-              funcionário.
-            </p>
+            <h1>{carrosselItemTitle1}</h1>
+            <p>{carrosselItemText1}</p>
             <div class="traco-right">
               <svg
                 width="52"
