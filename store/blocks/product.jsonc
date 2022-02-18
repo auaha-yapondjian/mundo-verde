@@ -95,14 +95,44 @@
       "link.product#product-page",
       "product-identifier.product",
       "product-rating-summary",
+
       "flex-layout.row#product-price-and-buy-button",
       "product-separator",
       "sku-selector",
       "product-assembly-options",
       "availability-subscriber",
+      "flex-layout.row#container-ame-pdp",
       "shipping-simulator",
       "share#default"
     ]
+  },
+
+  "flex-layout.row#container-ame-pdp": {
+    "props": {
+      "blockClass": "ame-pdp-container"
+    },
+    "children": ["flex-layout.col#container-ame-pdp"]
+  },
+
+  "flex-layout.col#container-ame-pdp": {
+    "props": {
+      "blockClass": "ame-pdp-content"
+    },
+    "children": ["rich-text#text-ame-pdp-1", "rich-text#text-ame-pdp-2"]
+  },
+
+  "rich-text#text-ame-pdp-1": {
+    "props": {
+      "text": "Compre com",
+      "blockClass": "ame-pdp-1"
+    }
+  },
+
+  "rich-text#text-ame-pdp-2": {
+    "props": {
+      "text": "e receba até 10% de volta",
+      "blockClass": "ame-pdp-2"
+    }
   },
 
   "shipping-simulator": {
