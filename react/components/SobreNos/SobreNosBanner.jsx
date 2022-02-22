@@ -13,15 +13,15 @@ function SobreNosBanner({
   return (
     <section className="container-banner-sobrenos">
       <div className="first-row">
-        <p>
+        {/* <p>
           Este é o<br />
           <strong>
             nosso
             <br />
           </strong>
           mundo
-        </p>
-        {/* <RichText text={textBanner} /> */}
+        </p> */}
+        <RichText text={textBanner} />
         <img
           src={imageBanner}
           alt="Banner Sobre Nos"
