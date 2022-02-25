@@ -71,5 +71,8 @@
     "vtex.toggle-layout": "0.x",
     "vtex.product-highlights": "2.x"
   },
+  "peerDependencies": {
+    "vtex.wish-list": "1.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
