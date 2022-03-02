@@ -1,14 +1,15 @@
 {
   "my-account-link.wishlist-link": {
     "props": {
-      "label": "Lista de desejo"
+      "label": "My Wishlist",
+      "blockClass": "wishlist-link"
     }
   },
   "my-account-page.wishlist-page": {
     "props": {
-      "title": "Lista de desejos"
+      "title": "Wishlist"
     },
-    "children": ["list-context.wishlist"]
+    "children": ["list-context.product-list#demo1"]
   },
   "store.wishlist": {
     "blocks": ["flex-layout.row#top", "list-context.wishlist"]
@@ -32,6 +33,21 @@
     "blocks": ["product-summary.shelf#wishlist"],
     "children": ["slider-layout#wishlist"]
   },
+
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#wishlist"],
+    "children": ["list-context-renderer#wrapped"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "list-context-renderer#wrapped": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li"
+    }
+  },
+
   "product-summary.shelf#wishlist": {
     "children": [
       "add-to-list-btn",

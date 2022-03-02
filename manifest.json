@@ -69,7 +69,8 @@
     "vtex.css-handles": "0.x",
     "vtex.store-icons": "0.x",
     "vtex.toggle-layout": "0.x",
-    "vtex.product-highlights": "2.x"
+    "vtex.product-highlights": "2.x",
+    "vtex.list-context": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x"
