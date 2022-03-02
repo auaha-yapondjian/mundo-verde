@@ -1041,3 +1041,15 @@
 }
 
 // TERCEIRO NIVEL =============================================== END
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  display: none;
+}
+
+:global(.vtex-my-account-1-x-menuLinks) {
+  :last-child {
+    :last-child {
+      display: none;
+    }
+  }
+}
