@@ -8,7 +8,8 @@
       "product-questions-and-answers",
       "flex-layout.row#similar-products",
       "flex-layout.row#buy-together",
-      "flex-layout.row#navigation-history"
+      "flex-layout.row#navigation-history",
+      "add-to-list-btn"
       // "product-price-savings#price-pdp"
     ]
   },
