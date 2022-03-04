@@ -13,4 +13,5 @@ export const types = {
   Veganos: 'Veganos',
   Vegetariano: 'Vegetariano',
   'Vencimento Próximo': 'Vencimento Próximo',
+  Pets: 'Pets',
 }
