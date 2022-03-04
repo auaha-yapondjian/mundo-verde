@@ -1,12 +1,12 @@
 {
-  "store.custom#saude-da-mulher": {
+  "store.custom#semana-da-mulher": {
     "blocks": [
-      "search-result-layout.customQuery#saude-da-mulher",
+      "search-result-layout.customQuery#semana-da-mulher",
       "flex-layout.row#seo-content"
     ]
   },
 
-  "search-result-layout.customQuery#saude-da-mulher": {
+  "search-result-layout.customQuery#semana-da-mulher": {
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
