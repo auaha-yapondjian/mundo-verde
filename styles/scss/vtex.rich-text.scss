@@ -1538,3 +1538,35 @@
     font-family: 'Gotham', sans-serif;
   }
 }
+
+.paragraph--ame-pdp-1 {
+  margin-bottom: 0;
+  position: relative;
+  color: #4d4d4f;
+
+  @media (max-width: 1025px) {
+    margin-left: -70px;
+  }
+}
+
+.paragraph--ame-pdp-1::after {
+  background: {
+    repeat: no-repeat;
+    size: 100% 100%;
+    image: url('https://mundoverde.vtexassets.com/arquivos/ame-logo.png');
+  }
+  content: '';
+  height: 17px;
+  left: 100px;
+  position: absolute;
+  top: 4px;
+  width: 60px;
+  z-index: 1;
+}
+
+.paragraph--ame-pdp-2 {
+  color: #ee2e60;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 23px;
+}
