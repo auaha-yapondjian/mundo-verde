@@ -118,5 +118,8 @@
   },
   "store.custom#sobre-nos": {
     "path": "/sobre-nos"
+  },
+  "store.custom#semana-da-mulher": {
+    "path": "/semana-da-mulher"
   }
 }
