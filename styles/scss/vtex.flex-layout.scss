@@ -2195,3 +2195,15 @@
   display: flex;
   justify-content: center;
 }
+
+.flexRowContent--ame-pdp-container {
+  border-bottom: 1px solid #dee1e6;
+}
+
+.flexCol--ame-pdp-content {
+  @media (max-width: 1025px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
