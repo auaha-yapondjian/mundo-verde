@@ -115,5 +115,8 @@
   },
   "store.custom#lancheira-saudavel": {
     "path": "/lancheira-saudavel"
+  },
+  "store.custom#semana-da-mulher": {
+    "path": "/semana-da-mulher"
   }
 }
