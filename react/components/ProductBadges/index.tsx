@@ -30,33 +30,43 @@ const ProductBadges: React.FC = () => {
     getBadges()
   }, [badges])
 
+  console.log('BADGES: ', badges)
+
+  console.log('ISPRODUCT: ', isProduct)
+
   return (
     <Container>
       {badges
-        ? badges?.specifications.map(item => (
-            <Badge
-              key={item.name}
-              name={item.name}
-              link={`${link.replace(
-                /.$/,
-                ''
-              )}?map=category-1,${item.name
-                .replaceAll(/\s/g, '-')
-                .toLowerCase()}&query=${link}sim&searchState`}
-            />
-          ))
-        : isProduct?.properties.map(item => (
-            <Badge
-              key={item.name}
-              name={item.name}
-              link={`${link.replace(
-                /.$/,
-                ''
-              )}?map=category-1,${item.name
-                .replaceAll(/\s/g, '-')
-                .toLowerCase()}&query=${link}sim&searchState`}
-            />
-          ))}
+        ? badges?.specifications.map(
+            item =>
+              item.name !== 'sellerId' && (
+                <Badge
+                  key={item.name}
+                  name={item.name}
+                  link={`${link.replace(
+                    /.$/,
+                    ''
+                  )}?map=category-1,${item.name
+                    .replaceAll(/\s/g, '-')
+                    .toLowerCase()}&query=${link}sim&searchState`}
+                />
+              )
+          )
+        : isProduct?.properties.map(
+            item =>
+              item.name !== 'sellerId' && (
+                <Badge
+                  key={item.name}
+                  name={item.name}
+                  link={`${link.replace(
+                    /.$/,
+                    ''
+                  )}?map=category-1,${item.name
+                    .replaceAll(/\s/g, '-')
+                    .toLowerCase()}&query=${link}sim&searchState`}
+                />
+              )
+          )}
     </Container>
   )
 }
