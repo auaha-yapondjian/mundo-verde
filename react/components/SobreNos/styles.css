@@ -11,7 +11,7 @@
   }
 }
 
-:global(.mundoverde-store-theme-3-x-paragraph) {
+:global(.mundoverde-store-theme-4-x-paragraph) {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -23,33 +23,33 @@
 }
 
 @media (max-width: 1440px) {
-  :global(.mundoverde-store-theme-3-x-paragraph) {
+  :global(.mundoverde-store-theme-4-x-paragraph) {
     margin-left: 145px;
   }
 }
 
 @media (max-width: 1280px) {
-  :global(.mundoverde-store-theme-3-x-paragraph) {
+  :global(.mundoverde-store-theme-4-x-paragraph) {
     margin-left: 100px;
     margin-top: 130px;
   }
 }
 
 @media (max-width: 768px) {
-  :global(.mundoverde-store-theme-3-x-paragraph) {
+  :global(.mundoverde-store-theme-4-x-paragraph) {
     font-size: 54px;
     line-height: 37px;
   }
 }
 
 @media (max-width: 425px) {
-  :global(.mundoverde-store-theme-3-x-paragraph) {
+  :global(.mundoverde-store-theme-4-x-paragraph) {
     margin-left: 35px;
   }
 }
 
 @media (max-width: 375px) {
-  :global(.mundoverde-store-theme-3-x-paragraph) {
+  :global(.mundoverde-store-theme-4-x-paragraph) {
     margin-left: 20px;
   }
 }
@@ -61,9 +61,39 @@
   object-position: center -380px;
 }
 
+@media (max-width: 1440px) {
+  :global(.imagem-banner-first-sobrenos) {
+    object-position: center -250px;
+  }
+}
+
+@media (max-width: 1280px) {
+  :global(.imagem-banner-first-sobrenos) {
+    object-position: center -175px;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.imagem-banner-first-sobrenos) {
+    object-position: center -75px;
+  }
+}
+
 @media (max-width: 425px) {
   :global(.imagem-banner-first-sobrenos) {
     object-position: 0 0;
+  }
+}
+
+:global(.imagem-banner-first-sobrenos-sombra) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  :global(.imagem-banner-first-sobrenos-sombra) {
+    width: 230px;
   }
 }
 
@@ -92,7 +122,7 @@
 
 @media (max-width: 768px) {
   :global(.imagem-absolute-first-banner) {
-    bottom: -304px;
+    bottom: -366px;
     right: -45px;
     width: 615px;
   }
@@ -102,6 +132,12 @@
   :global(.imagem-absolute-first-banner) {
     bottom: -249px;
     width: 360px;
+  }
+}
+
+@media (max-width: 320px) {
+  :global(.imagem-absolute-first-banner) {
+    bottom: -222px;
   }
 }
 
@@ -339,7 +375,7 @@
   color: #ffffff;
 }
 
-:global(.mundoverde-store-theme-3-x-sliderLeftArrow) {
+:global(.mundoverde-store-theme-4-x-sliderLeftArrow) {
   left: unset;
   right: 32px;
   top: -110px;
@@ -348,7 +384,7 @@
 }
 
 @media (max-width: 425px) {
-  :global(.mundoverde-store-theme-3-x-sliderLeftArrow) {
+  :global(.mundoverde-store-theme-4-x-sliderLeftArrow) {
     right: unset;
     top: unset;
     left: 170px;
@@ -357,7 +393,7 @@
 }
 
 @media (max-width: 375px) {
-  :global(.mundoverde-store-theme-3-x-sliderLeftArrow) {
+  :global(.mundoverde-store-theme-4-x-sliderLeftArrow) {
     right: unset;
     top: unset;
     left: 140px;
@@ -366,7 +402,7 @@
 }
 
 @media (max-width: 320px) {
-  :global(.mundoverde-store-theme-3-x-sliderLeftArrow) {
+  :global(.mundoverde-store-theme-4-x-sliderLeftArrow) {
     right: unset;
     top: unset;
     left: 125px;
@@ -374,18 +410,18 @@
   }
 }
 
-:global(.mundoverde-store-theme-3-x-sliderLeftArrow):disabled {
+:global(.mundoverde-store-theme-4-x-sliderLeftArrow):disabled {
   color: #69c58d;
 }
 
-:global(.mundoverde-store-theme-3-x-sliderRightArrow) {
+:global(.mundoverde-store-theme-4-x-sliderRightArrow) {
   top: -110px;
   color: #158957;
   z-index: 9;
 }
 
 @media (max-width: 425px) {
-  :global(.mundoverde-store-theme-3-x-sliderRightArrow) {
+  :global(.mundoverde-store-theme-4-x-sliderRightArrow) {
     left: unset;
     top: unset;
     right: 170px;
@@ -394,7 +430,7 @@
 }
 
 @media (max-width: 375px) {
-  :global(.mundoverde-store-theme-3-x-sliderRightArrow) {
+  :global(.mundoverde-store-theme-4-x-sliderRightArrow) {
     left: unset;
     top: unset;
     right: 140px;
@@ -403,7 +439,7 @@
 }
 
 @media (max-width: 320px) {
-  :global(.mundoverde-store-theme-3-x-sliderRightArrow) {
+  :global(.mundoverde-store-theme-4-x-sliderRightArrow) {
     left: unset;
     top: unset;
     right: 125px;
@@ -411,7 +447,7 @@
   }
 }
 
-:global(.mundoverde-store-theme-3-x-sliderRightArrow):disabled {
+:global(.mundoverde-store-theme-4-x-sliderRightArrow):disabled {
   color: #69c58d;
 }
 

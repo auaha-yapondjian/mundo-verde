@@ -13,15 +13,12 @@ function SobreNosBanner({
   return (
     <section className="container-banner-sobrenos">
       <div className="first-row">
-        {/* <p>
-          Este é o<br />
-          <strong>
-            nosso
-            <br />
-          </strong>
-          mundo
-        </p> */}
         <RichText text={textBanner} />
+        <img
+          src="https://mundoverde.vtexassets.com/arquivos/sombra-mv-03.png"
+          alt="Banner Sobre Nos"
+          className="imagem-banner-first-sobrenos-sombra"
+        />
         <img
           src={imageBanner}
           alt="Banner Sobre Nos"
