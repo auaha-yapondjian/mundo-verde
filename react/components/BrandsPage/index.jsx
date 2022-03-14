@@ -8,85 +8,95 @@ import './brandsPage.global.css'
 
 function BrandsPage() {
   const { data } = useQuery(GET_BRANDS, { ssr: false })
-  const [values, setValues] = useState({})
-
+  const [showBrands, setShowBrands] = useState([])
+  const [inputValue, setInputValue] = useState('')
+  const reg = new RegExp('^[0-9]+$')
   const letters = [
-    { title: '0-9', onClick: () => {} },
-    { title: 'A', onClick: () => {} },
-    { title: 'B', onClick: () => {} },
-    { title: 'C', onClick: () => {} },
-    { title: 'D', onClick: () => {} },
-    { title: 'E', onClick: () => {} },
-    { title: 'F', onClick: () => {} },
-    { title: 'G', onClick: () => {} },
-    { title: 'H', onClick: () => {} },
-    { title: 'I', onClick: () => {} },
-    { title: 'J', onClick: () => {} },
-    { title: 'K', onClick: () => {} },
-    { title: 'L', onClick: () => {} },
-    { title: 'M', onClick: () => {} },
-    { title: 'N', onClick: () => {} },
-    { title: 'O', onClick: () => {} },
-    { title: 'P', onClick: () => {} },
-    { title: 'Q', onClick: () => {} },
-    { title: 'R', onClick: () => {} },
-    { title: 'S', onClick: () => {} },
-    { title: 'T', onClick: () => {} },
-    { title: 'U', onClick: () => {} },
-    { title: 'V', onClick: () => {} },
-    { title: 'W', onClick: () => {} },
-    { title: 'X', onClick: () => {} },
-    { title: 'Y', onClick: () => {} },
-    { title: 'Z', onClick: () => {} },
-    { title: '| TUDO', onClick: () => {} },
+    { title: '0-9', onClick: () => filteredBrandsByLetter(reg) },
+    { title: 'A', onClick: () => filteredBrandsByLetter('a') },
+    { title: 'B', onClick: () => filteredBrandsByLetter('b') },
+    { title: 'C', onClick: () => filteredBrandsByLetter('c') },
+    { title: 'D', onClick: () => filteredBrandsByLetter('d') },
+    { title: 'E', onClick: () => filteredBrandsByLetter('e') },
+    { title: 'F', onClick: () => filteredBrandsByLetter('f') },
+    { title: 'G', onClick: () => filteredBrandsByLetter('g') },
+    { title: 'H', onClick: () => filteredBrandsByLetter('h') },
+    { title: 'I', onClick: () => filteredBrandsByLetter('i') },
+    { title: 'J', onClick: () => filteredBrandsByLetter('j') },
+    { title: 'K', onClick: () => filteredBrandsByLetter('k') },
+    { title: 'L', onClick: () => filteredBrandsByLetter('l') },
+    { title: 'M', onClick: () => filteredBrandsByLetter('m') },
+    { title: 'N', onClick: () => filteredBrandsByLetter('n') },
+    { title: 'O', onClick: () => filteredBrandsByLetter('o') },
+    { title: 'P', onClick: () => filteredBrandsByLetter('p') },
+    { title: 'Q', onClick: () => filteredBrandsByLetter('q') },
+    { title: 'R', onClick: () => filteredBrandsByLetter('r') },
+    { title: 'S', onClick: () => filteredBrandsByLetter('s') },
+    { title: 'T', onClick: () => filteredBrandsByLetter('t') },
+    { title: 'U', onClick: () => filteredBrandsByLetter('u') },
+    { title: 'V', onClick: () => filteredBrandsByLetter('v') },
+    { title: 'W', onClick: () => filteredBrandsByLetter('w') },
+    { title: 'X', onClick: () => filteredBrandsByLetter('x') },
+    { title: 'Y', onClick: () => filteredBrandsByLetter('y') },
+    { title: 'Z', onClick: () => filteredBrandsByLetter('z') },
+    { title: '| TUDO', onClick: () => setShowBrands(data?.brands) },
   ]
 
-  console.log('DATA: ', data)
+  function filteredBrands() {
+    var filteredBrands = data?.brands?.filter(filteredBrand => {
+      return filteredBrand.name.includes(inputValue)
+    })
+    setShowBrands(filteredBrands)
+  }
 
-  function populateValue() {
-    const filteredValues = data?.brands?.reduce((acc, item) => {
+  function filteredBrandsByLetter(letter) {
+    const brands = reduceBrands(data.brands)
+    var filteredBrands = brands[letter]
+
+    setShowBrands(filteredBrands)
+  }
+
+  useEffect(() => {
+    setShowBrands(data?.brands)
+  }, [data])
+
+  useEffect(() => {
+    filteredBrands()
+  }, [inputValue])
+
+  function reduceBrands(items) {
+    return items?.reduce((acc, item) => {
       let initialbrandLetter = item.name.slice(0, 1).toLowerCase()
       acc[initialbrandLetter] = acc[initialbrandLetter]
         ? [item, ...acc[initialbrandLetter]]
         : [item]
       return acc
     }, {})
-    setValues(filteredValues)
   }
 
-  const keyOfValue = values && Object.keys(values).sort()
+  const values = reduceBrands(showBrands)
 
   useEffect(() => {
-    populateValue()
-  }, [data])
+    filteredBrands()
+  }, [inputValue])
 
-  // console.log('VALUES: ', keyOfValue)
-
-  // function getSearch(text) {
-  //   const newValues = []
-  //   keyOfValue.map(key => {
-  //     newValues = values.map(value => {
-  //       if (value)
-  //       console.log(value)
-  //       return value
-  //     })
-  //   })
-
-  //   setValues(newValues)
-  // }
+  const keyOfValue = values && Object.keys(values).sort()
 
   return (
     <div className="brands-body">
       <div className="brands-container">
         <h1>Glossário de Marcas</h1>
         <input
-          onChange={event => getSearch(event.target.value)}
+          value={inputValue}
+          onChange={event => setInputValue(event.target.value)}
           type="text"
           label="Que marca você procura?"
         />
         <ul>
           {letters.map(letter => (
-            <li>{letter.title}</li>
+            <li key={letter.title} onClick={letter.onClick}>
+              {letter.title}
+            </li>
           ))}
         </ul>
         {data ? (
