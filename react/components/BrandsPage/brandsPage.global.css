@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 96%;
   list-style: none;
   padding: 0;
@@ -51,6 +52,7 @@
   color: #797979;
   text-transform: uppercase;
   cursor: pointer;
+  min-width: 30px;
 }
 
 .brands-container div > h1 {
@@ -84,4 +86,10 @@
   text-decoration: none;
   padding: 12px 0 12px 20px;
   line-height: 19px;
+}
+
+@media (max-width: 425px) {
+  .brands-container div > div > a {
+    width: 50%;
+  }
 }

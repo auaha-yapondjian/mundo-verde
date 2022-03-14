@@ -10,9 +10,9 @@ function BrandsPage() {
   const { data } = useQuery(GET_BRANDS, { ssr: false })
   const [showBrands, setShowBrands] = useState([])
   const [inputValue, setInputValue] = useState('')
-  const reg = new RegExp('^[0-9]+$')
+  console.log('DATA: ', data)
   const letters = [
-    { title: '0-9', onClick: () => filteredBrandsByLetter(reg) },
+    { title: '0-9', onClick: () => filteredBrandsByLetter('3') },
     { title: 'A', onClick: () => filteredBrandsByLetter('a') },
     { title: 'B', onClick: () => filteredBrandsByLetter('b') },
     { title: 'C', onClick: () => filteredBrandsByLetter('c') },
@@ -44,7 +44,7 @@ function BrandsPage() {
 
   function filteredBrands() {
     var filteredBrands = data?.brands?.filter(filteredBrand => {
-      return filteredBrand.name.includes(inputValue)
+      return filteredBrand.name.toLowerCase().includes(inputValue.toLowerCase())
     })
     setShowBrands(filteredBrands)
   }
@@ -104,9 +104,10 @@ function BrandsPage() {
             <div>
               <h1>{value}</h1>
               <div>
-                {values[value].map(letter => (
-                  <a href={letter.slug}>{letter.name}</a>
-                ))}
+                {values[value].map(
+                  letter =>
+                    letter.active && <a href={letter.slug}>{letter.name}</a>
+                )}
               </div>
             </div>
           ))
