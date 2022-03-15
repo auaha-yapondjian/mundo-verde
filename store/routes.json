@@ -118,5 +118,8 @@
   },
   "store.custom#semana-da-mulher": {
     "path": "/semana-da-mulher"
+  },
+  "store.custom#custom-collection": {
+    "path": "/custom-collection"
   }
 }

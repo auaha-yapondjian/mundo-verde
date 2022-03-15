@@ -1,0 +1,24 @@
+{
+  "store.custom#custom-collection": {
+    "blocks": [
+      "search-result-layout.customQuery#custom-collection",
+      "flex-layout.row#seo-content"
+    ]
+  },
+
+  "search-result-layout.customQuery#custom-collection": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByScoreDESC",
+        "hideUnavailableItems": false,
+        "queryField": "160",
+        "maxItemsPerPage": 18,
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.mobile#collection-content",
+      "search-result-layout.desktop#collection-content"
+    ]
+  }
+}
