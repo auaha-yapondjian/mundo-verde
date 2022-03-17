@@ -1,0 +1,5 @@
+{
+  "store.custom#brands-page": {
+    "blocks": ["brands-page"]
+  }
+}

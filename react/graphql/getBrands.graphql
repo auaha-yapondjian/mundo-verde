@@ -1,0 +1,8 @@
+query GetBrands {
+  brands {
+    id
+    slug
+    name
+    active
+  }
+}
