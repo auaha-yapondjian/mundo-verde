@@ -119,6 +119,9 @@
   "store.custom#semana-da-mulher": {
     "path": "/semana-da-mulher"
   },
+  "store.custom#brands-page": {
+    "path": "/marcas"
+  },
   "store.custom#custom-collection": {
     "path": "/custom-collection"
   }
