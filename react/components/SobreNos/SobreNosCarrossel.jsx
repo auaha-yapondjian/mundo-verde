@@ -20,15 +20,15 @@ function SobreNosCarrossel({
 
   useEffect(() => {
     const arrowButton = document.querySelectorAll(
-      '.mundoverde-store-theme-3-x-sliderArrows'
+      '.mundoverde-store-theme-4-x-sliderArrows'
     )
 
     const leftButton = document.querySelector(
-      '.mundoverde-store-theme-3-x-sliderLeftArrow'
+      '.mundoverde-store-theme-4-x-sliderLeftArrow'
     )
 
     const rightButton = document.querySelector(
-      '.mundoverde-store-theme-3-x-sliderRightArrow'
+      '.mundoverde-store-theme-4-x-sliderRightArrow'
     )
 
     arrowButton.forEach(item =>
@@ -204,6 +204,29 @@ function SobreNosCarrossel({
               Ao completar 20 anos de operação, a rede chega ao número de 100
               lojas no Brasil.
             </p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -224,6 +247,29 @@ function SobreNosCarrossel({
             </div>
             <h1>2009</h1>
             <p>O Mundo Verde abre seu capital para o fundo de investimentos.</p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -247,6 +293,29 @@ function SobreNosCarrossel({
               Foram mais de 30 lojas inauguradas, além da entrada em novos
               mercados.
             </p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -269,6 +338,29 @@ function SobreNosCarrossel({
             <p>
               Inauguração de 40 lojas. Primeira campanha na TV aberta da marca.
             </p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -292,6 +384,29 @@ function SobreNosCarrossel({
               Lançamento oficial da marca própria Mundo Verde Seleção, com
               produtos voltados para um dia a dia mais saudável.
             </p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -312,6 +427,29 @@ function SobreNosCarrossel({
             </div>
             <h1>2014</h1>
             <p>Grupo Sforza Holding adquire a empresa</p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -335,6 +473,29 @@ function SobreNosCarrossel({
               Premiada com o Selo de Excelência em Franchising 2015, concedido
               pela Associação Brasileira de Franquias (ABF).
             </p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -358,6 +519,29 @@ function SobreNosCarrossel({
               Lançamento da marca própria Elixir, desenvolvida para cuidar da
               beleza e saúde das mulheres acima dos 30 anos.
             </p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
@@ -378,6 +562,29 @@ function SobreNosCarrossel({
             </div>
             <h1>2018</h1>
             <p>Mundo Verde ganha o prêmio Top Of Wellness, pelo Grupo Abril</p>
+            <div class="traco-right">
+              <svg
+                width="52"
+                height="45"
+                viewBox="0 0 52 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52 3C41.2304 3 32.5 11.7304 32.5 22.5C32.5 33.2696 41.2304 42 52 42"
+                  stroke="#696969"
+                  stroke-width="6"
+                />
+                <rect
+                  x="35.5"
+                  y="25"
+                  width="35"
+                  height="6"
+                  transform="rotate(180 35.5 25)"
+                  fill="#696969"
+                />
+              </svg>
+            </div>
           </div>
           <div className="sobrenos-item-carrossel">
             <div className="traco-left">
