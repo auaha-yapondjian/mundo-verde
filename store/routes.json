@@ -124,5 +124,20 @@
   },
   "store.custom#custom-collection": {
     "path": "/custom-collection"
+  },
+  "store.custom#dia-das-maes": {
+    "path": "/dia-das-maes"
+  },
+  "store.custom#dia-do-cacau": {
+    "path": "/dia-do-cacau"
+  },
+  "store.custom#semana-da-saude": {
+    "path": "/semana-da-saude"
+  },
+  "store.custom#pascoa": {
+    "path": "/pascoa"
+  },
+  "store.custom#frete-gratis": {
+    "path": "/frete-gratis"
   }
 }
