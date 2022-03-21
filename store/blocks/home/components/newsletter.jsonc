@@ -7,5 +7,97 @@
       "placeholder": "digite seu e-mail",
       "submit": "eu quero"
     }
+  },
+
+  "flex-layout.row#form-newsletter": {
+    "children": ["form#newsletter"],
+    "props": {
+      "blockClass": "newsletter-container"
+    }
+  },
+  "form#newsletter": {
+    "props": {
+      "entity": "PN",
+      "schema": "popupnews"
+    },
+    "children": [
+      "rich-text#newsletter-text",
+      "flex-layout.row#newsletter-inputs-container"
+    ],
+    "blocks": ["form-success#newsletter"]
+  },
+
+  "flex-layout.row#newsletter-inputs-container": {
+    "children": [
+      "form-input.text#newsletter-name",
+      "form-input.text#newsletter-email",
+      "form-submit#newsletter"
+    ],
+    "props": {
+      "blockClass": "newsletter-inputs-container"
+    }
+  },
+
+  "rich-text#newsletter-text": {
+    "props": {
+      "text": "Cadastre-se e receba ofertas exclusivas, dicas e receitas para uma vida mais saudável e equilibrada :)",
+      "blockClass": "newsletter-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "form-input.text#newsletter-name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "placeholder": "Nome",
+      "label": "",
+      "blockClass": "newsletter-inputs"
+    }
+  },
+  "form-input.text#newsletter-email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "E-mail",
+      "label": "",
+      "blockClass": "newsletter-inputs"
+    }
+  },
+  "form-submit#newsletter": {
+    "props": {
+      "label": "eu quero"
+    }
+  },
+
+  "form-success#newsletter": {
+    "children": ["flex-layout.row#newsletter-success"]
+  },
+
+  "flex-layout.row#newsletter-success": {
+    "children": [
+      "rich-text#newsletter-success-title",
+      "rich-text#newsletter-success-text"
+    ],
+    "props": {
+      "blockClass": "newsletter-success"
+    }
+  },
+
+  "rich-text#newsletter-success-title": {
+    "props": {
+      "text": "Obrigado!",
+      "blockClass": "newsletter-sucess-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#newsletter-success-text": {
+    "props": {
+      "text": "Seu email foi registrado com sucesso.",
+      "blockClass": "newsletter-sucess-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   }
 }
