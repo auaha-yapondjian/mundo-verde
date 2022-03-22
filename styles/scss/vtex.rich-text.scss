@@ -1056,7 +1056,7 @@
       color: #008651;
       margin: 0;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 24px;
       padding: 50px 0 10px 0;
       height: auto;
 
@@ -1081,9 +1081,11 @@
   &--seo {
     &-content-bottom {
       font-size: 1.15rem;
-      font-weight: bold;
-      color: #4b2b4a;
-      text-transform: uppercase;
+      font-family: sans-serif;
+      color: #3f3f40;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: justify;
       margin: 20px 0 8px;
 
       &:empty {
@@ -1509,8 +1511,13 @@
   //Seo content
   &--seo {
     &-content-bottom {
-      color: #008651;
+      color: #3f3f40;
+      font-family: 'lato', sans-serif !important;
+      text-transform: none;
+      text-decoration: none;
+      font-size: 16px;
       font-family: sans-serif;
+      font-weight: bold;
 
       &:empty {
         display: none;
