@@ -1,9 +1,25 @@
 {
   "store.custom#custom-collection": {
     "blocks": [
+      "image#collection-banner",
       "search-result-layout.customQuery#custom-collection",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "flex-layout.row#collection-banner": {
+    "children": ["flex-layout.col#collection-banner"]
+  },
+
+  "flex-layout.col#collection-banner": {
+    "children": ["image#collection-banner"]
+  },
+
+  "image#collection-banner": {
+    "props": {
+      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/7c1a17f5-3e63-4b02-8d51-64fc76c52438___495cd3110c4efeab83768a7c41701ddb.png"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#custom-collection": {
@@ -11,7 +27,7 @@
       "querySchema": {
         "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
-        "queryField": "160",
+        "queryField": "2255",
         "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }
