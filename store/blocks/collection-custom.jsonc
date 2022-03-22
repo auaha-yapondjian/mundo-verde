@@ -7,17 +7,10 @@
     ]
   },
 
-  "flex-layout.row#collection-banner": {
-    "children": ["flex-layout.col#collection-banner"]
-  },
-
-  "flex-layout.col#collection-banner": {
-    "children": ["image#collection-banner"]
-  },
-
   "image#collection-banner": {
     "props": {
-      "src": "https://mundoverde.vtexassets.com/assets/vtex.file-manager-graphql/images/7c1a17f5-3e63-4b02-8d51-64fc76c52438___495cd3110c4efeab83768a7c41701ddb.png"
+      "src": "",
+      "blockClass": "collection-image-banner"
     },
     "title": "Banner"
   },
