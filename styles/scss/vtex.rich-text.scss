@@ -1573,3 +1573,52 @@
   margin-top: 5px;
   margin-bottom: 23px;
 }
+
+.paragraph--newsletter-text {
+  font-family: 'Gotham', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+
+  @media (max-width: 425px) {
+    padding: 0 35px;
+  }
+}
+
+.wrapper--newsletter-text {
+  padding-left: 110px;
+  position: relative;
+
+  ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 88px;
+    height: 90px;
+    background-image: url(/arquivos/newsletter.png);
+    background-repeat: no-repeat;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 0;
+  }
+}
+
+.paragraph--newsletter-sucess-title {
+  font-family: 'Gotham', -apple-system, 'BlinkMacSystemFont', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.paragraph--newsletter-sucess-text {
+  color: #fff;
+  width: 260px;
+}
