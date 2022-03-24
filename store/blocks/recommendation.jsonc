@@ -233,7 +233,7 @@
       "blockClass": "product-summary-details"
     },
     "children": [
-      "product-summary-name",
+      "product-summary-name#nameproduct",
       "vtex.store-components:product-brand",
       "product-rating-inline",
       "product-summary-price",
@@ -241,6 +241,12 @@
       "add-to-cart-button"
     ]
   },
+
+  "product-summary-name#nameproduct": {
+    "props": {
+        "tag": "div"
+    }
+},
 
   //Lista de produtos
   "list-context.product-list#recommendation-list": {
