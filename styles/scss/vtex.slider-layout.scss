@@ -378,4 +378,8 @@
 
 :global(.vtex-store-components-3-x-imageElement--collection-image-banner) {
   display: flex;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
