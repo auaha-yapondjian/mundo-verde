@@ -1,9 +1,18 @@
 {
   "store.custom#blackfriday": {
     "blocks": [
+      "image#collection-banner-blackfriday",
       "search-result-layout.customQuery#esquenta-blackfriday",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-blackfriday": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#esquenta-blackfriday": {

@@ -1,9 +1,18 @@
 {
   "store.custom#festa-junina": {
     "blocks": [
+      "image#collection-banner",
       "search-result-layout.customQuery#festa-junina",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-festa-junina": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner-festa-junina"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#festa-junina": {
