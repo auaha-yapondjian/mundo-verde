@@ -2,20 +2,8 @@
   "store.custom#about-us": {
     "path": "/about-us"
   },
-  "store.custom#desconto-progressivo-ate-50": {
-    "path": "/desconto-progressivo-ate-50"
-  },
   "store.custom#natal-saudavel": {
     "path": "/natal-saudavel"
-  },
-  "store.custom#desconto-progressivo-ate-40": {
-    "path": "/desconto-progressivo-ate-40"
-  },
-  "store.custom#desconto-progressivo-ate-30": {
-    "path": "/desconto-progressivo-ate-30"
-  },
-  "store.custom#desconto-progressivo-ate-25": {
-    "path": "/desconto-progressivo-ate-25"
   },
   "store.custom#ofertas-mundo-verde": {
     "path": "/ofertas-mundo-verde"

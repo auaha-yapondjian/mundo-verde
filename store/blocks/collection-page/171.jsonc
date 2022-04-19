@@ -1,9 +1,18 @@
 {
   "store.custom#voce-mais-saudavel": {
     "blocks": [
+      "image#collection-banner-voce-mais-saudavel",
       "search-result-layout.customQuery#voce-mais-saudavel",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-voce-mais-saudavel": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#voce-mais-saudavel": {

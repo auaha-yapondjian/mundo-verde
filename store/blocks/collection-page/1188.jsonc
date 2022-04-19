@@ -1,9 +1,18 @@
 {
   "store.custom#dia-das-maes": {
     "blocks": [
+      "image#collection-banner-dia-das-maes",
       "search-result-layout.customQuery#dia-das-maes",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-dia-das-maes": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#dia-das-maes": {

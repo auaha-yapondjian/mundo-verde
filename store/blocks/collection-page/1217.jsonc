@@ -1,9 +1,18 @@
 {
   "store.custom#semana-do-brasil": {
     "blocks": [
+      "image#collection-banner-semana-do-brasil",
       "search-result-layout.customQuery#semana-do-brasil",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-semana-do-brasil": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#semana-do-brasil": {

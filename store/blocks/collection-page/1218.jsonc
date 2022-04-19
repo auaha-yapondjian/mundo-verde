@@ -1,9 +1,18 @@
 {
   "store.custom#ofertas": {
     "blocks": [
+      "image#collection-banner-ofertas",
       "search-result-layout.customQuery#ofertas",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-ofertas": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#ofertas": {
