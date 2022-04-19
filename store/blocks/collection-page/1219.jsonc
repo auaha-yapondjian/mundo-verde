@@ -1,9 +1,18 @@
 {
   "store.custom#longevidade": {
     "blocks": [
+      "image#collection-banner-longevidade",
       "search-result-layout.customQuery#longevidade",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-longevidade": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#longevidade": {

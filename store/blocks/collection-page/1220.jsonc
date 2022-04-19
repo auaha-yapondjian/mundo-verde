@@ -1,9 +1,18 @@
 {
   "store.custom#semana-do-cliente": {
     "blocks": [
+      "image#collection-banner-semana-do-cliente",
       "search-result-layout.customQuery#semana-do-cliente",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-semana-do-cliente": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#semana-do-cliente": {

@@ -1,9 +1,18 @@
 {
   "store.custom#semana-da-mulher": {
     "blocks": [
+      "image#collection-banner-semana-da-mulher",
       "search-result-layout.customQuery#semana-da-mulher",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-semana-da-mulher": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#semana-da-mulher": {

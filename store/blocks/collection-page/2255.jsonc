@@ -1,9 +1,18 @@
 {
   "store.custom#lancheira-saudavel": {
     "blocks": [
+      "image#collection-banner-lancheira-saudavel",
       "search-result-layout.customQuery#lancheira-saudavel",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-lancheira-saudavel": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#lancheira-saudavel": {

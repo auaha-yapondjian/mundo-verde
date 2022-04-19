@@ -1,9 +1,18 @@
 {
   "store.custom#dia-dos-namorados": {
     "blocks": [
+      "image#collection-banner-dia-dos-namorados",
       "search-result-layout.customQuery#dia-dos-namorados",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-dia-dos-namorados": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#dia-dos-namorados": {

@@ -1,9 +1,18 @@
 {
   "store.custom#semana-do-consumidor": {
     "blocks": [
+      "image#collection-banner-semana-do-consumidor",
       "search-result-layout.customQuery#semana-do-consumidor",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-semana-do-consumidor": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#semana-do-consumidor": {

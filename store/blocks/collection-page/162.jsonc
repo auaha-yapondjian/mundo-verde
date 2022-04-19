@@ -1,11 +1,20 @@
 {
   "store.custom#cybermonday": {
     "blocks": [
+      "image#collection-banner-cybermonday",
       "search-result-layout.customQuery#cybermonday",
       "flex-layout.row#seo-content"
     ]
   },
-  
+
+  "image#collection-banner-cybermonday": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
+  },
+
   "search-result-layout.customQuery#cybermonday": {
     "props": {
       "querySchema": {

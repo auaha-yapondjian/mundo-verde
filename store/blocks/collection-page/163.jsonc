@@ -1,9 +1,18 @@
 {
   "store.custom#natal": {
     "blocks": [
+      "image#collection-banner-natal",
       "search-result-layout.customQuery#natal",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-natal": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#natal": {
