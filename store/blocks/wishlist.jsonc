@@ -52,12 +52,19 @@
     "children": [
       "add-to-list-btn",
       "product-summary-image",
-      "product-summary-name",
+      "product-summary-name#nameproduct",
       "product-summary-space",
       "product-summary-price",
       "add-to-cart-button"
     ]
   },
+
+  "product-summary-name#nameproduct": {
+    "props": {
+        "tag": "div"
+    }
+ },
+ 
   "slider-layout#wishlist": {
     "props": {
       "itemsPerPage": {

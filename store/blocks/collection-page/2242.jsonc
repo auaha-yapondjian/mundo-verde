@@ -1,9 +1,18 @@
 {
   "store.custom#natal-saudavel": {
     "blocks": [
+      "image#collection-banner-natal-saudavel",
       "search-result-layout.customQuery#natal-saudavel",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-natal-saudavel": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#natal-saudavel": {

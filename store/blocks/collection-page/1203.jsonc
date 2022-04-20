@@ -1,9 +1,18 @@
 {
   "store.custom#cozinha-saudavel": {
     "blocks": [
+      "image#collection-banner-cozinha-saudavel",
       "search-result-layout.customQuery#cozinha-saudavel",
       "flex-layout.row#seo-content"
     ]
+  },
+
+  "image#collection-banner-cozinha-saudavel": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#cozinha-saudavel": {

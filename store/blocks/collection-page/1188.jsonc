@@ -1,17 +1,26 @@
 {
-  "store.custom#desconto-progressivo-ate-50": {
+  "store.custom#dia-das-maes": {
     "blocks": [
-      "search-result-layout.customQuery#desconto-progressivo-ate-50",
+      "image#collection-banner-dia-das-maes",
+      "search-result-layout.customQuery#dia-das-maes",
       "flex-layout.row#seo-content"
     ]
   },
 
-  "search-result-layout.customQuery#desconto-progressivo-ate-50": {
+  "image#collection-banner-dia-das-maes": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
+  },
+
+  "search-result-layout.customQuery#dia-das-maes": {
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": false,
-        "queryField": "2229",
+        "queryField": "1188",
         "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }

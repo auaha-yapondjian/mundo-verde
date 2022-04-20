@@ -1,26 +1,26 @@
 {
-  "store.custom#festa-junina": {
+  "store.custom#custom-collection": {
     "blocks": [
       "image#collection-banner",
-      "search-result-layout.customQuery#festa-junina",
+      "search-result-layout.customQuery#custom-collection",
       "flex-layout.row#seo-content"
     ]
   },
 
-  "image#collection-banner-festa-junina": {
+  "image#collection-banner": {
     "props": {
       "src": "",
-      "blockClass": "collection-image-banner-festa-junina"
+      "blockClass": "collection-image-banner"
     },
     "title": "Banner"
   },
 
-  "search-result-layout.customQuery#festa-junina": {
+  "search-result-layout.customQuery#custom-collection": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
-        "queryField": "1199",
+        "queryField": "2255",
         "maxItemsPerPage": 18,
         "mapField": "productClusterIds"
       }

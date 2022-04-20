@@ -33,13 +33,19 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      "product-summary-name",
+      "product-summary-name#nameproduct",
       "add-to-list-btn",
       "product-rating-inline",
       "product-summary-price",
       "product-summary-space",
       "add-to-cart-button"
     ]
+  },
+
+  "product-summary-name#nameproduct": {
+    "props": {
+        "tag": "div"
+    }
   },
 
   "vtex.product-highlights@2.x:product-highlights#teste": {

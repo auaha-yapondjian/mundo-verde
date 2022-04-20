@@ -1,6 +1,17 @@
 {
   "store.custom#imune-mais": {
-    "blocks": ["search-result-layout.customQuery#imune-mais"]
+    "blocks": [
+      "image#collection-banner-imune-mais",
+      "search-result-layout.customQuery#imune-mais"
+    ]
+  },
+
+  "image#collection-banner-imune-mais": {
+    "props": {
+      "src": "",
+      "blockClass": "collection-image-banner"
+    },
+    "title": "Banner"
   },
 
   "search-result-layout.customQuery#imune-mais": {

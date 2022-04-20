@@ -75,7 +75,10 @@
 
   //Newsletter
   "flex-layout.row#newsletter": {
-    "children": ["newsletter"],
+    "children": [
+      // "newsletter"
+      "flex-layout.row#form-newsletter"
+    ],
     "props": {
       "blockClass": "newsletter"
     }

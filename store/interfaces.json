@@ -1,8 +1,4 @@
 {
-  "store.custom": {
-    "before": ["header.full"],
-    "after": ["footer"]
-  },
   "form-compliance": {
     "component": "FormCompliance"
   },
@@ -53,5 +49,8 @@
   },
   "sobre-nos": {
     "component": "SobreNos"
+  },
+  "brands-page": {
+    "component": "BrandsPage"
   }
 }
