@@ -22,7 +22,7 @@ function SobreNosImages({
           <h1>{titleOfImages}</h1>
           <div className="images-sobrenos-content">
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image1}
               width="166"
               height="240"
               frameborder="0"
@@ -30,7 +30,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image2}
               width="166"
               height="240"
               frameborder="0"
@@ -38,7 +38,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image3}
               width="166"
               height="240"
               frameborder="0"
@@ -46,7 +46,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image4}
               width="166"
               height="240"
               frameborder="0"
@@ -54,7 +54,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image5}
               width="166"
               height="240"
               frameborder="0"
@@ -62,7 +62,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image6}
               width="166"
               height="240"
               frameborder="0"
@@ -70,7 +70,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image7}
               width="166"
               height="240"
               frameborder="0"
@@ -78,7 +78,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image8}
               width="166"
               height="240"
               frameborder="0"
@@ -86,7 +86,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image9}
               width="166"
               height="240"
               frameborder="0"
@@ -94,7 +94,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image10}
               width="166"
               height="240"
               frameborder="0"
@@ -102,7 +102,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image11}
               width="166"
               height="240"
               frameborder="0"
@@ -110,7 +110,7 @@ function SobreNosImages({
               allowtransparency="true"
             ></iframe>
             <iframe
-              src="https://www.instagram.com/p/Cbh4XPmvgpP/embed"
+              src={image12}
               width="166"
               height="240"
               frameborder="0"
