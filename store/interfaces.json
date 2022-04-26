@@ -47,6 +47,9 @@
   "flag-progressive-promotion": {
     "component": "FlagProgressivePromotion"
   },
+  "sobre-nos": {
+    "component": "SobreNos"
+  },
   "brands-page": {
     "component": "BrandsPage"
   }

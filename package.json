@@ -47,6 +47,7 @@
   "homepage": "https://bitbucket.org/corebiz_ag/mundoverde#readme",
   "dependencies": {
     "react": "file:react",
+    "react-apollo": "^3.1.5",
     "react-collapse": "^5.1.0",
     "sass": "^1.44.0"
   }
