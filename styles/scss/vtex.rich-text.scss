@@ -475,6 +475,20 @@
     padding-top: 7px;
   }
 }
+
+@media (max-width: 425px) {
+  .paragraph--franqueado-header-text {
+    font-size: 12px;
+
+    :first-child {
+      text-align: center;
+      max-width: 70px;
+    }
+    &::before {
+      margin-right: 3px;
+    }
+  }
+}
 //
 
 // Black Friday
@@ -1542,36 +1556,43 @@
   }
 }
 
-.paragraph--ame-pdp-1 {
-  margin-bottom: 0;
-  position: relative;
-  color: #4d4d4f;
-
-  @media (max-width: 1025px) {
-    margin-left: -70px;
+@media (max-width: 425px) {
+  .paragraph--text-link-franqueado-header {
+    font-size: 10px;
+    :first-child {
+    }
   }
-}
+  .paragraph--ame-pdp-1 {
+    margin-bottom: 0;
+    position: relative;
+    color: #4d4d4f;
 
-.paragraph--ame-pdp-1::after {
-  background: {
-    repeat: no-repeat;
-    size: 100% 100%;
-    image: url('https://mundoverde.vtexassets.com/arquivos/ame-logo.png');
+    @media (max-width: 1025px) {
+      margin-left: -70px;
+    }
   }
-  content: '';
-  height: 17px;
-  left: 100px;
-  position: absolute;
-  top: 4px;
-  width: 60px;
-  z-index: 1;
-}
 
-.paragraph--ame-pdp-2 {
-  color: #ee2e60;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 23px;
+  .paragraph--ame-pdp-1::after {
+    background: {
+      repeat: no-repeat;
+      size: 100% 100%;
+      image: url('https://mundoverde.vtexassets.com/arquivos/ame-logo.png');
+    }
+    content: '';
+    height: 17px;
+    left: 100px;
+    position: absolute;
+    top: 4px;
+    width: 60px;
+    z-index: 1;
+  }
+
+  .paragraph--ame-pdp-2 {
+    color: #ee2e60;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 23px;
+  }
 }
 
 .paragraph--newsletter-text {

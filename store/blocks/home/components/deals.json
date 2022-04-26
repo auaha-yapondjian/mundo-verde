@@ -11,9 +11,9 @@
 
   "slider-layout#deals": {
     "children": [
-      "flex-layout.col#deals1", 
-      "flex-layout.col#deals2", 
-      "flex-layout.col#deals3", 
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
       "flex-layout.col#deals4",
       "flex-layout.col#deals5",
       "flex-layout.col#deals6"
@@ -31,10 +31,7 @@
   },
 
   "flex-layout.col#deals1": {
-    "children": [
-      "image#deal1",
-      "rich-text#deal1"
-    ],
+    "children": ["image#deal1", "rich-text#deal1"],
     "props": {
       "blockClass": ["deals", "deals1"]
     },
@@ -57,10 +54,7 @@
   },
 
   "flex-layout.col#deals2": {
-    "children": [
-      "image#deal2",
-      "rich-text#deal2"
-    ],
+    "children": ["image#deal2", "rich-text#deal2"],
     "props": {
       "blockClass": ["deals", "deals2"]
     },
@@ -83,10 +77,7 @@
   },
 
   "flex-layout.col#deals3": {
-    "children": [
-      "image#deal3",
-      "rich-text#deal3"
-    ],
+    "children": ["image#deal3", "rich-text#deal3"],
     "props": {
       "blockClass": ["deals", "deals3"]
     },
@@ -109,10 +100,7 @@
   },
 
   "flex-layout.col#deals4": {
-    "children": [
-      "image#deal4",
-      "rich-text#deal4"
-    ],
+    "children": ["image#deal4", "rich-text#deal4"],
     "props": {
       "blockClass": ["deals", "deals4"]
     },
@@ -135,10 +123,7 @@
   },
 
   "flex-layout.col#deals5": {
-    "children": [
-      "image#deal5",
-      "rich-text#deal5"
-    ],
+    "children": ["image#deal5", "rich-text#deal5"],
     "props": {
       "blockClass": ["deals", "deals5"]
     },
@@ -161,10 +146,7 @@
   },
 
   "flex-layout.col#deals6": {
-    "children": [
-      "image#deal6",
-      "rich-text#deal6"
-    ],
+    "children": ["image#deal6", "rich-text#deal6"],
     "props": {
       "blockClass": ["deals", "deals6"]
     },
