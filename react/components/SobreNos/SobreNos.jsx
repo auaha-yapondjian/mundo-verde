@@ -151,86 +151,62 @@ SobreNos.schema = {
     image1: {
       title: 'Primeira Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image2: {
       title: 'Segunda Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image3: {
       title: 'Terceira Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image4: {
       title: 'Quarta Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image5: {
       title: 'Quinta Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image6: {
       title: 'Sexta Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image7: {
       title: 'Sétima Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image8: {
       title: 'Oitava Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image9: {
       title: 'Nona Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image10: {
       title: 'Décima Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image11: {
       title: 'Décima primeira Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
     image12: {
       title: 'Décima segunda Imagem',
       type: 'string',
-      widget: {
-        'ui:widget': 'image-uploader',
-      },
+      default: 'https://www.mundoverde.com.br/',
     },
   },
 }
